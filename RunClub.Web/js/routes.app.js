@@ -1,18 +1,4 @@
-﻿function toArray(arr) {
-    return Array.prototype.slice.call(arr);
-}
-
-Function.prototype.curry = function () {
-    if (arguments.length < 1) {
-        return this; //nothing to curry with - return function
-    }
-    var __method = this;
-    var args = toArray(arguments);
-    return function () {
-        return __method.apply(this, args.concat(toArray(arguments)));
-    }
-}
-/*
+﻿/*
 todo:
     -   meet here
     -   km markers
@@ -120,15 +106,6 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
     // The "then" callback function provides the google.maps object.
     uiGmapGoogleMapApi.then(function (maps) {
         console.log('google maps api ready');
-        //uiGmapIsReady.promise(1).then(function (instances) {
-        //    console.log('ui map ready');
-        //    instances.forEach(function (inst) {
-        //        var map = inst.map;
-        //        var uuid = map.uiGmap_id;
-        //        var mapInstanceNumber = inst.instance; // Starts at 1.
-        //        console.log('map is loaded ' + mapInstanceNumber);
-        //    });
-        //});
         //console.log(maps);
         //fetch route data from external json file
         $http.get('routes/db.json')
@@ -142,14 +119,3 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
             });
     });
 });
-/*
-            var parser = new GPXParser(data, map);
-            parser.setTrackColour("#ff0000");     // Set the track line colour
-            parser.setTrackWidth(5);          // Set the track line width
-            parser.setMinTrackPointDelta(0.001);      // Set the minimum distance between track points
-            parser.centerAndZoom(data);
-            parser.addTrackpointsToMap();         // Add the trackpoints
-            parser.addRoutepointsToMap();         // Add the routepoints
-            parser.addWaypointsToMap();           // Add the waypoints
-
-*/
