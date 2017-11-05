@@ -110,8 +110,7 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
                                 var km = i / 1000;
                                 var point = polyline.GetPointAtDistance(i);
                                 if (point) {
-                                    var coords = { latitude: point.lat(), longitude: point.lng() };
-                                    markers.push({ id: km, coords: coords, title: km + 'km', zIndex: km })
+                                    markers.push({ id: km, latitude: point.lat(), longitude: point.lng(), title: km + 'km', zIndex: km })
                                 }
                             }                            route.markers = markers;                            console.log('markers', markers);                            //console.log($scope.markers);                            route.loading = false;
 
