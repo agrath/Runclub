@@ -23,6 +23,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -71,12 +72,20 @@
     <Content Include="css\routes.min.css">
       <DependentUpon>routes.less</DependentUpon>
     </Content>
-    <Content Include="js\underscore-min.js" />
+    <Content Include="images\map-icons\parking.png" />
+    <Content Include="images\map-icons\photo-camera.png" />
+    <Content Include="images\running.gif" />
+    <Content Include="images\map-icons\toilet.png" />
+    <Content Include="images\map-icons\water.png" />
+    <Content Include="js\vendor.bundle.js" />
+    <Content Include="js\vendor\underscore-min.js" />
+    <Content Include="js\vendor\v3_epoly.js" />
     <Content Include="packages.config" />
     <Content Include="routes\RUCWGquH.gpx" />
     <Content Include="routes\kwaBpRSC.gpx" />
     <Content Include="routes\xHTfUcKn.gpx" />
     <Content Include="css\routes.less" />
+    <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
@@ -90,19 +99,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
-    <Content Include="images\FFFFFF-0.png" />
-    <Content Include="images\MapMarker_PushPin_Left_Green.png" />
-    <Content Include="images\MapMarker_PushPin_Left_Red.png" />
-    <Content Include="js\angular-google-maps.min.js" />
-    <Content Include="js\angular-sanitize.min.js" />
-    <Content Include="js\angular-simple-logger.js" />
-    <Content Include="js\gpx.js" />
-    <Content Include="js\jquery-3.2.1.min.js" />
-    <Content Include="js\lodash.js" />
-    <Content Include="js\require.js" />
+    <Content Include="images\map-icons\green-pin.png" />
+    <Content Include="js\vendor\angular-google-maps.min.js" />
+    <Content Include="js\vendor\angular-sanitize.min.js" />
+    <Content Include="js\vendor\angular-simple-logger.js" />
+    <Content Include="js\vendor\gpx.js" />
+    <Content Include="js\vendor\jquery-3.2.1.min.js" />
+    <Content Include="js\vendor\lodash.js" />
     <Content Include="js\routes.app.js" />
     <Content Include="routes.html" />
-    <Content Include="js\angular.min.js" />
+    <Content Include="js\vendor\angular.min.js" />
     <Content Include="css\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
     <Content Include="css\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
     <Content Include="css\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
