@@ -60,12 +60,16 @@ app.filter('br', function () {
 });
 
 app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) {
+    $scope.markers = [];
     $scope.map = {
         options: {
             fullscreenControl: true
         },
         events: {
-            tilesloaded: function (map, route) {
+            polylineComplete: function () {
+                console.log('polylineComplete');
+            },
+            tilesloaded: function (map) {
                 $scope.$apply(function () {
                     console.log('fetched map instance', map, route);
                     var id = jQuery(map.getDiv()).closest('.map-container').data('route-id');
@@ -92,10 +96,26 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
                             parser.setTrackWidth(3);          // Set the track line width
                             parser.setMinTrackPointDelta(0.001);      // Set the minimum distance between track points
                             parser.centerAndZoom(data);
-                            parser.addTrackpointsToMap();         // Add the trackpoints
+                            var polylines = parser.addTrackpointsToMap();         // Add the trackpoints
                             parser.addRoutepointsToMap();         // Add the routepoints
                             parser.addWaypointsToMap();           // Add the waypoints
-                            route.loading = false;
+
+                            var polyline = _.flatten(polylines)[0];
+
+                            //needs to be angularized
+                            var markers = [];
+                            var lengthInMeters = google.maps.geometry.spherical.computeLength(polyline.getPath());
+                            console.log('route length is ', lengthInMeters);
+                            for (var i = 1000; i < lengthInMeters; i += 1000) {
+                                var km = i / 1000;
+                                var point = polyline.GetPointAtDistance(i);
+                                if (point) {
+                                    var coords = { latitude: point.lat(), longitude: point.lng() };
+                                    markers.push({ id: km, coords: coords, title: km + 'km', zIndex: km })
+                                }
+                            }                            route.markers = markers;                            console.log('markers', markers);                            //console.log($scope.markers);                            route.loading = false;
+
+
                         });
 
                 });
@@ -106,6 +126,7 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
     // The "then" callback function provides the google.maps object.
     uiGmapGoogleMapApi.then(function (maps) {
         console.log('google maps api ready');
+        initializePolylineHelpers();
         //console.log(maps);
         //fetch route data from external json file
         $http.get('routes/db.json')

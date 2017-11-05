@@ -33,7 +33,8 @@
                     <div class="run"></div>
                 </div>
                 <ui-gmap-google-map center="route.mapDefaults.center" zoom="route.mapDefaults.zoom" events="map.events" options="map.options">
-
+                    <ui-gmap-markers ng-if="route.markers" models="route.markers" coords="'self'" icon="'icon'">
+                    </ui-gmap-markers>
                 </ui-gmap-google-map>
             </div>
         </div>
