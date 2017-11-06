@@ -7,6 +7,7 @@ todo:
     -   download gpx
     -   terrain indicators
     -   diversion polylines
+    -   layer toggles (show km markers | show points of interest | show route | show meeting place )
     -   after run info
     -   calendar + meet time + link to meetup
     -   (v2) submit your run
