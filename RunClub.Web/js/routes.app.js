@@ -1,9 +1,7 @@
 ﻿/*
 todo:
     -   meet here
-    -   elevation graph
     -   download gpx
-    -   terrain indicators
     -   diversion polylines
     -   layer toggles (show km markers | show points of interest | show route | show meeting place )
     -   after run info
@@ -56,6 +54,7 @@ Name the gpx file $id.gpx and copy the template json blob into the array, fill o
     */
 
 var app = angular.module('routesApp', ['uiGmapgoogle-maps', 'ngSanitize', 'chart.js']);
+
 //configure google maps library (including api key)
 app.config(function (uiGmapGoogleMapApiProvider) {
     uiGmapGoogleMapApiProvider.configure({
@@ -64,6 +63,8 @@ app.config(function (uiGmapGoogleMapApiProvider) {
         libraries: 'geometry,visualization'
     });
 })
+
+//this filter transforms newlines into brs
 app.filter('br', function () {
     return function (text) {
         if (!text) return text;
@@ -72,23 +73,7 @@ app.filter('br', function () {
 });
 
 app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) {
-
-    //sample chart stuff
-    $scope.chart = {
-        datasetOverride: [{ yAxisID: 'y-axis-1' }],
-        options: {
-            scales: {
-                yAxes: [
-                    {
-                        id: 'y-axis-1',
-                        type: 'linear',
-                        display: true,
-                        position: 'left'
-                    }
-                ]
-            }
-        }
-    };
+    var lineGreen = '#20bc5c';
 
     $scope.markers = [];
     $scope.map = {
@@ -99,15 +84,21 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
             tilesloaded: function (map) {
                 //this soup needs some refactoring love
                 $scope.$apply(function () {
+                    //the tilesLoaded event is invoked multiple times so we only do this the first time
+                    //we only use tilesLoaded because the angular maps control doesn't provide an onload callback that i can find
                     if (map.gpxLoaded) return;
-
                     map.gpxLoaded = true;
                     console.log('fetched map instance', map, route);
+
+                    //using the div for the map, and jquery, walk up to the container to get the route id which is placed by binding
                     var id = jQuery(map.getDiv()).closest('.map-container').data('route-id');
+                    //find the original route object in the scope (so we can update it)
                     var route = _.find($scope.data, function (item) { return item.id === id; });
                     console.log('route', route);
 
+                    //by convention, get the gpx file
                     var url = 'routes/' + id + '.gpx';
+                    route.gpxFile = url;
                     console.log('loading ' + url);
                     $http(
                         {
@@ -119,11 +110,14 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
                             }
                         }).then(function (transport) {
                             var data = transport.data;
+                            //gpx file has been loaded from url
                             console.log('loaded ' + url, data);
                             route.gpx = data;
-                            console.log('gpx', data);
+                            //console.log('gpx', data);
+
+                            //invoke the parser with a reference to the map
                             var parser = new GPXParser(data, map);
-                            parser.setTrackColour("#20bc5c");     // Set the track line colour
+                            parser.setTrackColour(lineGreen);     // Set the track line colour
                             parser.setTrackWidth(3);          // Set the track line width
                             parser.setMinTrackPointDelta(0.001);      // Set the minimum distance between track points
                             parser.centerAndZoom(data);
@@ -131,14 +125,19 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
                             parser.addRoutepointsToMap();         // Add the routepoints
                             parser.addWaypointsToMap();           // Add the waypoints
 
+                            //grab the elevation data
                             var elevationData = parser.extractElevationData();
-                            //console.log(elevationData);
+
+                            //the gpx parser library exposes nested arrays as the gpx may contain multiple tracks
                             var polyline = _.flatten(polylines)[0];
 
                             var markers = [];
+                            //compute the polyline length
                             var lengthInMeters = google.maps.geometry.spherical.computeLength(polyline.getPath());
                             console.log('route length is ', lengthInMeters);
 
+                            //this is the map marker icon as svg
+                            //we template it so we can update the text element
                             var template = [
                                 '<?xml version="1.0"?>',
                                 '<svg xmlns="http://www.w3.org/2000/svg" width="94" height="128">',
@@ -152,7 +151,9 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
 
                             for (var i = 1000; i < lengthInMeters; i += 1000) {
                                 var km = i / 1000;
+                                //inject the km marker into the template
                                 var svg = template.replace('{{km}}', km);
+                                //pass the injected svg as a data-uri svg
                                 var icon = new google.maps.MarkerImage('data:image/svg+xml;charset=UTF-8;base64,' + btoa(svg), null, null, null, new google.maps.Size(28, 32));
                                 var point = polyline.GetPointAtDistance(i);
                                 if (point) {
@@ -168,7 +169,7 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
                                     });
                                 }
                             }
-
+                            //add places of interest markers to the markers collection
                             var placesOfInterest = route.placesOfInterest;
                             if (placesOfInterest) {
                                 for (var i = 0; i < placesOfInterest.length; i++) {
@@ -186,17 +187,30 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
                                 }
                             }
                             route.markers = markers;
-                            //console.log('markers', markers);
 
-                            //console.log($scope.markers);
-
+                            //elevation chart
+                            Chart.defaults.global.colors = [lineGreen];
                             route.chart = {
+                                options: {
+                                    scales: {
+                                        xAxes: [
+                                            {
+                                                id: 'x-axis-0',
+                                                type: 'category',
+                                                display: true,
+                                                ticks: {
+                                                    maxTicksLimit: Math.ceil(lengthInMeters / 1000)
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
                                 data: [],
                                 labels: []
                             };
-                            var chartLabels = [];
+                            
                             var last = new google.maps.LatLng(elevationData[0].latitude, elevationData[0].longitude);
-                            var distance = 0, dsm = 0, elevation = 0;
+                            var distance = 0, distanceSteppedMax = 0, elevation = 0;
                             var lastElevation = elevationData[0].elevation;
                             var step = function (number, increment, offset) {
                                 return Math.ceil((number - offset) / increment) * increment + offset;
@@ -204,20 +218,18 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
                             for (var i = 1; i < elevationData.length; i++) {
                                 var point = elevationData[i];
                                 var current = new google.maps.LatLng(point.latitude, point.longitude);
-                                var m = google.maps.geometry.spherical.computeDistanceBetween(last, current);
+                                var metersSinceLastPoint = google.maps.geometry.spherical.computeDistanceBetween(last, current);
                                 last = current;
-                                distance += m;
+                                distance += metersSinceLastPoint;
                                 var elevationDelta = point.elevation - lastElevation;
                                 lastElevation = point.elevation;
                                 elevation += elevationDelta;
                                 if (elevation < 0) elevation = 0;
-                                var ds = step(distance, 100, 0);
-                                //console.log('distance', distance, ds);
-                                if (ds % 500 == 0 && ds > dsm) {
-                                    dsm = ds;
-                                    //console.log(ds, elevation);
-                                    route.chart.data.push(elevation);
-                                    route.chart.labels.push(ds / 1000);
+                                var distanceStepped = step(distance, 100, 0);
+                                if (distanceStepped % 100 == 0 && distanceStepped > distanceSteppedMax) {
+                                    distanceSteppedMax = distanceStepped;
+                                    route.chart.data.push(Math.round(elevation));
+                                    route.chart.labels.push(Math.ceil(distanceStepped / 1000) - 1 + ' km');
                                 }
                             }
 
@@ -249,4 +261,95 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
                 }
             });
     });
+});
+
+Chart.pluginService.register({
+    afterUpdate: function (chart) {
+        var xScale = chart.scales['x-axis-0'];
+        if (xScale.options.ticks.maxTicksLimit) {
+            // store the original maxTicksLimit
+            xScale.options.ticks._maxTicksLimit = xScale.options.ticks.maxTicksLimit;
+            // let chart.js draw the first and last label
+            xScale.options.ticks.maxTicksLimit = (xScale.ticks.length % xScale.options.ticks._maxTicksLimit === 0) ? 1 : 2;
+
+            var originalXScaleDraw = xScale.draw
+            xScale.draw = function () {
+                originalXScaleDraw.apply(this, arguments);
+
+                var xScale = chart.scales['x-axis-0'];
+                if (xScale.options.ticks.maxTicksLimit) {
+                    var helpers = Chart.helpers;
+
+                    var tickFontColor = helpers.getValueOrDefault(xScale.options.ticks.fontColor, Chart.defaults.global.defaultFontColor);
+                    var tickFontSize = helpers.getValueOrDefault(xScale.options.ticks.fontSize, Chart.defaults.global.defaultFontSize);
+                    var tickFontStyle = helpers.getValueOrDefault(xScale.options.ticks.fontStyle, Chart.defaults.global.defaultFontStyle);
+                    var tickFontFamily = helpers.getValueOrDefault(xScale.options.ticks.fontFamily, Chart.defaults.global.defaultFontFamily);
+                    var tickLabelFont = helpers.fontString(tickFontSize, tickFontStyle, tickFontFamily);
+                    var tl = xScale.options.gridLines.tickMarkLength;
+
+                    var isRotated = xScale.labelRotation !== 0;
+                    var yTickStart = xScale.top;
+                    var yTickEnd = xScale.top + tl;
+                    var chartArea = chart.chartArea;
+
+                    // use the saved ticks
+                    var maxTicks = xScale.options.ticks._maxTicksLimit - 1;
+                    var ticksPerVisibleTick = xScale.ticks.length / maxTicks;
+
+                    // chart.js uses an integral skipRatio - this causes all the fractional ticks to be accounted for between the last 2 labels
+                    // we use a fractional skipRatio
+                    var ticksCovered = 0;
+                    helpers.each(xScale.ticks, function (label, index) {
+                        if (index < ticksCovered)
+                            return;
+
+                        ticksCovered += ticksPerVisibleTick;
+
+                        // chart.js has already drawn these 2
+                        if (index === 0 || index === (xScale.ticks.length - 1))
+                            return;
+
+                        // copy of chart.js code
+                        var xLineValue = this.getPixelForTick(index);
+                        var xLabelValue = this.getPixelForTick(index, this.options.gridLines.offsetGridLines);
+
+                        if (this.options.gridLines.display) {
+                            this.ctx.lineWidth = this.options.gridLines.lineWidth;
+                            this.ctx.strokeStyle = this.options.gridLines.color;
+
+                            xLineValue += helpers.aliasPixel(this.ctx.lineWidth);
+
+                            // Draw the label area
+                            this.ctx.beginPath();
+
+                            if (this.options.gridLines.drawTicks) {
+                                this.ctx.moveTo(xLineValue, yTickStart);
+                                this.ctx.lineTo(xLineValue, yTickEnd);
+                            }
+
+                            // Draw the chart area
+                            if (this.options.gridLines.drawOnChartArea) {
+                                this.ctx.moveTo(xLineValue, chartArea.top);
+                                this.ctx.lineTo(xLineValue, chartArea.bottom);
+                            }
+
+                            // Need to stroke in the loop because we are potentially changing line widths & colours
+                            this.ctx.stroke();
+                        }
+
+                        if (this.options.ticks.display) {
+                            this.ctx.save();
+                            this.ctx.translate(xLabelValue + this.options.ticks.labelOffset, (isRotated) ? this.top + 12 : this.options.position === "top" ? this.bottom - tl : this.top + tl);
+                            this.ctx.rotate(helpers.toRadians(this.labelRotation) * -1);
+                            this.ctx.font = tickLabelFont;
+                            this.ctx.textAlign = (isRotated) ? "right" : "center";
+                            this.ctx.textBaseline = (isRotated) ? "middle" : this.options.position === "top" ? "bottom" : "top";
+                            this.ctx.fillText(label, 0, 0);
+                            this.ctx.restore();
+                        }
+                    }, xScale);
+                }
+            };
+        }
+    },
 });

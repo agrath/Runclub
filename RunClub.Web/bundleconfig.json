@@ -11,7 +11,7 @@
       "js/vendor/underscore-min.js",
       "js/vendor/gpx.js",
       "js/vendor/v3_epoly.js",
-      "js/vendor/Chart.bundle.min.js",
+      "js/vendor/Chart.js",
       "js/vendor/angular-chart.js"
     ]
   }

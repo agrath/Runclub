@@ -72,7 +72,6 @@
     <Content Include="css\routes.min.css">
       <DependentUpon>routes.less</DependentUpon>
     </Content>
-    <Content Include="HtmlPage1.html" />
     <Content Include="images\map-icons\km-marker.svg" />
     <Content Include="images\map-icons\parking.png" />
     <Content Include="images\map-icons\photo-camera.png" />
