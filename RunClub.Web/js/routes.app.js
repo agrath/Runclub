@@ -39,11 +39,23 @@ Name the gpx file $id.gpx and copy the template json blob into the array, fill o
             "distanceOptions": [
                 0,
                 0,
-            ]
+            ],
+            "terrain": [
+              {
+                "type": "trail",
+                "label": "Trail",
+                "percent": 10
+              },
+              {
+                "type": "urban",
+                "label": "Urban",
+                "percent": 90
+              }
+            ],
         },
     */
 
-var app = angular.module('routesApp', ['uiGmapgoogle-maps', 'ngSanitize']);
+var app = angular.module('routesApp', ['uiGmapgoogle-maps', 'ngSanitize', 'chart.js']);
 //configure google maps library (including api key)
 app.config(function (uiGmapGoogleMapApiProvider) {
     uiGmapGoogleMapApiProvider.configure({
@@ -54,11 +66,30 @@ app.config(function (uiGmapGoogleMapApiProvider) {
 })
 app.filter('br', function () {
     return function (text) {
+        if (!text) return text;
         return text.replace(/\r?\n/g, '<br/>');
     }
 });
 
 app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) {
+
+    //sample chart stuff
+    $scope.chart = {
+        datasetOverride: [{ yAxisID: 'y-axis-1' }],
+        options: {
+            scales: {
+                yAxes: [
+                    {
+                        id: 'y-axis-1',
+                        type: 'linear',
+                        display: true,
+                        position: 'left'
+                    }
+                ]
+            }
+        }
+    };
+
     $scope.markers = [];
     $scope.map = {
         options: {
@@ -66,6 +97,7 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
         },
         events: {
             tilesloaded: function (map) {
+                //this soup needs some refactoring love
                 $scope.$apply(function () {
                     if (map.gpxLoaded) return;
 
@@ -99,6 +131,8 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
                             parser.addRoutepointsToMap();         // Add the routepoints
                             parser.addWaypointsToMap();           // Add the waypoints
 
+                            var elevationData = parser.extractElevationData();
+                            //console.log(elevationData);
                             var polyline = _.flatten(polylines)[0];
 
                             var markers = [];
@@ -106,7 +140,7 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
                             console.log('route length is ', lengthInMeters);
 
                             var template = [
-                             '<?xml version="1.0"?>',
+                                '<?xml version="1.0"?>',
                                 '<svg xmlns="http://www.w3.org/2000/svg" width="94" height="128">',
                                 '<path d="M46.977 126.643c-.283-.687-6.163-6.437-10.374-11.662C11.656 81.86-16.157 51.084 16.32 13.684 30.7-.21 48.433-1.003 66.663 5.473c51.33 29.702 14.166 78.155-10.236 110.008l-9.45 11.163zm15.44-50.77c34.237-24.486 7.768-71.634-29.848-55.96C21.584 25.77 16.134 35.96 15.943 47.98 15.42 59.675 21.63 69.453 31.47 75.44c7.056 3.842 10.157 4.535 18.146 4.06 5.178-.31 8.16-1.155 12.8-3.628zM37.164 87.562a44.99 43.92 0 1 1 1.12.22" fill="green" fill-opacity=".988"/>',
                                 '<path d="M44.277 69.13a26.01 20.99 0 1 1 .648.103" opacity=".34" fill="none"/><path d="M32.537 114.28a16.656 11.75 0 1 1 .416.06" fill="none"/>',
@@ -133,7 +167,10 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
                                         }
                                     });
                                 }
-                            }                            var placesOfInterest = route.placesOfInterest;                            if (placesOfInterest) {
+                            }
+
+                            var placesOfInterest = route.placesOfInterest;
+                            if (placesOfInterest) {
                                 for (var i = 0; i < placesOfInterest.length; i++) {
                                     var place = placesOfInterest[i];
                                     var icon = new google.maps.MarkerImage('/images/map-icons/' + place.type + '.png', null, null, null, new google.maps.Size(32, 32));
@@ -147,7 +184,44 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
                                         }
                                     });
                                 }
-                            }                            route.markers = markers;                            //console.log('markers', markers);                            //console.log($scope.markers);                            route.loading = false;
+                            }
+                            route.markers = markers;
+                            //console.log('markers', markers);
+
+                            //console.log($scope.markers);
+
+                            route.chart = {
+                                data: [],
+                                labels: []
+                            };
+                            var chartLabels = [];
+                            var last = new google.maps.LatLng(elevationData[0].latitude, elevationData[0].longitude);
+                            var distance = 0, dsm = 0, elevation = 0;
+                            var lastElevation = elevationData[0].elevation;
+                            var step = function (number, increment, offset) {
+                                return Math.ceil((number - offset) / increment) * increment + offset;
+                            }
+                            for (var i = 1; i < elevationData.length; i++) {
+                                var point = elevationData[i];
+                                var current = new google.maps.LatLng(point.latitude, point.longitude);
+                                var m = google.maps.geometry.spherical.computeDistanceBetween(last, current);
+                                last = current;
+                                distance += m;
+                                var elevationDelta = point.elevation - lastElevation;
+                                lastElevation = point.elevation;
+                                elevation += elevationDelta;
+                                if (elevation < 0) elevation = 0;
+                                var ds = step(distance, 100, 0);
+                                //console.log('distance', distance, ds);
+                                if (ds % 500 == 0 && ds > dsm) {
+                                    dsm = ds;
+                                    //console.log(ds, elevation);
+                                    route.chart.data.push(elevation);
+                                    route.chart.labels.push(ds / 1000);
+                                }
+                            }
+
+                            route.loading = false;
 
 
                         });
@@ -156,6 +230,8 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
             }
         }
     }
+
+
     // uiGmapGoogleMapApi is a promise.
     // The "then" callback function provides the google.maps object.
     uiGmapGoogleMapApi.then(function (maps) {

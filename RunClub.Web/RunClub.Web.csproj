@@ -72,6 +72,7 @@
     <Content Include="css\routes.min.css">
       <DependentUpon>routes.less</DependentUpon>
     </Content>
+    <Content Include="HtmlPage1.html" />
     <Content Include="images\map-icons\km-marker.svg" />
     <Content Include="images\map-icons\parking.png" />
     <Content Include="images\map-icons\photo-camera.png" />
@@ -79,6 +80,9 @@
     <Content Include="images\map-icons\public-bathroom.png" />
     <Content Include="images\map-icons\water-fountain.png" />
     <Content Include="js\vendor.bundle.js" />
+    <Content Include="js\vendor\angular-chart.js" />
+    <Content Include="js\vendor\angular.js" />
+    <Content Include="js\vendor\Chart.min.js" />
     <Content Include="js\vendor\underscore-min.js" />
     <Content Include="js\vendor\v3_epoly.js" />
     <Content Include="packages.config" />
@@ -135,6 +139,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

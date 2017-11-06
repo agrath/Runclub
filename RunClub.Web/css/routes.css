@@ -2462,3 +2462,8 @@ ul.distance-options li i {
 .terrain-options li.terrain-urban {
   border-color: #36454f;
 }
+.elevation-graph {
+  margin-top: 20px;
+  width: 800px;
+  height: 200px;
+}
