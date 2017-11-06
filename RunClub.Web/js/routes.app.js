@@ -1,9 +1,7 @@
 ﻿/*
 todo:
     -   meet here
-    -   km markers
     -   elevation graph
-    -   key indicators - water, toilets, lookout/photo, carpark
     -   download gpx
     -   terrain indicators
     -   diversion polylines
