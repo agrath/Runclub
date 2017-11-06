@@ -2337,8 +2337,8 @@
 }
 div.map-container {
   position: relative;
-  height: 400px;
-  width: 400px;
+  height: 600px;
+  width: 800px;
 }
 div.map-container div.map-loading {
   background-color: rgba(255, 255, 255, 0.7);
@@ -2362,8 +2362,8 @@ div.map-container div.map-loading div.run {
   background-repeat: no-repeat;
 }
 div.map-container .angular-google-map-container {
-  height: 400px;
-  width: 400px;
+  height: 600px;
+  width: 800px;
 }
 h1 {
   font-family: "Open Sans";
