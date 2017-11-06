@@ -71,6 +71,9 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
             },
             tilesloaded: function (map) {
                 $scope.$apply(function () {
+                    if (map.gpxLoaded) return;
+
+                    map.gpxLoaded = true;
                     console.log('fetched map instance', map, route);
                     var id = jQuery(map.getDiv()).closest('.map-container').data('route-id');
                     var route = _.find($scope.data, function (item) { return item.id === id; });
