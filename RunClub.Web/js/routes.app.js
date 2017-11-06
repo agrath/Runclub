@@ -129,8 +129,10 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
                                         latitude: point.lat(),
                                         longitude: point.lng(),
                                         title: km + 'km',
-                                        zIndex: km,
-                                        icon: icon
+                                        icon: icon,
+                                        options: {
+                                            zIndex: km
+                                        }
                                     });
                                 }
                             }                            var placesOfInterest = route.placesOfInterest;                            if (placesOfInterest) {
@@ -142,7 +144,9 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
                                         latitude: place.latitude,
                                         longitude: place.longitude,
                                         icon: icon,
-                                        zIndex: place.zIndex ? (place.zIndex + 100) : 100
+                                        options: {
+                                            zIndex: place.zIndex ? (place.zIndex + 100) : 100
+                                        }
                                     });
                                 }
                             }                            route.markers = markers;                            //console.log('markers', markers);                            //console.log($scope.markers);                            route.loading = false;
