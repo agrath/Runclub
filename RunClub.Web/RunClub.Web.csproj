@@ -76,8 +76,8 @@
     <Content Include="images\map-icons\parking.png" />
     <Content Include="images\map-icons\photo-camera.png" />
     <Content Include="images\running.gif" />
-    <Content Include="images\map-icons\toilet.png" />
-    <Content Include="images\map-icons\water.png" />
+    <Content Include="images\map-icons\public-bathroom.png" />
+    <Content Include="images\map-icons\water-fountain.png" />
     <Content Include="js\vendor.bundle.js" />
     <Content Include="js\vendor\underscore-min.js" />
     <Content Include="js\vendor\v3_epoly.js" />

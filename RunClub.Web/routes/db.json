@@ -1,69 +1,115 @@
 ﻿[
-  {
-    "id": "RUCWGquH",
-    "name": "Bucklands Beach",
-    "description": "Mostly flat and mostly coastal, this run is ideal for clocking up the miles ready for that upcoming marathon, half or ultra. The course is a simple lollipop that follows the Rotary Walkway south to the Panmure Basin where we complete an anti-clockwise loop, before heading home.\r\nTo shorten, turn back at any time. To lengthen, there are plenty of options around Musick Point and Bucklands Beach.",
-    "meetingPoint": {
-      "label": "47 The Parade, Bucklands Beach",
-      "latitude": -36.868073,
-      "longitude": 174.903437
+    {
+        "id": "RUCWGquH",
+        "name": "Bucklands Beach",
+        "description": "Mostly flat and mostly coastal, this run is ideal for clocking up the miles ready for that upcoming marathon, half or ultra. The course is a simple lollipop that follows the Rotary Walkway south to the Panmure Basin where we complete an anti-clockwise loop, before heading home.\r\nTo shorten, turn back at any time. To lengthen, there are plenty of options around Musick Point and Bucklands Beach.",
+        "meetingPoint": {
+            "label": "47 The Parade, Bucklands Beach",
+            "latitude": -36.868073,
+            "longitude": 174.903437
+        },
+        "mapDefaults": {
+            "center": {
+                "latitude": -36.848448,
+                "longitude": 174.762191
+            },
+            "zoom": 12
+        },
+        "distanceOptions": [
+            10,
+            15,
+            21,
+            24
+        ]
     },
-    "mapDefaults": {
-      "center": {
-        "latitude": -36.848448,
-        "longitude": 174.762191
-      },
-      "zoom": 12
+    {
+        "id": "kwaBpRSC",
+        "name": "Mangere Bridge Watercare Walkway",
+        "description": "Flat and mostly off road—this is the place to get in LOTS of miles to get you ready for that upcoming half or full marathon!\r\nMeeting at the Mangere Boating Club we’ll head south from there along the coast through Ambury Regional Park, around the lake in the south (turn back here for 13k) and then carry on south along the Watercare Pathway.\r\nOnce back to the boat club we’ll have options to carry on north to the Onehunga coastal path.So there is plenty of extra mileage to be done here on flat trails.",
+        "meetingPoint": {
+            "label": "Mangere Boating Club (opposite 32 Kiwi Esplanade)",
+            "latitude": 36.938903,
+            "longitude": 174.778495
+        },
+        "mapDefaults": {
+            "center": {
+                "latitude": -36.848448,
+                "longitude": 174.762191
+            },
+            "zoom": 12
+        },
+        "distanceOptions": [
+            13,
+            21,
+            32
+        ]
     },
-    "distanceOptions": [
-      10,
-      15,
-      21,
-      24
-    ]
-  },
-  {
-    "id": "kwaBpRSC",
-    "name": "Mangere Bridge Watercare Walkway",
-    "description": "Flat and mostly off road—this is the place to get in LOTS of miles to get you ready for that upcoming half or full marathon!\r\nMeeting at the Mangere Boating Club we’ll head south from there along the coast through Ambury Regional Park, around the lake in the south (turn back here for 13k) and then carry on south along the Watercare Pathway.\r\nOnce back to the boat club we’ll have options to carry on north to the Onehunga coastal path.So there is plenty of extra mileage to be done here on flat trails.",
-    "meetingPoint": {
-      "label": "Mangere Boating Club (opposite 32 Kiwi Esplanade)",
-      "latitude": 36.938903,
-      "longitude": 174.778495
-    },
-    "mapDefaults": {
-      "center": {
-        "latitude": -36.848448,
-        "longitude": 174.762191
-      },
-      "zoom": 12
-    },
-    "distanceOptions": [
-      13,
-      21,
-      32
-    ]
-  },
-  {
-    "id": "xHTfUcKn",
-    "name": "Mission Bay Two Lookouts",
-    "description": "From Mission Bay we’ll make the short journey west before along Tamaki Drive before climbing up to the trig at Bastion Point. We’ll retrace our steps back to Mission Bay before heading out to the lookout at Achilles Point. Retracing our steps one more time back to the beach and cafes of Mission Bay to finish a nice cruisy return to our Sunday runs.\r\nWe will also have an optional extra 3k excursion into the trails of Dingle Dell Reserve (at St Heliers) on the way back to Mission Bay.",
-    "meetingPoint": {
-      "label": "The car park opposite Mission Bay’s Berkeley Cinemas",
-      "latitude": -36.848314,
-      "longitude": 174.832515
-    },
-    "mapDefaults": {
-      "center": {
-        "latitude": -36.848448,
-        "longitude": 174.762191
-      },
-      "zoom": 12
-    },
-    "distanceOptions": [
-      5,
-      11,
-      14
-    ]
-  }
+    {
+        "id": "xHTfUcKn",
+        "name": "Mission Bay Two Lookouts",
+        "description": "From Mission Bay we’ll make the short journey west before along Tamaki Drive before climbing up to the trig at Bastion Point. We’ll retrace our steps back to Mission Bay before heading out to the lookout at Achilles Point. Retracing our steps one more time back to the beach and cafes of Mission Bay to finish a nice cruisy return to our Sunday runs.\r\nWe will also have an optional extra 3k excursion into the trails of Dingle Dell Reserve (at St Heliers) on the way back to Mission Bay.",
+        "meetingPoint": {
+            "label": "The car park opposite Mission Bay’s Berkeley Cinemas",
+            "latitude": -36.848314,
+            "longitude": 174.832515
+        },
+        "mapDefaults": {
+            "center": {
+                "latitude": -36.848448,
+                "longitude": 174.762191
+            },
+            "zoom": 12
+        },
+        "distanceOptions": [
+            5,
+            11,
+            14
+        ],
+        "placesOfInterest": [
+            {
+                "type": "water-fountain",
+                "latitude": -36.847457,
+                "longitude": 174.831502,
+                "zIndex": 3
+            },
+            {
+                "type": "parking",
+                "latitude": -36.847937,
+                "longitude": 174.832953,
+                "zIndex": 2
+            },
+            {
+                "type": "photo-camera",
+                "latitude": -36.843894,
+                "longitude": 174.863693,
+                "zIndex": 3
+            },
+            {
+                "type": "public-bathroom",
+                "latitude": -36.847431,
+                "longitude": 174.86615,
+                "zIndex": 3
+            },
+            {
+                "type": "water-fountain",
+                "latitude": -36.850885,
+                "longitude": 174.855314,
+                "zIndex": 3
+            },
+
+            {
+                "type": "public-bathroom",
+                "latitude": -36.850107,
+                "longitude": 174.843258,
+                "zIndex": 3
+            },
+            {
+                "type": "water-fountain",
+                "latitude": -36.850107,
+                "longitude": 174.843258,
+                "zIndex": 3
+            }
+            
+        ]
+    }
 ]

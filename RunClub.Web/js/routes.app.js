@@ -67,9 +67,6 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
             fullscreenControl: true
         },
         events: {
-            polylineComplete: function () {
-                console.log('polylineComplete');
-            },
             tilesloaded: function (map) {
                 $scope.$apply(function () {
                     if (map.gpxLoaded) return;
@@ -134,6 +131,18 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
                                         title: km + 'km',
                                         zIndex: km,
                                         icon: icon
+                                    });
+                                }
+                            }                            var placesOfInterest = route.placesOfInterest;                            if (placesOfInterest) {
+                                for (var i = 0; i < placesOfInterest.length; i++) {
+                                    var place = placesOfInterest[i];
+                                    var icon = new google.maps.MarkerImage('/images/map-icons/' + place.type + '.png', null, null, null, new google.maps.Size(32, 32));
+                                    markers.push({
+                                        id: 'place' + i,
+                                        latitude: place.latitude,
+                                        longitude: place.longitude,
+                                        icon: icon,
+                                        zIndex: place.zIndex ? (place.zIndex + 100) : 100
                                     });
                                 }
                             }                            route.markers = markers;                            //console.log('markers', markers);                            //console.log($scope.markers);                            route.loading = false;
