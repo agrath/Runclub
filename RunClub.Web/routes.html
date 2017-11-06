@@ -28,6 +28,13 @@
             <ul class="distance-options">
                 <li ng-repeat="option in route.distanceOptions"><i class="fa fa-check-circle-o"></i>{{option}} km</li>
             </ul>
+            <h3>Terrain</h3>
+            <ul class="terrain-options">
+                <li ng-repeat="item in route.terrain">
+                    <strong>{{item.type}}</strong>
+                    {{item.percent}}%
+                </li>
+            </ul>
             <div class="map-container" data-route-id="{{route.id}}">
                 <div class="map-loading" ng-show="route.loading">
                     <div class="run"></div>
