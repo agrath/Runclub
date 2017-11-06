@@ -38,6 +38,11 @@ div.map-container {
     }
 }
 
+h1, h2, h3, h4, h5, h6, p, pre, blockquote {
+    margin-bottom: 0;
+    padding: 0;
+}
+
 h1 {
     font-family: "Open Sans";
     font-size: 23px;
@@ -63,6 +68,7 @@ p, li {
     font-variant: normal;
     font-weight: 400;
     line-height: 23px;
+    margin-top:0;
 }
 
 blockquote {
@@ -85,6 +91,8 @@ pre {
 
 ul.distance-options {
     padding-left: 0;
+    margin: 0;
+    padding: 0;
 
     li {
         display: inline-block;
@@ -99,6 +107,34 @@ ul.distance-options {
             font-size: 23px;
             margin-right: 10px;
             display: inline-block;
+        }
+    }
+}
+
+.terrain-options {
+    padding: 0;
+    margin: 0;
+    width: 800px;
+    margin-bottom: 20px;
+
+    li {
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        border: solid 0px @green;
+        border-bottom-width: 10px;
+        list-style-type: none;
+
+        &.terrain-trail {
+            border-color: #9b4513;
+        }
+
+        &.terrain-forest {
+            border-color: #228b22;
+        }
+
+        &.terrain-road, &.terrain-urban {
+            border-color: #36454f;
         }
     }
 }

@@ -2365,6 +2365,18 @@ div.map-container .angular-google-map-container {
   height: 600px;
   width: 800px;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+blockquote {
+  margin-bottom: 0;
+  padding: 0;
+}
 h1 {
   font-family: "Open Sans";
   font-size: 23px;
@@ -2389,6 +2401,7 @@ li {
   font-variant: normal;
   font-weight: 400;
   line-height: 23px;
+  margin-top: 0;
 }
 blockquote {
   font-family: "Open Sans";
@@ -2408,6 +2421,8 @@ pre {
 }
 ul.distance-options {
   padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
 ul.distance-options li {
   display: inline-block;
@@ -2422,4 +2437,28 @@ ul.distance-options li i {
   font-size: 23px;
   margin-right: 10px;
   display: inline-block;
+}
+.terrain-options {
+  padding: 0;
+  margin: 0;
+  width: 800px;
+  margin-bottom: 20px;
+}
+.terrain-options li {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  border: solid 0px #20bc5c;
+  border-bottom-width: 10px;
+  list-style-type: none;
+}
+.terrain-options li.terrain-trail {
+  border-color: #9b4513;
+}
+.terrain-options li.terrain-forest {
+  border-color: #228b22;
+}
+.terrain-options li.terrain-road,
+.terrain-options li.terrain-urban {
+  border-color: #36454f;
 }

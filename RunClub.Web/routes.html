@@ -30,7 +30,7 @@
             </ul>
             <h3>Terrain</h3>
             <ul class="terrain-options">
-                <li ng-repeat="item in route.terrain">
+                <li ng-repeat="item in route.terrain" ng-style="{width:item.percent+'%'}" ng-class="'terrain-'+item.type">
                     <strong>{{item.type}}</strong>
                     {{item.percent}}%
                 </li>
