@@ -105,17 +105,37 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
 
                             var polyline = _.flatten(polylines)[0];
 
-                            //needs to be angularized
                             var markers = [];
                             var lengthInMeters = google.maps.geometry.spherical.computeLength(polyline.getPath());
                             console.log('route length is ', lengthInMeters);
+
+                            var template = [
+                             '<?xml version="1.0"?>',
+                                '<svg xmlns="http://www.w3.org/2000/svg" width="94" height="128">',
+                                '<path d="M46.977 126.643c-.283-.687-6.163-6.437-10.374-11.662C11.656 81.86-16.157 51.084 16.32 13.684 30.7-.21 48.433-1.003 66.663 5.473c51.33 29.702 14.166 78.155-10.236 110.008l-9.45 11.163zm15.44-50.77c34.237-24.486 7.768-71.634-29.848-55.96C21.584 25.77 16.134 35.96 15.943 47.98 15.42 59.675 21.63 69.453 31.47 75.44c7.056 3.842 10.157 4.535 18.146 4.06 5.178-.31 8.16-1.155 12.8-3.628zM37.164 87.562a44.99 43.92 0 1 1 1.12.22" fill="green" fill-opacity=".988"/>',
+                                '<path d="M44.277 69.13a26.01 20.99 0 1 1 .648.103" opacity=".34" fill="none"/><path d="M32.537 114.28a16.656 11.75 0 1 1 .416.06" fill="none"/>',
+                                '    <path d="M40.106 81.38a33.426 34.453 0 1 1 .833.173" fill="#009400"/>',
+                                '<path d="M42.017 69.425a22.106 22.59 0 1 1 .55.112" fill="#fff"/>',
+                                '<text x="45" y="58" text-anchor="middle" font-family="Open Sans Bold" font-weight="600" font-size="30px" fill="#000000">{{km}}</text>',
+                                '</svg>'
+                            ].join('\n');
+
                             for (var i = 1000; i < lengthInMeters; i += 1000) {
                                 var km = i / 1000;
+                                var svg = template.replace('{{km}}', km);
+                                var icon = new google.maps.MarkerImage('data:image/svg+xml;charset=UTF-8;base64,' + btoa(svg), null, null, null, new google.maps.Size(28, 32));
                                 var point = polyline.GetPointAtDistance(i);
                                 if (point) {
-                                    markers.push({ id: km, latitude: point.lat(), longitude: point.lng(), title: km + 'km', zIndex: km })
+                                    markers.push({
+                                        id: km,
+                                        latitude: point.lat(),
+                                        longitude: point.lng(),
+                                        title: km + 'km',
+                                        zIndex: km,
+                                        icon: icon
+                                    });
                                 }
-                            }                            route.markers = markers;                            console.log('markers', markers);                            //console.log($scope.markers);                            route.loading = false;
+                            }                            route.markers = markers;                            //console.log('markers', markers);                            //console.log($scope.markers);                            route.loading = false;
 
 
                         });
