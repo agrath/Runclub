@@ -2,17 +2,18 @@
   {
     "outputFileName": "js/vendor.bundle.js",
     "inputFiles": [
-      "js/vendor/lodash.js",
-      "js/vendor/jquery-3.2.1.min.js",
-      "js/vendor/angular.min.js",
-      "js/vendor/angular-simple-logger.js",
-      "js/vendor/angular-sanitize.min.js",
-      "js/vendor/angular-google-maps.min.js",
-      "js/vendor/underscore-min.js",
-      "js/vendor/gpx.js",
-      "js/vendor/v3_epoly.js",
-      "js/vendor/Chart.js",
-      "js/vendor/angular-chart.js"
+        "js/vendor/lodash.js",
+        "js/vendor/jquery-3.2.1.min.js",
+        "js/vendor/angular.min.js",
+        "js/vendor/angular-http-file-download.js",
+        "js/vendor/angular-simple-logger.js",
+        "js/vendor/angular-sanitize.min.js",
+        "js/vendor/angular-google-maps.min.js",
+        "js/vendor/underscore-min.js",
+        "js/vendor/gpx.js",
+        "js/vendor/v3_epoly.js",
+        "js/vendor/Chart.js",
+        "js/vendor/angular-chart.js"
     ]
   }
 ]

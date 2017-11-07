@@ -1,7 +1,6 @@
 ﻿/*
 todo:
     -   meet here
-    -   download gpx
     -   diversion polylines
     -   layer toggles (show km markers | show points of interest | show route | show meeting place )
     -   after run info
@@ -54,7 +53,7 @@ Name the gpx file $id.gpx and copy the template json blob into the array, fill o
     */
 
 var app = angular.module('routesApp', ['uiGmapgoogle-maps', 'ngSanitize', 'chart.js']);
-
+registerHttpFileDownload(app);
 //configure google maps library (including api key)
 app.config(function (uiGmapGoogleMapApiProvider) {
     uiGmapGoogleMapApiProvider.configure({
@@ -72,8 +71,12 @@ app.filter('br', function () {
     }
 });
 
-app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) {
+app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi, $httpFileDownload) {
     var lineGreen = '#20bc5c';
+
+    $scope.downloadGpx = function (id) {
+        $httpFileDownload.get('/routes/' + id + '.gpx');
+    };
 
     $scope.markers = [];
     $scope.map = {
@@ -353,3 +356,4 @@ Chart.pluginService.register({
         }
     },
 });
+
