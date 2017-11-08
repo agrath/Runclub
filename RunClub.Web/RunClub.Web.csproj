@@ -72,6 +72,7 @@
     <Content Include="css\routes.min.css">
       <DependentUpon>routes.less</DependentUpon>
     </Content>
+    <Content Include="css\snazzy-info-window.css" />
     <Content Include="images\map-icons\km-marker.svg" />
     <Content Include="images\map-icons\parking.png" />
     <Content Include="images\map-icons\photo-camera.png" />
@@ -82,6 +83,7 @@
     <Content Include="js\vendor\angular-chart.js" />
     <Content Include="js\vendor\angular.js" />
     <Content Include="js\vendor\chart.js" />
+    <Content Include="js\vendor\snazzy-info-window.js" />
     <Content Include="js\vendor\underscore-min.js" />
     <Content Include="js\vendor\v3_epoly.js" />
     <Content Include="packages.config" />

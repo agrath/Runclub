@@ -77,19 +77,30 @@ Name the gpx file $id.gpx and copy the template json blob into the array, fill o
             ],
             "diversions": [
             {
-                "label": "abcABC",
-                "labelAnchor": {
-                    "latitude": -1000,
-                    "longitude": 1000
+                "label": {
+                    "title": "abcABC",
+                    "description": "abcABCblahblah",
+                    "anchor": {
+                        "latitude": -1000,
+                        "longitude": 1000
+                    },
+                    "offset": {
+                        "left": "5px",
+                        "top": "5px"
+                    },
+                    "placement": "bottom",
+                    "backgroundColour": "#f27b08",
+                    "fontColour": "#ffffff",
+                    "fontSize": "13px",
+                    "showCloseButton": true
                 },
-                "colour": "#f27b08",
-                "description": "Adds an additional 2k onto the run",
+                "strokeColour": "#f27b08",
                 "points": [
-                    [ -1000, 1000],
+                    [ -1000, 1000 ],
                     [ -1000, 1000 ]
                 ]
             }
-            ]
+        ]
         },
     */
 
@@ -284,13 +295,12 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
                                         var pair = diversion.points[p];
                                         polylineCoordinates.push(new google.maps.LatLng(pair[0], pair[1]));
                                     }
-                                    console.log('line', polylineCoordinates);
 
                                     var lineSymbol = {
                                         path: 'M 0,-0.5 0,0.5',
                                         strokeOpacity: 1,
                                         scale: 4,
-                                        strokeColor: diversion.colour || '#f27b08'
+                                        strokeColor: diversion.strokeColour || '#f27b08'
                                     };
 
                                     var line = new google.maps.Polyline({
@@ -304,15 +314,32 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
                                         map: map
                                     });
 
-                                    var info = new google.maps.InfoWindow({
-                                        content: '<strong>' + diversion.label + '</strong><br/>' + diversion.description
-                                    });
-                                    var marker = new google.maps.Marker({
-                                        position: new google.maps.LatLng(diversion.labelAnchor.latitude, diversion.labelAnchor.longitude),
-                                        map: map,
-                                        visible: false
-                                    });
-                                    info.open(map, marker);
+                                    if (diversion.label) {
+                                        var marker = new google.maps.Marker({
+                                            position: new google.maps.LatLng(diversion.label.anchor.latitude, diversion.label.anchor.longitude),
+                                            map: map,
+                                            visible: false
+                                        });
+                                        var info = new SnazzyInfoWindow({
+                                            marker: marker,
+                                            placement: diversion.label.placement || 'right',
+                                            offset: diversion.label.offset,
+                                            maxWidth: 180,
+                                            content: '<strong>' + diversion.label.title + '</strong>' +
+                                                     '<div>' + diversion.label.description + '</div>',
+                                            showCloseButton: diversion.label.showCloseButton || false,
+                                            closeOnMapClick: false,
+                                            padding: '10px',
+                                            backgroundColor: diversion.label.backgroundColour || 'rgba(0, 0, 0, 0.7)',
+                                            border: false,
+                                            borderRadius: '0px',
+                                            shadow: false,
+                                            fontColor: diversion.label.fontColour || '#fff',
+                                            fontSize: diversion.label.fontSize || '14px'
+                                        });
+                                        info.open();
+                                    }
+
                                 }
                             }
 

@@ -147,13 +147,24 @@
         ],
         "diversions": [
             {
-                "label": "Glover park loop",
-                "labelAnchor": {
-                    "latitude": -36.845877,
-                    "longitude": 174.868832
+                "label": {
+                    "title": "Glover park loop",
+                    "description": "Adds an additional 2k onto the run",
+                    "anchor": {
+                        "latitude": -36.848290,
+                        "longitude": 174.86900
+                    },
+                    "offset": {
+                        "left": "5px",
+                        "top": "5px"
+                    },
+                    "placement": "bottom",
+                    "backgroundColour": "#f27b08",
+                    "fontColour": "#ffffff",
+                    "fontSize": "13px",
+                    "showCloseButton": true
                 },
-                "colour": "#f27b08",
-                "description": "Adds an additional 2k onto the run",
+                "strokeColour": "#f27b08",
                 "points": [
                     [ -36.844461, 174.86401 ],
                     [ -36.844873, 174.864653 ],
