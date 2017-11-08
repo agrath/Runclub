@@ -49,6 +49,47 @@ Name the gpx file $id.gpx and copy the template json blob into the array, fill o
                 "percent": 90
               }
             ],
+            "placesOfInterest": [
+                {
+                    "type": "water-fountain",
+                    "latitude": -1000,
+                    "longitude": 1000,
+                    "zIndex": 3
+                },
+                 {
+                    "type": "parking",
+                    "latitude": -1000,
+                    "longitude": 1000,
+                    "zIndex": 3
+                },
+                {
+                    "type": "public-bathroom",
+                    "latitude": -1000,
+                    "longitude": 1000,
+                    "zIndex": 3
+                },
+                {
+                    "type": "photo-camera",
+                    "latitude": -1000,
+                    "longitude": 1000,
+                    "zIndex": 3
+                }
+            ],
+            "diversions": [
+            {
+                "label": "abcABC",
+                "labelAnchor": {
+                    "latitude": -1000,
+                    "longitude": 1000
+                },
+                "colour": "#f27b08",
+                "description": "Adds an additional 2k onto the run",
+                "points": [
+                    [ -1000, 1000],
+                    [ -1000, 1000 ]
+                ]
+            }
+            ]
         },
     */
 
@@ -249,7 +290,7 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
                                         path: 'M 0,-0.5 0,0.5',
                                         strokeOpacity: 1,
                                         scale: 4,
-                                        strokeColor: '#f27b08'
+                                        strokeColor: diversion.colour || '#f27b08'
                                     };
 
                                     var line = new google.maps.Polyline({
