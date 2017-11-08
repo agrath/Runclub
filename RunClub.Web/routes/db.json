@@ -103,46 +103,57 @@
         ],
         "placesOfInterest": [
             {
-                "type": "water-fountain",
-                "latitude": -36.847457,
-                "longitude": 174.831502,
-                "zIndex": 3
-            },
-            {
                 "type": "parking",
                 "latitude": -36.847937,
-                "longitude": 174.832953,
-                "zIndex": 2
+                "longitude": 174.832953
+            },
+            {
+                "type": "water-fountain",
+                "latitude": -36.847457,
+                "longitude": 174.831502
             },
             {
                 "type": "photo-camera",
                 "latitude": -36.843894,
-                "longitude": 174.863693,
-                "zIndex": 3
+                "longitude": 174.863693
             },
             {
                 "type": "public-bathroom",
                 "latitude": -36.847431,
-                "longitude": 174.86615,
-                "zIndex": 3
+                "longitude": 174.86615
+            },
+            {
+                "type": "water-and-bathroom",
+                "latitude": -36.850885,
+                "longitude": 174.855314
             },
             {
                 "type": "water-fountain",
-                "latitude": -36.850885,
-                "longitude": 174.855314,
-                "zIndex": 3
+                "latitude": -36.850107,
+                "longitude": 174.843258
+            }
+        ],
+        "placesOfInterestOptions": [
+            {
+                "type": "parking",
+                "zIndex": 40
             },
             {
                 "type": "public-bathroom",
-                "latitude": -36.850107,
-                "longitude": 174.843258,
-                "zIndex": 3
+                "zIndex": 30
+            },
+            {
+                "type": "water-and-bathroom",
+                "widthMultiplier":  2,
+                "zIndex": 30
             },
             {
                 "type": "water-fountain",
-                "latitude": -36.850107,
-                "longitude": 174.843258,
-                "zIndex": 3
+                "zIndex": 20
+            },
+            {
+                "type": "photo-camera",
+                "zIndex": 10
             }
         ],
         "diversions": [

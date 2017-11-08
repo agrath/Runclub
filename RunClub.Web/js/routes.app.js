@@ -51,28 +51,52 @@ Name the gpx file $id.gpx and copy the template json blob into the array, fill o
             ],
             "placesOfInterest": [
                 {
-                    "type": "water-fountain",
-                    "latitude": -1000,
-                    "longitude": 1000,
-                    "zIndex": 3
-                },
-                 {
                     "type": "parking",
                     "latitude": -1000,
                     "longitude": 1000,
-                    "zIndex": 3
                 },
                 {
                     "type": "public-bathroom",
                     "latitude": -1000,
                     "longitude": 1000,
-                    "zIndex": 3
+                },
+                {
+                    "type": "water-and-bathroom",
+                    "latitude": -1000,
+                    "longitude": 1000,
+                },
+                {
+                    "type": "water-fountain",
+                    "latitude": -1000,
+                    "longitude": 1000,
                 },
                 {
                     "type": "photo-camera",
                     "latitude": -1000,
                     "longitude": 1000,
-                    "zIndex": 3
+                }
+            ],
+            "placesOfInterestOptions": [
+                {
+                    "type": "parking",
+                    "zIndex": 40
+                },
+                {
+                    "type": "public-bathroom",
+                    "zIndex": 30
+                },
+                {
+                    "type": "water-and-bathroom",
+                    "widthMultiplier":  2,
+                    "zIndex": 30
+                },
+                {
+                    "type": "water-fountain",
+                    "zIndex": 20
+                },
+                {
+                    "type": "photo-camera",
+                    "zIndex": 10
                 }
             ],
             "diversions": [
@@ -222,17 +246,33 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
                             }
                             //add places of interest markers to the markers collection
                             var placesOfInterest = route.placesOfInterest;
+                            var placesOfInterestOptions;
+                            if (route.placesOfInterestOptions) {
+                                // read placesOfInterestOptions into a dictionary for fast lookup later
+                                placesOfInterestOptions = {};
+                                var i = null;
+                                for (i = 0; i < route.placesOfInterestOptions.length; i += 1) {
+                                    placesOfInterestOptions[route.placesOfInterestOptions[i].type] = route.placesOfInterestOptions[i];
+                                }
+                            }
                             if (placesOfInterest) {
                                 for (var i = 0; i < placesOfInterest.length; i++) {
                                     var place = placesOfInterest[i];
-                                    var icon = new google.maps.MarkerImage('/images/map-icons/' + place.type + '.png', null, null, null, new google.maps.Size(32, 32));
+                                    var options;
+                                    if (placesOfInterestOptions) {
+                                        options = placesOfInterestOptions[place.type];
+                                    }
+
+                                    var width = 32 * (options && options.widthMultiplier ? options.widthMultiplier : (place.widthMultiplier ? place.widthMultiplier : 1));
+                                    var height = 32 * (options && options.heightMultiplier ? options.heightMultiplier : (place.heightMultiplier ? place.heightMultiplier : 1));
+                                    var icon = new google.maps.MarkerImage('/images/map-icons/' + place.type + '.png', null, null, null, new google.maps.Size(width , height));
                                     markers.push({
                                         id: 'place' + i,
                                         latitude: place.latitude,
                                         longitude: place.longitude,
                                         icon: icon,
                                         options: {
-                                            zIndex: place.zIndex ? (place.zIndex + 100) : 100
+                                            zIndex: 100 + (options && options.zIndex? options.zIndex : (place.zIndex? place.zIndex : 0))
                                         }
                                     });
                                 }
