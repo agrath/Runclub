@@ -80,7 +80,6 @@
     <Content Include="images\map-icons\water-fountain.png" />
     <Content Include="js\vendor.bundle.js" />
     <Content Include="js\vendor\angular-chart.js" />
-    <Content Include="js\vendor\angular-http-file-download.js" />
     <Content Include="js\vendor\angular.js" />
     <Content Include="js\vendor\chart.js" />
     <Content Include="js\vendor\underscore-min.js" />
