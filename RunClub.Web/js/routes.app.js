@@ -207,7 +207,7 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
                                 data: [],
                                 labels: []
                             };
-                            
+
                             var last = new google.maps.LatLng(elevationData[0].latitude, elevationData[0].longitude);
                             var distance = 0, distanceSteppedMax = 0, elevation = 0;
                             var lastElevation = elevationData[0].elevation;
@@ -229,6 +229,49 @@ app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) 
                                     distanceSteppedMax = distanceStepped;
                                     route.chart.data.push(Math.round(elevation));
                                     route.chart.labels.push(Math.ceil(distanceStepped / 1000) - 1 + ' km');
+                                }
+                            }
+
+                            if (route.diversions && route.diversions.length) {
+                                console.log('route has diversions')
+                                for (var i = 0; i < route.diversions.length; i++) {
+                                    var diversion = route.diversions[i];
+                                    console.log('diversion', diversion);
+
+                                    var polylineCoordinates = [];
+                                    for (var p = 0; p < diversion.points.length; p++) {
+                                        var pair = diversion.points[p];
+                                        polylineCoordinates.push(new google.maps.LatLng(pair[0], pair[1]));
+                                    }
+                                    console.log('line', polylineCoordinates);
+
+                                    var lineSymbol = {
+                                        path: 'M 0,-0.5 0,0.5',
+                                        strokeOpacity: 1,
+                                        scale: 4,
+                                        strokeColor: '#f27b08'
+                                    };
+
+                                    var line = new google.maps.Polyline({
+                                        path: polylineCoordinates,
+                                        strokeOpacity: 0,
+                                        icons: [{
+                                            icon: lineSymbol,
+                                            offset: '0',
+                                            repeat: '10px'
+                                        }],
+                                        map: map
+                                    });
+
+                                    var info = new google.maps.InfoWindow({
+                                        content: '<strong>' + diversion.label + '</strong><br/>' + diversion.description
+                                    });
+                                    var marker = new google.maps.Marker({
+                                        position: new google.maps.LatLng(diversion.labelAnchor.latitude, diversion.labelAnchor.longitude),
+                                        map: map,
+                                        visible: false
+                                    });
+                                    info.open(map, marker);
                                 }
                             }
 
