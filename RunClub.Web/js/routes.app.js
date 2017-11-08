@@ -53,7 +53,7 @@ Name the gpx file $id.gpx and copy the template json blob into the array, fill o
     */
 
 var app = angular.module('routesApp', ['uiGmapgoogle-maps', 'ngSanitize', 'chart.js']);
-registerHttpFileDownload(app);
+
 //configure google maps library (including api key)
 app.config(function (uiGmapGoogleMapApiProvider) {
     uiGmapGoogleMapApiProvider.configure({
@@ -71,12 +71,8 @@ app.filter('br', function () {
     }
 });
 
-app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi, $httpFileDownload) {
+app.controller('routesController', function ($scope, $http, uiGmapGoogleMapApi) {
     var lineGreen = '#20bc5c';
-
-    $scope.downloadGpx = function (id) {
-        $httpFileDownload.get('/routes/' + id + '.gpx');
-    };
 
     $scope.markers = [];
     $scope.map = {

@@ -17449,44 +17449,44 @@ function registerHttpFileDownload(app) {
         };
 
         return {
-            get: function (url, options) {
+            get: function (url, options, filename, mimeType) {
                 var deferred = $q.defer();
                 var self = this;
                 //for get, we assume the payload is not base64
                 $http.get(url, options).then(function (response) {
                     var data = response.data;
-                    self.handle(btoa(data));
+                    self.handle(deferred, btoa(data), filename, mimeType);
                 }, function () {
                     deferred.reject();
                 });
 
                 return deferred.promise;
             },
-            post: function (url, options) {
+            post: function (url, options, filename, mimeType) {
                 var deferred = $q.defer();
                 var self = this;
                 //if you're using post, you'll probably be running a webapi method to emit base64 encoded content
                 $http.post(url, options).then(function (response) {
-                    self.handle(response.data);
+                    self.handle(deferred, response.data, filename, mimeType);
                 }, function () {
                     deferred.reject();
                 });
 
                 return deferred.promise;
             },
-            handle: function (data) {
+            handle: function (deferred, data, filename, mimeType) {
                 var a = document.createElement('a'),
                   blob;
                 if ('msSaveBlob' in window.navigator) {
-                    blob = base64ToBlob(data, result.MimeType);
-                    window.navigator.msSaveBlob(blob, result.FileName);
+                    blob = base64ToBlob(data, mimeType);
+                    window.navigator.msSaveBlob(blob, filename);
                     deferred.resolve();
                 } else if (window.URL && window.Blob && ('download' in a) && window.atob) {
                     // Do it the HTML5 compliant way
-                    blob = base64ToBlob(data, result.MimeType);
+                    blob = base64ToBlob(data, mimeType);
                     var url = window.URL.createObjectURL(blob);
                     a.href = url;
-                    a.download = result.FileName;
+                    a.download = filename;
                     document.body.appendChild(a);
                     a.click();
                     $timeout(function () {

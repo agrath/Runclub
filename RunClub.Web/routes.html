@@ -7,7 +7,6 @@
     <script src="js/vendor/lodash.js"></script>
     <script src="js/vendor/jquery-3.2.1.min.js"></script>
     <script src="js/vendor/angular.js"></script>
-    <script src="js/vendor/angular-http-file-download.js"></script>
     <script src="js/vendor/angular-simple-logger.js"></script>
     <script src="js/vendor/angular-sanitize.min.js"></script>
     <script src="js/vendor/angular-google-maps.min.js"></script>
@@ -47,7 +46,7 @@
                     </ui-gmap-markers>
                 </ui-gmap-google-map>
             </div>
-            <a ng-click="downloadGpx(route.id)" href="#!">Download GPX file</a>
+            <a ng-href="/routes/{{route.id}}.gpx" download="{{route.name}}.gpx">Download GPX file</a>
 
             <div class="elevation-graph">
                 <canvas id="line" class="chart chart-line" chart-labels="route.chart.labels" chart-data="route.chart.data" chart-series="route.chart.series" chart-options="route.chart.options" chart-dataset-override="route.chart.datasetOverride" width="800" height="200"></canvas>
