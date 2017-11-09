@@ -2361,7 +2361,7 @@ div.map-container div.map-loading div.run {
   background-size: contain;
   background-repeat: no-repeat;
 }
-div.map-container .angular-google-map-container {
+div.map-container .map-canvas {
   height: 600px;
   width: 800px;
 }

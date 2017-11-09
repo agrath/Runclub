@@ -76,11 +76,12 @@
     <Content Include="images\map-icons\km-marker.svg" />
     <Content Include="images\map-icons\parking.png" />
     <Content Include="images\map-icons\photo-camera.png" />
+    <Content Include="images\map-icons\water-and-bathroom.png" />
     <Content Include="images\running.gif" />
     <Content Include="images\map-icons\public-bathroom.png" />
     <Content Include="images\map-icons\water-fountain.png" />
+    <Content Include="js\temp.js" />
     <Content Include="js\vendor.bundle.js" />
-    <Content Include="js\vendor\angular-chart.js" />
     <Content Include="js\vendor\angular.js" />
     <Content Include="js\vendor\chart.js" />
     <Content Include="js\vendor\snazzy-info-window.js" />
@@ -106,12 +107,9 @@
   <ItemGroup>
     <Content Include="css\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
     <Content Include="images\map-icons\green-pin.png" />
-    <Content Include="js\vendor\angular-google-maps.min.js" />
     <Content Include="js\vendor\angular-sanitize.min.js" />
-    <Content Include="js\vendor\angular-simple-logger.js" />
     <Content Include="js\vendor\gpx.js" />
     <Content Include="js\vendor\jquery-3.2.1.min.js" />
-    <Content Include="js\vendor\lodash.js" />
     <Content Include="js\routes.app.js" />
     <Content Include="routes.html" />
     <Content Include="js\vendor\angular.min.js" />
