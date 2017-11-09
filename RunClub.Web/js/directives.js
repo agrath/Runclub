@@ -274,8 +274,7 @@ app.directive('gpxElevationChart', function (style) {
             config.data.datasets[0].data = chartData.data;
             var ctx = element.find("canvas").get(0).getContext("2d");
             var line = new Chart(ctx, config);
-
-            console.log('chart', config);
+            //console.log('chart', config);
         }
     };
 });
