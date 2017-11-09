@@ -212,8 +212,8 @@ app.directive('gpxElevationChart', function (style) {
                     datasets: [
                         {
                             label: 'Route elevation',
-                            backgroundColor: 'rgba(32,188,92,0.4)',
-                            borderColor: '#20bc5c',
+                            backgroundColor: style.elevationGraphFillColour,
+                            borderColor: style.elevationGraphStrokeColour,
                             data: [
                             ]
                         }
