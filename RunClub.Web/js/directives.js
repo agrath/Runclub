@@ -39,9 +39,7 @@ app.directive('gpxViewer', function ($timeout, style) {
                             longitude: point.lng(),
                             title: km + 'km',
                             icon: icon,
-                            options: {
-                                zIndex: km
-                            }
+                            zIndex: google.maps.Marker.MAX_ZINDEX + km
                         });
                     }
                 }
@@ -76,9 +74,7 @@ app.directive('gpxViewer', function ($timeout, style) {
                             latitude: place.latitude,
                             longitude: place.longitude,
                             icon: icon,
-                            options: {
-                                zIndex: 100 + (options && options.zIndex ? options.zIndex : (place.zIndex ? place.zIndex : 0))
-                            }
+                            zIndex: google.maps.Marker.MAX_ZINDEX + 100 + (options && options.zIndex ? options.zIndex : (place.zIndex ? place.zIndex : 0))
                         });
                     }
                 }
