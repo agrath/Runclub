@@ -42,10 +42,27 @@
                 <gpx-viewer route="route" ng-if="route.gpxLoaded"></gpx-viewer>
             </div>
             <a ng-href="/routes/{{route.id}}.gpx" download="{{route.name}}.gpx">Download GPX file</a>
+            <br/><br />
             <strong>Display on map:</strong>
             <ul>
-                <li><input type="checkbox" ng-model="route.displayGpxRoute" id="display-route" /><label for="display-route">Route</label></li>
-                <li><input type="checkbox" ng-model="route.displayDistanceMarkers" id="display-distance-markers" /><label for="display-distance-markers">Distance markers</label></li>
+                <li><input type="checkbox" ng-model="route.displayGpxRoute" id="{{route.id}}-display-route" /><label for="{{route.id}}-display-route">Route</label></li>
+                <li><input type="checkbox" ng-model="route.displayDistanceMarkers" id="{{route.id}}-display-distance-markers" /><label for="{{route.id}}-display-distance-markers">Distance markers</label></li>
+                <li ng-if="route.placesOfInterest.length">
+                    <em>Places of Interests</em>
+                    <ul>
+                        <li ng-repeat="placesOfInterestType in route.placesOfInterestOptions">
+                            <input type="checkbox" ng-model="placesOfInterestType.visible" id="{{route.id}}-display-placesOfInterestType-{{$index}}" /><label for="{{route.id}}-display-placesOfInterestType-{{$index}}">{{placesOfInterestType.label}}</label>
+                        </li>
+                    </ul>
+                </li>
+                <li ng-if="route.diversions.length">
+                    <em>Alternate routes</em>
+                    <ul>
+                        <li ng-repeat="diversion in route.diversions">
+                            <input type="checkbox" ng-model="diversion.visible" id="{{route.id}}-display-diversion-{{$index}}" /><label for="{{route.id}}-display-diversion-{{$index}}">{{diversion.label.title}}</label>
+                        </li>
+                    </ul>
+                </li>
             </ul>
             <div class="elevation-graph">
                 <gpx-elevation-chart route="route" ng-if="route.gpxLoaded"></gpx-elevation-chart>

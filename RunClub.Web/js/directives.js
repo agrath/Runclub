@@ -69,13 +69,16 @@ app.directive('gpxViewer', function ($timeout, style) {
                         var width = 32 * (options && options.widthMultiplier ? options.widthMultiplier : (place.widthMultiplier ? place.widthMultiplier : 1));
                         var height = 32 * (options && options.heightMultiplier ? options.heightMultiplier : (place.heightMultiplier ? place.heightMultiplier : 1));
                         var icon = new google.maps.MarkerImage('/images/map-icons/' + place.type + '.png', null, null, null, new google.maps.Size(width, height));
-                        markers.push({
+                        var marker = {
                             id: 'place' + i,
                             latitude: place.latitude,
                             longitude: place.longitude,
                             icon: icon,
                             zIndex: google.maps.Marker.MAX_ZINDEX + 100 + (options && options.zIndex ? options.zIndex : (place.zIndex ? place.zIndex : 0))
-                        });
+                        };
+                        markers.push(marker);
+                        options.markers = options.markers || [];
+                        options.markers.push(marker);
                     }
                 }
                 return markers;
@@ -171,7 +174,46 @@ app.directive('gpxViewer', function ($timeout, style) {
                     marker.g.setMap(v ? $scope.map : null);
                 });
             });
-            
+            if (route.placesOfInterestOptions) {
+                $scope.$watch(function ($scope) {
+                    return route.placesOfInterestOptions.map(function (p) {
+                        return p.visible;
+                    });
+                }, function (v) {
+                    console.log('route.placeOfInterestOption', v);
+                    _.each(route.placesOfInterestOptions, function (option, index) {
+                        console.log('option', option, index, v[index]);
+                        var visible = v[index];
+                        if (option.markers && option.markers.length) {
+                            _.each(option.markers, function (marker) {
+                                if ((marker.g.map && !visible) || (!marker.g.map && visible)) {
+                                    marker.g.setMap(visible ? $scope.map : null);
+                                }
+                            });
+                        }
+                    });
+                }, true);
+            }
+            if (route.diversions && route.diversions.length) {
+                $scope.$watch(function ($scope) {
+                    return route.diversions.map(function (diversion) {
+                        return diversion.visible;
+                    });
+                }, function (v) {
+                    console.log('route.diversions', v);
+                    _.each(route.diversions, function (diversion, index) {
+                        console.log('diversion', diversion, index, v[index]);
+                        var visible = v[index];
+                        if (diversion.g && diversion.g) {
+                            if ((diversion.g.line.map && !visible) || (!diversion.g.line.map && visible)) {
+                                diversion.g.line.setMap(visible ? $scope.map : null);
+                                diversion.g.info.setMap(visible ? $scope.map : null);
+                            }
+                        }
+                    });
+                }, true);
+            }
+
             var mapContainer = element.find(".map-canvas").get(0);
             var map = new google.maps.Map(mapContainer, {
                 center: { lat: route.mapDefaults.center.latitude, lng: route.mapDefaults.center.longitude },

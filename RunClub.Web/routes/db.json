@@ -136,28 +136,39 @@
         "placesOfInterestOptions": [
             {
                 "type": "parking",
+                "label": "Parking",
+                "visible": true,
                 "zIndex": 40
             },
             {
                 "type": "public-bathroom",
+                "label": "Public bathroom",
+                "visible": true,
                 "zIndex": 30
             },
             {
                 "type": "water-and-bathroom",
-                "widthMultiplier":  2,
+                "label": "Water & bathroom",
+                "visible": true,
+                "widthMultiplier": 2,
                 "zIndex": 30
             },
             {
                 "type": "water-fountain",
+                "label": "Water fountain",
+                "visible": true,
                 "zIndex": 20
             },
             {
                 "type": "photo-camera",
+                "label": "Photo opportunity",
+                "visible": true,
                 "zIndex": 10
             }
         ],
         "diversions": [
             {
+                "visible": true,
                 "label": {
                     "title": "Glover park loop",
                     "description": "Adds an additional 2k onto the run",
