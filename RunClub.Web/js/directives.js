@@ -161,15 +161,15 @@ app.directive('gpxViewer', function ($timeout, style) {
 
             $scope.loading = true;
 
-            console.log('map.directive.init');
+            //console.log('map.directive.init');
 
             var route = $scope.route;
             $scope.$watch('route.displayGpxRoute', function (v) {
-                console.log('route.displayGpxRoute', v);
+                //console.log('route.displayGpxRoute', v);
                 $scope.gpxPolyline.setMap(v ? $scope.map : null);
             });
             $scope.$watch('route.displayDistanceMarkers', function (v) {
-                console.log('route.displayDistanceMarkers', v);
+                //console.log('route.displayDistanceMarkers', v);
                 _.each($scope.distanceMarkers, function (marker) {
                     marker.g.setMap(v ? $scope.map : null);
                 });
@@ -180,9 +180,9 @@ app.directive('gpxViewer', function ($timeout, style) {
                         return p.visible;
                     });
                 }, function (v) {
-                    console.log('route.placeOfInterestOption', v);
+                    //console.log('route.placeOfInterestOption', v);
                     _.each(route.placesOfInterestOptions, function (option, index) {
-                        console.log('option', option, index, v[index]);
+                        //console.log('option', option, index, v[index]);
                         var visible = v[index];
                         if (option.markers && option.markers.length) {
                             _.each(option.markers, function (marker) {
@@ -200,9 +200,9 @@ app.directive('gpxViewer', function ($timeout, style) {
                         return diversion.visible;
                     });
                 }, function (v) {
-                    console.log('route.diversions', v);
+                    //console.log('route.diversions', v);
                     _.each(route.diversions, function (diversion, index) {
-                        console.log('diversion', diversion, index, v[index]);
+                        //console.log('diversion', diversion, index, v[index]);
                         var visible = v[index];
                         if (diversion.g && diversion.g) {
                             if ((diversion.g.line.map && !visible) || (!diversion.g.line.map && visible)) {

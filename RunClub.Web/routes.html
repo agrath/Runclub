@@ -13,63 +13,96 @@
     <script src="js/vendor/v3_epoly.js"></script>
     <script src="js/vendor/chart.js"></script>
     <script src="js/vendor/snazzy-info-window.js"></script>
+    <script src="js/vendor/popper.js"></script>
+    <script src="js/vendor/bootstrap.js"></script>
     <script src="js/app.js"></script>
     <script src="js/directives.js"></script>
     <script src="js/routes.controller.js"></script>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/awesome-bootstrap-checkbox.css" rel="stylesheet" />
     <link href="css/snazzy-info-window.css" rel="stylesheet" />
     <link href="css/routes.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="route-container" ng-app="routesApp" ng-controller="routesController">
-        <div class="route" ng-repeat="route in data">
-            <h1>{{ route.name }}</h1>
-            <p ng-bind-html="route.description | br"></p>
-            <h3>Meeting point</h3>
-            <p>{{route.meetingPoint.label}}</p>
-            <h3>Distance options</h3>
-            <ul class="distance-options">
-                <li ng-repeat="option in route.distanceOptions"><i class="fa fa-check-circle-o"></i>{{option}} km</li>
-            </ul>
-            <h3>Terrain</h3>
-            <ul class="terrain-options">
-                <li ng-repeat="item in route.terrain" ng-style="{width:item.percent+'%'}" ng-class="'terrain-'+item.type">
-                    <strong>{{item.type}}</strong>
-                    {{item.percent}}%
-                </li>
-            </ul>
-            <div class="map-container" data-route-id="{{route.id}}">
-                <gpx-viewer route="route" ng-if="route.gpxLoaded"></gpx-viewer>
-            </div>
-            <a ng-href="/routes/{{route.id}}.gpx" download="{{route.name}}.gpx">Download GPX file</a>
-            <br/><br />
-            <strong>Display on map:</strong>
-            <ul>
-                <li><input type="checkbox" ng-model="route.displayGpxRoute" id="{{route.id}}-display-route" /><label for="{{route.id}}-display-route">Route</label></li>
-                <li><input type="checkbox" ng-model="route.displayDistanceMarkers" id="{{route.id}}-display-distance-markers" /><label for="{{route.id}}-display-distance-markers">Distance markers</label></li>
-                <li ng-if="route.placesOfInterest.length">
-                    <em>Places of Interests</em>
-                    <ul>
-                        <li ng-repeat="placesOfInterestType in route.placesOfInterestOptions">
-                            <input type="checkbox" ng-model="placesOfInterestType.visible" id="{{route.id}}-display-placesOfInterestType-{{$index}}" /><label for="{{route.id}}-display-placesOfInterestType-{{$index}}">{{placesOfInterestType.label}}</label>
-                        </li>
-                    </ul>
-                </li>
-                <li ng-if="route.diversions.length">
-                    <em>Alternate routes</em>
-                    <ul>
-                        <li ng-repeat="diversion in route.diversions">
-                            <input type="checkbox" ng-model="diversion.visible" id="{{route.id}}-display-diversion-{{$index}}" /><label for="{{route.id}}-display-diversion-{{$index}}">{{diversion.label.title}}</label>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="elevation-graph">
-                <gpx-elevation-chart route="route" ng-if="route.gpxLoaded"></gpx-elevation-chart>
+    <div class="container-fluid">
+
+
+        <div class="route-container" ng-app="routesApp" ng-controller="routesController">
+            <div class="route" ng-repeat="route in data">
+                <h1>{{ route.name }}</h1>
+                <p ng-bind-html="route.description | br"></p>
+                <h3>Meeting point</h3>
+                <p>{{route.meetingPoint.label}}</p>
+                <h3>Distance options</h3>
+                <ul class="distance-options">
+                    <li ng-repeat="option in route.distanceOptions"><i class="fa fa-check-circle-o"></i>{{option}} km</li>
+                </ul>
+                <h3>Terrain</h3>
+                <ul class="terrain-options">
+                    <li ng-repeat="item in route.terrain" ng-style="{width:item.percent+'%'}" ng-class="'terrain-'+item.type">
+                        <strong>{{item.type}}</strong>
+                        {{item.percent}}%
+                    </li>
+                </ul>
+                <div class="map-container" data-route-id="{{route.id}}">
+                    <gpx-viewer route="route" ng-if="route.gpxLoaded"></gpx-viewer>
+                </div>
+
+                <div class="map-footer">
+                    <div class="dropdown keepopen pull-right">
+                        <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Show
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <ul>
+                                <li>
+                                    <div class="form-check abc-checkbox">
+                                        <input type="checkbox" class="form-check-input" ng-model="route.displayGpxRoute" id="{{route.id}}-display-route" />
+                                        <label class="form-check-label" for="{{route.id}}-display-route">Route</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check abc-checkbox">
+                                        <input type="checkbox" ng-model="route.displayDistanceMarkers" id="{{route.id}}-display-distance-markers" />
+                                        <label class="form-check-label" for="{{route.id}}-display-distance-markers">Distance markers</label>
+                                    </div>
+                                </li>
+                                <li ng-if="route.placesOfInterest.length">
+                                    <strong>Places of Interests</strong>
+                                    <ul>
+                                        <li ng-repeat="placesOfInterestType in route.placesOfInterestOptions">
+                                            <div class="form-check abc-checkbox">
+                                                <input type="checkbox" class="form-check-input" ng-model="placesOfInterestType.visible" id="{{route.id}}-display-placesOfInterestType-{{$index}}" />
+                                                <label class="form-check-label" for="{{route.id}}-display-placesOfInterestType-{{$index}}">{{placesOfInterestType.label}}</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li ng-if="route.diversions.length">
+                                    <strong>Alternate routes</strong>
+                                    <ul>
+                                        <li ng-repeat="diversion in route.diversions">
+                                            <div class="form-check abc-checkbox">
+                                                <input type="checkbox" class="form-check-input" ng-model="diversion.visible" id="{{route.id}}-display-diversion-{{$index}}" />
+                                                <label class="form-check-label" for="{{route.id}}-display-diversion-{{$index}}">{{diversion.label.title}}</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a ng-href="/routes/{{route.id}}.gpx" download="{{route.name}}.gpx" href="#" class="btn btn-primary btn-sm pull-right" role="button" aria-disabled="true" style="margin-right:10px;">Download GPX file</a>
+                </div>
+
+                <div class="elevation-graph">
+                    <gpx-elevation-chart route="route" ng-if="route.gpxLoaded"></gpx-elevation-chart>
+                </div>
+
             </div>
 
         </div>
-
     </div>
 </body>
 </html>

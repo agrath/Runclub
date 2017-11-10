@@ -2467,3 +2467,30 @@ ul.distance-options li i {
   width: 800px;
   height: 200px;
 }
+.dropdown ul {
+  padding: 10px;
+  margin: 0;
+  width: 200px;
+}
+.dropdown ul li {
+  list-style-type: none;
+}
+.dropdown ul li .form-check {
+  margin-bottom: 0;
+}
+.dropdown ul li ul {
+  padding: 0;
+  margin: 0;
+}
+.dropdown ul li ul li {
+  margin-left: 10px;
+}
+.map-footer {
+  padding: 10px;
+  background-color: #f7f7f7;
+  width: 800px;
+  float: left;
+}
+.map-footer .dropdown {
+  background-color: #fff;
+}
