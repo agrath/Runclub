@@ -30,6 +30,9 @@ app.controller('routesController', function ($scope, $http, style) {
         _.each($scope.data, function (route) {
             var id = route.id;
 
+            route.displayGpxRoute = true;
+            route.displayDistanceMarkers = true;
+
             //by convention, get the gpx file
             var url = 'routes/' + id + '.gpx';
             route.gpxFile = url;
@@ -49,7 +52,6 @@ app.controller('routesController', function ($scope, $http, style) {
                     console.log('loaded ' + url, data);
                     route.gpx = data;
                     route.gpxLoaded = true;
-
                 });
 
         });

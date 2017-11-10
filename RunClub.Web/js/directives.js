@@ -82,7 +82,7 @@ app.directive('gpxViewer', function ($timeout, style) {
             },
             addDiversionToMap: function (diversion, map) {
                 console.log('diversion', diversion);
-
+                var o = {};
                 var polylineCoordinates = [];
                 for (var p = 0; p < diversion.points.length; p++) {
                     var pair = diversion.points[p];
@@ -106,6 +106,7 @@ app.directive('gpxViewer', function ($timeout, style) {
                     }],
                     map: map
                 });
+                o.line = line;
 
                 if (diversion.label) {
                     var marker = new google.maps.Marker({
@@ -131,8 +132,9 @@ app.directive('gpxViewer', function ($timeout, style) {
                         fontSize: diversion.label.fontSize || '14px'
                     });
                     info.open();
+                    o.info = info;
                 }
-
+                return o;
             },
             addMarkerToMap: function (data, map) {
                 var point = new google.maps.LatLng(data.latitude, data.longitude);
@@ -143,6 +145,7 @@ app.directive('gpxViewer', function ($timeout, style) {
                     optimised: false,
                     zIndex: data.zIndex
                 });
+                return marker;
             }
         };
     return {
@@ -155,24 +158,41 @@ app.directive('gpxViewer', function ($timeout, style) {
 
             $scope.loading = true;
 
+            console.log('map.directive.init');
+
             var route = $scope.route;
+            $scope.$watch('route.displayGpxRoute', function (v) {
+                console.log('route.displayGpxRoute', v);
+                $scope.gpxPolyline.setMap(v ? $scope.map : null);
+            });
+            $scope.$watch('route.displayDistanceMarkers', function (v) {
+                console.log('route.displayDistanceMarkers', v);
+                _.each($scope.distanceMarkers, function (marker) {
+                    marker.g.setMap(v ? $scope.map : null);
+                });
+            });
+            
             var mapContainer = element.find(".map-canvas").get(0);
             var map = new google.maps.Map(mapContainer, {
                 center: { lat: route.mapDefaults.center.latitude, lng: route.mapDefaults.center.longitude },
                 zoom: route.mapDefaults.zoom
             });
+            $scope.map = map;
 
             var polyline = helper.parseGpx(route.gpx, map);
+            $scope.gpxPolyline = polyline;
 
             //compute the polyline length
             var lengthInMeters = google.maps.geometry.spherical.computeLength(polyline.getPath());
             console.log('route length is ', lengthInMeters);
 
             var distanceMarkers = helper.getDistanceMarkers(polyline, lengthInMeters, 1000, helper.distanceMarkerIcon);
+            $scope.distanceMarkers = distanceMarkers;
             var placesOfInterestMarkers = helper.getPlacesOfInterestMarkers(route);
+            $scope.placesOfInterestMarkers = placesOfInterestMarkers;
             var markers = distanceMarkers.concat(placesOfInterestMarkers);
-            _.each(markers, function (marker) { helper.addMarkerToMap(marker, map); });
-            _.each(route.diversions, function (diversion) { helper.addDiversionToMap(diversion, map); });
+            _.each(markers, function (marker) { marker.g = helper.addMarkerToMap(marker, map); });
+            _.each(route.diversions, function (diversion) { diversion.g = helper.addDiversionToMap(diversion, map); });
 
             //only so the running man shows up
             $timeout(function () {

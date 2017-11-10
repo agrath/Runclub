@@ -42,7 +42,11 @@
                 <gpx-viewer route="route" ng-if="route.gpxLoaded"></gpx-viewer>
             </div>
             <a ng-href="/routes/{{route.id}}.gpx" download="{{route.name}}.gpx">Download GPX file</a>
-
+            <strong>Display on map:</strong>
+            <ul>
+                <li><input type="checkbox" ng-model="route.displayGpxRoute" id="display-route" /><label for="display-route">Route</label></li>
+                <li><input type="checkbox" ng-model="route.displayDistanceMarkers" id="display-distance-markers" /><label for="display-distance-markers">Distance markers</label></li>
+            </ul>
             <div class="elevation-graph">
                 <gpx-elevation-chart route="route" ng-if="route.gpxLoaded"></gpx-elevation-chart>
             </div>
