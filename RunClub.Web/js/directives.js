@@ -2,16 +2,34 @@
 app.directive('gpxViewer', function ($timeout, style) {
     var helper =
         {
-            distanceMarkerIcon: [
-                '<?xml version="1.0"?>',
-                '<svg xmlns="http://www.w3.org/2000/svg" width="94" height="128">',
-                '<path d="M46.977 126.643c-.283-.687-6.163-6.437-10.374-11.662C11.656 81.86-16.157 51.084 16.32 13.684 30.7-.21 48.433-1.003 66.663 5.473c51.33 29.702 14.166 78.155-10.236 110.008l-9.45 11.163zm15.44-50.77c34.237-24.486 7.768-71.634-29.848-55.96C21.584 25.77 16.134 35.96 15.943 47.98 15.42 59.675 21.63 69.453 31.47 75.44c7.056 3.842 10.157 4.535 18.146 4.06 5.178-.31 8.16-1.155 12.8-3.628zM37.164 87.562a44.99 43.92 0 1 1 1.12.22" fill="green" fill-opacity=".988"/>',
-                '<path d="M44.277 69.13a26.01 20.99 0 1 1 .648.103" opacity=".34" fill="none"/><path d="M32.537 114.28a16.656 11.75 0 1 1 .416.06" fill="none"/>',
-                '    <path d="M40.106 81.38a33.426 34.453 0 1 1 .833.173" fill="#009400"/>',
-                '<path d="M42.017 69.425a22.106 22.59 0 1 1 .55.112" fill="#fff"/>',
-                '<text x="45" y="58" text-anchor="middle" font-family="Open Sans Bold" font-weight="600" font-size="30px" fill="#000000">{{km}}</text>',
-                '</svg>'
-            ].join('\n'),
+            distanceMarkerIcons: [
+                [
+                    '<?xml version="1.0"?>',
+                    '<svg xmlns= "http://www.w3.org/2000/svg" width= "40" height= "40" viewBox="0 0 10.583333 10.583332">',
+                    '  <g transform="translate(271.16771,-49.144185)">',
+                    '    <path style="fill:#20bc5c;fill-opacity:1;stroke:#000000;stroke-width:0.01369718;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"',
+                    '          d="m -269.41966,49.163168 h 8.35147 c 0.21764,0 0.5417,0.372559 0.5417,0.609381 v 5.843323 c 0,0.236828 -0.29099,0.677277 -0.50863,0.675525 l -2.05478,-0.01654 h -2.17055 -1.3904 l -4.46566,3.49756 2.26688,-3.49756 h -0.63617 c -0.21764,0 -0.50861,-0.356016 -0.50861,-0.592844 0,-2.030456 0,0.340007 0,-5.909468 0,-0.236822 0.35711,-0.609381 0.57475,-0.609381 z"',
+                    '    />',
+                    '    <text xml:space="preserve" style="font-size:5.64444447px;line-height:1.25;font-family:Calibri;text-align:center;text-anchor:middle;fill:#FFFFFF;stroke-width:0.26458332"',
+                    '          x="-265.18155" y="54.430794">{{km}}</text>',
+                    '  </g>',
+                    '</svg>'
+                ].join('\n'),
+                [
+                    '<?xml version="1.0"?>',
+                    '<svg xmlns= "http://www.w3.org/2000/svg" width= "40" height= "40" viewBox="0 0 10.583333 10.583332">',
+                    '   <g transform="matrix(-1,0,0,1,-260.47419,-49.144185)">',
+                    '    <path style="fill:#20bc5c;fill-opacity:1;stroke:#000000;stroke-width:0.01369718;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"',
+                    '          d="m -269.41966,49.163168 h 8.35147 c 0.21764,0 0.5417,0.372559 0.5417,0.609381 v 5.843323 c 0,0.236828 -0.29099,0.677277 -0.50863,0.675525 l -2.05478,-0.01654 h -2.17055 -1.3904 l -4.46566,3.49756 2.26688,-3.49756 h -0.63617 c -0.21764,0 -0.50861,-0.356016 -0.50861,-0.592844 0,-2.030456 0,0.340007 0,-5.909468 0,-0.236822 0.35711,-0.609381 0.57475,-0.609381 z"',
+                    '    />',
+                    '  </g>',
+                    '  <g transform="translate(271.16771,-49.144185)">',
+                    '    <text xml:space="preserve" style="font-size:5.64444447px;line-height:1.25;font-family:Calibri;text-align:center;text-anchor:middle;fill:#FFFFFF;stroke-width:0.26458332"',
+                    '          x="-265.18155" y="54.430794">{{km}}</text>',
+                    '  </g>',
+                    '</svg>'
+                ].join('\n')
+            ],
             parseGpx: function (data, map) {
                 var parser = new GPXParser(data, map);
                 parser.setTrackColour(style.lineStrokeColour);     // Set the track line colour
@@ -23,14 +41,21 @@ app.directive('gpxViewer', function ($timeout, style) {
                 var polyline = _.flatten(polylines)[0];
                 return polyline;
             },
-            getDistanceMarkers: function (polyline, length, interval, iconSvg) {
+            getDistanceMarkers: function (polyline, length, interval, svgIcons, alignmentHint) {
                 var markers = [];
                 for (var i = interval; i < length; i += interval) {
                     var km = i / interval;
                     //inject the km marker into the template
-                    var svg = iconSvg.replace('{{km}}', km);
+                    var alignment = 0
+                    if (alignmentHint) {
+                        if (km <= alignmentHint.length) {
+                            alignment = alignmentHint[km - 1];
+                        }
+                    }
+                    var anchor = alignment == 0 ? new google.maps.Point(0, 32) : new google.maps.Point(32, 32);
+                    var svg = svgIcons[alignment].replace('{{km}}', km)
                     //pass the injected svg as a data-uri svg
-                    var icon = new google.maps.MarkerImage('data:image/svg+xml;charset=UTF-8;base64,' + btoa(svg), null, null, null, new google.maps.Size(28, 32));
+                    var icon = new google.maps.MarkerImage('data:image/svg+xml;charset=UTF-8;base64,' + btoa(svg), null, null, anchor, new google.maps.Size(32, 32));
                     var point = polyline.GetPointAtDistance(i);
                     if (point) {
                         markers.push({
@@ -235,7 +260,7 @@ app.directive('gpxViewer', function ($timeout, style) {
             var lengthInMeters = google.maps.geometry.spherical.computeLength(polyline.getPath());
             console.log('route length is ', lengthInMeters);
 
-            var distanceMarkers = helper.getDistanceMarkers(polyline, lengthInMeters, 1000, helper.distanceMarkerIcon);
+            var distanceMarkers = helper.getDistanceMarkers(polyline, lengthInMeters, 1000, helper.distanceMarkerIcons, route.distanceMarkerAlignments);
             $scope.distanceMarkers = distanceMarkers;
             var placesOfInterestMarkers = helper.getPlacesOfInterestMarkers(route);
             $scope.placesOfInterestMarkers = placesOfInterestMarkers;
