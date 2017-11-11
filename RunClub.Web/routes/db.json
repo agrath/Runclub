@@ -69,7 +69,7 @@
         ]
     },
     {
-        "id": "xHTfUcKn",
+        "id": "viyVJdOl",
         "name": "Mission Bay Two Lookouts",
         "description": "From Mission Bay we’ll make the short journey west before along Tamaki Drive before climbing up to the trig at Bastion Point. We’ll retrace our steps back to Mission Bay before heading out to the lookout at Achilles Point. Retracing our steps one more time back to the beach and cafes of Mission Bay to finish a nice cruisy return to our Sunday runs.\r\nWe will also have an optional extra 3k excursion into the trails of Dingle Dell Reserve (at St Heliers) on the way back to Mission Bay.",
         "meetingPoint": {
@@ -108,29 +108,84 @@
                 "longitude": 174.832953
             },
             {
-                "type": "water-fountain",
-                "latitude": -36.847457,
-                "longitude": 174.831502
-            },
-            {
-                "type": "photo-camera",
-                "latitude": -36.843894,
-                "longitude": 174.863693
+                "type": "public-bathroom",
+                "latitude": -36.8491871,
+                "longitude": 174.823504
             },
             {
                 "type": "public-bathroom",
-                "latitude": -36.847431,
-                "longitude": 174.86615
+                "latitude": -36.8465892,
+                "longitude": 174.8264026
             },
             {
-                "type": "water-and-bathroom",
-                "latitude": -36.850885,
-                "longitude": 174.855314
+                "type": "photo-camera",
+                "latitude": -36.850068,
+                "longitude": 174.823995
+            },
+            {
+                "type": "public-bathroom",
+                "latitude": -36.8474719,
+                "longitude": 174.8299256
+            },
+            {
+                "type": "public-bathroom",
+                "latitude": -36.84759561,
+                "longitude": 174.83187407
             },
             {
                 "type": "water-fountain",
-                "latitude": -36.850107,
-                "longitude": 174.843258
+                "latitude": -36.847539,
+                "longitude": 174.831703
+            },
+            {
+                "type": "public-bathroom",
+                "Latitude": -36.85005219,
+                "Longitude": 174.84328218
+            },
+            {
+                "type": "water-fountain",
+                "latitude": -36.850114,
+                "longitude": 174.8432634
+            },
+            {
+                "type": "public-bathroom",
+                "latitude": -36.85079957,
+                "longitude": 174.85535145
+            },
+            {
+                "type": "water-fountain",
+                "latitude": -36.850855,
+                "longitude": 174.855353
+            },
+            {
+                "type": "water-fountain",
+                "latitude": -36.850177,
+                "longitude": 174.857398
+            },
+            {
+                "type": "public-bathroom",
+                "latitude": -36.8493942,
+                "longitude": 174.859680
+            },
+            {
+                "type": "water-fountain",
+                "latitude": -36.8493564,
+                "longitude": 174.8596567
+            },
+            {
+                "type": "photo-camera",
+                "latitude": -36.84368693,
+                "longitude": 174.86389160
+            },
+            {
+                "type": "public-bathroom",
+                "latitude": -36.84759350,
+                "longitude": 174.86623451
+            },
+            {
+                "type": "water-fountain",
+                "latitude": -36.84769519,
+                "longitude": 174.86627743
             }
         ],
         "placesOfInterestOptions": [
@@ -144,13 +199,6 @@
                 "type": "public-bathroom",
                 "label": "Public bathroom",
                 "visible": true,
-                "zIndex": 30
-            },
-            {
-                "type": "water-and-bathroom",
-                "label": "Water & bathroom",
-                "visible": true,
-                "widthMultiplier": 2,
                 "zIndex": 30
             },
             {

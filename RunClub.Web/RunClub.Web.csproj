@@ -103,6 +103,7 @@
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
     <Content Include="routes\template.json" />
+    <Content Include="routes\viyVJdOl.gpx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
