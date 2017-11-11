@@ -33,6 +33,89 @@
         "label": "Urban",
         "percent": 50
       }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "public-bathroom",
+        "latitude": -36.90346,
+        "longitude": 174.846176
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9120522,
+        "longitude": 174.871613
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9018555,
+        "longitude": 174.85405
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9082146,
+        "longitude": 174.84935
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.9082375,
+        "longitude": 174.8493
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9023628,
+        "longitude": 174.867462
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.899086,
+        "longitude": 174.854172
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8708267,
+        "longitude": 174.904053
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.87363,
+        "longitude": 174.9139
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8803139,
+        "longitude": 174.896957
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.90346,
+        "longitude": 174.846069
+      }
     ]
   },
   {
