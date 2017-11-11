@@ -2,7 +2,6 @@
 /*
 todo:
     -   meet here
-    -   layer toggles (show km markers | show points of interest | show route | show meeting place )
     -   after run info
     -   calendar + meet time + link to meetup
     -   (v2) submit your run
@@ -16,49 +15,27 @@ Generate a randomized id here: https://passwordsgenerator.net/ (8 character, alp
 Name the gpx file $id.gpx and copy the template json blob into the array, fill out the details
 */
 
-app.controller('routesController', function ($scope, $http, style) {
 
-    $scope.markers = [];
-
-    initializePolylineHelpers();
-
-    //fetch route data from external json file
-    $http.get('routes/db.json').then(function (res) {
-        //store in scope
-        console.log('route data loaded');
-        $scope.data = res.data;
-        _.each($scope.data, function (route) {
-            var id = route.id;
-            if (!route.enabled) return;
-            route.displayGpxRoute = true;
-            route.displayDistanceMarkers = true;
-
-            //by convention, get the gpx file
-            var url = 'routes/' + id + '.gpx';
-            route.gpxFile = url;
-            console.log('loading ' + url);
-
-            $http(
-                {
-                    method: 'get',
-                    url: url,
-                    transformResponse: function (data) {
-                        // string -> XML document object
-                        return $.parseXML(data);
-                    }
-                }).then(function (transport) {
-                    var data = transport.data;
-                    //gpx file has been loaded from url
-                    console.log('loaded ' + url, data);
-                    route.gpx = data;
-                    route.gpxLoaded = true;
-                });
-
-        });
-    });
-
+app.controller('routeListController', function ($scope, RouteService, $location) {
+    RouteService.getRoutes().then(function (data) {
+        $scope.routes = data;
+    })
 });
+app.controller('showRouteController', function ($scope, RouteService, $routeParams, $location) {
+    $scope.id = $routeParams.id;
 
+    RouteService.getRoutes().then(function (data) {
+        $scope.routes = data;
+        $scope.route = _.find($scope.routes, function (r) { return r.id === $scope.id; });
 
+        $scope.route.gpx().then(function (gpx) {
+            $scope.route.gpxLoaded = true;
+            //console.log('gpx', gpx)
+        });
+    })
 
-
+    $scope.list = function () {
+        $location.path('routes/all'); // path not hash
+    };
+    
+});

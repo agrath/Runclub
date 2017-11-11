@@ -86,9 +86,12 @@
     <Content Include="images\running.gif" />
     <Content Include="images\map-icons\public-bathroom.png" />
     <Content Include="images\map-icons\water-fountain.png" />
+    <Content Include="index.html" />
     <Content Include="js\app.js" />
     <Content Include="js\directives.js" />
+    <Content Include="js\routes.js" />
     <Content Include="js\vendor.bundle.js" />
+    <Content Include="js\vendor\angular-route.js" />
     <Content Include="js\vendor\angular.js" />
     <Content Include="js\vendor\bootstrap.js" />
     <Content Include="js\vendor\chart.js" />
@@ -145,6 +148,8 @@
     <Content Include="css\font-awesome-4.7.0\less\stacked.less" />
     <Content Include="css\font-awesome-4.7.0\less\variables.less" />
     <None Include="routes\db.json" />
+    <Content Include="templates\all-routes.html" />
+    <Content Include="templates\route.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

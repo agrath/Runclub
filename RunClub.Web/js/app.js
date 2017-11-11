@@ -1,4 +1,4 @@
-﻿var app = angular.module('routesApp', ['ngSanitize']);
+﻿var app = angular.module('routesApp', ['ngSanitize', 'ngRoute']);
 app.value('style', {
     lineStrokeColour: '#20bc5c',
     lineWeight: 3,
@@ -7,7 +7,58 @@ app.value('style', {
     elevationGraphFillColour: 'rgba(32,188,92,0.4)',
     elevationGraphStrokeColour: '#20bc5c'
 });
+app.factory('RouteService', ['$q', '$http', function ($q, $http) {
+    var self = this;
+    var _deferred = $q.defer();
+    $http.get('routes/db.json')
+        .then(
+        function (transport, status, headers, config) {
+            //console.log('db.json loaded');
+            var data = transport.data;
+            //iterate over each route and add a promise for the gpx data
+            _.each(data, function (route) {
 
+                var id = route.id;
+                if (!route.enabled) return;
+                route.displayGpxRoute = true;
+                route.displayDistanceMarkers = true;
+
+
+                route.gpxData = null;
+                route.gpx = function () {
+                    var deferred = $q.defer();
+                    if (route.gpxData) {
+                        //console.log('cached', route.gpxData);
+                        deferred.resolve(route.gpxData);
+                    }
+                    else {
+                        //by convention, get the gpx file
+                        var url = 'routes/' + id + '.gpx';
+                        route.gpxFile = url;
+                        $http({ method: 'get', url: url, transformResponse: function (data) { return $.parseXML(data); } }).then(function (res) {
+                            //console.log('loaded ' + url, res.data);
+                            route.gpxData = res.data;
+                            deferred.resolve(route.gpxData);
+                        });
+                    }
+                    return deferred.promise;
+                };
+
+
+            });
+
+            _deferred.resolve(data);
+        },
+        function (transport, status, headers, config) {
+            _deferred.reject("Error loading db.json");
+        });
+
+    return {
+        getRoutes: function () {
+            return _deferred.promise;
+        }
+    };
+}]);
 //this filter transforms newlines into brs
 app.filter('br', function () {
     return function (text) {
@@ -27,6 +78,6 @@ jQuery(document).ready(function () {
             "hide.bs.dropdown": function () { return this.closable; },
             "click": function (e) { this.closable = !$(e.target).closest(".dropdown-menu").length; },
         }, ".dropdown.keepopen");
-            
+
     }, 250);
 });

@@ -1,0 +1,6 @@
+﻿<h1>all routes</h1>
+<ul>
+    <li ng-repeat="route in routes | filter: { enabled: true }">
+        <a ng-href="#!/routes/{{route.id}}">{{ route.name }}</a>
+    </li>
+</ul>

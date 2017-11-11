@@ -93,7 +93,7 @@ app.directive('gpxViewer', function ($timeout, style) {
 
                         var width = 32 * (options && options.widthMultiplier ? options.widthMultiplier : (place.widthMultiplier ? place.widthMultiplier : 1));
                         var height = 32 * (options && options.heightMultiplier ? options.heightMultiplier : (place.heightMultiplier ? place.heightMultiplier : 1));
-                        var icon = new google.maps.MarkerImage('/images/map-icons/' + place.type + '.png', null, null, new google.maps.Point(16,16), new google.maps.Size(width, height));
+                        var icon = new google.maps.MarkerImage('/images/map-icons/' + place.type + '.png', null, null, new google.maps.Point(16, 16), new google.maps.Size(width, height));
                         var marker = {
                             id: 'place' + i,
                             latitude: place.latitude,
@@ -148,7 +148,7 @@ app.directive('gpxViewer', function ($timeout, style) {
                         offset: diversion.label.offset,
                         maxWidth: 180,
                         content: '<strong>' + diversion.label.title + '</strong>' +
-                                 '<div>' + diversion.label.description + '</div>',
+                        '<div>' + diversion.label.description + '</div>',
                         showCloseButton: diversion.label.showCloseButton || false,
                         closeOnMapClick: false,
                         padding: '10px',
@@ -192,95 +192,97 @@ app.directive('gpxViewer', function ($timeout, style) {
         link: function ($scope, element, attributes, ngModelCtrl) {
 
             $scope.loading = true;
-
-            //console.log('map.directive.init');
-
             var route = $scope.route;
-            $scope.$watch('route.displayGpxRoute', function (v) {
-                //console.log('route.displayGpxRoute', v);
-                $scope.gpxPolyline.setMap(v ? $scope.map : null);
-            });
-            $scope.$watch('route.displayDistanceMarkers', function (v) {
-                //console.log('route.displayDistanceMarkers', v);
-                _.each($scope.distanceMarkers, function (marker) {
-                    marker.g.setMap(v ? $scope.map : null);
+            route.gpx().then(function (gpx) {
+
+                //console.log('map.directive.init');
+                
+                $scope.$watch('route.displayGpxRoute', function (v) {
+                    //console.log('route.displayGpxRoute', v);
+                    $scope.gpxPolyline.setMap(v ? $scope.map : null);
                 });
-            });
-            if (route.placesOfInterestOptions) {
-                $scope.$watch(function ($scope) {
-                    return route.placesOfInterestOptions.map(function (p) {
-                        return p.visible;
+                $scope.$watch('route.displayDistanceMarkers', function (v) {
+                    //console.log('route.displayDistanceMarkers', v);
+                    _.each($scope.distanceMarkers, function (marker) {
+                        marker.g.setMap(v ? $scope.map : null);
                     });
-                }, function (v) {
-                    //console.log('route.placeOfInterestOption', v);
-                    _.each(route.placesOfInterestOptions, function (option, index) {
-                        //console.log('option', option, index, v[index]);
-                        var visible = v[index];
-                        if (option.markers && option.markers.length) {
-                            _.each(option.markers, function (marker) {
-                                if ((marker.g.map && !visible) || (!marker.g.map && visible)) {
-                                    marker.g.setMap(visible ? $scope.map : null);
-                                }
-                            });
-                        }
-                    });
-                }, true);
-            }
-            if (route.diversions && route.diversions.length) {
-                $scope.$watch(function ($scope) {
-                    return route.diversions.map(function (diversion) {
-                        return diversion.visible;
-                    });
-                }, function (v) {
-                    //console.log('route.diversions', v);
-                    _.each(route.diversions, function (diversion, index) {
-                        //console.log('diversion', diversion, index, v[index]);
-                        var visible = v[index];
-                        if (diversion.g && diversion.g) {
-                            if ((diversion.g.line.map && !visible) || (!diversion.g.line.map && visible)) {
-                                diversion.g.line.setMap(visible ? $scope.map : null);
-                                diversion.g.info.setMap(visible ? $scope.map : null);
+                });
+                if (route.placesOfInterestOptions) {
+                    $scope.$watch(function ($scope) {
+                        return route.placesOfInterestOptions.map(function (p) {
+                            return p.visible;
+                        });
+                    }, function (v) {
+                        //console.log('route.placeOfInterestOption', v);
+                        _.each(route.placesOfInterestOptions, function (option, index) {
+                            //console.log('option', option, index, v[index]);
+                            var visible = v[index];
+                            if (option.markers && option.markers.length) {
+                                _.each(option.markers, function (marker) {
+                                    if ((marker.g.map && !visible) || (!marker.g.map && visible)) {
+                                        marker.g.setMap(visible ? $scope.map : null);
+                                    }
+                                });
                             }
-                        }
-                    });
-                }, true);
-            }
+                        });
+                    }, true);
+                }
+                if (route.diversions && route.diversions.length) {
+                    $scope.$watch(function ($scope) {
+                        return route.diversions.map(function (diversion) {
+                            return diversion.visible;
+                        });
+                    }, function (v) {
+                        //console.log('route.diversions', v);
+                        _.each(route.diversions, function (diversion, index) {
+                            //console.log('diversion', diversion, index, v[index]);
+                            var visible = v[index];
+                            if (diversion.g && diversion.g) {
+                                if ((diversion.g.line.map && !visible) || (!diversion.g.line.map && visible)) {
+                                    diversion.g.line.setMap(visible ? $scope.map : null);
+                                    diversion.g.info.setMap(visible ? $scope.map : null);
+                                }
+                            }
+                        });
+                    }, true);
+                }
 
-            var mapContainer = element.find(".map-canvas").get(0);
-            var map = new google.maps.Map(mapContainer, {
-                center: { lat: route.mapDefaults.center.latitude, lng: route.mapDefaults.center.longitude },
-                zoom: route.mapDefaults.zoom
+                var mapContainer = element.find(".map-canvas").get(0);
+                var map = new google.maps.Map(mapContainer, {
+                    center: { lat: route.mapDefaults.center.latitude, lng: route.mapDefaults.center.longitude },
+                    zoom: route.mapDefaults.zoom
+                });
+                $scope.map = map;
+
+                var polyline = helper.parseGpx(gpx, map);
+                $scope.gpxPolyline = polyline;
+
+                //compute the polyline length
+                var lengthInMeters = google.maps.geometry.spherical.computeLength(polyline.getPath());
+                console.log('route length is ', lengthInMeters);
+
+                var distanceMarkers = helper.getDistanceMarkers(polyline, lengthInMeters, 1000, helper.distanceMarkerIcons, route.distanceMarkerAlignments);
+                $scope.distanceMarkers = distanceMarkers;
+                var placesOfInterestMarkers = helper.getPlacesOfInterestMarkers(route);
+                $scope.placesOfInterestMarkers = placesOfInterestMarkers;
+                var markers = distanceMarkers.concat(placesOfInterestMarkers);
+                _.each(markers, function (marker) { marker.g = helper.addMarkerToMap(marker, map); });
+                _.each(route.diversions, function (diversion) { diversion.g = helper.addDiversionToMap(diversion, map); });
+
+                //only so the running man shows up
+                $timeout(function () {
+                    $scope.loading = false;
+                }, 2000)
+
+                google.maps.event.addListener(map, 'click', function (event) {
+                    var lat = event.latLng.lat();
+                    lat = lat.toFixed(8);
+                    var lng = event.latLng.lng();
+                    lng = lng.toFixed(8);
+                    console.log("\"latitude\": " + lat + ",\n\"longitude\": " + lng);
+                });
+
             });
-            $scope.map = map;
-
-            var polyline = helper.parseGpx(route.gpx, map);
-            $scope.gpxPolyline = polyline;
-
-            //compute the polyline length
-            var lengthInMeters = google.maps.geometry.spherical.computeLength(polyline.getPath());
-            console.log('route length is ', lengthInMeters);
-
-            var distanceMarkers = helper.getDistanceMarkers(polyline, lengthInMeters, 1000, helper.distanceMarkerIcons, route.distanceMarkerAlignments);
-            $scope.distanceMarkers = distanceMarkers;
-            var placesOfInterestMarkers = helper.getPlacesOfInterestMarkers(route);
-            $scope.placesOfInterestMarkers = placesOfInterestMarkers;
-            var markers = distanceMarkers.concat(placesOfInterestMarkers);
-            _.each(markers, function (marker) { marker.g = helper.addMarkerToMap(marker, map); });
-            _.each(route.diversions, function (diversion) { diversion.g = helper.addDiversionToMap(diversion, map); });
-
-            //only so the running man shows up
-            $timeout(function () {
-                $scope.loading = false;
-            }, 2000)
-
-            google.maps.event.addListener(map, 'click', function (event) {
-                var lat = event.latLng.lat();
-                lat = lat.toFixed(8);
-                var lng = event.latLng.lng();
-                lng = lng.toFixed(8);
-                console.log("\"latitude\": " + lat + ",\n\"longitude\": " + lng);
-            });
-
         }
     };
 });
@@ -349,14 +351,14 @@ app.directive('gpxElevationChart', function (style) {
                 var distanceStepped = step(distance, 100, 0);
                 //console.log('sed', JSON.stringify({ metersSinceLastPoint: metersSinceLastPoint, distance: distance, distanceStepped: distanceStepped, distanceSteppedMax: distanceSteppedMax, elevationDelta: elevationDelta, elevation: elevation }));
                 if (elevation < 0) elevation = 0;
-                
+
                 if (distanceStepped % 100 == 0 && distanceStepped > distanceSteppedMax) {
                     distanceSteppedMax = distanceStepped;
                     var intervalElevation = Math.round(elevation);
                     var intervalLabel = Math.ceil(distanceStepped / 1000) - 1 + ' km';
                     //console.log('sed.interval', JSON.stringify({ distanceStepped: distanceStepped, elevation: intervalElevation, label: intervalLabel  }));
                     o.data.push(intervalElevation);
-                    o.labels.push(intervalLabel );
+                    o.labels.push(intervalLabel);
 
                 }
             })
@@ -372,15 +374,17 @@ app.directive('gpxElevationChart', function (style) {
         template: '<div class="elevation-chart"><canvas width="800" height="200"></canvas></div>',
         link: function ($scope, element, attributes, ngModelCtrl) {
             var route = $scope.route;
-            var container = element.find(".elevation-chart").get(0);
-            var config = helper.getDefaultChartConfig();
-            var data = helper.getElevationData(route.gpx);
-            var chartData = helper.sampleElevationData(data);
-            config.data.labels = chartData.labels;
-            config.data.datasets[0].data = chartData.data;
-            var ctx = element.find("canvas").get(0).getContext("2d");
-            var line = new Chart(ctx, config);
-            //console.log('chart', config);
+            route.gpx().then(function (gpx) {
+                var container = element.find(".elevation-chart").get(0);
+                var config = helper.getDefaultChartConfig();
+                var data = helper.getElevationData(gpx);
+                var chartData = helper.sampleElevationData(data);
+                config.data.labels = chartData.labels;
+                config.data.datasets[0].data = chartData.data;
+                var ctx = element.find("canvas").get(0).getContext("2d");
+                var line = new Chart(ctx, config);
+                //console.log('chart', config);
+            });
         }
     };
 });
