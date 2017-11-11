@@ -126,7 +126,6 @@
     <Content Include="js\vendor\gpx.js" />
     <Content Include="js\vendor\jquery-3.2.1.min.js" />
     <Content Include="js\routes.controller.js" />
-    <Content Include="routes.html" />
     <Content Include="js\vendor\angular.min.js" />
     <Content Include="css\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
     <Content Include="css\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
@@ -149,6 +148,7 @@
     <Content Include="css\font-awesome-4.7.0\less\variables.less" />
     <None Include="routes\db.json" />
     <Content Include="templates\all-routes.html" />
+    <Content Include="templates\calendar.html" />
     <Content Include="templates\route.html" />
     <Content Include="Web.config" />
   </ItemGroup>
