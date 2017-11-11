@@ -1,394 +1,398 @@
 ﻿[
-    {
-        "id": "RUCWGquH",
-        "name": "Bucklands Beach",
-        "description": "Mostly flat and mostly coastal, this run is ideal for clocking up the miles ready for that upcoming marathon, half or ultra. The course is a simple lollipop that follows the Rotary Walkway south to the Panmure Basin where we complete an anti-clockwise loop, before heading home.\r\nTo shorten, turn back at any time. To lengthen, there are plenty of options around Musick Point and Bucklands Beach.",
-        "meetingPoint": {
-            "label": "47 The Parade, Bucklands Beach",
-            "latitude": -36.868073,
-            "longitude": 174.903437
-        },
-        "mapDefaults": {
-            "center": {
-                "latitude": -36.848448,
-                "longitude": 174.762191
-            },
-            "zoom": 12
-        },
-        "distanceOptions": [
-            10,
-            15,
-            21,
-            24
-        ],
-        "terrain": [
-            {
-                "type": "trail",
-                "label": "Trail",
-                "percent": 50
-            },
-            {
-                "type": "urban",
-                "label": "Urban",
-                "percent": 50
-            }
-        ]
+  {
+    "id": "RUCWGquH",
+    "name": "Bucklands Beach",
+    "enabled": false,
+    "description": "Mostly flat and mostly coastal, this run is ideal for clocking up the miles ready for that upcoming marathon, half or ultra. The course is a simple lollipop that follows the Rotary Walkway south to the Panmure Basin where we complete an anti-clockwise loop, before heading home.\r\nTo shorten, turn back at any time. To lengthen, there are plenty of options around Musick Point and Bucklands Beach.",
+    "meetingPoint": {
+      "label": "47 The Parade, Bucklands Beach",
+      "latitude": -36.868073,
+      "longitude": 174.903437
     },
-    {
-        "id": "kwaBpRSC",
-        "name": "Mangere Bridge Watercare Walkway",
-        "description": "Flat and mostly off road—this is the place to get in LOTS of miles to get you ready for that upcoming half or full marathon!\r\nMeeting at the Mangere Boating Club we’ll head south from there along the coast through Ambury Regional Park, around the lake in the south (turn back here for 13k) and then carry on south along the Watercare Pathway.\r\nOnce back to the boat club we’ll have options to carry on north to the Onehunga coastal path.So there is plenty of extra mileage to be done here on flat trails.",
-        "meetingPoint": {
-            "label": "Mangere Boating Club (opposite 32 Kiwi Esplanade)",
-            "latitude": 36.938903,
-            "longitude": 174.778495
-        },
-        "mapDefaults": {
-            "center": {
-                "latitude": -36.848448,
-                "longitude": 174.762191
-            },
-            "zoom": 12
-        },
-        "distanceOptions": [
-            13,
-            21,
-            32
-        ],
-        "terrain": [
-            {
-                "type": "trail",
-                "label": "Trail",
-                "percent": 90
-            },
-            {
-                "type": "urban",
-                "label": "Urban",
-                "percent": 10
-            }
-        ]
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.848448,
+        "longitude": 174.762191
+      },
+      "zoom": 12
     },
-    {
-        "id": "viyVJdOl",
-        "name": "Mission Bay Two Lookouts",
-        "description": "From Mission Bay we’ll make the short journey west before along Tamaki Drive before climbing up to the trig at Bastion Point. We’ll retrace our steps back to Mission Bay before heading out to the lookout at Achilles Point. Retracing our steps one more time back to the beach and cafes of Mission Bay to finish a nice cruisy return to our Sunday runs.\r\nWe will also have an optional extra 3k excursion into the trails of Dingle Dell Reserve (at St Heliers) on the way back to Mission Bay.",
-        "meetingPoint": {
-            "label": "The car park opposite Mission Bay’s Berkeley Cinemas",
-            "latitude": -36.848314,
-            "longitude": 174.832515
-        },
-        "mapDefaults": {
-            "center": {
-                "latitude": -36.848448,
-                "longitude": 174.762191
-            },
-            "zoom": 12
-        },
-        "distanceOptions": [
-            5,
-            11,
-            14
-        ],
-        "terrain": [
-            {
-                "type": "trail",
-                "label": "Trail",
-                "percent": 10
-            },
-            {
-                "type": "urban",
-                "label": "Urban",
-                "percent": 90
-            }
-        ],
-        "placesOfInterest": [
-            {
-                "type": "parking",
-                "latitude": -36.847937,
-                "longitude": 174.832953
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.8491871,
-                "longitude": 174.823504
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.8465892,
-                "longitude": 174.8264026
-            },
-            {
-                "type": "photo-camera",
-                "latitude": -36.850068,
-                "longitude": 174.823995
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.8474719,
-                "longitude": 174.8299256
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.84759561,
-                "longitude": 174.83187407
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.847539,
-                "longitude": 174.831703
-            },
-            {
-                "type": "public-bathroom",
-                "Latitude": -36.85005219,
-                "Longitude": 174.84328218
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.850114,
-                "longitude": 174.8432634
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.85079957,
-                "longitude": 174.85535145
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.850855,
-                "longitude": 174.855353
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.850177,
-                "longitude": 174.857398
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.8493942,
-                "longitude": 174.859680
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.8493564,
-                "longitude": 174.8596567
-            },
-            {
-                "type": "photo-camera",
-                "latitude": -36.84368693,
-                "longitude": 174.86389160
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.84759350,
-                "longitude": 174.86623451
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.84769519,
-                "longitude": 174.86627743
-            }
-        ],
-        "placesOfInterestOptions": [
-            {
-                "type": "parking",
-                "label": "Parking",
-                "visible": true,
-                "zIndex": 40
-            },
-            {
-                "type": "public-bathroom",
-                "label": "Public bathroom",
-                "visible": true,
-                "zIndex": 30
-            },
-            {
-                "type": "water-fountain",
-                "label": "Water fountain",
-                "visible": true,
-                "zIndex": 20
-            },
-            {
-                "type": "photo-camera",
-                "label": "Photo opportunity",
-                "visible": true,
-                "zIndex": 10
-            }
-        ],
-        "diversions": [
-            {
-                "visible": true,
-                "label": {
-                    "title": "Glover park loop",
-                    "description": "Adds an additional 2k onto the run",
-                    "anchor": {
-                        "latitude": -36.848290,
-                        "longitude": 174.86900
-                    },
-                    "offset": {
-                        "left": "5px",
-                        "top": "5px"
-                    },
-                    "placement": "bottom",
-                    "backgroundColour": "#f27b08",
-                    "fontColour": "#ffffff",
-                    "fontSize": "13px",
-                    "showCloseButton": true
-                },
-                "strokeColour": "#f27b08",
-                "points": [
-                    [ -36.844461, 174.86401 ],
-                    [ -36.844873, 174.864653 ],
-                    [ -36.845543, 174.864525 ],
-                    [ -36.846539, 174.862894 ],
-                    [ -36.847225, 174.866112 ],
-                    [ -36.845414, 174.867008 ],
-                    [ -36.845362, 174.867695 ],
-                    [ -36.845663, 174.86806 ],
-                    [ -36.845877, 174.868832 ],
-                    [ -36.848376, 174.869873 ],
-                    [ -36.848281, 174.86718 ],
-                    [ -36.847947, 174.865732 ],
-                    [ -36.847114, 174.865538 ],
-                    [ -36.846496, 174.86291 ],
-                    [ -36.84671, 174.862416 ],
-                    [ -36.846607, 174.861901 ]
-                ]
-            }
-        ]
+    "distanceOptions": [
+      10,
+      15,
+      21,
+      24
+    ],
+    "terrain": [
+      {
+        "type": "trail",
+        "label": "Trail",
+        "percent": 50
+      },
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 50
+      }
+    ]
+  },
+  {
+    "id": "kwaBpRSC",
+    "name": "Mangere Bridge Watercare Walkway",
+    "enabled": false,
+    "description": "Flat and mostly off road—this is the place to get in LOTS of miles to get you ready for that upcoming half or full marathon!\r\nMeeting at the Mangere Boating Club we’ll head south from there along the coast through Ambury Regional Park, around the lake in the south (turn back here for 13k) and then carry on south along the Watercare Pathway.\r\nOnce back to the boat club we’ll have options to carry on north to the Onehunga coastal path.So there is plenty of extra mileage to be done here on flat trails.",
+    "meetingPoint": {
+      "label": "Mangere Boating Club (opposite 32 Kiwi Esplanade)",
+      "latitude": 36.938903,
+      "longitude": 174.778495
     },
-    {
-        "id": "ekBNMjnO",
-        "name": "Mission Bay to Tahuna Torea",
-        "description": "This run takes you beyond the confines of Tamaki drive and into some of the hidden gems of Auckland's eastern bays.\r\nThe route heads east to Achilles Point, then to Glover Park, Churchill Park, Glendowie Park and eventually to the stunning Tahuna Torea Nature Reserve.\r\nIt's a 17k out-and-back, but there are plenty of options to make it shorter (including turning back at Achilles Point - 7k or Glover Park - 10k).  Longer options include an add-on afterwards along Tamaki Drive.",
-        "meetingPoint": {
-            "label": "The car park opposite Mission Bay’s Berkeley Cinemas",
-            "latitude": -36.848314,
-            "longitude": 174.832515
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.848448,
+        "longitude": 174.762191
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      13,
+      21,
+      32
+    ],
+    "terrain": [
+      {
+        "type": "trail",
+        "label": "Trail",
+        "percent": 90
+      },
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 10
+      }
+    ]
+  },
+  {
+    "id": "viyVJdOl",
+    "name": "Mission Bay Two Lookouts",
+    "enabled": true,
+    "description": "From Mission Bay we’ll make the short journey west before along Tamaki Drive before climbing up to the trig at Bastion Point. We’ll retrace our steps back to Mission Bay before heading out to the lookout at Achilles Point. Retracing our steps one more time back to the beach and cafes of Mission Bay to finish a nice cruisy return to our Sunday runs.\r\nWe will also have an optional extra 3k excursion into the trails of Dingle Dell Reserve (at St Heliers) on the way back to Mission Bay.",
+    "meetingPoint": {
+      "label": "The car park opposite Mission Bay’s Berkeley Cinemas",
+      "latitude": -36.848314,
+      "longitude": 174.832515
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.848448,
+        "longitude": 174.762191
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      5,
+      11,
+      14
+    ],
+    "terrain": [
+      {
+        "type": "trail",
+        "label": "Trail",
+        "percent": 10
+      },
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 90
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "parking",
+        "latitude": -36.847937,
+        "longitude": 174.832953
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8491871,
+        "longitude": 174.823504
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8465892,
+        "longitude": 174.8264026
+      },
+      {
+        "type": "photo-camera",
+        "latitude": -36.850068,
+        "longitude": 174.823995
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8474719,
+        "longitude": 174.8299256
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.84759561,
+        "longitude": 174.83187407
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.847539,
+        "longitude": 174.831703
+      },
+      {
+        "type": "public-bathroom",
+        "Latitude": -36.85005219,
+        "Longitude": 174.84328218
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.850114,
+        "longitude": 174.8432634
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.85079957,
+        "longitude": 174.85535145
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.850855,
+        "longitude": 174.855353
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.850177,
+        "longitude": 174.857398
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8493942,
+        "longitude": 174.859680
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.8493564,
+        "longitude": 174.8596567
+      },
+      {
+        "type": "photo-camera",
+        "latitude": -36.84368693,
+        "longitude": 174.86389160
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.84759350,
+        "longitude": 174.86623451
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.84769519,
+        "longitude": 174.86627743
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+      {
+        "visible": true,
+        "label": {
+          "title": "Glover park loop",
+          "description": "Adds an additional 2k onto the run",
+          "anchor": {
+            "latitude": -36.848290,
+            "longitude": 174.86900
+          },
+          "offset": {
+            "left": "5px",
+            "top": "5px"
+          },
+          "placement": "bottom",
+          "backgroundColour": "#f27b08",
+          "fontColour": "#ffffff",
+          "fontSize": "13px",
+          "showCloseButton": true
         },
-        "mapDefaults": {
-            "center": {
-                "latitude": -36.848448,
-                "longitude": 174.762191
-            },
-            "zoom": 12
-        },
-        "distanceOptions": [
-            7,
-            10,
-            17,
-            "20+"
-        ],
-        "terrain": [
-            {
-                "type": "trail",
-                "label": "Trail",
-                "percent": 15
-            },
-            {
-                "type": "urban",
-                "label": "Urban",
-                "percent": 85
-            }
-        ],
-        "placesOfInterest": [
-            {
-                "type": "parking",
-                "latitude": -36.847937,
-                "longitude": 174.832953
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.84759561,
-                "longitude": 174.83187407
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.847539,
-                "longitude": 174.831703
-            },
-            {
-                "type": "public-bathroom",
-                "Latitude": -36.85005219,
-                "Longitude": 174.84328218
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.850114,
-                "longitude": 174.8432634
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.85079957,
-                "longitude": 174.85535145
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.850855,
-                "longitude": 174.855353
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.850177,
-                "longitude": 174.857398
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.8493942,
-                "longitude": 174.859680
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.8493564,
-                "longitude": 174.8596567
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.84759350,
-                "longitude": 174.86623451
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.84769519,
-                "longitude": 174.86627743
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.86308564,
-                "longitude": 174.87828098
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.86310629,
-                "longitude": 174.87828165
-            }
-        ],
-        "placesOfInterestOptions": [
-            {
-                "type": "parking",
-                "label": "Parking",
-                "visible": true,
-                "zIndex": 40
-            },
-            {
-                "type": "public-bathroom",
-                "label": "Public bathroom",
-                "visible": true,
-                "zIndex": 30
-            },
-            {
-                "type": "water-fountain",
-                "label": "Water fountain",
-                "visible": true,
-                "zIndex": 20
-            },
-            {
-                "type": "photo-camera",
-                "label": "Photo opportunity",
-                "visible": true,
-                "zIndex": 10
-            }
-        ],
-        "diversions": [
+        "strokeColour": "#f27b08",
+        "points": [
+          [ -36.844461, 174.86401 ],
+          [ -36.844873, 174.864653 ],
+          [ -36.845543, 174.864525 ],
+          [ -36.846539, 174.862894 ],
+          [ -36.847225, 174.866112 ],
+          [ -36.845414, 174.867008 ],
+          [ -36.845362, 174.867695 ],
+          [ -36.845663, 174.86806 ],
+          [ -36.845877, 174.868832 ],
+          [ -36.848376, 174.869873 ],
+          [ -36.848281, 174.86718 ],
+          [ -36.847947, 174.865732 ],
+          [ -36.847114, 174.865538 ],
+          [ -36.846496, 174.86291 ],
+          [ -36.84671, 174.862416 ],
+          [ -36.846607, 174.861901 ]
         ]
-    }
+      }
+    ]
+  },
+  {
+    "id": "ekBNMjnO",
+    "name": "Mission Bay to Tahuna Torea",
+    "enabled": false,
+    "description": "This run takes you beyond the confines of Tamaki drive and into some of the hidden gems of Auckland's eastern bays.\r\nThe route heads east to Achilles Point, then to Glover Park, Churchill Park, Glendowie Park and eventually to the stunning Tahuna Torea Nature Reserve.\r\nIt's a 17k out-and-back, but there are plenty of options to make it shorter (including turning back at Achilles Point - 7k or Glover Park - 10k).  Longer options include an add-on afterwards along Tamaki Drive.",
+    "meetingPoint": {
+      "label": "The car park opposite Mission Bay’s Berkeley Cinemas",
+      "latitude": -36.848314,
+      "longitude": 174.832515
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.848448,
+        "longitude": 174.762191
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      7,
+      10,
+      17,
+      "20+"
+    ],
+    "terrain": [
+      {
+        "type": "trail",
+        "label": "Trail",
+        "percent": 15
+      },
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 85
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "parking",
+        "latitude": -36.847937,
+        "longitude": 174.832953
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.84759561,
+        "longitude": 174.83187407
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.847539,
+        "longitude": 174.831703
+      },
+      {
+        "type": "public-bathroom",
+        "Latitude": -36.85005219,
+        "Longitude": 174.84328218
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.850114,
+        "longitude": 174.8432634
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.85079957,
+        "longitude": 174.85535145
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.850855,
+        "longitude": 174.855353
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.850177,
+        "longitude": 174.857398
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8493942,
+        "longitude": 174.859680
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.8493564,
+        "longitude": 174.8596567
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.84759350,
+        "longitude": 174.86623451
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.84769519,
+        "longitude": 174.86627743
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.86308564,
+        "longitude": 174.87828098
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.86310629,
+        "longitude": 174.87828165
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+    ]
+  }
 ]

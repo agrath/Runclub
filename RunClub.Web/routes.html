@@ -29,7 +29,7 @@
 
 
         <div class="route-container" ng-app="routesApp" ng-controller="routesController">
-            <div class="route" ng-repeat="route in data">
+            <div class="route" ng-repeat="route in data | filter: { enabled: true }">
                 <h1>{{ route.name }}</h1>
                 <p ng-bind-html="route.description | br"></p>
                 <h3>Meeting point</h3>
@@ -95,6 +95,7 @@
                     </div>
                     <a ng-href="/routes/{{route.id}}.gpx" download="{{route.name}}.gpx" href="#" class="btn btn-primary btn-sm pull-right" role="button" aria-disabled="true" style="margin-right:10px;">Download GPX file</a>
                 </div>
+                <br class="clearfix" />
 
                 <div class="elevation-graph">
                     <gpx-elevation-chart route="route" ng-if="route.gpxLoaded"></gpx-elevation-chart>
