@@ -291,6 +291,7 @@ app.directive('gpxElevationChart', function (style) {
         getElevationData: function (gpx) {
             var parser = new GPXParser(gpx, null);
             var elevationData = parser.extractElevationData();
+            //console.log('getElevationData', elevationData);
             return elevationData;
         },
         sampleElevationData: function (data) {
@@ -298,6 +299,7 @@ app.directive('gpxElevationChart', function (style) {
                 data: [],
                 labels: []
             };
+            //console.log('sampleElevationData', data);
             var last = new google.maps.LatLng(data[0].latitude, data[0].longitude);
             var distance = 0, distanceSteppedMax = 0, elevation = 0;
             var lastElevation = data[0].elevation;
@@ -312,12 +314,18 @@ app.directive('gpxElevationChart', function (style) {
                 var elevationDelta = point.elevation - lastElevation;
                 lastElevation = point.elevation;
                 elevation += elevationDelta;
-                if (elevation < 0) elevation = 0;
                 var distanceStepped = step(distance, 100, 0);
+                //console.log('sed', JSON.stringify({ metersSinceLastPoint: metersSinceLastPoint, distance: distance, distanceStepped: distanceStepped, distanceSteppedMax: distanceSteppedMax, elevationDelta: elevationDelta, elevation: elevation }));
+                if (elevation < 0) elevation = 0;
+                
                 if (distanceStepped % 100 == 0 && distanceStepped > distanceSteppedMax) {
                     distanceSteppedMax = distanceStepped;
-                    o.data.push(Math.round(elevation));
-                    o.labels.push(Math.ceil(distanceStepped / 1000) - 1 + ' km');
+                    var intervalElevation = Math.round(elevation);
+                    var intervalLabel = Math.ceil(distanceStepped / 1000) - 1 + ' km';
+                    //console.log('sed.interval', JSON.stringify({ distanceStepped: distanceStepped, elevation: intervalElevation, label: intervalLabel  }));
+                    o.data.push(intervalElevation);
+                    o.labels.push(intervalLabel );
+
                 }
             })
             return o;

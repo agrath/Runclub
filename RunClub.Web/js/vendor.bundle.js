@@ -555,7 +555,7 @@ GPXParser.prototype.extractElevationData = function () {
             }
             var lastlon = parseFloat(trackpoints[0].getAttribute("lon"));
             var lastlat = parseFloat(trackpoints[0].getAttribute("lat"));
-            for (var t = 1; t < trackpoints.length; t+=10) {
+            for (var t = 1; t < trackpoints.length; t++) {
                 var trackPoint = trackpoints[t];
                 var eleNode = trackPoint.getElementsByTagName("ele");
                 if (eleNode && eleNode.length) {
