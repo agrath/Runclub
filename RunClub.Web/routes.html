@@ -72,7 +72,7 @@
                                     <strong>Places of Interests</strong>
                                     <ul>
                                         <li ng-repeat="placesOfInterestType in route.placesOfInterestOptions">
-                                            <div class="form-check abc-checkbox">
+                                            <div class="form-check abc-checkbox" ng-if="placesOfInterestType.markers.length">
                                                 <input type="checkbox" class="form-check-input" ng-model="placesOfInterestType.visible" id="{{route.id}}-display-placesOfInterestType-{{$index}}" />
                                                 <label class="form-check-label" for="{{route.id}}-display-placesOfInterestType-{{$index}}">{{placesOfInterestType.label}}</label>
                                             </div>
