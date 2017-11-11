@@ -241,6 +241,13 @@ app.directive('gpxViewer', function ($timeout, style) {
                 $scope.loading = false;
             }, 2000)
 
+            google.maps.event.addListener(map, 'click', function (event) {
+                var lat = event.latLng.lat();
+                lat = lat.toFixed(8);
+                var lng = event.latLng.lng();
+                lng = lng.toFixed(8);
+                console.log("\"latitude\": " + lat + ",\n\"longitude\": " + lng);
+            });
 
         }
     };

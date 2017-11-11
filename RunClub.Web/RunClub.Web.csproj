@@ -104,6 +104,7 @@
     </None>
     <Content Include="routes\template.json" />
     <Content Include="routes\viyVJdOl.gpx" />
+    <Content Include="routes\ekBNMjnO.gpx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

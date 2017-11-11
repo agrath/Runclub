@@ -255,5 +255,140 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "ekBNMjnO",
+        "name": "Mission Bay to Tahuna Torea",
+        "description": "This run takes you beyond the confines of Tamaki drive and into some of the hidden gems of Auckland's eastern bays.\r\nThe route heads east to Achilles Point, then to Glover Park, Churchill Park, Glendowie Park and eventually to the stunning Tahuna Torea Nature Reserve.\r\nIt's a 17k out-and-back, but there are plenty of options to make it shorter (including turning back at Achilles Point - 7k or Glover Park - 10k).  Longer options include an add-on afterwards along Tamaki Drive.",
+        "meetingPoint": {
+            "label": "The car park opposite Mission Bay’s Berkeley Cinemas",
+            "latitude": -36.848314,
+            "longitude": 174.832515
+        },
+        "mapDefaults": {
+            "center": {
+                "latitude": -36.848448,
+                "longitude": 174.762191
+            },
+            "zoom": 12
+        },
+        "distanceOptions": [
+            7,
+            10,
+            17,
+            "20+"
+        ],
+        "terrain": [
+            {
+                "type": "trail",
+                "label": "Trail",
+                "percent": 15
+            },
+            {
+                "type": "urban",
+                "label": "Urban",
+                "percent": 85
+            }
+        ],
+        "placesOfInterest": [
+            {
+                "type": "parking",
+                "latitude": -36.847937,
+                "longitude": 174.832953
+            },
+            {
+                "type": "public-bathroom",
+                "latitude": -36.84759561,
+                "longitude": 174.83187407
+            },
+            {
+                "type": "water-fountain",
+                "latitude": -36.847539,
+                "longitude": 174.831703
+            },
+            {
+                "type": "public-bathroom",
+                "Latitude": -36.85005219,
+                "Longitude": 174.84328218
+            },
+            {
+                "type": "water-fountain",
+                "latitude": -36.850114,
+                "longitude": 174.8432634
+            },
+            {
+                "type": "public-bathroom",
+                "latitude": -36.85079957,
+                "longitude": 174.85535145
+            },
+            {
+                "type": "water-fountain",
+                "latitude": -36.850855,
+                "longitude": 174.855353
+            },
+            {
+                "type": "water-fountain",
+                "latitude": -36.850177,
+                "longitude": 174.857398
+            },
+            {
+                "type": "public-bathroom",
+                "latitude": -36.8493942,
+                "longitude": 174.859680
+            },
+            {
+                "type": "water-fountain",
+                "latitude": -36.8493564,
+                "longitude": 174.8596567
+            },
+            {
+                "type": "public-bathroom",
+                "latitude": -36.84759350,
+                "longitude": 174.86623451
+            },
+            {
+                "type": "water-fountain",
+                "latitude": -36.84769519,
+                "longitude": 174.86627743
+            },
+            {
+                "type": "public-bathroom",
+                "latitude": -36.86308564,
+                "longitude": 174.87828098
+            },
+            {
+                "type": "water-fountain",
+                "latitude": -36.86310629,
+                "longitude": 174.87828165
+            }
+        ],
+        "placesOfInterestOptions": [
+            {
+                "type": "parking",
+                "label": "Parking",
+                "visible": true,
+                "zIndex": 40
+            },
+            {
+                "type": "public-bathroom",
+                "label": "Public bathroom",
+                "visible": true,
+                "zIndex": 30
+            },
+            {
+                "type": "water-fountain",
+                "label": "Water fountain",
+                "visible": true,
+                "zIndex": 20
+            },
+            {
+                "type": "photo-camera",
+                "label": "Photo opportunity",
+                "visible": true,
+                "zIndex": 10
+            }
+        ],
+        "diversions": [
+        ]
     }
 ]
