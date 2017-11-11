@@ -29,7 +29,7 @@ app.controller('routesController', function ($scope, $http, style) {
         $scope.data = res.data;
         _.each($scope.data, function (route) {
             var id = route.id;
-
+            if (!route.enabled) return;
             route.displayGpxRoute = true;
             route.displayDistanceMarkers = true;
 
