@@ -148,6 +148,13 @@ app.directive('gpxViewer', function ($timeout, style) {
                     optimised: false,
                     zIndex: data.zIndex
                 });
+                google.maps.event.addListener(marker, 'click', function (event) {
+                    var lat = event.latLng.lat();
+                    lat = lat.toFixed(8);
+                    var lng = event.latLng.lng();
+                    lng = lng.toFixed(8);
+                    console.log("\"latitude\": " + lat + ",\n\"longitude\": " + lng);
+                });
                 return marker;
             }
         };
