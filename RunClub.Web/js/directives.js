@@ -16,7 +16,7 @@ app.directive('gpxViewer', function ($timeout, style) {
                 var parser = new GPXParser(data, map);
                 parser.setTrackColour(style.lineStrokeColour);     // Set the track line colour
                 parser.setTrackWidth(style.lineStrokeWidth);          // Set the track line width
-                parser.setMinTrackPointDelta(0.001);      // Set the minimum distance between track points
+                parser.setMinTrackPointDelta(0);      // Set the minimum distance between track points
                 parser.centerAndZoom(data);
                 var polylines = parser.addTrackpointsToMap();         // Add the trackpoints
                 //the gpx parser library exposes nested arrays as the gpx may contain multiple tracks
@@ -68,7 +68,7 @@ app.directive('gpxViewer', function ($timeout, style) {
 
                         var width = 32 * (options && options.widthMultiplier ? options.widthMultiplier : (place.widthMultiplier ? place.widthMultiplier : 1));
                         var height = 32 * (options && options.heightMultiplier ? options.heightMultiplier : (place.heightMultiplier ? place.heightMultiplier : 1));
-                        var icon = new google.maps.MarkerImage('/images/map-icons/' + place.type + '.png', null, null, null, new google.maps.Size(width, height));
+                        var icon = new google.maps.MarkerImage('/images/map-icons/' + place.type + '.png', null, null, new google.maps.Point(16,16), new google.maps.Size(width, height));
                         var marker = {
                             id: 'place' + i,
                             latitude: place.latitude,
@@ -240,6 +240,7 @@ app.directive('gpxViewer', function ($timeout, style) {
             $timeout(function () {
                 $scope.loading = false;
             }, 2000)
+
 
         }
     };
