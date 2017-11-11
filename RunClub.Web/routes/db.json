@@ -125,7 +125,7 @@
     "description": "Flat and mostly off road—this is the place to get in LOTS of miles to get you ready for that upcoming half or full marathon!\r\nMeeting at the Mangere Boating Club we’ll head south from there along the coast through Ambury Regional Park, around the lake in the south (turn back here for 13k) and then carry on south along the Watercare Pathway.\r\nOnce back to the boat club we’ll have options to carry on north to the Onehunga coastal path.So there is plenty of extra mileage to be done here on flat trails.",
     "meetingPoint": {
       "label": "Mangere Boating Club (opposite 32 Kiwi Esplanade)",
-      "latitude": 36.938903,
+      "latitude": -36.938903,
       "longitude": 174.778495
     },
     "mapDefaults": {
