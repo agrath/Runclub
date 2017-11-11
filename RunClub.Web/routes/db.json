@@ -142,8 +142,8 @@
       },
       {
         "type": "public-bathroom",
-        "Latitude": -36.85005219,
-        "Longitude": 174.84328218
+        "latitude": -36.85005219,
+        "longitude": 174.84328218
       },
       {
         "type": "water-fountain",
