@@ -39,3 +39,16 @@ app.controller('showRouteController', function ($scope, RouteService, $routePara
     };
     
 });
+
+app.controller('calendarController', function ($scope, RouteService, $routeParams, $location) {
+    $scope.id = $routeParams.id;
+
+    RouteService.getRoutes().then(function (data) {
+        $scope.routes = data;
+    })
+
+    $scope.list = function () {
+        $location.path('routes/all'); // path not hash
+    };
+
+});

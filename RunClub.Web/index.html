@@ -27,11 +27,29 @@
     <link href="css/routes.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="container-fluid">
 
-        <div class="app" ng-app="routesApp">
-            <div class="view" ng-view></div>
+
+
+    <div class="app" ng-app="routesApp">
+
+        <div class="navbar navbar-light bg-light">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand">Routes</a>
+                <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>-->
+            </div>
         </div>
+
+        <div class="view" ng-view></div>
+
+        <footer class="text-muted">
+            <div class="container">
+                <p class="float-right">
+                    <a href="#">Back to top</a>
+                </p>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

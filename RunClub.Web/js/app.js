@@ -23,6 +23,7 @@ app.factory('RouteService', ['$q', '$http', function ($q, $http) {
                 route.displayGpxRoute = true;
                 route.displayDistanceMarkers = true;
 
+                route.staticMapImage = 'https://maps.googleapis.com/maps/api/staticmap?size=356x280&zoom=14&key=AIzaSyDeWHf1yBGiJgWoaQH_PEN2bnwZ2aCFSbE&center=' + route.meetingPoint.latitude + ',' + route.meetingPoint.longitude;
 
                 route.gpxData = null;
                 route.gpx = function () {
