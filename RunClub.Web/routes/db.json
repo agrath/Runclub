@@ -151,6 +151,59 @@
         "label": "Urban",
         "percent": 10
       }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9787941,
+        "longitude": 174.76265
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.94628,
+        "longitude": 174.757126
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.93976,
+        "longitude": 174.764557
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.94515,
+        "longitude": 174.7607
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9493523,
+        "longitude": 174.785553
+      }
     ]
   },
   {
