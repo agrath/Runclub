@@ -2657,18 +2657,26 @@ i.tipTip {
   .event-list > li > img {
     display: inline-block;
   }
-  .event-list > li > time,
-  .event-list > li > img {
+  .event-list > li > time {
     width: 120px;
+    float: left;
+  }
+  .event-list > li > img {
+    width: 150px;
     float: left;
   }
   .event-list > li > .info {
     border-left: solid 3px #cccccc;
     overflow: hidden;
   }
-  .event-list > li > time,
-  .event-list > li > img {
+  .event-list > li > time {
     width: 120px;
+    height: 150px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .event-list > li > img {
+    width: 150px;
     height: 150px;
     padding: 0px;
     margin: 0px;
