@@ -61,7 +61,8 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <a ng-href="#!" class="btn btn-success">View details</a>
+                            <a ng-if="item.route" ng-href="#!/routes/{{item.route.id}}" class="btn btn-success">View details</a>
+                            <a ng-if="!item.route" ng-href="{{item.link}}" target="_blank" class="btn btn-success">View details</a>
                         </div>
                     </div>
 
