@@ -562,7 +562,12 @@
     "meetingPoint": {
       "label": "Maraetai Wharf Cafe",
       "latitude": -36.880982,
-      "longitude": 175.044269
+      "longitude": 175.044269,
+      "offset": {
+        "left": "5px",
+        "top": "5px"
+      },
+      "placement": "bottom"
     },
     "mapDefaults": {
       "center": {
@@ -677,10 +682,10 @@
             "longitude": 175.05326
           },
           "offset": {
-            "left": "5px",
-            "top": "5px"
+            "left": "0px",
+            "top": "-15px"
           },
-          "placement": "bottom",
+          "placement": "top",
           "backgroundColour": "#f27b08",
           "fontColour": "#ffffff",
           "fontSize": "13px",

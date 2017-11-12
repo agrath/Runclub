@@ -6,7 +6,12 @@
   "meetingPoint": {
     "label": "",
     "latitude": -36.0,
-    "longitude": 174.0
+    "longitude": 174.0,
+    "offset": {
+      "left": "5px",
+      "top": "5px"
+    },
+    "placement": "bottom"
   },
   "mapDefaults": {
     "center": {

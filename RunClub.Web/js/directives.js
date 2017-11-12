@@ -209,6 +209,34 @@ app.directive('gpxViewer', function ($timeout, style) {
                 });
                 info.open();
                 return info;
+            },
+            addMeetingPointToMap: function (meetingPoint, map) {
+                console.log('meetingPoint', meetingPoint);
+
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(meetingPoint.latitude, meetingPoint.longitude),
+                    map: map,
+                    visible: false
+                });
+                var info = new SnazzyInfoWindow({
+                    marker: marker,
+                    placement: meetingPoint.placement || 'right',
+                    offset: meetingPoint.offset,
+                    maxWidth: 180,
+                    content: '<h4>Meet here</h4>' +
+                    '<div>' + meetingPoint.label + '</div>',
+                    showCloseButton: meetingPoint.showCloseButton || false,
+                    closeOnMapClick: false,
+                    padding: '10px',
+                    backgroundColor: '#ffffff',
+                    border: true,
+                    borderRadius: '0px',
+                    shadow: false,
+                    fontColor: '#000000',
+                    fontSize: '14px'
+                });
+                info.open();
+                return info;
             }
         };
     return {
@@ -284,6 +312,12 @@ app.directive('gpxViewer', function ($timeout, style) {
                     });
                 }
 
+                if (route.meetingPoint) {
+                    $scope.$watch('route.displayMeetingPoint', function (v) {
+                        route.meetingPoint.g.setMap(v ? $scope.map : null);
+                    });
+                }
+
                 var mapContainer = element.find(".map-canvas").get(0);
                 var map = new google.maps.Map(mapContainer, {
                     center: { lat: route.mapDefaults.center.latitude, lng: route.mapDefaults.center.longitude },
@@ -297,6 +331,8 @@ app.directive('gpxViewer', function ($timeout, style) {
                 //compute the polyline length
                 var lengthInMeters = google.maps.geometry.spherical.computeLength(polyline.getPath());
                 console.log('route length is ', lengthInMeters);
+
+                route.meetingPoint.g = helper.addMeetingPointToMap(route.meetingPoint, map);
 
                 var distanceMarkers = helper.getDistanceMarkers(polyline, lengthInMeters, 1000, helper.distanceMarkerIcons, route.distanceMarkerAlignments);
                 $scope.distanceMarkers = distanceMarkers;
