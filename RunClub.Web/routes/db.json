@@ -172,6 +172,32 @@
         "percent": 10
       }
     ],
+    "distanceMarkerAlignments": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
     "placesOfInterestOptions": [
       {
         "type": "parking",
@@ -199,6 +225,11 @@
       }
     ],
     "placesOfInterest": [
+      {
+        "type": "parking",
+        "latitude": -36.93837354,
+        "longitude": 174.77830231
+      },
       {
         "type": "public-bathroom",
         "latitude": -36.9787941,
@@ -472,6 +503,26 @@
         "label": "Urban",
         "percent": 85
       }
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ],
     "placesOfInterest": [
       {
@@ -857,6 +908,82 @@
         "fontSize": "13px",
         "showCloseButton": true
       }
+    ]
+  },
+  {
+    "id": "nhgQlDkn",
+    "name": "Okura Bush Walkway",
+    "enabled": true,
+    "description": "This is possibly the most beautiful bush track in Auckland and it is a must-do Auckland run, and just 20mins north of central Auckland.\r\nThe trail is soft under foot with a few hills and lots of coastal views, lush bush and blue water.\r\nIf the weather is nasty, the bush provides plenty of shelter and is mostly well drained so will be a great weather option.\r\nThe run itself is 7k oneway, so a 14k return journey. To run shorter, just turn around at any spot (Dacre Cottage at 4k is a great option). To run longer you can carry on into Stillwater or add on extra at the end.",
+    "meetingPoint": {
+      "label": "Haigh Access Road, Redvale",
+      "latitude": -36.67382738,
+      "longitude": 174.70565200,
+      "offset": {
+        "left": "5px",
+        "top": "5px"
+      },
+      "placement": "bottom"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.65493440,
+        "longitude": 174.71806526
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      8,
+      14
+    ],
+    "terrain": [
+      {
+        "type": "trail",
+        "label": "Trail",
+        "percent": 100
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "public-bathroom",
+        "latitude": -36.63924,
+        "longitude": 174.720612
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.6585236,
+        "longitude": 174.727921
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+    ],
+    "annotations": [
     ]
   }
 ]
