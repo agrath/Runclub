@@ -37,6 +37,12 @@
                         <label class="form-check-label" for="{{route.id}}-display-distance-markers">Distance markers</label>
                     </div>
                 </li>
+                <li>
+                    <div class="form-check abc-checkbox">
+                        <input type="checkbox" ng-model="route.displayAnnotations" id="{{route.id}}-display-annotations" />
+                        <label class="form-check-label" for="{{route.id}}-display-annotations">Notes &amp; annotations</label>
+                    </div>
+                </li>
                 <li ng-if="route.placesOfInterest.length">
                     <strong>Places of Interests</strong>
                     <ul>

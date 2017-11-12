@@ -807,6 +807,27 @@
           [ -36.91307, 175.07426 ]
         ]
       }
+    ],
+    "annotations": [
+      {
+        "title": "Omana Regional Park",
+        "visible": true,
+        "description": "Follow main driveway then main trail",
+        "anchor": {
+          "latitude": -36.87996388,
+          "longitude": 175.02250671
+        },
+        "offset": {
+          "left": "5px",
+          "top": "30px"
+        },
+        "placement": "bottom",
+        "backgroundColour": "#ffffff",
+        "border": true,
+        "fontColour": "#000000",
+        "fontSize": "13px",
+        "showCloseButton": true
+      }
     ]
   }
 ]

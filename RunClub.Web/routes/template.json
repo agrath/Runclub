@@ -17,7 +17,7 @@
   },
   "distanceOptions": [
     0,
-    0,
+    0
   ],
   "terrain": [
     {
@@ -35,27 +35,27 @@
     {
       "type": "parking",
       "latitude": -1000,
-      "longitude": 1000,
+      "longitude": 1000
     },
     {
       "type": "public-bathroom",
       "latitude": -1000,
-      "longitude": 1000,
+      "longitude": 1000
     },
     {
       "type": "water-and-bathroom",
       "latitude": -1000,
-      "longitude": 1000,
+      "longitude": 1000
     },
     {
       "type": "water-fountain",
       "latitude": -1000,
-      "longitude": 1000,
+      "longitude": 1000
     },
     {
       "type": "photo-camera",
       "latitude": -1000,
-      "longitude": 1000,
+      "longitude": 1000
     }
   ],
   "placesOfInterestOptions": [
@@ -109,6 +109,27 @@
         [ -1000, 1000 ],
         [ -1000, 1000 ]
       ]
+    }
+  ],
+  "annotations": [
+    {
+      "title": "abcABC",
+      "visible": true,
+      "description": "ABC\r\nABC",
+      "anchor": {
+        "latitude": -1000,
+        "longitude": 1000
+      },
+      "offset": {
+        "left": "5px",
+        "top": "30px"
+      },
+      "placement": "bottom",
+      "backgroundColour": "#ffffff",
+      "border": true,      
+      "fontColour": "#000000",
+      "fontSize": "13px",
+      "showCloseButton": true
     }
   ]
 }
