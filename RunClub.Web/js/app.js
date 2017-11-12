@@ -7,6 +7,26 @@ app.value('style', {
     elevationGraphFillColour: 'rgba(32,188,92,0.4)',
     elevationGraphStrokeColour: '#20bc5c'
 });
+app.factory('CalendarService', ['$q', '$http', function ($q, $http) {
+    var self = this;
+    var _deferred = $q.defer();
+    $http.get('routes/calendar.json')
+        .then(
+        function (transport, status, headers, config) {
+            //console.log('calendar.json loaded');
+            var data = transport.data;
+            _deferred.resolve(data);
+        },
+        function (transport, status, headers, config) {
+            _deferred.reject("Error loading calendar.json");
+        });
+
+    return {
+        getCalendar: function () {
+            return _deferred.promise;
+        }
+    };
+}]);
 app.factory('RouteService', ['$q', '$http', function ($q, $http) {
     var self = this;
     var _deferred = $q.defer();
