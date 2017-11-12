@@ -23,13 +23,23 @@
 <div ng-if="route.afterRunInformation" class="after-run">
     <h3>After the run</h3>
     <p ng-bind-html="route.afterRunInformation.content"></p>
-    <div ng-if="route.afterRunInformation.carrotCakeRating">
-        <strong>
-            Mike's carrot cake rating:
-            <i class="fa fa-question-circle tipTip" title="What's this? One of our regular runners is all but guaranteed to sample the carrot cake at the cafe after the run, so we let him put a rating on it for you."></i>
-        </strong>
-
-        <display-rating-stars value="route.afterRunInformation.carrotCakeRating" max="5"></display-rating-stars>
+    <div ng-if="route.afterRunInformation.carrotCake">
+        <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="carrotCakeButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-star"></i> Carrot cake
+        </button>
+        <i class="fa fa-question-circle tipTip" title="What's this? One of our regular runners is all but guaranteed to sample the carrot cake at the cafe after the run, so we let him put a rating on it for you."></i>
+        <div class="dropdown-menu" aria-labelledby="carrotCakeButton">
+            <div class="popover-rating">
+                <p>{{ route.afterRunInformation.carrotCake.review }}</p>
+                <table>
+                    <tr><td>Taste</td><td><display-rating-stars value="route.afterRunInformation.carrotCake.ratings.taste" max="5"></display-rating-stars></td></tr>
+                    <tr><td>Texture</td><td><display-rating-stars value="route.afterRunInformation.carrotCake.ratings.texture" max="5"></display-rating-stars></td></tr>
+                    <tr><td>Sweetness</td><td><display-rating-stars value="route.afterRunInformation.carrotCake.ratings.sweetness" max="5"></display-rating-stars></td></tr>
+                    <tr><td>Moisture</td><td><display-rating-stars value="route.afterRunInformation.carrotCake.ratings.moisture" max="5"></display-rating-stars></td></tr>
+                    <tr><td>Value</td><td><display-rating-stars value="route.afterRunInformation.carrotCake.ratings.value" max="5"></display-rating-stars></td></tr>
+                </table>
+            </div>
+        </div>
         <br class="clearfix" />
     </div>
 </div>

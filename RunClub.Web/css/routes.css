@@ -2526,9 +2526,14 @@ div.map-container .map-canvas {
   float: left;
   margin-right: 15px;
 }
+.after-run table {
+  width: 400px;
+}
+.after-run .popover-rating {
+  padding: 10px;
+}
 .after-run .rating-container {
   float: left;
-  margin-bottom: 20px;
 }
 .after-run .rating-container .rating {
   color: #999999;
