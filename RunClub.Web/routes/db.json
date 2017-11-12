@@ -7,7 +7,12 @@
     "meetingPoint": {
       "label": "47 The Parade, Bucklands Beach",
       "latitude": -36.868073,
-      "longitude": 174.903437
+      "longitude": 174.903437,
+      "offset": {
+        "left": "5px",
+        "top": "5px"
+      },
+      "placement": "top"
     },
     "mapDefaults": {
       "center": {
@@ -136,7 +141,12 @@
     "meetingPoint": {
       "label": "Mangere Boating Club (opposite 32 Kiwi Esplanade)",
       "latitude": -36.938903,
-      "longitude": 174.778495
+      "longitude": 174.778495,
+      "offset": {
+        "left": "25px",
+        "top": "0px"
+      },
+      "placement": "right"
     },
     "mapDefaults": {
       "center": {
@@ -224,7 +234,12 @@
     "meetingPoint": {
       "label": "The car park opposite Mission Bay’s Berkeley Cinemas",
       "latitude": -36.848314,
-      "longitude": 174.832515
+      "longitude": 174.832515,
+      "offset": {
+        "left": "5px",
+        "top": "15px"
+      },
+      "placement": "bottom"
     },
     "mapDefaults": {
       "center": {
@@ -426,7 +441,12 @@
     "meetingPoint": {
       "label": "The car park opposite Mission Bay’s Berkeley Cinemas",
       "latitude": -36.848314,
-      "longitude": 174.832515
+      "longitude": 174.832515,
+      "offset": {
+        "left": "5px",
+        "top": "15px"
+      },
+      "placement": "bottom"
     },
     "mapDefaults": {
       "center": {
