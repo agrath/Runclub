@@ -100,7 +100,6 @@
     <Content Include="js\vendor\underscore-min.js" />
     <Content Include="js\vendor\v3_epoly.js" />
     <Content Include="packages.config" />
-    <Content Include="routes\RUCWGquH.gpx" />
     <Content Include="routes\kwaBpRSC.gpx" />
     <Content Include="routes\xHTfUcKn.gpx" />
     <Content Include="css\routes.less" />
@@ -112,6 +111,7 @@
     <Content Include="routes\template.json" />
     <Content Include="routes\viyVJdOl.gpx" />
     <Content Include="routes\ekBNMjnO.gpx" />
+    <Content Include="routes\fSUqNwtc.gpx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

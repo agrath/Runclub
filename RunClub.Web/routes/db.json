@@ -1,7 +1,7 @@
 ﻿[
   {
-    "id": "RUCWGquH",
-    "name": "Bucklands Beach",
+    "id": "fSUqNwtc",
+    "name": "Bucklands Beach to Panmure Basin",
     "enabled": true,
     "description": "Mostly flat and mostly coastal, this run is ideal for clocking up the miles ready for that upcoming marathon, half or ultra. The course is a simple lollipop that follows the Rotary Walkway south to the Panmure Basin where we complete an anti-clockwise loop, before heading home.\r\nTo shorten, turn back at any time. To lengthen, there are plenty of options around Musick Point and Bucklands Beach.",
     "meetingPoint": {
@@ -21,6 +21,31 @@
       15,
       21,
       24
+    ],
+    "distanceMarkerAlignments": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0
     ],
     "terrain": [
       {
@@ -68,11 +93,6 @@
       },
       {
         "type": "public-bathroom",
-        "latitude": -36.9120522,
-        "longitude": 174.871613
-      },
-      {
-        "type": "public-bathroom",
         "latitude": -36.9018555,
         "longitude": 174.85405
       },
@@ -87,14 +107,9 @@
         "longitude": 174.8493
       },
       {
-        "type": "public-bathroom",
-        "latitude": -36.9023628,
-        "longitude": 174.867462
-      },
-      {
-        "type": "public-bathroom",
-        "latitude": -36.899086,
-        "longitude": 174.854172
+        "type": "water-fountain",
+        "latitude": -36.90346,
+        "longitude": 174.846069
       },
       {
         "type": "public-bathroom",
@@ -102,19 +117,14 @@
         "longitude": 174.904053
       },
       {
-        "type": "water-fountain",
-        "latitude": -36.87363,
-        "longitude": 174.9139
-      },
-      {
         "type": "public-bathroom",
         "latitude": -36.8803139,
         "longitude": 174.896957
       },
       {
-        "type": "water-fountain",
-        "latitude": -36.90346,
-        "longitude": 174.846069
+        "type": "public-bathroom",
+        "latitude": -36.9120522,
+        "longitude": 174.871613
       }
     ]
   },
