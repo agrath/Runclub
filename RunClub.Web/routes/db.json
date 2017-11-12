@@ -995,5 +995,577 @@
     ],
     "annotations": [
     ]
+  },
+  {
+    "id": "xQDVhtqv",
+    "name": "Titirangi - Waiatarua Circuit",
+    "enabled": true,
+    "description": "This is the legendary course that Arthur Lydiard trained all his world-beating runners on back in the 60s.\r\nWe'll be doing a 21.5k loop from Titirangi up West Coast Road and down Scenic Drive and Exhibition Drive. There are options to go shorter by cutting through Shaw Rd - 14.5k, or longer by adding on an out and back along Exhibition Drive - 28k.\r\nThis a classic Auckland run, that is known by runners all over the world. Don't miss it!\r\nMuch of this run is on winding, country roads.  Please wear something bright so cars can see you.\r\nNOTE: Traffic on this route is busy. All runners joining us run at their own risk and agree not to hold the club or any run leaders responsible for any injury or damages to person or belongings.",
+    "meetingPoint": {
+      "label": "Titirangi car park, cnr Titirangi Rd. & South Titirangi Rd.",
+      "latitude": -36.93812296,
+      "longitude": 174.65598285,
+      "offset": {
+        "left": "5px",
+        "top": "5px"
+      },
+      "placement": "bottom"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.92848789,
+        "longitude": 174.62064743
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      14.5,
+      21,
+      28
+    ],
+    "terrain": [
+      {
+        "type": "gravel",
+        "label": "Gravel Road",
+        "percent": 33
+      },
+      {
+        "type": "rural",
+        "label": "Rural Road",
+        "percent": 67
+      }
+    ],
+    "distanceMarkerAlignments": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "placesOfInterest": [
+      {
+        "type": "parking",
+        "latitude": -36.93808437,
+        "longitude": 174.65610623
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9070625,
+        "longitude": 174.627914
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.93796,
+        "longitude": 174.6562
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9505424,
+        "longitude": 174.658829
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9491425,
+        "longitude": 174.665146
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9109955,
+        "longitude": 174.652054
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9464722,
+        "longitude": 174.6063
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.9465942,
+        "longitude": 174.606552
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.9067345,
+        "longitude": 174.628113
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.91089,
+        "longitude": 174.651688
+      },
+      {
+        "type": "photo-camera",
+        "latitude": -36.9471779,
+        "longitude": 174.606674
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+      {
+        "visible": true,
+        "label": {
+          "title": "Shaw Road",
+          "description": "Cutting through Shaw road shortens the route to 14k.5",
+          "anchor": {
+            "latitude": -36.91576,
+            "longitude": 174.62062
+          },
+          "offset": {
+            "left": "5px",
+            "top": "5px"
+          },
+          "placement": "right",
+          "backgroundColour": "#f27b08",
+          "fontColour": "#ffffff",
+          "fontSize": "13px",
+          "showCloseButton": true
+        },
+        "strokeColour": "#f27b08",
+        "points": [
+          [
+            -36.91198,
+            174.62082
+          ],
+          [
+            -36.91193,
+            174.62089
+          ],
+          [
+            -36.91199,
+            174.62094
+          ],
+          [
+            -36.91213,
+            174.62103
+          ],
+          [
+            -36.91309,
+            174.62131
+          ],
+          [
+            -36.91328,
+            174.62134
+          ],
+          [
+            -36.91345,
+            174.62132
+          ],
+          [
+            -36.91513,
+            174.62079
+          ],
+          [
+            -36.91576,
+            174.62062
+          ],
+          [
+            -36.91615,
+            174.6206
+          ],
+          [
+            -36.91662,
+            174.62064
+          ],
+          [
+            -36.91677,
+            174.62068
+          ],
+          [
+            -36.91695,
+            174.62079
+          ],
+          [
+            -36.91776,
+            174.62144
+          ],
+          [
+            -36.91975,
+            174.623
+          ],
+          [
+            -36.92085,
+            174.62388
+          ],
+          [
+            -36.92103,
+            174.62398
+          ],
+          [
+            -36.9219,
+            174.62438
+          ],
+          [
+            -36.92218,
+            174.62443
+          ],
+          [
+            -36.92362,
+            174.62464
+          ],
+          [
+            -36.92404,
+            174.62469
+          ],
+          [
+            -36.92466,
+            174.62468
+          ],
+          [
+            -36.92512,
+            174.62467
+          ],
+          [
+            -36.92523,
+            174.62469
+          ],
+          [
+            -36.92535,
+            174.62475
+          ],
+          [
+            -36.92545,
+            174.62484
+          ],
+          [
+            -36.92557,
+            174.62498
+          ],
+          [
+            -36.92613,
+            174.6258
+          ],
+          [
+            -36.9263,
+            174.62597
+          ],
+          [
+            -36.92645,
+            174.62603
+          ],
+          [
+            -36.92663,
+            174.62607
+          ],
+          [
+            -36.92717,
+            174.62614
+          ],
+          [
+            -36.92728,
+            174.62618
+          ],
+          [
+            -36.92743,
+            174.62628
+          ],
+          [
+            -36.9277,
+            174.6266
+          ],
+          [
+            -36.92785,
+            174.62673
+          ],
+          [
+            -36.92804,
+            174.62682
+          ],
+          [
+            -36.92829,
+            174.62691
+          ],
+          [
+            -36.9288,
+            174.62699
+          ],
+          [
+            -36.92892,
+            174.62697
+          ],
+          [
+            -36.92903,
+            174.6269
+          ],
+          [
+            -36.92918,
+            174.62676
+          ],
+          [
+            -36.92933,
+            174.62663
+          ],
+          [
+            -36.92957,
+            174.62655
+          ],
+          [
+            -36.92969,
+            174.62654
+          ],
+          [
+            -36.92976,
+            174.62651
+          ],
+          [
+            -36.92987,
+            174.62636
+          ],
+          [
+            -36.92994,
+            174.62619
+          ],
+          [
+            -36.93003,
+            174.6261
+          ],
+          [
+            -36.93042,
+            174.62599
+          ],
+          [
+            -36.93068,
+            174.62589
+          ],
+          [
+            -36.93081,
+            174.62586
+          ],
+          [
+            -36.93093,
+            174.62586
+          ],
+          [
+            -36.93114,
+            174.6259
+          ],
+          [
+            -36.9316,
+            174.62592
+          ],
+          [
+            -36.93226,
+            174.62601
+          ],
+          [
+            -36.93309,
+            174.62619
+          ],
+          [
+            -36.93341,
+            174.62621
+          ],
+          [
+            -36.93389,
+            174.62619
+          ],
+          [
+            -36.93406,
+            174.6262
+          ],
+          [
+            -36.93445,
+            174.62626
+          ],
+          [
+            -36.93466,
+            174.62627
+          ],
+          [
+            -36.93474,
+            174.62624
+          ],
+          [
+            -36.93492,
+            174.62611
+          ],
+          [
+            -36.9351,
+            174.62595
+          ],
+          [
+            -36.93531,
+            174.62566
+          ],
+          [
+            -36.93585,
+            174.6247
+          ],
+          [
+            -36.93591,
+            174.62466
+          ],
+          [
+            -36.93599,
+            174.62464
+          ],
+          [
+            -36.93609,
+            174.62468
+          ],
+          [
+            -36.9363,
+            174.6248
+          ],
+          [
+            -36.93646,
+            174.62486
+          ],
+          [
+            -36.93662,
+            174.62489
+          ],
+          [
+            -36.93721,
+            174.62483
+          ],
+          [
+            -36.9384,
+            174.6246
+          ],
+          [
+            -36.93857,
+            174.62459
+          ],
+          [
+            -36.93868,
+            174.62456
+          ],
+          [
+            -36.93883,
+            174.62451
+          ],
+          [
+            -36.93896,
+            174.62443
+          ],
+          [
+            -36.93917,
+            174.62423
+          ],
+          [
+            -36.93928,
+            174.62409
+          ],
+          [
+            -36.93949,
+            174.62388
+          ],
+          [
+            -36.93963,
+            174.6238
+          ],
+          [
+            -36.93969,
+            174.62378
+          ],
+          [
+            -36.93988,
+            174.62377
+          ],
+          [
+            -36.9401,
+            174.62369
+          ],
+          [
+            -36.94023,
+            174.6236
+          ],
+          [
+            -36.94038,
+            174.62354
+          ],
+          [
+            -36.94049,
+            174.62353
+          ],
+          [
+            -36.94061,
+            174.62355
+          ],
+          [
+            -36.94091,
+            174.62371
+          ],
+          [
+            -36.94102,
+            174.62381
+          ],
+          [
+            -36.94107,
+            174.62391
+          ],
+          [
+            -36.9414,
+            174.62506
+          ],
+          [
+            -36.94141,
+            174.62511
+          ]
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "title": "Longer run option",
+        "visible": true,
+        "description": "Turn around here, and do an out and back along Exhibition Drive. This adds 7k to the run.",
+        "anchor": {
+          "latitude": -36.93734689,
+          "longitude": 174.64395046
+        },
+        "offset": {
+          "left": "0px",
+          "top": "0px"
+        },
+        "placement": "bottom",
+        "backgroundColour": "#ffffff",
+        "border": true,
+        "fontColour": "#000000",
+        "fontSize": "13px",
+        "showCloseButton": true
+      }
+    ]
   }
 ]

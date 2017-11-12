@@ -117,6 +117,7 @@
     <Content Include="routes\RUCWGquH.gpx" />
     <Content Include="routes\zwSaUUvs.gpx" />
     <Content Include="routes\nhgQlDkn.gpx" />
+    <Content Include="routes\xQDVhtqv.gpx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
