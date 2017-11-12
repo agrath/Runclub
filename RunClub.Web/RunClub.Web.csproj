@@ -97,7 +97,6 @@
     <Content Include="js\vendor\bootstrap.js" />
     <Content Include="js\vendor\chart.js" />
     <Content Include="js\vendor\jquery.tipTip.js" />
-    <Content Include="js\vendor\moment.js" />
     <Content Include="js\vendor\popper.js" />
     <Content Include="js\vendor\snazzy-info-window.js" />
     <Content Include="js\vendor\underscore-min.js" />
@@ -118,7 +117,7 @@
     <Content Include="routes\RUCWGquH.gpx" />
     <Content Include="routes\zwSaUUvs.gpx" />
     <Content Include="routes\nhgQlDkn.gpx" />
-    <Content Include="routes\calendar.json" />
+    <Content Include="routes\xQDVhtqv.gpx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -132,7 +131,7 @@
     <Content Include="js\vendor\angular-sanitize.min.js" />
     <Content Include="js\vendor\gpx.js" />
     <Content Include="js\vendor\jquery-3.2.1.min.js" />
-    <Content Include="js\controllers.js" />
+    <Content Include="js\routes.controller.js" />
     <Content Include="js\vendor\angular.min.js" />
     <Content Include="css\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
     <Content Include="css\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
