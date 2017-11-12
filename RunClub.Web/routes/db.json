@@ -569,6 +569,10 @@
       },
       "placement": "bottom"
     },
+    "afterRunInformation": {
+      "content": "After the run, we usually meet at the Maraetai Wharf Cafe (opposite the starting point), the usual suspects (coffee, breakfast and cabinet options) are all available plus there is indoor or outdoor seating (depending on the weather!). The fastest runners will arrive around 9:30 a.m.",
+      "carrotCakeRating": 2.5
+    },
     "mapDefaults": {
       "center": {
         "latitude": -36.848448,

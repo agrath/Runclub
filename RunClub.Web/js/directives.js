@@ -1,4 +1,36 @@
-﻿
+﻿app.directive('displayRatingStars', function (style) {
+    return {
+        restrict: 'E',
+        scope: {
+            value: '<',
+            max: '<',
+        },
+        template: '<div class="rating-container"></div>',
+        link: function ($scope, element, attributes, ngModelCtrl) {
+            var container = element.find(".rating-container");
+            $scope.loading = true;
+            var value = $scope.value;
+            var max = $scope.max;
+            for (var i = 0; i < max; i++) {
+                var rating = jQuery('<div></div>').addClass("rating");
+                var icon = jQuery('<i></i>').addClass('fa');
+                if (value >= i && value > i + 1)
+                {
+                    icon.addClass('fa-star')
+                    rating.addClass('active');
+                } else if (value >= i + 0.5 && value < i + 1)
+                {
+                    icon.addClass('fa-star-half-o');
+                    rating.addClass('active-half');
+                } else {
+                    icon.addClass('fa-star-o');
+                }
+                container.append(rating.append(icon));
+            }
+        }
+    };
+});
+
 app.directive('gpxViewer', function ($timeout, style) {
     var helper =
         {
@@ -552,3 +584,4 @@ Chart.pluginService.register({
         }
     },
 });
+

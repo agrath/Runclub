@@ -88,5 +88,6 @@ jQuery(document).ready(function () {
             },
         }, ".dropdown.keepopen");
 
+        jQuery('.tipTip:not(.initialized').tipTip().addClass('initialized');
     }, 250);
 });

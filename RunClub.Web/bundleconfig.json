@@ -10,6 +10,7 @@
       "js/vendor/gpx.js",
       "js/vendor/v3_epoly.js",
       "js/snazzy-info-window.js",
+      "js/vendor/jquery.tiptip.js",
       "js/bootstrap.js",
       "js/popper.js",
       "js/vendor/Chart.js"

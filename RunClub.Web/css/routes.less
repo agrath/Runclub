@@ -2,10 +2,11 @@
 @import "font-awesome-4.7.0/less/font-awesome.less";
 
 body {
-}
+    min-height: 75rem; 
 
-body {
-    min-height: 75rem; /* Can be removed; just added for demo purposes */
+    .view {
+        padding: 20px;
+    }
 }
 
 .navbar {
@@ -32,7 +33,7 @@ body {
 }
 
 .album {
-    min-height: 50rem; /* Can be removed; just added for demo purposes */
+    min-height: 50rem; 
     padding-top: 3rem;
     padding-bottom: 3rem;
     background-color: #f7f7f7;
@@ -54,7 +55,8 @@ body {
     height: 120px;
     overflow: hidden;
     position: relative;
-    margin-bottom:20px;
+    margin-bottom: 20px;
+
     &:before {
         content: '';
         width: 100%;
@@ -110,6 +112,13 @@ div.map-container {
     .map-canvas {
         height: 600px;
         width: 800px;
+    }
+}
+
+.distance-options {
+    li i {
+        color: @green;
+        font-size: 120%;
     }
 }
 
@@ -201,4 +210,34 @@ div.map-container {
 .si-pointer-border-right {
     left: 0;
     border-right-color: #20bc5c;
+}
+
+.after-run {
+    strong {
+        display: block;
+        float: left;
+        margin-right: 15px;
+    }
+
+    .rating-container {
+        float: left;
+        margin-bottom: 20px;
+
+        .rating {
+            color: #999999;
+            float: left;
+            margin-right: 12px;
+            font-size: 20px;
+        }
+
+        .rating.active-half, .rating.active {
+            color: #eacc16;
+        }
+    }
+}
+
+i.tipTip {
+    cursor: pointer;
+    color: @green;
+    font-size: 16px;
 }

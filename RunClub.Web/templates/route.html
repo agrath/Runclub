@@ -14,10 +14,23 @@
         {{item.percent}}%
     </li>
 </ul>
+<div ng-if="route.afterRunInformation" class="after-run">
+    <h3>After the run</h3>
+    <p ng-bind-html="route.afterRunInformation.content"></p>
+    <div ng-if="route.afterRunInformation.carrotCakeRating">
+        <strong>
+            Mike's carrot cake rating:
+            <i class="fa fa-question-circle tipTip" title="What's this? One of our regular runners is all but guaranteed to sample the carrot cake at the cafe after the run, so we let him put a rating on it for you."></i>
+        </strong>
+
+        <display-rating-stars value="route.afterRunInformation.carrotCakeRating" max="5"></display-rating-stars>
+        <br class="clearfix" />
+    </div>
+</div>
+<br class="clearfix" />
 <div class="map-container" data-route-id="{{route.id}}">
     <gpx-viewer route="route" ng-if="route.gpxLoaded"></gpx-viewer>
 </div>
-
 <div class="map-footer">
     <div class="dropdown keepopen pull-right">
         <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
