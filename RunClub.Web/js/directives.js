@@ -442,6 +442,8 @@ app.directive('gpxElevationChart', function (style) {
             var last = new google.maps.LatLng(data[0].latitude, data[0].longitude);
             var distance = 0, distanceSteppedMax = 0, elevation = 0;
             var lastElevation = data[0].elevation;
+            elevation = lastElevation;
+            console.log('e', lastElevation);
             var step = function (number, increment, offset) {
                 return Math.ceil((number - offset) / increment) * increment + offset;
             }
@@ -455,8 +457,6 @@ app.directive('gpxElevationChart', function (style) {
                 elevation += elevationDelta;
                 var distanceStepped = step(distance, 100, 0);
                 //console.log('sed', JSON.stringify({ metersSinceLastPoint: metersSinceLastPoint, distance: distance, distanceStepped: distanceStepped, distanceSteppedMax: distanceSteppedMax, elevationDelta: elevationDelta, elevation: elevation }));
-                if (elevation < 0) elevation = 0;
-
                 if (distanceStepped % 100 == 0 && distanceStepped > distanceSteppedMax) {
                     distanceSteppedMax = distanceStepped;
                     var intervalElevation = Math.round(elevation);
