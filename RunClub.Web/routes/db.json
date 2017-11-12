@@ -718,6 +718,16 @@
         "type": "water-fountain",
         "latitude": -36.88819566,
         "longitude": 174.98955444
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9044075,
+        "longitude": 175.068176
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.91329,
+        "longitude": 175.0735
       }
     ],
     "placesOfInterestOptions": [
