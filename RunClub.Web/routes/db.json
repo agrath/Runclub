@@ -162,6 +162,32 @@
         "percent": 10
       }
     ],
+    "distanceMarkerAlignments": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
     "placesOfInterestOptions": [
       {
         "type": "parking",
@@ -189,6 +215,11 @@
       }
     ],
     "placesOfInterest": [
+      {
+        "type": "parking",
+        "latitude": -36.93837354,
+        "longitude": 174.77830231
+      },
       {
         "type": "public-bathroom",
         "latitude": -36.9787941,
@@ -452,6 +483,26 @@
         "label": "Urban",
         "percent": 85
       }
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ],
     "placesOfInterest": [
       {
