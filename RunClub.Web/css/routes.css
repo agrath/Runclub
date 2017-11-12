@@ -2636,8 +2636,9 @@ i.tipTip {
   display: block;
   margin-right: 10px;
   color: #fff;
-  width: 150px;
+  width: 110px;
   float: right;
+  font-size: 14px;
 }
 .event-list .calendar-cta {
   margin-top: 10px;
