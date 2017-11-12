@@ -79,7 +79,13 @@ jQuery(document).ready(function () {
         $(document.body).on({
             "shown.bs.dropdown": function () { this.closable = true; },
             "hide.bs.dropdown": function () { return this.closable; },
-            "click": function (e) { this.closable = !$(e.target).closest(".dropdown-menu").length; },
+            "click": function (e) {
+                var c = !$(e.target).closest(".dropdown-menu").length;
+                this.closable = c;
+                window.setTimeout((function () {
+                    this.closable = true;
+                }).bind(this), 250)
+            },
         }, ".dropdown.keepopen");
 
     }, 250);
