@@ -1,109 +1,114 @@
 ﻿{
-    "id": "abcABC",
-    "name": "",
-    "description": "Line1\r\nLine2",
-    "meetingPoint": {
-        "label": "",
-        "latitude": -36.0,
-        "longitude": 174.0
+  "id": "abcABC",
+  "name": "",
+  "enabled": true,
+  "description": "Line1\r\nLine2",
+  "meetingPoint": {
+    "label": "",
+    "latitude": -36.0,
+    "longitude": 174.0
+  },
+  "mapDefaults": {
+    "center": {
+      "latitude": -36.848448,
+      "longitude": 174.762191
     },
-    "mapDefaults": {
-        "center": {
-            "latitude": -36.848448,
-            "longitude": 174.762191
-        },
-        "zoom": 12
+    "zoom": 12
+  },
+  "distanceOptions": [
+    0,
+    0,
+  ],
+  "terrain": [
+    {
+      "type": "trail",
+      "label": "Trail",
+      "percent": 10
     },
-    "distanceOptions": [
-        0,
-        0,
-    ],
-    "terrain": [
-        {
-            "type": "trail",
-            "label": "Trail",
-            "percent": 10
+    {
+      "type": "urban",
+      "label": "Urban",
+      "percent": 90
+    }
+  ],
+  "placesOfInterest": [
+    {
+      "type": "parking",
+      "latitude": -1000,
+      "longitude": 1000,
+    },
+    {
+      "type": "public-bathroom",
+      "latitude": -1000,
+      "longitude": 1000,
+    },
+    {
+      "type": "water-and-bathroom",
+      "latitude": -1000,
+      "longitude": 1000,
+    },
+    {
+      "type": "water-fountain",
+      "latitude": -1000,
+      "longitude": 1000,
+    },
+    {
+      "type": "photo-camera",
+      "latitude": -1000,
+      "longitude": 1000,
+    }
+  ],
+  "placesOfInterestOptions": [
+    {
+      "type": "parking",
+      "label": "Parking",
+      "visible": true,
+      "zIndex": 40
+    },
+    {
+      "type": "public-bathroom",
+      "label": "Public bathroom",
+      "visible": true,
+      "zIndex": 30
+    },
+    {
+      "type": "water-fountain",
+      "label": "Water fountain",
+      "visible": true,
+      "zIndex": 20
+    },
+    {
+      "type": "photo-camera",
+      "label": "Photo opportunity",
+      "visible": true,
+      "zIndex": 10
+    }
+  ],
+  "diversions": [
+    {
+      "visible": true,
+      "label": {
+        "title": "abcABC",
+        "description": "abcABCblahblah",
+        "anchor": {
+          "latitude": -1000,
+          "longitude": 1000
         },
-        {
-            "type": "urban",
-            "label": "Urban",
-            "percent": 90
-        }
-    ],
-    "placesOfInterest": [
-        {
-            "type": "parking",
-            "latitude": -1000,
-            "longitude": 1000,
+        "offset": {
+          "left": "5px",
+          "top": "5px"
         },
-        {
-            "type": "public-bathroom",
-            "latitude": -1000,
-            "longitude": 1000,
-        },
-        {
-            "type": "water-and-bathroom",
-            "latitude": -1000,
-            "longitude": 1000,
-        },
-        {
-            "type": "water-fountain",
-            "latitude": -1000,
-            "longitude": 1000,
-        },
-        {
-            "type": "photo-camera",
-            "latitude": -1000,
-            "longitude": 1000,
-        }
-    ],
-    "placesOfInterestOptions": [
-        {
-            "type": "parking",
-            "zIndex": 40
-        },
-        {
-            "type": "public-bathroom",
-            "zIndex": 30
-        },
-        {
-            "type": "water-and-bathroom",
-            "widthMultiplier": 2,
-            "zIndex": 30
-        },
-        {
-            "type": "water-fountain",
-            "zIndex": 20
-        },
-        {
-            "type": "photo-camera",
-            "zIndex": 10
-        }
-    ],
-    "diversions": [
-        {
-            "label": {
-                "title": "abcABC",
-                "description": "abcABCblahblah",
-                "anchor": {
-                    "latitude": -1000,
-                    "longitude": 1000
-                },
-                "offset": {
-                    "left": "5px",
-                    "top": "5px"
-                },
-                "placement": "bottom",
-                "backgroundColour": "#f27b08",
-                "fontColour": "#ffffff",
-                "fontSize": "13px",
-                "showCloseButton": true
-            },
-            "strokeColour": "#f27b08",
-            "points": [
-                [ -1000, 1000 ],
-                [ -1000, 1000 ]
-            ]
-        }
-    ]
+        "placement": "bottom",
+        "backgroundColour": "#f27b08",
+        "fontColour": "#ffffff",
+        "fontSize": "13px",
+        "showCloseButton": true
+      },
+      "strokeColour": "#f27b08",
+      "points": [
+        [ -1000, 1000 ],
+        [ -1000, 1000 ]
+      ]
+    }
+  ]
 }
