@@ -1,4 +1,21 @@
-﻿app.directive('displayRatingStars', function (style) {
+﻿app.directive('ngIncludeTemplate', function () {
+    return {
+        templateUrl: function (elem, attrs) { return attrs.ngIncludeTemplate; },
+        restrict: 'A',
+        scope: {
+            'ngIncludeVariables': '&'
+        },
+        link: function (scope, elem, attrs) {
+            var vars = scope.ngIncludeVariables();
+            console.log('vars', vars);
+            Object.keys(vars).forEach(function (key) {
+                scope[key] = vars[key];
+            });
+        }
+    }
+});
+
+app.directive('displayRatingStars', function (style) {
     return {
         restrict: 'E',
         scope: {
@@ -14,12 +31,10 @@
             for (var i = 0; i < max; i++) {
                 var rating = jQuery('<div></div>').addClass("rating");
                 var icon = jQuery('<i></i>').addClass('fa');
-                if (value >= i && value > i + 1)
-                {
+                if (value >= i && value > i + 1) {
                     icon.addClass('fa-star')
                     rating.addClass('active');
-                } else if (value >= i + 0.5 && value < i + 1)
-                {
+                } else if (value >= i + 0.5 && value < i + 1) {
                     icon.addClass('fa-star-half-o');
                     rating.addClass('active-half');
                 } else {

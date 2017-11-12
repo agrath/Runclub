@@ -1,0 +1,42 @@
+﻿<ul class="event-list">
+    <li ng-repeat="item in events">
+        <time datetime="{{item.timestamp}}">
+            <span class="day">{{item.day }}</span>
+            <span class="month">{{ item.month }}</span>
+            <span class="year">{{ item.year }}</span>
+        </time>
+        <img alt="Map preview" ng-if="item.route && item.route.staticMapImage" ng-src="{{item.route.staticMapImage}}">
+        <div class="info">
+            <div class="title-container">
+                <h2 class="title" ng-if="item.route">{{ item.route.name }}</h2>
+                <h2 class="title" ng-if="!item.route">{{ item.title }}</h2>
+            </div>
+            <div class="footer">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="desc" ng-if="item.route">{{item.route.description }}</p>
+                        <p class="desc" ng-if="!item.route">{{item.description }}</p>
+                    </div>
+                </div>
+                <div class="row calendar-cta">
+                    <div class="col-md-3">
+                        <span class="fa fa-clock-o"></span> {{ item.time }}
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="distance-options">
+                            <span ng-repeat="option in item.route.distanceOptions">
+                                <i class="fa fa-bolt"></i><span>{{option}} km</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <a ng-if="item.route" ng-href="#!/routes/{{item.route.id}}" class="btn btn-success">View details</a>
+                        <a ng-if="!item.route" ng-href="{{item.link}}" target="_blank" class="btn btn-success">View details</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </li>
+</ul>

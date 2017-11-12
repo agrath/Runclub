@@ -32,13 +32,13 @@ app.controller('showRouteController', function ($scope, RouteService, $routePara
 
 app.controller('calendarController', function ($scope, RouteService, CalendarService, $routeParams, $location) {
     $scope.id = $routeParams.id;
-
+    $scope.loading = true;
     RouteService.getRoutes().then(function (data) {
         $scope.routes = data;
         CalendarService.getCalendar().then(function (data) {
-            $scope.calendar = data;
+            $scope.allEvents = data;
             
-            _.each($scope.calendar, function (item) {
+            _.each($scope.allEvents, function (item) {
                 item.route = _.find($scope.routes, function (route) { return route.id == item.id; });
                 item.moment = moment(item.timestamp);
                 item.day = item.moment.format('DD');
@@ -46,6 +46,14 @@ app.controller('calendarController', function ($scope, RouteService, CalendarSer
                 item.year = item.moment.format('YYYY');
                 item.time = item.moment.format('HH:mm a');
             })
+            var now = moment();
+            var events = _.partition($scope.allEvents, function (event) {
+                return event.moment.isBefore(now);
+            });
+            $scope.upcomingEvents = _.sortBy(events[1], function (event) { return event.moment.unix(); });
+            $scope.pastEvents = _.sortBy(events[0], function (event) { return -event.moment.unix(); });
+            
+            $scope.loading = false;
         });
     })
 
