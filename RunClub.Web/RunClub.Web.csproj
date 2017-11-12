@@ -112,6 +112,7 @@
     <Content Include="routes\template.json" />
     <Content Include="routes\viyVJdOl.gpx" />
     <Content Include="routes\ekBNMjnO.gpx" />
+    <Content Include="routes\zwSaUUvs.gpx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
