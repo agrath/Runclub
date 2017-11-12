@@ -1,13 +1,4 @@
-﻿
-/*
-todo:
-    -   after run info
-    -   calendar + meet time + link to meetup
-    -   (v2) submit your run
-
-*/
-
-/*
+﻿/*
 Get a latitude and longitude for an address here: https://www.gps-coordinates.net/
 Convert a strava activity to a GPX with this bookmarklet: https://mapstogpx.com/strava/
 Generate a randomized id here: https://passwordsgenerator.net/ (8 character, alpha)
