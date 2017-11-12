@@ -1025,14 +1025,19 @@
     ],
     "terrain": [
       {
-        "type": "gravel",
-        "label": "Gravel Road",
-        "percent": 33
+        "type": "road",
+        "label": "Urban",
+        "percent": 10
       },
       {
-        "type": "rural",
+        "type": "forest",
         "label": "Rural Road",
-        "percent": 67
+        "percent": 75
+      },
+      {
+        "type": "trail",
+        "label": "Gravel Road",
+        "percent": 15
       }
     ],
     "distanceMarkerAlignments": [
