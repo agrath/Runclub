@@ -79,6 +79,7 @@
       <DependentUpon>routes.less</DependentUpon>
     </Content>
     <Content Include="css\snazzy-info-window.css" />
+    <Content Include="css\tipTip.css" />
     <Content Include="images\map-icons\km-marker.svg" />
     <Content Include="images\map-icons\parking.png" />
     <Content Include="images\map-icons\photo-camera.png" />
@@ -95,6 +96,7 @@
     <Content Include="js\vendor\angular.js" />
     <Content Include="js\vendor\bootstrap.js" />
     <Content Include="js\vendor\chart.js" />
+    <Content Include="js\vendor\jquery.tipTip.js" />
     <Content Include="js\vendor\popper.js" />
     <Content Include="js\vendor\snazzy-info-window.js" />
     <Content Include="js\vendor\underscore-min.js" />
