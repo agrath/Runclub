@@ -1572,5 +1572,11 @@
         "showCloseButton": true
       }
     ]
+  },
+  {
+    "id": "TcSVvBQT",
+    "name": "PLACEHOLDER- Auckland's three peaks",
+    "enabled": false,
+    "description": "This is a placeholder item to reserve the id for the calendar"
   }
 ]

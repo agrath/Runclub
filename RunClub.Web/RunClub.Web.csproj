@@ -89,6 +89,7 @@
     <Content Include="images\map-icons\water-fountain.png" />
     <Content Include="index.html" />
     <Content Include="js\app.js" />
+    <Content Include="js\controllers.js" />
     <Content Include="js\directives.js" />
     <Content Include="js\routes.js" />
     <Content Include="js\vendor.bundle.js" />
@@ -97,6 +98,7 @@
     <Content Include="js\vendor\bootstrap.js" />
     <Content Include="js\vendor\chart.js" />
     <Content Include="js\vendor\jquery.tipTip.js" />
+    <Content Include="js\vendor\moment.js" />
     <Content Include="js\vendor\popper.js" />
     <Content Include="js\vendor\snazzy-info-window.js" />
     <Content Include="js\vendor\underscore-min.js" />
@@ -118,6 +120,7 @@
     <Content Include="routes\zwSaUUvs.gpx" />
     <Content Include="routes\nhgQlDkn.gpx" />
     <Content Include="routes\xQDVhtqv.gpx" />
+    <Content Include="routes\calendar.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -131,7 +134,6 @@
     <Content Include="js\vendor\angular-sanitize.min.js" />
     <Content Include="js\vendor\gpx.js" />
     <Content Include="js\vendor\jquery-3.2.1.min.js" />
-    <Content Include="js\routes.controller.js" />
     <Content Include="js\vendor\angular.min.js" />
     <Content Include="css\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
     <Content Include="css\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />

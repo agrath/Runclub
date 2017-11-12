@@ -30,11 +30,23 @@ app.controller('showRouteController', function ($scope, RouteService, $routePara
     
 });
 
-app.controller('calendarController', function ($scope, RouteService, $routeParams, $location) {
+app.controller('calendarController', function ($scope, RouteService, CalendarService, $routeParams, $location) {
     $scope.id = $routeParams.id;
 
     RouteService.getRoutes().then(function (data) {
         $scope.routes = data;
+        CalendarService.getCalendar().then(function (data) {
+            $scope.calendar = data;
+            
+            _.each($scope.calendar, function (item) {
+                item.route = _.find($scope.routes, function (route) { return route.id == item.id; });
+                item.moment = moment(item.timestamp);
+                item.day = item.moment.format('DD');
+                item.month = item.moment.format('MMM');
+                item.year = item.moment.format('YYYY');
+                item.time = item.moment.format('HH:mm a');
+            })
+        });
     })
 
     $scope.list = function () {

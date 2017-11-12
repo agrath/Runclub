@@ -3,10 +3,16 @@
 <p ng-bind-html="route.description | br"></p>
 <h3>Meeting point</h3>
 <p>{{route.meetingPoint.label}}</p>
-<h3>Distance options</h3>
-<ul class="distance-options fa-ul">
-    <li ng-repeat="option in route.distanceOptions"><i class="fa-li fa fa-check-circle-o"></i>{{option}} km</li>
-</ul>
+<div>
+    <h3>Distance options</h3>
+    <div class="distance-options">
+        <span ng-repeat="option in route.distanceOptions">
+            <i class="fa fa-bolt"></i><span>{{option}} km</span>
+        </span>
+        <br class="clearfix" />
+    </div>
+    <br class="clearfix" />
+</div>
 <h3>Terrain</h3>
 <ul class="terrain-options">
     <li ng-repeat="item in route.terrain" ng-style="{width:item.percent+'%'}" ng-class="'terrain-'+item.type">

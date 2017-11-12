@@ -2,11 +2,13 @@
 @import "font-awesome-4.7.0/less/font-awesome.less";
 
 body {
-    min-height: 75rem; 
+    min-height: 75rem;
 
     .view {
         padding: 20px;
     }
+
+    font-family: 'Open Sans'
 }
 
 .navbar {
@@ -33,7 +35,7 @@ body {
 }
 
 .album {
-    min-height: 50rem; 
+    min-height: 50rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
     background-color: #f7f7f7;
@@ -52,7 +54,7 @@ body {
 }
 
 .description-container {
-    height: 120px;
+    height: 150px;
     overflow: hidden;
     position: relative;
     margin-bottom: 20px;
@@ -116,9 +118,23 @@ div.map-container {
 }
 
 .distance-options {
-    li i {
+    span {
+        float: left;
+        display: block;
+        line-height: 38px;
+        vertical-align: middle;
+    }
+
+    span i, span span {
+        float: left;
+        margin-right: 10px;
+        display: block;
+    }
+
+    span i {
         color: @green;
         font-size: 120%;
+        margin-top: 12px;
     }
 }
 
@@ -240,4 +256,182 @@ i.tipTip {
     cursor: pointer;
     color: @green;
     font-size: 16px;
+}
+
+
+.event-list {
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    padding: 0px;
+
+    > li {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 5px rgb(51, 51, 51);
+        box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.7);
+        padding: 0px;
+        margin: 0px 0px 20px;
+    }
+
+    > li > time {
+        display: inline-block;
+        width: 100%;
+        color: #444444;
+        background-color: #fafafa;
+        border-left: solid 6px #20bc5c;
+        padding: 5px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    > li > time > span {
+        display: none;
+    }
+
+    > li > time > .day {
+        display: block;
+        font-size: 56pt;
+        font-weight: 100;
+        line-height: 1;
+    }
+
+    > li time > .month {
+        display: block;
+        font-size: 24pt;
+        font-weight: 900;
+        line-height: 1;
+    }
+
+    > li time > .year {
+        display: block;
+        font-size: 16pt;
+        font-weight: 900;
+        line-height: 1;
+    }
+
+    > li > img {
+        width: 100%;
+    }
+
+    > li > .info > .title-container {
+        background-color: #fafafa;
+        height: 32px;
+        padding-left: 10px;
+
+        h2 {
+            font-size: 17px;
+            font-weight: 700;
+            margin: 0px;
+            line-height: 32px;
+            vertical-align: middle;
+        }
+    }
+
+    > li > .info > .desc {
+        font-size: 13px;
+        font-weight: 300;
+        margin: 0px;
+    }
+
+    > li .info .footer {
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+        background-color: #fff;
+        border-top: solid 3px #cccccc;
+
+        p {
+            height: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 10px;
+            text-align: left;
+            margin-bottom: 0;
+        }
+    }
+
+    > li > .info > ul > li {
+        display: table-cell;
+        cursor: pointer;
+        color: rgb(30, 30, 30);
+        font-size: 11pt;
+        font-weight: 300;
+        padding: 3px 0px;
+    }
+
+    a.btn {
+        display: block;
+        margin-right: 10px;
+        color: #fff;
+        width: 150px;
+        float: right;
+    }
+
+    .calendar-cta {
+        margin-top: 10px;
+        height: 38px;
+        line-height: 38px;
+        vertical-align: middle;
+    }
+
+    @media (min-width: 768px) {
+        > li {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 150px;
+            padding: 0px;
+        }
+
+        > li > time,
+        > li > img {
+            display: inline-block;
+        }
+
+        > li > time {
+            width: 120px;
+            float: left;
+        }
+
+        > li > img {
+            width: 150px;
+            float: left;
+        }
+
+        > li > .info {
+            border-left: solid 3px #cccccc;
+            overflow: hidden;
+        }
+
+        > li > time {
+            width: 120px;
+            height: 150px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        > li > img {
+            width: 150px;
+            height: 150px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        > li > .info {
+            position: relative;
+            height: 150px;
+            text-align: left;
+        }
+
+        > li > .info > .title,
+        > li > .info > .desc {
+            padding: 0px 10px;
+        }
+
+        > li > .info > ul {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+        }
+    }
 }
