@@ -181,6 +181,62 @@ app.directive('gpxViewer', function ($timeout, style) {
                     console.log("\"latitude\": " + lat + ",\n\"longitude\": " + lng);
                 });
                 return marker;
+            },
+            addAnnotationToMap: function (annotation, map) {
+                console.log('annotation', annotation);
+
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(annotation.anchor.latitude, annotation.anchor.longitude),
+                    map: map,
+                    visible: false
+                });
+                var info = new SnazzyInfoWindow({
+                    marker: marker,
+                    placement: annotation.placement || 'right',
+                    offset: annotation.offset,
+                    maxWidth: 180,
+                    content: '<strong>' + annotation.title + '</strong>' +
+                    '<div>' + annotation.description + '</div>',
+                    showCloseButton: annotation.showCloseButton || false,
+                    closeOnMapClick: false,
+                    padding: '10px',
+                    backgroundColor: annotation.backgroundColour || 'rgba(0, 0, 0, 0.7)',
+                    border: annotation.border,
+                    borderRadius: '0px',
+                    shadow: false,
+                    fontColor: annotation.fontColour || '#fff',
+                    fontSize: annotation.fontSize || '14px'
+                });
+                info.open();
+                return info;
+            },
+            addMeetingPointToMap: function (meetingPoint, map) {
+                console.log('meetingPoint', meetingPoint);
+
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(meetingPoint.latitude, meetingPoint.longitude),
+                    map: map,
+                    visible: false
+                });
+                var info = new SnazzyInfoWindow({
+                    marker: marker,
+                    placement: meetingPoint.placement || 'right',
+                    offset: meetingPoint.offset,
+                    maxWidth: 180,
+                    content: '<h4>Meet here</h4>' +
+                    '<div>' + meetingPoint.label + '</div>',
+                    showCloseButton: meetingPoint.showCloseButton || false,
+                    closeOnMapClick: false,
+                    padding: '10px',
+                    backgroundColor: '#ffffff',
+                    border: true,
+                    borderRadius: '0px',
+                    shadow: false,
+                    fontColor: '#000000',
+                    fontSize: '14px'
+                });
+                info.open();
+                return info;
             }
         };
     return {
@@ -196,7 +252,7 @@ app.directive('gpxViewer', function ($timeout, style) {
             route.gpx().then(function (gpx) {
 
                 //console.log('map.directive.init');
-                
+
                 $scope.$watch('route.displayGpxRoute', function (v) {
                     //console.log('route.displayGpxRoute', v);
                     $scope.gpxPolyline.setMap(v ? $scope.map : null);
@@ -247,6 +303,21 @@ app.directive('gpxViewer', function ($timeout, style) {
                     }, true);
                 }
 
+                if (route.annotations && route.annotations.length) {
+                    $scope.$watch('route.displayAnnotations', function (v) {
+                        //console.log('route.displayAnnotations', v);
+                        _.each(route.annotations, function (annotation) {
+                            annotation.g.setMap(v ? $scope.map : null);
+                        });
+                    });
+                }
+
+                if (route.meetingPoint) {
+                    $scope.$watch('route.displayMeetingPoint', function (v) {
+                        route.meetingPoint.g.setMap(v ? $scope.map : null);
+                    });
+                }
+
                 var mapContainer = element.find(".map-canvas").get(0);
                 var map = new google.maps.Map(mapContainer, {
                     center: { lat: route.mapDefaults.center.latitude, lng: route.mapDefaults.center.longitude },
@@ -261,6 +332,8 @@ app.directive('gpxViewer', function ($timeout, style) {
                 var lengthInMeters = google.maps.geometry.spherical.computeLength(polyline.getPath());
                 console.log('route length is ', lengthInMeters);
 
+                route.meetingPoint.g = helper.addMeetingPointToMap(route.meetingPoint, map);
+
                 var distanceMarkers = helper.getDistanceMarkers(polyline, lengthInMeters, 1000, helper.distanceMarkerIcons, route.distanceMarkerAlignments);
                 $scope.distanceMarkers = distanceMarkers;
                 var placesOfInterestMarkers = helper.getPlacesOfInterestMarkers(route);
@@ -268,7 +341,7 @@ app.directive('gpxViewer', function ($timeout, style) {
                 var markers = distanceMarkers.concat(placesOfInterestMarkers);
                 _.each(markers, function (marker) { marker.g = helper.addMarkerToMap(marker, map); });
                 _.each(route.diversions, function (diversion) { diversion.g = helper.addDiversionToMap(diversion, map); });
-
+                _.each(route.annotations, function (annotation) { annotation.g = helper.addAnnotationToMap(annotation, map); });
                 //only so the running man shows up
                 $timeout(function () {
                     $scope.loading = false;

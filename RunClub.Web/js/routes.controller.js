@@ -1,7 +1,6 @@
 ﻿
 /*
 todo:
-    -   meet here
     -   after run info
     -   calendar + meet time + link to meetup
     -   (v2) submit your run

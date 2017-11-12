@@ -22,6 +22,8 @@ app.factory('RouteService', ['$q', '$http', function ($q, $http) {
                 if (!route.enabled) return;
                 route.displayGpxRoute = true;
                 route.displayDistanceMarkers = true;
+                route.displayAnnotations = true;
+                route.displayMeetingPoint = true;
 
                 route.staticMapImage = 'https://maps.googleapis.com/maps/api/staticmap?size=356x280&zoom=14&key=AIzaSyDeWHf1yBGiJgWoaQH_PEN2bnwZ2aCFSbE&center=' + route.meetingPoint.latitude + ',' + route.meetingPoint.longitude;
 
@@ -77,7 +79,13 @@ jQuery(document).ready(function () {
         $(document.body).on({
             "shown.bs.dropdown": function () { this.closable = true; },
             "hide.bs.dropdown": function () { return this.closable; },
-            "click": function (e) { this.closable = !$(e.target).closest(".dropdown-menu").length; },
+            "click": function (e) {
+                var c = !$(e.target).closest(".dropdown-menu").length;
+                this.closable = c;
+                window.setTimeout((function () {
+                    this.closable = true;
+                }).bind(this), 250)
+            },
         }, ".dropdown.keepopen");
 
     }, 250);

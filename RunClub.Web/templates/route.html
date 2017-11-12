@@ -27,6 +27,12 @@
             <ul>
                 <li>
                     <div class="form-check abc-checkbox">
+                        <input type="checkbox" ng-model="route.displayMeetingPoint" id="{{route.id}}-meeting-point" />
+                        <label class="form-check-label" for="{{route.id}}-meeting-point">Meeting point</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="form-check abc-checkbox">
                         <input type="checkbox" class="form-check-input" ng-model="route.displayGpxRoute" id="{{route.id}}-display-route" />
                         <label class="form-check-label" for="{{route.id}}-display-route">Route</label>
                     </div>
@@ -35,6 +41,12 @@
                     <div class="form-check abc-checkbox">
                         <input type="checkbox" ng-model="route.displayDistanceMarkers" id="{{route.id}}-display-distance-markers" />
                         <label class="form-check-label" for="{{route.id}}-display-distance-markers">Distance markers</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="form-check abc-checkbox">
+                        <input type="checkbox" ng-model="route.displayAnnotations" id="{{route.id}}-display-annotations" />
+                        <label class="form-check-label" for="{{route.id}}-display-annotations">Notes &amp; annotations</label>
                     </div>
                 </li>
                 <li ng-if="route.placesOfInterest.length">
