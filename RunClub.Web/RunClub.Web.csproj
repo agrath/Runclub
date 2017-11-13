@@ -121,6 +121,7 @@
     <Content Include="routes\nhgQlDkn.gpx" />
     <Content Include="routes\xQDVhtqv.gpx" />
     <Content Include="routes\calendar.json" />
+    <Content Include="routes\TcSVvBQT.gpx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
