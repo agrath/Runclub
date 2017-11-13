@@ -17,13 +17,7 @@ app.controller('showRouteController', function ($scope, RouteService, $routePara
     $scope.id = $routeParams.id;
 
     var url = '/app/route/' + $scope.id;
-    $scope.disqusConfig = {
-        disqus_shortname: "xplaa6ynf2ng",
-        disqus_identifier: url,
-        disqus_title: url,
-        disqus_url: url
-    };
-
+  
     RouteService.getRoutes().then(function (data) {
         $scope.routes = data;
         var route = _.find($scope.routes, function (r) { return r.id === $scope.id; });
