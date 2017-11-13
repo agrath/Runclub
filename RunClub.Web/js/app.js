@@ -1,5 +1,11 @@
 ﻿var app = angular.module('routesApp', ['ngSanitize', 'ngRoute']);
-
+app.run(function ($rootScope) {
+    $rootScope.$on('$locationChangeSuccess', function (event, to, from) {
+        var url = to.toString();
+        var view = url.substr(url.indexOf('/app') + 5, url.length).replace('/', '-');
+        $rootScope.view = view;
+    });
+});
 app.value('style', {
     lineStrokeColour: '#20bc5c',
     lineWeight: 3,
@@ -94,6 +100,7 @@ app.filter('br', function () {
 //because I don't want to use an angular binding library for bootstrap 4
 jQuery(document).ready(function () {
     window.setInterval(function () {
+        jQuery('a.gallery-box:not(.initialized)').colorbox({ maxWidth: '90%' }).addClass("initialized");
         jQuery('.dropdown-toggle:not(.initialized)')
             .dropdown()
             .addClass('initialized');

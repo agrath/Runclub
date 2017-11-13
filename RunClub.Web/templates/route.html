@@ -1,143 +1,138 @@
-﻿<button type="button" class="btn btn-light" ng-click="list()"><i class="fa fa-chevron-left"></i> Back to list</button>
-<div class="row">
-    <div class="col-md-6">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>{{ route.name }}</h1>
-                <p ng-bind-html="route.description | br"></p>
-
+﻿<div style="padding:20px;">
+    <button type="button" class="btn btn-light" ng-click="list()"><i class="fa fa-chevron-left"></i> Back to list</button>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>{{ route.name }}</h1>
+                    <p ng-bind-html="route.description | br"></p>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <h4>Meeting point</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Meeting point</h4>
+                </div>
+                <div class="col-md-8">
+                    <h4>Distance options</h4>
+                </div>
             </div>
-            <div class="col-md-8">
-                <h4>Distance options</h4>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <p>{{route.meetingPoint.label}}</p>
-            </div>
-            <div class="col-md-8">
-                <div class="distance-options">
-                    <span ng-repeat="option in route.distanceOptions">
-                        <i class="fa fa-bolt"></i><span>{{option}} km</span>
-                    </span>
+            <div class="row">
+                <div class="col-md-4">
+                    <p>{{route.meetingPoint.label}}</p>
+                </div>
+                <div class="col-md-8">
+                    <div class="distance-options">
+                        <span ng-repeat="option in route.distanceOptions">
+                            <i class="fa fa-bolt"></i><span>{{option}} km</span>
+                        </span>
+                        <br class="clearfix" />
+                    </div>
                     <br class="clearfix" />
                 </div>
-                <br class="clearfix" />
             </div>
-        </div>        
-        
-        <h3>Terrain</h3>
-        <ul class="terrain-options">
-            <li ng-repeat="item in route.terrain" ng-style="{width:item.percent+'%'}" ng-class="'terrain-'+item.type">
-                <strong>{{item.label}}</strong>
-                {{item.percent}}%
-            </li>
-        </ul>
-        <br class="clearfix" />
 
-        <div class="elevation-graph">
-            <gpx-elevation-chart route="route" ng-if="route.gpxLoaded"></gpx-elevation-chart>
+            <h3>Terrain</h3>
+            <ul class="terrain-options">
+                <li ng-repeat="item in route.terrain" ng-style="{width:item.percent+'%'}" ng-class="'terrain-'+item.type">
+                    <strong>{{item.label}}</strong>
+                    {{item.percent}}%
+                </li>
+            </ul>
+            <br class="clearfix" />
+            <div class="elevation-graph">
+                <gpx-elevation-chart route="route" ng-if="route.gpxLoaded"></gpx-elevation-chart>
+            </div>
+            <div ng-if="route.afterRunInformation" class="after-run">
+                <h3>After the run</h3>
+                <p ng-bind-html="route.afterRunInformation.content"></p>
+                <div ng-if="route.afterRunInformation.carrotCake">
+                    <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="carrotCakeButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-star"></i> Carrot cake
+                    </button>
+                    <i class="fa fa-question-circle tipTip" title="What's this? One of our regular runners is all but guaranteed to sample the carrot cake at the cafe after the run, so we let him put a rating on it for you."></i>
+                    <div class="dropdown-menu" aria-labelledby="carrotCakeButton">
+                        <div class="popover-rating">
+                            <p>{{ route.afterRunInformation.carrotCake.review }}</p>
+                            <table>
+                                <tr><td>Taste</td><td><display-rating-stars value="route.afterRunInformation.carrotCake.ratings.taste" max="5"></display-rating-stars></td></tr>
+                                <tr><td>Texture</td><td><display-rating-stars value="route.afterRunInformation.carrotCake.ratings.texture" max="5"></display-rating-stars></td></tr>
+                                <tr><td>Sweetness</td><td><display-rating-stars value="route.afterRunInformation.carrotCake.ratings.sweetness" max="5"></display-rating-stars></td></tr>
+                                <tr><td>Moisture</td><td><display-rating-stars value="route.afterRunInformation.carrotCake.ratings.moisture" max="5"></display-rating-stars></td></tr>
+                                <tr><td>Value</td><td><display-rating-stars value="route.afterRunInformation.carrotCake.ratings.value" max="5"></display-rating-stars></td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <br class="clearfix" />
+                </div>
+            </div>
+            <br class="clearfix" />
         </div>
-
-        <div ng-if="route.afterRunInformation" class="after-run">
-            <h3>After the run</h3>
-            <p ng-bind-html="route.afterRunInformation.content"></p>
-            <div ng-if="route.afterRunInformation.carrotCake">
-                <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="carrotCakeButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa fa-star"></i> Carrot cake
-                </button>
-                <i class="fa fa-question-circle tipTip" title="What's this? One of our regular runners is all but guaranteed to sample the carrot cake at the cafe after the run, so we let him put a rating on it for you."></i>
-                <div class="dropdown-menu" aria-labelledby="carrotCakeButton">
-                    <div class="popover-rating">
-                        <p>{{ route.afterRunInformation.carrotCake.review }}</p>
-                        <table>
-                            <tr><td>Taste</td><td><display-rating-stars value="route.afterRunInformation.carrotCake.ratings.taste" max="5"></display-rating-stars></td></tr>
-                            <tr><td>Texture</td><td><display-rating-stars value="route.afterRunInformation.carrotCake.ratings.texture" max="5"></display-rating-stars></td></tr>
-                            <tr><td>Sweetness</td><td><display-rating-stars value="route.afterRunInformation.carrotCake.ratings.sweetness" max="5"></display-rating-stars></td></tr>
-                            <tr><td>Moisture</td><td><display-rating-stars value="route.afterRunInformation.carrotCake.ratings.moisture" max="5"></display-rating-stars></td></tr>
-                            <tr><td>Value</td><td><display-rating-stars value="route.afterRunInformation.carrotCake.ratings.value" max="5"></display-rating-stars></td></tr>
-                        </table>
+        <div class="col-md-6">
+            <div class="map-container" data-route-id="{{route.id}}">
+                <gpx-viewer route="route" ng-if="route.gpxLoaded"></gpx-viewer>
+            </div>
+            <div class="map-footer">
+                <div class="dropdown keepopen pull-right">
+                    <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Show
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <ul>
+                            <li>
+                                <div class="form-check abc-checkbox">
+                                    <input type="checkbox" ng-model="route.displayMeetingPoint" id="{{route.id}}-meeting-point" />
+                                    <label class="form-check-label" for="{{route.id}}-meeting-point">Meeting point</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check abc-checkbox">
+                                    <input type="checkbox" class="form-check-input" ng-model="route.displayGpxRoute" id="{{route.id}}-display-route" />
+                                    <label class="form-check-label" for="{{route.id}}-display-route">Route</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check abc-checkbox">
+                                    <input type="checkbox" ng-model="route.displayDistanceMarkers" id="{{route.id}}-display-distance-markers" />
+                                    <label class="form-check-label" for="{{route.id}}-display-distance-markers">Distance markers</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check abc-checkbox">
+                                    <input type="checkbox" ng-model="route.displayAnnotations" id="{{route.id}}-display-annotations" />
+                                    <label class="form-check-label" for="{{route.id}}-display-annotations">Notes &amp; annotations</label>
+                                </div>
+                            </li>
+                            <li ng-if="route.placesOfInterest.length">
+                                <strong>Places of Interests</strong>
+                                <ul>
+                                    <li ng-repeat="placesOfInterestType in route.placesOfInterestOptions">
+                                        <div class="form-check abc-checkbox" ng-if="placesOfInterestType.markers.length">
+                                            <input type="checkbox" class="form-check-input" ng-model="placesOfInterestType.visible" id="{{route.id}}-display-placesOfInterestType-{{$index}}" />
+                                            <label class="form-check-label" for="{{route.id}}-display-placesOfInterestType-{{$index}}">{{placesOfInterestType.label}}</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li ng-if="route.diversions.length">
+                                <strong>Alternate routes</strong>
+                                <ul>
+                                    <li ng-repeat="diversion in route.diversions">
+                                        <div class="form-check abc-checkbox">
+                                            <input type="checkbox" class="form-check-input" ng-model="diversion.visible" id="{{route.id}}-display-diversion-{{$index}}" />
+                                            <label class="form-check-label" for="{{route.id}}-display-diversion-{{$index}}">{{diversion.label.title}}</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <br class="clearfix" />
+                <a ng-href="routes/{{route.id}}.gpx" download="{{route.name}}.gpx" href="#" class="btn btn-success btn-sm pull-right" role="button" aria-disabled="true" style="margin-right:10px;">Download GPX file</a>
             </div>
         </div>
-        <br class="clearfix" />
-
     </div>
-    <div class="col-md-6">
-        <div class="map-container" data-route-id="{{route.id}}">
-            <gpx-viewer route="route" ng-if="route.gpxLoaded"></gpx-viewer>
-        </div>
-        <div class="map-footer">
-            <div class="dropdown keepopen pull-right">
-                <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Show
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <ul>
-                        <li>
-                            <div class="form-check abc-checkbox">
-                                <input type="checkbox" ng-model="route.displayMeetingPoint" id="{{route.id}}-meeting-point" />
-                                <label class="form-check-label" for="{{route.id}}-meeting-point">Meeting point</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="form-check abc-checkbox">
-                                <input type="checkbox" class="form-check-input" ng-model="route.displayGpxRoute" id="{{route.id}}-display-route" />
-                                <label class="form-check-label" for="{{route.id}}-display-route">Route</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="form-check abc-checkbox">
-                                <input type="checkbox" ng-model="route.displayDistanceMarkers" id="{{route.id}}-display-distance-markers" />
-                                <label class="form-check-label" for="{{route.id}}-display-distance-markers">Distance markers</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="form-check abc-checkbox">
-                                <input type="checkbox" ng-model="route.displayAnnotations" id="{{route.id}}-display-annotations" />
-                                <label class="form-check-label" for="{{route.id}}-display-annotations">Notes &amp; annotations</label>
-                            </div>
-                        </li>
-                        <li ng-if="route.placesOfInterest.length">
-                            <strong>Places of Interests</strong>
-                            <ul>
-                                <li ng-repeat="placesOfInterestType in route.placesOfInterestOptions">
-                                    <div class="form-check abc-checkbox" ng-if="placesOfInterestType.markers.length">
-                                        <input type="checkbox" class="form-check-input" ng-model="placesOfInterestType.visible" id="{{route.id}}-display-placesOfInterestType-{{$index}}" />
-                                        <label class="form-check-label" for="{{route.id}}-display-placesOfInterestType-{{$index}}">{{placesOfInterestType.label}}</label>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li ng-if="route.diversions.length">
-                            <strong>Alternate routes</strong>
-                            <ul>
-                                <li ng-repeat="diversion in route.diversions">
-                                    <div class="form-check abc-checkbox">
-                                        <input type="checkbox" class="form-check-input" ng-model="diversion.visible" id="{{route.id}}-display-diversion-{{$index}}" />
-                                        <label class="form-check-label" for="{{route.id}}-display-diversion-{{$index}}">{{diversion.label.title}}</label>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <a ng-href="routes/{{route.id}}.gpx" download="{{route.name}}.gpx" href="#" class="btn btn-success btn-sm pull-right" role="button" aria-disabled="true" style="margin-right:10px;">Download GPX file</a>
-        </div>
-
-    </div>
-</div>
-
-<disqus disqus-shortname="xplaa6ynf2ng"
+    <disqus disqus-shortname="xplaa6ynf2ng"
             disqus-identifier="{{ route.id }}"
-            disqus-title="{{ route.name }}"
-            >
-</disqus>
+            disqus-title="{{ route.name }}">
+    </disqus>
+</div>

@@ -8,6 +8,7 @@
       "js/vendor/angular-sanitize.min.js",
       "js/vendor/underscore-min.js",
       "js/vendor/gpx.js",
+      "js/vendor/jquery.colorbox.js",
       "js/vendor/v3_epoly.js",
       "js/snazzy-info-window.js",
       "js/vendor/moment.js",

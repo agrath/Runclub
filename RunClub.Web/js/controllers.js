@@ -5,7 +5,9 @@ Generate a randomized id here: https://passwordsgenerator.net/ (8 character, alp
 Name the gpx file $id.gpx and copy the template json blob into the array, fill out the details
 */
 
+app.controller('homeController', function ($scope, $location) {
 
+});
 app.controller('routeListController', function ($scope, RouteService, $location) {
     RouteService.getRoutes().then(function (data) {
         $scope.routes = data;

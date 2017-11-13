@@ -1,6 +1,10 @@
 ﻿app.config(['$routeProvider', '$locationProvider',
     function ($routeProvider, $locationProvider) {
         $routeProvider.
+            when('/home', {
+                templateUrl: '/templates/home.html',
+                controller: 'homeController'
+            }).
             when('/routes/all', {
                 templateUrl: '/templates/all-routes.html',
                 controller: 'routeListController'
@@ -14,8 +18,9 @@
                 controller: 'showRouteController'
             }).
             otherwise({
-                redirectTo: '/routes/all'
+                redirectTo: '/home'
             });
 
         $locationProvider.html5Mode(true);
+
     }]);

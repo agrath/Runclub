@@ -44,10 +44,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ImageProcessor, Version=2.5.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ImageProcessor.2.5.6\lib\net45\ImageProcessor.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageProcessor.Web, Version=4.8.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ImageProcessor.Web.4.8.7\lib\net45\ImageProcessor.Web.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=1.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.1.2.2\lib\net45\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -70,6 +79,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AmenitiesGeoJson2DbJson.aspx" />
+    <Content Include="assets\gallery\gallery-1.jpg" />
+    <Content Include="assets\gallery\gallery-2.jpg" />
+    <Content Include="assets\gallery\gallery-3.jpg" />
+    <Content Include="assets\gallery\gallery-4.jpg" />
+    <Content Include="assets\gallery\gallery-5.jpg" />
+    <Content Include="assets\gallery\gallery-6.jpg" />
+    <Content Include="assets\home-banner.jpg" />
     <Content Include="css\awesome-bootstrap-checkbox.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\routes.css">
@@ -121,6 +137,9 @@
     <Content Include="routes\nhgQlDkn.gpx" />
     <Content Include="routes\xQDVhtqv.gpx" />
     <Content Include="routes\calendar.json" />
+    <Content Include="config\imageprocessor\security.config" />
+    <Content Include="config\imageprocessor\processing.config" />
+    <Content Include="config\imageprocessor\cache.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -158,6 +177,7 @@
     <Content Include="templates\all-routes.html" />
     <Content Include="templates\calendar-repeater.html" />
     <Content Include="templates\calendar.html" />
+    <Content Include="templates\home.html" />
     <Content Include="templates\route.html" />
     <Content Include="Web.config" />
   </ItemGroup>

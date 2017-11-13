@@ -1,34 +1,34 @@
 ﻿<section class="jumbotron text-center">
-    <div class="container">
-        <h1 class="jumbotron-heading">Auckland Sunday Group Runs</h1>
-        <p class="lead text-muted">
-        <p>
-            Every Sunday at 8am join a small army of runners to explore Auckland’s most beautiful spots on foot.<br />
-            Join our Auckland Sunday running group!
-        </p>
-        <p>
-            These social runs are totally free-of-charge and ideal for EVERY level of runner. Plus, you don’t have to be a club member.<br />
-            At every run we have options to complete just 5k all the way up to 30k +.
-        </p>
-        <p>
-            Our pace leaders guide groups at the following paces: 4:30, 5, 5:30, 6, & 6:30 min/km (we’re currently looking for a 7:00 min/km leader).<br />
-            So find a group that works for you and enjoy discovering Auckland’s best runs with great company.
-        </p>
-        <p>And we’re on rain, hail or shine.</p>
-        <p>NOTE: All runners run at their own risk and agree not to hold the club or any run leaders responsible for any injury or damages to their person or belongings.</p>
-        <p>
-            <a ng-href="/app/routes/calendar" class="btn btn-success">View the calendar</a>
-            <a href="#all-routes" class="btn btn-secondary">View our routes below</a>
-        </p>
+    <div class="tint">
+        <div class="container">
+
+            <h1 class="jumbotron-heading">Auckland Sunday Group Runs</h1>
+            <p class="lead text-muted">
+            <p>
+                Every Sunday at 8am join a small army of runners to explore Auckland’s most beautiful spots on foot.<br />
+                Join our Auckland Sunday running group!
+            </p>
+            <p>
+                These social runs are totally free-of-charge and ideal for EVERY level of runner. Plus, you don’t have to be a club member.<br />
+                At every run we have options to complete just 5k all the way up to 30k +.
+            </p>
+            <p>
+                Our pace leaders guide groups at the following paces: 4:30, 5, 5:30, 6, & 6:30 min/km (we’re currently looking for a 7:00 min/km leader).<br />
+                So find a group that works for you and enjoy discovering Auckland’s best runs with great company.
+            </p>
+            <p>And we’re on rain, hail or shine.</p>
+            <p>NOTE: All runners run at their own risk and agree not to hold the club or any run leaders responsible for any injury or damages to their person or belongings.</p>
+            <p>
+                <a ng-href="/app/routes/calendar" class="btn btn-success">View the calendar</a>
+                <a href="#all-routes" class="btn btn-secondary">View our routes below</a>
+            </p>
+        </div>
     </div>
 </section>
-
 <div class="text-muted">
     <div class="container">
-
         <div class="row" id="all-routes">
             <div class="card" ng-repeat="route in routes | filter: { enabled: true }">
-
                 <img ng-src="{{route.staticMapImage}}" alt="Map image">
                 <div class="description-container">
                     <p class="card-text">
@@ -37,9 +37,7 @@
                     </p>
                 </div>
                 <a class="btn btn-outline-secondary" ng-href="routes/{{route.id}}">View</a>
-
             </div>
         </div>
-
     </div>
 </div>
