@@ -2452,7 +2452,6 @@ div.map-container .map-canvas {
   padding: 0;
   margin: 0;
   width: 800px;
-  margin-bottom: 20px;
 }
 .terrain-options li {
   padding: 0;
@@ -2473,7 +2472,6 @@ div.map-container .map-canvas {
   border-color: #36454f;
 }
 .elevation-graph {
-  margin-top: 20px;
   width: 800px;
   height: 200px;
 }
