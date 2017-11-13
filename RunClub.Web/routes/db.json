@@ -1,1591 +1,2048 @@
 ﻿[
-    {
-        "id": "fSUqNwtc",
-        "name": "Bucklands Beach to Panmure Basin",
-        "enabled": true,
-        "description": "Mostly flat and mostly coastal, this run is ideal for clocking up the miles ready for that upcoming marathon, half or ultra. The course is a simple lollipop that follows the Rotary Walkway south to the Panmure Basin where we complete an anti-clockwise loop, before heading home.\r\nTo shorten, turn back at any time. To lengthen, there are plenty of options around Musick Point and Bucklands Beach.",
-        "meetingPoint": {
-            "label": "47 The Parade, Bucklands Beach",
-            "latitude": -36.868073,
-            "longitude": 174.903437,
-            "offset": {
-                "left": "5px",
-                "top": "5px"
-            },
-            "placement": "top"
-        },
-        "mapDefaults": {
-            "center": {
-                "latitude": -36.848448,
-                "longitude": 174.762191
-            },
-            "zoom": 12
-        },
-        "distanceOptions": [
-            10,
-            15,
-            21,
-            24
-        ],
-        "distanceMarkerAlignments": [
-            1,
-            1,
-            1,
-            0,
-            0,
-            1,
-            1,
-            0,
-            1,
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            1,
-            0,
-            1,
-            0,
-            1,
-            1,
-            0,
-            0
-        ],
-        "terrain": [
-            {
-                "type": "trail",
-                "label": "Trail",
-                "percent": 50
-            },
-            {
-                "type": "urban",
-                "label": "Urban",
-                "percent": 50
-            }
-        ],
-        "placesOfInterestOptions": [
-            {
-                "type": "parking",
-                "label": "Parking",
-                "visible": true,
-                "zIndex": 40
-            },
-            {
-                "type": "public-bathroom",
-                "label": "Public bathroom",
-                "visible": true,
-                "zIndex": 30
-            },
-            {
-                "type": "water-fountain",
-                "label": "Water fountain",
-                "visible": true,
-                "zIndex": 20
-            },
-            {
-                "type": "photo-camera",
-                "label": "Photo opportunity",
-                "visible": true,
-                "zIndex": 10
-            }
-        ],
-        "placesOfInterest": [
-            {
-                "type": "public-bathroom",
-                "latitude": -36.90346,
-                "longitude": 174.846176
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.9018555,
-                "longitude": 174.85405
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.9082146,
-                "longitude": 174.84935
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.9082375,
-                "longitude": 174.8493
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.90346,
-                "longitude": 174.846069
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.8708267,
-                "longitude": 174.904053
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.8803139,
-                "longitude": 174.896957
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.9120522,
-                "longitude": 174.871613
-            }
-        ]
+  {
+    "id": "fSUqNwtc",
+    "name": "Bucklands Beach to Panmure Basin",
+    "enabled": true,
+    "description": "Mostly flat and mostly coastal, this run is ideal for clocking up the miles ready for that upcoming marathon, half or ultra. The course is a simple lollipop that follows the Rotary Walkway south to the Panmure Basin where we complete an anti-clockwise loop, before heading home.\r\nTo shorten, turn back at any time. To lengthen, there are plenty of options around Musick Point and Bucklands Beach.",
+    "meetingPoint": {
+      "label": "47 The Parade, Bucklands Beach",
+      "latitude": -36.868073,
+      "longitude": 174.903437,
+      "offset": {
+        "left": "5px",
+        "top": "5px"
+      },
+      "placement": "top"
     },
-    {
-        "id": "kwaBpRSC",
-        "name": "Mangere Bridge Watercare Walkway",
-        "enabled": true,
-        "description": "Flat and mostly off road—this is the place to get in LOTS of miles to get you ready for that upcoming half or full marathon!\r\nMeeting at the Mangere Boating Club we’ll head south from there along the coast through Ambury Regional Park, around the lake in the south (turn back here for 13k) and then carry on south along the Watercare Pathway.\r\nOnce back to the boat club we’ll have options to carry on north to the Onehunga coastal path.So there is plenty of extra mileage to be done here on flat trails.",
-        "meetingPoint": {
-            "label": "Mangere Boating Club (opposite 32 Kiwi Esplanade)",
-            "latitude": -36.938903,
-            "longitude": 174.778495,
-            "offset": {
-                "left": "25px",
-                "top": "0px"
-            },
-            "placement": "right"
-        },
-        "mapDefaults": {
-            "center": {
-                "latitude": -36.848448,
-                "longitude": 174.762191
-            },
-            "zoom": 12
-        },
-        "distanceOptions": [
-            13,
-            21,
-            32
-        ],
-        "terrain": [
-            {
-                "type": "trail",
-                "label": "Trail",
-                "percent": 90
-            },
-            {
-                "type": "urban",
-                "label": "Urban",
-                "percent": 10
-            }
-        ],
-        "distanceMarkerAlignments": [
-            0,
-            1,
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            1,
-            0,
-            1,
-            1,
-            1,
-            1,
-            1,
-            0,
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0,
-            1
-        ],
-        "placesOfInterestOptions": [
-            {
-                "type": "parking",
-                "label": "Parking",
-                "visible": true,
-                "zIndex": 40
-            },
-            {
-                "type": "public-bathroom",
-                "label": "Public bathroom",
-                "visible": true,
-                "zIndex": 30
-            },
-            {
-                "type": "water-fountain",
-                "label": "Water fountain",
-                "visible": true,
-                "zIndex": 20
-            },
-            {
-                "type": "photo-camera",
-                "label": "Photo opportunity",
-                "visible": true,
-                "zIndex": 10
-            }
-        ],
-        "placesOfInterest": [
-            {
-                "type": "parking",
-                "latitude": -36.93837354,
-                "longitude": 174.77830231
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.9787941,
-                "longitude": 174.76265
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.94628,
-                "longitude": 174.757126
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.93976,
-                "longitude": 174.764557
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.94515,
-                "longitude": 174.7607
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.9493523,
-                "longitude": 174.785553
-            }
-        ]
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.848448,
+        "longitude": 174.762191
+      },
+      "zoom": 12
     },
-    {
-        "id": "viyVJdOl",
-        "name": "Mission Bay Two Lookouts",
-        "enabled": true,
-        "description": "From Mission Bay we’ll make the short journey west before along Tamaki Drive before climbing up to the trig at Bastion Point. We’ll retrace our steps back to Mission Bay before heading out to the lookout at Achilles Point. Retracing our steps one more time back to the beach and cafes of Mission Bay to finish a nice cruisy return to our Sunday runs.\r\nWe will also have an optional extra 3k excursion into the trails of Dingle Dell Reserve (at St Heliers) on the way back to Mission Bay.",
-        "meetingPoint": {
-            "label": "The car park opposite Mission Bay’s Berkeley Cinemas",
-            "latitude": -36.848314,
-            "longitude": 174.832515,
-            "offset": {
-                "left": "5px",
-                "top": "15px"
-            },
-            "placement": "bottom"
-        },
-        "mapDefaults": {
-            "center": {
-                "latitude": -36.848448,
-                "longitude": 174.762191
-            },
-            "zoom": 12
-        },
-        "distanceOptions": [
-            5,
-            11,
-            14
-        ],
-        "distanceMarkerAlignments": [
-            1,
-            1,
-            1,
-            0,
-            0,
-            0,
-            1,
-            1,
-            0,
-            0,
-            0
-        ],
-        "terrain": [
-            {
-                "type": "trail",
-                "label": "Trail",
-                "percent": 10
-            },
-            {
-                "type": "urban",
-                "label": "Urban",
-                "percent": 90
-            }
-        ],
-        "placesOfInterest": [
-            {
-                "type": "parking",
-                "latitude": -36.847937,
-                "longitude": 174.832953
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.8491871,
-                "longitude": 174.823504
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.8465892,
-                "longitude": 174.8264026
-            },
-            {
-                "type": "photo-camera",
-                "latitude": -36.850068,
-                "longitude": 174.823995
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.8474719,
-                "longitude": 174.8299256
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.84759561,
-                "longitude": 174.83187407
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.847539,
-                "longitude": 174.831703
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.85005219,
-                "longitude": 174.84328218
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.850114,
-                "longitude": 174.8432634
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.85079957,
-                "longitude": 174.85535145
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.850855,
-                "longitude": 174.855353
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.850177,
-                "longitude": 174.857398
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.8493942,
-                "longitude": 174.859680
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.8493564,
-                "longitude": 174.8596567
-            },
-            {
-                "type": "photo-camera",
-                "latitude": -36.84368693,
-                "longitude": 174.86389160
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.84759350,
-                "longitude": 174.86623451
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.84769519,
-                "longitude": 174.86627743
-            }
-        ],
-        "placesOfInterestOptions": [
-            {
-                "type": "parking",
-                "label": "Parking",
-                "visible": true,
-                "zIndex": 40
-            },
-            {
-                "type": "public-bathroom",
-                "label": "Public bathroom",
-                "visible": true,
-                "zIndex": 30
-            },
-            {
-                "type": "water-fountain",
-                "label": "Water fountain",
-                "visible": true,
-                "zIndex": 20
-            },
-            {
-                "type": "photo-camera",
-                "label": "Photo opportunity",
-                "visible": true,
-                "zIndex": 10
-            }
-        ],
-        "diversions": [
-            {
-                "visible": true,
-                "label": {
-                    "title": "Glover park loop",
-                    "description": "Adds an additional 2k onto the run",
-                    "anchor": {
-                        "latitude": -36.848290,
-                        "longitude": 174.86900
-                    },
-                    "offset": {
-                        "left": "5px",
-                        "top": "5px"
-                    },
-                    "placement": "bottom",
-                    "backgroundColour": "#f27b08",
-                    "fontColour": "#ffffff",
-                    "fontSize": "13px",
-                    "showCloseButton": true
-                },
-                "strokeColour": "#f27b08",
-                "points": [
-                    [ -36.844461, 174.86401 ],
-                    [ -36.844873, 174.864653 ],
-                    [ -36.845543, 174.864525 ],
-                    [ -36.846539, 174.862894 ],
-                    [ -36.847225, 174.866112 ],
-                    [ -36.845414, 174.867008 ],
-                    [ -36.845362, 174.867695 ],
-                    [ -36.845663, 174.86806 ],
-                    [ -36.845877, 174.868832 ],
-                    [ -36.848376, 174.869873 ],
-                    [ -36.848281, 174.86718 ],
-                    [ -36.847947, 174.865732 ],
-                    [ -36.847114, 174.865538 ],
-                    [ -36.846496, 174.86291 ],
-                    [ -36.84671, 174.862416 ],
-                    [ -36.846607, 174.861901 ]
-                ]
-            }
-        ]
+    "distanceOptions": [
+      10,
+      15,
+      21,
+      24
+    ],
+    "distanceMarkerAlignments": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "terrain": [
+      {
+        "type": "trail",
+        "label": "Trail",
+        "percent": 50
+      },
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 50
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "public-bathroom",
+        "latitude": -36.90346,
+        "longitude": 174.846176
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9018555,
+        "longitude": 174.85405
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9082146,
+        "longitude": 174.84935
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.9082375,
+        "longitude": 174.8493
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.90346,
+        "longitude": 174.846069
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8708267,
+        "longitude": 174.904053
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8803139,
+        "longitude": 174.896957
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9120522,
+        "longitude": 174.871613
+      }
+    ]
+  },
+  {
+    "id": "kwaBpRSC",
+    "name": "Mangere Bridge Watercare Walkway",
+    "enabled": true,
+    "description": "Flat and mostly off road—this is the place to get in LOTS of miles to get you ready for that upcoming half or full marathon!\r\nMeeting at the Mangere Boating Club we’ll head south from there along the coast through Ambury Regional Park, around the lake in the south (turn back here for 13k) and then carry on south along the Watercare Pathway.\r\nOnce back to the boat club we’ll have options to carry on north to the Onehunga coastal path.So there is plenty of extra mileage to be done here on flat trails.",
+    "meetingPoint": {
+      "label": "Mangere Boating Club (opposite 32 Kiwi Esplanade)",
+      "latitude": -36.938903,
+      "longitude": 174.778495,
+      "offset": {
+        "left": "25px",
+        "top": "0px"
+      },
+      "placement": "right"
     },
-    {
-        "id": "ekBNMjnO",
-        "name": "Mission Bay to Tahuna Torea",
-        "enabled": true,
-        "description": "This run takes you beyond the confines of Tamaki drive and into some of the hidden gems of Auckland's eastern bays.\r\nThe route heads east to Achilles Point, then to Glover Park, Churchill Park, Glendowie Park and eventually to the stunning Tahuna Torea Nature Reserve.\r\nIt's a 17k out-and-back, but there are plenty of options to make it shorter (including turning back at Achilles Point - 7k or Glover Park - 10k).  Longer options include an add-on afterwards along Tamaki Drive.",
-        "meetingPoint": {
-            "label": "The car park opposite Mission Bay’s Berkeley Cinemas",
-            "latitude": -36.848314,
-            "longitude": 174.832515,
-            "offset": {
-                "left": "5px",
-                "top": "15px"
-            },
-            "placement": "bottom"
-        },
-        "mapDefaults": {
-            "center": {
-                "latitude": -36.848448,
-                "longitude": 174.762191
-            },
-            "zoom": 12
-        },
-        "distanceOptions": [
-            7,
-            10,
-            17,
-            "20+"
-        ],
-        "terrain": [
-            {
-                "type": "trail",
-                "label": "Trail",
-                "percent": 15
-            },
-            {
-                "type": "urban",
-                "label": "Urban",
-                "percent": 85
-            }
-        ],
-        "distanceMarkerAlignments": [
-            0,
-            0,
-            1,
-            1,
-            0,
-            0,
-            0,
-            1,
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        "placesOfInterest": [
-            {
-                "type": "parking",
-                "latitude": -36.847937,
-                "longitude": 174.832953
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.84759561,
-                "longitude": 174.83187407
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.847539,
-                "longitude": 174.831703
-            },
-            {
-                "type": "public-bathroom",
-                "Latitude": -36.85005219,
-                "Longitude": 174.84328218
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.850114,
-                "longitude": 174.8432634
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.85079957,
-                "longitude": 174.85535145
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.850855,
-                "longitude": 174.855353
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.850177,
-                "longitude": 174.857398
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.8493942,
-                "longitude": 174.859680
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.8493564,
-                "longitude": 174.8596567
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.84759350,
-                "longitude": 174.86623451
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.84769519,
-                "longitude": 174.86627743
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.86308564,
-                "longitude": 174.87828098
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.86310629,
-                "longitude": 174.87828165
-            }
-        ],
-        "placesOfInterestOptions": [
-            {
-                "type": "parking",
-                "label": "Parking",
-                "visible": true,
-                "zIndex": 40
-            },
-            {
-                "type": "public-bathroom",
-                "label": "Public bathroom",
-                "visible": true,
-                "zIndex": 30
-            },
-            {
-                "type": "water-fountain",
-                "label": "Water fountain",
-                "visible": true,
-                "zIndex": 20
-            },
-            {
-                "type": "photo-camera",
-                "label": "Photo opportunity",
-                "visible": true,
-                "zIndex": 10
-            }
-        ],
-        "diversions": [
-        ]
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.848448,
+        "longitude": 174.762191
+      },
+      "zoom": 12
     },
-    {
-        "id": "zwSaUUvs",
-        "name": "Maraetai Omana Regional Park",
-        "enabled": true,
-        "description": "This is a stunning seaside run with a great cafe and beach to relax at once all the running has been done. Oh which there is plenty of running out here! We’ll head west first heading along the coast to the marina at Beachlands, before retracing our steps back to Maraetai (18k in total). For those going longer there is a great 14k out-and-back to Duder Regional Park heading east along the coast road.",
-        "meetingPoint": {
-            "label": "Maraetai Wharf Cafe",
-            "latitude": -36.880982,
-            "longitude": 175.044269,
-            "offset": {
-                "left": "5px",
-                "top": "5px"
-            },
-            "placement": "bottom"
-        },
-        "afterRunInformation": {
-            "content": "After the run, we usually meet at the Maraetai Wharf Cafe (opposite the starting point), the usual suspects (coffee, breakfast and cabinet options) are all available plus there is indoor or outdoor seating (depending on the weather!). The fastest runners will arrive around 9:30 a.m.",
-            "carrotCake": {
-                "ratings": {
-                    "taste": 3,
-                    "texture": 3,
-                    "sweetness": 3,
-                    "moisture": 3,
-                    "value":  2
-                },
-                "review": "Mike likes data entry a lot"
-            }
-        },
-        "mapDefaults": {
-            "center": {
-                "latitude": -36.848448,
-                "longitude": 174.762191
-            },
-            "zoom": 12
-        },
-        "distanceOptions": [
-            10,
-            18,
-            32
-        ],
-        "terrain": [
-            {
-                "type": "urban",
-                "label": "Urban",
-                "percent": 100
-            }
-        ],
-        "placesOfInterest": [
-            {
-                "type": "public-bathroom",
-                "latitude": -36.8791656,
-                "longitude": 175.01973
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.8800468,
-                "longitude": 175.018677
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.8790169,
-                "longitude": 175.024368
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.88097,
-                "longitude": 174.993713
-            },
-            {
-                "type": "photo-camera",
-                "latitude": -36.8852348,
-                "longitude": 174.9856
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.87737,
-                "longitude": 175.03244
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.8831062,
-                "longitude": 174.996887
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.8793526,
-                "longitude": 175.006653
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.8864059,
-                "longitude": 174.994812
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.87878171,
-                "longitude": 175.02046689
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.88819566,
-                "longitude": 174.98955444
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.9044075,
-                "longitude": 175.068176
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.91329,
-                "longitude": 175.0735
-            }
-        ],
-        "placesOfInterestOptions": [
-            {
-                "type": "parking",
-                "label": "Parking",
-                "visible": true,
-                "zIndex": 40
-            },
-            {
-                "type": "public-bathroom",
-                "label": "Public bathroom",
-                "visible": true,
-                "zIndex": 30
-            },
-            {
-                "type": "water-fountain",
-                "label": "Water fountain",
-                "visible": true,
-                "zIndex": 20
-            },
-            {
-                "type": "photo-camera",
-                "label": "Photo opportunity",
-                "visible": true,
-                "zIndex": 10
-            }
-        ],
-        "diversions": [
-            {
-                "visible": true,
-                "label": {
-                    "title": "Duder regional park extension",
-                    "description": "Take this out and back route either before or after the group run to add a total of 14k (7k each way)",
-                    "anchor": {
-                        "latitude": -36.88248,
-                        "longitude": 175.05326
-                    },
-                    "offset": {
-                        "left": "0px",
-                        "top": "-15px"
-                    },
-                    "placement": "top",
-                    "backgroundColour": "#f27b08",
-                    "fontColour": "#ffffff",
-                    "fontSize": "13px",
-                    "showCloseButton": true
-                },
-                "strokeColour": "#f27b08",
-                "points": [
-                    [ -36.88128, 175.04542 ],
-                    [ -36.88133, 175.04562 ],
-                    [ -36.88142, 175.04638 ],
-                    [ -36.88152, 175.04718 ],
-                    [ -36.88157, 175.04735 ],
-                    [ -36.88157, 175.04735 ],
-                    [ -36.8818, 175.04791 ],
-                    [ -36.88187, 175.04814 ],
-                    [ -36.88188, 175.04827 ],
-                    [ -36.88181, 175.04995 ],
-                    [ -36.8817, 175.05066 ],
-                    [ -36.8816, 175.05093 ],
-                    [ -36.88144, 175.05119 ],
-                    [ -36.88114, 175.05162 ],
-                    [ -36.88108, 175.05189 ],
-                    [ -36.88106, 175.05208 ],
-                    [ -36.88114, 175.05228 ],
-                    [ -36.8812, 175.05234 ],
-                    [ -36.88131, 175.05239 ],
-                    [ -36.88168, 175.05258 ],
-                    [ -36.88187, 175.05272 ],
-                    [ -36.8822, 175.05297 ],
-                    [ -36.88248, 175.05326 ],
-                    [ -36.88274, 175.05368 ],
-                    [ -36.8829, 175.05412 ],
-                    [ -36.88297, 175.05452 ],
-                    [ -36.88299, 175.05558 ],
-                    [ -36.88302, 175.05571 ],
-                    [ -36.88307, 175.05578 ],
-                    [ -36.8844, 175.05675 ],
-                    [ -36.88472, 175.05704 ],
-                    [ -36.88485, 175.05719 ],
-                    [ -36.8849, 175.05728 ],
-                    [ -36.88504, 175.05761 ],
-                    [ -36.88515, 175.05784 ],
-                    [ -36.88533, 175.05799 ],
-                    [ -36.88564, 175.05818 ],
-                    [ -36.88582, 175.05826 ],
-                    [ -36.88602, 175.05823 ],
-                    [ -36.88644, 175.0583 ],
-                    [ -36.88659, 175.05834 ],
-                    [ -36.8868, 175.05837 ],
-                    [ -36.88742, 175.05854 ],
-                    [ -36.88758, 175.05856 ],
-                    [ -36.88781, 175.05853 ],
-                    [ -36.88804, 175.05853 ],
-                    [ -36.88815, 175.05859 ],
-                    [ -36.88843, 175.05881 ],
-                    [ -36.88859, 175.05894 ],
-                    [ -36.88884, 175.0591 ],
-                    [ -36.88948, 175.05948 ],
-                    [ -36.89013, 175.05992 ],
-                    [ -36.89023, 175.05997 ],
-                    [ -36.89067, 175.0601 ],
-                    [ -36.89079, 175.06014 ],
-                    [ -36.89109, 175.06031 ],
-                    [ -36.89147, 175.06055 ],
-                    [ -36.89176, 175.06078 ],
-                    [ -36.89222, 175.06116 ],
-                    [ -36.8924, 175.06126 ],
-                    [ -36.89266, 175.06137 ],
-                    [ -36.89282, 175.06141 ],
-                    [ -36.89307, 175.06137 ],
-                    [ -36.89349, 175.06128 ],
-                    [ -36.89368, 175.06129 ],
-                    [ -36.89386, 175.06133 ],
-                    [ -36.89408, 175.06147 ],
-                    [ -36.89468, 175.0619 ],
-                    [ -36.89519, 175.06226 ],
-                    [ -36.89546, 175.06251 ],
-                    [ -36.89583, 175.06297 ],
-                    [ -36.89592, 175.06305 ],
-                    [ -36.89605, 175.06311 ],
-                    [ -36.89623, 175.06314 ],
-                    [ -36.89638, 175.06306 ],
-                    [ -36.89662, 175.06283 ],
-                    [ -36.89683, 175.06269 ],
-                    [ -36.89696, 175.06265 ],
-                    [ -36.8971, 175.06266 ],
-                    [ -36.89727, 175.0627 ],
-                    [ -36.89747, 175.06278 ],
-                    [ -36.89791, 175.06289 ],
-                    [ -36.89828, 175.06299 ],
-                    [ -36.89872, 175.06317 ],
-                    [ -36.89888, 175.06324 ],
-                    [ -36.89905, 175.06328 ],
-                    [ -36.89942, 175.06331 ],
-                    [ -36.89969, 175.0634 ],
-                    [ -36.90018, 175.06368 ],
-                    [ -36.90082, 175.06396 ],
-                    [ -36.90106, 175.06413 ],
-                    [ -36.90148, 175.06452 ],
-                    [ -36.90211, 175.06526 ],
-                    [ -36.90233, 175.06556 ],
-                    [ -36.90251, 175.06585 ],
-                    [ -36.90316, 175.06695 ],
-                    [ -36.90372, 175.06802 ],
-                    [ -36.90421, 175.06903 ],
-                    [ -36.90436, 175.06924 ],
-                    [ -36.90439, 175.06923 ],
-                    [ -36.90439, 175.06923 ],
-                    [ -36.90444, 175.06922 ],
-                    [ -36.9046, 175.06902 ],
-                    [ -36.90514, 175.06833 ],
-                    [ -36.90527, 175.0682 ],
-                    [ -36.90542, 175.0681 ],
-                    [ -36.90558, 175.06806 ],
-                    [ -36.90686, 175.06796 ],
-                    [ -36.90894, 175.06776 ],
-                    [ -36.91319, 175.06735 ],
-                    [ -36.91323, 175.06838 ],
-                    [ -36.91323, 175.06838 ],
-                    [ -36.91326, 175.06931 ],
-                    [ -36.91297, 175.07038 ],
-                    [ -36.91308, 175.07395 ],
-                    [ -36.91306, 175.07398 ],
-                    [ -36.91307, 175.07426 ]
-                ]
-            }
-        ],
-        "annotations": [
-            {
-                "title": "Omana Regional Park",
-                "visible": true,
-                "description": "Follow main driveway then main trail",
-                "anchor": {
-                    "latitude": -36.87996388,
-                    "longitude": 175.02250671
-                },
-                "offset": {
-                    "left": "5px",
-                    "top": "30px"
-                },
-                "placement": "bottom",
-                "backgroundColour": "#ffffff",
-                "border": true,
-                "fontColour": "#000000",
-                "fontSize": "13px",
-                "showCloseButton": true
-            }
-        ]
+    "distanceOptions": [
+      13,
+      21,
+      32
+    ],
+    "terrain": [
+      {
+        "type": "trail",
+        "label": "Trail",
+        "percent": 90
+      },
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 10
+      }
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "parking",
+        "latitude": -36.93837354,
+        "longitude": 174.77830231
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9787941,
+        "longitude": 174.76265
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.94628,
+        "longitude": 174.757126
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.93976,
+        "longitude": 174.764557
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.94515,
+        "longitude": 174.7607
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9493523,
+        "longitude": 174.785553
+      }
+    ]
+  },
+  {
+    "id": "viyVJdOl",
+    "name": "Mission Bay Two Lookouts",
+    "enabled": true,
+    "description": "From Mission Bay we’ll make the short journey west before along Tamaki Drive before climbing up to the trig at Bastion Point. We’ll retrace our steps back to Mission Bay before heading out to the lookout at Achilles Point. Retracing our steps one more time back to the beach and cafes of Mission Bay to finish a nice cruisy return to our Sunday runs.\r\nWe will also have an optional extra 3k excursion into the trails of Dingle Dell Reserve (at St Heliers) on the way back to Mission Bay.",
+    "meetingPoint": {
+      "label": "The car park opposite Mission Bay’s Berkeley Cinemas",
+      "latitude": -36.848314,
+      "longitude": 174.832515,
+      "offset": {
+        "left": "5px",
+        "top": "15px"
+      },
+      "placement": "bottom"
     },
-    {
-        "id": "nhgQlDkn",
-        "name": "Okura Bush Walkway",
-        "enabled": true,
-        "description": "This is possibly the most beautiful bush track in Auckland and it is a must-do Auckland run, and just 20mins north of central Auckland.\r\nThe trail is soft under foot with a few hills and lots of coastal views, lush bush and blue water.\r\nIf the weather is nasty, the bush provides plenty of shelter and is mostly well drained so will be a great weather option.\r\nThe run itself is 7k oneway, so a 14k return journey. To run shorter, just turn around at any spot (Dacre Cottage at 4k is a great option). To run longer you can carry on into Stillwater or add on extra at the end.",
-        "meetingPoint": {
-            "label": "Haigh Access Road, Redvale",
-            "latitude": -36.67382738,
-            "longitude": 174.70565200,
-            "offset": {
-                "left": "5px",
-                "top": "5px"
-            },
-            "placement": "bottom"
-        },
-        "mapDefaults": {
-            "center": {
-                "latitude": -36.65493440,
-                "longitude": 174.71806526
-            },
-            "zoom": 12
-        },
-        "distanceOptions": [
-            8,
-            14
-        ],
-        "terrain": [
-            {
-                "type": "trail",
-                "label": "Trail",
-                "percent": 100
-            }
-        ],
-        "placesOfInterest": [
-            {
-                "type": "public-bathroom",
-                "latitude": -36.63924,
-                "longitude": 174.720612
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.6585236,
-                "longitude": 174.727921
-            }
-        ],
-        "placesOfInterestOptions": [
-            {
-                "type": "parking",
-                "label": "Parking",
-                "visible": true,
-                "zIndex": 40
-            },
-            {
-                "type": "public-bathroom",
-                "label": "Public bathroom",
-                "visible": true,
-                "zIndex": 30
-            },
-            {
-                "type": "water-fountain",
-                "label": "Water fountain",
-                "visible": true,
-                "zIndex": 20
-            },
-            {
-                "type": "photo-camera",
-                "label": "Photo opportunity",
-                "visible": true,
-                "zIndex": 10
-            }
-        ],
-        "diversions": [
-        ],
-        "annotations": [
-        ]
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.848448,
+        "longitude": 174.762191
+      },
+      "zoom": 12
     },
-    {
-        "id": "xQDVhtqv",
-        "name": "Titirangi - Waiatarua Circuit",
-        "enabled": true,
-        "description": "This is the legendary course that Arthur Lydiard trained all his world-beating runners on back in the 60s.\r\nWe'll be doing a 21.5k loop from Titirangi up West Coast Road and down Scenic Drive and Exhibition Drive. There are options to go shorter by cutting through Shaw Rd - 14.5k, or longer by adding on an out and back along Exhibition Drive - 28k.\r\nThis a classic Auckland run, that is known by runners all over the world. Don't miss it!\r\nMuch of this run is on winding, country roads.  Please wear something bright so cars can see you.\r\nNOTE: Traffic on this route is busy. All runners joining us run at their own risk and agree not to hold the club or any run leaders responsible for any injury or damages to person or belongings.",
-        "meetingPoint": {
-            "label": "Titirangi car park, cnr Titirangi Rd. & South Titirangi Rd.",
-            "latitude": -36.93812296,
-            "longitude": 174.65598285,
-            "offset": {
-                "left": "5px",
-                "top": "5px"
-            },
-            "placement": "bottom"
+    "distanceOptions": [
+      5,
+      11,
+      14
+    ],
+    "distanceMarkerAlignments": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "terrain": [
+      {
+        "type": "trail",
+        "label": "Trail",
+        "percent": 10
+      },
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 90
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "parking",
+        "latitude": -36.847937,
+        "longitude": 174.832953
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8491871,
+        "longitude": 174.823504
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8465892,
+        "longitude": 174.8264026
+      },
+      {
+        "type": "photo-camera",
+        "latitude": -36.850068,
+        "longitude": 174.823995
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8474719,
+        "longitude": 174.8299256
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.84759561,
+        "longitude": 174.83187407
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.847539,
+        "longitude": 174.831703
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.85005219,
+        "longitude": 174.84328218
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.850114,
+        "longitude": 174.8432634
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.85079957,
+        "longitude": 174.85535145
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.850855,
+        "longitude": 174.855353
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.850177,
+        "longitude": 174.857398
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8493942,
+        "longitude": 174.859680
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.8493564,
+        "longitude": 174.8596567
+      },
+      {
+        "type": "photo-camera",
+        "latitude": -36.84368693,
+        "longitude": 174.86389160
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.84759350,
+        "longitude": 174.86623451
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.84769519,
+        "longitude": 174.86627743
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+      {
+        "visible": true,
+        "label": {
+          "title": "Glover park loop",
+          "description": "Adds an additional 2k onto the run",
+          "anchor": {
+            "latitude": -36.848290,
+            "longitude": 174.86900
+          },
+          "offset": {
+            "left": "5px",
+            "top": "5px"
+          },
+          "placement": "bottom",
+          "backgroundColour": "#f27b08",
+          "fontColour": "#ffffff",
+          "fontSize": "13px",
+          "showCloseButton": true
         },
-        "mapDefaults": {
-            "center": {
-                "latitude": -36.92848789,
-                "longitude": 174.62064743
-            },
-            "zoom": 12
-        },
-        "distanceOptions": [
-            14.5,
-            21,
-            28
-        ],
-        "terrain": [
-            {
-                "type": "road",
-                "label": "Urban",
-                "percent": 10
-            },
-            {
-                "type": "forest",
-                "label": "Rural Road",
-                "percent": 75
-            },
-            {
-                "type": "trail",
-                "label": "Gravel Road",
-                "percent": 15
-            }
-        ],
-        "distanceMarkerAlignments": [
-            1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            1,
-            1,
-            1,
-            1,
-            0,
-            1,
-            0,
-            1,
-            0,
-            0,
-            1,
-            0,
-            1,
-            0,
-            1
-        ],
-        "placesOfInterest": [
-            {
-                "type": "parking",
-                "latitude": -36.93808437,
-                "longitude": 174.65610623
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.9070625,
-                "longitude": 174.627914
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.93796,
-                "longitude": 174.6562
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.9505424,
-                "longitude": 174.658829
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.9491425,
-                "longitude": 174.665146
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.9109955,
-                "longitude": 174.652054
-            },
-            {
-                "type": "public-bathroom",
-                "latitude": -36.9464722,
-                "longitude": 174.6063
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.9465942,
-                "longitude": 174.606552
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.9067345,
-                "longitude": 174.628113
-            },
-            {
-                "type": "water-fountain",
-                "latitude": -36.91089,
-                "longitude": 174.651688
-            },
-            {
-                "type": "photo-camera",
-                "latitude": -36.9471779,
-                "longitude": 174.606674
-            }
-        ],
-        "placesOfInterestOptions": [
-            {
-                "type": "parking",
-                "label": "Parking",
-                "visible": true,
-                "zIndex": 40
-            },
-            {
-                "type": "public-bathroom",
-                "label": "Public bathroom",
-                "visible": true,
-                "zIndex": 30
-            },
-            {
-                "type": "water-fountain",
-                "label": "Water fountain",
-                "visible": true,
-                "zIndex": 20
-            },
-            {
-                "type": "photo-camera",
-                "label": "Photo opportunity",
-                "visible": true,
-                "zIndex": 10
-            }
-        ],
-        "diversions": [
-            {
-                "visible": true,
-                "label": {
-                    "title": "Shaw Road",
-                    "description": "Cutting through Shaw road shortens the route to 14k.5",
-                    "anchor": {
-                        "latitude": -36.91576,
-                        "longitude": 174.62062
-                    },
-                    "offset": {
-                        "left": "5px",
-                        "top": "5px"
-                    },
-                    "placement": "right",
-                    "backgroundColour": "#f27b08",
-                    "fontColour": "#ffffff",
-                    "fontSize": "13px",
-                    "showCloseButton": true
-                },
-                "strokeColour": "#f27b08",
-                "points": [
-                    [
-                        -36.91198,
-                        174.62082
-                    ],
-                    [
-                        -36.91193,
-                        174.62089
-                    ],
-                    [
-                        -36.91199,
-                        174.62094
-                    ],
-                    [
-                        -36.91213,
-                        174.62103
-                    ],
-                    [
-                        -36.91309,
-                        174.62131
-                    ],
-                    [
-                        -36.91328,
-                        174.62134
-                    ],
-                    [
-                        -36.91345,
-                        174.62132
-                    ],
-                    [
-                        -36.91513,
-                        174.62079
-                    ],
-                    [
-                        -36.91576,
-                        174.62062
-                    ],
-                    [
-                        -36.91615,
-                        174.6206
-                    ],
-                    [
-                        -36.91662,
-                        174.62064
-                    ],
-                    [
-                        -36.91677,
-                        174.62068
-                    ],
-                    [
-                        -36.91695,
-                        174.62079
-                    ],
-                    [
-                        -36.91776,
-                        174.62144
-                    ],
-                    [
-                        -36.91975,
-                        174.623
-                    ],
-                    [
-                        -36.92085,
-                        174.62388
-                    ],
-                    [
-                        -36.92103,
-                        174.62398
-                    ],
-                    [
-                        -36.9219,
-                        174.62438
-                    ],
-                    [
-                        -36.92218,
-                        174.62443
-                    ],
-                    [
-                        -36.92362,
-                        174.62464
-                    ],
-                    [
-                        -36.92404,
-                        174.62469
-                    ],
-                    [
-                        -36.92466,
-                        174.62468
-                    ],
-                    [
-                        -36.92512,
-                        174.62467
-                    ],
-                    [
-                        -36.92523,
-                        174.62469
-                    ],
-                    [
-                        -36.92535,
-                        174.62475
-                    ],
-                    [
-                        -36.92545,
-                        174.62484
-                    ],
-                    [
-                        -36.92557,
-                        174.62498
-                    ],
-                    [
-                        -36.92613,
-                        174.6258
-                    ],
-                    [
-                        -36.9263,
-                        174.62597
-                    ],
-                    [
-                        -36.92645,
-                        174.62603
-                    ],
-                    [
-                        -36.92663,
-                        174.62607
-                    ],
-                    [
-                        -36.92717,
-                        174.62614
-                    ],
-                    [
-                        -36.92728,
-                        174.62618
-                    ],
-                    [
-                        -36.92743,
-                        174.62628
-                    ],
-                    [
-                        -36.9277,
-                        174.6266
-                    ],
-                    [
-                        -36.92785,
-                        174.62673
-                    ],
-                    [
-                        -36.92804,
-                        174.62682
-                    ],
-                    [
-                        -36.92829,
-                        174.62691
-                    ],
-                    [
-                        -36.9288,
-                        174.62699
-                    ],
-                    [
-                        -36.92892,
-                        174.62697
-                    ],
-                    [
-                        -36.92903,
-                        174.6269
-                    ],
-                    [
-                        -36.92918,
-                        174.62676
-                    ],
-                    [
-                        -36.92933,
-                        174.62663
-                    ],
-                    [
-                        -36.92957,
-                        174.62655
-                    ],
-                    [
-                        -36.92969,
-                        174.62654
-                    ],
-                    [
-                        -36.92976,
-                        174.62651
-                    ],
-                    [
-                        -36.92987,
-                        174.62636
-                    ],
-                    [
-                        -36.92994,
-                        174.62619
-                    ],
-                    [
-                        -36.93003,
-                        174.6261
-                    ],
-                    [
-                        -36.93042,
-                        174.62599
-                    ],
-                    [
-                        -36.93068,
-                        174.62589
-                    ],
-                    [
-                        -36.93081,
-                        174.62586
-                    ],
-                    [
-                        -36.93093,
-                        174.62586
-                    ],
-                    [
-                        -36.93114,
-                        174.6259
-                    ],
-                    [
-                        -36.9316,
-                        174.62592
-                    ],
-                    [
-                        -36.93226,
-                        174.62601
-                    ],
-                    [
-                        -36.93309,
-                        174.62619
-                    ],
-                    [
-                        -36.93341,
-                        174.62621
-                    ],
-                    [
-                        -36.93389,
-                        174.62619
-                    ],
-                    [
-                        -36.93406,
-                        174.6262
-                    ],
-                    [
-                        -36.93445,
-                        174.62626
-                    ],
-                    [
-                        -36.93466,
-                        174.62627
-                    ],
-                    [
-                        -36.93474,
-                        174.62624
-                    ],
-                    [
-                        -36.93492,
-                        174.62611
-                    ],
-                    [
-                        -36.9351,
-                        174.62595
-                    ],
-                    [
-                        -36.93531,
-                        174.62566
-                    ],
-                    [
-                        -36.93585,
-                        174.6247
-                    ],
-                    [
-                        -36.93591,
-                        174.62466
-                    ],
-                    [
-                        -36.93599,
-                        174.62464
-                    ],
-                    [
-                        -36.93609,
-                        174.62468
-                    ],
-                    [
-                        -36.9363,
-                        174.6248
-                    ],
-                    [
-                        -36.93646,
-                        174.62486
-                    ],
-                    [
-                        -36.93662,
-                        174.62489
-                    ],
-                    [
-                        -36.93721,
-                        174.62483
-                    ],
-                    [
-                        -36.9384,
-                        174.6246
-                    ],
-                    [
-                        -36.93857,
-                        174.62459
-                    ],
-                    [
-                        -36.93868,
-                        174.62456
-                    ],
-                    [
-                        -36.93883,
-                        174.62451
-                    ],
-                    [
-                        -36.93896,
-                        174.62443
-                    ],
-                    [
-                        -36.93917,
-                        174.62423
-                    ],
-                    [
-                        -36.93928,
-                        174.62409
-                    ],
-                    [
-                        -36.93949,
-                        174.62388
-                    ],
-                    [
-                        -36.93963,
-                        174.6238
-                    ],
-                    [
-                        -36.93969,
-                        174.62378
-                    ],
-                    [
-                        -36.93988,
-                        174.62377
-                    ],
-                    [
-                        -36.9401,
-                        174.62369
-                    ],
-                    [
-                        -36.94023,
-                        174.6236
-                    ],
-                    [
-                        -36.94038,
-                        174.62354
-                    ],
-                    [
-                        -36.94049,
-                        174.62353
-                    ],
-                    [
-                        -36.94061,
-                        174.62355
-                    ],
-                    [
-                        -36.94091,
-                        174.62371
-                    ],
-                    [
-                        -36.94102,
-                        174.62381
-                    ],
-                    [
-                        -36.94107,
-                        174.62391
-                    ],
-                    [
-                        -36.9414,
-                        174.62506
-                    ],
-                    [
-                        -36.94141,
-                        174.62511
-                    ]
-                ]
-            }
-        ],
-        "annotations": [
-            {
-                "title": "Longer run option",
-                "visible": true,
-                "description": "Turn around here, and do an out and back along Exhibition Drive. This adds 7k to the run.",
-                "anchor": {
-                    "latitude": -36.93734689,
-                    "longitude": 174.64395046
-                },
-                "offset": {
-                    "left": "0px",
-                    "top": "0px"
-                },
-                "placement": "bottom",
-                "backgroundColour": "#ffffff",
-                "border": true,
-                "fontColour": "#000000",
-                "fontSize": "13px",
-                "showCloseButton": true
-            }
+        "strokeColour": "#f27b08",
+        "points": [
+          [ -36.844461, 174.86401 ],
+          [ -36.844873, 174.864653 ],
+          [ -36.845543, 174.864525 ],
+          [ -36.846539, 174.862894 ],
+          [ -36.847225, 174.866112 ],
+          [ -36.845414, 174.867008 ],
+          [ -36.845362, 174.867695 ],
+          [ -36.845663, 174.86806 ],
+          [ -36.845877, 174.868832 ],
+          [ -36.848376, 174.869873 ],
+          [ -36.848281, 174.86718 ],
+          [ -36.847947, 174.865732 ],
+          [ -36.847114, 174.865538 ],
+          [ -36.846496, 174.86291 ],
+          [ -36.84671, 174.862416 ],
+          [ -36.846607, 174.861901 ]
         ]
+      }
+    ]
+  },
+  {
+    "id": "ekBNMjnO",
+    "name": "Mission Bay to Tahuna Torea",
+    "enabled": true,
+    "description": "This run takes you beyond the confines of Tamaki drive and into some of the hidden gems of Auckland's eastern bays.\r\nThe route heads east to Achilles Point, then to Glover Park, Churchill Park, Glendowie Park and eventually to the stunning Tahuna Torea Nature Reserve.\r\nIt's a 17k out-and-back, but there are plenty of options to make it shorter (including turning back at Achilles Point - 7k or Glover Park - 10k).  Longer options include an add-on afterwards along Tamaki Drive.",
+    "meetingPoint": {
+      "label": "The car park opposite Mission Bay’s Berkeley Cinemas",
+      "latitude": -36.848314,
+      "longitude": 174.832515,
+      "offset": {
+        "left": "5px",
+        "top": "15px"
+      },
+      "placement": "bottom"
     },
-    {
-        "id": "TcSVvBQT",
-        "name": "PLACEHOLDER- Auckland's three peaks",
-        "enabled": false,
-        "description": "This is a placeholder item to reserve the id for the calendar"
-    }
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.848448,
+        "longitude": 174.762191
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      7,
+      10,
+      17,
+      "20+"
+    ],
+    "terrain": [
+      {
+        "type": "trail",
+        "label": "Trail",
+        "percent": 15
+      },
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 85
+      }
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "placesOfInterest": [
+      {
+        "type": "parking",
+        "latitude": -36.847937,
+        "longitude": 174.832953
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.84759561,
+        "longitude": 174.83187407
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.847539,
+        "longitude": 174.831703
+      },
+      {
+        "type": "public-bathroom",
+        "Latitude": -36.85005219,
+        "Longitude": 174.84328218
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.850114,
+        "longitude": 174.8432634
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.85079957,
+        "longitude": 174.85535145
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.850855,
+        "longitude": 174.855353
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.850177,
+        "longitude": 174.857398
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8493942,
+        "longitude": 174.859680
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.8493564,
+        "longitude": 174.8596567
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.84759350,
+        "longitude": 174.86623451
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.84769519,
+        "longitude": 174.86627743
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.86308564,
+        "longitude": 174.87828098
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.86310629,
+        "longitude": 174.87828165
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+    ]
+  },
+  {
+    "id": "zwSaUUvs",
+    "name": "Maraetai Omana Regional Park",
+    "enabled": true,
+    "description": "This is a stunning seaside run with a great cafe and beach to relax at once all the running has been done. Oh which there is plenty of running out here! We’ll head west first heading along the coast to the marina at Beachlands, before retracing our steps back to Maraetai (18k in total). For those going longer there is a great 14k out-and-back to Duder Regional Park heading east along the coast road.",
+    "meetingPoint": {
+      "label": "Maraetai Wharf Cafe",
+      "latitude": -36.880982,
+      "longitude": 175.044269,
+      "offset": {
+        "left": "5px",
+        "top": "5px"
+      },
+      "placement": "bottom"
+    },
+    "afterRunInformation": {
+      "content": "After the run, we usually meet at the Maraetai Wharf Cafe (opposite the starting point), the usual suspects (coffee, breakfast and cabinet options) are all available plus there is indoor or outdoor seating (depending on the weather!). The fastest runners will arrive around 9:30 a.m.",
+      "carrotCake": {
+        "ratings": {
+          "taste": 3,
+          "texture": 3,
+          "sweetness": 3,
+          "moisture": 3,
+          "value": 2
+        },
+        "review": "Mike likes data entry a lot"
+      }
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.848448,
+        "longitude": 174.762191
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      10,
+      18,
+      32
+    ],
+    "terrain": [
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 100
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8791656,
+        "longitude": 175.01973
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8800468,
+        "longitude": 175.018677
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8790169,
+        "longitude": 175.024368
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.88097,
+        "longitude": 174.993713
+      },
+      {
+        "type": "photo-camera",
+        "latitude": -36.8852348,
+        "longitude": 174.9856
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.87737,
+        "longitude": 175.03244
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8831062,
+        "longitude": 174.996887
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8793526,
+        "longitude": 175.006653
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8864059,
+        "longitude": 174.994812
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.87878171,
+        "longitude": 175.02046689
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.88819566,
+        "longitude": 174.98955444
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9044075,
+        "longitude": 175.068176
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.91329,
+        "longitude": 175.0735
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+      {
+        "visible": true,
+        "label": {
+          "title": "Duder regional park extension",
+          "description": "Take this out and back route either before or after the group run to add a total of 14k (7k each way)",
+          "anchor": {
+            "latitude": -36.88248,
+            "longitude": 175.05326
+          },
+          "offset": {
+            "left": "0px",
+            "top": "-15px"
+          },
+          "placement": "top",
+          "backgroundColour": "#f27b08",
+          "fontColour": "#ffffff",
+          "fontSize": "13px",
+          "showCloseButton": true
+        },
+        "strokeColour": "#f27b08",
+        "points": [
+          [ -36.88128, 175.04542 ],
+          [ -36.88133, 175.04562 ],
+          [ -36.88142, 175.04638 ],
+          [ -36.88152, 175.04718 ],
+          [ -36.88157, 175.04735 ],
+          [ -36.88157, 175.04735 ],
+          [ -36.8818, 175.04791 ],
+          [ -36.88187, 175.04814 ],
+          [ -36.88188, 175.04827 ],
+          [ -36.88181, 175.04995 ],
+          [ -36.8817, 175.05066 ],
+          [ -36.8816, 175.05093 ],
+          [ -36.88144, 175.05119 ],
+          [ -36.88114, 175.05162 ],
+          [ -36.88108, 175.05189 ],
+          [ -36.88106, 175.05208 ],
+          [ -36.88114, 175.05228 ],
+          [ -36.8812, 175.05234 ],
+          [ -36.88131, 175.05239 ],
+          [ -36.88168, 175.05258 ],
+          [ -36.88187, 175.05272 ],
+          [ -36.8822, 175.05297 ],
+          [ -36.88248, 175.05326 ],
+          [ -36.88274, 175.05368 ],
+          [ -36.8829, 175.05412 ],
+          [ -36.88297, 175.05452 ],
+          [ -36.88299, 175.05558 ],
+          [ -36.88302, 175.05571 ],
+          [ -36.88307, 175.05578 ],
+          [ -36.8844, 175.05675 ],
+          [ -36.88472, 175.05704 ],
+          [ -36.88485, 175.05719 ],
+          [ -36.8849, 175.05728 ],
+          [ -36.88504, 175.05761 ],
+          [ -36.88515, 175.05784 ],
+          [ -36.88533, 175.05799 ],
+          [ -36.88564, 175.05818 ],
+          [ -36.88582, 175.05826 ],
+          [ -36.88602, 175.05823 ],
+          [ -36.88644, 175.0583 ],
+          [ -36.88659, 175.05834 ],
+          [ -36.8868, 175.05837 ],
+          [ -36.88742, 175.05854 ],
+          [ -36.88758, 175.05856 ],
+          [ -36.88781, 175.05853 ],
+          [ -36.88804, 175.05853 ],
+          [ -36.88815, 175.05859 ],
+          [ -36.88843, 175.05881 ],
+          [ -36.88859, 175.05894 ],
+          [ -36.88884, 175.0591 ],
+          [ -36.88948, 175.05948 ],
+          [ -36.89013, 175.05992 ],
+          [ -36.89023, 175.05997 ],
+          [ -36.89067, 175.0601 ],
+          [ -36.89079, 175.06014 ],
+          [ -36.89109, 175.06031 ],
+          [ -36.89147, 175.06055 ],
+          [ -36.89176, 175.06078 ],
+          [ -36.89222, 175.06116 ],
+          [ -36.8924, 175.06126 ],
+          [ -36.89266, 175.06137 ],
+          [ -36.89282, 175.06141 ],
+          [ -36.89307, 175.06137 ],
+          [ -36.89349, 175.06128 ],
+          [ -36.89368, 175.06129 ],
+          [ -36.89386, 175.06133 ],
+          [ -36.89408, 175.06147 ],
+          [ -36.89468, 175.0619 ],
+          [ -36.89519, 175.06226 ],
+          [ -36.89546, 175.06251 ],
+          [ -36.89583, 175.06297 ],
+          [ -36.89592, 175.06305 ],
+          [ -36.89605, 175.06311 ],
+          [ -36.89623, 175.06314 ],
+          [ -36.89638, 175.06306 ],
+          [ -36.89662, 175.06283 ],
+          [ -36.89683, 175.06269 ],
+          [ -36.89696, 175.06265 ],
+          [ -36.8971, 175.06266 ],
+          [ -36.89727, 175.0627 ],
+          [ -36.89747, 175.06278 ],
+          [ -36.89791, 175.06289 ],
+          [ -36.89828, 175.06299 ],
+          [ -36.89872, 175.06317 ],
+          [ -36.89888, 175.06324 ],
+          [ -36.89905, 175.06328 ],
+          [ -36.89942, 175.06331 ],
+          [ -36.89969, 175.0634 ],
+          [ -36.90018, 175.06368 ],
+          [ -36.90082, 175.06396 ],
+          [ -36.90106, 175.06413 ],
+          [ -36.90148, 175.06452 ],
+          [ -36.90211, 175.06526 ],
+          [ -36.90233, 175.06556 ],
+          [ -36.90251, 175.06585 ],
+          [ -36.90316, 175.06695 ],
+          [ -36.90372, 175.06802 ],
+          [ -36.90421, 175.06903 ],
+          [ -36.90436, 175.06924 ],
+          [ -36.90439, 175.06923 ],
+          [ -36.90439, 175.06923 ],
+          [ -36.90444, 175.06922 ],
+          [ -36.9046, 175.06902 ],
+          [ -36.90514, 175.06833 ],
+          [ -36.90527, 175.0682 ],
+          [ -36.90542, 175.0681 ],
+          [ -36.90558, 175.06806 ],
+          [ -36.90686, 175.06796 ],
+          [ -36.90894, 175.06776 ],
+          [ -36.91319, 175.06735 ],
+          [ -36.91323, 175.06838 ],
+          [ -36.91323, 175.06838 ],
+          [ -36.91326, 175.06931 ],
+          [ -36.91297, 175.07038 ],
+          [ -36.91308, 175.07395 ],
+          [ -36.91306, 175.07398 ],
+          [ -36.91307, 175.07426 ]
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "title": "Omana Regional Park",
+        "visible": true,
+        "description": "Follow main driveway then main trail",
+        "anchor": {
+          "latitude": -36.87996388,
+          "longitude": 175.02250671
+        },
+        "offset": {
+          "left": "5px",
+          "top": "30px"
+        },
+        "placement": "bottom",
+        "backgroundColour": "#ffffff",
+        "border": true,
+        "fontColour": "#000000",
+        "fontSize": "13px",
+        "showCloseButton": true
+      }
+    ]
+  },
+  {
+    "id": "nhgQlDkn",
+    "name": "Okura Bush Walkway",
+    "enabled": true,
+    "description": "This is possibly the most beautiful bush track in Auckland and it is a must-do Auckland run, and just 20mins north of central Auckland.\r\nThe trail is soft under foot with a few hills and lots of coastal views, lush bush and blue water.\r\nIf the weather is nasty, the bush provides plenty of shelter and is mostly well drained so will be a great weather option.\r\nThe run itself is 7k oneway, so a 14k return journey. To run shorter, just turn around at any spot (Dacre Cottage at 4k is a great option). To run longer you can carry on into Stillwater or add on extra at the end.",
+    "meetingPoint": {
+      "label": "Haigh Access Road, Redvale",
+      "latitude": -36.67382738,
+      "longitude": 174.70565200,
+      "offset": {
+        "left": "5px",
+        "top": "5px"
+      },
+      "placement": "bottom"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.65493440,
+        "longitude": 174.71806526
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      8,
+      14
+    ],
+    "terrain": [
+      {
+        "type": "trail",
+        "label": "Trail",
+        "percent": 100
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "public-bathroom",
+        "latitude": -36.63924,
+        "longitude": 174.720612
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.6585236,
+        "longitude": 174.727921
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+    ],
+    "annotations": [
+    ]
+  },
+  {
+    "id": "xQDVhtqv",
+    "name": "Titirangi - Waiatarua Circuit",
+    "enabled": true,
+    "description": "This is the legendary course that Arthur Lydiard trained all his world-beating runners on back in the 60s.\r\nWe'll be doing a 21.5k loop from Titirangi up West Coast Road and down Scenic Drive and Exhibition Drive. There are options to go shorter by cutting through Shaw Rd - 14.5k, or longer by adding on an out and back along Exhibition Drive - 28k.\r\nThis a classic Auckland run, that is known by runners all over the world. Don't miss it!\r\nMuch of this run is on winding, country roads.  Please wear something bright so cars can see you.\r\nNOTE: Traffic on this route is busy. All runners joining us run at their own risk and agree not to hold the club or any run leaders responsible for any injury or damages to person or belongings.",
+    "meetingPoint": {
+      "label": "Titirangi car park, cnr Titirangi Rd. & South Titirangi Rd.",
+      "latitude": -36.93812296,
+      "longitude": 174.65598285,
+      "offset": {
+        "left": "5px",
+        "top": "5px"
+      },
+      "placement": "bottom"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.92848789,
+        "longitude": 174.62064743
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      14.5,
+      21,
+      28
+    ],
+    "terrain": [
+      {
+        "type": "road",
+        "label": "Urban",
+        "percent": 10
+      },
+      {
+        "type": "forest",
+        "label": "Rural Road",
+        "percent": 75
+      },
+      {
+        "type": "trail",
+        "label": "Gravel Road",
+        "percent": 15
+      }
+    ],
+    "distanceMarkerAlignments": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "placesOfInterest": [
+      {
+        "type": "parking",
+        "latitude": -36.93808437,
+        "longitude": 174.65610623
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9070625,
+        "longitude": 174.627914
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.93796,
+        "longitude": 174.6562
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9505424,
+        "longitude": 174.658829
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9491425,
+        "longitude": 174.665146
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9109955,
+        "longitude": 174.652054
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9464722,
+        "longitude": 174.6063
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.9465942,
+        "longitude": 174.606552
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.9067345,
+        "longitude": 174.628113
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.91089,
+        "longitude": 174.651688
+      },
+      {
+        "type": "photo-camera",
+        "latitude": -36.9471779,
+        "longitude": 174.606674
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+      {
+        "visible": true,
+        "label": {
+          "title": "Shaw Road",
+          "description": "Cutting through Shaw road shortens the route to 14k.5",
+          "anchor": {
+            "latitude": -36.91576,
+            "longitude": 174.62062
+          },
+          "offset": {
+            "left": "5px",
+            "top": "5px"
+          },
+          "placement": "right",
+          "backgroundColour": "#f27b08",
+          "fontColour": "#ffffff",
+          "fontSize": "13px",
+          "showCloseButton": true
+        },
+        "strokeColour": "#f27b08",
+        "points": [
+          [
+            -36.91198,
+            174.62082
+          ],
+          [
+            -36.91193,
+            174.62089
+          ],
+          [
+            -36.91199,
+            174.62094
+          ],
+          [
+            -36.91213,
+            174.62103
+          ],
+          [
+            -36.91309,
+            174.62131
+          ],
+          [
+            -36.91328,
+            174.62134
+          ],
+          [
+            -36.91345,
+            174.62132
+          ],
+          [
+            -36.91513,
+            174.62079
+          ],
+          [
+            -36.91576,
+            174.62062
+          ],
+          [
+            -36.91615,
+            174.6206
+          ],
+          [
+            -36.91662,
+            174.62064
+          ],
+          [
+            -36.91677,
+            174.62068
+          ],
+          [
+            -36.91695,
+            174.62079
+          ],
+          [
+            -36.91776,
+            174.62144
+          ],
+          [
+            -36.91975,
+            174.623
+          ],
+          [
+            -36.92085,
+            174.62388
+          ],
+          [
+            -36.92103,
+            174.62398
+          ],
+          [
+            -36.9219,
+            174.62438
+          ],
+          [
+            -36.92218,
+            174.62443
+          ],
+          [
+            -36.92362,
+            174.62464
+          ],
+          [
+            -36.92404,
+            174.62469
+          ],
+          [
+            -36.92466,
+            174.62468
+          ],
+          [
+            -36.92512,
+            174.62467
+          ],
+          [
+            -36.92523,
+            174.62469
+          ],
+          [
+            -36.92535,
+            174.62475
+          ],
+          [
+            -36.92545,
+            174.62484
+          ],
+          [
+            -36.92557,
+            174.62498
+          ],
+          [
+            -36.92613,
+            174.6258
+          ],
+          [
+            -36.9263,
+            174.62597
+          ],
+          [
+            -36.92645,
+            174.62603
+          ],
+          [
+            -36.92663,
+            174.62607
+          ],
+          [
+            -36.92717,
+            174.62614
+          ],
+          [
+            -36.92728,
+            174.62618
+          ],
+          [
+            -36.92743,
+            174.62628
+          ],
+          [
+            -36.9277,
+            174.6266
+          ],
+          [
+            -36.92785,
+            174.62673
+          ],
+          [
+            -36.92804,
+            174.62682
+          ],
+          [
+            -36.92829,
+            174.62691
+          ],
+          [
+            -36.9288,
+            174.62699
+          ],
+          [
+            -36.92892,
+            174.62697
+          ],
+          [
+            -36.92903,
+            174.6269
+          ],
+          [
+            -36.92918,
+            174.62676
+          ],
+          [
+            -36.92933,
+            174.62663
+          ],
+          [
+            -36.92957,
+            174.62655
+          ],
+          [
+            -36.92969,
+            174.62654
+          ],
+          [
+            -36.92976,
+            174.62651
+          ],
+          [
+            -36.92987,
+            174.62636
+          ],
+          [
+            -36.92994,
+            174.62619
+          ],
+          [
+            -36.93003,
+            174.6261
+          ],
+          [
+            -36.93042,
+            174.62599
+          ],
+          [
+            -36.93068,
+            174.62589
+          ],
+          [
+            -36.93081,
+            174.62586
+          ],
+          [
+            -36.93093,
+            174.62586
+          ],
+          [
+            -36.93114,
+            174.6259
+          ],
+          [
+            -36.9316,
+            174.62592
+          ],
+          [
+            -36.93226,
+            174.62601
+          ],
+          [
+            -36.93309,
+            174.62619
+          ],
+          [
+            -36.93341,
+            174.62621
+          ],
+          [
+            -36.93389,
+            174.62619
+          ],
+          [
+            -36.93406,
+            174.6262
+          ],
+          [
+            -36.93445,
+            174.62626
+          ],
+          [
+            -36.93466,
+            174.62627
+          ],
+          [
+            -36.93474,
+            174.62624
+          ],
+          [
+            -36.93492,
+            174.62611
+          ],
+          [
+            -36.9351,
+            174.62595
+          ],
+          [
+            -36.93531,
+            174.62566
+          ],
+          [
+            -36.93585,
+            174.6247
+          ],
+          [
+            -36.93591,
+            174.62466
+          ],
+          [
+            -36.93599,
+            174.62464
+          ],
+          [
+            -36.93609,
+            174.62468
+          ],
+          [
+            -36.9363,
+            174.6248
+          ],
+          [
+            -36.93646,
+            174.62486
+          ],
+          [
+            -36.93662,
+            174.62489
+          ],
+          [
+            -36.93721,
+            174.62483
+          ],
+          [
+            -36.9384,
+            174.6246
+          ],
+          [
+            -36.93857,
+            174.62459
+          ],
+          [
+            -36.93868,
+            174.62456
+          ],
+          [
+            -36.93883,
+            174.62451
+          ],
+          [
+            -36.93896,
+            174.62443
+          ],
+          [
+            -36.93917,
+            174.62423
+          ],
+          [
+            -36.93928,
+            174.62409
+          ],
+          [
+            -36.93949,
+            174.62388
+          ],
+          [
+            -36.93963,
+            174.6238
+          ],
+          [
+            -36.93969,
+            174.62378
+          ],
+          [
+            -36.93988,
+            174.62377
+          ],
+          [
+            -36.9401,
+            174.62369
+          ],
+          [
+            -36.94023,
+            174.6236
+          ],
+          [
+            -36.94038,
+            174.62354
+          ],
+          [
+            -36.94049,
+            174.62353
+          ],
+          [
+            -36.94061,
+            174.62355
+          ],
+          [
+            -36.94091,
+            174.62371
+          ],
+          [
+            -36.94102,
+            174.62381
+          ],
+          [
+            -36.94107,
+            174.62391
+          ],
+          [
+            -36.9414,
+            174.62506
+          ],
+          [
+            -36.94141,
+            174.62511
+          ]
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "title": "Longer run option",
+        "visible": true,
+        "description": "Turn around here, and do an out and back along Exhibition Drive. This adds 7k to the run.",
+        "anchor": {
+          "latitude": -36.93734689,
+          "longitude": 174.64395046
+        },
+        "offset": {
+          "left": "0px",
+          "top": "0px"
+        },
+        "placement": "bottom",
+        "backgroundColour": "#ffffff",
+        "border": true,
+        "fontColour": "#000000",
+        "fontSize": "13px",
+        "showCloseButton": true
+      }
+    ]
+  },
+  {
+    "id": "TcSVvBQT",
+    "name": "Auckland Domain Three Peaks",
+    "enabled": true,
+    "description": "Today we’re conquering Auckland’s three central volcanic peaks of Mt Hobson, Mt St John and Mt Eden, before we make our way through the lush trails of Auckland Domain.\r\nPlenty of options to shorten the route or climb fewer Peaks.  If three climbs aren't enough to earn your breakfast, then am add-on drops down through Ayr Reserve for a stiff climb climb back up through Newmarket Park.",
+    "meetingPoint": {
+      "label": "Domain & Ayr Cafe, 492 Parnell Road",
+      "latitude": -36.86214785,
+      "longitude": 174.78192329,
+      "offset": {
+        "left": "10px",
+        "top": "0px"
+      },
+      "placement": "right"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.86036022,
+        "longitude": 174.77780342
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      12,
+      15
+    ],
+    "terrain": [
+      {
+        "type": "trail",
+        "label": "Trail",
+        "percent": 50
+      },
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 50
+      }
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "placesOfInterest": [
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8671227,
+        "longitude": 174.778229
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8593254,
+        "longitude": 174.774246
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8647461,
+        "longitude": 174.770279
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8642235,
+        "longitude": 174.791016
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.86473,
+        "longitude": 174.788483
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8640862,
+        "longitude": 174.784164
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.8585052,
+        "longitude": 174.774963
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8605,
+        "longitude": 174.776367
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.86301,
+        "longitude": 174.7718
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.86951,
+        "longitude": 174.7783
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8630371,
+        "longitude": 174.771774
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.864048,
+        "longitude": 174.771439
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.87673,
+        "longitude": 174.767334
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8769379,
+        "longitude": 174.7676
+      },
+      {
+        "type": "photo-camera",
+        "latitude": -36.8780746,
+        "longitude": 174.764435
+      },
+      {
+        "type": "photo-camera",
+        "latitude": -36.883934,
+        "longitude": 174.780273
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8750153,
+        "longitude": 174.7637
+      },
+      {
+        "type": "photo-camera",
+        "latitude": -36.87743056,
+        "longitude": 174.78696436
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+      {
+        "visible": true,
+        "label": {
+          "title": "Add-on",
+          "description": "This loop of Ayr Reserve and Newmarket Park adds on 3k",
+          "anchor": {
+            "latitude": -36.86155555,
+            "longitude": 174.78677750
+          },
+          "offset": {
+            "left": "0px",
+            "top": "0px"
+          },
+          "placement": "right",
+          "backgroundColour": "#f27b08",
+          "fontColour": "#ffffff",
+          "fontSize": "13px",
+          "showCloseButton": true
+        },
+        "strokeColour": "#f27b08",
+        "points": [
+          [ -36.86209, 174.78189 ],
+          [ -36.86167, 174.7821 ],
+          [ -36.86059, 174.78268 ],
+          [ -36.86054, 174.78271 ],
+          [ -36.86054, 174.78271 ],
+          [ -36.8607, 174.78339 ],
+          [ -36.86068, 174.78416 ],
+          [ -36.86068, 174.78416 ],
+          [ -36.86067, 174.78429 ],
+          [ -36.86065, 174.78438 ],
+          [ -36.86047, 174.78467 ],
+          [ -36.86042, 174.78484 ],
+          [ -36.86041, 174.78517 ],
+          [ -36.86041, 174.78542 ],
+          [ -36.86041, 174.78542 ],
+          [ -36.8605, 174.7855 ],
+          [ -36.86052, 174.78554 ],
+          [ -36.86052, 174.78556 ],
+          [ -36.86125, 174.78625 ],
+          [ -36.86125, 174.78625 ],
+          [ -36.86173, 174.78666 ],
+          [ -36.86261, 174.78721 ],
+          [ -36.86283, 174.78732 ],
+          [ -36.86283, 174.78732 ],
+          [ -36.86299, 174.7874 ],
+          [ -36.86314, 174.78743 ],
+          [ -36.86341, 174.78743 ],
+          [ -36.86378, 174.78724 ],
+          [ -36.86396, 174.78712 ],
+          [ -36.86402, 174.78711 ],
+          [ -36.86408, 174.78723 ],
+          [ -36.86406, 174.78727 ],
+          [ -36.86404, 174.78735 ],
+          [ -36.86406, 174.78743 ],
+          [ -36.86406, 174.78743 ],
+          [ -36.86408, 174.78758 ],
+          [ -36.86407, 174.78774 ],
+          [ -36.86413, 174.78768 ],
+          [ -36.86421, 174.78758 ],
+          [ -36.86423, 174.7876 ],
+          [ -36.86431, 174.78768 ],
+          [ -36.8644, 174.78779 ],
+          [ -36.86428, 174.78783 ],
+          [ -36.86421, 174.78788 ],
+          [ -36.86421, 174.78788 ],
+          [ -36.86408, 174.78797 ],
+          [ -36.86413, 174.7883 ],
+          [ -36.86413, 174.78834 ],
+          [ -36.864, 174.78844 ],
+          [ -36.86389, 174.78836 ],
+          [ -36.86386, 174.78837 ],
+          [ -36.86375, 174.78864 ],
+          [ -36.86375, 174.78864 ],
+          [ -36.86369, 174.78888 ],
+          [ -36.86368, 174.78899 ],
+          [ -36.86372, 174.78923 ],
+          [ -36.86369, 174.78948 ],
+          [ -36.86364, 174.78965 ],
+          [ -36.86366, 174.78978 ],
+          [ -36.86396, 174.79015 ],
+          [ -36.86403, 174.79027 ],
+          [ -36.86403, 174.79027 ],
+          [ -36.86405, 174.79039 ],
+          [ -36.86405, 174.7905 ],
+          [ -36.86415, 174.79043 ],
+          [ -36.86445, 174.79041 ],
+          [ -36.86485, 174.79013 ],
+          [ -36.86497, 174.79007 ],
+          [ -36.86515, 174.78994 ],
+          [ -36.86536, 174.78978 ],
+          [ -36.86536, 174.78978 ],
+          [ -36.86551, 174.78973 ],
+          [ -36.86551, 174.78971 ],
+          [ -36.8654, 174.78946 ],
+          [ -36.86495, 174.78867 ],
+          [ -36.86495, 174.78867 ],
+          [ -36.86463, 174.78807 ],
+          [ -36.86452, 174.78789 ],
+          [ -36.86448, 174.78774 ],
+          [ -36.86443, 174.78761 ],
+          [ -36.86439, 174.78751 ],
+          [ -36.86439, 174.78746 ],
+          [ -36.8644, 174.78746 ],
+          [ -36.86436, 174.78735 ],
+          [ -36.86429, 174.78731 ],
+          [ -36.86425, 174.78732 ],
+          [ -36.86413, 174.78702 ],
+          [ -36.86417, 174.78689 ],
+          [ -36.86417, 174.78689 ],
+          [ -36.86425, 174.78639 ],
+          [ -36.86431, 174.78608 ],
+          [ -36.8645, 174.7855 ],
+          [ -36.86463, 174.785 ],
+          [ -36.86475, 174.7847 ],
+          [ -36.86485, 174.78437 ],
+          [ -36.86485, 174.78437 ],
+          [ -36.86489, 174.78409 ],
+          [ -36.86492, 174.78402 ],
+          [ -36.86506, 174.78393 ],
+          [ -36.86543, 174.78367 ],
+          [ -36.86569, 174.78332 ],
+          [ -36.86578, 174.78321 ],
+          [ -36.86579, 174.78317 ],
+          [ -36.86566, 174.78322 ],
+          [ -36.86519, 174.78357 ],
+          [ -36.86502, 174.78363 ],
+          [ -36.86482, 174.78367 ],
+          [ -36.86469, 174.78371 ],
+          [ -36.86461, 174.78378 ],
+          [ -36.86456, 174.7838 ],
+          [ -36.86451, 174.7838 ],
+          [ -36.86445, 174.78385 ],
+          [ -36.86445, 174.78385 ],
+          [ -36.86433, 174.78397 ],
+          [ -36.8643, 174.78404 ],
+          [ -36.86427, 174.78412 ],
+          [ -36.86418, 174.78416 ],
+          [ -36.86414, 174.78372 ],
+          [ -36.86414, 174.78366 ],
+          [ -36.8642, 174.78366 ],
+          [ -36.8642, 174.78363 ],
+          [ -36.8642, 174.78363 ],
+          [ -36.8642, 174.7835 ],
+          [ -36.86425, 174.78335 ],
+          [ -36.86432, 174.78328 ],
+          [ -36.86439, 174.7831 ],
+          [ -36.86453, 174.78278 ],
+          [ -36.865, 174.78179 ],
+          [ -36.86507, 174.78164 ],
+          [ -36.86516, 174.78152 ],
+          [ -36.86526, 174.7814 ],
+          [ -36.86526, 174.7814 ],
+          [ -36.86528, 174.78136 ],
+          [ -36.86525, 174.78136 ],
+          [ -36.8652, 174.78134 ],
+          [ -36.86493, 174.78126 ],
+          [ -36.86485, 174.7812 ],
+          [ -36.86423, 174.7803 ],
+          [ -36.86416, 174.78019 ],
+          [ -36.86416, 174.78019 ],
+          [ -36.86396, 174.77991 ]
+        ]
+      },
+      {
+        "visible": true,
+        "strokeColour": "#f27b08",
+        "points": [
+          [ -36.87505, 174.78466 ],
+          [ -36.87596, 174.78383 ],
+          [ -36.87727, 174.78272 ],
+          [ -36.87735, 174.78268 ],
+          [ -36.87743, 174.78268 ],
+          [ -36.8775, 174.78271 ],
+          [ -36.87811, 174.78327 ],
+          [ -36.8796, 174.78462 ],
+          [ -36.88063, 174.78568 ]
+        ]
+      },
+      {
+        "visible": true,
+        "strokeColour": "#f27b08",
+        "points": [
+          [ -36.88173, 174.78043 ],
+          [ -36.88118, 174.7787 ],
+          [ -36.88111, 174.77841 ]
+        ]
+      },
+      {
+        "visible": true,
+        "strokeColour": "#f27b08",
+        "points": [
+          [ -36.87829, 174.7708 ],
+          [ -36.87718, 174.77062 ],
+          [ -36.87669, 174.77056 ],
+          [ -36.87581, 174.77044 ],
+          [ -36.87461, 174.77031 ],
+          [ -36.87441, 174.77026 ],
+          [ -36.87429, 174.77018 ],
+          [ -36.87353, 174.76946 ],
+          [ -36.87294, 174.769 ],
+          [ -36.87266, 174.76881 ],
+          [ -36.87211, 174.76856 ],
+          [ -36.87195, 174.76851 ],
+          [ -36.8719, 174.76851 ]
+        ]
+      },
+      {
+        "visible": true,
+        "strokeColour": "#f27b08",
+        "points": [
+          [ -36.86406, 174.77135 ],
+          [ -36.86354, 174.77145 ],
+          [ -36.86354, 174.77145 ],
+          [ -36.86321, 174.77149 ],
+          [ -36.86316, 174.77156 ],
+          [ -36.86316, 174.77156 ],
+          [ -36.86308, 174.77172 ],
+          [ -36.86305, 174.77177 ],
+          [ -36.86302, 174.77177 ],
+          [ -36.86299, 174.77176 ],
+          [ -36.86297, 174.77176 ],
+          [ -36.86295, 174.77178 ],
+          [ -36.863, 174.77186 ],
+          [ -36.86324, 174.77202 ],
+          [ -36.86334, 174.77214 ],
+          [ -36.86334, 174.77214 ],
+          [ -36.86352, 174.77235 ],
+          [ -36.86379, 174.7726 ],
+          [ -36.86396, 174.77277 ],
+          [ -36.86409, 174.77296 ],
+          [ -36.86422, 174.77324 ],
+          [ -36.86422, 174.77324 ],
+          [ -36.86428, 174.77347 ],
+          [ -36.86435, 174.77381 ],
+          [ -36.86426, 174.77384 ],
+          [ -36.86418, 174.77392 ],
+          [ -36.86418, 174.77392 ],
+          [ -36.86396, 174.77413 ],
+          [ -36.86361, 174.77451 ],
+          [ -36.86345, 174.77475 ],
+          [ -36.86339, 174.7749 ],
+          [ -36.86331, 174.77516 ],
+          [ -36.86331, 174.77516 ],
+          [ -36.86319, 174.77553 ],
+          [ -36.86312, 174.7757 ],
+          [ -36.86304, 174.77582 ],
+          [ -36.86296, 174.77587 ],
+          [ -36.86259, 174.77603 ],
+          [ -36.86259, 174.77603 ],
+          [ -36.86229, 174.77616 ],
+          [ -36.86186, 174.77644 ],
+          [ -36.86165, 174.77653 ],
+          [ -36.86129, 174.77662 ],
+          [ -36.86112, 174.77662 ],
+          [ -36.86102, 174.77659 ],
+          [ -36.85987, 174.77593 ],
+          [ -36.85982, 174.77605 ],
+          [ -36.85981, 174.77614 ],
+          [ -36.85981, 174.77614 ],
+          [ -36.8598, 174.7762 ],
+          [ -36.85973, 174.77621 ],
+          [ -36.85959, 174.7763 ],
+          [ -36.85953, 174.77642 ],
+          [ -36.85952, 174.77655 ],
+          [ -36.85952, 174.77719 ],
+          [ -36.85952, 174.77719 ],
+          [ -36.85951, 174.778 ],
+          [ -36.85954, 174.77826 ],
+          [ -36.85958, 174.77839 ],
+          [ -36.85958, 174.77839 ],
+          [ -36.85971, 174.77855 ],
+          [ -36.85979, 174.77862 ],
+          [ -36.8599, 174.77868 ],
+          [ -36.86002, 174.7787 ],
+          [ -36.86032, 174.77871 ],
+          [ -36.86037, 174.7788 ],
+          [ -36.86047, 174.77898 ],
+          [ -36.86047, 174.77898 ],
+          [ -36.86069, 174.77935 ],
+          [ -36.86076, 174.77955 ],
+          [ -36.86088, 174.77981 ],
+          [ -36.86088, 174.77983 ],
+          [ -36.86088, 174.77983 ],
+          [ -36.86091, 174.78001 ],
+          [ -36.86103, 174.78029 ],
+          [ -36.86116, 174.78054 ]
+        ]
+      }
+    ],
+    "annotations": [
+    ]
+  }
 ]
