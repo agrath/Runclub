@@ -14,9 +14,18 @@ app.controller('routeListController', function ($scope, RouteService, $location)
 app.controller('showRouteController', function ($scope, RouteService, $routeParams, $location) {
     $scope.id = $routeParams.id;
 
+    var url = '/app/route/' + $scope.id;
+    $scope.disqusConfig = {
+        disqus_shortname: "xplaa6ynf2ng",
+        disqus_identifier: url,
+        disqus_title: url,
+        disqus_url: url
+    };
+
     RouteService.getRoutes().then(function (data) {
         $scope.routes = data;
-        $scope.route = _.find($scope.routes, function (r) { return r.id === $scope.id; });
+        var route = _.find($scope.routes, function (r) { return r.id === $scope.id; });
+        $scope.route = route;
 
         $scope.route.gpx().then(function (gpx) {
             $scope.route.gpxLoaded = true;
@@ -25,7 +34,7 @@ app.controller('showRouteController', function ($scope, RouteService, $routePara
     })
 
     $scope.list = function () {
-        $location.path('routes/all'); // path not hash
+        $location.path('/routes/all'); // path not hash
     };
     
 });

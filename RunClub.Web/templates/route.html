@@ -103,10 +103,17 @@
             </ul>
         </div>
     </div>
-    <a ng-href="/routes/{{route.id}}.gpx" download="{{route.name}}.gpx" href="#" class="btn btn-primary btn-sm pull-right" role="button" aria-disabled="true" style="margin-right:10px;">Download GPX file</a>
+    <a ng-href="routes/{{route.id}}.gpx" download="{{route.name}}.gpx" href="#" class="btn btn-primary btn-sm pull-right" role="button" aria-disabled="true" style="margin-right:10px;">Download GPX file</a>
 </div>
 <br class="clearfix" />
 
 <div class="elevation-graph">
     <gpx-elevation-chart route="route" ng-if="route.gpxLoaded"></gpx-elevation-chart>
 </div>
+
+
+<disqus disqus-shortname="xplaa6ynf2ng"
+            disqus-identifier="{{ route.id }}"
+            disqus-title="{{ route.name }}"
+            >
+</disqus>

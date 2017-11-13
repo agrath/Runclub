@@ -1,4 +1,5 @@
 ﻿var app = angular.module('routesApp', ['ngSanitize', 'ngRoute']);
+
 app.value('style', {
     lineStrokeColour: '#20bc5c',
     lineWeight: 3,
@@ -10,7 +11,7 @@ app.value('style', {
 app.factory('CalendarService', ['$q', '$http', function ($q, $http) {
     var self = this;
     var _deferred = $q.defer();
-    $http.get('routes/calendar.json')
+    $http.get('/routes/calendar.json')
         .then(
         function (transport, status, headers, config) {
             //console.log('calendar.json loaded');
@@ -30,7 +31,7 @@ app.factory('CalendarService', ['$q', '$http', function ($q, $http) {
 app.factory('RouteService', ['$q', '$http', function ($q, $http) {
     var self = this;
     var _deferred = $q.defer();
-    $http.get('routes/db.json')
+    $http.get('/routes/db.json')
         .then(
         function (transport, status, headers, config) {
             //console.log('db.json loaded');
@@ -56,7 +57,7 @@ app.factory('RouteService', ['$q', '$http', function ($q, $http) {
                     }
                     else {
                         //by convention, get the gpx file
-                        var url = 'routes/' + id + '.gpx';
+                        var url = '/routes/' + id + '.gpx';
                         route.gpxFile = url;
                         $http({ method: 'get', url: url, transformResponse: function (data) { return $.parseXML(data); } }).then(function (res) {
                             //console.log('loaded ' + url, res.data);

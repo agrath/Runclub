@@ -15,6 +15,66 @@
     }
 });
 
+app.directive('disqus', function($window) {
+    return {
+        restrict: 'E',
+        scope: {
+            disqus_shortname: '@disqusShortname',
+            disqus_identifier: '@disqusIdentifier',
+            disqus_title: '@disqusTitle',
+            disqus_url: '@disqusUrl',
+            disqus_category_id: '@disqusCategoryId',
+            disqus_disable_mobile: '@disqusDisableMobile',
+            readyToBind: "@"
+        },
+        template: '<div id="disqus_thread"></div><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>',
+        link: function(scope) {
+
+            scope.$watch("readyToBind", function(isReady) {
+
+                // If the directive has been called without the 'ready-to-bind' attribute, we
+                // set the default to "true" so that Disqus will be loaded straight away.
+                if ( !angular.isDefined( isReady ) ) {
+                    isReady = "true";
+                }
+                if (scope.$eval(isReady)) {
+                    // put the config variables into separate global vars so that the Disqus script can see them
+                    $window.disqus_shortname = scope.disqus_shortname;
+                    $window.disqus_identifier = scope.disqus_identifier;
+                    $window.disqus_title = scope.disqus_title;
+                    $window.disqus_url = scope.disqus_url;
+                    $window.disqus_category_id = scope.disqus_category_id;
+                    $window.disqus_disable_mobile = scope.disqus_disable_mobile;
+
+                    if (!$window.DISQUS) {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + scope.disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+                        // get the remote Disqus script and insert it into the DOM
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + scope.disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    } else {
+                        $window.DISQUS.reset({
+                            reload: true,
+                            config: function () {
+                                this.page.identifier = scope.disqus_identifier;
+                                this.page.url = scope.disqus_url;
+                                this.page.title = scope.disqus_title;
+                                this.language = scope.disqus_config_language;
+                                this.page.remote_auth_s3 = scope.disqus_remote_auth_s3;
+                                this.page.api_key = scope.disqus_api_key;
+                            }
+                        });
+                    }
+                 
+                }
+            });
+        }
+    };
+});
+
 app.directive('displayRatingStars', function (style) {
     return {
         restrict: 'E',
@@ -156,7 +216,7 @@ app.directive('gpxViewer', function ($timeout, style) {
                 return markers;
             },
             addDiversionToMap: function (diversion, map) {
-                console.log('diversion', diversion);
+                //console.log('diversion', diversion);
                 var o = {};
                 var polylineCoordinates = [];
                 for (var p = 0; p < diversion.points.length; p++) {
@@ -230,7 +290,7 @@ app.directive('gpxViewer', function ($timeout, style) {
                 return marker;
             },
             addAnnotationToMap: function (annotation, map) {
-                console.log('annotation', annotation);
+                //console.log('annotation', annotation);
 
                 var marker = new google.maps.Marker({
                     position: new google.maps.LatLng(annotation.anchor.latitude, annotation.anchor.longitude),
@@ -258,7 +318,7 @@ app.directive('gpxViewer', function ($timeout, style) {
                 return info;
             },
             addMeetingPointToMap: function (meetingPoint, map) {
-                console.log('meetingPoint', meetingPoint);
+                //console.log('meetingPoint', meetingPoint);
 
                 var marker = new google.maps.Marker({
                     position: new google.maps.LatLng(meetingPoint.latitude, meetingPoint.longitude),
@@ -377,7 +437,7 @@ app.directive('gpxViewer', function ($timeout, style) {
 
                 //compute the polyline length
                 var lengthInMeters = google.maps.geometry.spherical.computeLength(polyline.getPath());
-                console.log('route length is ', lengthInMeters);
+                //console.log('route length is ', lengthInMeters);
 
                 route.meetingPoint.g = helper.addMeetingPointToMap(route.meetingPoint, map);
 
@@ -458,7 +518,7 @@ app.directive('gpxElevationChart', function (style) {
             var distance = 0, distanceSteppedMax = 0, elevation = 0;
             var lastElevation = data[0].elevation;
             elevation = lastElevation;
-            console.log('e', lastElevation);
+            //console.log('e', lastElevation);
             var step = function (number, increment, offset) {
                 return Math.ceil((number - offset) / increment) * increment + offset;
             }

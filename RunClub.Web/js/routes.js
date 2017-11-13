@@ -1,19 +1,21 @@
-﻿app.config(['$routeProvider',
-    function ($routeProvider) {
+﻿app.config(['$routeProvider', '$locationProvider',
+    function ($routeProvider, $locationProvider) {
         $routeProvider.
             when('/routes/all', {
-                templateUrl: 'templates/all-routes.html',
+                templateUrl: '/templates/all-routes.html',
                 controller: 'routeListController'
             }).
             when('/routes/calendar', {
-                templateUrl: 'templates/calendar.html',
+                templateUrl: '/templates/calendar.html',
                 controller: 'calendarController'
             }).
             when('/routes/:id', {
-                templateUrl: 'templates/route.html',
+                templateUrl: '/templates/route.html',
                 controller: 'showRouteController'
             }).
             otherwise({
                 redirectTo: '/routes/all'
             });
+
+        $locationProvider.html5Mode(true);
     }]);

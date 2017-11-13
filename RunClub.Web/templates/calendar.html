@@ -27,9 +27,9 @@
 
 <div class="col-md-6 offset-3" ng-if="!loading">
     <h1>Our upcoming events</h1>
-    <div ng-include-template="templates/calendar-repeater.html" ng-include-variables="{ events: upcomingEvents }"></div>
+    <div ng-include-template="/templates/calendar-repeater.html" ng-include-variables="{ events: upcomingEvents }"></div>
     
     <h1>Recent events</h1>
-    <div ng-include-template="templates/calendar-repeater.html" ng-include-variables="{ events: pastEvents }"></div>
+    <div ng-include-template="/templates/calendar-repeater.html" ng-include-variables="{ events: pastEvents }"></div>
 </div>
 
