@@ -2419,5 +2419,75 @@
     ],
     "annotations": [
     ]
+  },
+  {
+    "id": "kPCzjCbW",
+    "name": "Totara Park",
+    "enabled": true,
+    "description": "Line1\r\nLine2",
+    "meetingPoint": {
+      "label": "",
+      "latitude": -37.00367081,
+      "longitude": 174.91323352,
+      "offset": {
+        "left": "5px",
+        "top": "5px"
+      },
+      "placement": "bottom"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.99751444,
+        "longitude": 174.90993977
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      10
+    ],
+    "terrain": [
+      {
+        "type": "trail",
+        "label": "Trail",
+        "percent": 10
+      },
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 90
+      }
+    ],
+    "placesOfInterest": [
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+    ],
+    "annotations": [
+    ]
   }
 ]
