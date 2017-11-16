@@ -119,7 +119,7 @@
                                     <li ng-repeat="diversion in route.diversions">
                                         <div class="form-check abc-checkbox">
                                             <input type="checkbox" class="form-check-input" ng-model="diversion.visible" id="{{route.id}}-display-diversion-{{$index}}" />
-                                            <label class="form-check-label" for="{{route.id}}-display-diversion-{{$index}}">{{diversion.label.title}}</label>
+                                            <label class="form-check-label" for="{{route.id}}-display-diversion-{{$index}}">{{diversion.label.title || 'Diversion ' + ($index+1) }}</label>
                                         </div>
                                     </li>
                                 </ul>
