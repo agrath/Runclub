@@ -1755,7 +1755,7 @@
       {
         "visible": true,
         "label": {
-          "title": "Add-on",
+          "title": "Ayr Reserve extension",
           "description": "This loop of Ayr Reserve and Newmarket Park adds on 3k",
           "anchor": {
             "latitude": -36.86155555,
@@ -1769,7 +1769,8 @@
           "backgroundColour": "#f27b08",
           "fontColour": "#ffffff",
           "fontSize": "13px",
-          "showCloseButton": true
+          "showCloseButton": true,
+          "visible" : false
         },
         "strokeColour": "#f27b08",
         "points": [

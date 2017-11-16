@@ -184,29 +184,45 @@ app.directive('gpxViewer', function ($timeout, style) {
                 o.line = line;
 
                 if (diversion.label) {
+                    var label = diversion.label;
+                    var labelMarkerTemplateSvg = [
+                        '<?xml version= "1.0" encoding= "utf-8" ?>',
+                        '    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"',
+                        '        width="48px" height="48px" viewBox="0 0 48 48" xml:space="preserve">',
+                        '        <path fill="{{backgroundColour}}" class="path1" d="M8 2.1c1.1 0 2.2 0.5 3 1.3 0.8 0.9 1.3 1.9 1.3 3.1s-0.5 2.5-1.3 3.3l-3 3.1-3-3.1c-0.8-0.8-1.3-2-1.3-3.3 0-1.2 0.4-2.2 1.3-3.1 0.8-0.8 1.9-1.3 3-1.3z"></path>',
+                        '        <path fill="#000" class="path2" d="M8 15.8l-4.4-4.6c-1.2-1.2-1.9-2.9-1.9-4.7 0-1.7 0.6-3.2 1.8-4.5 1.3-1.2 2.8-1.8 4.5-1.8s3.2 0.7 4.4 1.9c1.2 1.2 1.8 2.8 1.8 4.5s-0.7 3.5-1.8 4.7l-4.4 4.5zM4 10.7l4 4.1 3.9-4.1c1-1.1 1.6-2.6 1.6-4.2 0-1.5-0.6-2.9-1.6-4s-2.4-1.7-3.9-1.7-2.9 0.6-4 1.7c-1 1.1-1.6 2.5-1.6 4 0 1.6 0.6 3.2 1.6 4.2v0z"></path>',
+                        '        <path fill="#000" class="path3" d="M8 16l-4.5-4.7c-1.2-1.2-1.9-3-1.9-4.8 0-1.7 0.6-3.3 1.9-4.6 1.2-1.2 2.8-1.9 4.5-1.9s3.3 0.7 4.5 1.9c1.2 1.3 1.9 2.9 1.9 4.6 0 1.8-0.7 3.6-1.9 4.8l-4.5 4.7zM8 0.3c-1.6 0-3.2 0.7-4.3 1.9-1.2 1.2-1.8 2.7-1.8 4.3 0 1.7 0.7 3.4 1.8 4.5l4.3 4.5 4.3-4.5c1.1-1.2 1.8-2.9 1.8-4.5s-0.6-3.1-1.8-4.4c-1.2-1.1-2.7-1.8-4.3-1.8zM8 15.1l-4.1-4.2c-1-1.2-1.7-2.8-1.7-4.4s0.6-3 1.7-4.1c1.1-1.1 2.6-1.7 4.1-1.7s3 0.6 4.1 1.7c1.1 1.1 1.7 2.6 1.7 4.1 0 1.6-0.6 3.2-1.7 4.3l-4.1 4.3zM4.2 10.6l3.8 4 3.8-4c1-1 1.6-2.6 1.6-4.1s-0.6-2.8-1.6-3.9c-1-1-2.4-1.6-3.8-1.6s-2.8 0.6-3.8 1.6c-1 1.1-1.6 2.4-1.6 3.9 0 1.6 0.6 3.1 1.6 4.1v0z"></path>',
+                        '    </svg>'].join('\n');
+                    var labelMarkerSvg = labelMarkerTemplateSvg.replace('{{backgroundColour}}', (label.backgroundColour || 'rgba(0, 0, 0, 0.7)'));
+                    var icon = new google.maps.MarkerImage('data:image/svg+xml;charset=UTF-8;base64,' + btoa(labelMarkerSvg), null, null, new google.maps.Point(-8, 0), new google.maps.Size(48, 48));
                     var marker = new google.maps.Marker({
-                        position: new google.maps.LatLng(diversion.label.anchor.latitude, diversion.label.anchor.longitude),
+                        position: new google.maps.LatLng(label.anchor.latitude, label.anchor.longitude),
                         map: map,
-                        visible: false
+                        icon: icon,
+                        visible: true
                     });
+                    o.marker = marker;
                     var info = new SnazzyInfoWindow({
                         marker: marker,
-                        placement: diversion.label.placement || 'right',
-                        offset: diversion.label.offset,
+                        placement: label.placement || 'right',
+                        offset: label.offset,
                         maxWidth: 180,
-                        content: '<strong>' + diversion.label.title + '</strong>' +
-                        '<div>' + diversion.label.description + '</div>',
-                        showCloseButton: diversion.label.showCloseButton || false,
+                        content: '<strong>' + label.title + '</strong>' +
+                        '<div>' + label.description + '</div>',
+                        showCloseButton: label.showCloseButton || false,
                         closeOnMapClick: false,
                         padding: '10px',
-                        backgroundColor: diversion.label.backgroundColour || 'rgba(0, 0, 0, 0.7)',
+                        backgroundColor: label.backgroundColour || 'rgba(0, 0, 0, 0.7)',
                         border: false,
                         borderRadius: '0px',
                         shadow: false,
-                        fontColor: diversion.label.fontColour || '#fff',
-                        fontSize: diversion.label.fontSize || '14px'
+                        fontColor: label.fontColour || '#fff',
+                        fontSize: label.fontSize || '14px',
+                        openOnMarkerClick: true
                     });
-                    info.open();
+                    if (label.visible) {
+                        info.open();
+                    }
                     o.info = info;
                 }
                 return o;
@@ -343,7 +359,9 @@ app.directive('gpxViewer', function ($timeout, style) {
                             if (diversion.g && diversion.g) {
                                 if ((diversion.g.line.map && !visible) || (!diversion.g.line.map && visible)) {
                                     diversion.g.line.setMap(visible ? $scope.map : null);
+                                    diversion.g.marker.setMap(visible ? $scope.map : null);
                                     diversion.g.info.setMap(visible ? $scope.map : null);
+                                    diversion.g.info.close();
                                 }
                             }
                         });
