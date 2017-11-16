@@ -24,6 +24,31 @@
     0,
     0
   ],
+  "distanceMarkerAlignments": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
   "terrain": [
     {
       "type": "trail",
@@ -131,7 +156,7 @@
       },
       "placement": "bottom",
       "backgroundColour": "#ffffff",
-      "border": true,      
+      "border": true,
       "fontColour": "#000000",
       "fontSize": "13px",
       "showCloseButton": true
