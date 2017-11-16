@@ -2044,5 +2044,82 @@
     ],
     "annotations": [
     ]
+  },
+  {
+    "id": "BAYAzUnc",
+    "name": "Onepoto Tuff Crater",
+    "enabled": true,
+    "description": "Very few Aucklanders know about the network of mind-bogglingly beautiful parks and bush reserves in Northcote and Birkenhead. This is your chance to discover them.\r\nWe're going to string these beautiful parks together beginning with an out-and-back from Onepoto Reserve to Smiths Bush (via Tuff Crater) - 12.5k. Then a loop connecting Kauri Glen Bush to Le Roys Bush and back to Onepoto (an additional hilly 7k). So 19k for both loops with options to run shorter (turning back after Tuff Crater - 8k) or longer completing another loop.",
+    "meetingPoint": {
+      "label": "Onepoto Domain, off Tarahanga St., via Sylvan Ave.",
+      "latitude": -36.80874998,
+      "longitude": 174.75092232,
+      "offset": {
+        "left": "-16px",
+        "top": "0px"
+      },
+      "placement": "left"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.80230941,
+        "longitude": 174.75102425
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      8,
+      12.5,
+      19
+    ],
+    "terrain": [
+      {
+        "type": "trail",
+        "label": "Packed trail",
+        "percent": 50
+      },
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 50
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "parking",
+        "latitude": -36.80874998,
+        "longitude": 174.75092232
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+    ],
+    "annotations": [
+    ]
   }
 ]
