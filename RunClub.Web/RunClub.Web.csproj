@@ -99,7 +99,7 @@
     </Content>
     <Content Include="css\snazzy-info-window.css" />
     <Content Include="css\tipTip.css" />
-    <Content Include="images\map-icons\elevation-marker.svg" />
+    <Content Include="images\map-icons\elevation-marker.png" />
     <Content Include="images\map-icons\km-marker.svg" />
     <Content Include="images\map-icons\parking.png" />
     <Content Include="images\map-icons\photo-camera.png" />

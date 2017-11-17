@@ -486,11 +486,11 @@ app.directive('gpxViewer', function ($rootScope, $timeout, style) {
                     console.log('elevationchart:hover', point);
                     var gPoint = new google.maps.LatLng(point.latitude, point.longitude);
                     if (!$scope.elevationMarker) {
-                        var icon = new google.maps.MarkerImage('/images/map-icons/elevation-marker.svg', null, null, new google.maps.Point(0, 0), new google.maps.Size(48, 48));
+                        var icon = new google.maps.MarkerImage('/images/map-icons/elevation-marker.png', null, null, new google.maps.Point(8, 8), new google.maps.Size(16, 16));
                         var marker = new google.maps.Marker({
                             position: gPoint,
                             map: map,
-                            zIndex: google.maps.Marker.MAX_ZINDEX + 100,
+                            zIndex: google.maps.Marker.MAX_ZINDEX + 1000,
                             icon: icon,
                             visible: true
                         });
