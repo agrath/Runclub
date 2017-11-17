@@ -341,7 +341,6 @@ app.directive('gpxViewer', function ($timeout, style) {
                     maxWidth: 180,
                     content: '<h4>Meet here</h4>' +
                     '<div>' + meetingPoint.label + '</div>',
-                    showCloseButton: meetingPoint.showCloseButton || false,
                     closeOnMapClick: false,
                     padding: '10px',
                     backgroundColor: '#ffffff',
