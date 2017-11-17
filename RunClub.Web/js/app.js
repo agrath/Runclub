@@ -34,7 +34,7 @@ app.factory('CalendarService', ['$q', '$http', function ($q, $http) {
         }
     };
 }]);
-app.factory('RouteService', ['$q', '$http', function ($q, $http) {
+app.factory('RouteService', ['$q', '$http', '$interpolate', function ($q, $http, $interpolate) {
     var self = this;
     var _deferred = $q.defer();
     $http.get('/routes/db.json')
@@ -52,7 +52,11 @@ app.factory('RouteService', ['$q', '$http', function ($q, $http) {
                 route.displayAnnotations = true;
                 route.displayMeetingPoint = true;
 
-                route.staticMapImage = 'https://maps.googleapis.com/maps/api/staticmap?size=356x280&zoom=14&key=AIzaSyDeWHf1yBGiJgWoaQH_PEN2bnwZ2aCFSbE&center=' + route.meetingPoint.latitude + ',' + route.meetingPoint.longitude;
+                //when this site is hosted, change this to a local url
+                //var markerImageUrl = 'http://metrorun.org.nz/images/static-meet-here.png';
+                var markerImageUrl = 'https://i.imgur.com/8tChPdj.png';
+                var staticMapImageTemplate = 'https://maps.googleapis.com/maps/api/staticmap?size=356x280&zoom=14&key=AIzaSyDeWHf1yBGiJgWoaQH_PEN2bnwZ2aCFSbE&center={{latitude}},{{longitude}}&markers=anchor:bottom|icon:{{icon}}|{{latitude}},{{longitude}}';
+                route.staticMapImage = $interpolate(staticMapImageTemplate)({ latitude: route.meetingPoint.latitude, longitude: route.meetingPoint.longitude, icon: markerImageUrl });
 
                 route.gpxData = null;
                 route.gpx = function () {
