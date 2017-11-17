@@ -150,6 +150,7 @@
     <Content Include="config\imageprocessor\cache.config" />
     <Content Include="routes\TcSVvBQT.gpx" />
     <Content Include="routes\BAYAzUnc.gpx" />
+    <Content Include="routes\udgHkNjC.gpx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

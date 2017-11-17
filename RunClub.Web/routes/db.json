@@ -2835,5 +2835,253 @@
     ],
     "annotations": [
     ]
+  },
+  {
+    "id": "udgHkNjC",
+    "name": "Takapuna Greenway",
+    "enabled": true,
+    "description": "Starting at Takapuna Beach Cafe (22 The Promenade) we'll head down the coast first along the beach and then jump over to the Greenway and follow it south along the western side of the peninsula to reach Devonport. From here we'll follow the Auckland Marathon course back north to Takapuna.\r\nThis full run 15km but if you'd like to make it 11k, head left via Seabreeze Rd to Narrow Neck Beach (you'll still experience the main two hills of the Takapuna section of the Auckland Marathon course).\r\nTo make it 8k, head left along Bayswater Ave to Lake Road.",
+    "meetingPoint": {
+      "label": "Takapuna Beach Cafe, 22 The Promenade.",
+      "latitude": -36.78416809,
+      "longitude": 174.77551281,
+      "offset": {
+        "left": "0px",
+        "top": "0px"
+      },
+      "placement": "right"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.79210303,
+        "longitude": 174.77582932
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      8,
+      11,
+      15
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "terrain": [
+      {
+        "type": "trail",
+        "label": "Beach",
+        "percent": 10
+      },
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 90
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "parking",
+        "latitude": -36.78357470,
+        "longitude": 174.77556914
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.83139,
+        "longitude": 174.797531
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8129425,
+        "longitude": 174.801651
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.83085,
+        "longitude": 174.80275
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.8319359,
+        "longitude": 174.79744
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.81226,
+        "longitude": 174.800735
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.7841873,
+        "longitude": 174.7752
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.81257,
+        "longitude": 174.781311
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.79283,
+        "longitude": 174.780151
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.7970123,
+        "longitude": 174.778915
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.7844849,
+        "longitude": 174.775269
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.81335,
+        "longitude": 174.802811
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8198433,
+        "longitude": 174.806
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.79384,
+        "longitude": 174.781586
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+      {
+        "visible": true,
+        "label": {
+          "title": "Shortcut 1",
+          "description": "Reduces total route to 8k",
+          "anchor": {
+            "latitude": -36.81135,
+            "longitude": 174.78361
+          },
+          "offset": {
+            "left": "0px",
+            "top": "5px"
+          },
+          "placement": "bottom",
+          "backgroundColour": "#f27b08",
+          "fontColour": "#ffffff",
+          "fontSize": "13px",
+          "showCloseButton": true
+        },
+        "strokeColour": "#f27b08",
+        "points": [
+          [ -36.81246, 174.7812 ],
+          [ -36.81135, 174.78361 ],
+          [ -36.81029, 174.78586 ],
+          [ -36.81002, 174.7864 ],
+          [ -36.8088, 174.78906 ],
+          [ -36.8085, 174.78972 ],
+          [ -36.80841, 174.78981 ],
+          [ -36.8083, 174.78993 ],
+          [ -36.80817, 174.79 ],
+          [ -36.80799, 174.78995 ],
+          [ -36.80789, 174.78994 ],
+          [ -36.80745, 174.78973 ],
+          [ -36.80631, 174.7892 ],
+          [ -36.80557, 174.78885 ],
+          [ -36.80516, 174.78865 ]
+        ]
+      },
+      {
+        "visible": true,
+        "label": {
+          "title": "Shortcut 2",
+          "description": "Reduces total route to 11k",
+          "anchor": {
+            "latitude": -36.81717,
+            "longitude": 174.7951
+          },
+          "offset": {
+            "left": "0px",
+            "top": "5px"
+          },
+          "placement": "bottom",
+          "backgroundColour": "#f27b08",
+          "fontColour": "#ffffff",
+          "fontSize": "13px",
+          "showCloseButton": true
+        },
+        "strokeColour": "#f27b08",
+        "points": [
+          [ -36.81762, 174.79472 ],
+          [ -36.81739, 174.79484 ],
+          [ -36.81728, 174.79494 ],
+          [ -36.81717, 174.7951 ],
+          [ -36.81661, 174.79641 ],
+          [ -36.81653, 174.79653 ],
+          [ -36.81579, 174.7971 ],
+          [ -36.81567, 174.79722 ],
+          [ -36.81527, 174.79785 ],
+          [ -36.81413, 174.79967 ],
+          [ -36.81407, 174.79974 ],
+          [ -36.8131, 174.80059 ],
+          [ -36.81298, 174.80069 ],
+          [ -36.81273, 174.80087 ],
+          [ -36.81253, 174.80082 ],
+          [ -36.81244, 174.80078 ],
+          [ -36.81239, 174.80073 ],
+          [ -36.81233, 174.80064 ],
+          [ -36.81208, 174.80013 ],
+          [ -36.81207, 174.80007 ]
+        ]
+      }
+    ],
+    "annotations": []
   }
+
 ]
