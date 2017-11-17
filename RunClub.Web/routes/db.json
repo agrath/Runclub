@@ -1770,7 +1770,7 @@
           "fontColour": "#ffffff",
           "fontSize": "13px",
           "showCloseButton": true,
-          "visible" : false
+          "visible" : true
         },
         "strokeColour": "#f27b08",
         "points": [

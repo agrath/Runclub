@@ -14,7 +14,10 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 14px;
-  cursor: default; }
+  cursor: default; 
+  pointer-events:none;
+}
+
 
 .si-wrapper-top {
   -webkit-box-orient: vertical;
@@ -136,20 +139,22 @@
   overflow: auto; }
 
 .si-close-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: 0;
-  outline: none;
-  background-color: transparent;
-  color: inherit;
-  font-family: Arial, Baskerville, monospace;
-  font-size: 24px;
-  cursor: pointer;
-  opacity: 0.5;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none; }
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+    font-family: Arial, Baskerville, monospace;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0.5;
+    pointer-events: all;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
   .si-close-button:hover, .si-close-button:focus {
     opacity: 0.7; }
 

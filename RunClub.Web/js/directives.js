@@ -182,24 +182,77 @@ app.directive('gpxViewer', function ($timeout, style) {
                     map: map
                 });
                 o.line = line;
+                //mouse hovers the polyline
+                google.maps.event.addListener(line, 'mouseover', function () {
+                    //the mouseover event will fire immediately, so we use a timeout to cause it to be a slow hover
+                    //console.log('polyline.mouseover', this);
+                    var self = this;
+                    if (self.info) {
+                        //start a timeout and store it on the polyline
+                        this.infoTimeout = window.setTimeout(function () {
+                            //console.log('polyline.mouseover.timeout');
+                            //timeout is up, show info box if it is not already open
+                            if (!self.info.isOpen()) {
+                                self.info.open();
+                                self.info.openedByHover = true;
+                            }
+                            //clear timeout reference
+                            self.infoTimeout = null;
+
+                        }, 100);
+                    }
+                });
+
+                //mouse leaves the polyline
+                google.maps.event.addListener(line, 'mouseout', function () {
+                    //console.log('polyline.mouseout', this);
+                    //if we started a timeout in the mouseover
+                    if (this.infoTimeout)
+                    {
+                        //clear it - means a fast mouse move over the polyline doesn't trigger the info
+                        window.clearTimeout(this.infoTimeout);
+                        this.infoTimeout = null;
+                    }
+                    if (this.info && this.info.isOpen() && this.info.openedByHover)
+                    {
+                        this.info.openedByHover = false;
+                        this.info.close();
+                    }
+                });
+
+                //polyline is clicked
+                google.maps.event.addListener(line, 'click', function () {
+                    //console.log('polyline.click', this);
+                    if (this.info && this.info.isOpen() && this.info.openedByHover)
+                    {
+                        //lock it open so the mouseout doesn't close it
+                        this.info.openedByHover = false;
+                        if (this.infoTimeout) {
+                            //clear timeout
+                            window.clearTimeout(this.infoTimeout);
+                            this.infoTimeout = null;
+                        }
+                    }
+                });
 
                 if (diversion.label) {
                     var label = diversion.label;
-                    var labelMarkerTemplateSvg = [
-                        '<?xml version= "1.0" encoding= "utf-8" ?>',
-                        '    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"',
-                        '        width="48px" height="48px" viewBox="0 0 48 48" xml:space="preserve">',
-                        '        <path fill="{{backgroundColour}}" class="path1" d="M8 2.1c1.1 0 2.2 0.5 3 1.3 0.8 0.9 1.3 1.9 1.3 3.1s-0.5 2.5-1.3 3.3l-3 3.1-3-3.1c-0.8-0.8-1.3-2-1.3-3.3 0-1.2 0.4-2.2 1.3-3.1 0.8-0.8 1.9-1.3 3-1.3z"></path>',
-                        '        <path fill="#000" class="path2" d="M8 15.8l-4.4-4.6c-1.2-1.2-1.9-2.9-1.9-4.7 0-1.7 0.6-3.2 1.8-4.5 1.3-1.2 2.8-1.8 4.5-1.8s3.2 0.7 4.4 1.9c1.2 1.2 1.8 2.8 1.8 4.5s-0.7 3.5-1.8 4.7l-4.4 4.5zM4 10.7l4 4.1 3.9-4.1c1-1.1 1.6-2.6 1.6-4.2 0-1.5-0.6-2.9-1.6-4s-2.4-1.7-3.9-1.7-2.9 0.6-4 1.7c-1 1.1-1.6 2.5-1.6 4 0 1.6 0.6 3.2 1.6 4.2v0z"></path>',
-                        '        <path fill="#000" class="path3" d="M8 16l-4.5-4.7c-1.2-1.2-1.9-3-1.9-4.8 0-1.7 0.6-3.3 1.9-4.6 1.2-1.2 2.8-1.9 4.5-1.9s3.3 0.7 4.5 1.9c1.2 1.3 1.9 2.9 1.9 4.6 0 1.8-0.7 3.6-1.9 4.8l-4.5 4.7zM8 0.3c-1.6 0-3.2 0.7-4.3 1.9-1.2 1.2-1.8 2.7-1.8 4.3 0 1.7 0.7 3.4 1.8 4.5l4.3 4.5 4.3-4.5c1.1-1.2 1.8-2.9 1.8-4.5s-0.6-3.1-1.8-4.4c-1.2-1.1-2.7-1.8-4.3-1.8zM8 15.1l-4.1-4.2c-1-1.2-1.7-2.8-1.7-4.4s0.6-3 1.7-4.1c1.1-1.1 2.6-1.7 4.1-1.7s3 0.6 4.1 1.7c1.1 1.1 1.7 2.6 1.7 4.1 0 1.6-0.6 3.2-1.7 4.3l-4.1 4.3zM4.2 10.6l3.8 4 3.8-4c1-1 1.6-2.6 1.6-4.1s-0.6-2.8-1.6-3.9c-1-1-2.4-1.6-3.8-1.6s-2.8 0.6-3.8 1.6c-1 1.1-1.6 2.4-1.6 3.9 0 1.6 0.6 3.1 1.6 4.1v0z"></path>',
-                        '    </svg>'].join('\n');
-                    var labelMarkerSvg = labelMarkerTemplateSvg.replace('{{backgroundColour}}', (label.backgroundColour || 'rgba(0, 0, 0, 0.7)'));
-                    var icon = new google.maps.MarkerImage('data:image/svg+xml;charset=UTF-8;base64,' + btoa(labelMarkerSvg), null, null, new google.maps.Point(-8, 0), new google.maps.Size(48, 48));
+                    //var labelMarkerTemplateSvg = [
+                    //    '<?xml version= "1.0" encoding= "utf-8" ?>',
+                    //    '    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"',
+                    //    '        width="48px" height="48px" viewBox="0 0 48 48" xml:space="preserve">',
+                    //    '        <path fill="{{backgroundColour}}" class="path1" d="M8 2.1c1.1 0 2.2 0.5 3 1.3 0.8 0.9 1.3 1.9 1.3 3.1s-0.5 2.5-1.3 3.3l-3 3.1-3-3.1c-0.8-0.8-1.3-2-1.3-3.3 0-1.2 0.4-2.2 1.3-3.1 0.8-0.8 1.9-1.3 3-1.3z"></path>',
+                    //    '        <path fill="#000" class="path2" d="M8 15.8l-4.4-4.6c-1.2-1.2-1.9-2.9-1.9-4.7 0-1.7 0.6-3.2 1.8-4.5 1.3-1.2 2.8-1.8 4.5-1.8s3.2 0.7 4.4 1.9c1.2 1.2 1.8 2.8 1.8 4.5s-0.7 3.5-1.8 4.7l-4.4 4.5zM4 10.7l4 4.1 3.9-4.1c1-1.1 1.6-2.6 1.6-4.2 0-1.5-0.6-2.9-1.6-4s-2.4-1.7-3.9-1.7-2.9 0.6-4 1.7c-1 1.1-1.6 2.5-1.6 4 0 1.6 0.6 3.2 1.6 4.2v0z"></path>',
+                    //    '        <path fill="#000" class="path3" d="M8 16l-4.5-4.7c-1.2-1.2-1.9-3-1.9-4.8 0-1.7 0.6-3.3 1.9-4.6 1.2-1.2 2.8-1.9 4.5-1.9s3.3 0.7 4.5 1.9c1.2 1.3 1.9 2.9 1.9 4.6 0 1.8-0.7 3.6-1.9 4.8l-4.5 4.7zM8 0.3c-1.6 0-3.2 0.7-4.3 1.9-1.2 1.2-1.8 2.7-1.8 4.3 0 1.7 0.7 3.4 1.8 4.5l4.3 4.5 4.3-4.5c1.1-1.2 1.8-2.9 1.8-4.5s-0.6-3.1-1.8-4.4c-1.2-1.1-2.7-1.8-4.3-1.8zM8 15.1l-4.1-4.2c-1-1.2-1.7-2.8-1.7-4.4s0.6-3 1.7-4.1c1.1-1.1 2.6-1.7 4.1-1.7s3 0.6 4.1 1.7c1.1 1.1 1.7 2.6 1.7 4.1 0 1.6-0.6 3.2-1.7 4.3l-4.1 4.3zM4.2 10.6l3.8 4 3.8-4c1-1 1.6-2.6 1.6-4.1s-0.6-2.8-1.6-3.9c-1-1-2.4-1.6-3.8-1.6s-2.8 0.6-3.8 1.6c-1 1.1-1.6 2.4-1.6 3.9 0 1.6 0.6 3.1 1.6 4.1v0z"></path>',
+                    //    '    </svg>'].join('\n');
+                    //var labelMarkerSvg = labelMarkerTemplateSvg.replace('{{backgroundColour}}', (label.backgroundColour || 'rgba(0, 0, 0, 0.7)'));
+                    //var icon = new google.maps.MarkerImage('data:image/svg+xml;charset=UTF-8;base64,' + btoa(labelMarkerSvg), null, null, new google.maps.Point(-8, 0), new google.maps.Size(48, 48));
                     var marker = new google.maps.Marker({
                         position: new google.maps.LatLng(label.anchor.latitude, label.anchor.longitude),
                         map: map,
-                        icon: icon,
-                        visible: true
+                        //icon: icon,
+                        //visible: true
+                        visible: false
                     });
                     o.marker = marker;
                     var info = new SnazzyInfoWindow({
@@ -217,13 +270,13 @@ app.directive('gpxViewer', function ($timeout, style) {
                         borderRadius: '0px',
                         shadow: false,
                         fontColor: label.fontColour || '#fff',
-                        fontSize: label.fontSize || '14px',
-                        openOnMarkerClick: true
+                        fontSize: label.fontSize || '14px'
                     });
                     if (label.visible) {
                         info.open();
                     }
                     o.info = info;
+                    line.info = info;
                 }
                 return o;
             },
