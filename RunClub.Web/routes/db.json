@@ -160,18 +160,6 @@
       21,
       32
     ],
-    "terrain": [
-      {
-        "type": "trail",
-        "label": "Trail",
-        "percent": 90
-      },
-      {
-        "type": "urban",
-        "label": "Urban",
-        "percent": 10
-      }
-    ],
     "distanceMarkerAlignments": [
       0,
       1,
@@ -197,6 +185,18 @@
       0,
       0,
       1
+    ],
+    "terrain": [
+      {
+        "type": "trail",
+        "label": "Trail",
+        "percent": 90
+      },
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 10
+      }
     ],
     "placesOfInterestOptions": [
       {
@@ -492,18 +492,6 @@
       17,
       "20+"
     ],
-    "terrain": [
-      {
-        "type": "trail",
-        "label": "Trail",
-        "percent": 15
-      },
-      {
-        "type": "urban",
-        "label": "Urban",
-        "percent": 85
-      }
-    ],
     "distanceMarkerAlignments": [
       0,
       0,
@@ -523,6 +511,18 @@
       0,
       0,
       0
+    ],
+    "terrain": [
+      {
+        "type": "trail",
+        "label": "Trail",
+        "percent": 15
+      },
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 85
+      }
     ],
     "placesOfInterest": [
       {
@@ -664,6 +664,26 @@
       10,
       18,
       32
+    ],
+    "distanceMarkerAlignments": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
     ],
     "terrain": [
       {
@@ -955,6 +975,26 @@
       8,
       14
     ],
+    "distanceMarkerAlignments": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
     "terrain": [
       {
         "type": "trail",
@@ -1032,23 +1072,6 @@
       21,
       28
     ],
-    "terrain": [
-      {
-        "type": "road",
-        "label": "Urban",
-        "percent": 10
-      },
-      {
-        "type": "forest",
-        "label": "Rural Road",
-        "percent": 75
-      },
-      {
-        "type": "trail",
-        "label": "Gravel Road",
-        "percent": 15
-      }
-    ],
     "distanceMarkerAlignments": [
       1,
       0,
@@ -1071,6 +1094,23 @@
       1,
       0,
       1
+    ],
+    "terrain": [
+      {
+        "type": "road",
+        "label": "Urban",
+        "percent": 10
+      },
+      {
+        "type": "forest",
+        "label": "Rural Road",
+        "percent": 75
+      },
+      {
+        "type": "trail",
+        "label": "Gravel Road",
+        "percent": 15
+      }
     ],
     "placesOfInterest": [
       {
@@ -1608,18 +1648,6 @@
       12,
       15
     ],
-    "terrain": [
-      {
-        "type": "trail",
-        "label": "Trail",
-        "percent": 50
-      },
-      {
-        "type": "urban",
-        "label": "Urban",
-        "percent": 50
-      }
-    ],
     "distanceMarkerAlignments": [
       0,
       0,
@@ -1632,6 +1660,18 @@
       1,
       1,
       0
+    ],
+    "terrain": [
+      {
+        "type": "trail",
+        "label": "Trail",
+        "percent": 50
+      },
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 50
+      }
     ],
     "placesOfInterest": [
       {
@@ -1770,7 +1810,7 @@
           "fontColour": "#ffffff",
           "fontSize": "13px",
           "showCloseButton": true,
-          "visible" : true
+          "visible": true
         },
         "strokeColour": "#f27b08",
         "points": [
@@ -2072,6 +2112,20 @@
       8,
       12.5,
       19
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
     ],
     "terrain": [
       {
