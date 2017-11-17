@@ -99,6 +99,7 @@
     </Content>
     <Content Include="css\snazzy-info-window.css" />
     <Content Include="css\tipTip.css" />
+    <Content Include="images\map-icons\elevation-marker.svg" />
     <Content Include="images\map-icons\km-marker.svg" />
     <Content Include="images\map-icons\parking.png" />
     <Content Include="images\map-icons\photo-camera.png" />
@@ -106,6 +107,7 @@
     <Content Include="images\running.gif" />
     <Content Include="images\map-icons\public-bathroom.png" />
     <Content Include="images\map-icons\water-fountain.png" />
+    <Content Include="images\static-meet-here.png" />
     <Content Include="index.html" />
     <Content Include="js\app.js" />
     <Content Include="js\controllers.js" />
@@ -157,7 +159,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
-    <Content Include="images\map-icons\green-pin.png" />
     <Content Include="js\vendor\angular-sanitize.min.js" />
     <Content Include="js\vendor\gpx.js" />
     <Content Include="js\vendor\jquery-3.2.1.min.js" />
