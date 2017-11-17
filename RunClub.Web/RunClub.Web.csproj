@@ -126,6 +126,7 @@
     <Content Include="packages.config" />
     <None Include="routes\kPCzjCbW.gpx" />
     <Content Include="routes\kwaBpRSC.gpx" />
+    <None Include="routes\LawAfAEu.gpx" />
     <Content Include="routes\xHTfUcKn.gpx" />
     <Content Include="css\routes.less" />
     <None Include="bundleconfig.json" />

@@ -2703,5 +2703,127 @@
     ],
     "annotations": [
     ]
+  },
+  {
+    "id": "LawAfAEu",
+    "name": "Cornwall Park",
+    "enabled": true,
+    "description": "Auckland's answer to Central Park (just with more sheep poo and fences to jump!).\r\nThe loop follows the rolling perimeter trails of the park, with a full lap being 9k and an option to cut the lap short at 5k. Two laps equals 18k.",
+    "meetingPoint": {
+      "label": "Cornwall Park Cafe, near band rotunda, end of Twin Oaks drive.",
+      "latitude": -36.89563718,
+      "longitude": 174.78884071,
+      "offset": {
+        "right": "0px",
+        "top": "0px"
+      },
+      "placement": "right"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.89935660,
+        "longitude": 174.78539944
+      },
+      "zoom": 13
+    },
+    "distanceOptions": [
+      5,
+      9,
+      18
+    ],
+    "distanceMarkerAlignments": [
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "terrain": [
+      {
+        "type": "trail",
+        "label": "Trail",
+        "percent": 70
+      },
+      {
+        "type": "urban",
+        "label": "Footpath",
+        "percent": 30
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "parking",
+        "latitude": -36.89611124,
+        "longitude": 174.78814602
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.89634,
+        "longitude": 174.787872
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.89634,
+        "longitude": 174.787872
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.89633,
+        "longitude": 174.785843
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.9037437,
+        "longitude": 174.788635
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9059258,
+        "longitude": 174.77655
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.8933144,
+        "longitude": 174.78656
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+    ],
+    "annotations": [
+    ]
   }
 ]
