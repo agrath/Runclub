@@ -2525,6 +2525,16 @@
       }
     ],
     "placesOfInterest": [
+      {
+        "type": "parking",
+        "latitude": -37.00366652,
+        "longitude": 174.91344273
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -37.0024567,
+        "longitude": 174.912918
+      }
     ],
     "placesOfInterestOptions": [
       {
