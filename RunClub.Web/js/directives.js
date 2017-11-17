@@ -46,7 +46,7 @@ app.directive('displayRatingStars', function (style) {
     };
 });
 
-app.directive('gpxViewer', function ($timeout, style) {
+app.directive('gpxViewer', function ($rootScope, $timeout, style) {
     var helper =
         {
             distanceMarkerIcons: [
@@ -482,18 +482,73 @@ app.directive('gpxViewer', function ($timeout, style) {
                     console.log("\"latitude\": " + lat + ",\n\"longitude\": " + lng);
                 });
 
+                $rootScope.$on('elevationchart:hover', function (e, point) {
+                    console.log('elevationchart:hover', point);
+                    var gPoint = new google.maps.LatLng(point.latitude, point.longitude);
+                    if (!$scope.elevationMarker) {
+                        var icon = new google.maps.MarkerImage('/images/map-icons/elevation-marker.svg', null, null, new google.maps.Point(0, 0), new google.maps.Size(48, 48));
+                        var marker = new google.maps.Marker({
+                            position: gPoint,
+                            map: map,
+                            zIndex: google.maps.Marker.MAX_ZINDEX + 100,
+                            icon: icon,
+                            visible: true
+                        });
+                        $scope.elevationMarker = marker;
+                    }
+                    //if elevation marker is not visible
+                    if (!$scope.elevationMarker.map)
+                    {
+                        $scope.elevationMarker.setMap(map);
+                    }
+                    $scope.elevationMarker.setPosition(gPoint);
+                    //if timeout is defined, marker was shown but has just been moved
+                    if ($scope.elevationMarkerTimeout)
+                    {
+                        window.clearTimeout($scope.elevationMarkerTimeout);
+                        $scope.elevationMarkerTimeout = null;
+                    }
+                    $scope.elevationMarkerTimeout = window.setTimeout(function () {
+                        //hide elevation marker after timeout
+                        $scope.elevationMarker.setMap(null);
+                    }, 1000);
+                });
             });
         }
     };
 });
 
 
-app.directive('gpxElevationChart', function (style) {
+app.directive('gpxElevationChart', function (style, $rootScope) {
     var helper = {
         getDefaultChartConfig: function () {
             var config = {
                 type: 'line',
                 options: {
+                    tooltips: {
+                        mode: 'index',
+                        callbacks: {
+                            // Use the footer callback to display the sum of the items showing in the tooltip
+                            footer: function (tooltipItems, data) {
+                                //var sum = 0;
+
+                                tooltipItems.forEach(function (tooltipItem) {
+                                    //console.log('chart.hover', data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index]);
+                                    var point = data.points[tooltipItem.index];
+                                    //console.log('chart.hover', point);
+                                    $rootScope.$emit('elevationchart:hover', point);
+                                });
+                                //return 'Sum: ' + sum;
+                                
+                                return '';
+                            },
+                        },
+                        footerFontStyle: 'normal'
+                    },
+                    hover: {
+                        mode: 'index',
+                        intersect: true
+                    },
                     scales: {
                         xAxes: [
                             {
@@ -508,6 +563,7 @@ app.directive('gpxElevationChart', function (style) {
                     }
                 },
                 data: {
+                    points: [],
                     labels: [],
                     datasets: [
                         {
@@ -530,6 +586,7 @@ app.directive('gpxElevationChart', function (style) {
         },
         sampleElevationData: function (data) {
             var o = {
+                points: [],
                 data: [],
                 labels: []
             };
@@ -559,7 +616,7 @@ app.directive('gpxElevationChart', function (style) {
                     //console.log('sed.interval', JSON.stringify({ distanceStepped: distanceStepped, elevation: intervalElevation, label: intervalLabel  }));
                     o.data.push(intervalElevation);
                     o.labels.push(intervalLabel);
-
+                    o.points.push(point);
                 }
             })
             return o;
@@ -581,8 +638,9 @@ app.directive('gpxElevationChart', function (style) {
                 var chartData = helper.sampleElevationData(data);
                 config.data.labels = chartData.labels;
                 config.data.datasets[0].data = chartData.data;
+                config.data.points = chartData.points;
                 var ctx = element.find("canvas").get(0).getContext("2d");
-                var line = new Chart(ctx, config);
+                var chart = new Chart(ctx, config);
                 //console.log('chart', config);
             });
         }
