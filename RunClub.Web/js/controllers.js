@@ -44,7 +44,7 @@ app.controller('calendarController', function ($scope, RouteService, CalendarSer
             $scope.allEvents = data;
             
             _.each($scope.allEvents, function (item) {
-                item.route = _.find($scope.routes, function (route) { return route.id == item.id; });
+                item.route = _.find($scope.routes, function (route) { return route.id === item.id; });
                 item.moment = moment(item.timestamp);
                 item.day = item.moment.format('DD');
                 item.month = item.moment.format('MMM');

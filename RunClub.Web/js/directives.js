@@ -99,7 +99,7 @@ app.directive('gpxViewer', function ($timeout, style) {
                             alignment = alignmentHint[km - 1];
                         }
                     }
-                    var anchor = alignment == 0 ? new google.maps.Point(0, 32) : new google.maps.Point(32, 32);
+                    var anchor = alignment === 0 ? new google.maps.Point(0, 32) : new google.maps.Point(32, 32);
                     var svg = svgIcons[alignment].replace('{{km}}', km)
                     //pass the injected svg as a data-uri svg
                     var icon = new google.maps.MarkerImage('data:image/svg+xml;charset=UTF-8;base64,' + btoa(svg), null, null, anchor, new google.maps.Size(32, 32));
@@ -125,9 +125,8 @@ app.directive('gpxViewer', function ($timeout, style) {
                 if (route.placesOfInterestOptions) {
                     // read placesOfInterestOptions into a dictionary for fast lookup later
                     placesOfInterestOptions = {};
-                    var i = null;
-                    for (i = 0; i < route.placesOfInterestOptions.length; i += 1) {
-                        placesOfInterestOptions[route.placesOfInterestOptions[i].type] = route.placesOfInterestOptions[i];
+                    for (var o = 0; o < route.placesOfInterestOptions.length; o++) {
+                        placesOfInterestOptions[route.placesOfInterestOptions[o].type] = route.placesOfInterestOptions[o];
                     }
                 }
                 if (placesOfInterest) {
@@ -553,7 +552,7 @@ app.directive('gpxElevationChart', function (style) {
                 elevation += elevationDelta;
                 var distanceStepped = step(distance, 100, 0);
                 //console.log('sed', JSON.stringify({ metersSinceLastPoint: metersSinceLastPoint, distance: distance, distanceStepped: distanceStepped, distanceSteppedMax: distanceSteppedMax, elevationDelta: elevationDelta, elevation: elevation }));
-                if (distanceStepped % 100 == 0 && distanceStepped > distanceSteppedMax) {
+                if (distanceStepped % 100 === 0 && distanceStepped > distanceSteppedMax) {
                     distanceSteppedMax = distanceStepped;
                     var intervalElevation = Math.round(elevation);
                     var intervalLabel = Math.ceil(distanceStepped / 1000) - 1 + ' km';
