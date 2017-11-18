@@ -10,7 +10,9 @@ app.controller('homeController', function ($scope, $location) {
 });
 app.controller('routeListController', function ($scope, RouteService, $location) {
     RouteService.getRoutes().then(function (data) {
-        $scope.routes = data;
+        $scope.routes = _.sortBy(data, function (item) {
+            return item.name;
+        });
     })
 });
 app.controller('showRouteController', function ($scope, RouteService, $routeParams, $location) {

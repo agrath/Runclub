@@ -17,7 +17,7 @@ app.value('style', {
 app.factory('CalendarService', ['$q', '$http', function ($q, $http) {
     var self = this;
     var _deferred = $q.defer();
-    $http.get('/routes/calendar.json')
+    $http.get('/data/calendar.json')
         .then(
         function (transport, status, headers, config) {
             //console.log('calendar.json loaded');
@@ -37,7 +37,7 @@ app.factory('CalendarService', ['$q', '$http', function ($q, $http) {
 app.factory('RouteService', ['$q', '$http', '$interpolate', function ($q, $http, $interpolate) {
     var self = this;
     var _deferred = $q.defer();
-    $http.get('/routes/db.json')
+    $http.get('/data/db.json')
         .then(
         function (transport, status, headers, config) {
             //console.log('db.json loaded');
@@ -67,7 +67,7 @@ app.factory('RouteService', ['$q', '$http', '$interpolate', function ($q, $http,
                     }
                     else {
                         //by convention, get the gpx file
-                        var url = '/routes/' + id + '.gpx';
+                        var url = '/data/' + id + '.gpx';
                         route.gpxFile = url;
                         $http({ method: 'get', url: url, transformResponse: function (data) { return $.parseXML(data); } }).then(function (res) {
                             //console.log('loaded ' + url, res.data);

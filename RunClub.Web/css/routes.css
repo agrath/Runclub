@@ -2821,13 +2821,17 @@ i.tipTip {
   background-color: #fff;
   border-top: solid 3px #cccccc;
 }
+.event-list > li .info .footer .row {
+  margin: 0;
+}
 .event-list > li .info .footer p {
-  height: 60px;
+  height: 62px;
+  padding: 10px 0 !important;
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 10px;
   text-align: left;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 .event-list > li > .info > ul > li {
   display: table-cell;
