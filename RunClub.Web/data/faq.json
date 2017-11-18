@@ -1,0 +1,32 @@
+﻿[
+  {
+    "category": "Sunday runs",
+    "question": "Where do you run?",
+    "answer": "We have a lot of different routes all over Auckland and change location every Sunday. Check out our <a href='/app/routes/all'>routes page</a> and <a href='/app/routes/calendar'>calendar page</a> for more details"
+  },
+  {
+    "category": "Sunday runs",
+    "question": "Do you only run on the road",
+    "answer": "We have a mix of routes, with some on the road and some on the trail, and a few that mix the two. We try to mix it up!"
+  },
+  {
+    "category": "Sunday runs",
+    "question": "What do I need to bring",
+    "answer": "Yourself and a friend or two! If it’s summer then sunscreen and sunglasses are always a good idea!<br/>You don’t need any special gear to run with us but a running watch can help you keep the pace"
+  },
+  {
+    "category": "Sunday runs",
+    "question": "What speed do you run?",
+    "answer": "At the start of our group run we break into pace groups of 4:30/km through to 7:00/km at intervals of 30s. We call these runs LSR (long slow run) and you should aim to run at a slow conversational pace."
+  },
+  {
+    "category": "Membership",
+    "question": "How do I become a member?",
+    "answer": "Simply fill out our <a href='/app/become-a-member'>membership form</a>, and come along next Sunday."
+  },
+  {
+    "category": "Membership",
+    "question": "How much does it cost?",
+    "answer": "Currently, you can join our club for free and the Sunday group run will always be free. From time to time we may ask for a donation for equipment. We also have running shirts, but these are purchased at the time of printing independently to the club membership."
+  }
+]

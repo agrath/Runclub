@@ -5,6 +5,10 @@
                 templateUrl: '/templates/home.html',
                 controller: 'homeController'
             }).
+            when('/faq', {
+                templateUrl: '/templates/faq.html',
+                controller: 'faqController'
+            }).
             when('/routes/all', {
                 templateUrl: '/templates/all-routes.html',
                 controller: 'routeListController'

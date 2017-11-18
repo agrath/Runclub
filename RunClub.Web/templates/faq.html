@@ -1,0 +1,23 @@
+﻿<section class="jumbotron text-center">
+    <div class="tint">
+        <div class="container">
+            <h1 class="jumbotron-heading">Frequently asked questions</h1>
+            <p class="lead text-muted">
+            <p>
+                I'm sure you have a few questions... Who are we? Where do we meet? What are our rules? What do you need?
+            </p>
+        </div>
+    </div>
+</section>
+<div class="col-md-7 offset-2" ng-if="!loading">
+    <div ng-repeat="(key, values) in groupedItems">
+        <h3>{{key}}</h3>
+        <ul class="faq-list">
+            <li ng-repeat="item in values">
+                <strong>{{item.question}}</strong>
+                <br/>
+                <p ng-bind-html="item.answer"></p>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -69,3 +69,11 @@ app.controller('calendarController', function ($scope, RouteService, CalendarSer
     };
 
 });
+
+app.controller('faqController', function ($scope, FaqService, $location) {
+    FaqService.getItems().then(function (data) {
+        $scope.groupedItems = _.groupBy(data, function (item) {
+            return item.category;
+        });
+    })
+});
