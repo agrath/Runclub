@@ -28,7 +28,7 @@
 <div class="text-muted">
     <div class="container">
         <div class="row" id="all-routes">
-            <div class="card" ng-repeat="route in routes | filter: { enabled: true }">
+            <div class="card" ng-repeat="route in routes | filter: { enabled: true } ">
                 <a ng-href="routes/{{route.id}}"><img ng-src="{{route.staticMapImage}}" alt="Map image"></a>
                 <div class="description-container">
                     <p class="card-text">
