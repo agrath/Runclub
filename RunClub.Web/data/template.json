@@ -3,6 +3,7 @@
   "name": "",
   "enabled": true,
   "description": "Line1\r\nLine2",
+  "importantNotes": "Line1",
   "meetingPoint": {
     "label": "",
     "latitude": -36.0,

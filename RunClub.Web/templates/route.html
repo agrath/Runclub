@@ -6,6 +6,10 @@
                 <div class="col-md-12">
                     <h1>{{ route.name }}</h1>
                     <p ng-bind-html="route.description | br"></p>
+                    <div ng-if="route.importantNotes">
+                        <span class="badge badge-danger">Important</span>
+                        <p>{{route.importantNotes}}</p>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -30,7 +34,6 @@
                     <br class="clearfix" />
                 </div>
             </div>
-
             <h3>Terrain</h3>
             <ul class="terrain-options">
                 <li ng-repeat="item in route.terrain" ng-style="{width:item.percent+'%'}" ng-class="'terrain-'+item.type">
