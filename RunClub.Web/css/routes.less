@@ -2,14 +2,12 @@
 @import "font-awesome-4.7.0/less/font-awesome.less";
 
 
-html,
-body {
+html, body, .app {
     height: 100%;
     width: 100%;
 }
 
 body {
-    min-height: 75rem;
     font-family: 'Open Sans'
 }
 
@@ -222,16 +220,57 @@ div.view.routes-all {
         background-image: url(/assets/routes-all.jpg?height=700);
     }
 }
+
 div.view.routes-calendar {
     .jumbotron {
         background-image: url(/assets/calendar.jpg?height=700);
     }
 }
+
 div.view.faq {
     .jumbotron {
         background-image: url(/assets/faq.jpg?height=700);
     }
+
+    ul.fa-ul li i {
+        top: 5px;
+        color: @green;
+    }
 }
+
+div.flex {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+
+    nav {
+        flex: 0 1 auto;
+    }
+
+    .view {
+        flex: 1 1 auto;
+    }
+
+    footer {
+        flex: 0 1 40px;
+    }
+}
+
+div.view.become-a-member {
+    display: flex;
+    height: 100%;
+    flex-flow: column;
+
+    iframe {
+        display: block;
+        flex: 1 1 auto;
+        background: #fff;
+        border: none; /* Reset default border */
+        width: 100%;
+        height: 100%;
+    }
+}
+
 div.view {
     .jumbotron {
         background-size: cover;
@@ -277,7 +316,7 @@ div.view {
 }
 
 .jumbotron-heading {
-    margin-top:50px;
+    margin-top: 50px;
     font-weight: 300;
 }
 
@@ -597,7 +636,7 @@ i.tipTip {
         border-top: solid 3px #cccccc;
 
         .row {
-            margin:0;
+            margin: 0;
         }
 
         p {

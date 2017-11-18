@@ -80,6 +80,7 @@
   <ItemGroup>
     <Content Include="AmenitiesGeoJson2DbJson.aspx" />
     <Content Include="assets\calendar.jpg" />
+    <Content Include="assets\faq.jpg" />
     <Content Include="assets\gallery\gallery-1.jpg" />
     <Content Include="assets\gallery\gallery-2.jpg" />
     <Content Include="assets\gallery\gallery-3.jpg" />
@@ -126,6 +127,7 @@
     <Content Include="js\vendor\underscore-min.js" />
     <Content Include="js\vendor\v3_epoly.js" />
     <Content Include="packages.config" />
+    <Content Include="data\faq.json" />
     <None Include="data\kPCzjCbW.gpx" />
     <Content Include="data\kwaBpRSC.gpx" />
     <None Include="data\LawAfAEu.gpx" />
@@ -185,6 +187,8 @@
     <Content Include="css\font-awesome-4.7.0\less\variables.less" />
     <None Include="data\db.json" />
     <Content Include="templates\all-routes.html" />
+    <Content Include="templates\become-a-member.html" />
+    <Content Include="templates\faq.html" />
     <Content Include="templates\calendar-repeater.html" />
     <Content Include="templates\calendar.html" />
     <Content Include="templates\home.html" />

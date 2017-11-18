@@ -77,3 +77,7 @@ app.controller('faqController', function ($scope, FaqService, $location) {
         });
     })
 });
+
+app.controller('becomeAMemberController', function ($scope) {
+
+});
