@@ -2521,6 +2521,10 @@ div.view.routes-calendar .jumbotron {
 div.view.faq .jumbotron {
   background-image: url(/assets/faq.jpg?height=700);
 }
+div.view.faq ul.fa-ul li i {
+  top: 5px;
+  color: #20bc5c;
+}
 div.view .jumbotron {
   background-size: cover;
   color: #fff;

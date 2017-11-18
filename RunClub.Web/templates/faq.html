@@ -12,8 +12,9 @@
 <div class="col-md-7 offset-2" ng-if="!loading">
     <div ng-repeat="(key, values) in groupedItems">
         <h3>{{key}}</h3>
-        <ul class="faq-list">
+        <ul class="faq-list fa-ul">
             <li ng-repeat="item in values">
+                <i class="fa-li fa fa-question-circle"></i>
                 <strong>{{item.question}}</strong>
                 <br/>
                 <p ng-bind-html="item.answer"></p>
