@@ -2336,12 +2336,12 @@
   clip: auto;
 }
 html,
-body {
+body,
+.app {
   height: 100%;
   width: 100%;
 }
 body {
-  min-height: 75rem;
   font-family: 'Open Sans';
 }
 .navbar {
@@ -2524,6 +2524,34 @@ div.view.faq .jumbotron {
 div.view.faq ul.fa-ul li i {
   top: 5px;
   color: #20bc5c;
+}
+div.flex {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+div.flex nav {
+  flex: 0 1 auto;
+}
+div.flex .view {
+  flex: 1 1 auto;
+}
+div.flex footer {
+  flex: 0 1 40px;
+}
+div.view.become-a-member {
+  display: flex;
+  height: 100%;
+  flex-flow: column;
+}
+div.view.become-a-member iframe {
+  display: block;
+  flex: 1 1 auto;
+  background: #fff;
+  border: none;
+  /* Reset default border */
+  width: 100%;
+  height: 100%;
 }
 div.view .jumbotron {
   background-size: cover;

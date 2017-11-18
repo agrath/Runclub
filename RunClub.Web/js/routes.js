@@ -21,6 +21,10 @@
                 templateUrl: '/templates/route.html',
                 controller: 'showRouteController'
             }).
+            when('/become-a-member', {
+                templateUrl: '/templates/become-a-member.html',
+                controller: 'becomeAMemberController'
+            }).
             otherwise({
                 redirectTo: '/home'
             });
