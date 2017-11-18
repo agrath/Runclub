@@ -51,29 +51,15 @@ app.directive('gpxViewer', function ($rootScope, $timeout, style) {
         {
             distanceMarkerIcons: [
                 [
-                    '<?xml version="1.0"?>',
-                    '<svg xmlns= "http://www.w3.org/2000/svg" width= "40" height= "40" viewBox="0 0 10.583333 10.583332">',
-                    '  <g transform="translate(271.16771,-49.144185)">',
-                    '    <path style="fill:#20bc5c;fill-opacity:1;stroke:#000000;stroke-width:0.01369718;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"',
-                    '          d="m -269.41966,49.163168 h 8.35147 c 0.21764,0 0.5417,0.372559 0.5417,0.609381 v 5.843323 c 0,0.236828 -0.29099,0.677277 -0.50863,0.675525 l -2.05478,-0.01654 h -2.17055 -1.3904 l -4.46566,3.49756 2.26688,-3.49756 h -0.63617 c -0.21764,0 -0.50861,-0.356016 -0.50861,-0.592844 0,-2.030456 0,0.340007 0,-5.909468 0,-0.236822 0.35711,-0.609381 0.57475,-0.609381 z"',
-                    '    />',
-                    '    <text xml:space="preserve" style="font-size:5.64444447px;line-height:1.25;font-family:Calibri;text-align:center;text-anchor:middle;fill:#FFFFFF;stroke-width:0.26458332"',
-                    '          x="-265.18155" y="54.430794">{{km}}</text>',
-                    '  </g>',
+                    '<svg width="66" height="64" xmlns="http://www.w3.org/2000/svg">',
+                    ' <path d="m10.4152,0.23656l50.36,0c1.3125,0 3.2665,2.23925 3.2665,3.66264l0,35.1209c0,1.4235 -1.7547,4.0707 -3.067,4.0602l-12.3907,-0.0994l-13.0884,0l-8.3843,0l-26.92817,20.8969l13.66947,-20.8969l-3.8362,0c-1.3124,0 -3.06691,-2.1398 -3.06691,-3.5632c0,-12.204 0,2.0435 0,-35.5185c0,-1.42345 2.15328,-3.66264 3.46571,-3.66264z" stroke-width="3" stroke-miterlimit="4" stroke="#15773b" fill="#20bc5c" id="svg_2" />',
+                    ' <text xml:space="preserve" y="31" x="34" text-anchor="middle" fill="#ffffff" font-weight="bold" font-size="32px" font-family="Helvetica,Arial,sans-serif" id="svg_4">{{km}}</text>',
                     '</svg>'
                 ].join('\n'),
                 [
-                    '<?xml version="1.0"?>',
-                    '<svg xmlns= "http://www.w3.org/2000/svg" width= "40" height= "40" viewBox="0 0 10.583333 10.583332">',
-                    '   <g transform="matrix(-1,0,0,1,-260.47419,-49.144185)">',
-                    '    <path style="fill:#20bc5c;fill-opacity:1;stroke:#000000;stroke-width:0.01369718;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"',
-                    '          d="m -269.41966,49.163168 h 8.35147 c 0.21764,0 0.5417,0.372559 0.5417,0.609381 v 5.843323 c 0,0.236828 -0.29099,0.677277 -0.50863,0.675525 l -2.05478,-0.01654 h -2.17055 -1.3904 l -4.46566,3.49756 2.26688,-3.49756 h -0.63617 c -0.21764,0 -0.50861,-0.356016 -0.50861,-0.592844 0,-2.030456 0,0.340007 0,-5.909468 0,-0.236822 0.35711,-0.609381 0.57475,-0.609381 z"',
-                    '    />',
-                    '  </g>',
-                    '  <g transform="translate(271.16771,-49.144185)">',
-                    '    <text xml:space="preserve" style="font-size:5.64444447px;line-height:1.25;font-family:Calibri;text-align:center;text-anchor:middle;fill:#FFFFFF;stroke-width:0.26458332"',
-                    '          x="-265.18155" y="54.430794">{{km}}</text>',
-                    '  </g>',
+                    '<svg width="66" height="64" xmlns="http://www.w3.org/2000/svg">',
+                    ' <path d="M 54.054344,0.23656 H 3.6943438 c -1.3125,0 -3.26650002,2.23925 -3.26650002,3.66264 v 35.1209 c 0,1.4235 1.75470002,4.0707 3.06700002,4.0602 L 15.885544,42.9809 h 13.0884 8.3843 l 26.92817,20.8969 -13.66947,-20.8969 h 3.8362 c 1.3124,0 3.06691,-2.1398 3.06691,-3.5632 0,-12.204 0,2.0435 0,-35.5185 0,-1.42345 -2.15328,-3.66264 -3.46571,-3.66264 z" id="svg_2" style="fill:#20bc5c;stroke:#15773b;stroke-width:3;stroke-miterlimit:4" />',
+                    ' <text xml:space="preserve" y="31" x="28" text-anchor="middle" fill="#ffffff" font-weight="bold" font-size="32px" font-family="Helvetica,Arial,sans-serif" id="svg_4">{{km}}</text>',
                     '</svg>'
                 ].join('\n')
             ],
@@ -99,10 +85,10 @@ app.directive('gpxViewer', function ($rootScope, $timeout, style) {
                             alignment = alignmentHint[km - 1];
                         }
                     }
-                    var anchor = alignment === 0 ? new google.maps.Point(0, 32) : new google.maps.Point(32, 32);
+                    var anchor = alignment === 0 ? new google.maps.Point(0, 28) : new google.maps.Point(28, 28);
                     var svg = svgIcons[alignment].replace('{{km}}', km)
                     //pass the injected svg as a data-uri svg
-                    var icon = new google.maps.MarkerImage('data:image/svg+xml;charset=UTF-8;base64,' + btoa(svg), null, null, anchor, new google.maps.Size(32, 32));
+                    var icon = new google.maps.MarkerImage('data:image/svg+xml;charset=UTF-8;base64,' + btoa(svg), null, null, anchor, new google.maps.Size(28, 28));
                     var point = polyline.GetPointAtDistance(i);
                     if (point) {
                         markers.push({
