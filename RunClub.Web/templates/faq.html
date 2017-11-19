@@ -6,10 +6,13 @@
             <p>
                 I'm sure you have a few questions... Who are we? Where do we meet? What are our rules? What do you need?
             </p>
+            <p>
+                <a href="#faq-list" class="btn btn-secondary">Answer all your questions below</a>
+            </p>
         </div>
     </div>
 </section>
-<div class="col-md-7 offset-2" ng-if="!loading">
+<div class="col-md-7 offset-2" ng-if="!loading" id="faq-list">
     <div ng-repeat="(key, values) in groupedItems">
         <h3>{{key}}</h3>
         <ul class="faq-list fa-ul">
