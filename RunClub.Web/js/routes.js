@@ -25,6 +25,10 @@
                 templateUrl: '/templates/become-a-member.html',
                 controller: 'becomeAMemberController'
             }).
+            when('/team', {
+                templateUrl: '/templates/team.html',
+                controller: 'teamController'
+            }).
             otherwise({
                 redirectTo: '/home'
             });

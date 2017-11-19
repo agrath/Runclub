@@ -89,6 +89,8 @@
     <Content Include="assets\gallery\gallery-6.jpg" />
     <Content Include="assets\home-banner.jpg" />
     <Content Include="assets\routes-all.jpg" />
+    <Content Include="assets\team.jpg" />
+    <Content Include="assets\team\gareth-evans.jpg" />
     <Content Include="css\awesome-bootstrap-checkbox.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\colorbox.css" />
@@ -128,6 +130,7 @@
     <Content Include="js\vendor\v3_epoly.js" />
     <Content Include="packages.config" />
     <Content Include="data\faq.json" />
+    <Content Include="data\team.json" />
     <None Include="data\kPCzjCbW.gpx" />
     <Content Include="data\kwaBpRSC.gpx" />
     <None Include="data\LawAfAEu.gpx" />
@@ -193,6 +196,7 @@
     <Content Include="templates\calendar.html" />
     <Content Include="templates\home.html" />
     <Content Include="templates\route.html" />
+    <Content Include="templates\team.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

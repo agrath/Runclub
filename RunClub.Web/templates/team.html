@@ -1,0 +1,35 @@
+﻿<button type="button" class="btn btn-light" ng-click="list()"><i class="fa fa-chevron-left"></i> Back to list</button>
+<section class="jumbotron text-center">
+    <div class="tint">
+        <div class="container">
+            <h1 class="jumbotron-heading">The MetroRun team</h1>
+            <p class="lead text-muted">
+            <p>
+                Who are we?
+            </p>
+            <p>
+                The club has a standard governance structure of a Secretary, Treasurer, Chairperson and three Board members.<br />
+                We also have a number of volunteers who attend to various elements of the club operations.
+            </p>
+            <p>
+                <a href="#the-team" class="btn btn-secondary">Find out about our members below</a>
+            </p>
+        </div>
+    </div>
+</section>
+<div class="col-md-7 offset-2" ng-if="!loading" id="the-team">
+    <div ng-repeat="(key, values) in groupedItems">
+        <h3>{{key}}</h3>
+        <div class="row mt-4" ng-repeat="item in values">
+            <div class="col-md-3">
+                <img ng-src="{{item.image}}?width=300" />
+            </div>
+            <div class="offset-1 col-md-8">
+                <strong>{{item.role}}</strong> - <span>{{item.name}}</span>
+                <p>
+                    {{item.about}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

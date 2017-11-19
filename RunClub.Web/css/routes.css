@@ -2525,6 +2525,9 @@ div.view.faq ul.fa-ul li i {
   top: 5px;
   color: #20bc5c;
 }
+div.view.team .jumbotron {
+  background-image: url(/assets/team.jpg?height=700);
+}
 div.flex {
   display: flex;
   flex-flow: column;

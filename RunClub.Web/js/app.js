@@ -54,6 +54,27 @@ app.factory('FaqService', ['$q', '$http', function ($q, $http) {
         }
     };
 }]);
+app.factory('TeamService', ['$q', '$http', function ($q, $http) {
+    var self = this;
+    var _deferred = $q.defer();
+    $http.get('/data/team.json')
+        .then(
+        function (transport, status, headers, config) {
+            //console.log('faq.json loaded');
+            var data = transport.data;
+            _deferred.resolve(data);
+        },
+        function (transport, status, headers, config) {
+            _deferred.reject("Error loading team.json");
+        });
+
+    return {
+        getItems: function () {
+            return _deferred.promise;
+        }
+    };
+}]);
+
 app.factory('RouteService', ['$q', '$http', '$interpolate', function ($q, $http, $interpolate) {
     var self = this;
     var _deferred = $q.defer();

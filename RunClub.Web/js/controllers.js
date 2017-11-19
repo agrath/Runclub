@@ -81,3 +81,11 @@ app.controller('faqController', function ($scope, FaqService, $location) {
 app.controller('becomeAMemberController', function ($scope) {
 
 });
+
+app.controller('teamController', function ($scope, TeamService) {
+    TeamService.getItems().then(function (data) {
+        $scope.groupedItems = _.groupBy(data, function (item) {
+            return item.category;
+        });
+    })
+});
