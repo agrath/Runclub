@@ -379,13 +379,13 @@ console.warn = console.trace.bind(console);
         html += '<div class="form-group">';
         html += ' <label class="col-md-4 control-label" for="uxCalculate"></label>';
         html += ' <div class="col-md-4">';
-        html += '     <button id="uxCalculate" name="uxCalculate" class="btn btn-primary">Calculate</button>';
+        html += '     <button id="uxCalculate" name="uxCalculate" class="btn btn-success">Calculate</button>';
         html += ' </div>';
         html += '</div>';
         html += '</fieldset>';
         html += '</div>';
         html += '<div class="results" style="display:none;">'
-        html += '   <div class="alert alert-info"><i class="fa fa-thumbs-up"/>';
+        html += '   <div class="alert alert-success"><i class="fa fa-thumbs-up"/>';
         html += '       <strong>Your results are in!</strong><br/>';
         html += '      Below you will find your personalized training paces.<br/>';
         html += '   </div>';
