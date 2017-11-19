@@ -86,6 +86,9 @@ app.controller('aboutController', function ($scope) {
 
 });
 
+app.controller('paceCalculatorController', function ($scope) {
+
+});
 app.controller('teamController', function ($scope, TeamService) {
     TeamService.getItems().then(function (data) {
         $scope.groupedItems = _.groupBy(data, function (item) {

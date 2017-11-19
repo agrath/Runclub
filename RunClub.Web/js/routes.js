@@ -33,6 +33,10 @@
                 templateUrl: '/templates/about.html',
                 controller: 'aboutController'
             }).
+            when('/pace-calculator', {
+                templateUrl: '/templates/pace-calculator.html',
+                controller: 'paceCalculatorController'
+            }).
             otherwise({
                 redirectTo: '/home'
             });
