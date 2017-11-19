@@ -206,7 +206,7 @@ section#gallery {
     margin: 0 auto 20px;
 }
 
-.text-primary {
+.text-primary, .green {
     color: @green;
 }
 
@@ -237,7 +237,11 @@ div.view.faq {
         color: @green;
     }
 }
-
+div.view.about {
+    .jumbotron {
+        background-image: url(/assets/about.jpg?height=700);
+    }
+}
 div.view.team {
     .jumbotron {
         background-image: url(/assets/team.jpg?height=700);

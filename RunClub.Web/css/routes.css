@@ -2505,7 +2505,8 @@ section#gallery {
 .call-to-action h2 {
   margin: 0 auto 20px;
 }
-.text-primary {
+.text-primary,
+.green {
   color: #20bc5c;
 }
 .no-gutter > [class*='col-'] {
@@ -2524,6 +2525,9 @@ div.view.faq .jumbotron {
 div.view.faq ul.fa-ul li i {
   top: 5px;
   color: #20bc5c;
+}
+div.view.about .jumbotron {
+  background-image: url(/assets/about.jpg?height=700);
 }
 div.view.team .jumbotron {
   background-image: url(/assets/team.jpg?height=700);

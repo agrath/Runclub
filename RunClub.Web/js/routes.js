@@ -29,6 +29,10 @@
                 templateUrl: '/templates/team.html',
                 controller: 'teamController'
             }).
+            when('/about', {
+                templateUrl: '/templates/about.html',
+                controller: 'aboutController'
+            }).
             otherwise({
                 redirectTo: '/home'
             });
