@@ -116,6 +116,7 @@
     <Content Include="js\app.js" />
     <Content Include="js\controllers.js" />
     <Content Include="js\directives.js" />
+    <Content Include="js\pacecalculator.bundle.js" />
     <Content Include="js\routes.js" />
     <Content Include="js\vendor.bundle.js" />
     <Content Include="js\vendor\angular-route.js" />
@@ -190,6 +191,7 @@
     <Content Include="css\font-awesome-4.7.0\less\stacked.less" />
     <Content Include="css\font-awesome-4.7.0\less\variables.less" />
     <None Include="data\db.json" />
+    <Content Include="templates\pace-calculator.html" />
     <Content Include="templates\all-routes.html" />
     <Content Include="templates\become-a-member.html" />
     <Content Include="templates\faq.html" />
