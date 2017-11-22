@@ -1,42 +1,47 @@
 ﻿[
-  {
-    "category": "Sunday runs",
-    "question": "Where do you run?",
-    "answer": "We have a lot of different routes all over Auckland and change location every Sunday. Check out our <a href='/app/routes/all'>routes page</a> and <a href='/app/routes/calendar'>calendar page</a> for more details"
-  },
-  {
-    "category": "Sunday runs",
-    "question": "Do you only run on the road",
-    "answer": "We have a mix of routes, with some on the road and some on the trail, and a few that mix the two. We try to mix it up!"
-  },
-  {
-    "category": "Sunday runs",
-    "question": "What do I need to bring",
-    "answer": "Yourself and a friend or two! If it’s summer then sunscreen and sunglasses are always a good idea!<br/>You don’t need any special gear to run with us but a running watch can help you keep the pace"
-  },
-  {
-    "category": "Sunday runs",
-    "question": "What speed do you run?",
-    "answer": "At the start of our group run we break into pace groups of 4:30/km through to 7:00/km at intervals of 30s. We call these runs LSR (long slow run) and you should aim to run at a slow conversational pace."
-  },
-  {
-    "category": "Sunday runs",
-    "question": "Is there somewhere to put my keys",
-    "answer": "During the Sunday group run, most of us run with our keys on us. If you're running in one of the larger groups, you may be able to put your keys in someone else's running pack or car."
-  },
-  {
-    "category": "Membership",
-    "question": "How do I become a member?",
-    "answer": "Simply fill out our <a href='/app/become-a-member'>membership form</a>, and come along next Sunday."
-  },
-  {
-    "category": "Membership",
-    "question": "Do I need to be a member to attend the group run?",
-    "answer": "The short answer is no - the group run is free and all are welcome, but we would really like you to provide your contact details via the membership form so we have a way of reaching you in case there's a problem."
-  },
-  {
-    "category": "Membership",
-    "question": "How much does it cost?",
-    "answer": "Currently, you can join our club for free and the Sunday group run will always be free. From time to time we may ask for a donation for equipment. We also have running shirts, but these are purchased at the time of printing independently to the club membership."
-  }
+    {
+        "category": "Sunday runs",
+        "question": "Where do you run?",
+        "answer": "We have a lot of different routes all over Auckland and change location every Sunday. Check out our <a href='/app/routes/all'>routes page</a> and <a href='/app/routes/calendar'>calendar page</a> for more details"
+    },
+    {
+        "category": "Sunday runs",
+        "question": "Do you only run on the road",
+        "answer": "We have a mix of routes, with some on the road and some on the trail, and a few that mix the two. We try to mix it up!"
+    },
+    {
+        "category": "Sunday runs",
+        "question": "What do I need to bring",
+        "answer": "Yourself and a friend or two! If it’s summer then sunscreen and sunglasses are always a good idea!<br/>You don’t need any special gear to run with us but a running watch can help you keep the pace"
+    },
+    {
+        "category": "Sunday runs",
+        "question": "What speed do you run?",
+        "answer": "At the start of our group run we break into pace groups of 4:30/km through to 7:00/km at intervals of 30s. We call these runs LSR (long slow run) and you should aim to run at a slow conversational pace."
+    },
+    {
+        "category": "Sunday runs",
+        "question": "Is there somewhere to put my keys",
+        "answer": "During the Sunday group run, most of us run with our keys on us. If you're running in one of the larger groups, you may be able to put your keys in someone else's running pack or car."
+    },
+    {
+        "category": "Membership",
+        "question": "How do I become a member?",
+        "answer": "Simply fill out our <a href='/app/become-a-member'>membership form</a>, and come along next Sunday."
+    },
+    {
+        "category": "General",
+        "question": "What's with all the Tempofit shirts?",
+        "answer": "Prior to Metrorun, many of the club members were members of the Tempofit running community started by Hayden Shearman. Metrorun has taken over from Tempofit as a community driven endeavour to replace the paid training which is no longer offered."
+    },
+    {
+        "category": "Membership",
+        "question": "Do I need to be a member to attend the group run?",
+        "answer": "The short answer is no - the group run is free and all are welcome, but we would really like you to provide your contact details via the membership form so we have a way of reaching you in case there's a problem."
+    },
+    {
+        "category": "Membership",
+        "question": "How much does it cost?",
+        "answer": "Currently, you can join our club for free and the Sunday group run will always be free. From time to time we may ask for a donation for equipment. We also have running shirts, but these are purchased at the time of printing independently to the club membership."
+    }
 ]
