@@ -1,4 +1,4 @@
-﻿var app = angular.module('routesApp', ['ngSanitize', 'ngRoute']);
+﻿var app = angular.module('routesApp', ['ngSanitize', 'ngRoute', 'dibari.angular-ellipsis']);
 app.run(function ($rootScope) {
     $rootScope.$on('$locationChangeSuccess', function (event, to, from) {
         var url = to.toString();
