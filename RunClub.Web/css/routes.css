@@ -2915,6 +2915,7 @@ i.tipTip {
   }
   .event-list > li > img {
     width: 150px;
+    cursor: pointer;
     float: left;
   }
   .event-list > li > .info {
