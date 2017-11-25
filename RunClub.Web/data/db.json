@@ -3332,5 +3332,140 @@
     ],
     "annotations": [
     ]
+  },
+  {
+    "id": "TDVkcjQB",
+    "name": "Ponsonby Parnell loop",
+    "enabled": true,
+    "description": "This central loop is a classic Auckland run passing through Ponsonby, along the waterfront, up through Parnell, and across the Domain and Grafton Bridge ... all with a cafe waiting for us to invade on Ponsonby Road!",
+    "meetingPoint": {
+      "label": "Outside Shoe Clinic, 101 Ponsonby Rd.",
+      "latitude": -36.85618624,
+      "longitude": 174.74673137,
+      "offset": {
+        "left": "10px",
+        "top": "0px"
+      },
+      "placement": "right"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.848448,
+        "longitude": 174.762191
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      14.5
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "terrain": [
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 100
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8472036,
+        "longitude": 174.7443818
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8373652,
+        "longitude": 174.7426694
+      },
+      {
+        "type": "photo-camera",
+        "latitude": -36.8351222,
+        "longitude": 174.74308111000
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.84048,
+        "longitude": 174.7562063
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.841154,
+        "longitude": 174.7585431
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8411747,
+        "longitude": 174.758685
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.84289,
+        "longitude": 174.7661859
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.8585039,
+        "longitude": 174.7749569
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.8582535,
+        "longitude": 174.7627263
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+    ],
+    "annotations": [
+    ]
   }
 ]

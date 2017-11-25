@@ -160,6 +160,7 @@
     <Content Include="data\BAYAzUnc.gpx" />
     <Content Include="data\udgHkNjC.gpx" />
     <Content Include="data\ZCgPwAZm.gpx" />
+    <Content Include="data\TDVkcjQB.gpx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
