@@ -19,7 +19,7 @@ app.controller('showRouteController', function ($scope, RouteService, $routePara
     $scope.id = $routeParams.id;
 
     var url = '/app/route/' + $scope.id;
-  
+
     RouteService.getRoutes().then(function (data) {
         $scope.routes = data;
         var route = _.find($scope.routes, function (r) { return r.id === $scope.id; });
@@ -34,7 +34,7 @@ app.controller('showRouteController', function ($scope, RouteService, $routePara
     $scope.list = function () {
         $location.path('/routes/all'); // path not hash
     };
-    
+
 });
 
 app.controller('calendarController', function ($scope, RouteService, CalendarService, $routeParams, $location) {
@@ -44,7 +44,7 @@ app.controller('calendarController', function ($scope, RouteService, CalendarSer
         $scope.routes = data;
         CalendarService.getCalendar().then(function (data) {
             $scope.allEvents = data;
-            
+
             _.each($scope.allEvents, function (item) {
                 item.route = _.find($scope.routes, function (route) { return route.id === item.id; });
                 item.moment = moment(item.timestamp);
@@ -52,6 +52,9 @@ app.controller('calendarController', function ($scope, RouteService, CalendarSer
                 item.month = item.moment.format('MMM');
                 item.year = item.moment.format('YYYY');
                 item.time = item.moment.format('HH:mm a');
+                item.view = function() {
+                    $location.path('routes/' + item.route.id); // path not hash
+                };
             })
             var now = moment();
             var events = _.partition($scope.allEvents, function (event) {
@@ -59,7 +62,7 @@ app.controller('calendarController', function ($scope, RouteService, CalendarSer
             });
             $scope.upcomingEvents = _.sortBy(events[1], function (event) { return event.moment.unix(); });
             $scope.pastEvents = _.sortBy(events[0], function (event) { return -event.moment.unix(); });
-            
+
             $scope.loading = false;
         });
     })
@@ -67,6 +70,7 @@ app.controller('calendarController', function ($scope, RouteService, CalendarSer
     $scope.list = function () {
         $location.path('routes/all'); // path not hash
     };
+
 
 });
 

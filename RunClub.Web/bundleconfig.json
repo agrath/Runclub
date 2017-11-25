@@ -1,21 +1,22 @@
 [
-  {
-    "outputFileName": "js/vendor.bundle.js",
-    "inputFiles": [
-      "js/vendor/jquery-3.2.1.min.js",
-      "js/vendor/angular.min.js",
-      "js/vendor/angular-route.js",
-      "js/vendor/angular-sanitize.min.js",
-      "js/vendor/underscore-min.js",
-      "js/vendor/gpx.js",
-      "js/vendor/jquery.colorbox.js",
-      "js/vendor/v3_epoly.js",
-      "js/snazzy-info-window.js",
-      "js/vendor/moment.js",
-      "js/vendor/jquery.tiptip.js",
-      "js/bootstrap.js",
-      "js/popper.js",
-      "js/vendor/Chart.js"
-    ]
-  }
+    {
+        "outputFileName": "js/vendor.bundle.js",
+        "inputFiles": [
+            "js/vendor/jquery-3.2.1.min.js",
+            "js/vendor/angular.min.js",
+            "js/vendor/angular-route.js",
+            "js/vendor/angular-sanitize.min.js",
+            "js/vendor/angular-ellipsis.js",
+            "js/vendor/underscore-min.js",
+            "js/vendor/gpx.js",
+            "js/vendor/jquery.colorbox.js",
+            "js/vendor/v3_epoly.js",
+            "js/snazzy-info-window.js",
+            "js/vendor/moment.js",
+            "js/vendor/jquery.tiptip.js",
+            "js/bootstrap.js",
+            "js/popper.js",
+            "js/vendor/Chart.js"
+        ]
+    }
 ]

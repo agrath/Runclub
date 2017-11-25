@@ -33,7 +33,7 @@
                 <div class="description-container">
                     <p class="card-text">
                         <strong>{{route.name}}</strong><br />
-                        {{ route.description }}
+                        <div class="description" data-ellipsis data-ng-bind="route.description"></div>
                     </p>
                 </div>
                 <a class="btn btn-outline-secondary" ng-href="routes/{{route.id}}">View</a>
