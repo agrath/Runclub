@@ -1109,61 +1109,66 @@
       }
     ],
     "placesOfInterest": [
-      {
-        "type": "parking",
-        "latitude": -36.93808437,
-        "longitude": 174.65610623
-      },
-      {
-        "type": "public-bathroom",
-        "latitude": -36.9070625,
-        "longitude": 174.627914
-      },
-      {
-        "type": "public-bathroom",
-        "latitude": -36.93796,
-        "longitude": 174.6562
-      },
-      {
-        "type": "public-bathroom",
-        "latitude": -36.9505424,
-        "longitude": 174.658829
-      },
-      {
-        "type": "public-bathroom",
-        "latitude": -36.9491425,
-        "longitude": 174.665146
-      },
-      {
-        "type": "public-bathroom",
-        "latitude": -36.9109955,
-        "longitude": 174.652054
-      },
-      {
-        "type": "public-bathroom",
-        "latitude": -36.9464722,
-        "longitude": 174.6063
-      },
-      {
-        "type": "water-fountain",
-        "latitude": -36.9465942,
-        "longitude": 174.606552
-      },
-      {
-        "type": "water-fountain",
-        "latitude": -36.9067345,
-        "longitude": 174.628113
-      },
-      {
-        "type": "water-fountain",
-        "latitude": -36.91089,
-        "longitude": 174.651688
-      },
-      {
-        "type": "photo-camera",
-        "latitude": -36.9471779,
-        "longitude": 174.606674
-      }
+        {
+            "type": "water-fountain",
+            "latitude": -36.93387373,
+            "longitude": 174.57762480
+        },
+        {
+            "type": "parking",
+            "latitude": -36.93808437,
+            "longitude": 174.65610623
+        },
+        {
+            "type": "public-bathroom",
+            "latitude": -36.9070625,
+            "longitude": 174.627914
+        },
+        {
+            "type": "public-bathroom",
+            "latitude": -36.93796,
+            "longitude": 174.6562
+        },
+        {
+            "type": "public-bathroom",
+            "latitude": -36.9505424,
+            "longitude": 174.658829
+        },
+        {
+            "type": "public-bathroom",
+            "latitude": -36.9491425,
+            "longitude": 174.665146
+        },
+        {
+            "type": "public-bathroom",
+            "latitude": -36.9109955,
+            "longitude": 174.652054
+        },
+        {
+            "type": "public-bathroom",
+            "latitude": -36.9464722,
+            "longitude": 174.6063
+        },
+        {
+            "type": "water-fountain",
+            "latitude": -36.9465942,
+            "longitude": 174.606552
+        },
+        {
+            "type": "water-fountain",
+            "latitude": -36.9067345,
+            "longitude": 174.628113
+        },
+        {
+            "type": "water-fountain",
+            "latitude": -36.91089,
+            "longitude": 174.651688
+        },
+        {
+            "type": "photo-camera",
+            "latitude": -36.9471779,
+            "longitude": 174.606674
+        }
     ],
     "placesOfInterestOptions": [
       {
