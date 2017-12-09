@@ -3592,6 +3592,135 @@
     ],
     "annotations": [
     ]
+  },
+  {
+    "id": "jDjWpnqp",
+    "name": "Long Bay Coastal Walkway",
+    "enabled": true,
+    "description": "This is a stunning regional park on the North Shore and ideal for a summertime destination run.\r\nThe route follows the road to the Coastal Walkway of which we will complete an out-and-back (10k total).\r\nTo keep things interesting on the way back we’ll have the options of also including 1km or so diversions on the Natural Trail, 100 Acre Trail and beach.\r\nTo add on, either complete another out-and-back or venture into the surrounding suburbs.",
+    "meetingPoint": {
+      "label": "2nd car park to the right after crossing bridge into the park. 2000 Beach Road, Long Bay.",
+      "latitude": -36.68765152,
+      "longitude": 174.75050926,
+      "offset": {
+        "left": "0px",
+        "top": "18px"
+      },
+      "placement": "bottom"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.67944438,
+        "longitude": 174.74656105
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      5,
+      10
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "terrain": [
+      {
+        "type": "trail",
+        "label": "Trail",
+        "percent": 100
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "parking",
+        "latitude": -36.68765152,
+        "longitude": 174.75050926
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.687603,
+        "longitude": 174.751083
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.68424,
+        "longitude": 174.748718
+      },
+      {
+        "type": "water-and-bathroom",
+        "latitude": -36.6821365,
+        "longitude": 174.747757
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.68402,
+        "longitude": 174.748688
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.6866341,
+        "longitude": 174.750229
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "water-and-bathroom",
+        "label": "Public bathroom / water",
+        "visible": true,
+        "widthMultiplier": 2,
+        "zIndex": 35
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+    ],
+    "annotations": [
+    ]
   }
+
 
 ]
