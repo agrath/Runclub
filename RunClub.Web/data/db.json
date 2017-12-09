@@ -1109,66 +1109,66 @@
       }
     ],
     "placesOfInterest": [
-        {
-            "type": "water-fountain",
-            "latitude": -36.93387373,
-            "longitude": 174.57762480
-        },
-        {
-            "type": "parking",
-            "latitude": -36.93808437,
-            "longitude": 174.65610623
-        },
-        {
-            "type": "public-bathroom",
-            "latitude": -36.9070625,
-            "longitude": 174.627914
-        },
-        {
-            "type": "public-bathroom",
-            "latitude": -36.93796,
-            "longitude": 174.6562
-        },
-        {
-            "type": "public-bathroom",
-            "latitude": -36.9505424,
-            "longitude": 174.658829
-        },
-        {
-            "type": "public-bathroom",
-            "latitude": -36.9491425,
-            "longitude": 174.665146
-        },
-        {
-            "type": "public-bathroom",
-            "latitude": -36.9109955,
-            "longitude": 174.652054
-        },
-        {
-            "type": "public-bathroom",
-            "latitude": -36.9464722,
-            "longitude": 174.6063
-        },
-        {
-            "type": "water-fountain",
-            "latitude": -36.9465942,
-            "longitude": 174.606552
-        },
-        {
-            "type": "water-fountain",
-            "latitude": -36.9067345,
-            "longitude": 174.628113
-        },
-        {
-            "type": "water-fountain",
-            "latitude": -36.91089,
-            "longitude": 174.651688
-        },
-        {
-            "type": "photo-camera",
-            "latitude": -36.9471779,
-            "longitude": 174.606674
-        }
+      {
+        "type": "water-fountain",
+        "latitude": -36.93387373,
+        "longitude": 174.57762480
+      },
+      {
+        "type": "parking",
+        "latitude": -36.93808437,
+        "longitude": 174.65610623
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9070625,
+        "longitude": 174.627914
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.93796,
+        "longitude": 174.6562
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9505424,
+        "longitude": 174.658829
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9491425,
+        "longitude": 174.665146
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9109955,
+        "longitude": 174.652054
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9464722,
+        "longitude": 174.6063
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.9465942,
+        "longitude": 174.606552
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.9067345,
+        "longitude": 174.628113
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.91089,
+        "longitude": 174.651688
+      },
+      {
+        "type": "photo-camera",
+        "latitude": -36.9471779,
+        "longitude": 174.606674
+      }
     ],
     "placesOfInterestOptions": [
       {
@@ -3472,5 +3472,126 @@
     ],
     "annotations": [
     ]
+  },
+  {
+    "id": "BbXfrhbt",
+    "name": "Auckland Zoo - City Loop",
+    "enabled": true,
+    "description": "From Auckland Zoo (Western Springs) we’ll head north through Seddon Fields, east through Westmere and Herne Bay to reach the waterfront paths of Westhaven and the Viaduct.\r\nFrom here we’ll join the bike paths heading up Grafton Gully and alongside the motorway to find our way bike to Western Springs, finishing off with a gentle jog around the lake and a coffee or two at the zoo cafe.",
+    "meetingPoint": {
+      "label": "Auckland Zoo car park",
+      "latitude": -36.86510350,
+      "longitude": 174.71993208,
+      "offset": {
+        "left": "-20px",
+        "top": "0px"
+      },
+      "placement": "left"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.86307826,
+        "longitude": 174.72218513
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      17
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "terrain": [
+      {
+        "type": "trail",
+        "label": "Trail",
+        "percent": 2
+      },
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 98
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "parking",
+        "latitude": -36.86510350,
+        "longitude": 174.71993208
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8647005,
+        "longitude": 174.7209502
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8428181,
+        "longitude": 174.7495766
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.8431545,
+        "longitude": 174.7672585
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.8607091,
+        "longitude": 174.7598868
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+    ],
+    "annotations": [
+    ]
   }
+
 ]
