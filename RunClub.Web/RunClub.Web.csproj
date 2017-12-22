@@ -134,6 +134,7 @@
     <Content Include="packages.config" />
     <Content Include="data\faq.json" />
     <Content Include="data\team.json" />
+    <Content Include="data\X5zFfWYz.gpx" />
     <None Include="data\kPCzjCbW.gpx" />
     <Content Include="data\kwaBpRSC.gpx" />
     <None Include="data\LawAfAEu.gpx" />

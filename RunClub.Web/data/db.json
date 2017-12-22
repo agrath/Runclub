@@ -3978,5 +3978,106 @@
     ],
     "annotations": [
     ]
+  },
+  {
+    "id": "X5zFfWYz",
+    "name": "Birkenhead trails",
+    "enabled": true,
+    "description": "This figure-8 course (7k+10k) takes in some of the lesser known trails of Birkenhead and the lower North Shore. ",
+    "meetingPoint": {
+      "label": "Z Station, Birkenhead, 241 Glenfield Road",
+      "latitude": -36.79419940,
+      "longitude": 174.72426653,
+      "offset": {
+        "left": "18px",
+        "top": "0px"
+      },
+      "placement": "right"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.79419940,
+        "longitude": 174.72426653
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      7,
+      17
+    ],
+    "distanceMarkerAlignments": [
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "terrain": [
+      {
+        "type": "unknown",
+        "label": "Unknown",
+        "percent": 100
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "water-fountain",
+        "latitude": -36.795194,
+        "longitude": 174.711705
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.80868,
+        "longitude": 174.750928
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.816084,
+        "longitude": 174.741858
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+    ],
+    "annotations": [
+    ]
   }
 ]
