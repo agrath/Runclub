@@ -69,7 +69,7 @@ app.directive('gpxViewer', function ($rootScope, $timeout, style) {
                 parser.setTrackWidth(style.lineStrokeWidth);          // Set the track line width
                 parser.setMinTrackPointDelta(0);      // Set the minimum distance between track points
                 parser.centerAndZoom(data);
-                var polylines = parser.addTrackpointsToMap();         // Add the trackpoints
+                var polylines = parser.addRoutesAndTrackpointsToMap();         // Add the trackpoints
                 //the gpx parser library exposes nested arrays as the gpx may contain multiple tracks
                 var polyline = _.flatten(polylines)[0];
                 return polyline;
