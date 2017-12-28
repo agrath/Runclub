@@ -212,7 +212,7 @@ GPXParser.prototype.extractElevationData = function () {
         var route = routes[i];
         var result = [];
 
-        var routepoints = segment.getElementsByTagName("rtept");
+        var routepoints = route.getElementsByTagName("rtept");
         if (routepoints.length == 0) {
             break;
         }
