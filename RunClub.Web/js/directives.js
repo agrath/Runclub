@@ -122,7 +122,7 @@ app.directive('gpxViewer', function ($rootScope, $timeout, style) {
                         if (placesOfInterestOptions) {
                             options = placesOfInterestOptions[place.type];
                         }
-
+                        if (typeof (place.visible) !== 'undefined' && !place.visible) continue;
                         var width = 32 * (options && options.widthMultiplier ? options.widthMultiplier : (place.widthMultiplier ? place.widthMultiplier : 1));
                         var height = 32 * (options && options.heightMultiplier ? options.heightMultiplier : (place.heightMultiplier ? place.heightMultiplier : 1));
                         var icon = new google.maps.MarkerImage('/images/map-icons/' + place.type + '.png', null, null, new google.maps.Point(16, 16), new google.maps.Size(width, height));
