@@ -2050,7 +2050,7 @@ GPXParser.prototype.extractElevationData = function () {
             var segment = segments[s];
             var trackpoints = segment.getElementsByTagName("trkpt");
             if (trackpoints.length == 0) {
-                return;
+                break;
             }
             var lastlon = parseFloat(trackpoints[0].getAttribute("lon"));
             var lastlat = parseFloat(trackpoints[0].getAttribute("lat"));
@@ -2069,6 +2069,32 @@ GPXParser.prototype.extractElevationData = function () {
                 }
             }
 
+        }
+    }
+    var routes = this.xmlDoc.documentElement.getElementsByTagName("rte");
+    for (var i = 0; i < routes.length; i++) {
+        var route = routes[i];
+        var result = [];
+
+        var routepoints = segment.getElementsByTagName("rtept");
+        if (routepoints.length == 0) {
+            break;
+        }
+        var lastlon = parseFloat(routepoints[0].getAttribute("lon"));
+        var lastlat = parseFloat(routepoints[0].getAttribute("lat"));
+        for (var t = 1; t < routepoints.length; t++) {
+            var routePoint = routepoints[t];
+            var eleNode = routePoint.getElementsByTagName("ele");
+            if (eleNode && eleNode.length) {
+                var ele = parseFloat(eleNode[0].textContent);
+                var lon = parseFloat(routePoint.getAttribute("lon"));
+                var lat = parseFloat(routePoint.getAttribute("lat"));
+                var latdiff = lat - lastlat;
+                var londiff = lon - lastlon;
+                if (Math.sqrt(latdiff * latdiff + londiff * londiff) > this.mintrackpointdelta) {
+                    result.push({ elevation: ele, latitude: lat, longitude: lon });
+                }
+            }
         }
     }
     return result;
@@ -2202,6 +2228,22 @@ GPXParser.prototype.addTrackpointsToMap = function () {
     }
     return results;
 }
+
+GPXParser.prototype.addRoutesAndTrackpointsToMap = function () {
+    var tracks = this.xmlDoc.documentElement.getElementsByTagName("trk");
+    var routes = this.xmlDoc.documentElement.getElementsByTagName("rte");
+    var results = [];
+    for (var i = 0; i < tracks.length; i++) {
+        var polylines = this.addTrackToMap(tracks[i], this.trackcolour, this.trackwidth);
+        results.push(polylines);
+    }
+    for (var i = 0; i < routes.length; i++) {
+        var polylines = this.addRouteToMap(routes[i], this.trackcolour, this.trackwidth);
+        results.push(polylines);
+    }
+    return results;
+}
+
 
 GPXParser.prototype.addWaypointsToMap = function () {
     var waypoints = this.xmlDoc.documentElement.getElementsByTagName("wpt");
