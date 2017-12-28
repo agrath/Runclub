@@ -91,7 +91,7 @@ app.factory('RouteService', ['$q', '$http', '$interpolate', function ($q, $http,
                 route.displayGpxRoute = true;
                 route.displayDistanceMarkers = true;
                 route.displayAnnotations = true;
-                route.displayMeetingPoint = true;
+                route.displayMeetingPoint = (typeof route.displayMeetingPoint !== 'undefined') ? route.displayMeetingPoint : true;
 
                 //when this site is hosted, change this to a local url
                 //var markerImageUrl = 'http://metrorun.org.nz/images/static-meet-here.png';

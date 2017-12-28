@@ -345,7 +345,9 @@ app.directive('gpxViewer', function ($rootScope, $timeout, style) {
                         }
                     }
                 });
-                info.open();
+                if (route.displayMeetingPoint) {
+                    info.open();
+                }
                 return info;
             }
         };
