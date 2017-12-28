@@ -118,7 +118,7 @@ app.directive('gpxViewer', function ($rootScope, $timeout, style) {
                 if (placesOfInterest) {
                     for (var i = 0; i < placesOfInterest.length; i++) {
                         var place = placesOfInterest[i];
-                        var options;
+                        var options = {};
                         if (placesOfInterestOptions) {
                             options = placesOfInterestOptions[place.type];
                         }
