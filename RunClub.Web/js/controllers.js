@@ -3,6 +3,16 @@ Get a latitude and longitude for an address here: https://www.gps-coordinates.ne
 Convert a strava activity to a GPX with this bookmarklet: https://mapstogpx.com/strava/
 Generate a randomized id here: https://passwordsgenerator.net/ (8 character, alpha)
 Name the gpx file $id.gpx and copy the template json blob into the array, fill out the details
+Look up ameneties here: http://overpass-turbo.eu/ with
+    [out:json][timeout:25];
+    (
+    node[~"(amenity|tourism)"~"(toilets|drinking_water|viewpoint)"]({{bbox}});
+    );
+    out body;
+    >;
+    out skel qt;
+and drag a bounding box, export with export button then use AmenetiesGeoJson2DbJson.aspx to convert that format to our ameneties data
+
 */
 
 app.controller('homeController', function ($scope, $location) {
