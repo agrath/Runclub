@@ -4079,5 +4079,340 @@
     ],
     "annotations": [
     ]
+  },
+  {
+    "id": "gxL4QNuC",
+    "name": "Point Chev - Owairaka Loop",
+    "enabled": true,
+    "displayMeetingPoint": true,
+    "description": "This course (19k with options to go longer or shorter) takes us from Point Chev through a few parks and trails to Waterview, until joining Oakley Creek Walkway & the Waterview Shared Path out to the South Western Cycleway, where we then loop back around to the Point Chev. There's also a great option to run a 10k loop, you can turn back after Oakley Creek walkway and return to the start.",
+    "meetingPoint": {
+      "label": "Parr Rd N Carpark, behind KFC at 1170 Great North Rd, Point Chev",
+      "latitude": -36.870753,
+      "longitude": 174.711961,
+      "offset": {
+        "left": "-20px",
+        "top": "0px"
+      },
+      "placement": "left"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.86307826,
+        "longitude": 174.72218513
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      10,
+      19
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "terrain": [
+      {
+        "type": "unknown",
+        "label": "Unknown",
+        "percent": 100
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "water-fountain",
+        "latitude": -36.901695,
+        "longitude": 174.718406,
+        "visible": true,
+        "name": "Hendon Park water fountain"
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8694229,
+        "longitude": 174.697632,
+        "visible": true,
+        "name": "Eric Armishaw Reserve toilets"
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8647,
+        "longitude": 174.720947,
+        "visible": true,
+        "name": "Western Springs toilets by playground"
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.85986,
+        "longitude": 174.7125,
+        "visible": true,
+        "name": "Meola reef toilets"
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8954544,
+        "longitude": 174.721741,
+        "visible": false,
+        "name": "Owairaka Park toilets"
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.86358,
+        "longitude": 174.703522,
+        "visible": true,
+        "name": "Walker Park toilets"
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.85801996,
+        "longitude": 174.71720842,
+        "visible": true,
+        "name": "Jaggers Bush water fountain"
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.8701973,
+        "longitude": 174.710159,
+        "visible": true,
+        "name": "Point Chev library water"
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.8852425,
+        "longitude": 174.699036,
+        "visible": true,
+        "name": "Heron park water fountain"
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.8667259,
+        "longitude": 174.7237,
+        "visible": false,
+        "name": "Western springs south fountain (broken)"
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.867424,
+        "longitude": 174.722351,
+        "visible": true,
+        "name": "Western springs south fountain 2 (working)"
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.87974,
+        "longitude": 174.738464,
+        "visible": true,
+        "name": "Gribblehirst Park water"
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.877285,
+        "longitude": 174.698608,
+        "visible": false,
+        "name": "Kuaka Park toilets"
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.86623,
+        "longitude": 174.727661,
+        "visible": false,
+        "name": "Western Springs Stadium water"
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8735237,
+        "longitude": 174.7284,
+        "visible": true,
+        "name": "Fowlds Park toilets"
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.8953552,
+        "longitude": 174.72171,
+        "visible": true,
+        "name": "Owairaka Park water"
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.87994,
+        "longitude": 174.738129,
+        "visible": false,
+        "name": "Gribblehirst Park toilets"
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.886116,
+        "longitude": 174.69931,
+        "visible": false,
+        "name": "Heron Park toilets"
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8754959,
+        "longitude": 174.701813,
+        "visible": false,
+        "name": "Waterview reserve toilets"
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.8756027,
+        "longitude": 174.701691,
+        "visible": false,
+        "name": "Waterview reserve water"
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.87702,
+        "longitude": 174.698608,
+        "visible": false,
+        "name": "Kuaka Park water"
+      },
+      {
+        "type": "photo-camera",
+        "latitude": -36.8821068,
+        "longitude": 174.7031,
+        "visible": true,
+        "name": "Oakley Creek waterfall"
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.90165,
+        "longitude": 174.718552,
+        "visible": false,
+        "name": "Hendon Park toilets"
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.9022255,
+        "longitude": 174.717072,
+        "visible": false,
+        "name": "Valonia Park water"
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.90212,
+        "longitude": 174.717178,
+        "visible": false,
+        "name": "Valonia Park toilets"
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+      {
+        "visible": true,
+        "label": {
+          "title": "10k return path",
+          "description": "Turn back at the end of Oakley Creek and follow this path back for a 10k loop",
+          "anchor": {
+            "latitude": -36.876444,
+            "longitude": 174.703813
+          },
+          "offset": {
+            "left": "-25px",
+            "top": "10px"
+          },
+          "placement": "left",
+          "backgroundColour": "#f27b08",
+          "fontColour": "#ffffff",
+          "fontSize": "13px",
+          "showCloseButton": true
+        },
+        "strokeColour": "#f27b08",
+        "points": [
+          [ -36.885756, 174.702155 ],
+          [ -36.885807, 174.702005 ],
+          [ -36.885999, 174.701777 ],
+          [ -36.886017, 174.70169 ],
+          [ -36.885961, 174.701549 ],
+          [ -36.8861, 174.70143 ],
+          [ -36.886129, 174.700847 ],
+          [ -36.886153, 174.700457 ],
+          [ -36.885801, 174.700561 ],
+          [ -36.884187, 174.701006 ],
+          [ -36.883253, 174.701247 ],
+          [ -36.883267, 174.701314 ],
+          [ -36.881753, 174.701765 ],
+          [ -36.881079, 174.702 ],
+          [ -36.880836, 174.702037 ],
+          [ -36.880749, 174.702066 ],
+          [ -36.880714, 174.702116 ],
+          [ -36.880263, 174.702251 ],
+          [ -36.878915, 174.7026 ],
+          [ -36.878156, 174.702829 ],
+          [ -36.877141, 174.703407 ],
+          [ -36.876967, 174.703527 ],
+          [ -36.876444, 174.703813 ],
+          [ -36.876422, 174.703864 ],
+          [ -36.87486, 174.704739 ],
+          [ -36.873876, 174.705238 ],
+          [ -36.873368, 174.705639 ],
+          [ -36.873137, 174.70576 ],
+          [ -36.872714, 174.706094 ],
+          [ -36.872542, 174.70629 ],
+          [ -36.872413, 174.706691 ],
+          [ -36.871999, 174.707597 ],
+          [ -36.871961, 174.707722 ],
+          [ -36.871938, 174.707887 ],
+          [ -36.871908, 174.708454 ],
+          [ -36.871845, 174.708709 ],
+          [ -36.871824, 174.709084 ],
+          [ -36.87183, 174.709529 ],
+          [ -36.871894, 174.709712 ],
+          [ -36.871937, 174.709915 ],
+          [ -36.871945, 174.709967 ],
+          [ -36.87119, 174.709896 ],
+          [ -36.871156, 174.710322 ],
+          [ -36.871127, 174.710484 ],
+          [ -36.871085, 174.710647 ],
+          [ -36.870985, 174.710813 ],
+          [ -36.871, 174.71097 ],
+          [ -36.870959, 174.711063 ],
+          [ -36.870952, 174.711249 ],
+          [ -36.87078, 174.711946 ]
+        ]
+      }
+    ],
+    "annotations": [
+    ]
   }
 ]
