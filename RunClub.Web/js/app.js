@@ -1,4 +1,10 @@
-﻿var app = angular.module('routesApp', ['ngSanitize', 'ngRoute', 'dibari.angular-ellipsis']);
+﻿/*
+todo:
+- change sign up to reflect joining club, not sunday run
+- add sign up form to sunday run (just name & email)
+*/
+
+var app = angular.module('routesApp', ['ngSanitize', 'ngRoute', 'dibari.angular-ellipsis']);
 app.run(function ($rootScope) {
     $rootScope.$on('$locationChangeSuccess', function (event, to, from) {
         var url = to.toString();
