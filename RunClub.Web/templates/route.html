@@ -68,6 +68,16 @@
                     <br class="clearfix" />
                 </div>
             </div>
+            <div ng-if="route.debug">
+                <ul>
+                    <li ng-repeat="place in route.placesOfInterest">
+                        <div class="form-check abc-checkbox">
+                            <input type="checkbox" class="form-check-input" ng-model="place.visible" id="{{route.id}}-display-place-{{$index}}" />
+                            <label class="form-check-label" for="{{route.id}}-display-place-{{$index}}">{{place.name || 'place' + ($index+1) }}</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
             <br class="clearfix" />
         </div>
         <div class="col-md-6">

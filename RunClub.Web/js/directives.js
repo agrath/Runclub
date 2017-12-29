@@ -122,7 +122,6 @@ app.directive('gpxViewer', function ($rootScope, $timeout, style) {
                         if (placesOfInterestOptions) {
                             options = placesOfInterestOptions[place.type];
                         }
-                        if (typeof (place.visible) !== 'undefined' && !place.visible) continue;
                         var width = 32 * (options && options.widthMultiplier ? options.widthMultiplier : (place.widthMultiplier ? place.widthMultiplier : 1));
                         var height = 32 * (options && options.heightMultiplier ? options.heightMultiplier : (place.heightMultiplier ? place.heightMultiplier : 1));
                         var icon = new google.maps.MarkerImage('/images/map-icons/' + place.type + '.png', null, null, new google.maps.Point(16, 16), new google.maps.Size(width, height));
@@ -131,7 +130,9 @@ app.directive('gpxViewer', function ($rootScope, $timeout, style) {
                             latitude: place.latitude,
                             longitude: place.longitude,
                             icon: icon,
-                            zIndex: google.maps.Marker.MAX_ZINDEX + 100 + (options && options.zIndex ? options.zIndex : (place.zIndex ? place.zIndex : 0))
+                            zIndex: google.maps.Marker.MAX_ZINDEX + 100 + (options && options.zIndex ? options.zIndex : (place.zIndex ? place.zIndex : 0)),
+                            visible: (typeof (place.visible) !== 'undefined') ? place.visible : true,
+                            name: place.name
                         };
                         markers.push(marker);
                         options.markers = options.markers || [];
@@ -267,9 +268,10 @@ app.directive('gpxViewer', function ($rootScope, $timeout, style) {
             },
             addMarkerToMap: function (data, map) {
                 var point = new google.maps.LatLng(data.latitude, data.longitude);
+                console.log('marker', data, data.visible);
                 var marker = new google.maps.Marker({
                     position: point,
-                    map: map,
+                    map: data.visible ? map : null,
                     icon: data.icon,
                     optimised: false,
                     zIndex: data.zIndex
@@ -388,9 +390,28 @@ app.directive('gpxViewer', function ($rootScope, $timeout, style) {
                             if (option.markers && option.markers.length) {
                                 _.each(option.markers, function (marker) {
                                     if ((marker.g.map && !visible) || (!marker.g.map && visible)) {
-                                        marker.g.setMap(visible ? $scope.map : null);
+                                       marker.g.setMap(visible && marker.visible ? $scope.map : null);
                                     }
                                 });
+                            }
+                        });
+                    }, true);
+                }
+                if (route.placesOfInterest && route.placesOfInterest.length)
+                {
+                    $scope.$watch(function ($scope) {
+                        return route.placesOfInterest.map(function (place) {
+                            return place.visible;
+                        });
+                    }, function (v) {
+                        //console.log('route.places', v);
+                        _.each(route.placesOfInterest, function (place, index) {
+                            var visible = v[index];
+                            if (place.g) {
+                                if ((place.g.map && !visible) || (!place.g.map && visible)) {
+                                    console.log('place', place, index, v[index]);
+                                    place.g.setMap(visible ? $scope.map : null);
+                                }
                             }
                         });
                     }, true);
@@ -452,9 +473,9 @@ app.directive('gpxViewer', function ($rootScope, $timeout, style) {
                 var distanceMarkers = helper.getDistanceMarkers(polyline, lengthInMeters, 1000, helper.distanceMarkerIcons, route.distanceMarkerAlignments);
                 $scope.distanceMarkers = distanceMarkers;
                 var placesOfInterestMarkers = helper.getPlacesOfInterestMarkers(route);
-                $scope.placesOfInterestMarkers = placesOfInterestMarkers;
-                var markers = distanceMarkers.concat(placesOfInterestMarkers);
-                _.each(markers, function (marker) { marker.g = helper.addMarkerToMap(marker, map); });
+                _.each(distanceMarkers, function (marker) { marker.g = helper.addMarkerToMap(marker, map); });
+                _.each(placesOfInterestMarkers, function (marker) { marker.g = helper.addMarkerToMap(marker, map); });
+                route.placesOfInterest = placesOfInterestMarkers;
                 _.each(route.diversions, function (diversion) { diversion.g = helper.addDiversionToMap(diversion, map); });
                 _.each(route.annotations, function (annotation) { annotation.g = helper.addAnnotationToMap(annotation, map); });
                 //only so the running man shows up
