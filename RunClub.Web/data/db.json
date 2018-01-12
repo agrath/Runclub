@@ -4414,5 +4414,117 @@
     ],
     "annotations": [
     ]
+  },
+  {
+    "id": "bHS9WMha",
+    "name": "Hobsonville, Westharbour and Massey",
+    "enabled": true,
+    "displayMeetingPoint": true,
+    "description": "This long, looped course (25k with options to shorten) takes us on a 5k loop of Hobsonville point, followed by an extended loop of Westgate, Massey and Westharbour connecting the Manutewhau Walk & Luckens Coastal Walkways. An optional loop at Westgate takes us over the yellow pedestrian bridge and a short loop of Rush Creek Reserve.",
+    "meetingPoint": {
+      "label": "Catalina Cafe, Corner Of Buckley Avenue And Hastings Crescent, Hobsonville, Hobsonville Point",
+      "latitude": -36.7914395,
+      "longitude": 174.6555221,
+      "offset": {
+        "left": "-20px",
+        "top": "0px"
+      },
+      "placement": "left"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.7914395,
+        "longitude": 174.6555221
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      5,
+      22,
+      25
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "terrain": [
+      {
+        "type": "unknown",
+        "label": "Unknown",
+        "percent": 100
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "public-bathroom",
+        "latitude": -36.79051,
+        "longitude": 174.660919
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.7954559,
+        "longitude": 174.67
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.79719,
+        "longitude": 174.649536
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.810955,
+        "longitude": 174.644669
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.810955,
+        "longitude": 174.644669
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [],
+    "annotations": [
+    ]
   }
 ]

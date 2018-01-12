@@ -121,7 +121,7 @@
     <Content Include="data\template.json" />
     <Content Include="data\udgHkNjC.gpx" />
     <Content Include="data\viyVJdOl.gpx" />
-    <Content Include="data\X5zFfWYz.gpx">
+    <Content Include="data\X5zFfWYz-manual.gpx">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="data\xHTfUcKn.gpx" />
@@ -172,7 +172,13 @@
     <Content Include="data\jDjWpnqp.gpx" />
     <Content Include="data\kPCzjCbW.gpx" />
     <Content Include="data\LawAfAEu.gpx" />
+    <Content Include="data\gxL4QNuC-manual.gpx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="data\bHS9WMha-manual.gpx" />
+    <Content Include="data\X5zFfWYz.gpx" />
     <Content Include="data\gxL4QNuC.gpx" />
+    <Content Include="data\bHS9WMha.gpx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
