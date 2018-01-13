@@ -4721,7 +4721,36 @@
       }
     ],
     "placesOfInterest": [
-
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9278336,
+        "longitude": 174.689468,
+        "name":  "Craig Avon toilets"
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9299278,
+        "longitude": 174.700256,
+        "name": "Blockhouse toilets"
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9313622,
+        "longitude": 174.6899,
+        "name":  "Karaka park toilets"
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9337158,
+        "longitude": 174.735062,
+        "name": "Waikowhai park toilets"
+      },
+      {
+        "type": "photo-camera",
+        "latitude": -36.9379768,
+        "longitude": 174.729446,
+        "name": "Wattle bay lookout"
+      }
     ],
     "placesOfInterestOptions": [
       {
@@ -5043,7 +5072,7 @@
           [ -36.925499, 174.705683 ],
           [ -36.925442, 174.705708 ]
 
-   ]
+        ]
       }
     ],
     "annotations": [
