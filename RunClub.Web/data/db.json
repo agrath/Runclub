@@ -3338,10 +3338,10 @@
       "latitude": -36.85618624,
       "longitude": 174.74673137,
       "offset": {
-        "left": "10px",
+        "left": "-10px",
         "top": "0px"
       },
-      "placement": "right"
+      "placement": "left"
     },
     "mapDefaults": {
       "center": {
