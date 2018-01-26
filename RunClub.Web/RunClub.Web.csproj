@@ -181,6 +181,7 @@
     <Content Include="data\bHS9WMha.gpx" />
     <Content Include="data\YseYp53W.gpx" />
     <Content Include="data\Vy8bNwdF.gpx" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
