@@ -1,4 +1,4 @@
-﻿var cacheBuster = Date.now().toString();
+﻿
 var resolveRoute = function ($route) {
     var url = $route.current.templateUrl;
     if (url !== null && angular.isDefined(url) && angular.isString(url)) {
