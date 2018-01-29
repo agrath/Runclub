@@ -144,6 +144,7 @@
     <Content Include="js\pacecalculator.bundle.js" />
     <Content Include="js\routes.js" />
     <Content Include="js\vendor.bundle.js" />
+    <Content Include="js\vendor\angular-cache-buster.js" />
     <Content Include="js\vendor\angular-ellipsis.js" />
     <Content Include="js\vendor\angular-route.js" />
     <Content Include="js\vendor\angular.js" />
