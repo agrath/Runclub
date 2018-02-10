@@ -146,6 +146,7 @@
     <Content Include="js\pacecalculator.bundle.js" />
     <Content Include="js\routes.js" />
     <Content Include="js\vendor.bundle.js" />
+    <Content Include="js\vendor\angular-cache-buster.js" />
     <Content Include="js\vendor\angular-ellipsis.js" />
     <Content Include="js\vendor\angular-route.js" />
     <Content Include="js\vendor\angular.js" />
@@ -183,6 +184,7 @@
     <Content Include="data\bHS9WMha.gpx" />
     <Content Include="data\YseYp53W.gpx" />
     <Content Include="data\Vy8bNwdF.gpx" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

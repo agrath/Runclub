@@ -25,9 +25,7 @@
             </div>
             <div class="offset-1 col-md-8">
                 <strong>{{item.role}}</strong> - <span>{{item.name}}</span>
-                <p>
-                    {{item.about}}
-                </p>
+                <p ng-bind-html="item.about"></p>
             </div>
         </div>
     </div>
