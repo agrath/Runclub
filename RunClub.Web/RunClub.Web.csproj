@@ -92,6 +92,8 @@
     <Content Include="assets\home-banner.jpg" />
     <Content Include="assets\routes-all.jpg" />
     <Content Include="assets\team.jpg" />
+    <Content Include="assets\team\aurelie-desjardins.jpg" />
+    <Content Include="assets\team\bridget-lawrence.jpg" />
     <Content Include="assets\team\default.jpg" />
     <Content Include="assets\team\gareth-evans.jpg" />
     <Content Include="assets\team\julie-moon.jpg" />
