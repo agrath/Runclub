@@ -26,9 +26,9 @@
     </div>
 </section>
 <div class="col-md-7 offset-2" ng-if="!loading">
-    <h1>Our upcoming events</h1>
+    <h1>Our upcoming group runs</h1>
     <div ng-include-template="/templates/calendar-repeater.html" ng-include-variables="{ events: upcomingEvents }"></div>
 
-    <h1>Recent events</h1>
+    <h1>Recent (past) runs</h1>
     <div ng-include-template="/templates/calendar-repeater.html" ng-include-variables="{ events: pastEvents }"></div>
 </div>
