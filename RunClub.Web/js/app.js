@@ -17,7 +17,7 @@ app.run(function ($rootScope) {
     $rootScope.$on('$locationChangeSuccess', function (event, to, from) {
         var url = to.toString();
         var view = url.substr(url.indexOf('/app') + 5, url.length).replace('/', '-');
-        if (view.indexOf('#')) {
+        if (view.indexOf('#') > -1) {
             view = view.substr(0, view.indexOf('#'));
         }
         $rootScope.view = view;
