@@ -1,0 +1,32 @@
+﻿{
+    "propertyEditors": [
+        {
+            "alias": "SniperDropdown",
+            "name": "Sniper Drop Down",
+            "editor": {
+                "view": "~/App_Plugins/SniperDropdown/SniperDropdown.html",
+                "valueType": "JSON"
+            },
+            "prevalues": {
+                "fields": [
+                    {
+                        "label": "Allow Multiple",
+                        "description": "",
+                        "key": "allowMultiple",
+                        "view": "~/App_Plugins/SniperDropdown/prevalues/SniperDropdown.prevalues.multiple.html"
+                    },
+                    {
+                        "label": "Items",
+                        "key": "items",
+                        "view": "~/App_Plugins/SniperDropdown/prevalues/SniperDropdown.prevalues.items.html"
+                    }
+                ]
+            }
+        }
+    ],
+    "javascript": [
+        "~/App_Plugins/SniperDropdown/SniperDropdown.prevalues.items.js",
+        "~/App_Plugins/SniperDropdown/SniperDropdown.prevalues.multiple.js",
+        "~/App_Plugins/SniperDropdown/SniperDropdown.js"
+    ]
+}

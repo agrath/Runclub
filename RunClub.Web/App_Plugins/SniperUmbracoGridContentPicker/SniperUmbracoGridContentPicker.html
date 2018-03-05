@@ -1,0 +1,31 @@
+﻿<style type="text/css">
+	.help-text {
+		cursor: pointer;
+		padding: 6px 10px;
+		border: 1px solid #eee;
+	}
+
+	.contentItem {
+		width: 100%;
+		padding: 20px;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+		.contentItem p {
+			font-size: 20px;
+			text-align: center;
+		}
+</style>
+<div ng-controller="SniperUmbracoGridContentPicker">
+	<div class="usky-editor-placeholder" ng-click="setWidget()" ng-if="control.value === null">
+		<i class="icon icon-umb-developer"></i>
+		<div class="help-text">Select Content Node</div>
+	</div>
+	<div class="usky-editor-placeholder" ng-click="setWidget()" ng-if="control.value != null">
+		<div class="contentItem">
+			<p><i class="icon {{control.value.icon}}"></i>{{control.value.name}}</p>
+		</div>
+	</div>
+</div>

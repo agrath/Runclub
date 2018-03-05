@@ -1,0 +1,37 @@
+﻿{
+    "propertyEditors": [
+        {
+            "alias": "SniperMultiple",
+            "name": "Sniper Multiple",
+            "editor": {
+                "view": "~/App_Plugins/SniperMultiple/SniperMultiple.html",
+                "valueType": "JSON"
+            },
+            "prevalues": {
+                "fields": [
+                    {
+                        "label": "Editor",
+                        "description": "Use the internal umbraco property editor name, eg 'boolean', 'textbox' etc",
+                        "key": "editor",
+                        "view": "textstring"
+                    },
+                    {
+                        "label": "Minimum",
+                        "description": "Enter the minimum amount of items to be displayed",
+                        "key": "min",
+                        "view": "textstring"
+                    },
+                    {
+                        "label": "Maximum",
+                        "description": "Enter the maximum amount of items to be displayed, enter 0 for unlimited",
+                        "key": "max",
+                        "view": "textstring"
+                    }
+                ]
+            }
+        }
+    ],
+    "javascript": [
+        "~/App_Plugins/SniperMultiple/SniperMultiple.js"
+    ]
+}
