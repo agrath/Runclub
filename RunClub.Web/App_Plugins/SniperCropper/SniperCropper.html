@@ -1,0 +1,81 @@
+<style type="text/css">
+    .thumbnail-container {
+        float: left;
+        margin-right: 10px;
+        vertical-align: middle;
+        text-align: center;
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-bottom: 3px solid green;
+        margin-bottom: 10px;
+    }
+
+        .thumbnail-container.has-error {
+            border-bottom-color: red;
+        }
+
+        .thumbnail-container .image {
+            width: 200px;
+            height: 120px;
+        }
+
+            .thumbnail-container .image img {
+                max-width: 200px;
+                max-height: 120px;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+        .thumbnail-container .focalPointIndicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 20px;
+            border: 2px solid white;
+            background: #2e8aea;
+            float: left;
+        }
+
+        .umb-cropper-gravity  .gravity-container .viewport {
+            width: 1024px;
+            height: 768px;
+        }
+
+    .umb-cropper-gravity .gravity-container {
+        width: 100%;
+        height: auto;
+        max-width: 1024px;
+        max-height: 768px;
+    }
+</style>
+<div ng-app ng-controller="ImageCropper">
+    <div style="margin-bottom: 4px;">
+        <div ng-repeat="item in model.value.crops">
+            <div class="thumbnail-container" ng-class="{'has-error': ((item.coordinates && (item.coordinates.width < item.width || item.coordinates.height < item.height)) || mainimagewidth < item.width || mainimageheight < item.height) }">
+                <a href="{{}}" ng-click="startEditing(item)">
+                    <div class="focalPointIndicator" ng-if="!item.coordinates"></div> {{ item.alias }} ({{ item.width }}x{{item.height }})
+                    <div class="image">
+                        <img ng-src="{{ mainimageurl }}{{ item.url }}" />
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div style="clear:both"></div>
+    </div>
+    <div ng-if="currentCrop" style="margin-bottom: 4px;">
+        <div style="float: left; height: 20px; line-height: 20px; padding-bottom: 4px; padding-top: 4px; margin-right: 4px">Editing crop: <strong>{{ currentCrop.alias }}</strong></div>
+        <a href="{{}}" ng-click="reset()" class="btn btn-danger">Reset</a>
+        <a href="{{}}" ng-click="cancel()" class="btn btn-default">Cancel</a>
+        <a href="{{}}" ng-click="done()" class="btn btn-success">Done</a>
+    </div>
+    <div ng-show="currentCrop">
+        <img ng-src="{{mainimageurl}}" id="mainimage" class="hide" />
+    </div>
+    <div ng-hide="currentCrop">
+        <umb-image-gravity src="mainimageurl" center="model.value.focalPoint" />
+    </div>
+
+    <input ng-model="model.value" ng-show="true" type="hidden" name="{{model.alias}}" />
+</div>

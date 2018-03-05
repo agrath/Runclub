@@ -1,0 +1,28 @@
+﻿<div class="dtgPrevaluesProperties clearfix">
+    <span>Options:</span><br />
+    <table class="table table-condensed table-responsive table-bordered table-hover dropdownOptionsTable">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Text</th>
+                <th>Value</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody ui-sortable="sortableOptions" ng-model="column.props.options">
+            <tr ng-repeat="option in column.props.options">
+                <td><span class="btn btn-default icon icon-height sortHandle"></span></td>
+                <td>
+                    <input type="text" ng-model="option.text" />
+                </td>
+                <td>
+                    <input type="text" ng-model="option.value" />
+                </td>
+                <td class="actions">
+                    <span ng-click="optionRemoveRow(column,$index)" class="btn btn-danger icon icon-trash"></span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" class="btn btn-default" ng-click="addDropDownOption(column)">Add</button>
+</div>

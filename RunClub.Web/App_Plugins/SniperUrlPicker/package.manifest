@@ -1,0 +1,24 @@
+﻿{
+    "propertyEditors": [
+        {
+            "alias": "SniperUrlPicker",
+            "name": "Sniper URL Picker",
+            "editor": {
+                "view": "~/App_Plugins/SniperUrlPicker/SniperUrlPicker.html",
+                "valueType": "JSON"
+            },
+            "prevalues": {
+                "fields": [
+                    {
+                        "label": "Pick multiple items",
+                        "key": "multiPicker",
+                        "view": "boolean"
+                    }
+                ]
+            }
+        }
+    ],
+    "javascript": [
+        "~/App_Plugins/SniperUrlPicker/SniperUrlPickerController.js"
+    ]
+}

@@ -1,0 +1,37 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<dynamic>
+@using Umbraco.Web
+@using Umbraco.Core.Models
+@using Sniper.Umbraco.SmartPropertyTypes
+@using System.Web.Mvc.Html
+@using WOT.Models
+
+@if (Model.value != null)
+{
+    int id = (int)Model.value.id;
+    var content = Umbraco.TypedContent(id).MapToStrongType();
+
+    <div class="contentNodeTile centre">
+        @if (content is IHeaderImage)
+        {
+            IHeaderImage headerImage = content as IHeaderImage;
+            var image = headerImage.PrimaryPageImage;
+            <img src="@image.GetImageCrop(Crop.AsPropertyTeaser)" />
+        }
+
+        <p class="raleway font-bold font-lg">@content.Name</p>
+
+        @if (content is WOT.Models.Property)
+        {
+            <p class="teaser">@Umbraco.Truncate((content as WOT.Models.Property).PropertyTeaserContent, 120, true)</p>
+        }
+        else if (content is PlaceOfInterest)
+        {
+            <p class="teaser">@Umbraco.Truncate((content as WOT.Models.PlaceOfInterest).PoiContent, 120, true)</p>
+        }
+        else if (content is BlogArticle)
+        {
+            <p class="teaser">@Umbraco.Truncate((content as WOT.Models.BlogArticle).BlogArticleTeaser, 120, true)</p>
+        }
+        <a class="siteButton" href="@content.Url">Find out more</a>
+    </div>
+}

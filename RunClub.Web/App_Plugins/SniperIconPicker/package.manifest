@@ -1,0 +1,14 @@
+﻿{
+    "propertyEditors": [
+        {
+            "alias": "SniperIconPicker",
+            "name": "Sniper Icon Picker",
+            "editor": {
+                "view": "~/App_Plugins/SniperIconPicker/SniperIconPicker.html"
+            }
+        }
+    ],
+    "javascript": [
+        "~/App_Plugins/SniperIconPicker/SniperIconPicker.js"
+    ]
+}

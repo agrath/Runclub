@@ -1,0 +1,18 @@
+﻿<div ng-controller="SniperDropdown" ng-switch="model.config.allowMultiple">
+    <select name="dropDownList"
+            class="umb-editor umb-dropdown"
+            ng-switch-default
+            ng-model="model.value"
+            ng-options="item.alias as item.name for item in model.config.items">
+        <option></option>
+    </select>
+
+    <!--NOTE: This ng-switch is required because ng-multiple doesn't actually support dynamic bindings with multi-select lists -->
+    <select name="dropDownList"
+            class="umb-editor umb-dropdown"
+            ng-switch-when="1"
+            multiple
+            ng-model="model.value"
+            ng-options="item.alias as item.name for item in model.config.items"></select>
+
+</div>
