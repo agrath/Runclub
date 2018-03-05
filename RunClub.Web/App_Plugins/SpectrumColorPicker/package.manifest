@@ -1,0 +1,19 @@
+﻿{   
+    propertyEditors: [    
+        {
+            alias: "Spectrum.Color.Picker",
+            name: "Spectrum Color Picker",
+            editor: {
+                view: "~/App_Plugins/SpectrumColorPicker/SpectrumColorPicker.html"
+            }
+        }
+    ]
+    ,
+    javascript: [
+        "~/App_Plugins/SpectrumColorPicker/SpectrumColorPicker.controller.js"
+    ]
+    ,
+    css: [
+        "~/App_Plugins/SpectrumColorPicker/lib/spectrum/spectrum.css"
+    ]
+}

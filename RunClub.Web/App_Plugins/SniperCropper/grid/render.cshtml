@@ -1,0 +1,16 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<dynamic>
+@using Umbraco.Web.Templates
+@using Sniper.Umbraco.Plugins
+
+@if (Model.value != null)
+{
+    int imageId = Model.value.id;
+    var image = Umbraco.TypedMedia(imageId);
+    string cropName = Model.editor.config.cropName;
+
+    <img src="@image.GetImageCrop( "crops", cropName )" alt="@Model.value.caption" />
+    if (Model.value.caption != null)
+    {
+        <p class="caption">@Model.value.caption</p>
+    }
+}

@@ -4,6 +4,11 @@
  */
 /* FONT PATH
  * -------------------------- */
+@import url('bootstrap.css');
+@import url('awesome-bootstrap-checkbox.css');
+@import url('snazzy-info-window.css');
+@import url('colorbox.css');
+@import url('tipTip.css');
 @font-face {
   font-family: 'FontAwesome';
   src: url('font-awesome-4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0');

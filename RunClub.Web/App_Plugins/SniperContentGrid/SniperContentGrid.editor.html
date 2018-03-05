@@ -1,0 +1,77 @@
+﻿<style type="text/css">
+    .dtg .error {
+        border: 1px solid #9d261d;
+    }
+</style>
+<div ng-controller="SniperContentGrid.editorController" class="dtg">
+    <input type="hidden" name="modelValue" ng-model="model" />
+
+    <div ng-if="viewStyle == 'horizontal'">
+        <table class="table table-hover table-responsive table-bordered dtgTable">
+            <thead>
+                <tr>
+                    <th ng-repeat="column in model.config.columns.columns">{{column.title}}</th>
+                    <th style="width:60px" ng-if="!model.config.readonly"></th>
+                </tr>
+            </thead>
+            <tbody ui-sortable="sortableOptions" ng-model="controls">
+                <tr ng-repeat="row in controls">
+                    <td ng-repeat="cell in row" ng-class="{'error': cellHasError($index, $parent.$index)}">
+                        <umb-editor model="cell" ng-if="!cell.template"></umb-editor>
+                        <ng-include src="cell.template" ng-if="cell.template" />
+                    </td>
+                    <td class="actions" ng-if="!model.config.readonly">
+                        <span class="btn btn-default icon icon-height sortHandle"></span>
+                        <span ng-click="removeRow($index)" class="btn btn-danger icon icon-trash"></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div ng-if="viewStyle == 'vertical'">
+        <div ui-sortable="sortableOptions" ng-model="controls">
+            <div ng-repeat="row in controls">
+                <div>
+                    <div style="float:left"><h4 style="margin:0;padding:0">{{ row[0].value }}</h4></div>
+                    <div style="float:right; margin-right: 45px" ng-if="!model.config.readonly">
+                        <span class="btn btn-default btn-sm icon icon-height sortHandle"></span>
+                        <span ng-click="removeRow($index)" class="btn btn-danger icon icon-trash btn-sm"></span>
+                    </div>
+                    <div style="clear:both">
+                    </div>
+                    <div ng-repeat="column in model.config.columns.columns">
+                        <strong>{{ column.title }}</strong>
+                        <div ng-repeat="cell in row">
+                            <div ng-if="cell.column.alias == column.alias" ng-class="{'error': cellHasError($index, $parent.$parent.$parent.$index) }">
+                                <umb-editor model="cell" ng-if="!cell.template"></umb-editor>
+                                <ng-include src="cell.template" ng-if="cell.template" />
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-if="!model.config.readonly">
+        <button type="button" class="btn btn-default" ng-click="addRow()">Add row</button>
+    </div>
+
+    <div u7dt-rte class="modal hide fade" id="rteditorModal" tabindex="-1" role="dialog" aria-hidden="true" style="width: 1024px;" ng-if="selectedControl">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">{{ selectedControl.column.title }}</h4>
+                </div>
+                <div class="modal-body">
+                    <umb-editor model="selectedControl" ng-if="selectedControl"></umb-editor>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

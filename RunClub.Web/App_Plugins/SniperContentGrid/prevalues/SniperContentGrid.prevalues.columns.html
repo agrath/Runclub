@@ -1,0 +1,45 @@
+﻿<div ng-controller="SniperContentGrid.prevaluesController">
+    <div ng-hide="!showImportArea">
+        <textarea ng-model="importData" class="form-control"></textarea>
+        <button type="button" class="btn btn-default" ng-click="import(importData)">Import</button>
+    </div>
+    <button type="button" class="btn btn-default" ng-click="showImportArea = true" ng-show="!showImportArea">Import</button>
+
+    <textarea ng-model="exportData" class="form-control" ng-readonly="true" ng-show="exportData"></textarea>
+    <button type="button" class="btn btn-default" ng-click="export()">Export</button>
+
+    <table class="table table-responsive table-hover prevaluesTable">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Title</th>
+                <th>Alias</th>
+                <th>Type</th>
+                <th>Mandatory</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody ui-sortable="sortableOptions" ng-model="model.value.columns">
+            <tr ng-repeat="column in model.value.columns">
+                <td><span class="btn btn-default icon icon-height sortHandle"></span></td>
+                <td><input type="text" ng-model="column.title" required /></td>
+                <td><input type="text" ng-model="column.alias" required /></td>
+                <td>
+                    <div class="clearfix">
+                        <select ng-model="column.type" ng-options="def.type as def.name for def in controlDefinitions" required></select>
+                    </div>
+                    <ng-include src="getControl(column.type).prevalueTemplate" ng-if="getControl(column.type) && getControl(column.type).prevalueTemplate"></ng-include>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" ng-model="column.required" />
+                    </label>
+                </td>
+                <td class="actions">
+                    <span ng-click="removeColumn($index)" class="btn btn-danger icon icon-trash"></span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" class="btn btn-default" ng-click="addColumn()">Add column</button>
+</div>

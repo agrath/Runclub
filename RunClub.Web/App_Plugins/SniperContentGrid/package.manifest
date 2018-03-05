@@ -1,0 +1,50 @@
+﻿{   
+    propertyEditors: [      
+        {
+            alias: "SniperContentGrid",
+            name: "Sniper Content Grid",
+            editor: {
+                view: "~/App_Plugins/SniperContentGrid/SniperContentGrid.editor.html",
+				valueType: "JSON"
+            },
+			prevalues : {
+					fields: [
+					{
+						label: 'View Style',
+						description: 'Horizontal or vertical',
+						key: "viewStyle",
+						view: "~/App_Plugins/SniperContentGrid/prevalues/SniperContentGrid.prevalues.viewstyle.html"
+					},
+					{
+					    label: "Max rows",
+					    description: "Max number of rows - 0 for unlimited",
+					    key: "rows",
+					    view: "number"
+					},
+					{
+						label: "Read only",
+						description: "Can't move, delete or add new rows. Does not change column types",
+						key: "readonly",
+						view: "boolean"
+					},
+					{
+					    label: "Columns",
+					    description: "Grid columns",
+					    key: "columns",
+					    view: "~/App_Plugins/SniperContentGrid/prevalues/SniperContentGrid.prevalues.columns.html"
+					}         
+				]
+			}
+        }
+    ],
+    javascript: [
+		'~/App_Plugins/SniperContentGrid/prevalues/SniperContentGrid.prevalues.controller.js',
+		'~/App_Plugins/SniperContentGrid/directives/rteDirective.js',
+        '~/App_Plugins/SniperContentGrid/directives/debounce.js',
+		'~/App_Plugins/SniperContentGrid/SniperContentGrid.controlDefinitionService.js',
+		'~/App_Plugins/SniperContentGrid/SniperContentGrid.controller.js'
+    ],
+	css: [
+		'~/App_Plugins/SniperContentGrid/SniperContentGrid.style.css'
+	]
+}

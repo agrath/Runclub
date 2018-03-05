@@ -260,3 +260,6 @@ paket-files/
 __pycache__/
 *.pyc
 RunClub.Web/app_data/
+
+# umbraco
+*/media/
