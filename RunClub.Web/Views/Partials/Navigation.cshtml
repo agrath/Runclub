@@ -1,10 +1,10 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
-	var homepage = Umbraco.GetHomepage<Homepage>().MapToStrongType<Homepage>();
+	var homepage = Umbraco.GetHomepageByDomain<Homepage>(Request.Url.Host);
 }
 <div class="navbar navbar-light bg-light">
 	<div class="container d-flex justify-content-start">
-		@foreach(var item in homepage.NavLinks)
+		@foreach (var item in homepage.NavItems)
 		{
 			<a href="@item.Url">@item.Name</a>
 		}

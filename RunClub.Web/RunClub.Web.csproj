@@ -501,6 +501,12 @@
     <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap2.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap2-Fluid.cshtml" />
+    <Content Include="Views\Homepage.cshtml" />
+    <Content Include="Views\Master.cshtml" />
+    <Content Include="Views\Partials\Navigation.cshtml" />
+    <Content Include="Views\ContentPage.cshtml" />
+    <Content Include="Views\FAQ.cshtml" />
+    <Content Include="Views\MembersPage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -559,25 +565,29 @@
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\libraries-internal\v5.0\Sniper.Umbraco.Plugins\Sniper.Umbraco.Plugins.csproj">
+    <ProjectReference Include="..\..\..\libraries-internal\v5.0\Sniper.Umbraco.Plugins\Sniper.Umbraco.Plugins.csproj">
       <Project>{c5552c87-777c-46c3-8d1d-12866fb2a3ef}</Project>
       <Name>Sniper.Umbraco.Plugins</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\libraries-internal\v5.0\Sniper.Umbraco.PropertyConverters.Media\Sniper.Umbraco.PropertyConverters.Media.csproj">
+    <ProjectReference Include="..\..\..\libraries-internal\v5.0\Sniper.Umbraco.PropertyConverters.Media\Sniper.Umbraco.PropertyConverters.Media.csproj">
       <Project>{dbb2d78b-498f-42b4-9f02-8f765557f52d}</Project>
       <Name>Sniper.Umbraco.PropertyConverters.Media</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\libraries-internal\v5.0\Sniper.Umbraco.PropertyConverters\Sniper.Umbraco.PropertyConverters.csproj">
+    <ProjectReference Include="..\..\..\libraries-internal\v5.0\Sniper.Umbraco.PropertyConverters\Sniper.Umbraco.PropertyConverters.csproj">
       <Project>{f17cc4f3-e0ff-4540-865b-2ecad93aee3e}</Project>
       <Name>Sniper.Umbraco.PropertyConverters</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\libraries-internal\v5.0\Sniper.Umbraco.SmartPropertyTypes\Sniper.Umbraco.SmartPropertyTypes.csproj">
+    <ProjectReference Include="..\..\..\libraries-internal\v5.0\Sniper.Umbraco.SmartPropertyTypes\Sniper.Umbraco.SmartPropertyTypes.csproj">
       <Project>{5593cf62-1258-4603-9e98-5becde7cf799}</Project>
       <Name>Sniper.Umbraco.SmartPropertyTypes</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\libraries-internal\v5.0\Sniper.Umbraco\Sniper.Umbraco.csproj">
+    <ProjectReference Include="..\..\..\libraries-internal\v5.0\Sniper.Umbraco\Sniper.Umbraco.csproj">
       <Project>{0283e0b4-9c66-4a06-b818-242f2899bec3}</Project>
       <Name>Sniper.Umbraco</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RunClub.ContentModels\RunClub.ContentModels.csproj">
+      <Project>{6a8fd6ac-f42f-4a30-a90a-dfb584299644}</Project>
+      <Name>RunClub.ContentModels</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

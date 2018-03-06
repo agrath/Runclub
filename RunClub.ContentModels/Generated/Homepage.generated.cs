@@ -46,6 +46,42 @@ namespace RunClub.ContentModels
 		}
 
 		///<summary>
+		/// Content
+		///</summary>
+		[ImplementPropertyType("homepageContent")]
+		public Newtonsoft.Json.Linq.JToken HomepageContent
+		{
+			get { return this.GetPropertyValue<Newtonsoft.Json.Linq.JToken>("homepageContent"); }
+		}
+
+		///<summary>
+		/// Gallery Items
+		///</summary>
+		[ImplementPropertyType("homepageGalleryItems")]
+		public IEnumerable<IPublishedContent> HomepageGalleryItems
+		{
+			get { return this.GetPropertyValue<IEnumerable<IPublishedContent>>("homepageGalleryItems"); }
+		}
+
+		///<summary>
+		/// Content
+		///</summary>
+		[ImplementPropertyType("homepageHeaderContent")]
+		public IHtmlString HomepageHeaderContent
+		{
+			get { return this.GetPropertyValue<IHtmlString>("homepageHeaderContent"); }
+		}
+
+		///<summary>
+		/// Image
+		///</summary>
+		[ImplementPropertyType("homepageHeaderImage")]
+		public IPublishedContent HomepageHeaderImage
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("homepageHeaderImage"); }
+		}
+
+		///<summary>
 		/// Items
 		///</summary>
 		[ImplementPropertyType("navItems")]
