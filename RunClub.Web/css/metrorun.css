@@ -2986,10 +2986,16 @@ footer {
     margin: 0;
   }
 }
+.routeContainer {
+  margin: 60px auto;
+}
+@media screen and (min-width:1024px) {
+  .routeContainer {
+    margin: 100px auto;
+  }
+}
 div.map-container {
   position: relative;
-  height: 600px;
-  width: 800px;
 }
 div.map-container div.map-loading {
   background-color: rgba(255, 255, 255, 0.7);
@@ -3013,8 +3019,8 @@ div.map-container div.map-loading div.run {
   background-repeat: no-repeat;
 }
 div.map-container .map-canvas {
+  width: 100%;
   height: 600px;
-  width: 800px;
 }
 .distance-options span {
   float: left;
@@ -3036,7 +3042,6 @@ div.map-container .map-canvas {
 .terrain-options {
   padding: 0;
   margin: 0;
-  width: 800px;
 }
 .terrain-options li {
   padding: 0;
@@ -3057,13 +3062,15 @@ div.map-container .map-canvas {
   border-color: #36454f;
 }
 .elevation-graph {
-  width: 800px;
-  height: 200px;
+  width: 100%;
+  min-height: 150px;
+}
+.elevation-graph .elevation-chart {
+  height: 100%;
 }
 .dropdown ul {
   padding: 10px;
   margin: 0;
-  width: 200px;
 }
 .dropdown ul li {
   list-style-type: none;
@@ -3081,7 +3088,7 @@ div.map-container .map-canvas {
 .map-footer {
   padding: 10px;
   background-color: #f7f7f7;
-  width: 800px;
+  width: 100%;
   float: left;
 }
 .map-footer .dropdown {

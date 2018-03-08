@@ -1,7 +1,7 @@
-﻿<div style="padding:20px;">
+﻿<div class="container routeContainer">
     <button type="button" class="btn btn-light" ng-click="list()"><i class="fa fa-chevron-left"></i> Back to list</button>
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-lg-6">
             <div class="row">
                 <div class="col-md-12">
                     <h1>{{ route.name }}</h1>
@@ -80,12 +80,12 @@
             </div>
             <br class="clearfix" />
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6">
             <div class="map-container" data-route-id="{{route.id}}">
                 <gpx-viewer route="route" ng-if="route.gpxLoaded"></gpx-viewer>
             </div>
             <div class="map-footer">
-                <div class="dropdown keepopen pull-right">
+                <div class="dropdown pull-right">
                     <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Show
                     </button>

@@ -637,7 +637,7 @@ app.directive('gpxElevationChart', function (style, $rootScope) {
         scope: {
             route: '<'
         },
-        template: '<div class="elevation-chart"><canvas width="800" height="200"></canvas></div>',
+        template: '<div class="elevation-chart"><canvas></canvas></div>',
         link: function ($scope, element, attributes, ngModelCtrl) {
             var route = $scope.route;
             route.gpx().then(function (gpx) {
