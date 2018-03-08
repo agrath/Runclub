@@ -8,17 +8,17 @@
 		<div class="col-md-12 text-center">
 			<h2 class="section-heading">Got a question?</h2>
 			<hr class="primary">
-			<p>Contact us or you can email us at <a href="mailto:hello@metrorun.co.nz">hello@metrorun.co.nz</a></p>
+			@Html.Raw(homepage.ContactContent)
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-3 text-center offset-3">
 			<i class="fa fa-phone fa-3x sr-contact"></i>
-			<p>021 722291</p>
+			<p>@homepage.ContactPhone</p>
 		</div>
 		<div class="col-md-3 text-center">
 			<i class="fa fa-envelope-o fa-3x sr-contact"></i>
-			<p><a href="mailto:your-email@your-domain.com">hello@metrorun.co.nz</a></p>
+			<p><a href="mailto:@homepage.ContactEmail">@homepage.ContactEmail</a></p>
 		</div>
 	</div>
 </div>

@@ -48,6 +48,33 @@ namespace RunClub.ContentModels
 		///<summary>
 		/// Content
 		///</summary>
+		[ImplementPropertyType("contactContent")]
+		public IHtmlString ContactContent
+		{
+			get { return this.GetPropertyValue<IHtmlString>("contactContent"); }
+		}
+
+		///<summary>
+		/// Email
+		///</summary>
+		[ImplementPropertyType("contactEmail")]
+		public string ContactEmail
+		{
+			get { return this.GetPropertyValue<string>("contactEmail"); }
+		}
+
+		///<summary>
+		/// Phone
+		///</summary>
+		[ImplementPropertyType("contactPhone")]
+		public string ContactPhone
+		{
+			get { return this.GetPropertyValue<string>("contactPhone"); }
+		}
+
+		///<summary>
+		/// Content
+		///</summary>
 		[ImplementPropertyType("homepageContent")]
 		public Newtonsoft.Json.Linq.JToken HomepageContent
 		{
