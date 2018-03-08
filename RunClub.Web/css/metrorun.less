@@ -250,7 +250,7 @@ header {
 
         .container {
             width: 100%;
-            height:30px;
+            height: 30px;
             margin: 0;
             padding: 0;
         }
@@ -739,7 +739,7 @@ footer {
     }
 }
 
-.offset-2, .offset-3 {
+.offset-1, .offset-2, .offset-3 {
     @media @screen-max-sm {
         margin: 0;
     }
@@ -1105,6 +1105,79 @@ i.tipTip {
             position: absolute;
             left: 0px;
             bottom: 0px;
+        }
+    }
+}
+
+.paceContainer {
+    margin: 60px auto;
+
+    @media @screen-min-md {
+        margin-top: 100px;
+    }
+}
+
+.pace-calculator {
+    text-align: left;
+
+    label {
+        display: inline-block;
+        margin-bottom: 5px;
+        font-weight: 700;
+    }
+
+    .label.label-primary {
+        color:#20bc5c;
+    }
+
+    input.bs-numeric {
+        width: 44px;
+        float: left;
+        padding: 6px;
+        text-align: center;
+    }
+
+    span.sep {
+        float: left;
+        display: block;
+        height: 34px;
+        line-height: 34px;
+        vertical-align: middle;
+        padding: 0 2px;
+        font-weight: bold;
+    }
+
+    div.result-row {
+        padding: 5px 0;
+        margin-top: 10px;
+    }
+
+    .input-validation-error {
+        border: solid 1px #cc0000;
+    }
+
+    legend {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: inherit;
+        color: #333;
+        border: 0;
+        border-bottom: 1px solid #e5e5e5;
+        padding-bottom: 2px;
+    }
+
+    .alert {
+        text-align: left;
+    }
+
+    .col-sm-2 {
+        @media @screen-max-sm {
+            -ms-flex: 0 0 50%;
+            flex: 50%;
+            max-width: 50%;
         }
     }
 }

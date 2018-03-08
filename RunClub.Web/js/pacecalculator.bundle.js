@@ -310,7 +310,7 @@ console.warn = console.trace.bind(console);
         var parent = anchor.closest('head').length;
         var html = self.build();
         var css = self.style();
-        self.requireStyle(css);
+        //self.requireStyle(css);
         //script included in <head>
         if (parent) {
             jQuery('body').append(html);
@@ -348,11 +348,10 @@ console.warn = console.trace.bind(console);
         //creates any html and returns it
         var container = jQuery('<div/>').attr('data-component', self.component).addClass(self.component);
         var html = '';
-        html += '<div class="container-fluid">'
         html += '<div class="form-horizontal">'
         html += '<fieldset>';
         html += '<div class="form-group">';
-        html += ' <label class="col-md-4 control-label" for="uxDistance">Choose distance</label>';
+        html += ' <label class="col-md-12 control-label" for="uxDistance">Choose distance</label>';
         html += ' <div class="col-md-4">';
         html += '     <select id="uxDistance" name="uxDistance" class="form-control" required="">';
         html += '         <option value="">Choose</option>';
@@ -366,8 +365,8 @@ console.warn = console.trace.bind(console);
         html += ' </div>';
         html += '</div>';
         html += '<div class="form-group">';
-        html += ' <label class="col-md-4 control-label" for="uxHours">Enter time</label>  ';
-        html += ' <div class="col-md-4">';
+        html += ' <label class="col-md-12 control-label" for="uxHours">Enter time</label>  ';
+        html += ' <div class="col-md-12">';
         html += '     <input id="uxHours" name="uxHours" type="text" placeholder="hh" class="form-control bs-numeric" maxlength="2">';
         html += '     <span class="sep">:</span>'
         html += '     <input id="uxMinutes" name="uxMinutes" type="text" placeholder="mm" class="form-control bs-numeric" required="" maxlength="2">';
@@ -377,8 +376,8 @@ console.warn = console.trace.bind(console);
         html += ' </div>';
         html += '</div>';
         html += '<div class="form-group">';
-        html += ' <label class="col-md-4 control-label" for="uxCalculate"></label>';
-        html += ' <div class="col-md-4">';
+        html += ' <label class="col-md-12 control-label" for="uxCalculate"></label>';
+        html += ' <div class="col-md-12">';
         html += '     <button id="uxCalculate" name="uxCalculate" class="btn btn-success">Calculate</button>';
         html += ' </div>';
         html += '</div>';
@@ -392,8 +391,8 @@ console.warn = console.trace.bind(console);
         html += '   <div class="row result-row"><div class="col-md-12"><div class="label label-primary">Race Projections</div></div></div>'
         var buildResultCell = function (label, index, labelClass) {
             var html = '';
-            html += '       <label class="' + (labelClass || 'col-md-2') + ' control-label">' + label + '</label>';
-            html += '       <div class="col-md-2">';
+            html += '       <label class="' + (labelClass || 'col-sm-2') + ' control-label">' + label + '</label>';
+            html += '       <div class="col-sm-2">';
             html += '           <em class="uxResult" data-index="' + index + '"></em>';
             html += '       </div>';
             return html;
@@ -421,7 +420,6 @@ console.warn = console.trace.bind(console);
         html += buildResultCell('Easy Pace Min (min/km)', 10, 'col-md-4');
         html += buildResultCell('Easy Pace Max (min/km)', 11, 'col-md-4');
         html += '   </div>'
-        html += '</div>'
         html += '</div>';
         container.append(html);
         return container;
