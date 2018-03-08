@@ -229,6 +229,7 @@
   <ItemGroup>
     <Compile Include="Generated\ContentPage.generated.cs" />
     <Compile Include="Generated\FAQ.generated.cs" />
+    <Compile Include="Generated\FAQFaqGridSniperContentGrid.smartpropertytype.cs" />
     <Compile Include="Generated\File.generated.cs" />
     <Compile Include="Generated\Folder.generated.cs" />
     <Compile Include="Generated\Homepage.generated.cs" />

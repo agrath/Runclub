@@ -25,7 +25,7 @@ namespace RunClub.ContentModels
 	public partial interface IPageHeader : IPublishedContent
 	{
 		/// <summary>Content</summary>
-		string PageHeaderContent { get; }
+		IHtmlString PageHeaderContent { get; }
 
 		/// <summary>Image</summary>
 		IPublishedContent PageHeaderImage { get; }
@@ -63,13 +63,13 @@ namespace RunClub.ContentModels
 		/// Content
 		///</summary>
 		[ImplementPropertyType("pageHeaderContent")]
-		public string PageHeaderContent
+		public IHtmlString PageHeaderContent
 		{
 			get { return GetPageHeaderContent(this); }
 		}
 
 		/// <summary>Static getter for Content</summary>
-		public static string GetPageHeaderContent(IPageHeader that) { return that.GetPropertyValue<string>("pageHeaderContent"); }
+		public static IHtmlString GetPageHeaderContent(IPageHeader that) { return that.GetPropertyValue<IHtmlString>("pageHeaderContent"); }
 
 		///<summary>
 		/// Image

@@ -58,7 +58,7 @@ namespace RunClub.ContentModels
 		/// Content
 		///</summary>
 		[ImplementPropertyType("pageHeaderContent")]
-		public string PageHeaderContent
+		public IHtmlString PageHeaderContent
 		{
 			get { return RunClub.ContentModels.PageHeader.GetPageHeaderContent(this); }
 		}

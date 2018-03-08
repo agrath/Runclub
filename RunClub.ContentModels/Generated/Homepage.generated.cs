@@ -22,7 +22,7 @@ namespace RunClub.ContentModels
 {
 	/// <summary>Homepage</summary>
 	[PublishedContentModel("homepage")]
-	public partial class Homepage : PublishedContentModel
+	public partial class Homepage : PublishedContentModel, IPageHeader
 	{
 #pragma warning disable 0109 // new is redundant
 		public new const string ModelTypeAlias = "homepage";
@@ -64,30 +64,39 @@ namespace RunClub.ContentModels
 		}
 
 		///<summary>
-		/// Content
-		///</summary>
-		[ImplementPropertyType("homepageHeaderContent")]
-		public IHtmlString HomepageHeaderContent
-		{
-			get { return this.GetPropertyValue<IHtmlString>("homepageHeaderContent"); }
-		}
-
-		///<summary>
-		/// Image
-		///</summary>
-		[ImplementPropertyType("homepageHeaderImage")]
-		public IPublishedContent HomepageHeaderImage
-		{
-			get { return this.GetPropertyValue<IPublishedContent>("homepageHeaderImage"); }
-		}
-
-		///<summary>
 		/// Items
 		///</summary>
 		[ImplementPropertyType("navItems")]
 		public Sniper.Umbraco.PropertyConverters.SniperUrlPicker.Models.UrlList NavItems
 		{
 			get { return this.GetPropertyValue<Sniper.Umbraco.PropertyConverters.SniperUrlPicker.Models.UrlList>("navItems"); }
+		}
+
+		///<summary>
+		/// Content
+		///</summary>
+		[ImplementPropertyType("pageHeaderContent")]
+		public IHtmlString PageHeaderContent
+		{
+			get { return RunClub.ContentModels.PageHeader.GetPageHeaderContent(this); }
+		}
+
+		///<summary>
+		/// Image
+		///</summary>
+		[ImplementPropertyType("pageHeaderImage")]
+		public IPublishedContent PageHeaderImage
+		{
+			get { return RunClub.ContentModels.PageHeader.GetPageHeaderImage(this); }
+		}
+
+		///<summary>
+		/// Title
+		///</summary>
+		[ImplementPropertyType("pageHeaderTitle")]
+		public string PageHeaderTitle
+		{
+			get { return RunClub.ContentModels.PageHeader.GetPageHeaderTitle(this); }
 		}
 	}
 }

@@ -2,4 +2,28 @@
 @using ContentModels = RunClub.ContentModels;
 @{
 	Layout = "Master.cshtml";
+	var faqList = new FAQFaqGridSniperContentGrid(Model.Content);
 }
+
+<div class="pageContent">
+	@foreach (var group in faqList.Rows.GroupBy(g => g.FaqGroup))
+	{
+		<div class="faqGroup container">
+			<h3>@group.Key</h3>
+			@foreach (var question in group)
+			{
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="fa-ul">
+							<li>
+								<i class="fa-li fa fa-question-circle"></i>
+								<strong>@question.FaqQuestion</strong><br />
+								@Html.Raw(question.FaqAnswer)
+							</li>
+						</ul>
+					</div>
+				</div>
+			}
+		</div>
+	}
+</div>

@@ -3,3 +3,6 @@
 @{
 	Layout = "Master.cshtml";
 }
+<div class="pageContent">
+	@Html.GetGridHtml(Model.Content, ContentPage.GetModelPropertyType(p => p.PageContent).PropertyTypeAlias)
+</div>

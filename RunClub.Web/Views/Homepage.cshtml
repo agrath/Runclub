@@ -2,3 +2,27 @@
 @{
 	Layout = "Master.cshtml";
 }
+<div class="bg-primary">
+	@Html.GetGridHtml(Model.Content, Homepage.GetModelPropertyType(p => p.HomepageContent).PropertyTypeAlias)
+</div>
+<div class="homepageGallery">
+	<div class="container-fluid">
+        <div class="row no-gutter popup-gallery">
+			@foreach(var image in Model.Content.HomepageGalleryItems)
+			{
+				<div class="col-lg-4 col-sm-6">
+					<a href="@image.Url" class="gallery-box">
+						<img src="@image.Url?width=600&amp;entropycrop=128" class="img-responsive" alt="">
+						<div class="gallery-box-caption">
+							<div class="gallery-box-caption-content">
+								<div class="gallery-category text-faded">
+									Click to enlarge
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			}
+        </div>
+    </div>
+</div>

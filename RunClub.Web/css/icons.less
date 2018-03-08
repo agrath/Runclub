@@ -1,0 +1,25 @@
+﻿/* svg icons */
+.iconReplace(@src, @fill-new) {
+	@data-uri: data-uri('image/svg+xml;charset=UTF-8', "@{src}");
+	@replace-default: escape('<path ');
+	@replace-new: escape('<path fill="@{fill-new}" ');
+	@replace-src: replace("@{data-uri}", @replace-default, @replace-new, "g");
+	background-image: e(@replace-src);
+}
+
+.bgDetail {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	background-color: transparent;
+}
+
+.svgMenuCross {
+	background:url(/images/menu_cross.svg);
+    .bgDetail;
+}
+
+.svgMenuBurger(@colour) {
+    .iconReplace("../images/menu_burger.svg",@colour);
+    .bgDetail;
+}

@@ -4,9 +4,22 @@
 }
 <div class="navbar navbar-light bg-light">
 	<div class="container d-flex justify-content-start">
-		@foreach (var item in homepage.NavItems)
-		{
-			<a href="@item.Url">@item.Name</a>
-		}
+		<div class="siteLogo"></div>
+		<div class="burgerButton"></div>
+		<div class="navMobileBG"></div>
+		<ul class="mainNav navMenu">
+			@foreach (var navItem in homepage.NavItems)
+			{
+				var activePage = "";
+				if (Model.Content.Id == navItem.Id)
+				{
+					activePage = "active";
+				}
+
+				<li class="@activePage">
+					<a href="@navItem.Url">@navItem.Name<span></span></a>
+				</li>
+			}
+		</ul>
 	</div>
 </div>

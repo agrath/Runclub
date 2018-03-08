@@ -17,6 +17,8 @@ namespace RunClub.ContentModels
 		public string MemberGroup { get; private set; }
 		[JsonProperty]
 		public string MemberContent { get; private set; }
+		[JsonProperty]
+		public string MemberImage { get; private set; }
 
 	}
 

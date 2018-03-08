@@ -29,6 +29,7 @@
 	<script src="/js/vendor/bootstrap.js"></script>
 	<script src="/js/vendor/jquery.colorbox.js"></script>
 	<script src="/js/vendor/angular-cache-buster.js"></script>
+	<script src="/js/vendor/jquery.scrollTo.min.js"></script>
 	<script src="/js/app.js"></script>
 	<script src="/js/routes.js"></script>
 	<script src="/js/directives.js"></script>
@@ -44,14 +45,11 @@
 		@Html.Partial("Navigation")
 	</header>
 	<section>
+		@Html.Partial("PageHeader")
 		@RenderBody()
 	</section>
-	<footer class="text-muted">
-		<div class="container">
-			<p class="float-right">
-				<a href="#page-top">Back to top</a>
-			</p>
-		</div>
+	<footer>
+		@Html.Partial("Footer")
 	</footer>
 </body>
 </html>
