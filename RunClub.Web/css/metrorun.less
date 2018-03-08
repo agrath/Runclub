@@ -149,11 +149,27 @@ header {
 }
 
 .siteLogo {
-    width: 100px;
-    height: 25px;
+    width: 130px;
+    height: 60px;
     background: url(../images/metrorun.svg) no-repeat top center;
-    .relative;
+    .absolute;
     z-index: 15;
+    top: 2px;
+    left: 0;
+
+    @media @screen-max-md {
+        width: 100px;
+        height: 46px;
+        top: 9px;
+    }
+
+    @media @screen-max-sm {
+        width: 100px;
+        height: 25px;
+        top: auto;
+        left: auto;
+        .relative;
+    }
 }
 
 .burgerButton {
@@ -204,6 +220,12 @@ header {
 }
 
 .navbar {
+    @media @screen-min-sm {
+        .container {
+            .relative;
+        }
+    }
+
     @media @screen-max-sm {
         padding: 10px 0;
 
@@ -218,11 +240,11 @@ header {
 .mainNav {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 140px;
     float: left;
 
     @media @screen-max-md {
-        margin-right: 20px;
+        margin: 0 20px 0 100px;
     }
 
     @media @screen-max-sm {
@@ -400,9 +422,13 @@ aside {
     margin-top: 0;
 }
 
-.siteButton + .siteButton{
-    @media @screen-max-sm{
-        margin-top:20px;
+.siteButton {
+    @media @screen-max-sm {
+        vertical-align: bottom;
+
+        & + .siteButton {
+            margin-top: 20px;
+        }
     }
 }
 
@@ -490,8 +516,8 @@ aside {
     }
 }
 
-#cboxLoadedContent{
-    margin-bottom:0;
+#cboxLoadedContent {
+    margin-bottom: 0;
 }
 
 .call-to-action h2 {
