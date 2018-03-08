@@ -2455,11 +2455,19 @@ header {
   z-index: 15;
   top: -10px;
   left: 0;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 .siteLogo .inner {
   width: 130px;
   height: 60px;
   background: url(../images/metrorun.svg) no-repeat top center;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 @media screen and (max-width:1024px) {
   .siteLogo {
@@ -2483,6 +2491,18 @@ header {
     width: 100px;
     height: 35px;
     margin-top: 6px;
+  }
+}
+.siteLogo.animated {
+  height: 42px;
+  padding: 6px 20px;
+}
+.siteLogo.animated .inner {
+  height: 30px;
+}
+@media screen and (max-width:1024px) {
+  .siteLogo.animated {
+    padding: 6px 10px;
   }
 }
 .burgerButton {

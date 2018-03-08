@@ -154,17 +154,18 @@ header {
     height: 100px;
     padding: 20px;
     background-color: #20bc5c;
+    .absolute;
+    z-index: 15;
+    top: -10px;
+    left: 0;
+    .transition1x(all, 200ms, ease-in-out);
 
     .inner {
         width: 130px;
         height: 60px;
         background: url(../images/metrorun.svg) no-repeat top center;
+        .transition1x(all, 200ms, ease-in-out);
     }
-
-    .absolute;
-    z-index: 15;
-    top: -10px;
-    left: 0;
 
     @media @screen-max-md {
         width: 120px;
@@ -187,6 +188,19 @@ header {
             width: 100px;
             height: 35px;
             margin-top: 6px;
+        }
+    }
+
+    &.animated {
+        height: 42px;
+        padding: 6px 20px;
+
+        .inner {
+            height: 30px;
+        }
+
+        @media @screen-max-md {
+            padding: 6px 10px;
         }
     }
 }

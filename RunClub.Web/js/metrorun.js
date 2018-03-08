@@ -50,4 +50,26 @@
         navScroller.css('max-height', windowHeight);
         navScroller.css('transform', 'translateY(-' + windowHeight + 'px)');
     }
+
+    jQuery(window).on('scroll', function () {
+        var $window = jQuery(window),
+            scrolled = jQuery(window).scrollTop(),
+            scrollDistance = 40;
+        if ($window.width() > 767) {
+            // hide
+            jQuery('.siteLogo:not(.animated)').each(function () {
+                var $this = jQuery(this);
+                if (scrolled >= scrollDistance) {
+                    $this.addClass('animated');
+                }
+            });
+            // show
+            jQuery('.siteLogo.animated').each(function (index) {
+                var $this = jQuery(this);
+                if (scrolled < scrollDistance) {
+                    jQuery(this).removeClass('animated');
+                }
+            });
+        }
+    });
 });
