@@ -745,11 +745,11 @@ footer {
     }
 }
 
-.routeContainer{
-    margin:60px auto;
+.routeContainer {
+    margin: 60px auto;
 
-    @media @screen-min-md{
-        margin:100px auto;
+    @media @screen-min-md {
+        margin: 100px auto;
     }
 }
 
@@ -780,8 +780,8 @@ div.map-container {
     }
 
     .map-canvas {
-        width:100%;
-        height:600px;
+        width: 100%;
+        height: 600px;
     }
 }
 
@@ -791,6 +791,11 @@ div.map-container {
         display: block;
         line-height: 38px;
         vertical-align: middle;
+
+        @media @screen-max-sm {
+            float: none;
+            display: inline-block;
+        }
     }
 
     span i, span span {
@@ -834,10 +839,10 @@ div.map-container {
 
 .elevation-graph {
     width: 100%;
-    min-height:150px;
+    min-height: 150px;
 
-    .elevation-chart{
-        height:100%;
+    .elevation-chart {
+        height: 100%;
     }
 }
 
@@ -939,7 +944,7 @@ i.tipTip {
     margin: 0 auto;
     padding: 0px;
 
-    > li {
+    .eventItem {
         background-color: rgb(255, 255, 255);
         box-shadow: 0px 0px 5px rgb(51, 51, 51);
         box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.7);
@@ -947,7 +952,7 @@ i.tipTip {
         margin: 0px 0px 20px;
     }
 
-    > li > time {
+    .eventItem time {
         display: inline-block;
         width: 100%;
         color: #444444;
@@ -958,36 +963,36 @@ i.tipTip {
         text-transform: uppercase;
     }
 
-    > li > time > span {
+    .eventItem time span {
         display: none;
     }
 
-    > li > time > .day {
+    .eventItem time .day {
         display: block;
         font-size: 56pt;
         font-weight: 100;
         line-height: 1;
     }
 
-    > li time > .month {
+    .eventItem time .month {
         display: block;
         font-size: 24pt;
         font-weight: 900;
         line-height: 1;
     }
 
-    > li time > .year {
+    .eventItem time .year {
         display: block;
         font-size: 16pt;
         font-weight: 900;
         line-height: 1;
     }
 
-    > li > img {
+    .eventItem img {
         width: 100%;
     }
 
-    > li > .info > .title-container {
+    .eventItem .info .title-container {
         background-color: #fafafa;
         height: 32px;
         padding-left: 10px;
@@ -998,16 +1003,26 @@ i.tipTip {
             margin: 0px;
             line-height: 32px;
             vertical-align: middle;
+
+            @media @screen-max-md {
+                text-align: center;
+                line-height: 24px;
+            }
+        }
+
+        @media @screen-max-md {
+            height: auto;
+            padding: 10px;
         }
     }
 
-    > li > .info > .desc {
+    .eventItem .info .desc {
         font-size: 13px;
         font-weight: 300;
         margin: 0px;
     }
 
-    > li .info .footer {
+    .eventItem .info .footer {
         padding: 0px;
         width: 100%;
         text-align: center;
@@ -1016,6 +1031,12 @@ i.tipTip {
 
         .row {
             margin: 0;
+
+            &.calendar-cta {
+                @media @screen-max-md {
+                    margin: 0 0 10px 0;
+                }
+            }
         }
 
         p {
@@ -1026,10 +1047,14 @@ i.tipTip {
             padding: 10px;
             text-align: left;
             margin-bottom: 10px;
+
+            @media @screen-max-md {
+                height: 74px;
+            }
         }
     }
 
-    > li > .info > ul > li {
+    .eventItem .info ul li {
         display: table-cell;
         cursor: pointer;
         color: rgb(30, 30, 30);
@@ -1045,17 +1070,66 @@ i.tipTip {
         width: 110px;
         float: right;
         font-size: 14px;
+
+        @media @screen-max-sm {
+            float: none;
+            display: inline-block;
+            margin: 10px;
+        }
     }
 
     .calendar-cta {
         margin-top: 10px;
-        height: 38px;
         line-height: 38px;
         vertical-align: middle;
+
+        @media @screen-min-sm {
+            height: 38px;
+        }
     }
 
-    @media (min-width: 768px) {
-        > li {
+    @media @screen-max-md {
+        .timeImgWrapper {
+            &.hasImage {
+                display: table;
+
+                time {
+                    width: 50%;
+                    display: table-cell;
+                    float: none;
+                    vertical-align: middle;
+                }
+
+                img {
+                    width: 100%;
+                    display: table-cell;
+                    float: none;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .eventItem .info {
+            border-left: solid 6px #20bc5c;
+            overflow: hidden;
+            clear: both;
+        }
+    }
+
+    @media @screen-max-sm {
+        .eventItem time {
+            .day {
+                font-size: 38pt;
+            }
+
+            .month {
+                font-size: 20pt;
+            }
+        }
+    }
+
+    @media @screen-min-md {
+        .eventItem {
             position: relative;
             display: block;
             width: 100%;
@@ -1063,53 +1137,53 @@ i.tipTip {
             padding: 0px;
         }
 
-        > li > time,
-        > li > img {
+        .eventItem time,
+        .eventItem img {
             display: inline-block;
         }
 
-        > li > time {
+        .eventItem time {
             width: 120px;
             float: left;
         }
 
-        > li > img {
+        .eventItem img {
             width: 150px;
             cursor: pointer;
             float: left;
         }
 
-        > li > .info {
+        .eventItem .info {
             border-left: solid 3px #cccccc;
             overflow: hidden;
         }
 
-        > li > time {
+        .eventItem time {
             width: 120px;
             height: 150px;
             padding: 0px;
             margin: 0px;
         }
 
-        > li > img {
+        .eventItem img {
             width: 150px;
             height: 150px;
             padding: 0px;
             margin: 0px;
         }
 
-        > li > .info {
+        .eventItem .info {
             position: relative;
             height: 150px;
             text-align: left;
         }
 
-        > li > .info > .title,
-        > li > .info > .desc {
+        .eventItem .info .title,
+        .eventItem .info .desc {
             padding: 0px 10px;
         }
 
-        > li > .info > ul {
+        .eventItem .info ul {
             position: absolute;
             left: 0px;
             bottom: 0px;
@@ -1135,7 +1209,7 @@ i.tipTip {
     }
 
     .label.label-primary {
-        color:#20bc5c;
+        color: #20bc5c;
     }
 
     input.bs-numeric {

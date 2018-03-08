@@ -3028,6 +3028,12 @@ div.map-container .map-canvas {
   line-height: 38px;
   vertical-align: middle;
 }
+@media screen and (max-width:767px) {
+  .distance-options span {
+    float: none;
+    display: inline-block;
+  }
+}
 .distance-options span i,
 .distance-options span span {
   float: left;
@@ -3146,14 +3152,14 @@ i.tipTip {
   margin: 0 auto;
   padding: 0px;
 }
-.event-list > li {
+.event-list .eventItem {
   background-color: #ffffff;
   box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.7);
   padding: 0px;
   margin: 0px 0px 20px;
 }
-.event-list > li > time {
+.event-list .eventItem time {
   display: inline-block;
   width: 100%;
   color: #444444;
@@ -3163,58 +3169,75 @@ i.tipTip {
   text-align: center;
   text-transform: uppercase;
 }
-.event-list > li > time > span {
+.event-list .eventItem time span {
   display: none;
 }
-.event-list > li > time > .day {
+.event-list .eventItem time .day {
   display: block;
   font-size: 56pt;
   font-weight: 100;
   line-height: 1;
 }
-.event-list > li time > .month {
+.event-list .eventItem time .month {
   display: block;
   font-size: 24pt;
   font-weight: 900;
   line-height: 1;
 }
-.event-list > li time > .year {
+.event-list .eventItem time .year {
   display: block;
   font-size: 16pt;
   font-weight: 900;
   line-height: 1;
 }
-.event-list > li > img {
+.event-list .eventItem img {
   width: 100%;
 }
-.event-list > li > .info > .title-container {
+.event-list .eventItem .info .title-container {
   background-color: #fafafa;
   height: 32px;
   padding-left: 10px;
 }
-.event-list > li > .info > .title-container h2 {
+.event-list .eventItem .info .title-container h2 {
   font-size: 17px;
   font-weight: 700;
   margin: 0px;
   line-height: 32px;
   vertical-align: middle;
 }
-.event-list > li > .info > .desc {
+@media screen and (max-width:1024px) {
+  .event-list .eventItem .info .title-container h2 {
+    text-align: center;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width:1024px) {
+  .event-list .eventItem .info .title-container {
+    height: auto;
+    padding: 10px;
+  }
+}
+.event-list .eventItem .info .desc {
   font-size: 13px;
   font-weight: 300;
   margin: 0px;
 }
-.event-list > li .info .footer {
+.event-list .eventItem .info .footer {
   padding: 0px;
   width: 100%;
   text-align: center;
   background-color: #fff;
   border-top: solid 3px #cccccc;
 }
-.event-list > li .info .footer .row {
+.event-list .eventItem .info .footer .row {
   margin: 0;
 }
-.event-list > li .info .footer p {
+@media screen and (max-width:1024px) {
+  .event-list .eventItem .info .footer .row.calendar-cta {
+    margin: 0 0 10px 0;
+  }
+}
+.event-list .eventItem .info .footer p {
   height: 62px;
   padding: 10px 0 0 0 !important;
   overflow: hidden;
@@ -3223,7 +3246,12 @@ i.tipTip {
   text-align: left;
   margin-bottom: 10px;
 }
-.event-list > li > .info > ul > li {
+@media screen and (max-width:1024px) {
+  .event-list .eventItem .info .footer p {
+    height: 74px;
+  }
+}
+.event-list .eventItem .info ul li {
   display: table-cell;
   cursor: pointer;
   color: #1e1e1e;
@@ -3239,59 +3267,100 @@ i.tipTip {
   float: right;
   font-size: 14px;
 }
+@media screen and (max-width:767px) {
+  .event-list a.btn {
+    float: none;
+    display: inline-block;
+    margin: 10px;
+  }
+}
 .event-list .calendar-cta {
   margin-top: 10px;
-  height: 38px;
   line-height: 38px;
   vertical-align: middle;
 }
-@media (min-width: 768px) {
-  .event-list > li {
+@media screen and (min-width:768px) {
+  .event-list .calendar-cta {
+    height: 38px;
+  }
+}
+@media screen and (max-width:1024px) {
+  .event-list .timeImgWrapper.hasImage {
+    display: table;
+  }
+  .event-list .timeImgWrapper.hasImage time {
+    width: 50%;
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+  }
+  .event-list .timeImgWrapper.hasImage img {
+    width: 100%;
+    display: table-cell;
+    float: none;
+    cursor: pointer;
+  }
+  .event-list .eventItem .info {
+    border-left: solid 6px #20bc5c;
+    overflow: hidden;
+    clear: both;
+  }
+}
+@media screen and (max-width:767px) {
+  .event-list .eventItem time .day {
+    font-size: 38pt;
+  }
+  .event-list .eventItem time .month {
+    font-size: 20pt;
+  }
+}
+@media screen and (min-width:1024px) {
+  .event-list .eventItem {
     position: relative;
     display: block;
     width: 100%;
     height: 150px;
     padding: 0px;
   }
-  .event-list > li > time,
-  .event-list > li > img {
+  .event-list .eventItem time,
+  .event-list .eventItem img {
     display: inline-block;
   }
-  .event-list > li > time {
+  .event-list .eventItem time {
     width: 120px;
     float: left;
   }
-  .event-list > li > img {
+  .event-list .eventItem img {
     width: 150px;
     cursor: pointer;
     float: left;
   }
-  .event-list > li > .info {
+  .event-list .eventItem .info {
     border-left: solid 3px #cccccc;
     overflow: hidden;
   }
-  .event-list > li > time {
+  .event-list .eventItem time {
     width: 120px;
     height: 150px;
     padding: 0px;
     margin: 0px;
   }
-  .event-list > li > img {
+  .event-list .eventItem img {
     width: 150px;
     height: 150px;
     padding: 0px;
     margin: 0px;
   }
-  .event-list > li > .info {
+  .event-list .eventItem .info {
     position: relative;
     height: 150px;
     text-align: left;
   }
-  .event-list > li > .info > .title,
-  .event-list > li > .info > .desc {
+  .event-list .eventItem .info .title,
+  .event-list .eventItem .info .desc {
     padding: 0px 10px;
   }
-  .event-list > li > .info > ul {
+  .event-list .eventItem .info ul {
     position: absolute;
     left: 0px;
     bottom: 0px;
