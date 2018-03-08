@@ -413,7 +413,6 @@
     <Content Include="images\map-icons\public-bathroom.png" />
     <Content Include="images\map-icons\water-fountain.png" />
     <Content Include="images\static-meet-here.png" />
-    <Content Include="index.html" />
     <Content Include="js\app.js" />
     <Content Include="js\controllers.js" />
     <Content Include="js\directives.js" />
