@@ -567,6 +567,46 @@ div.view.become-a-member {
 }
 
 div.view {
+    &.routes-calendar {
+        .jumbotron {
+            background-image: url(/assets/calendar.jpg?height=700);
+
+            @media @screen-max-sm {
+                padding: 0;
+                height: auto;
+
+                .tint {
+                    .relative;
+                }
+
+                .container {
+                    .relative;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    &.routes-all {
+        .jumbotron {
+            background-image: url(/assets/calendar.jpg?height=700);
+
+            @media @screen-max-sm {
+                padding: 0;
+                height: auto;
+
+                .tint {
+                    .relative;
+                }
+
+                .container {
+                    .relative;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
     .jumbotron {
         background-size: cover;
         color: #fff;
@@ -588,6 +628,16 @@ div.view {
             left: 0px;
             right: 0px;
             z-index: 2;
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    @media @screen-max-sm {
+        .card-text {
+            margin-bottom: 10px;
         }
     }
 }
@@ -661,7 +711,7 @@ footer {
     }
 }
 
-.offset-3 {
+.offset-2, .offset-3 {
     @media @screen-max-sm {
         margin: 0;
     }
@@ -846,7 +896,6 @@ i.tipTip {
     color: @green;
     font-size: 16px;
 }
-
 
 .event-list {
     list-style: none;

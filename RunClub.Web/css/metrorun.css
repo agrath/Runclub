@@ -2833,6 +2833,38 @@ div.view.become-a-member iframe {
   width: 100%;
   height: 100%;
 }
+div.view.routes-calendar .jumbotron {
+  background-image: url(/assets/calendar.jpg?height=700);
+}
+@media screen and (max-width:767px) {
+  div.view.routes-calendar .jumbotron {
+    padding: 0;
+    height: auto;
+  }
+  div.view.routes-calendar .jumbotron .tint {
+    position: relative;
+  }
+  div.view.routes-calendar .jumbotron .container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+}
+div.view.routes-all .jumbotron {
+  background-image: url(/assets/calendar.jpg?height=700);
+}
+@media screen and (max-width:767px) {
+  div.view.routes-all .jumbotron {
+    padding: 0;
+    height: auto;
+  }
+  div.view.routes-all .jumbotron .tint {
+    position: relative;
+  }
+  div.view.routes-all .jumbotron .container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+}
 div.view .jumbotron {
   background-size: cover;
   color: #fff;
@@ -2853,6 +2885,14 @@ div.view .jumbotron .container {
   left: 0px;
   right: 0px;
   z-index: 2;
+}
+div.view img {
+  max-width: 100%;
+}
+@media screen and (max-width:767px) {
+  div.view .card-text {
+    margin-bottom: 10px;
+  }
 }
 .jumbotron p:last-child {
   margin-bottom: 0;
@@ -2914,6 +2954,7 @@ footer {
   }
 }
 @media screen and (max-width:767px) {
+  .offset-2,
   .offset-3 {
     margin: 0;
   }
