@@ -15,9 +15,6 @@ and drag a bounding box, export with export button then use AmenetiesGeoJson2DbJ
 
 */
 
-app.controller('homeController', function ($scope, $location) {
-
-});
 app.controller('routeListController', function ($scope, RouteService, $location) {
     RouteService.getRoutes().then(function (data) {
         $scope.routes = _.sortBy(data, function (item) {
@@ -84,29 +81,6 @@ app.controller('calendarController', function ($scope, RouteService, CalendarSer
 
 });
 
-app.controller('faqController', function ($scope, FaqService, $location) {
-    FaqService.getItems().then(function (data) {
-        $scope.groupedItems = _.groupBy(data, function (item) {
-            return item.category;
-        });
-    })
-});
-
-app.controller('becomeAMemberController', function ($scope) {
-
-});
-
-app.controller('aboutController', function ($scope) {
-
-});
-
 app.controller('paceCalculatorController', function ($scope) {
 
-});
-app.controller('teamController', function ($scope, TeamService) {
-    TeamService.getItems().then(function (data) {
-        $scope.groupedItems = _.groupBy(data, function (item) {
-            return item.category;
-        });
-    })
 });

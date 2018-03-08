@@ -363,11 +363,17 @@
     <Content Include="css\awesome-bootstrap-checkbox.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\colorbox.css" />
+    <Content Include="css\metrorun.css">
+      <DependentUpon>metrorun.less</DependentUpon>
+    </Content>
+    <Content Include="css\metrorun.min.css">
+      <DependentUpon>metrorun.css</DependentUpon>
+    </Content>
     <Content Include="css\routes.css">
-      <DependentUpon>routes.less</DependentUpon>
+      <DependentUpon>metrorun.less</DependentUpon>
     </Content>
     <Content Include="css\routes.min.css">
-      <DependentUpon>routes.less</DependentUpon>
+      <DependentUpon>metrorun.less</DependentUpon>
     </Content>
     <Content Include="css\RTE.css" />
     <Content Include="css\snazzy-info-window.css" />
@@ -375,7 +381,6 @@
     <Content Include="data\BAYAzUnc.gpx" />
     <Content Include="data\calendar.json" />
     <Content Include="data\ekBNMjnO.gpx" />
-    <Content Include="data\faq.json" />
     <Content Include="data\fSUqNwtc.gpx" />
     <Content Include="data\kwaBpRSC.gpx">
       <SubType>Designer</SubType>
@@ -384,7 +389,6 @@
     <Content Include="data\RUCWGquH.gpx" />
     <Content Include="data\TcSVvBQT.gpx" />
     <Content Include="data\TDVkcjQB.gpx" />
-    <Content Include="data\team.json" />
     <Content Include="data\template.json" />
     <Content Include="data\udgHkNjC.gpx" />
     <Content Include="data\viyVJdOl.gpx" />
@@ -413,6 +417,7 @@
     <Content Include="js\app.js" />
     <Content Include="js\controllers.js" />
     <Content Include="js\directives.js" />
+    <Content Include="js\metrorun.js" />
     <Content Include="js\pacecalculator.bundle.js" />
     <Content Include="js\routes.js" />
     <Content Include="js\vendor.bundle.js" />
@@ -431,7 +436,7 @@
     <Content Include="js\vendor\underscore-min.js" />
     <Content Include="js\vendor\v3_epoly.js" />
     <Content Include="packages.config" />
-    <Content Include="css\routes.less" />
+    <Content Include="css\metrorun.less" />
     <Content Include="App_Plugins\SniperContentGrid\package.manifest" />
     <Content Include="App_Plugins\SniperCropper\grid\render.cshtml" />
     <Content Include="App_Plugins\SniperCropper\package.manifest" />
@@ -515,6 +520,7 @@
     <Content Include="Views\MembersPage.cshtml" />
     <Content Include="Views\Partials\Footer.cshtml" />
     <Content Include="Views\Partials\PageHeader.cshtml" />
+    <Content Include="Views\AppHost.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -549,13 +555,9 @@
     <Content Include="css\font-awesome-4.7.0\less\variables.less" />
     <Content Include="templates\pace-calculator.html" />
     <Content Include="templates\all-routes.html" />
-    <Content Include="templates\faq.html" />
     <Content Include="templates\calendar-repeater.html" />
     <Content Include="templates\calendar.html" />
-    <Content Include="templates\home.html" />
     <Content Include="templates\route.html" />
-    <Content Include="templates\about.html" />
-    <Content Include="templates\team.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

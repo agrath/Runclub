@@ -11,31 +11,16 @@
 	<meta name="format-detection" content="telephone=no">
 
 	<title></title>
-	<!--<script src="/js/vendor.bundle.js"></script>-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeWHf1yBGiJgWoaQH_PEN2bnwZ2aCFSbE&libraries=geometry,visualization"></script>
-	<script src="/js/vendor/jquery-3.2.1.min.js"></script>
-	<script src="/js/vendor/angular.js"></script>
-	<script src="/js/vendor/angular-route.js"></script>
-	<script src="/js/vendor/angular-sanitize.min.js"></script>
-	<script src="/js/vendor/angular-ellipsis.js"></script>
-	<script src="/js/vendor/underscore-min.js"></script>
-	<script src="/js/vendor/gpx.js"></script>
-	<script src="/js/vendor/v3_epoly.js"></script>
-	<script src="/js/vendor/chart.js"></script>
-	<script src="/js/vendor/snazzy-info-window.js"></script>
-	<script src="/js/vendor/jquery.tipTip.js"></script>
-	<script src="/js/vendor/popper.js"></script>
-	<script src="/js/vendor/moment.js"></script>
-	<script src="/js/vendor/bootstrap.js"></script>
-	<script src="/js/vendor/jquery.colorbox.js"></script>
-	<script src="/js/vendor/angular-cache-buster.js"></script>
+    
+    <script src="/js/vendor/jquery-3.2.1.min.js"></script>
 	<script src="/js/vendor/jquery.scrollTo.min.js"></script>
-	<script src="/js/app.js"></script>
-	<script src="/js/routes.js"></script>
-	<script src="/js/directives.js"></script>
-	<script src="/js/controllers.js"></script>
+    <script src="/js/vendor/jquery.colorbox.js"></script>
+    <script src="/js/vendor/popper.js"></script>
+    <script src="/js/vendor/bootstrap.js"></script>
+    <script src="/js/metrorun.js"></script>
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,600" />
-	<link href="/css/routes.min.css" rel="stylesheet" />
+
+	<link href="/css/metrorun.min.css" rel="stylesheet" />
 
 	@RenderSection("head", false)
 
@@ -45,7 +30,7 @@
 		@Html.Partial("Navigation")
 	</header>
 	<section>
-		@Html.Partial("PageHeader")
+        @RenderSection("PageHeader", Html.Partial("PageHeader"))
 		@RenderBody()
 	</section>
 	<footer>
