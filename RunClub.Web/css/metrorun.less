@@ -532,8 +532,10 @@ aside {
     font-size: 18px;
 }
 
-.gallery-box:hover .gallery-box-caption {
-    opacity: 1;
+@media (min-width: 768px) {
+    .gallery-box:hover .gallery-box-caption {
+        opacity: 1;
+    }
 }
 
 .gallery-box:focus {

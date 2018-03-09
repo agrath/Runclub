@@ -1,6 +1,10 @@
 ﻿jQuery(document).ready(function () {
     window.setInterval(function () {
-        jQuery('a.gallery-box:not(.initialized)').colorbox({ maxWidth: '90%', maxHeight: '90%' }).addClass("initialized");
+        if (jQuery(window).width() > 768) {
+            jQuery('a.gallery-box:not(.initialized)').colorbox({ maxWidth: '90%', maxHeight: '90%' }).addClass("initialized");
+        } else {
+            jQuery('a.gallery-box').attr('target', '_blank');
+        }
         jQuery('.dropdown-toggle:not(.initialized)')
             .dropdown()
             .addClass('initialized');

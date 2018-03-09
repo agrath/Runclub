@@ -1,28 +1,30 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.MembersPage>
 @using ContentModels = RunClub.ContentModels;
 @{
-	Layout = "Master.cshtml";
-	var teamlist = new MembersPageMembersGridSniperContentGrid(Model.Content);
+    Layout = "Master.cshtml";
+    var teamlist = new MembersPageMembersGridSniperContentGrid(Model.Content);
 }
 <div class="pageContent">
-	@foreach (var group in teamlist.Rows.GroupBy(g => g.MemberGroup))
-	{
-		<div class="memberGroup container">
-			<h3>@group.Key</h3>
-			@foreach (var person in group)
-			{
-				<div class="row">
-					@if (person.MemberImage != null)
-					{
-						IPublishedContent img = Umbraco.TypedMedia(person.MemberImage);
-						<div class="col-md-3"><img src="@img.Url" /></div>
-					}
-					<div class="col-md-8">
-						<p>@(!string.IsNullOrEmpty(person.MemberPosition) ? person.MemberPosition + "- " : "")@person.MemberName</p>
-						@Html.Raw(person.MemberContent)
-					</div>
-				</div>
-			}
-		</div>
-	}
+    @foreach (var group in teamlist.Rows.GroupBy(g => g.MemberGroup))
+    {
+        <div class="memberGroup container">
+            <h3>@group.Key</h3>
+            @foreach (var person in group)
+            {
+                <div class="row">
+                    @if (person.MemberImage != null)
+                    {
+                        IPublishedContent img = Umbraco.TypedMedia(person.MemberImage);
+                        <div class="col-md-3"><img src="@img.Url" /></div>
+                    }
+                    <div class="col-md-8">
+                        <p>
+                            <strong>@(!string.IsNullOrEmpty(person.MemberPosition) ? person.MemberPosition + " - " : "")</strong>
+                            @person.MemberName
+                        </p>
+                        @Html.Raw(person.MemberContent)
+                    </div>
+                </div>}
+        </div>
+    }
 </div>
