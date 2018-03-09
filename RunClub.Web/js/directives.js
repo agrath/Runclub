@@ -118,9 +118,10 @@ app.directive('gpxViewer', function ($rootScope, $timeout, style) {
                 if (placesOfInterest) {
                     for (var i = 0; i < placesOfInterest.length; i++) {
                         var place = placesOfInterest[i];
-                        var options = {};
+                        var options = { markers: [] };
                         if (placesOfInterestOptions) {
                             options = placesOfInterestOptions[place.type];
+                            options.markers = [];
                         }
                         var width = 32 * (options && options.widthMultiplier ? options.widthMultiplier : (place.widthMultiplier ? place.widthMultiplier : 1));
                         var height = 32 * (options && options.heightMultiplier ? options.heightMultiplier : (place.heightMultiplier ? place.heightMultiplier : 1));
@@ -135,7 +136,6 @@ app.directive('gpxViewer', function ($rootScope, $timeout, style) {
                             name: place.name
                         };
                         markers.push(marker);
-                        options.markers = options.markers || [];
                         options.markers.push(marker);
                     }
                 }
