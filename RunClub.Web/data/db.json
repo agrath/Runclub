@@ -104,6 +104,11 @@
             }
         ],
         "placesOfInterest": [
+			{
+                "type": "water-fountain",
+				"latitude": -36.89171567,
+				"longitude": 174.87968679
+			},
             {
                 "type": "public-bathroom",
                 "latitude": -36.90346,
@@ -3399,6 +3404,21 @@
             }
         ],
         "placesOfInterest": [
+			{
+				"type": "water-fountain",
+				"latitude": -36.86216622,
+				"longitude": 174.77030459
+			},
+			{
+				"type": "public-bathroom",
+				"latitude": -36.85906426,
+				"longitude": 174.77414955
+			},
+			{
+				"type": "water-fountain",
+				"latitude": -36.86411928,
+				"longitude": 174.77141270
+			},
             {
                 "type": "public-bathroom",
                 "latitude": -36.8472036,
