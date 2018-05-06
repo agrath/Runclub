@@ -3454,7 +3454,11 @@ i.tipTip {
 .buy-shirt hr {
   max-width: 100%;
 }
-.buy-shirt table {
-  border-collapse: separate;
-  border-spacing: 0px 15px;
+.buy-shirt table tr strong {
+  margin-top: 15px;
+  display: block;
+}
+.buy-shirt input[type=image] {
+  margin-top: 15px;
+  display: block;
 }
