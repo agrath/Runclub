@@ -5,4 +5,7 @@
 }
 <div class="pageContent">
 	@Html.GetGridHtml(Model.Content, ContentPage.GetModelPropertyType(p => p.PageContent).PropertyTypeAlias)
+	
+	@Html.Raw(Model.Content.ExternalEmbed)
+					
 </div>

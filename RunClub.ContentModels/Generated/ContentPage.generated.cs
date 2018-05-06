@@ -46,6 +46,15 @@ namespace RunClub.ContentModels
 		}
 
 		///<summary>
+		/// External Embed: Paste an external embed here and it will appear after the content block
+		///</summary>
+		[ImplementPropertyType("externalEmbed")]
+		public string ExternalEmbed
+		{
+			get { return this.GetPropertyValue<string>("externalEmbed"); }
+		}
+
+		///<summary>
 		/// Page Content
 		///</summary>
 		[ImplementPropertyType("pageContent")]

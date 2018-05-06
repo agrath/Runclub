@@ -3451,3 +3451,10 @@ i.tipTip {
     max-width: 50%;
   }
 }
+.buy-shirt hr {
+  max-width: 100%;
+}
+.buy-shirt table {
+  border-collapse: separate;
+  border-spacing: 0px 15px;
+}
