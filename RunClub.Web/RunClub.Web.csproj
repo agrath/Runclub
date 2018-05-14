@@ -400,6 +400,7 @@
     <Content Include="data\zwSaUUvs.gpx" />
     <Content Include="default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="images\buy-now.png" />
     <Content Include="images\map-icons\elevation-marker.png" />
     <Content Include="images\map-icons\km-marker.svg" />
     <Content Include="images\map-icons\parking.png" />
