@@ -1,4 +1,8 @@
-﻿jQuery(document).ready(function () {
+﻿/*
+todo: page titles, google analytics, fix map spacing/layout (too small), print button/stylesheet for map, fix alignment of short terrain percents, change green to blue?, full screen button missing icon, map popover disappears automatically
+*/
+
+jQuery(document).ready(function () {
     window.setInterval(function () {
         if (jQuery(window).width() > 768) {
             jQuery('a.gallery-box:not(.initialized)').colorbox({ maxWidth: '90%', maxHeight: '90%' }).addClass("initialized");
