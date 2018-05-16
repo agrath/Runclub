@@ -378,12 +378,24 @@
     <Content Include="css\snazzy-info-window.css" />
     <Content Include="css\tipTip.css" />
     <Content Include="data\BAYAzUnc.gpx" />
+    <Content Include="data\BbXfrhbt.gpx" />
+    <Content Include="data\bHS9WMha-manual.gpx" />
+    <Content Include="data\bHS9WMha.gpx" />
+    <Content Include="data\BWrsLRNP.gpx" />
     <Content Include="data\calendar.json" />
+    <Content Include="data\db.json" />
     <Content Include="data\ekBNMjnO.gpx" />
     <Content Include="data\fSUqNwtc.gpx" />
+    <Content Include="data\gxL4QNuC-manual.gpx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="data\gxL4QNuC.gpx" />
+    <Content Include="data\jDjWpnqp.gpx" />
+    <Content Include="data\kPCzjCbW.gpx" />
     <Content Include="data\kwaBpRSC.gpx">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="data\LawAfAEu.gpx" />
     <Content Include="data\nhgQlDkn.gpx" />
     <Content Include="data\RUCWGquH.gpx" />
     <Content Include="data\TcSVvBQT.gpx" />
@@ -391,11 +403,14 @@
     <Content Include="data\template.json" />
     <Content Include="data\udgHkNjC.gpx" />
     <Content Include="data\viyVJdOl.gpx" />
+    <Content Include="data\Vy8bNwdF.gpx" />
     <Content Include="data\X5zFfWYz-manual.gpx">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="data\X5zFfWYz.gpx" />
     <Content Include="data\xHTfUcKn.gpx" />
     <Content Include="data\xQDVhtqv.gpx" />
+    <Content Include="data\YseYp53W.gpx" />
     <Content Include="data\ZCgPwAZm.gpx" />
     <Content Include="data\zwSaUUvs.gpx" />
     <Content Include="default.aspx" />
@@ -420,12 +435,18 @@
     <Content Include="js\pacecalculator.bundle.js" />
     <Content Include="js\routes.js" />
     <Content Include="js\vendor.bundle.js" />
+    <Content Include="js\vendor.bundle.min.js">
+      <DependentUpon>vendor.bundle.js</DependentUpon>
+    </Content>
     <Content Include="js\vendor\angular-cache-buster.js" />
     <Content Include="js\vendor\angular-ellipsis.js" />
     <Content Include="js\vendor\angular-route.js" />
     <Content Include="js\vendor\angular.js" />
     <Content Include="js\vendor\bootstrap.js" />
+    <Content Include="js\vendor\canvas-toBlob.js" />
     <Content Include="js\vendor\chart.js" />
+    <Content Include="js\vendor\FileSaver.js" />
+    <Content Include="js\vendor\html2canvas.js" />
     <Content Include="js\vendor\jquery.colorbox.js" />
     <Content Include="js\vendor\jquery.scrollTo.min.js" />
     <Content Include="js\vendor\jquery.tipTip.js" />
@@ -460,21 +481,6 @@
     <Content Include="config\imageprocessor\security.config" />
     <Content Include="config\imageprocessor\processing.config" />
     <Content Include="config\imageprocessor\cache.config" />
-    <Content Include="data\BbXfrhbt.gpx" />
-    <Content Include="data\BWrsLRNP.gpx" />
-    <Content Include="data\db.json" />
-    <Content Include="data\jDjWpnqp.gpx" />
-    <Content Include="data\kPCzjCbW.gpx" />
-    <Content Include="data\LawAfAEu.gpx" />
-    <Content Include="data\gxL4QNuC-manual.gpx">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="data\bHS9WMha-manual.gpx" />
-    <Content Include="data\X5zFfWYz.gpx" />
-    <Content Include="data\gxL4QNuC.gpx" />
-    <Content Include="data\bHS9WMha.gpx" />
-    <Content Include="data\YseYp53W.gpx" />
-    <Content Include="data\Vy8bNwdF.gpx" />
     <Content Include="config\trees.config" />
     <Content Include="Media\Web.config" />
     <Content Include="config\umbracoSettings.config" />
@@ -497,6 +503,8 @@
     <Content Include="config\uSyncCore.Config" />
     <Content Include="config\uSyncBackOffice.Config" />
     <Content Include="css\icons.less" />
+    <Content Include="data\faq.json" />
+    <Content Include="data\team.json" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="Views\Web.config">
       <SubType>Designer</SubType>

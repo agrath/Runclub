@@ -325,7 +325,7 @@ app.directive('gpxViewer', function ($rootScope, $timeout, style) {
                     marker: marker,
                     placement: meetingPoint.placement || 'right',
                     offset: meetingPoint.offset,
-                    maxWidth: 180,
+                    maxWidth: 250,
                     content: '<h4>Meet here</h4>' +
                     '<div>' + meetingPoint.label + '</div>',
                     closeOnMapClick: false,
@@ -362,6 +362,16 @@ app.directive('gpxViewer', function ($rootScope, $timeout, style) {
         link: function ($scope, element, attributes, ngModelCtrl) {
 
             $scope.loading = true;
+
+            $scope.fitBounds = function () {
+                //console.log('fitBounds', $scope.map, $scope.gpxPolyline);
+                var bounds = $scope.gpxPolyline.getBounds();
+                _.each(route.diversions, function (diversion, index) {
+                    diversion.g.line.extendBounds(bounds);
+                });
+                $scope.map.fitBounds(bounds);
+            };
+
             var route = $scope.route;
             route.gpx().then(function (gpx) {
 
@@ -481,8 +491,12 @@ app.directive('gpxViewer', function ($rootScope, $timeout, style) {
                 //only so the running man shows up
                 $timeout(function () {
                     $scope.loading = false;
+                    $rootScope.$broadcast('mapLoaded', { fitBounds: $scope.fitBounds });
                 }, 2000)
 
+                google.maps.event.addListener(map, 'tilesloaded', function (event) {
+                    $rootScope.$broadcast('mapTilesLoaded');
+                });
                 google.maps.event.addListener(map, 'click', function (event) {
                     var lat = event.latLng.lat();
                     lat = lat.toFixed(8);
@@ -747,3 +761,18 @@ Chart.pluginService.register({
     },
 });
 
+//removed in v3 https://stackoverflow.com/a/36489756/647728
+google.maps.Polyline.prototype.getBounds = function () {
+    var bounds = new google.maps.LatLngBounds();
+    this.getPath().forEach(function (item, index) {
+        bounds.extend(new google.maps.LatLng(item.lat(), item.lng()));
+    });
+    return bounds;
+};
+//based on above function, takes an existing bounds and extends to incorporate polyline
+google.maps.Polyline.prototype.extendBounds = function (bounds) {
+    this.getPath().forEach(function (item, index) {
+        bounds.extend(new google.maps.LatLng(item.lat(), item.lng()));
+    });
+    return bounds;
+};

@@ -22,7 +22,7 @@ app.controller('routeListController', function ($scope, RouteService, $location)
         });
     })
 });
-app.controller('showRouteController', function ($scope, RouteService, $routeParams, $location) {
+app.controller('showRouteController', function ($scope, $rootScope, RouteService, $routeParams, $location, $timeout) {
     $scope.id = $routeParams.id;
 
     var url = '/app/route/' + $scope.id;
@@ -40,6 +40,75 @@ app.controller('showRouteController', function ($scope, RouteService, $routePara
 
     $scope.list = function () {
         $location.path('/routes/all'); // path not hash
+    };
+    $rootScope.$on('mapLoaded', function (e, data) {
+        $scope.loaded = true;
+        $scope.fitBounds = data.fitBounds;
+    });
+    $scope.generateImage = function () {
+        //apply map-render class to canvas
+        var element = angular.element(".map-container");
+        angular.element('.col-lg-6, .col-lg-12').addClass('map-render-container');
+        angular.element('.si-float-wrapper').addClass('map-render-info');
+        element.addClass('map-render');
+        $scope.fitBounds();
+
+        //wait for event
+        var mapTilesLoadedListener = $rootScope.$on('mapTilesLoaded', function () {
+            $scope.fitBounds();
+            $timeout(function () {
+                var element = angular.element(".map-container").get(0); //html2canvas needs the native node
+                //capture map as canvas
+                html2canvas(element, {
+                    useCORS: true,
+                    allowTaint: false,
+                    x: 0,
+                    y: 0,
+                    onclone: function (clone) {
+                        //hack the google indicator out
+                        jQuery(clone).find('a[target=_blank]:not(.gm-style-cc)').parent().remove();
+                    },
+                    removeContainer: true,
+                    windowWidth: 2400,
+                    windowHeight: 2400,
+                    ignoreElements: function (element) {
+                        var $element = jQuery(element);
+                        //|| $element.attr('target') == '_blank'
+                        return $element.hasClass('gmnoprint') || $element.hasClass('si-close-button') || $element.hasClass('gm-style-cc');
+                    }
+                }).then(canvas => {
+                    //render completed
+                    document.body.appendChild(canvas)
+                    
+                    //reset styling
+                    var element = angular.element(".map-container");
+                    element.removeClass('map-render');
+                    angular.element('.col-lg-6, .col-lg-12').removeClass('map-render-container');
+                    //rescale map
+                    $scope.fitBounds();
+                    //export as image
+                    canvas.toBlob(function (blob) {
+                        saveAs(blob, $scope.id + '.png');
+
+                        jQuery(canvas).remove();
+                    });
+
+
+                });
+                //unregister event listener
+                mapTilesLoadedListener();
+            }, 250);
+        })
+
+        //html2canvas(document.getElementById("map"), {
+        //    useCORS: true,
+        //    onrendered: function (canvas) {
+        //        var img = canvas.toDataURL("image/png");
+        //        img = img.replace('data:image/png;base64,', '');
+        //        var finalImageSrc = 'data:image/png;base64,' + img;
+        //        jQuery('<a/>').attr('src', finalImageSrc).attr('download',route.Name+'.png').trigger('click');
+        //    }
+        //});
     };
 
 });
@@ -59,7 +128,7 @@ app.controller('calendarController', function ($scope, RouteService, CalendarSer
                 item.month = item.moment.format('MMM');
                 item.year = item.moment.format('YYYY');
                 item.time = item.moment.format('HH:mm a');
-                item.view = function() {
+                item.view = function () {
                     $location.path('routes/' + item.route.id); // path not hash
                 };
             })

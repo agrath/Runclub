@@ -16,7 +16,8 @@
             "js/vendor/jquery.tiptip.js",
             "js/bootstrap.js",
             "js/popper.js",
-            "js/vendor/Chart.js"
+            "js/vendor/Chart.js",
+            "js/vendor/html2canvas.js"
         ]
     }
 ]

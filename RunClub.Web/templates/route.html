@@ -141,6 +141,7 @@
                     </div>
                 </div>
                 <a ng-href="/data/{{route.id}}.gpx" download="{{route.name}}.gpx" href="#" class="btn btn-success btn-sm pull-right" role="button" aria-disabled="true" style="margin-right:10px;">Download GPX file</a>
+                <a ng-click="generateImage()" ng-show="loaded" href="#" class="btn btn-success btn-sm pull-right" role="button" aria-disabled="true" style="margin-right:10px;">Save image</a>
             </div>
         </div>
     </div>
