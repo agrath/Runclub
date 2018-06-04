@@ -386,9 +386,6 @@
     <Content Include="data\db.json" />
     <Content Include="data\ekBNMjnO.gpx" />
     <Content Include="data\fSUqNwtc.gpx" />
-    <Content Include="data\gxL4QNuC-manual.gpx">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="data\gxL4QNuC.gpx" />
     <Content Include="data\jDjWpnqp.gpx" />
     <Content Include="data\kPCzjCbW.gpx" />
