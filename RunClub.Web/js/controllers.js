@@ -87,7 +87,7 @@ app.controller('showRouteController', function ($scope, $rootScope, RouteService
                     //rescale map
                     $scope.fitBounds();
                     //export as image
-                    canvas.toBlob(function (blob) {
+                    canvas.toBlobHD(function (blob) {
                         saveAs(blob, $scope.id + '.png');
 
                         jQuery(canvas).remove();

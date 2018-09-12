@@ -1,5 +1,84 @@
 ﻿[
     {
+        "id": "QFAZeeUz",
+        "name": "Auckland Domain 5k Fun run",
+        "enabled": true,
+        "description": "A great short loop through the Auckland Domain with a bit of everything - trail, hills, road and cross country!",
+        "meetingPoint": {
+            "label": "Auckland Museum",
+            "latitude": -36.8603838,
+            "longitude": 174.77782219999995,
+            "offset": {
+                "left": "5px",
+                "top": "5px"
+            },
+            "placement": "top"
+        },
+        "mapDefaults": {
+            "center": {
+                "latitude": -36.848448,
+                "longitude": 174.762191
+            },
+            "zoom": 12
+        },
+        "distanceOptions": [
+            5
+        ],
+        "distanceMarkerAlignments": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "terrain": [
+            {
+                "type": "trail",
+                "label": "Trail",
+                "percent": 25
+            },
+            {
+                "type": "xcountry",
+                "label": "Cross country",
+                "percent": 25
+            },
+            {
+                "type": "urban",
+                "label": "Road/Footpath",
+                "percent": 50
+            }
+        ],
+        "placesOfInterestOptions": [
+            {
+                "type": "parking",
+                "label": "Parking",
+                "visible": true,
+                "zIndex": 40
+            },
+            {
+                "type": "public-bathroom",
+                "label": "Public bathroom",
+                "visible": true,
+                "zIndex": 30
+            },
+            {
+                "type": "water-fountain",
+                "label": "Water fountain",
+                "visible": true,
+                "zIndex": 20
+            },
+            {
+                "type": "photo-camera",
+                "label": "Photo opportunity",
+                "visible": true,
+                "zIndex": 10
+            }
+        ],
+        "placesOfInterest": [
+
+        ]
+    },
+    {
         "id": "fSUqNwtc",
         "name": "Bucklands Beach to Panmure Basin",
         "enabled": true,
@@ -104,11 +183,11 @@
             }
         ],
         "placesOfInterest": [
-			{
+            {
                 "type": "water-fountain",
-				"latitude": -36.89171567,
-				"longitude": 174.87968679
-			},
+                "latitude": -36.89171567,
+                "longitude": 174.87968679
+            },
             {
                 "type": "public-bathroom",
                 "latitude": -36.90346,
@@ -3404,21 +3483,21 @@
             }
         ],
         "placesOfInterest": [
-			{
-				"type": "water-fountain",
-				"latitude": -36.86216622,
-				"longitude": 174.77030459
-			},
-			{
-				"type": "public-bathroom",
-				"latitude": -36.85906426,
-				"longitude": 174.77414955
-			},
-			{
-				"type": "water-fountain",
-				"latitude": -36.86411928,
-				"longitude": 174.77141270
-			},
+            {
+                "type": "water-fountain",
+                "latitude": -36.86216622,
+                "longitude": 174.77030459
+            },
+            {
+                "type": "public-bathroom",
+                "latitude": -36.85906426,
+                "longitude": 174.77414955
+            },
+            {
+                "type": "water-fountain",
+                "latitude": -36.86411928,
+                "longitude": 174.77141270
+            },
             {
                 "type": "public-bathroom",
                 "latitude": -36.8472036,

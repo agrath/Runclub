@@ -9,14 +9,14 @@
 			<img alt="Map preview" ng-if="item.route && item.route.staticMapImage" ng-src="{{item.route.staticMapImage}}" ng-click="item.view()">
 		</div>
 		<div class="info">
-			<div class="title-container">
-				<h2 class="title" ng-if="item.route">{{ item.route.name }}</h2>
-				<h2 class="title" ng-if="!item.route">{{ item.title }}</h2>
-			</div>
+            <div class="title-container">
+                <h2 class="title" ng-if="item.route">{{ item.title || item.route.name }}</h2>
+                <h2 class="title" ng-if="!item.route">{{ item.title }}</h2>
+            </div>
 			<div class="footer">
 				<div class="row">
 					<div class="col-md-12">
-						<p class="desc" ng-if="item.route" data-ellipsis data-ng-bind="item.route.description"></p>
+						<p class="desc" ng-if="item.route" data-ellipsis data-ng-bind="item.description || item.route.description"></p>
 						<p class="desc" ng-if="!item.route" data-ellipsis data-ng-bind="item.description"></p>
 					</div>
 				</div>
