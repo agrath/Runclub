@@ -614,6 +614,7 @@ app.directive('gpxElevationChart', function (style, $rootScope) {
                 labels: []
             };
             //console.log('sampleElevationData', data);
+            if (!data || data.length == 0) return o;
             var last = new google.maps.LatLng(data[0].latitude, data[0].longitude);
             var distance = 0, distanceSteppedMax = 0, elevation = 0;
             var lastElevation = data[0].elevation;
@@ -659,6 +660,10 @@ app.directive('gpxElevationChart', function (style, $rootScope) {
                 var config = helper.getDefaultChartConfig();
                 var data = helper.getElevationData(gpx);
                 var chartData = helper.sampleElevationData(data);
+                if (chartData.data.length === 0) {
+                    element.hide();
+                    return;
+                }
                 config.data.labels = chartData.labels;
                 config.data.datasets[0].data = chartData.data;
                 config.data.points = chartData.points;
