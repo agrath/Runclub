@@ -7,7 +7,7 @@
         },
         link: function (scope, elem, attrs) {
             var vars = scope.ngIncludeVariables();
-            console.log('vars', vars);
+            //console.log('vars', vars);
             Object.keys(vars).forEach(function (key) {
                 scope[key] = vars[key];
             });
@@ -268,7 +268,7 @@ app.directive('gpxViewer', function ($rootScope, $timeout, style) {
             },
             addMarkerToMap: function (data, map) {
                 var point = new google.maps.LatLng(data.latitude, data.longitude);
-                console.log('marker', data, data.visible);
+                //console.log('marker', data, data.visible);
                 var marker = new google.maps.Marker({
                     position: point,
                     map: data.visible ? map : null,
@@ -315,7 +315,7 @@ app.directive('gpxViewer', function ($rootScope, $timeout, style) {
             },
             addMeetingPointToMap: function (scope, meetingPoint, route, map) {
                 //console.log('meetingPoint', meetingPoint);
-
+                if (!meetingPoint) return;
                 var marker = new google.maps.Marker({
                     position: new google.maps.LatLng(meetingPoint.latitude, meetingPoint.longitude),
                     map: map,
@@ -337,6 +337,7 @@ app.directive('gpxViewer', function ($rootScope, $timeout, style) {
                     fontColor: '#000000',
                     fontSize: '14px',
                     showCloseButton: true,
+                    panOnOpen: false,
                     callbacks: {
                         afterClose: function () {
                             //console.log('meetingPoint.close', this, route);
@@ -477,8 +478,9 @@ app.directive('gpxViewer', function ($rootScope, $timeout, style) {
                 //compute the polyline length
                 var lengthInMeters = google.maps.geometry.spherical.computeLength(polyline.getPath());
                 //console.log('route length is ', lengthInMeters);
-
-                route.meetingPoint.g = helper.addMeetingPointToMap($scope, route.meetingPoint, $scope.route, map);
+                if (route.meetingPoint) {
+                    route.meetingPoint.g = helper.addMeetingPointToMap($scope, route.meetingPoint, $scope.route, map);
+                }
 
                 var distanceMarkers = helper.getDistanceMarkers(polyline, lengthInMeters, 1000, helper.distanceMarkerIcons, route.distanceMarkerAlignments);
                 $scope.distanceMarkers = distanceMarkers;
@@ -614,6 +616,7 @@ app.directive('gpxElevationChart', function (style, $rootScope) {
                 labels: []
             };
             //console.log('sampleElevationData', data);
+            if (!data || data.length == 0) return o;
             var last = new google.maps.LatLng(data[0].latitude, data[0].longitude);
             var distance = 0, distanceSteppedMax = 0, elevation = 0;
             var lastElevation = data[0].elevation;
@@ -659,6 +662,10 @@ app.directive('gpxElevationChart', function (style, $rootScope) {
                 var config = helper.getDefaultChartConfig();
                 var data = helper.getElevationData(gpx);
                 var chartData = helper.sampleElevationData(data);
+                if (chartData.data.length === 0) {
+                    element.hide();
+                    return;
+                }
                 config.data.labels = chartData.labels;
                 config.data.datasets[0].data = chartData.data;
                 config.data.points = chartData.points;
