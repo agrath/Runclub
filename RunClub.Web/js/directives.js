@@ -7,7 +7,7 @@
         },
         link: function (scope, elem, attrs) {
             var vars = scope.ngIncludeVariables();
-            console.log('vars', vars);
+            //console.log('vars', vars);
             Object.keys(vars).forEach(function (key) {
                 scope[key] = vars[key];
             });
@@ -268,7 +268,7 @@ app.directive('gpxViewer', function ($rootScope, $timeout, style) {
             },
             addMarkerToMap: function (data, map) {
                 var point = new google.maps.LatLng(data.latitude, data.longitude);
-                console.log('marker', data, data.visible);
+                //console.log('marker', data, data.visible);
                 var marker = new google.maps.Marker({
                     position: point,
                     map: data.visible ? map : null,
