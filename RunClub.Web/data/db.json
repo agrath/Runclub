@@ -1,5 +1,158 @@
 ﻿[
     {
+        "id": "kfESfWTm",
+        "name": "The Belmont Doughnut Run",
+        "enabled": true,
+        "description": "Donuts, who doesn't enjoy good coffee and a donut after a long run?! This course take in the fabulous devonport green route and tackles North Head before heading back to Hauraki corner and the aforementioned Coffee and Donuts.",
+        "meetingPoint": {
+            "label": "Little and Friday, 43 Eversleigh Rd, Belmont",
+            "latitude": -36.803965,
+            "longitude": 174.783673,
+            "offset": {
+                "left": "5px",
+                "top": "5px"
+            },
+            "placement": "top"
+        },
+        "mapDefaults": {
+            "center": {
+                "latitude": -36.848448,
+                "longitude": 174.762191
+            },
+            "zoom": 12
+        },
+        "distanceOptions": [
+            15
+        ],
+        "distanceMarkerAlignments": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "terrain": [
+            {
+                "type": "urban",
+                "label": "Road/Footpath",
+                "percent": 90
+            },
+            {
+                "type": "trail",
+                "label": "Trail",
+                "percent": 10
+            }
+        ],
+        "placesOfInterestOptions": [
+            {
+                "type": "parking",
+                "label": "Parking",
+                "visible": true,
+                "zIndex": 40
+            },
+            {
+                "type": "public-bathroom",
+                "label": "Public bathroom",
+                "visible": true,
+                "zIndex": 30
+            },
+            {
+                "type": "water-fountain",
+                "label": "Water fountain",
+                "visible": true,
+                "zIndex": 20
+            },
+            {
+                "type": "photo-camera",
+                "label": "Photo opportunity",
+                "visible": true,
+                "zIndex": 10
+            }
+        ],
+        "placesOfInterest": [
+            {
+                "type": "parking",
+                "latitude": -36.78357470,
+                "longitude": 174.77556914
+            },
+            {
+                "type": "public-bathroom",
+                "latitude": -36.83139,
+                "longitude": 174.797531
+            },
+            {
+                "type": "public-bathroom",
+                "latitude": -36.8129425,
+                "longitude": 174.801651
+            },
+            {
+                "type": "public-bathroom",
+                "latitude": -36.83085,
+                "longitude": 174.80275
+            },
+            {
+                "type": "water-fountain",
+                "latitude": -36.8319359,
+                "longitude": 174.79744
+            },
+            {
+                "type": "water-fountain",
+                "latitude": -36.81226,
+                "longitude": 174.800735
+            },
+            {
+                "type": "public-bathroom",
+                "latitude": -36.7841873,
+                "longitude": 174.7752
+            },
+            {
+                "type": "public-bathroom",
+                "latitude": -36.81257,
+                "longitude": 174.781311
+            },
+            {
+                "type": "water-fountain",
+                "latitude": -36.79283,
+                "longitude": 174.780151
+            },
+            {
+                "type": "water-fountain",
+                "latitude": -36.7970123,
+                "longitude": 174.778915
+            },
+            {
+                "type": "water-fountain",
+                "latitude": -36.7844849,
+                "longitude": 174.775269
+            },
+            {
+                "type": "water-fountain",
+                "latitude": -36.81335,
+                "longitude": 174.802811
+            },
+            {
+                "type": "public-bathroom",
+                "latitude": -36.8198433,
+                "longitude": 174.806
+            },
+            {
+                "type": "public-bathroom",
+                "latitude": -36.79384,
+                "longitude": 174.781586
+            }
+        ]
+    },
+    {
         "id": "QFAZeeUz",
         "name": "Auckland Domain 5k Fun run",
         "enabled": true,
