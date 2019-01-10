@@ -504,6 +504,7 @@
     <Content Include="data\team.json" />
     <Content Include="data\QFAZeeUz.gpx" />
     <Content Include="data\bgTLnnvq.gpx" />
+    <Content Include="data\kfESfWTm.gpx" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="Views\Web.config">
       <SubType>Designer</SubType>
