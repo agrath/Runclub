@@ -340,16 +340,20 @@
     },
     {
         "timestamp": "2019-04-14T08:00:00",
-        "id": "xQDVhtqv"
+        "title": "Waterfront Half Marathon",
+        "description": "No group Sunday run this week. Join us at the Waterfront Half Marathon event",
+        "link": "https://waterfronthalfmarathon.co.nz/"
     },
     {
         "timestamp": "2019-04-21T08:00:00",
-        "id": "BbXfrhbt"
+        "id": "xQDVhtqv"
     },
     {
         "timestamp": "2019-04-28T08:00:00",
+        "id": "BbXfrhbt"
+    },
+    {
+        "timestamp": "2019-05-05T08:00:00",
         "id": "gxL4QNuC"
     }
-
-
 ]
