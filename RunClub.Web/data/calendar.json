@@ -387,5 +387,61 @@
   {
     "timestamp": "2019-06-23T08:00:00",
     "id": "kfESfWTm"
+  },
+  {
+    "timestamp": "2019-06-30T08:00:00",
+    "id": "ekBNMjnO"
+  },
+  {
+    "timestamp": "2019-07-07T08:00:00",
+    "id": "viyVJdOl"
+  },
+  {
+    "timestamp": "2019-07-14T07:15:00",
+    "title": "Run Auckland: Paremoremo",
+    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
+    "link": "http://runauckland.co.nz/"
+  },
+  {
+    "timestamp": "2019-07-21T08:00:00",
+    "id": "fSUqNwtc"
+  },
+  {
+    "timestamp": "2019-07-28T08:00:00",
+    "id": "BbXfrhbt"
+  },
+  {
+    "timestamp": "2019-08-04T07:15:00",
+    "title": "Run Auckland: Waiatarua Reserve",
+    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
+    "link": "http://runauckland.co.nz/"
+  },
+  {
+    "timestamp": "2019-08-11T08:00:00",
+    "id": "bHS9WMha"
+  },
+  {
+    "timestamp": "2019-08-18T08:00:00",
+    "id": "ZCgPwAZm"
+  },
+  {
+    "timestamp": "2019-08-25T07:15:00",
+    "title": "Run Auckland: Millwater",
+    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
+    "link": "http://runauckland.co.nz/"
+  },
+  {
+    "timestamp": "2019-09-01T08:00:00",
+    "id": "BAYAzUnc"
+  },
+  {
+    "timestamp": "2019-09-08T07:15:00",
+    "title": "North Shore Half Marathon",
+    "description": "No group Sunday run this week. Join us at the North Shore Half Marathon",
+    "link": "http://northshoremarathon.co.nz"
+  },
+  {
+    "timestamp": "2019-09-15T08:00:00",
+    "id": "kwaBpRSC"
   }
 ]
