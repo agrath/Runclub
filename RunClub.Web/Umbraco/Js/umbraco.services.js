@@ -580,14 +580,12 @@
                     asset.state = 'loading';
                     LazyLoad.css(appendRnd(path), function () {
                         if (!scope) {
-                            asset.state = 'loaded';
-                            asset.deferred.resolve(true);
-                        } else {
-                            asset.state = 'loaded';
-                            angularHelper.safeApply(scope, function () {
-                                asset.deferred.resolve(true);
-                            });
+                            scope = $rootScope;
                         }
+                        asset.state = 'loaded';
+                        angularHelper.safeApply(scope, function () {
+                            asset.deferred.resolve(true);
+                        });
                     });
                 } else if (asset.state === 'loaded') {
                     asset.deferred.resolve(true);
@@ -618,14 +616,12 @@
                     asset.state = 'loading';
                     LazyLoad.js(appendRnd(path), function () {
                         if (!scope) {
-                            asset.state = 'loaded';
-                            asset.deferred.resolve(true);
-                        } else {
-                            asset.state = 'loaded';
-                            angularHelper.safeApply(scope, function () {
-                                asset.deferred.resolve(true);
-                            });
+                            scope = $rootScope;
                         }
+                        asset.state = 'loaded';
+                        angularHelper.safeApply(scope, function () {
+                            asset.deferred.resolve(true);
+                        });
                     });
                 } else if (asset.state === 'loaded') {
                     asset.deferred.resolve(true);
@@ -673,8 +669,7 @@
                             asset.state = 'loading';
                             assets.push(asset);
                         }
-                        //we need to always push to the promises collection to monitor correct
-                        //execution
+                        //we need to always push to the promises collection to monitor correct execution
                         promises.push(asset.deferred.promise);
                     }
                 });
@@ -690,8 +685,7 @@
                 function assetLoaded(asset) {
                     asset.state = 'loaded';
                     if (!scope) {
-                        asset.deferred.resolve(true);
-                        return;
+                        scope = $rootScope;
                     }
                     angularHelper.safeApply(scope, function () {
                         asset.deferred.resolve(true);
@@ -1032,21 +1026,22 @@
                             buttons.subButtons.push(createButtonDefinition(buttonOrder[i]));
                         }
                     }
-                    //if we are not creating, then we should add unpublish too,
+                    // if we are not creating, then we should add unpublish too,
                     // so long as it's already published and if the user has access to publish
+                    // and the user has access to unpublish (may have been removed via Event)
                     if (!args.create) {
-                        if (args.content.publishDate && _.contains(args.content.allowedActions, 'U')) {
+                        if (args.content.publishDate && _.contains(args.content.allowedActions, 'U') && _.contains(args.content.allowedActions, 'Z')) {
                             buttons.subButtons.push(createButtonDefinition('Z'));
                         }
                     }
                 }
-                // If we have a scheduled publish or unpublish date change the default button to 
+                // If we have a scheduled publish date change the default button to 
                 // "save" and update the label to "save and schedule
-                if (args.content.releaseDate || args.content.removeDate) {
+                if (args.content.releaseDate) {
                     // if save button is alread the default don't change it just update the label
                     if (buttons.defaultButton && buttons.defaultButton.letter === 'A') {
                         buttons.defaultButton.labelKey = 'buttons_saveAndSchedule';
-                        return;
+                        return buttons;
                     }
                     if (buttons.defaultButton && buttons.subButtons && buttons.subButtons.length > 0) {
                         // save a copy of the default so we can push it to the sub buttons later
@@ -1715,13 +1710,6 @@
                     }
                 }
                 return crop;
-            },
-            centerInsideViewPort: function (img, viewport) {
-                var left = viewport.width / 2 - img.width / 2, top = viewport.height / 2 - img.height / 2;
-                return {
-                    left: left,
-                    top: top
-                };
             },
             alignToCoordinates: function (image, center, viewport) {
                 var min_left = image.width - viewport.width;
@@ -2588,8 +2576,8 @@
     });
     angular.module('umbraco.services').factory('helpService', function ($http, $q, umbRequestHelper) {
         var helpTopics = {};
-        var defaultUrl = 'http://our.umbraco.org/rss/help';
-        var tvUrl = 'http://umbraco.tv/feeds/help';
+        var defaultUrl = 'https://our.umbraco.com/rss/help';
+        var tvUrl = 'https://umbraco.tv/feeds/help';
         function getCachedHelp(url) {
             if (helpTopics[url]) {
                 return helpTopics[cacheKey];
@@ -3096,7 +3084,13 @@
                         collectedIcons = [];
                         var c = '.icon-';
                         for (var i = document.styleSheets.length - 1; i >= 0; i--) {
-                            var classes = document.styleSheets[i].rules || document.styleSheets[i].cssRules;
+                            var classes = null;
+                            try {
+                                classes = document.styleSheets[i].rules || document.styleSheets[i].cssRules;
+                            } catch (e) {
+                                console.warn('Can\'t read the css rules of: ' + document.styleSheets[i].href, e);
+                                continue;
+                            }
                             if (classes !== null) {
                                 for (var x = 0; x < classes.length; x++) {
                                     var cur = classes[x];
@@ -3214,6 +3208,27 @@
         };
     }
     angular.module('umbraco.services').factory('imageHelper', imageHelper);
+    (function () {
+        'use strict';
+        function javascriptLibraryService($q, $http, umbRequestHelper) {
+            var existingLocales = [];
+            function getSupportedLocalesForMoment() {
+                var deferred = $q.defer();
+                if (existingLocales.length === 0) {
+                    umbRequestHelper.resourcePromise($http.get(umbRequestHelper.getApiUrl('backOfficeAssetsApiBaseUrl', 'GetSupportedMomentLocales')), 'Failed to get cultures').then(function (locales) {
+                        existingLocales = locales;
+                        deferred.resolve(existingLocales);
+                    });
+                } else {
+                    deferred.resolve(existingLocales);
+                }
+                return deferred.promise;
+            }
+            var service = { getSupportedLocalesForMoment: getSupportedLocalesForMoment };
+            return service;
+        }
+        angular.module('umbraco.services').factory('javascriptLibraryService', javascriptLibraryService);
+    }());
     // This service was based on OpenJS library available in BSD License
     // http://www.openjs.com/scripts/events/keyboard_shortcuts/index.php
     function keyboardService($window, $timeout) {
@@ -3721,15 +3736,16 @@
                 for (var i = 0; selection.length > i; i++) {
                     var selectedItem = selection[i];
                     // if item.id is 2147483647 (int.MaxValue) use item.key
-                    if (item.id !== 2147483647 && item.id === selectedItem.id || item.key === selectedItem.key) {
+                    if (item.id !== 2147483647 && item.id === selectedItem.id || item.key && item.key === selectedItem.key) {
                         isSelected = true;
                     }
                 }
                 if (!isSelected) {
-                    selection.push({
-                        id: item.id,
-                        key: item.key
-                    });
+                    var obj = { id: item.id };
+                    if (item.key) {
+                        obj.key = item.key;
+                    }
+                    selection.push(obj);
                     item.selected = true;
                 }
             }
@@ -3748,7 +3764,7 @@
                 for (var i = 0; selection.length > i; i++) {
                     var selectedItem = selection[i];
                     // if item.id is 2147483647 (int.MaxValue) use item.key
-                    if (item.id !== 2147483647 && item.id === selectedItem.id || item.key === selectedItem.key) {
+                    if (item.id !== 2147483647 && item.id === selectedItem.id || item.key && item.key === selectedItem.key) {
                         selection.splice(i, 1);
                         item.selected = false;
                     }
@@ -3805,11 +3821,12 @@
                 selection.length = 0;
                 for (var i = 0; i < items.length; i++) {
                     var item = items[i];
+                    var obj = { id: item.id };
+                    if (item.key) {
+                        obj.key = item.key;
+                    }
                     if (checkbox.checked) {
-                        selection.push({
-                            id: item.id,
-                            key: item.key
-                        });
+                        selection.push(obj);
                     } else {
                         clearSelection = true;
                     }
@@ -3839,7 +3856,7 @@
                     for (var selectedIndex = 0; selection.length > selectedIndex; selectedIndex++) {
                         var selectedItem = selection[selectedIndex];
                         // if item.id is 2147483647 (int.MaxValue) use item.key
-                        if (item.id !== 2147483647 && item.id === selectedItem.id || item.key === selectedItem.key) {
+                        if (item.id !== 2147483647 && item.id === selectedItem.id || item.key && item.key === selectedItem.key) {
                             numberOfSelectedItem++;
                         }
                     }
@@ -3901,7 +3918,7 @@
                     arr.push(value);
                 });
                 //we need to use 'apply' to call intersection with an array of arrays,
-                //see: http://stackoverflow.com/a/16229480/694494
+                //see: https://stackoverflow.com/a/16229480/694494
                 var intersectPermissions = _.intersection.apply(_, arr);
                 return {
                     canCopy: _.contains(intersectPermissions, 'O'),
@@ -3914,7 +3931,7 @@
                     //Magic Char = M
                     canPublish: _.contains(intersectPermissions, 'U'),
                     //Magic Char = U
-                    canUnpublish: _.contains(intersectPermissions, 'U')
+                    canUnpublish: _.contains(intersectPermissions, 'U')    //Magic Char = Z (however UI says it can't be set, so if we can publish 'U' we can unpublish)
                 };
             }
             var service = {
@@ -4416,7 +4433,7 @@
 * @name umbraco.services.mediaHelper
 * @description A helper object used for dealing with media items
 **/
-    function mediaHelper(umbRequestHelper) {
+    function mediaHelper(umbRequestHelper, $log) {
         //container of fileresolvers
         var _mediaFileResolvers = {};
         return {
@@ -4424,11 +4441,11 @@
          * @ngdoc function
          * @name umbraco.services.mediaHelper#getImagePropertyValue
          * @methodOf umbraco.services.mediaHelper
-         * @function    
+         * @function
          *
          * @description
          * Returns the file path associated with the media property if there is one
-         * 
+         *
          * @param {object} options Options object
          * @param {object} options.mediaModel The media object to retrieve the image path from
          * @param {object} options.imageOnly Optional, if true then will only return a path if the media item is an image
@@ -4484,11 +4501,11 @@
          * @ngdoc function
          * @name umbraco.services.mediaHelper#getImagePropertyValue
          * @methodOf umbraco.services.mediaHelper
-         * @function    
+         * @function
          *
          * @description
          * Returns the actual image path associated with the image property if there is one
-         * 
+         *
          * @param {object} options Options object
          * @param {object} options.imageModel The media object to retrieve the image path from
          */
@@ -4505,11 +4522,11 @@
          * @ngdoc function
          * @name umbraco.services.mediaHelper#getThumbnail
          * @methodOf umbraco.services.mediaHelper
-         * @function    
+         * @function
          *
          * @description
          * formats the display model used to display the content to the model used to save the content
-         * 
+         *
          * @param {object} options Options object
          * @param {object} options.imageModel The media object to retrieve the image path from
          */
@@ -4530,43 +4547,39 @@
          * @ngdoc function
          * @name umbraco.services.mediaHelper#resolveFileFromEntity
          * @methodOf umbraco.services.mediaHelper
-         * @function    
+         * @function
          *
          * @description
          * Gets the media file url for a media entity returned with the entityResource
-         * 
+         *
          * @param {object} mediaEntity A media Entity returned from the entityResource
          * @param {boolean} thumbnail Whether to return the thumbnail url or normal url
          */
             resolveFileFromEntity: function (mediaEntity, thumbnail) {
-                if (!angular.isObject(mediaEntity.metaData)) {
-                    throw 'Cannot resolve the file url from the mediaEntity, it does not contain the required metaData';
+                if (!angular.isObject(mediaEntity.metaData) || !mediaEntity.metaData.MediaPath) {
+                    //don't throw since this image legitimately might not contain a media path, but output a warning
+                    $log.warn('Cannot resolve the file url from the mediaEntity, it does not contain the required metaData');
+                    return null;
                 }
-                var values = _.values(mediaEntity.metaData);
-                for (var i = 0; i < values.length; i++) {
-                    var val = values[i];
-                    if (angular.isObject(val) && val.PropertyEditorAlias) {
-                        for (var resolver in _mediaFileResolvers) {
-                            if (val.PropertyEditorAlias === resolver) {
-                                //we need to format a property variable that coincides with how the property would be structured
-                                // if it came from the mediaResource just to keep things slightly easier for the file resolvers.
-                                var property = { value: val.Value };
-                                return _mediaFileResolvers[resolver](property, mediaEntity, thumbnail);
-                            }
-                        }
+                if (thumbnail) {
+                    if (this.detectIfImageByExtension(mediaEntity.metaData.MediaPath)) {
+                        return this.getThumbnailFromPath(mediaEntity.metaData.MediaPath);
+                    } else {
+                        return null;
                     }
+                } else {
+                    return mediaEntity.metaData.MediaPath;
                 }
-                return '';
             },
             /**
          * @ngdoc function
          * @name umbraco.services.mediaHelper#resolveFile
          * @methodOf umbraco.services.mediaHelper
-         * @function    
+         * @function
          *
          * @description
          * Gets the media file url for a media object returned with the mediaResource
-         * 
+         *
          * @param {object} mediaEntity A media Entity returned from the entityResource
          * @param {boolean} thumbnail Whether to return the thumbnail url or normal url
          */
@@ -4636,11 +4649,11 @@
          * @ngdoc function
          * @name umbraco.services.mediaHelper#scaleToMaxSize
          * @methodOf umbraco.services.mediaHelper
-         * @function    
+         * @function
          *
          * @description
          * Finds the corrct max width and max height, given maximum dimensions and keeping aspect ratios
-         * 
+         *
          * @param {number} maxSize Maximum width & height
          * @param {number} width Current width
          * @param {number} height Current height
@@ -4680,11 +4693,11 @@
          * @ngdoc function
          * @name umbraco.services.mediaHelper#getThumbnailFromPath
          * @methodOf umbraco.services.mediaHelper
-         * @function    
+         * @function
          *
          * @description
          * Returns the path to the thumbnail version of a given media library image path
-         * 
+         *
          * @param {string} imagePath Image path, ex: /media/1234/my-image.jpg
          */
             getThumbnailFromPath: function (imagePath) {
@@ -4702,11 +4715,11 @@
          * @ngdoc function
          * @name umbraco.services.mediaHelper#detectIfImageByExtension
          * @methodOf umbraco.services.mediaHelper
-         * @function    
+         * @function
          *
          * @description
          * Returns true/false, indicating if the given path has an allowed image extension
-         * 
+         *
          * @param {string} imagePath Image path, ex: /media/1234/my-image.jpg
          */
             detectIfImageByExtension: function (imagePath) {
@@ -4991,6 +5004,7 @@
         var mainTreeEventHandler = null;
         //tracks the user profile dialog
         var userDialog = null;
+        var syncTreePromise;
         function setMode(mode) {
             switch (mode) {
             case 'tree':
@@ -5035,6 +5049,7 @@
                 appState.setSectionState('showSearchResults', false);
                 appState.setGlobalState('stickyNavigation', false);
                 appState.setGlobalState('showTray', false);
+                appState.setMenuState('currentNode', null);
                 if (appState.getGlobalState('isTablet') === true) {
                     appState.setGlobalState('showNavigation', false);
                 }
@@ -5119,6 +5134,11 @@
                 //when a tree is loaded into a section, we need to put it into appState
                 mainTreeEventHandler.bind('treeLoaded', function (ev, args) {
                     appState.setTreeState('currentRootNode', args.tree);
+                    if (syncTreePromise) {
+                        mainTreeEventHandler.syncTree(syncTreePromise.args).then(function (syncArgs) {
+                            syncTreePromise.resolve(syncArgs);
+                        });
+                    }
                 });
                 //when a tree node is synced this event will fire, this allows us to set the currentNode
                 mainTreeEventHandler.bind('treeSynced', function (ev, args) {
@@ -5219,11 +5239,15 @@
                     throw 'args.tree cannot be null';
                 }
                 if (mainTreeEventHandler) {
-                    //returns a promise
-                    return mainTreeEventHandler.syncTree(args);
+                    if (mainTreeEventHandler.syncTree) {
+                        //returns a promise,
+                        return mainTreeEventHandler.syncTree(args);
+                    }
                 }
-                //couldn't sync
-                return angularHelper.rejectedPromise();
+                //create a promise and resolve it later
+                syncTreePromise = $q.defer();
+                syncTreePromise.args = args;
+                return syncTreePromise.promise;
             },
             /**
             Internal method that should ONLY be used by the legacy API wrapper, the legacy API used to
@@ -5360,7 +5384,7 @@
                     if (menuAction.length !== 2) {
                         //if it is not two parts long then this most likely means that it's a legacy action
                         var js = action.metaData['jsAction'].replace('javascript:', '');
-                        //there's not really a different way to acheive this except for eval
+                        //there's not really a different way to achieve this except for eval
                         eval(js);
                     } else {
                         var menuActionService = $injector.get(menuAction[0]);
@@ -5521,12 +5545,13 @@
 	     * hides the currently open dialog
 	     */
             hideDialog: function (showMenu) {
-                setMode('default');
                 if (showMenu) {
                     this.showMenu(undefined, {
                         skipDefault: true,
                         node: appState.getMenuState('currentNode')
                     });
+                } else {
+                    setMode('default');
                 }
             },
             /**
@@ -5902,7 +5927,7 @@
  * @ngdoc service
  * @name umbraco.services.searchService
  *
- *  
+ *
  * @description
  * Service for handling the main application search, can currently search content, media and members
  *
@@ -5915,10 +5940,10 @@
  *          angular.forEach(results, function(result){
  *                  //returns:
  *                  {name: "name", id: 1234, menuUrl: "url", editorPath: "url", metaData: {}, subtitle: "/path/etc" }
- *           })          
- *           var result = 
- *       }) 
- * </pre> 
+ *           })
+ *           var result =
+ *       })
+ * </pre>
  */
     angular.module('umbraco.services').factory('searchService', function ($q, $log, entityResource, contentResource, umbRequestHelper, $injector, searchResultFormatter) {
         return {
@@ -5959,7 +5984,7 @@
                 if (!args.term) {
                     throw 'args.term is required';
                 }
-                return entityResource.search(args.term, 'Document', args.searchFrom, args.canceler).then(function (data) {
+                return entityResource.search(args.term, 'Document', args.searchFrom, args.canceler, args.dataTypeId).then(function (data) {
                     _.each(data, function (item) {
                         searchResultFormatter.configureContentResult(item);
                     });
@@ -5981,7 +6006,7 @@
                 if (!args.term) {
                     throw 'args.term is required';
                 }
-                return entityResource.search(args.term, 'Media', args.searchFrom).then(function (data) {
+                return entityResource.search(args.term, 'Media', args.searchFrom, args.canceler, args.dataTypeId).then(function (data) {
                     _.each(data, function (item) {
                         searchResultFormatter.configureMediaResult(item);
                     });
@@ -6006,7 +6031,7 @@
                 return entityResource.searchAll(args.term, args.canceler).then(function (data) {
                     _.each(data, function (resultByType) {
                         //we need to format the search result data to include things like the subtitle, urls, etc...
-                        // this is done with registered angular services as part of the SearchableTreeAttribute, if that 
+                        // this is done with registered angular services as part of the SearchableTreeAttribute, if that
                         // is not found, than we format with the default formatter
                         var formatterMethod = searchResultFormatter.configureDefaultResult;
                         //check if a custom formatter is specified...
@@ -6733,33 +6758,33 @@
  * @ngdoc service
  * @name umbraco.services.tinyMceService
  *
- *  
+ *
  * @description
  * A service containing all logic for all of the Umbraco TinyMCE plugins
  */
-    function tinyMceService(dialogService, $log, imageHelper, $http, $timeout, macroResource, macroService, $routeParams, umbRequestHelper, angularHelper, userService) {
+    function tinyMceService($log, imageHelper, $http, $timeout, macroResource, macroService, $routeParams, umbRequestHelper, angularHelper, userService) {
         return {
             /**
-        * @ngdoc method
-        * @name umbraco.services.tinyMceService#configuration
-        * @methodOf umbraco.services.tinyMceService
-        *
-        * @description
-        * Returns a collection of plugins available to the tinyMCE editor
-        *
-        */
+		 * @ngdoc method
+		 * @name umbraco.services.tinyMceService#configuration
+		 * @methodOf umbraco.services.tinyMceService
+		 *
+		 * @description
+		 * Returns a collection of plugins available to the tinyMCE editor
+		 *
+		 */
             configuration: function () {
                 return umbRequestHelper.resourcePromise($http.get(umbRequestHelper.getApiUrl('rteApiBaseUrl', 'GetConfiguration'), { cache: true }), 'Failed to retrieve tinymce configuration');
             },
             /**
-        * @ngdoc method
-        * @name umbraco.services.tinyMceService#defaultPrevalues
-        * @methodOf umbraco.services.tinyMceService
-        *
-        * @description
-        * Returns a default configration to fallback on in case none is provided
-        *
-        */
+		 * @ngdoc method
+		 * @name umbraco.services.tinyMceService#defaultPrevalues
+		 * @methodOf umbraco.services.tinyMceService
+		 *
+		 * @description
+		 * Returns a default configration to fallback on in case none is provided
+		 *
+		 */
             defaultPrevalues: function () {
                 var cfg = {};
                 cfg.toolbar = [
@@ -6786,16 +6811,16 @@
                 return cfg;
             },
             /**
-        * @ngdoc method
-        * @name umbraco.services.tinyMceService#createInsertEmbeddedMedia
-        * @methodOf umbraco.services.tinyMceService
-        *
-        * @description
-        * Creates the umbrco insert embedded media tinymce plugin
-        *
-        * @param {Object} editor the TinyMCE editor instance        
-        * @param {Object} $scope the current controller scope
-        */
+		 * @ngdoc method
+		 * @name umbraco.services.tinyMceService#createInsertEmbeddedMedia
+		 * @methodOf umbraco.services.tinyMceService
+		 *
+		 * @description
+		 * Creates the umbrco insert embedded media tinymce plugin
+		 *
+		 * @param {Object} editor the TinyMCE editor instance
+		 * @param {Object} $scope the current controller scope
+		 */
             createInsertEmbeddedMedia: function (editor, scope, callback) {
                 editor.addButton('umbembeddialog', {
                     icon: 'custom icon-tv',
@@ -6811,16 +6836,16 @@
                 editor.insertContent(preview);
             },
             /**
-        * @ngdoc method
-        * @name umbraco.services.tinyMceService#createMediaPicker
-        * @methodOf umbraco.services.tinyMceService
-        *
-        * @description
-        * Creates the umbrco insert media tinymce plugin
-        *
-        * @param {Object} editor the TinyMCE editor instance        
-        * @param {Object} $scope the current controller scope
-        */
+		 * @ngdoc method
+		 * @name umbraco.services.tinyMceService#createMediaPicker
+		 * @methodOf umbraco.services.tinyMceService
+		 *
+		 * @description
+		 * Creates the umbrco insert media tinymce plugin
+		 *
+		 * @param {Object} editor the TinyMCE editor instance
+		 * @param {Object} $scope the current controller scope
+		 */
             createMediaPicker: function (editor, scope, callback) {
                 editor.addButton('umbmediapicker', {
                     icon: 'custom icon-picture',
@@ -6873,26 +6898,26 @@
                             var newSize = imageHelper.scaleToMaxSize(editor.settings.maxImageSize, size.w, size.h);
                             var s = 'width: ' + newSize.width + 'px; height:' + newSize.height + 'px;';
                             editor.dom.setAttrib(imgElm, 'style', s);
-                            editor.dom.setAttrib(imgElm, 'id', null);
                             if (img.url) {
                                 var src = img.url + '?width=' + newSize.width + '&height=' + newSize.height;
                                 editor.dom.setAttrib(imgElm, 'data-mce-src', src);
                             }
                         }
+                        editor.dom.setAttrib(imgElm, 'id', null);
                     }, 500);
                 }
             },
             /**
-        * @ngdoc method
-        * @name umbraco.services.tinyMceService#createUmbracoMacro
-        * @methodOf umbraco.services.tinyMceService
-        *
-        * @description
-        * Creates the insert umbrco macro tinymce plugin
-        *
-        * @param {Object} editor the TinyMCE editor instance      
-        * @param {Object} $scope the current controller scope
-        */
+		 * @ngdoc method
+		 * @name umbraco.services.tinyMceService#createUmbracoMacro
+		 * @methodOf umbraco.services.tinyMceService
+		 *
+		 * @description
+		 * Creates the insert umbrco macro tinymce plugin
+		 *
+		 * @param {Object} editor the TinyMCE editor instance
+		 * @param {Object} $scope the current controller scope
+		 */
             createInsertMacro: function (editor, $scope, callback) {
                 var createInsertMacroScope = this;
                 /** Adds custom rules for the macro plugin and custom serialization */
@@ -6909,15 +6934,15 @@
                     });
                 });
                 /**
-            * Because the macro gets wrapped in a P tag because of the way 'enter' works, this 
-            * method will return the macro element if not wrapped in a p, or the p if the macro
-            * element is the only one inside of it even if we are deep inside an element inside the macro
-            */
+			 * Because the macro gets wrapped in a P tag because of the way 'enter' works, this
+			 * method will return the macro element if not wrapped in a p, or the p if the macro
+			 * element is the only one inside of it even if we are deep inside an element inside the macro
+			 */
                 function getRealMacroElem(element) {
                     var e = $(element).closest('.umb-macro-holder');
                     if (e.length > 0) {
                         if (e.get(0).parentNode.nodeName === 'P') {
-                            //now check if we're the only element                    
+                            //now check if we're the only element
                             if (element.parentNode.childNodes.length === 1) {
                                 return e.get(0).parentNode;
                             }
@@ -6934,10 +6959,10 @@
                         var ctrl = this;
                         var isOnMacroElement = false;
                         /**
-                     if the selection comes from a different element that is not the macro's
-                     we need to check if the selection includes part of the macro, if so we'll force the selection
-                     to clear to the next element since if people can select part of the macro markup they can then modify it.
-                    */
+					 if the selection comes from a different element that is not the macro's
+					 we need to check if the selection includes part of the macro, if so we'll force the selection
+					 to clear to the next element since if people can select part of the macro markup they can then modify it.
+					*/
                         function handleSelectionChange() {
                             if (!editor.selection.isCollapsed()) {
                                 var endSelection = tinymce.activeEditor.selection.getEnd();
@@ -6946,7 +6971,7 @@
                                 if (endSelection !== startSelection) {
                                     //if the end selection is a macro then move the cursor
                                     //NOTE: we don't have to handle when the selection comes from a previous parent because
-                                    // that is automatically taken care of with the normal onNodeChanged logic since the 
+                                    // that is automatically taken care of with the normal onNodeChanged logic since the
                                     // evt.element will be the macro once it becomes part of the selection.
                                     var $testForMacro = $(endSelection).closest('.umb-macro-holder');
                                     if ($testForMacro.length > 0) {
@@ -6977,11 +7002,11 @@
                             }
                         }
                         /**
-                    * Add a node change handler, test if we're editing a macro and select the whole thing, then set our isOnMacroElement flag.
-                    * If we change the selection inside this method, then we end up in an infinite loop, so we have to remove ourselves
-                    * from the event listener before changing selection, however, it seems that putting a break point in this method
-                    * will always cause an 'infinite' loop as the caret keeps changing.
-                    */
+					 * Add a node change handler, test if we're editing a macro and select the whole thing, then set our isOnMacroElement flag.
+					 * If we change the selection inside this method, then we end up in an infinite loop, so we have to remove ourselves
+					 * from the event listener before changing selection, however, it seems that putting a break point in this method
+					 * will always cause an 'infinite' loop as the caret keeps changing.
+					 */
                         function onNodeChanged(evt) {
                             //set our macro button active when on a node of class umb-macro-holder
                             var $macroElement = $(evt.element).closest('.umb-macro-holder');
@@ -7034,11 +7059,11 @@
                         });
                         //set onNodeChanged event listener
                         editor.on('NodeChange', onNodeChanged);
-                        /** 
-                    * Listen for the keydown in the editor, we'll check if we are currently on a macro element, if so
-                    * we'll check if the key down is a supported key which requires an action, otherwise we ignore the request
-                    * so the macro cannot be edited.
-                    */
+                        /**
+					 * Listen for the keydown in the editor, we'll check if we are currently on a macro element, if so
+					 * we'll check if the key down is a supported key which requires an action, otherwise we ignore the request
+					 * so the macro cannot be edited.
+					 */
                         editor.on('KeyDown', function (e) {
                             if (isOnMacroElement) {
                                 var macroElement = editor.selection.getNode();
@@ -7304,8 +7329,6 @@
                             values: buildRelList(data.rel)
                         };
                     }
-                    var injector = angular.element(document.getElementById('umbracoMainPageBody')).injector();
-                    var dialogService = injector.get('dialogService');
                     var currentTarget = null;
                     //if we already have a link selected, we want to pass that data over to the dialog
                     if (anchorElm) {
@@ -7315,10 +7338,17 @@
                             url: anchor.attr('href'),
                             target: anchor.attr('target')
                         };
+                        // drop the lead char from the anchor text, if it has a value
+                        var anchorVal = anchor[0].dataset.anchor;
+                        if (anchorVal) {
+                            currentTarget.anchor = anchorVal.substring(1);
+                        }
                         //locallink detection, we do this here, to avoid poluting the dialogservice
                         //so the dialog service can just expect to get a node-like structure
                         if (currentTarget.url.indexOf('localLink:') > 0) {
-                            var linkId = currentTarget.url.substring(currentTarget.url.indexOf(':') + 1, currentTarget.url.length - 1);
+                            // if the current link has an anchor, it needs to be considered when getting the udi/id
+                            // if an anchor exists, reduce the substring max by its length plus two to offset the removed prefix and trailing curly brace
+                            var linkId = currentTarget.url.substring(currentTarget.url.indexOf(':') + 1, currentTarget.url.lastIndexOf('}'));
                             //we need to check if this is an INT or a UDI
                             var parsedIntId = parseInt(linkId, 10);
                             if (isNaN(parsedIntId)) {
@@ -7363,6 +7393,19 @@
                 // We want to use the Udi. If it is set, we use it, else fallback to id, and finally to null
                 var hasUdi = target.udi ? true : false;
                 var id = hasUdi ? target.udi : target.id ? target.id : null;
+                // if an anchor exists, check that it is appropriately prefixed
+                if (target.anchor && target.anchor[0] !== '?' && target.anchor[0] !== '#') {
+                    target.anchor = (target.anchor.indexOf('=') === -1 ? '#' : '?') + target.anchor;
+                }
+                // the href might be an external url, so check the value for an anchor/qs
+                // href has the anchor re-appended later, hence the reset here to avoid duplicating the anchor
+                if (!target.anchor) {
+                    var urlParts = href.split(/(#|\?)/);
+                    if (urlParts.length === 3) {
+                        href = urlParts[0];
+                        target.anchor = urlParts[1] + urlParts[2];
+                    }
+                }
                 //Create a json obj used to create the attributes for the tag
                 function createElemAttributes() {
                     var a = {
@@ -7376,6 +7419,12 @@
                     } else if (target.id) {
                         a['data-id'] = target.id;
                     }
+                    if (target.anchor) {
+                        a['data-anchor'] = target.anchor;
+                        a.href = a.href + target.anchor;
+                    } else {
+                        a['data-anchor'] = null;
+                    }
                     return a;
                 }
                 function insertLink() {
@@ -7387,7 +7436,7 @@
                         editor.execCommand('mceInsertLink', false, createElemAttributes());
                     }
                 }
-                if (!href) {
+                if (!href && !target.anchor) {
                     editor.execCommand('unlink');
                     return;
                 }
@@ -7397,8 +7446,12 @@
                     insertLink();
                     return;
                 }
-                // Is email and not //user@domain.com
-                if (href.indexOf('@') > 0 && href.indexOf('//') === -1 && href.indexOf('mailto:') === -1) {
+                if (!href) {
+                    href = '';
+                }
+                // Is email and not //user@domain.com and protocol (e.g. mailto:, sip:) is not specified
+                if (href.indexOf('@') > 0 && href.indexOf('//') === -1 && href.indexOf(':') === -1) {
+                    // assume it's a mailto link
                     href = 'mailto:' + href;
                     insertLink();
                     return;
@@ -7889,6 +7942,9 @@
                     if (args.node.children && args.node.children.length > 0) {
                         args.node.expanded = true;
                         args.node.hasChildren = true;
+                        if (angular.isFunction(args.node.updateNodeData)) {
+                            args.node.updateNodeData();
+                        }
                     }
                     return data;
                 }, function (reason) {
@@ -8320,7 +8376,15 @@
                         self.loadNodeChildren({
                             node: node,
                             section: node.section
-                        }).then(function () {
+                        }).then(function (children) {
+                            //we've reloaded a portion of the tree, call the callback if one is specified.
+                            //TODO: In v8, we can just use deferred.notify
+                            if (args.treeNodeExpanded && angular.isFunction(args.treeNodeExpanded)) {
+                                args.treeNodeExpanded({
+                                    node: node,
+                                    children: children
+                                });
+                            }
                             //ok, got the children, let's find it
                             var found = self.getChildNode(node, args.path[currPathIndex]);
                             if (found) {
@@ -8431,6 +8495,25 @@
                         saveModel.preValues.push({
                             key: preValues[i].alias,
                             value: preValues[i].value
+                        });
+                    }
+                    return saveModel;
+                },
+                /** formats the display model used to display the dictionary to the model used to save the dictionary */
+                formatDictionaryPostData: function (dictionary, nameIsDirty) {
+                    var saveModel = {
+                        parentId: dictionary.parentId,
+                        id: dictionary.id,
+                        name: dictionary.name,
+                        nameIsDirty: nameIsDirty,
+                        translations: [],
+                        key: dictionary.key
+                    };
+                    for (var i = 0; i < dictionary.translations.length; i++) {
+                        saveModel.translations.push({
+                            isoCode: dictionary.translations[i].isoCode,
+                            languageId: dictionary.translations[i].languageId,
+                            translation: dictionary.translations[i].translation
                         });
                     }
                     return saveModel;
@@ -8756,12 +8839,17 @@
                 }
                 /** The default error callback used if one is not supplied in the opts */
                 function defaultError(data, status, headers, config) {
-                    return {
+                    var err = {
                         //NOTE: the default error message here should never be used based on the above docs!
                         errorMsg: angular.isString(opts) ? opts : 'An error occurred!',
                         data: data,
                         status: status
                     };
+                    // if "opts" is a promise, we set "err.errorMsg" to be that promise
+                    if (typeof opts == 'object' && typeof opts.then == 'function') {
+                        err.errorMsg = opts;
+                    }
+                    return err;
                 }
                 //create the callbacs based on whats been passed in.
                 var callbacks = {
@@ -9045,7 +9133,7 @@
         };
     }
     angular.module('umbraco.services').factory('umbRequestHelper', umbRequestHelper);
-    angular.module('umbraco.services').factory('userService', function ($rootScope, eventsService, $q, $location, $log, securityRetryQueue, authResource, dialogService, $timeout, angularHelper, $http) {
+    angular.module('umbraco.services').factory('userService', function ($rootScope, eventsService, $q, $location, $log, securityRetryQueue, authResource, assetsService, dialogService, $timeout, angularHelper, $http, javascriptLibraryService) {
         var currentUser = null;
         var lastUserId = null;
         var loginDialog = null;
@@ -9076,10 +9164,10 @@
             }
         }
         /**
-    This methods will set the current user when it is resolved and
-    will then start the counter to count in-memory how many seconds they have
-    remaining on the auth session
-    */
+        This methods will set the current user when it is resolved and
+        will then start the counter to count in-memory how many seconds they have
+        remaining on the auth session
+        */
         function setCurrentUser(usr) {
             if (!usr.remainingAuthSeconds) {
                 throw 'The user object is invalid, the remainingAuthSeconds is required.';
@@ -9090,10 +9178,10 @@
             countdownUserTimeout();
         }
         /**
-    Method to count down the current user's timeout seconds,
-    this will continually count down their current remaining seconds every 5 seconds until
-    there are no more seconds remaining.
-    */
+        Method to count down the current user's timeout seconds,
+        this will continually count down their current remaining seconds every 5 seconds until
+        there are no more seconds remaining.
+        */
         function countdownUserTimeout() {
             $timeout(function () {
                 if (currentUser) {
@@ -9165,6 +9253,25 @@
                 lastServerTimeoutSet = new Date();
             }
         }
+        function getMomentLocales(locales, supportedLocales) {
+            var localeUrls = [];
+            var locales = locales.split(',');
+            for (var i = 0; i < locales.length; i++) {
+                var locale = locales[i].toString().toLowerCase();
+                if (locale !== 'en-us') {
+                    if (supportedLocales.indexOf(locale + '.js') > -1) {
+                        localeUrls.push('lib/moment/' + locale + '.js');
+                    }
+                    if (locale.indexOf('-') > -1) {
+                        var majorLocale = locale.split('-')[0] + '.js';
+                        if (supportedLocales.indexOf(majorLocale) > -1) {
+                            localeUrls.push('lib/moment/' + majorLocale);
+                        }
+                    }
+                }
+            }
+            return localeUrls;
+        }
         /** resets all user data, broadcasts the notAuthenticated event and shows the login dialog */
         function userAuthExpired(isLogout) {
             //store the last user id and clear the user
@@ -9186,7 +9293,7 @@
                 userAuthExpired();
             }
         });
-        return {
+        var services = {
             /** Internal method to display the login dialog */
             _showLoginDialog: function () {
                 openLoginDialog();
@@ -9219,7 +9326,7 @@
                 return result;
             },
             /** Logs the user out
-       */
+             */
             logout: function () {
                 return authResource.performLogout().then(function (data) {
                     userAuthExpired();
@@ -9271,11 +9378,35 @@
                 }
                 return deferred.promise;
             },
+            /** Loads the Moment.js Locale for the current user. */
+            loadMomentLocaleForCurrentUser: function () {
+                var promises = {
+                    currentUser: this.getCurrentUser(),
+                    supportedLocales: javascriptLibraryService.getSupportedLocalesForMoment()
+                };
+                return $q.all(promises).then(function (values) {
+                    return services.loadLocales(values.currentUser.locale, values.supportedLocales);
+                });
+            },
+            /** Loads specific Moment.js Locales. */
+            loadLocales: function (locales, supportedLocales) {
+                var localeUrls = getMomentLocales(locales, supportedLocales);
+                if (localeUrls.length >= 1) {
+                    return assetsService.load(localeUrls, $rootScope);
+                } else {
+                    //return a noop promise
+                    var deferred = $q.defer();
+                    var promise = deferred.promise;
+                    deferred.resolve(true);
+                    return promise;
+                }
+            },
             /** Called whenever a server request is made that contains a x-umb-user-seconds response header for which we can update the user's remaining timeout seconds */
             setUserTimeout: function (newTimeout) {
                 setUserTimeoutInternal(newTimeout);
             }
         };
+        return services;
     });
     (function () {
         'use strict';
@@ -9307,6 +9438,12 @@
                     'value': 3,
                     'name': 'Invited',
                     'key': 'Invited',
+                    'color': 'warning'
+                },
+                {
+                    'value': 4,
+                    'name': 'Inactive',
+                    'key': 'Inactive',
                     'color': 'warning'
                 }
             ];
