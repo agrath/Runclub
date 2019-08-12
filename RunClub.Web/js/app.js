@@ -18,12 +18,12 @@ app.run(function ($rootScope) {
     });
 });
 app.value('style', {
-    lineStrokeColour: '#20bc5c',
+    lineStrokeColour: '#1c61b9',
     lineWeight: 3,
     diversionLinePath: 'M 0,-0.5 0,0.5',
     diversionLineSpacing: '10px',
-    elevationGraphFillColour: 'rgba(32,188,92,0.4)',
-    elevationGraphStrokeColour: '#20bc5c'
+    elevationGraphFillColour: 'rgba(28,97,185,0.4)',
+    elevationGraphStrokeColour: '#1c61b9'
 });
 app.factory('CalendarService', ['$q', '$http', function ($q, $http) {
     var self = this;

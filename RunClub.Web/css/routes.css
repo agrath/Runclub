@@ -2364,7 +2364,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 hr {
-  border-color: #20bc5c;
+  border-color: #1c61b9;
   border-width: 3px;
   max-width: 50px;
 }
@@ -2375,7 +2375,7 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #20bc5c;
+  color: #1c61b9;
   text-decoration: none;
 }
 .boxSizing {
@@ -2546,7 +2546,7 @@ header {
     -o-transition: transform 400ms ease-in-out;
     -webkit-transition: transform 400ms ease-in-out;
     transition: transform 400ms ease-in-out;
-    border-bottom: 6px solid #20bc5c;
+    border-bottom: 6px solid #1c61b9;
   }
 }
 .mainNav li {
@@ -2591,7 +2591,7 @@ header {
   content: '';
   position: absolute;
   height: 2px;
-  background: #20bc5c;
+  background: #1c61b9;
   right: 0;
   bottom: 0;
   left: 0;
@@ -2603,7 +2603,7 @@ header {
 }
 @media screen and (max-width:767px) {
   .mainNav li.active > a {
-    color: #20bc5c;
+    color: #1c61b9;
   }
 }
 .mainNav li a:hover {
@@ -2614,7 +2614,7 @@ section {
   padding-top: 40px;
 }
 .bg-primary {
-  background-color: #20bc5c !important;
+  background-color: #1c61b9 !important;
   padding: 100px 0;
   color: #fff;
 }
@@ -2703,7 +2703,7 @@ aside {
 .memberGroup ul.fa-ul li i,
 .faqGroup ul.fa-ul li i {
   top: 5px;
-  color: #20bc5c;
+  color: #1c61b9;
 }
 .homepageGallery {
   padding: 40px 0 0 0;
@@ -2773,7 +2773,7 @@ aside {
 }
 .text-primary,
 .green {
-  color: #20bc5c;
+  color: #1c61b9;
 }
 .no-gutter > [class*='col-'] {
   padding-right: 0;
@@ -2935,7 +2935,7 @@ div.map-container .map-canvas {
   display: block;
 }
 .distance-options span i {
-  color: #20bc5c;
+  color: #1c61b9;
   font-size: 120%;
   margin-top: 12px;
 }
@@ -2948,7 +2948,7 @@ div.map-container .map-canvas {
   padding: 0;
   margin: 0;
   display: inline-block;
-  border: solid 0px #20bc5c;
+  border: solid 0px #1c61b9;
   border-bottom-width: 10px;
   list-style-type: none;
 }
@@ -2994,21 +2994,21 @@ div.map-container .map-canvas {
   background-color: #fff;
 }
 .si-has-border .si-content-wrapper {
-  border: 3px solid #20bc5c;
+  border: 3px solid #1c61b9;
 }
 .si-pointer-border-top {
-  border-top-color: #20bc5c;
+  border-top-color: #1c61b9;
 }
 .si-pointer-border-bottom {
-  border-bottom-color: #20bc5c;
+  border-bottom-color: #1c61b9;
 }
 .si-pointer-border-left {
   right: 0;
-  border-left-color: #20bc5c;
+  border-left-color: #1c61b9;
 }
 .si-pointer-border-right {
   left: 0;
-  border-right-color: #20bc5c;
+  border-right-color: #1c61b9;
 }
 .after-run strong {
   display: block;
@@ -3036,7 +3036,7 @@ div.map-container .map-canvas {
 }
 i.tipTip {
   cursor: pointer;
-  color: #20bc5c;
+  color: #1c61b9;
   font-size: 16px;
 }
 .event-list {
@@ -3057,7 +3057,7 @@ i.tipTip {
   width: 100%;
   color: #444444;
   background-color: #fafafa;
-  border-left: solid 6px #20bc5c;
+  border-left: solid 6px #1c61b9;
   padding: 5px;
   text-align: center;
   text-transform: uppercase;
