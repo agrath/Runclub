@@ -507,5 +507,124 @@
   {
     "timestamp": "2019-12-22T08:00:00",
     "id": "viyVJdOl"
+  },
+  {
+    "timestamp": "2020-01-12T07:00:00",
+    "id": "ekBNMjnO"
+  },
+  {
+    "timestamp": "2020-01-19T07:00:00",
+    "id": "TcSVvBQT"
+  },
+
+  {
+    "timestamp": "2020-01-26T07:00:00",
+    "id": "TDVkcjQB"
+  },
+  {
+    "timestamp": "2020-02-02T07:00:00",
+    "id": "kwaBpRSC"
+  },
+  {
+    "timestamp": "2020-02-09T07:30:00",
+    "title": "Coatesville Half Marathon",
+    "description": "No group Sunday run this week. Join the club pacing team at the Coatesville Half Marathon.",
+    "link": "http://coatesvillehalfmarathon.co.nz/"
+  },
+  {
+    "timestamp": "2020-02-16T07:00:00",
+    "id": "TDVkcjQB"
+  },
+
+  {
+    "timestamp": "2020-02-23T07:00:00",
+    "id": "ZCgPwAZm"
+  },
+
+  {
+    "timestamp": "2020-03-01T07:00:00",
+    "id": "fSUqNwtc"
+  },
+
+  {
+    "timestamp": "2020-03-08T07:00:00",
+    "id": "BbXfrhbt"
+  },
+  {
+    "timestamp": "2020-03-15T07:30:00",
+    "title": "Maraetai Half Marathon",
+    "description": "No group Sunday run this week. Join the club pacing team at the Maraetai Half Marathon.",
+    "link": "http://maraetaihalfmarathon.co.nz//"
+  },
+
+  {
+    "timestamp": "2020-03-22T07:00:00",
+    "id": "BAYAzUnc"
+  },
+
+  {
+    "timestamp": "2020-03-29T08:00:00",
+    "id": "xQDVhtqv"
+  },
+  {
+    "timestamp": "2020-04-05T07:30:00",
+    "title": "Waterfront Half Marathon",
+    "description": "No group Sunday run this week. Join the club pacing team at the Waterfront Half Marathon.",
+    "link": "http://waterfronthalfmarathon.co.nz/"
+  },
+  {
+    "timestamp": "2020-04-12T08:00:00",
+    "id": "LawAfAEu"
+  },
+
+  {
+    "timestamp": "2020-01-19T08:00:00",
+    "id": "ekBNMjnO"
+  },
+
+  {
+    "timestamp": "2020-04-26T08:00:00",
+    "id": "udgHkNjC"
+  },
+
+  {
+    "timestamp": "2020-05-03T08:00:00",
+    "id": "TDVkcjQB"
+  },
+  {
+    "timestamp": "2020-05-10T07:15:00",
+    "title": "Run Auckland: Ambury Regional Park",
+    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
+    "link": "http://runauckland.co.nz/"
+  },
+
+  {
+    "timestamp": "2020-05-17T08:00:00",
+    "id": "kPCzjCbW"
+  },
+
+  {
+    "timestamp": "2020-05-24T08:00:00",
+    "id": "kwaBpRSC"
+  },
+  {
+    "timestamp": "2020-05-31T07:15:00",
+    "title": "Run Auckland: Henderson Park",
+    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
+    "link": "http://runauckland.co.nz/"
+  },
+  {
+    "timestamp": "2020-06-07T08:00:00",
+    "id": "udgHkNjC"
+  },
+  {
+    "timestamp": "2020-06-14T08:00:00",
+    "id": "ZCgPwAZm"
+  },
+  {
+    "timestamp": "2020-06-21T07:15:00",
+    "title": "Run Auckland: Sanders Reserve Paremoremo",
+    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
+    "link": "http://runauckland.co.nz/"
   }
 ]
