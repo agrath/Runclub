@@ -1,43 +1,58 @@
 ﻿
 <section class="jumbotron text-center">
-	<div class="tint">
-		<div class="container">
-			<h1 class="jumbotron-heading">Auckland Sunday Group Runs</h1>
-			<p class="lead text-muted">
-			<p>
-				Every Sunday at 8am join a small army of runners to explore Auckland’s most beautiful spots on foot.<br />
-				Join our Auckland Sunday running group!
-			</p>
-			<p>
-				These social runs are totally free-of-charge and ideal for EVERY level of runner. Plus, you don’t have to be a club member.<br />
-				At every run we have options to complete just 5k all the way up to 30k +.
-			</p>
-			<p>
-				Our pace leaders guide groups at the following paces: 4:30, 5, 5:30, 6, & 6:30 min/km (we’re currently looking for a 7:00 min/km leader).<br />
-				So find a group that works for you and enjoy discovering Auckland’s best runs with great company.
-			</p>
-			<p>And we’re on rain, hail or shine.</p>
-			<p>NOTE: All runners run at their own risk and agree not to hold the club or any run leaders responsible for any injury or damages to their person or belongings.</p>
-			<p>
-				<a href="/app/routes/calendar" class="btn btn-success siteButton">View the calendar</a>
-				<a href="/app/routes/all" class="btn btn-secondary siteButton">View all our routes</a>
-			</p>
-		</div>
-	</div>
+    <div class="tint">
+        <div class="container">
+            <h1 class="jumbotron-heading">Auckland Sunday Group Runs</h1>
+            <p class="lead text-muted">
+            <p>
+                Every Sunday at 8am join a small army of runners to explore Auckland’s most beautiful spots on foot.<br />
+                Join our Auckland Sunday running group!
+            </p>
+            <p>
+                These social runs are totally free-of-charge and ideal for EVERY level of runner. Plus, you don’t have to be a club member.<br />
+                At every run we have options to complete just 5k all the way up to 30k +.
+            </p>
+            <p>
+                Our pace leaders guide groups at the following paces: 4:30, 5, 5:30, 6, & 6:30 min/km (we’re currently looking for a 7:00 min/km leader).<br />
+                So find a group that works for you and enjoy discovering Auckland’s best runs with great company.
+            </p>
+            <p>And we’re on rain, hail or shine.</p>
+            <p>NOTE: All runners run at their own risk and agree not to hold the club or any run leaders responsible for any injury or damages to their person or belongings.</p>
+            <p>
+                <a href="/app/routes/calendar" class="btn btn-success siteButton">View the calendar</a>
+                <a href="/app/routes/all" class="btn btn-secondary siteButton">View all our routes</a>
+            </p>
+        </div>
+    </div>
 </section>
 <div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<button type="button" class="btn btn-light" ng-click="list()"><i class="fa fa-chevron-left"></i> Back to list</button>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-12" ng-if="!loading">
-			<h1>Our upcoming group runs</h1>
-			<div ng-include-template="/templates/calendar-repeater.html" ng-include-variables="{ events: upcomingEvents }"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-light" ng-click="list()"><i class="fa fa-chevron-left"></i> Back to list</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" ng-if="!loading">
+            <h1>Our upcoming group runs</h1>
+            <div ng-include-template="/templates/calendar-repeater.html" ng-include-variables="{ events: upcomingEvents }"></div>
 
-			<h1>Recent (past) runs</h1>
-			<div ng-include-template="/templates/calendar-repeater.html" ng-include-variables="{ events: pastEvents }"></div>
-		</div>
-	</div>
+            <aside style="display: flex;margin: 2rem auto;padding:0;font-size:16px;font-family:'Open Sans'">
+                <div style="align-items: center;justify-content: center;min-width: 19rem;background-color:#231f20;display: flex;padding: 2rem;">
+                    <img src="/images/alert.svg" style="margin-bottom: .8rem;height: 2.2rem;margin-right: 1rem;margin-top: .2rem;width: 2.4rem;border: 0;display: block;height: auto;max-width: 100%;vertical-align:middle;">
+                    <h2 style="align-self:center;color:#fff;font-size:1.8rem;font-weight:bold;line-height:1;margin:0;padding:0;text-align:center;text-transform:uppercase;">
+                        Level 2
+                    </h2>
+                </div>
+                <div style="background-color:#fc0; color:#231f20;padding: 2.2rem 2.4rem;width: 100%;display: block;">
+                    <p style="margin-bottom:0;">
+                        During alert level 2, as part of the Covid-19 response, we do not have any scheduled group runs.<br />
+                        Informally, small groups may be running together. <a href="https://www.facebook.com/groups/metrorun.nz" target="_blank" style="font-weight:bold;color:#231f20;">Please check Facebook for updates.</a>
+                    </p>
+                </div>
+            </aside>
+
+            <h1>Recent (past) runs</h1>
+            <div ng-include-template="/templates/calendar-repeater.html" ng-include-variables="{ events: pastEvents }"></div>
+        </div>
+    </div>
 </div>
