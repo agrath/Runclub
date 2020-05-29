@@ -171,67 +171,56 @@
 
   {
     "timestamp": "2020-03-29T08:00:00",
-    "id": "xQDVhtqv"
+    "title": "No group run",
+    "description": "No group Sunday run this week due to Covid-19 restrictions."
   },
   {
     "timestamp": "2020-04-05T07:30:00",
-    "title": "Waterfront Half Marathon",
-    "description": "No group Sunday run this week. Join the club pacing team at the Waterfront Half Marathon.",
-    "link": "http://waterfronthalfmarathon.co.nz/"
+    "title": "No group run",
+    "description": "No group Sunday run this week due to Covid-19 restrictions."
   },
   {
     "timestamp": "2020-04-12T08:00:00",
-    "id": "LawAfAEu"
+    "title": "No group run",
+    "description": "No group Sunday run this week due to Covid-19 restrictions."
   },
 
   {
     "timestamp": "2020-01-19T08:00:00",
-    "id": "ekBNMjnO"
+    "title": "No group run",
+    "description": "No group Sunday run this week due to Covid-19 restrictions."
   },
 
   {
     "timestamp": "2020-04-26T08:00:00",
-    "id": "udgHkNjC"
+    "title": "No group run",
+    "description": "No group Sunday run this week due to Covid-19 restrictions."
   },
 
   {
     "timestamp": "2020-05-03T08:00:00",
-    "id": "TDVkcjQB"
+    "title": "No group run",
+    "description": "No group Sunday run this week due to Covid-19 restrictions."
   },
   {
     "timestamp": "2020-05-10T07:15:00",
-    "title": "Run Auckland: Ambury Regional Park",
-    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
-    "link": "http://runauckland.co.nz/"
+    "title": "No group run",
+    "description": "No group Sunday run this week due to Covid-19 restrictions."
   },
 
   {
     "timestamp": "2020-05-17T08:00:00",
-    "id": "kPCzjCbW"
+    "title": "No group run",
+    "description": "No group Sunday run this week due to Covid-19 restrictions."
   },
 
   {
     "timestamp": "2020-05-24T08:00:00",
-    "id": "kwaBpRSC"
+    "title": "No group run",
+    "description": "No group Sunday run this week due to Covid-19 restrictions."
   },
   {
-    "timestamp": "2020-05-31T07:15:00",
-    "title": "Run Auckland: Henderson Park",
-    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
-    "link": "http://runauckland.co.nz/"
-  },
-  {
-    "timestamp": "2020-06-07T08:00:00",
-    "id": "udgHkNjC"
-  },
-  {
-    "timestamp": "2020-06-14T08:00:00",
-    "id": "ZCgPwAZm"
-  },
-  {
-    "timestamp": "2020-06-21T07:15:00",
-    "title": "Run Auckland: Sanders Reserve Paremoremo",
-    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
-    "link": "http://runauckland.co.nz/"
+    "timestamp": "2020-05-31T08:00:00",
+    "id": "BbXfrhbt"
   }
 ]
