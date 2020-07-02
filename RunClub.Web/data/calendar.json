@@ -249,11 +249,11 @@
   },
   {
     "timestamp": "2020-07-19T08:00:00",
-    "id": "kPCzjCbW"
+    "id": "xQDVhtqv"
   },
   {
     "timestamp": "2020-07-26T08:00:00",
-    "id": "xQDVhtqv"
+    "id": "kPCzjCbW"
   },
   {
     "timestamp": "2020-08-02T07:15:00",
@@ -298,8 +298,10 @@
     "link": "https://www.rotoruamarathon.co.nz/"
   },
   {
-    "timestamp": "2020-10-04T08:00:00",
-    "id": "kfESfWTm"
+    "timestamp": "2020-10-04T07:15:00",
+    "title": "Devonport Half Marathon",
+    "description": "No group Sunday run this week. Join us at the Devonport Half Marathon",
+    "link": "https://devonporthalfmarathon.co.nz/"
   },
   {
     "timestamp": "2020-10-11T08:00:00",
@@ -322,6 +324,10 @@
   {
     "timestamp": "2020-11-08T08:00:00",
     "id": "viyVJdOl"
+  },
+  {
+    "timestamp": "2020-11-15T08:00:00",
+    "id": "kfESfWTm"
   }
 ]     
 
