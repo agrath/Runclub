@@ -1,334 +1,340 @@
-﻿[
-  {
-    "timestamp": "2019-07-07T08:00:00",
-    "id": "viyVJdOl"
+﻿{
+  "covidAlert": {
+    "enabled": true,
+    "level": 3,
+    "message": "During the Auckland covid alert level 3, as part of the Covid-19 response, we do not have any scheduled group runs.",
+    "showUpcomingEvents": false
   },
-  {
-    "timestamp": "2019-07-14T07:15:00",
-    "title": "Run Auckland: Paremoremo",
-    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
-    "link": "http://runauckland.co.nz/"
-  },
-  {
-    "timestamp": "2019-07-21T08:00:00",
-    "id": "fSUqNwtc"
-  },
-  {
-    "timestamp": "2019-07-28T08:00:00",
-    "id": "BbXfrhbt"
-  },
-  {
-    "timestamp": "2019-08-04T07:15:00",
-    "title": "Run Auckland: Waiatarua Reserve",
-    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
-    "link": "http://runauckland.co.nz/"
-  },
-  {
-    "timestamp": "2019-08-11T08:00:00",
-    "id": "xQDVhtqv"
-  },
-  {
-    "timestamp": "2019-08-18T08:00:00",
-    "id": "ZCgPwAZm"
-  },
-  {
-    "timestamp": "2019-08-25T07:15:00",
-    "title": "Run Auckland: Millwater",
-    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
-    "link": "http://runauckland.co.nz/"
-  },
-  {
-    "timestamp": "2019-09-01T08:00:00",
-    "id": "BAYAzUnc"
-  },
-  {
-    "timestamp": "2019-09-08T07:15:00",
-    "title": "North Shore Half Marathon",
-    "description": "No group Sunday run this week. Join us at the North Shore Half Marathon",
-    "link": "http://northshoremarathon.co.nz"
-  },
-  {
-    "timestamp": "2019-09-15T08:00:00",
-    "id": "kwaBpRSC"
-  },
-  {
-    "timestamp": "2019-09-22T08:00:00",
-    "id": "ekBNMjnO"
-  },
-  {
-    "timestamp": "2019-09-29T08:00:00",
-    "title": "Devonport Half Marathon",
-    "description": "No group Sunday run this week. Join us at the Devonport Half Marathon",
-    "link": "https://devonporthalfmarathon.co.nz/"
-  },
-  {
-    "timestamp": "2019-10-06T08:00:00",
-    "id": "TcSVvBQT"
-  },
-  {
-    "timestamp": "2019-10-13T08:00:00",
-    "id": "LawAfAEu"
-  },
-  {
-    "timestamp": "2019-10-20T08:00:00",
-    "title": "No group run",
-    "description": "No group run this week - Auckland Marathon weekend, as this is a key event for our members, we don't have a long run this Sunday",
-    "link": "https://aucklandmarathon.co.nz/"
-  },
-  {
-    "timestamp": "2019-10-27T08:00:00",
-    "id": "kfESfWTm"
-  },
-  {
-    "timestamp": "2019-11-03T08:00:00",
-    "id": "TDVkcjQB"
-  },
-  {
-    "timestamp": "2019-11-10T08:00:00",
-    "id": "BbXfrhbt"
-  },
-  {
-    "timestamp": "2019-11-17T08:00:00",
-    "id": "kPCzjCbW"
-  },
-  {
-    "timestamp": "2019-11-24T08:00:00",
-    "id": "udgHkNjC"
-  },
-  {
-    "timestamp": "2019-12-01T08:00:00",
-    "title": "Omaha Half Marathon",
-    "description": "No group Sunday run this week. Join the club pacing team at the Omaha Half Marathon.",
-    "link": "http://omahahalfmarathon.co.nz"
-  },
-  {
-    "timestamp": "2019-12-08T07:00:00",
-    "id": "jDjWpnqp"
-  },
-  {
-    "timestamp": "2019-12-15T08:00:00",
-    "id": "bgTLnnvq",
-    "title": "Group trip: Rangitoto Island",
-    "description": "This Sunday, we're running on Rangitoto Island in the Hauraki Gulf. This run is weather dependant, if the weather is not great, we'll be doing the Hobson Bay/Orakei loop instead. We'll catch the ferry over in the morning. The specific route will be posted on facebook along with details of sailing times and other important information."
-  },
-  {
-    "timestamp": "2019-12-22T08:00:00",
-    "id": "viyVJdOl"
-  },
-  {
-    "timestamp": "2020-01-12T07:00:00",
-    "id": "ekBNMjnO"
-  },
-  {
-    "timestamp": "2020-01-19T07:00:00",
-    "id": "TcSVvBQT"
-  },
+  "events": [
+    {
+      "timestamp": "2019-07-07T08:00:00",
+      "id": "viyVJdOl"
+    },
+    {
+      "timestamp": "2019-07-14T07:15:00",
+      "title": "Run Auckland: Paremoremo",
+      "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
+      "link": "http://runauckland.co.nz/"
+    },
+    {
+      "timestamp": "2019-07-21T08:00:00",
+      "id": "fSUqNwtc"
+    },
+    {
+      "timestamp": "2019-07-28T08:00:00",
+      "id": "BbXfrhbt"
+    },
+    {
+      "timestamp": "2019-08-04T07:15:00",
+      "title": "Run Auckland: Waiatarua Reserve",
+      "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
+      "link": "http://runauckland.co.nz/"
+    },
+    {
+      "timestamp": "2019-08-11T08:00:00",
+      "id": "xQDVhtqv"
+    },
+    {
+      "timestamp": "2019-08-18T08:00:00",
+      "id": "ZCgPwAZm"
+    },
+    {
+      "timestamp": "2019-08-25T07:15:00",
+      "title": "Run Auckland: Millwater",
+      "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
+      "link": "http://runauckland.co.nz/"
+    },
+    {
+      "timestamp": "2019-09-01T08:00:00",
+      "id": "BAYAzUnc"
+    },
+    {
+      "timestamp": "2019-09-08T07:15:00",
+      "title": "North Shore Half Marathon",
+      "description": "No group Sunday run this week. Join us at the North Shore Half Marathon",
+      "link": "http://northshoremarathon.co.nz"
+    },
+    {
+      "timestamp": "2019-09-15T08:00:00",
+      "id": "kwaBpRSC"
+    },
+    {
+      "timestamp": "2019-09-22T08:00:00",
+      "id": "ekBNMjnO"
+    },
+    {
+      "timestamp": "2019-09-29T08:00:00",
+      "title": "Devonport Half Marathon",
+      "description": "No group Sunday run this week. Join us at the Devonport Half Marathon",
+      "link": "https://devonporthalfmarathon.co.nz/"
+    },
+    {
+      "timestamp": "2019-10-06T08:00:00",
+      "id": "TcSVvBQT"
+    },
+    {
+      "timestamp": "2019-10-13T08:00:00",
+      "id": "LawAfAEu"
+    },
+    {
+      "timestamp": "2019-10-20T08:00:00",
+      "title": "No group run",
+      "description": "No group run this week - Auckland Marathon weekend, as this is a key event for our members, we don't have a long run this Sunday",
+      "link": "https://aucklandmarathon.co.nz/"
+    },
+    {
+      "timestamp": "2019-10-27T08:00:00",
+      "id": "kfESfWTm"
+    },
+    {
+      "timestamp": "2019-11-03T08:00:00",
+      "id": "TDVkcjQB"
+    },
+    {
+      "timestamp": "2019-11-10T08:00:00",
+      "id": "BbXfrhbt"
+    },
+    {
+      "timestamp": "2019-11-17T08:00:00",
+      "id": "kPCzjCbW"
+    },
+    {
+      "timestamp": "2019-11-24T08:00:00",
+      "id": "udgHkNjC"
+    },
+    {
+      "timestamp": "2019-12-01T08:00:00",
+      "title": "Omaha Half Marathon",
+      "description": "No group Sunday run this week. Join the club pacing team at the Omaha Half Marathon.",
+      "link": "http://omahahalfmarathon.co.nz"
+    },
+    {
+      "timestamp": "2019-12-08T07:00:00",
+      "id": "jDjWpnqp"
+    },
+    {
+      "timestamp": "2019-12-15T08:00:00",
+      "id": "bgTLnnvq",
+      "title": "Group trip: Rangitoto Island",
+      "description": "This Sunday, we're running on Rangitoto Island in the Hauraki Gulf. This run is weather dependant, if the weather is not great, we'll be doing the Hobson Bay/Orakei loop instead. We'll catch the ferry over in the morning. The specific route will be posted on facebook along with details of sailing times and other important information."
+    },
+    {
+      "timestamp": "2019-12-22T08:00:00",
+      "id": "viyVJdOl"
+    },
+    {
+      "timestamp": "2020-01-12T07:00:00",
+      "id": "ekBNMjnO"
+    },
+    {
+      "timestamp": "2020-01-19T07:00:00",
+      "id": "TcSVvBQT"
+    },
 
-  {
-    "timestamp": "2020-01-26T07:00:00",
-    "id": "TDVkcjQB"
-  },
-  {
-    "timestamp": "2020-02-02T07:00:00",
-    "id": "kwaBpRSC"
-  },
-  {
-    "timestamp": "2020-02-09T07:30:00",
-    "title": "Coatesville Half Marathon",
-    "description": "No group Sunday run this week. Join the club pacing team at the Coatesville Half Marathon.",
-    "link": "http://coatesvillehalfmarathon.co.nz/"
-  },
-  {
-    "timestamp": "2020-02-16T07:00:00",
-    "id": "TDVkcjQB"
-  },
+    {
+      "timestamp": "2020-01-26T07:00:00",
+      "id": "TDVkcjQB"
+    },
+    {
+      "timestamp": "2020-02-02T07:00:00",
+      "id": "kwaBpRSC"
+    },
+    {
+      "timestamp": "2020-02-09T07:30:00",
+      "title": "Coatesville Half Marathon",
+      "description": "No group Sunday run this week. Join the club pacing team at the Coatesville Half Marathon.",
+      "link": "http://coatesvillehalfmarathon.co.nz/"
+    },
+    {
+      "timestamp": "2020-02-16T07:00:00",
+      "id": "TDVkcjQB"
+    },
 
-  {
-    "timestamp": "2020-02-23T07:00:00",
-    "id": "ZCgPwAZm"
-  },
+    {
+      "timestamp": "2020-02-23T07:00:00",
+      "id": "ZCgPwAZm"
+    },
 
-  {
-    "timestamp": "2020-03-01T07:00:00",
-    "id": "fSUqNwtc"
-  },
+    {
+      "timestamp": "2020-03-01T07:00:00",
+      "id": "fSUqNwtc"
+    },
 
-  {
-    "timestamp": "2020-03-08T07:00:00",
-    "id": "BbXfrhbt"
-  },
-  {
-    "timestamp": "2020-03-15T07:30:00",
-    "title": "Maraetai Half Marathon",
-    "description": "No group Sunday run this week. Join the club pacing team at the Maraetai Half Marathon.",
-    "link": "http://maraetaihalfmarathon.co.nz//"
-  },
+    {
+      "timestamp": "2020-03-08T07:00:00",
+      "id": "BbXfrhbt"
+    },
+    {
+      "timestamp": "2020-03-15T07:30:00",
+      "title": "Maraetai Half Marathon",
+      "description": "No group Sunday run this week. Join the club pacing team at the Maraetai Half Marathon.",
+      "link": "http://maraetaihalfmarathon.co.nz//"
+    },
 
-  {
-    "timestamp": "2020-03-22T07:00:00",
-    "id": "BAYAzUnc"
-  },
+    {
+      "timestamp": "2020-03-22T07:00:00",
+      "id": "BAYAzUnc"
+    },
 
-  {
-    "timestamp": "2020-03-29T08:00:00",
-    "title": "No group run",
-    "description": "No group Sunday run this week due to Covid-19 restrictions."
-  },
-  {
-    "timestamp": "2020-04-05T07:30:00",
-    "title": "No group run",
-    "description": "No group Sunday run this week due to Covid-19 restrictions."
-  },
-  {
-    "timestamp": "2020-04-12T08:00:00",
-    "title": "No group run",
-    "description": "No group Sunday run this week due to Covid-19 restrictions."
-  },
+    {
+      "timestamp": "2020-03-29T08:00:00",
+      "title": "No group run",
+      "description": "No group Sunday run this week due to Covid-19 restrictions."
+    },
+    {
+      "timestamp": "2020-04-05T07:30:00",
+      "title": "No group run",
+      "description": "No group Sunday run this week due to Covid-19 restrictions."
+    },
+    {
+      "timestamp": "2020-04-12T08:00:00",
+      "title": "No group run",
+      "description": "No group Sunday run this week due to Covid-19 restrictions."
+    },
 
-  {
-    "timestamp": "2020-01-19T08:00:00",
-    "title": "No group run",
-    "description": "No group Sunday run this week due to Covid-19 restrictions."
-  },
+    {
+      "timestamp": "2020-01-19T08:00:00",
+      "title": "No group run",
+      "description": "No group Sunday run this week due to Covid-19 restrictions."
+    },
 
-  {
-    "timestamp": "2020-04-26T08:00:00",
-    "title": "No group run",
-    "description": "No group Sunday run this week due to Covid-19 restrictions."
-  },
+    {
+      "timestamp": "2020-04-26T08:00:00",
+      "title": "No group run",
+      "description": "No group Sunday run this week due to Covid-19 restrictions."
+    },
 
-  {
-    "timestamp": "2020-05-03T08:00:00",
-    "title": "No group run",
-    "description": "No group Sunday run this week due to Covid-19 restrictions."
-  },
-  {
-    "timestamp": "2020-05-10T07:15:00",
-    "title": "No group run",
-    "description": "No group Sunday run this week due to Covid-19 restrictions."
-  },
+    {
+      "timestamp": "2020-05-03T08:00:00",
+      "title": "No group run",
+      "description": "No group Sunday run this week due to Covid-19 restrictions."
+    },
+    {
+      "timestamp": "2020-05-10T07:15:00",
+      "title": "No group run",
+      "description": "No group Sunday run this week due to Covid-19 restrictions."
+    },
 
-  {
-    "timestamp": "2020-05-17T08:00:00",
-    "title": "No group run",
-    "description": "No group Sunday run this week due to Covid-19 restrictions."
-  },
+    {
+      "timestamp": "2020-05-17T08:00:00",
+      "title": "No group run",
+      "description": "No group Sunday run this week due to Covid-19 restrictions."
+    },
 
-  {
-    "timestamp": "2020-05-24T08:00:00",
-    "title": "No group run",
-    "description": "No group Sunday run this week due to Covid-19 restrictions."
-  },
-  {
-    "timestamp": "2020-05-31T08:00:00",
-    "id": "BbXfrhbt"
-  },
-  {
-    "timestamp": "2020-06-07T08:00:00",
-    "id": "ekBNMjnO"
-  },
-  {
-    "timestamp": "2020-06-14T08:00:00",
-    "id": "LawAfAEu"
-  },
-  {
-    "timestamp": "2020-06-21T08:00:00",
-    "id": "udgHkNjC"
-  },
-  {
-    "timestamp": "2020-06-28T08:00:00",
-    "id": "ZCgPwAZm"
-  },
-  {
-    "timestamp": "2020-07-05T08:00:00",
-    "id": "fSUqNwtc"
-  },
-  {
-    "timestamp": "2020-07-12T08:00:00",
-    "id": "TDVkcjQB"
-  },
-  {
-    "timestamp": "2020-07-19T08:00:00",
-    "id": "xQDVhtqv"
-  },
-  {
-    "timestamp": "2020-07-26T08:00:00",
-    "id": "kPCzjCbW"
-  },
-  {
-    "timestamp": "2020-08-02T07:15:00",
-    "title": "Run Auckland: Millwater",
-    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
-    "link": "http://runauckland.co.nz/"
-  },
-  {
-    "timestamp": "2020-08-09T08:00:00",
-    "id": "TcSVvBQT"
-  },
-  {
-    "timestamp": "2020-08-16T08:00:00",
-    "id": "BAYAzUnc"
-  },
-  {
-    "timestamp": "2020-08-23T08:00:00",
-    "id": "BbXfrhbt"
-  },
-  {
-    "timestamp": "2020-08-30T08:00:00",
-    "id": "ekBNMjnO"
-  },
-  {
-    "timestamp": "2020-09-06T08:00:00",
-    "id": "LawAfAEu"
-  },
-  {
-    "timestamp": "2020-09-13T08:00:00",
-    "id": "kwaBpRSC"
-  },
-  {
-    "timestamp": "2020-09-20T07:15:00",
-    "title": "Waterfront Half Marathon",
-    "description": "No group Sunday run this week. Join us at the Waterfront Half Marathon",
-    "link": "https://waterfronthalfmarathon.co.nz/"
-  },
-  {
-    "timestamp": "2020-09-27T07:15:00",
-    "title": "Rotorua Marathon",
-    "description": "No group Sunday run this week. Join us at the Rotorua Marathon",
-    "link": "https://www.rotoruamarathon.co.nz/"
-  },
-  {
-    "timestamp": "2020-10-04T07:15:00",
-    "title": "Devonport Half Marathon",
-    "description": "No group Sunday run this week. Join us at the Devonport Half Marathon",
-    "link": "https://devonporthalfmarathon.co.nz/"
-  },
-  {
-    "timestamp": "2020-10-11T08:00:00",
-    "id": "ZCgPwAZm"
-  },
-  {
-    "timestamp": "2020-10-18T08:00:00",
-    "id": "TcSVvBQT"
-  },
-  {
-    "timestamp": "2020-10-25T08:00:00",
-    "id": "udgHkNjC"
-  },
-  {
-    "timestamp": "2020-11-01T07:15:00",
-    "title": "Auckland Marathon",
-    "description": "No group Sunday run this week. Join us at the Auckland Marathon",
-    "link": "https://aucklandmarathon.co.nz/"
-  },
-  {
-    "timestamp": "2020-11-08T08:00:00",
-    "id": "viyVJdOl"
-  },
-  {
-    "timestamp": "2020-11-15T08:00:00",
-    "id": "kfESfWTm"
-  }
-]     
-
-
+    {
+      "timestamp": "2020-05-24T08:00:00",
+      "title": "No group run",
+      "description": "No group Sunday run this week due to Covid-19 restrictions."
+    },
+    {
+      "timestamp": "2020-05-31T08:00:00",
+      "id": "BbXfrhbt"
+    },
+    {
+      "timestamp": "2020-06-07T08:00:00",
+      "id": "ekBNMjnO"
+    },
+    {
+      "timestamp": "2020-06-14T08:00:00",
+      "id": "LawAfAEu"
+    },
+    {
+      "timestamp": "2020-06-21T08:00:00",
+      "id": "udgHkNjC"
+    },
+    {
+      "timestamp": "2020-06-28T08:00:00",
+      "id": "ZCgPwAZm"
+    },
+    {
+      "timestamp": "2020-07-05T08:00:00",
+      "id": "fSUqNwtc"
+    },
+    {
+      "timestamp": "2020-07-12T08:00:00",
+      "id": "TDVkcjQB"
+    },
+    {
+      "timestamp": "2020-07-19T08:00:00",
+      "id": "xQDVhtqv"
+    },
+    {
+      "timestamp": "2020-07-26T08:00:00",
+      "id": "kPCzjCbW"
+    },
+    {
+      "timestamp": "2020-08-02T07:15:00",
+      "title": "Run Auckland: Millwater",
+      "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
+      "link": "http://runauckland.co.nz/"
+    },
+    {
+      "timestamp": "2020-08-09T08:00:00",
+      "id": "TcSVvBQT"
+    },
+    {
+      "timestamp": "2020-08-16T08:00:00",
+      "id": "BAYAzUnc"
+    },
+    {
+      "timestamp": "2020-08-23T08:00:00",
+      "id": "BbXfrhbt"
+    },
+    {
+      "timestamp": "2020-08-30T08:00:00",
+      "id": "ekBNMjnO"
+    },
+    {
+      "timestamp": "2020-09-06T08:00:00",
+      "id": "LawAfAEu"
+    },
+    {
+      "timestamp": "2020-09-13T08:00:00",
+      "id": "kwaBpRSC"
+    },
+    {
+      "timestamp": "2020-09-20T07:15:00",
+      "title": "Waterfront Half Marathon",
+      "description": "No group Sunday run this week. Join us at the Waterfront Half Marathon",
+      "link": "https://waterfronthalfmarathon.co.nz/"
+    },
+    {
+      "timestamp": "2020-09-27T07:15:00",
+      "title": "Rotorua Marathon",
+      "description": "No group Sunday run this week. Join us at the Rotorua Marathon",
+      "link": "https://www.rotoruamarathon.co.nz/"
+    },
+    {
+      "timestamp": "2020-10-04T07:15:00",
+      "title": "Devonport Half Marathon",
+      "description": "No group Sunday run this week. Join us at the Devonport Half Marathon",
+      "link": "https://devonporthalfmarathon.co.nz/"
+    },
+    {
+      "timestamp": "2020-10-11T08:00:00",
+      "id": "ZCgPwAZm"
+    },
+    {
+      "timestamp": "2020-10-18T08:00:00",
+      "id": "TcSVvBQT"
+    },
+    {
+      "timestamp": "2020-10-25T08:00:00",
+      "id": "udgHkNjC"
+    },
+    {
+      "timestamp": "2020-11-01T07:15:00",
+      "title": "Auckland Marathon",
+      "description": "No group Sunday run this week. Join us at the Auckland Marathon",
+      "link": "https://aucklandmarathon.co.nz/"
+    },
+    {
+      "timestamp": "2020-11-08T08:00:00",
+      "id": "viyVJdOl"
+    },
+    {
+      "timestamp": "2020-11-15T08:00:00",
+      "id": "kfESfWTm"
+    }
+  ]
+}
