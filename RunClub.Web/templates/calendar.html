@@ -35,7 +35,7 @@
         <div class="col-md-12" ng-if="!loading">
             <h1>Our upcoming group runs</h1>
             
-            <!--<aside style="display: flex;margin: 2rem auto;padding:0;font-size:16px;font-family:'Open Sans'">
+            <aside style="display: flex;margin: 2rem auto;padding:0;font-size:16px;font-family:'Open Sans'" ng-if="covidAlert && covidAlert.enabled">
                 <div style="align-items: center;justify-content: center;min-width: 19rem;background-color:#231f20;display: flex;padding: 2rem;">
                     <img src="/images/alert.svg" style="margin-bottom: .8rem;height: 2.2rem;margin-right: 1rem;margin-top: .2rem;width: 2.4rem;border: 0;display: block;height: auto;max-width: 100%;vertical-align:middle;">
                     <h2 style="align-self:center;color:#fff;font-size:1.8rem;font-weight:bold;line-height:1;margin:0;padding:0;text-align:center;text-transform:uppercase;">
@@ -44,10 +44,10 @@
                 </div>
                 <div style="background-color:#fc0; color:#231f20;padding: 2.2rem 2.4rem;width: 100%;display: block;">
                     <p style="margin-bottom:0;">
-                        During alert level 2, as part of the Covid-19 response, we require all attendees to check in with a name and phone number for contact tracing purposes.<br />
+                        {{ covidAlert.message }} <br />
                     </p>
                 </div>
-            </aside>-->
+            </aside>
 
             <div ng-include-template="/templates/calendar-repeater.html" ng-include-variables="{ events: upcomingEvents }"></div>
 

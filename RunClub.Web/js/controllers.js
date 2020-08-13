@@ -79,7 +79,7 @@ app.controller('showRouteController', function ($scope, $rootScope, RouteService
                 }).then(canvas => {
                     //render completed
                     document.body.appendChild(canvas)
-                    
+
                     //reset styling
                     var element = angular.element(".map-container");
                     element.removeClass('map-render');
@@ -119,8 +119,8 @@ app.controller('calendarController', function ($scope, RouteService, CalendarSer
     RouteService.getRoutes().then(function (data) {
         $scope.routes = data;
         CalendarService.getCalendar().then(function (data) {
-            $scope.allEvents = data;
-
+            $scope.allEvents = data.events;
+            $scope.covidAlert = data.covidAlert;
             _.each($scope.allEvents, function (item) {
                 item.route = _.find($scope.routes, function (route) { return route.id === item.id; });
                 item.moment = moment(item.timestamp);
@@ -137,6 +137,9 @@ app.controller('calendarController', function ($scope, RouteService, CalendarSer
                 return event.moment.isBefore(now);
             });
             $scope.upcomingEvents = _.sortBy(events[1], function (event) { return event.moment.unix(); });
+            if ($scope.covidAlert && $scope.covidAlert.enabled && !$scope.covidAlert.showUpcomingEvents) {
+                $scope.upcomingEvents = [];
+            }
             $scope.pastEvents = _.sortBy(events[0], function (event) { return -event.moment.unix(); });
 
             $scope.loading = false;

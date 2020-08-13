@@ -105,8 +105,8 @@ app.factory('RouteService', ['$q', '$http', '$interpolate', function ($q, $http,
                 route.displayMeetingPoint = (typeof route.displayMeetingPoint !== 'undefined') ? route.displayMeetingPoint : true;
 
                 //when this site is hosted, change this to a local url
-                //var markerImageUrl = 'http://metrorun.org.nz/images/static-meet-here.png';
-                var markerImageUrl = 'https://i.imgur.com/8tChPdj.png';
+                var markerImageUrl = 'http://metrorun.nz/images/static-meet-here.png';
+                //var markerImageUrl = 'https://i.imgur.com/8tChPdj.png';
                 var staticMapImageTemplate = 'https://maps.googleapis.com/maps/api/staticmap?size=356x280&zoom=14&key=AIzaSyDeWHf1yBGiJgWoaQH_PEN2bnwZ2aCFSbE&center={{latitude}},{{longitude}}&markers=anchor:bottom|icon:{{icon}}|{{latitude}},{{longitude}}';
                 if (route.meetingPoint) {
                     route.staticMapImage = $interpolate(staticMapImageTemplate)({ latitude: route.meetingPoint.latitude, longitude: route.meetingPoint.longitude, icon: markerImageUrl });
