@@ -1,9 +1,9 @@
-﻿{
+{
   "covidAlert": {
-    "enabled": true,
-    "level": 3,
+    "enabled": false,
+    "level": 1,
     "message": "During the Auckland covid alert level 3, as part of the Covid-19 response, we do not have any scheduled group runs.",
-    "showUpcomingEvents": false
+    "showUpcomingEvents": true
   },
   "events": [
     {
@@ -334,7 +334,7 @@
     },
     {
       "timestamp": "2020-11-15T08:00:00",
-      "id": "kfESfWTm"
+      "id": "ZCgPwAZm"
     }
   ]
 }
