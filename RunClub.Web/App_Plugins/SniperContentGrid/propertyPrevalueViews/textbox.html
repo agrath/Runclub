@@ -1,0 +1,9 @@
+﻿<div class="dtgPrevaluesProperties clearfix">
+    <div class="dtgcheckbox">
+        <span>Regex validation:</span>
+        <input type="checkbox" ng-model="column.props.regexValidation" />
+        <div ng-if="column.props.regexValidation">
+            <input type="text" ng-required="true" ng-model="column.props.regexValidationPattern" placeholder="Javascript regex pattern" />
+        </div>
+    </div>
+</div>

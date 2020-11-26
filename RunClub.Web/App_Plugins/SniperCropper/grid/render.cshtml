@@ -5,7 +5,7 @@
 @if (Model.value != null)
 {
     int imageId = Model.value.id;
-    var image = Umbraco.TypedMedia(imageId);
+    var image = Umbraco.Media(imageId);
     string cropName = Model.editor.config.cropName;
 
     <img src="@image.GetImageCrop( "crops", cropName )" alt="@Model.value.caption" />

@@ -1,6 +1,7 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @{
 	var homepage = Umbraco.GetHomepageByDomain<Homepage>(Request.Url.Host);
+	var url = Model.Url();
 }
 <div class="navbar navbar-light bg-light">
 	<div class="container d-flex justify-content-start">
@@ -13,7 +14,7 @@
 			@foreach (var navItem in homepage.NavItems)
 			{
 				var activePage = "";
-				if (Model.Content.Id == navItem.Id)
+				if (url == navItem.Url)
 				{
 					activePage = "active";
 				}

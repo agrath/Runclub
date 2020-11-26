@@ -1,8 +1,8 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.FAQ>
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.FAQ>
 @using ContentModels = RunClub.ContentModels;
 @{
 	Layout = "Master.cshtml";
-	var faqList = new FAQFaqGridSniperContentGrid(Model.Content);
+	var faqList = new FAQFaqGridSniperContentGrid(Model);
 }
 
 <div class="pageContent">

@@ -1,19 +1,31 @@
-﻿<div class="umb-editor" ng-controller="SniperDropdown.Prevalues.Items">
-    <div class="control-group">
-        <strong>Name</strong>
-        <input name="newItemName" type="text" ng-model="newItemName" val-highlight="hasError" />
-        <strong>Alias</strong>
-        <input name="newItemAlias" type="text" ng-model="newItemAlias" val-highlight="hasError" />
-        <button class="btn btn-small" ng-click="add($event)">Add</button>
+﻿<div class="umb-property-editor umb-prevalues-multivalues" ng-controller="SniperDropdown.PrevalueEditors.Items" style="width: auto">
+    <div class="control-group umb-prevalues-multivalues__add">
+        <div class="umb-prevalues-multivalues__left">
+            <div style="margin-right: 20px">
+                <label for="newItemAlias">Alias</label>
+                <input overlay-submit-on-enter="false" name="newItemAlias" focus-when="{{focusOnNew}}" ng-keydown="createNew($event)" type="text" ng-model="newItemAlias" val-highlight="{{hasError}}" />
+            </div>
+            <div style="margin-right: 20px">
+                <label for="newItemName">Name</label>
+                <input overlay-submit-on-enter="false" name="newItemName" focus-when="{{focusOnNew}}" ng-keydown="createNew($event)" type="text" ng-model="newItemName" val-highlight="{{hasError}}" />
+            </div>
+            <div>
+                <label>&nbsp;</label>
+                <br />
+                <button class="btn btn-info" ng-click="add($event)"><localize key="general_add">Add</localize></button>
+            </div>
+        </div>
     </div>
     <div ui-sortable="sortableOptions">
-        <div class="control-group" ng-repeat="item in model.value">
+        <div class="control-group umb-prevalues-multivalues__listitem" ng-repeat="item in model.value">
             <i class="icon icon-navigation handle"></i>
-            <strong>Name</strong>
-            <input type="text" ng-model="item.name" required />
-            <strong>Alias</strong>
-            <input type="text" ng-model="item.alias" required />
-            <button class="btn btn-small btn-danger" ng-click="remove(item, $event)">Remove</button>
+            <div class="umb-prevalues-multivalues__left">
+                <input type="text" ng-model="item.Alias" name="itemAlias"  val-server="item_{{$index}}" required style="margin-right: 20px" />
+                <input type="text" ng-model="item.Name" name="itemName" val-server="item_{{$index}}" required style="margin-right: 20px" />
+            </div>
+            <div class="umb-prevalues-multivalues__right">
+                <a class="umb-node-preview__action umb-node-preview__action--red" ng-click="remove(item, $event)"><localize key="general_remove">Remove</localize></a>
+            </div>
         </div>
     </div>
 </div>

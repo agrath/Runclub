@@ -1,9 +1,8 @@
-﻿<div class="umb-editor umb-multiple-textbox" ng-controller="SniperMultiple">
+﻿<!--<div ng-controller="SniperMultiple">
     <div ui-sortable="sortableOptions" ng-model="value">
         <div class="control-group" ng-repeat="item in value">
             <i class="icon icon-navigation handle"></i>
-            <umb-editor model="item" />
-            <!--<input type="text" name="item_{{$index}}" ng-model="item.value" class="umb-editor" />-->
+            <umb-property-editor model="item" />
             <a prevent-default href="" title="Remove this item"
                ng-show="value.length > min"
                ng-click="remove($index)">
@@ -17,4 +16,36 @@
         <i class="icon icon-add"></i>
     </a>
 
+</div>-->
+
+<div class="umb-property-editor umb-multiple-textbox" ng-controller="SniperMultiple">
+    <ng-form name="multipleTextboxForm">
+        <div ui-sortable="sortableOptions" ng-model="value">
+            <div class="flex flex-wrap textbox-wrapper" ng-repeat="item in value track by $index">
+                <i class="icon icon-navigation handle" localize="title" title="@general_move"></i>
+                <div>
+                    <umb-property-editor model="item" />
+                </div>
+                <div class="icon-wrapper">
+                    <div class="umb-multiple-textbox__confirm" ng-show="value.length > model.config.min">
+                        <button class="umb-multiple-textbox__confirm-action" type="button" prevet-default ng-click="showPrompt($index, item)" localize="title" title="@content_removeTextBox">
+                            <i class="icon-trash"></i>
+                        </button>
+
+                        <umb-confirm-action ng-if="promptIsVisible === $index"
+                                            direction="left"
+                                            on-confirm="remove($index)"
+                                            on-cancel="hidePrompt()">
+                        </umb-confirm-action>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a prevent-default href="" class="add-link" localize="title" title="@content_addTextBox"
+           ng-show="model.config.max <= 0 || value.length < model.config.max"
+           ng-click="add()">
+            <localize key="general_add">Add</localize>
+        </a>
+        <input type="hidden" name="mandatory" ng-model="value" />
+    </ng-form>
 </div>

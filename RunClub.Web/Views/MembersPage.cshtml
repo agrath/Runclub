@@ -1,8 +1,8 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.MembersPage>
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.MembersPage>
 @using ContentModels = RunClub.ContentModels;
 @{
     Layout = "Master.cshtml";
-    var teamlist = new MembersPageMembersGridSniperContentGrid(Model.Content);
+    var teamlist = new MembersPageMembersGridSniperContentGrid(Model);
 }
 <div class="pageContent">
     @foreach (var group in teamlist.Rows.GroupBy(g => g.MemberGroup))
@@ -14,8 +14,8 @@
                 <div class="row">
                     @if (person.MemberImage != null)
                     {
-                        IPublishedContent img = Umbraco.TypedMedia(person.MemberImage);
-                        <div class="col-md-3"><img src="@img.Url" /></div>
+                        IPublishedContent img = Umbraco.Media(person.MemberImage);
+                        <div class="col-md-3"><img src="@img.Url()" /></div>
                     }
                     <div class="col-md-8">
                         <p>

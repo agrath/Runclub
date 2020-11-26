@@ -1,2 +1,2 @@
-﻿<select ng-model="cell.value" class="umb-editor umb-textstring textstring" ng-options="opt.value as opt.text for opt in model.config.columns.columns[$index].props.options" ng-required="cell.column.required"></select><br />
+﻿<select ng-model="cell.value" class="umb-textstring textstring" ng-options="opt.value as opt.text for opt in model.config.columns[$index].props.options" ng-required="cell.column.required"></select><br />
 <button ng-show="cell.value" type="button" class="btn btn-default btn-link" ng-click="cell.value = ''"><span class="icon icon-delete"></span> Clear selection</button>

@@ -1,3 +1,5 @@
+// patched by Sniper Systems to adjust the format as necessary
+
 // Spectrum Colorpicker v1.2.0
 // https://github.com/bgrins/spectrum
 // Author: Brian Grinstead
@@ -31,7 +33,7 @@
         chooseText: "choose",
         preferredFormat: false,
         className: "",
-        showAlpha: false,
+        showAlpha: true,
         theme: "sp-light",
         palette: ['fff', '000'],
         selectionPalette: [],
@@ -708,6 +710,7 @@
 
                 displayColor = realColor.toString(format);
             }
+
             // Update the text entry input as it changes happen
             if (opts.showInput) {
                 textInput.val(displayColor);
@@ -770,12 +773,21 @@
                 displayColor = '',
                 hasChanged = !tinycolor.equals(color, colorOnShow);
 
-            if(color) {
-                displayColor = color.toString(currentPreferredFormat);
+            // patch by Sniper Systems to adjust the format as necessary
+            // Get a format that alpha will be included in (hex and names ignore alpha)
+            var format = currentPreferredFormat;
+            if (currentAlpha < 1) {
+                if (format === "hex" || format === "hex3" || format === "hex6" || format === "name") {
+                    format = "rgb";
+                }
+            }
+
+            if (color) {
+                //displayColor = color.toString(currentPreferredFormat);
+                displayColor = color.toString(format);
                 // Update the selection palette with the current color
                 addColorToSelectionPalette(color);
             }
-
             if (isInput) {
                 boundElement.val(displayColor);
             }

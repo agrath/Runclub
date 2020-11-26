@@ -1,23 +1,28 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @{
-	var page = Model.Content.MapToStrongType<PageHeader>();
+    var header = Model as IPageHeader;
+    if (header != null)
+    {
+
+        <div class="pageHeader" style="@(header.PageHeaderImage != null ? "background-image: url(" + header.PageHeaderImage.Url() + ");" : "")">
+            <div class="@(Model.IsDocumentType("homepage") ? "" : "tint")">
+                <div class="header-content">
+                    <div class="header-content-inner">
+                        <h1>@header.PageHeaderTitle</h1>
+                        @if (Model.IsDocumentType("homepage"))
+                        {
+                            <hr />
+                        }
+                        else
+                        {
+                            <p></p>
+                        }
+                        @Html.Raw(header.PageHeaderContent)
+                    </div>
+                </div>
+                .
+            </div>
+        </div>
+        <div }id="scrollAnchor"></div>
+    }
 }
-<div class="pageHeader" style="@(page.PageHeaderImage != null ? "background-image: url("+page.PageHeaderImage.Url+");" : "")">
-	<div class="@(Model.Content.DocumentTypeAlias == "homepage" ? "" : "tint")">
-		<div class="header-content">
-		<div class="header-content-inner">
-			<h1>@page.PageHeaderTitle</h1>
-			@if(Model.Content.DocumentTypeAlias == "homepage")
-			{
-				<hr />
-			}
-			else
-			{
-				<p></p>
-			}
-			@Html.Raw(page.PageHeaderContent)
-		</div>
-	</div>
-	</div>
-</div>
-<div id="scrollAnchor"></div>

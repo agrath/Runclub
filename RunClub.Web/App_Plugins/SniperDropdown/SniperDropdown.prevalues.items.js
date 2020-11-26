@@ -1,4 +1,4 @@
-﻿angular.module("umbraco").controller("SniperDropdown.Prevalues.Items", function ($scope, $timeout) {
+﻿angular.module("umbraco").controller("SniperDropdown.PrevalueEditors.Items", function ($scope, $timeout) {
     //NOTE: We need to make each item an object, not just a string because you cannot 2-way bind to a primitive.
     $scope.newItemName = "";
     $scope.newItemAlias = "";
@@ -11,10 +11,10 @@
     $scope.remove = function (item, evt) {
         evt.preventDefault();
 
-        $scope.model.value = _.reject($scope.model.value, function (x) {
-            return x.name === item.name;
-        });
-
+        var index = $scope.model.value.indexOf(item);
+        if (index !== -1) {
+            $scope.model.value.splice(index, 1);
+        }
     };
 
     $scope.add = function (evt) {
@@ -27,7 +27,7 @@
 
         if ($scope.newItemName) {
             if (!_.contains($scope.model.value, $scope.newItemName)) {
-                $scope.model.value.push({ name: $scope.newItemName, alias: $scope.newItemAlias });
+                $scope.model.value.push({ Name: $scope.newItemName, Alias: $scope.newItemAlias });
                 $scope.newItemName = "";
                 $scope.newItemAlias = "";
                 $scope.hasError = false;
@@ -63,7 +63,7 @@
 
     function getElementIndexByPrevalueText(value) {
         for (var i = 0; i < $scope.model.value.length; i++) {
-            if ($scope.model.value[i].value === value) {
+            if ($scope.model.value[i].Alias === value) {
                 return i;
             }
         }

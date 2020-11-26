@@ -1,25 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2036
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunClub.Web", "RunClub.Web\RunClub.Web.csproj", "{95E0852A-BCE1-4C70-971E-5750BA9F3850}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sniper Common Libraries", "Sniper Common Libraries", "{A14008A6-85BA-4A14-AD07-E154EB4A9D27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sniper.Umbraco", "..\..\libraries-internal\v5.0\Sniper.Umbraco\Sniper.Umbraco.csproj", "{0283E0B4-9C66-4A06-B818-242F2899BEC3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sniper.Umbraco.Plugins", "..\..\libraries-internal\v5.0\Sniper.Umbraco.Plugins\Sniper.Umbraco.Plugins.csproj", "{C5552C87-777C-46C3-8D1D-12866FB2A3EF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sniper.Umbraco.PropertyConverters", "..\..\libraries-internal\v5.0\Sniper.Umbraco.PropertyConverters\Sniper.Umbraco.PropertyConverters.csproj", "{F17CC4F3-E0FF-4540-865B-2ECAD93AEE3E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sniper.Umbraco.PropertyConverters.Media", "..\..\libraries-internal\v5.0\Sniper.Umbraco.PropertyConverters.Media\Sniper.Umbraco.PropertyConverters.Media.csproj", "{DBB2D78B-498F-42B4-9F02-8F765557F52D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sniper.Umbraco.SmartPropertyTypes", "..\..\libraries-internal\v5.0\Sniper.Umbraco.SmartPropertyTypes\Sniper.Umbraco.SmartPropertyTypes.csproj", "{5593CF62-1258-4603-9E98-5BECDE7CF799}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunClub.ContentModels", "RunClub.ContentModels\RunClub.ContentModels.csproj", "{6A8FD6AC-F42F-4A30-A90A-DFB584299644}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sniper.Common", "..\..\libraries-internal\v5.0\Sniper.Common\Sniper.Common.csproj", "{A347A543-6075-4B24-B5C4-DABABE2E63FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sniper.Common", "..\..\libraries-internal\v8.0\Sniper.Common\Sniper.Common.csproj", "{7E3B0683-C050-448A-B341-EDFD2BBF6FB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sniper.Umbraco", "..\..\libraries-internal\v8.0\Sniper.Umbraco\Sniper.Umbraco.csproj", "{0283E0B4-9C66-4A06-B818-242F2899BEC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sniper.Umbraco.SmartPropertyTypes", "..\..\libraries-internal\v8.0\Sniper.Umbraco.SmartPropertyTypes\Sniper.Umbraco.SmartPropertyTypes.csproj", "{5593CF62-1258-4603-9E98-5BECDE7CF799}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,45 +25,30 @@ Global
 		{95E0852A-BCE1-4C70-971E-5750BA9F3850}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95E0852A-BCE1-4C70-971E-5750BA9F3850}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95E0852A-BCE1-4C70-971E-5750BA9F3850}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0283E0B4-9C66-4A06-B818-242F2899BEC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0283E0B4-9C66-4A06-B818-242F2899BEC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0283E0B4-9C66-4A06-B818-242F2899BEC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0283E0B4-9C66-4A06-B818-242F2899BEC3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C5552C87-777C-46C3-8D1D-12866FB2A3EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C5552C87-777C-46C3-8D1D-12866FB2A3EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C5552C87-777C-46C3-8D1D-12866FB2A3EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C5552C87-777C-46C3-8D1D-12866FB2A3EF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F17CC4F3-E0FF-4540-865B-2ECAD93AEE3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F17CC4F3-E0FF-4540-865B-2ECAD93AEE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F17CC4F3-E0FF-4540-865B-2ECAD93AEE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F17CC4F3-E0FF-4540-865B-2ECAD93AEE3E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DBB2D78B-498F-42B4-9F02-8F765557F52D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DBB2D78B-498F-42B4-9F02-8F765557F52D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DBB2D78B-498F-42B4-9F02-8F765557F52D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DBB2D78B-498F-42B4-9F02-8F765557F52D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5593CF62-1258-4603-9E98-5BECDE7CF799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5593CF62-1258-4603-9E98-5BECDE7CF799}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5593CF62-1258-4603-9E98-5BECDE7CF799}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5593CF62-1258-4603-9E98-5BECDE7CF799}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6A8FD6AC-F42F-4A30-A90A-DFB584299644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6A8FD6AC-F42F-4A30-A90A-DFB584299644}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A8FD6AC-F42F-4A30-A90A-DFB584299644}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A8FD6AC-F42F-4A30-A90A-DFB584299644}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A347A543-6075-4B24-B5C4-DABABE2E63FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A347A543-6075-4B24-B5C4-DABABE2E63FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A347A543-6075-4B24-B5C4-DABABE2E63FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A347A543-6075-4B24-B5C4-DABABE2E63FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E3B0683-C050-448A-B341-EDFD2BBF6FB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E3B0683-C050-448A-B341-EDFD2BBF6FB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E3B0683-C050-448A-B341-EDFD2BBF6FB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E3B0683-C050-448A-B341-EDFD2BBF6FB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0283E0B4-9C66-4A06-B818-242F2899BEC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0283E0B4-9C66-4A06-B818-242F2899BEC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0283E0B4-9C66-4A06-B818-242F2899BEC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0283E0B4-9C66-4A06-B818-242F2899BEC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5593CF62-1258-4603-9E98-5BECDE7CF799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5593CF62-1258-4603-9E98-5BECDE7CF799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5593CF62-1258-4603-9E98-5BECDE7CF799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5593CF62-1258-4603-9E98-5BECDE7CF799}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{7E3B0683-C050-448A-B341-EDFD2BBF6FB3} = {A14008A6-85BA-4A14-AD07-E154EB4A9D27}
 		{0283E0B4-9C66-4A06-B818-242F2899BEC3} = {A14008A6-85BA-4A14-AD07-E154EB4A9D27}
-		{C5552C87-777C-46C3-8D1D-12866FB2A3EF} = {A14008A6-85BA-4A14-AD07-E154EB4A9D27}
-		{F17CC4F3-E0FF-4540-865B-2ECAD93AEE3E} = {A14008A6-85BA-4A14-AD07-E154EB4A9D27}
-		{DBB2D78B-498F-42B4-9F02-8F765557F52D} = {A14008A6-85BA-4A14-AD07-E154EB4A9D27}
 		{5593CF62-1258-4603-9E98-5BECDE7CF799} = {A14008A6-85BA-4A14-AD07-E154EB4A9D27}
-		{A347A543-6075-4B24-B5C4-DABABE2E63FD} = {A14008A6-85BA-4A14-AD07-E154EB4A9D27}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {15EEFD0C-D5D4-4841-865E-0AE6B70E6B78}

@@ -38,10 +38,9 @@
             float: left;
         }
 
-        .umb-cropper-gravity  .gravity-container .viewport {
-            width: 1024px;
-            height: 768px;
-        }
+    .umb-cropper-gravity .gravity-container .viewport {
+        width: 1024px;
+    }
 
     .umb-cropper-gravity .gravity-container {
         width: 100%;
@@ -66,15 +65,16 @@
     </div>
     <div ng-if="currentCrop" style="margin-bottom: 4px;">
         <div style="float: left; height: 20px; line-height: 20px; padding-bottom: 4px; padding-top: 4px; margin-right: 4px">Editing crop: <strong>{{ currentCrop.alias }}</strong></div>
-        <a href="{{}}" ng-click="reset()" class="btn btn-danger">Reset</a>
-        <a href="{{}}" ng-click="cancel()" class="btn btn-default">Cancel</a>
-        <a href="{{}}" ng-click="done()" class="btn btn-success">Done</a>
+        <a href="javascript:;" ng-click="reset()" class="btn btn-danger">Reset</a>
+        <a href="javascript:;" ng-click="cancel()" class="btn btn-default">Cancel</a>
+        <a href="javascript:;" ng-click="done()" class="btn btn-success">Done</a>
+        <br style="clear: both" />
     </div>
-    <div ng-show="currentCrop">
-        <img ng-src="{{mainimageurl}}" id="mainimage" class="hide" />
+    <div class="cropper-parent" ng-show="currentCrop" ng-style="{'max-width': maxWidth, 'max-height': maxHeight}">
+        <img ng-src="{{mainimageurl}}" id="mainimage" style="max-width: 100%; display: block" />
     </div>
-    <div ng-hide="currentCrop">
-        <umb-image-gravity src="mainimageurl" center="model.value.focalPoint" />
+    <div ng-hide="currentCrop" ng-style="{'max-width': maxWidth, 'max-height': maxHeight}">
+        <umb-image-gravity src="mainimageurl" center="model.value.focalPoint" on-value-changed="focalPointChanged(left, top)" />
     </div>
 
     <input ng-model="model.value" ng-show="true" type="hidden" name="{{model.alias}}" />

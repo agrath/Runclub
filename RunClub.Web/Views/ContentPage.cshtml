@@ -1,11 +1,11 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ContentPage>
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.ContentPage>
 @using ContentModels = RunClub.ContentModels;
 @{
 	Layout = "Master.cshtml";
 }
 <div class="pageContent">
-	@Html.GetGridHtml(Model.Content, ContentPage.GetModelPropertyType(p => p.PageContent).PropertyTypeAlias)
+	@Html.GetGridHtml(Model, ContentPage.GetModelPropertyType(p => p.PageContent).Alias)
 	
-	@Html.Raw(Model.Content.ExternalEmbed)
+	@Html.Raw(Model.ExternalEmbed)
 					
 </div>

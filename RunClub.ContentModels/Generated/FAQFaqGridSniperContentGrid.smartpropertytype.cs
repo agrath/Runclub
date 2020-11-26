@@ -1,8 +1,9 @@
 using System;
-using Umbraco.Core.Models;
-using Sniper.Umbraco.SmartPropertyTypes.SniperContentGrid;
-using Sniper.Umbraco.PropertyConverters.SniperUrlPicker.Models;
+using System.Collections.Generic;
 using Newtonsoft.Json;
+using Sniper.Umbraco.SmartPropertyTypes.SniperContentGrid;
+using Umbraco.Core.Models;
+using Umbraco.Core.Models.PublishedContent;
 
 namespace RunClub.ContentModels
 {
@@ -14,7 +15,8 @@ namespace RunClub.ContentModels
 		[JsonProperty]
 		public string FaqQuestion { get; private set; }
 		[JsonProperty]
-		public string FaqAnswer { get; private set; }
+		[JsonConverter(typeof(UmbracoRteJsonConverter))]
+		public System.Web.IHtmlString FaqAnswer { get; private set; }
 
 	}
 

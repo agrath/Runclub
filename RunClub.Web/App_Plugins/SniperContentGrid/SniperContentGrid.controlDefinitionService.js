@@ -1,4 +1,4 @@
-﻿angular.module('umbraco.services').factory('controlDefinitionService', function () {
+﻿angular.module('umbraco.services').factory('controlDefinitionService', ['$q', '$http', function ($q, $http) {
     /*
      * Adding a new column:
      * Add a new control definition as per below, optionally using a template 
@@ -19,7 +19,8 @@
                         view: 'textbox',
                         config: {},
                         template: '/App_Plugins/SniperContentGrid/propertyViews/textbox.html'
-                    }
+                    },
+                    prevalueTemplate: '/App_Plugins/SniperContentGrid/propertyPrevalueViews/textbox.html'
                 },
                 {
                     type: 'numeric',
@@ -144,8 +145,17 @@
                         alias: 'link',
                         label: '',
                         description: '',
-                        view: '/App_Plugins/SniperUrlPicker/SniperUrlPicker.html',
-                        config: {}
+                        view: 'multiurlpicker',
+                        config: {
+                            minNumber: 0,
+                            maxNumber: 1
+                        }
+                    },
+                    prevalueTemplate: '/App_Plugins/SniperContentGrid/propertyPrevalueViews/linkpicker.html',
+                    applyProperties: function (control, controlDefinition, props) {
+                        if (props.multiple) {
+                            delete control.config.maxNumber;
+                        }
                     }
                 },
                 {
@@ -156,12 +166,14 @@
                         label: '',
                         description: '',
                         view: 'rte',
-                        config: {
-                            editor: {
-                                toolbar: ["code", "styleselect", "undo", "formats", "cut", "bold", "redo", "italic", "alignleft", "aligncenter", "alignright", "bullist", "numlist", "link", "umbmediapicker", "umbmacro", "table", "umbembeddialog"],
-                                stylesheets: ['RTE'],
-                                dimensions: { height: 400 }
-                            }
+                        config: function () {
+                            var deferred = $q.defer();
+
+                            $http.get('/umbraco/surface/SniperContentGrid/RteConfig').then(function (resp) {
+                                deferred.resolve({ editor: resp.data });
+                            });
+
+                            return deferred.promise;
                         },
                         template: '/App_Plugins/SniperContentGrid/propertyViews/rte.html'
                     }
@@ -176,9 +188,37 @@
                         view: '/App_Plugins/SniperIconPicker/SniperIconPicker.html',
                         config: {}
                     }
+                },
+                {
+                    type: 'color',
+                    name: 'Color',
+                    control: {
+                        alias: 'color',
+                        label: '',
+                        description: '',
+                        view: '/App_Plugins/SpectrumColorPicker/SpectrumColorPicker.html',
+                        config: {
+                            enableTransparency: true
+                        }
+                    }
                 }
             ];
-            return controlDefinitions;
+
+            var promises = [];
+            controlDefinitions.forEach(function (item) {
+                if (typeof (item.control.config) === 'function') {
+                    var promise = item.control.config().then(function (result) {
+                        item.control.config = result;
+                    });
+                    promises.push(promise);
+                }
+            });
+
+            var deferred = $q.defer();
+            $q.all(promises).then(function () {
+                deferred.resolve(controlDefinitions);
+            });
+            return deferred.promise;
         }
     };
-});
+}]);

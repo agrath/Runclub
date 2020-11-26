@@ -1,5 +1,5 @@
 angular.module("umbraco").controller("UmbracoGridSniperContentGrid",
-    function ($scope, $routeParams, $timeout, assetsService, mediaResource, imageHelper, angularHelper, dialogService) {
+    function ($scope, $routeParams, $timeout, assetsService, mediaResource, imageHelper, angularHelper) {
         $scope.field = {
             view: "/App_Plugins/SniperContentGrid/SniperContentGrid.editor.html",
             editor: "UmbracoGridSniperContentGrid",
@@ -7,7 +7,9 @@ angular.module("umbraco").controller("UmbracoGridSniperContentGrid",
             value: $scope.control.value
         }
 
-        $scope.$watch(function () { return $scope.field.value; }, function (value) {
-            $scope.control.value = value;
+        $scope.$on('formSubmitting', function () {
+            $scope.$broadcast('sniperContentGridSubmitting');
+            $scope.control.value = $scope.field.value;
         });
+
     });
