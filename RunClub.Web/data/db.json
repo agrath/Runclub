@@ -1,4 +1,4 @@
-﻿[
+[
     {
         "id": "kfESfWTm",
         "name": "The Belmont Doughnut Run",
@@ -6460,5 +6460,354 @@
                 ]
             }
         ]
-    }
+    },
+    {
+        "id": "QFAZeeUz",
+        "name": "Auckland Domain 5k Fun run",
+        "enabled": true,
+        "description": "A great short loop through the Auckland Domain with a bit of everything - trail, hills, road and cross country!",
+        "meetingPoint": {
+            "label": "Auckland Museum",
+            "latitude": -36.8603838,
+            "longitude": 174.77782219999995,
+            "offset": {
+                "left": "5px",
+                "top": "5px"
+            },
+            "placement": "top"
+        },
+        "mapDefaults": {
+            "center": {
+                "latitude": -36.848448,
+                "longitude": 174.762191
+            },
+            "zoom": 12
+        },
+        "distanceOptions": [
+            5
+        ],
+        "distanceMarkerAlignments": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "terrain": [
+            {
+                "type": "trail",
+                "label": "Trail",
+                "percent": 25
+            },
+            {
+                "type": "xcountry",
+                "label": "Cross country",
+                "percent": 25
+            },
+            {
+                "type": "urban",
+                "label": "Road/Footpath",
+                "percent": 50
+            }
+        ],
+        "placesOfInterestOptions": [
+            {
+                "type": "parking",
+                "label": "Parking",
+                "visible": true,
+                "zIndex": 40
+            },
+            {
+                "type": "public-bathroom",
+                "label": "Public bathroom",
+                "visible": true,
+                "zIndex": 30
+            },
+            {
+                "type": "water-fountain",
+                "label": "Water fountain",
+                "visible": true,
+                "zIndex": 20
+            },
+            {
+                "type": "photo-camera",
+                "label": "Photo opportunity",
+                "visible": true,
+                "zIndex": 10
+            }
+        ],
+        "placesOfInterest": [
+
+        ]
+    },
+    {
+        "id": "TWOtwo2",
+        "name": "Two coasts, 2 hills and 2 parks",
+        "enabled": false,
+        "description": "Based on the Auckland Coast to Coast walk, this run takes us from one side of Auckland to the other.  From Onehunga to Mechanics Bay via One Tree Hill, Mt Eden and the Domain.  16 KM option is to cut across from Cornwall park to Mt Eden",
+
+
+        "meetingPoint": {
+            "label": "Taumanu Reserve near public toilets",
+            "latitude": -36.92389702,
+            "longitude": 174.77175933,
+            "offset": {
+                "left": "-10px",
+                "top": "0px"
+            },
+            "placement": "bottom"
+        },
+        "mapDefaults": {
+            "center": {
+                "latitude": -36.87888433,
+                "longitude": 174.76424949
+
+            },
+            "zoom": 10
+        },
+        "distanceOptions": [
+            16,26
+        ],
+        "distanceMarkerAlignments": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+        ],
+        "terrain": [
+            {
+                "type": "urban",
+                "label": "Urban",
+                "percent": 75
+            },
+            {
+                "type": "trail",
+                "label": "Hills",
+                "percent": 15
+            },
+            {
+                "type": "xcountry",
+                "label": "Park",
+                "percent": 10
+            }
+
+        ],
+        "placesOfInterest": [
+            {
+                "type": "public-bathroom",
+                "latitude": -36.92389702,
+                "longitude": 174.77175933
+            },
+            {
+                "type": "public-bathroom",
+                "latitude": -36.90580364029434,
+                "longitude": 174.77641083678267
+
+            },
+
+            {
+                "type": "public-bathroom",
+                "latitude": -36.89795992065129,
+                "longitude": 174.78367419089747
+            },
+
+
+            {
+                "type": "water-fountain",
+                "latitude": -36.86411928,
+                "longitude": 174.77141270
+            },
+            {
+                "type": "water-fountain",
+                "latitude": -36.8585039,
+                "longitude": 174.7749569
+            }
+        ],
+        "placesOfInterestOptions": [
+            {
+                "type": "parking",
+                "label": "Parking",
+                "visible": true,
+                "zIndex": 40
+            },
+            {
+                "type": "public-bathroom",
+                "label": "Public bathroom",
+                "visible": true,
+                "zIndex": 30
+            },
+            {
+                "type": "water-fountain",
+                "label": "Water fountain",
+                "visible": true,
+                "zIndex": 20
+            },
+            {
+                "type": "photo-camera",
+                "label": "Photo opportunity",
+                "visible": true,
+                "zIndex": 10
+            }
+        ],
+        "diversions": [
+        ],
+        "annotations": [
+        ]
+    },
+    {
+            "id": "coast2coast",
+            "name": "Coast To Coast",
+            "enabled": true,
+            "description": "Based on the Auckland Coast to Coast walk, this run takes us from one side of Auckland to the other.  Meeting at Onehunga Train station, we catch the train to Britomart, then run back to Onehunga Via the Domain, Mt Eden and One Tree hill.",
+            "meetingPoint": {
+                "label": "Onehunga Train Station",
+                "latitude": -36.925685036979495,
+                "longitude": 174.78626711237163,
+                "offset": {
+                    "left": "10px",
+                    "top": "0px"
+                },
+                "placement": "right"
+            },
+            "mapDefaults": {
+                "center": {
+                    "latitude": -36.87888433,
+                    "longitude": 174.76424949
+    
+                },
+                "zoom": 10
+            },
+            "distanceOptions": [
+                18.5
+            ],
+            "distanceMarkerAlignments": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0
+            ],
+            "terrain": [
+                {
+                    "type": "urban",
+                    "label": "Urban",
+                    "percent": 50
+                },
+                {
+                    "type": "trail",
+                    "label": "Hills",
+                    "percent": 20
+                },
+                {
+                    "type": "xcountry",
+                    "label": "Park",
+                    "percent": 30
+                }
+    
+            ],
+            "placesOfInterest": [
+                {
+                    "type": "public-bathroom",
+                    "latitude": -36.92389702,
+                    "longitude": 174.77175933
+                },
+                {
+                    "type": "public-bathroom",
+                    "latitude": -36.90580364029434,
+                    "longitude": 174.77641083678267
+    
+                },
+    
+                {
+                    "type": "public-bathroom",
+                    "latitude": -36.89795992065129,
+                    "longitude": 174.78367419089747
+                },
+    
+    
+                {
+                    "type": "water-fountain",
+                    "latitude": -36.86411928,
+                    "longitude": 174.77141270
+                },
+                {
+                    "type": "water-fountain",
+                    "latitude": -36.8585039,
+                    "longitude": 174.7749569
+                }
+            ],
+            "placesOfInterestOptions": [
+                {
+                    "type": "parking",
+                    "label": "Parking",
+                    "visible": true,
+                    "zIndex": 40
+                },
+                {
+                    "type": "public-bathroom",
+                    "label": "Public bathroom",
+                    "visible": true,
+                    "zIndex": 30
+                },
+                {
+                    "type": "water-fountain",
+                    "label": "Water fountain",
+                    "visible": true,
+                    "zIndex": 20
+                },
+                {
+                    "type": "photo-camera",
+                    "label": "Photo opportunity",
+                    "visible": true,
+                    "zIndex": 10
+                }
+            ],
+            "diversions": [
+            ],
+            "annotations": [
+            ]
+        }
 ]

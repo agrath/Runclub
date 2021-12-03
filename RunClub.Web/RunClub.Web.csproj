@@ -574,24 +574,29 @@
     <Content Include="css\tipTip.css" />
     <Content Include="data\BAYAzUnc.gpx" />
     <Content Include="data\BbXfrhbt.gpx" />
+    <Content Include="data\bgTLnnvq.gpx" />
     <Content Include="data\bHS9WMha-manual.gpx" />
     <Content Include="data\bHS9WMha.gpx" />
     <Content Include="data\BWrsLRNP.gpx" />
     <Content Include="data\calendar.json" />
     <Content Include="data\db.json" />
     <Content Include="data\ekBNMjnO.gpx" />
+    <Content Include="data\faq.json" />
     <Content Include="data\fSUqNwtc.gpx" />
     <Content Include="data\gxL4QNuC.gpx" />
     <Content Include="data\jDjWpnqp.gpx" />
+    <Content Include="data\kfESfWTm.gpx" />
     <Content Include="data\kPCzjCbW.gpx" />
     <Content Include="data\kwaBpRSC.gpx">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="data\LawAfAEu.gpx" />
     <Content Include="data\nhgQlDkn.gpx" />
+    <Content Include="data\QFAZeeUz.gpx" />
     <Content Include="data\RUCWGquH.gpx" />
     <Content Include="data\TcSVvBQT.gpx" />
     <Content Include="data\TDVkcjQB.gpx" />
+    <Content Include="data\team.json" />
     <Content Include="data\template.json" />
     <Content Include="data\udgHkNjC.gpx" />
     <Content Include="data\viyVJdOl.gpx" />
@@ -661,11 +666,6 @@
     <Content Include="config\Dashboard.config" />
     <Content Include="config\uSyncBackOffice.Config" />
     <Content Include="css\icons.less" />
-    <Content Include="data\faq.json" />
-    <Content Include="data\team.json" />
-    <Content Include="data\QFAZeeUz.gpx" />
-    <Content Include="data\bgTLnnvq.gpx" />
-    <Content Include="data\kfESfWTm.gpx" />
     <Content Include="Media\Web.config" />
     <Content Include="config\tinyMceConfig.config" />
     <Content Include="config\serilog.user.config" />
@@ -674,6 +674,7 @@
     <Content Include="config\ClientDependency.config" />
     <Content Include="config\BackOfficeTours\getting-started.json" />
     <Content Include="config\uSync8.config" />
+    <Content Include="data\gxL4QNuC-manual.gpx" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="Views\Web.config">

@@ -1,0 +1,511 @@
+﻿[
+  {
+    "timestamp": "2017-11-05T08:00:00",
+    "id": "ekBNMjnO",
+    "link": "https://www.meetup.com/Auckland-Running-Meetup/events/244421293/"
+  },
+  {
+    "timestamp": "2017-11-12T08:00:00",
+    "id": "zwSaUUvs",
+    "link": "https://www.meetup.com/Auckland-Running-Meetup/events/244448261/"
+  },
+  {
+    "timestamp": "2017-11-19T08:00:00",
+    "id": "kwaBpRSC",
+    "link": "https://www.meetup.com/Auckland-Running-Meetup/events/244448261/"
+  },
+  {
+    "timestamp": "2017-11-26T08:00:00",
+    "id": "nhgQlDkn",
+    "link": "https://www.meetup.com/Auckland-Running-Meetup/events/244447596/"
+  },
+  {
+    "timestamp": "2017-12-03T08:00:00",
+    "id": "xQDVhtqv",
+    "link": "https://www.meetup.com/Auckland-Running-Meetup/events/244447434/"
+  },
+  {
+    "timestamp": "2017-12-10T07:00:00",
+    "title": "Omaha Half Marathon",
+    "description": "No group Sunday run this week. Join the club pacing team at the Omaha Half Marathon.",
+    "link": "http://omahahalfmarathon.co.nz"
+  },
+  {
+    "timestamp": "2017-12-17T08:00:00",
+    "id": "TcSVvBQT",
+    "link": "https://www.meetup.com/Auckland-Running-Meetup/events/244448358/"
+  },
+  {
+    "timestamp": "2017-12-24T07:00:00",
+    "id": "X5zFfWYz"
+  },
+  {
+    "timestamp": "2017-12-31T07:00:00",
+    "id": "gxL4QNuC"
+  },
+  {
+    "timestamp": "2018-01-07T07:00:00",
+    "id": "bHS9WMha"
+  },
+  {
+    "timestamp": "2018-01-13T07:00:00",
+    "id": "Vy8bNwdF"
+  },
+  {
+    "timestamp": "2018-01-21T07:30:00",
+    "title": "Albany Lakes 10k",
+    "description": "No group Sunday run this week. Join the club pacing team at the Albany Lakes 10k event",
+    "link": "http://albanylakes.co.nz/"
+  },
+  {
+    "timestamp": "2018-01-28T07:00:00",
+    "id": "TDVkcjQB"
+  },
+  {
+    "timestamp": "2018-02-04T08:00:00",
+    "id": "viyVJdOl"
+  },
+  {
+    "timestamp": "2018-02-11T07:30:00",
+    "title": "Orewa Beach Half Marathon",
+    "description": "No group Sunday run this week. Join the club pacing team at the Orewa Beach Half Marathon.",
+    "link": "http://orewahalfmarathon.co.nz/"
+  },
+  {
+    "timestamp": "2018-02-18T08:00:00",
+    "id": "fSUqNwtc"
+  },
+  {
+    "timestamp": "2018-02-25T07:30:00",
+    "title": "Albany Lakes 10k",
+    "description": "No group Sunday run this week. Join the club pacing team at the Albany Lakes 10k event",
+    "link": "http://albanylakes.co.nz/"
+  },
+  {
+    "timestamp": "2018-03-04T07:00:00",
+    "id": "LawAfAEu"
+  },
+  {
+    "timestamp": "2018-03-11T07:00:00",
+    "id": "TDVkcjQB"
+  },
+  {
+    "timestamp": "2018-03-18T07:30:00",
+    "title": "Coatesville Half Marathon",
+    "description": "No group Sunday run this week. Join the club pacing team at the Coatesville Half Marathon.",
+    "link": "http://coatesvillehalfmarathon.co.nz/"
+  },
+  {
+    "timestamp": "2018-03-25T07:30:00",
+    "title": "Albany Lakes 10k",
+    "description": "No group Sunday run this week. Join the club pacing team at the Albany Lakes 10k event",
+    "link": "http://albanylakes.co.nz/"
+  },
+  {
+    "timestamp": "2018-04-01T08:00:00",
+    "id": "xQDVhtqv"
+  },
+  {
+    "timestamp": "2018-04-08T07:30:00",
+    "title": "Waterfront Half Marathon",
+    "description": "No group Sunday run this week. Join the club pacing team at the Waterfront Half Marathon.",
+    "link": "http://waterfronthalfmarathon.co.nz/"
+  },
+  {
+    "timestamp": "2018-04-15T07:15:00",
+    "title": "Run Auckland: Waiatarua Reserve",
+    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
+    "link": "http://runauckland.co.nz/"
+  },
+  {
+    "timestamp": "2018-04-22T08:00:00",
+    "id": "kwaBpRSC"
+  },
+  {
+    "timestamp": "2018-04-29T08:00:00",
+    "id": "BbXfrhbt"
+  },
+  {
+    "timestamp": "2018-05-06T07:15:00",
+    "title": "Run Auckland: Te Atatu Harbourview Peoples Park",
+    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
+    "link": "http://runauckland.co.nz/"
+  },
+  {
+    "timestamp": "2018-05-13T08:00:00",
+    "id": "kPCzjCbW"
+  },
+  {
+    "timestamp": "2018-05-20T08:00:00",
+    "id": "ZCgPwAZm"
+  },
+  {
+    "timestamp": "2018-05-27T07:15:00",
+    "title": "Run Auckland: Barry Curtis",
+    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
+    "link": "http://runauckland.co.nz/"
+  },
+  {
+    "timestamp": "2018-06-03T08:00:00",
+    "id": "TcSVvBQT"
+  },
+  {
+    "timestamp": "2018-06-10T08:00:00",
+    "id": "gxL4QNuC"
+  },
+  {
+    "timestamp": "2018-06-17T07:15:00",
+    "title": "Run Auckland: Sanders Reserve Paremoremo",
+    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
+    "link": "http://runauckland.co.nz/"
+  },
+  {
+    "timestamp": "2018-06-24T08:00:00",
+    "id": "udgHkNjC"
+  },
+  {
+    "timestamp": "2018-07-01T08:00:00",
+    "id": "kwaBpRSC"
+  },
+  {
+    "timestamp": "2018-07-08T07:15:00",
+    "title": "Run Auckland: Western Springs stadium & Lakeside park",
+    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
+    "link": "http://runauckland.co.nz/"
+  },
+  {
+    "timestamp": "2018-07-15T08:00:00",
+    "id": "viyVJdOl"
+  },
+  {
+    "timestamp": "2018-07-22T08:00:00",
+    "id": "fSUqNwtc"
+  },
+  {
+    "timestamp": "2018-07-29T07:15:00",
+    "title": "Run Auckland: Waiatarua Reserve",
+    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
+    "link": "http://runauckland.co.nz/"
+  },
+  {
+    "timestamp": "2018-08-05T08:00:00",
+    "id": "BbXfrhbt"
+  },
+  {
+    "timestamp": "2018-08-03T16:00:00",
+    "title": "Group trip: MetroRun runs Taupo Marathon",
+    "description": "Many of our club members are running in the Taupo Marathon, so we've organised a group trip. Alternatively, we've got our normal Sunday run planned.",
+    "link": "https://www.facebook.com/events/1649337851781849/"
+  },
+  {
+    "timestamp": "2018-08-12T07:15:00",
+    "title": "Run Auckland: MTF Silverdale Half",
+    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
+    "link": "http://runauckland.co.nz/"
+  },
+  {
+    "timestamp": "2018-08-19T08:00:00",
+    "id": "ekBNMjnO"
+  },
+  {
+    "timestamp": "2018-08-26T08:00:00",
+    "id": "TDVkcjQB"
+  },
+  {
+    "timestamp": "2018-09-02T08:00:00",
+    "id": "xQDVhtqv"
+  },
+  {
+    "timestamp": "2018-09-09T08:00:00",
+    "id": "viyVJdOl"
+  },
+  {
+    "timestamp": "2018-09-16T08:00:00",
+    "id": "QFAZeeUz",
+    "title": "Metrorun event: Auckland domain 5k fun run",
+    "description": "This Sunday, we've organised a FREE fun run event with running heroes in the Auckland Domain to take the place of our regular long run. Those of you who are training for half and full marathon events may like to add some extra distance on! Meet in the Auckland domain by the museum at 0800 for an 0830 race start. The course takes in the bush trails of the Auckland domain (with a nice hill!), plus a bit of on-road and a bit of cross country. Register on Running heroes for the spot prizes.",
+    "link": "https://www.facebook.com/events/1056976641126343/"
+  },
+  {
+    "timestamp": "2018-09-23T08:00:00",
+    "id": "BbXfrhbt"
+  },
+  {
+    "timestamp": "2018-09-30T08:00:00",
+    "id": "TcSVvBQT"
+  },
+  {
+    "timestamp": "2018-10-07T08:00:00",
+    "id": "kPCzjCbW"
+  },
+  {
+    "timestamp": "2018-10-14T08:00:00",
+    "id": "udgHkNjC"
+  },
+  {
+    "timestamp": "2018-10-21T08:00:00",
+    "id": "TDVkcjQB"
+  },
+  {
+    "timestamp": "2018-10-28T08:00:00",
+    "title": "No group run",
+    "description": "No group run this week - Auckland Marathon weekend, as this is a key event for our members, we don't have a long run this Sunday",
+    "link": "https://aucklandmarathon.co.nz/"
+  },
+  {
+    "timestamp": "2018-11-04T08:00:00",
+    "id": "kwaBpRSC"
+  },
+  {
+    "timestamp": "2018-11-11T08:00:00",
+    "id": "ZCgPwAZm"
+  },
+  {
+    "id": "bgTLnnvq",
+    "timestamp": "2018-11-18T07:00:00",
+    "title": "Group trip: Rangitoto Island",
+    "description": "This Sunday, we're running on Rangitoto Island in the Hauraki Gulf. This run is weather dependant, if the weather is not great, we'll be doing the Hobson Bay/Orakei loop instead. We'll catch the ferry over in the morning. The specific route will be posted on facebook along with details of sailing times and other important information."
+  },
+  {
+    "timestamp": "2018-11-25T08:00:00",
+    "id": "TcSVvBQT"
+  },
+  {
+    "timestamp": "2018-12-02T08:00:00",
+    "id": "ekBNMjnO"
+  },
+  {
+    "timestamp": "2018-12-09T08:00:00",
+    "id": "BbXfrhbt"
+  },
+  {
+    "timestamp": "2018-12-16T08:00:00",
+    "id": "ZCgPwAZm"
+  },
+  {
+    "timestamp": "2019-01-13T07:00:00",
+    "id": "kfESfWTm"
+  },
+  {
+    "timestamp": "2019-01-20T07:30:00",
+    "id": "fSUqNwtc"
+  },
+  {
+    "timestamp": "2019-01-27T07:00:00",
+    "id": "LawAfAEu"
+  },
+  {
+    "timestamp": "2019-02-03T07:00:00",
+    "id": "kwaBpRSC"
+  },
+  {
+    "timestamp": "2019-02-10T07:30:00",
+    "title": "Coatesville Half Marathon",
+    "description": "No group Sunday run this week. Many members are running at the Coatesville Half Marathon. Join them?",
+    "link": "http://coatesvillehalfmarathon.co.nz/"
+  },
+  {
+    "timestamp": "2019-02-17T07:00:00",
+    "id": "TDVkcjQB"
+  },
+  {
+    "timestamp": "2019-02-24T07:00:00",
+    "id": "viyVJdOl"
+  },
+  {
+    "timestamp": "2019-03-03T08:00:00",
+    "id": "jDjWpnqp"
+  },
+  {
+    "timestamp": "2019-03-10T08:00:00",
+    "id": "TcSVvBQT"
+  },
+  {
+    "timestamp": "2019-03-17T08:00:00",
+    "id": "kPCzjCbW"
+  },
+  {
+    "timestamp": "2019-03-24T08:00:00",
+    "title": "Albany Lakes 10k",
+    "description": "No group Sunday run this week. Join us at the Albany Lakes 10k event",
+    "link": "http://albanylakes.co.nz/"
+  },
+  {
+    "timestamp": "2019-03-31T08:00:00",
+    "id": "ZCgPwAZm"
+  },
+  {
+    "timestamp": "2019-04-07T08:00:00",
+    "id": "BAYAzUnc"
+  },
+  {
+    "timestamp": "2019-04-14T08:00:00",
+    "title": "Waterfront Half Marathon",
+    "description": "No group Sunday run this week. Join us at the Waterfront Half Marathon event",
+    "link": "https://waterfronthalfmarathon.co.nz/"
+  },
+  {
+    "timestamp": "2019-04-21T08:00:00",
+    "id": "xQDVhtqv"
+  },
+  {
+    "timestamp": "2019-04-28T08:00:00",
+    "id": "BbXfrhbt"
+  },
+  {
+    "timestamp": "2019-05-05T08:00:00",
+    "id": "kwaBpRSC"
+  },
+  {
+    "timestamp": "2019-05-12T07:15:00",
+    "title": "Run Auckland: Western Springs",
+    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
+    "link": "http://runauckland.co.nz/"
+  },
+  {
+    "timestamp": "2019-05-19T08:00:00",
+    "id": "LawAfAEu"
+  },
+  {
+    "timestamp": "2019-05-26T08:00:00",
+    "id": "udgHkNjC"
+  },
+  {
+    "timestamp": "2019-06-02T07:15:00",
+    "title": "Run Auckland: Ambury Regional Park",
+    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
+    "link": "http://runauckland.co.nz/"
+  },
+  {
+    "timestamp": "2019-06-09T08:00:00",
+    "id": "TcSVvBQT"
+  },
+  {
+    "timestamp": "2019-06-16T08:00:00",
+    "id": "TDVkcjQB"
+  },
+  {
+    "timestamp": "2019-06-23T08:00:00",
+    "id": "kfESfWTm"
+  },
+  {
+    "timestamp": "2019-06-30T08:00:00",
+    "id": "ekBNMjnO"
+  },
+  {
+    "timestamp": "2019-07-07T08:00:00",
+    "id": "viyVJdOl"
+  },
+  {
+    "timestamp": "2019-07-14T07:15:00",
+    "title": "Run Auckland: Paremoremo",
+    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
+    "link": "http://runauckland.co.nz/"
+  },
+  {
+    "timestamp": "2019-07-21T08:00:00",
+    "id": "fSUqNwtc"
+  },
+  {
+    "timestamp": "2019-07-28T08:00:00",
+    "id": "BbXfrhbt"
+  },
+  {
+    "timestamp": "2019-08-04T07:15:00",
+    "title": "Run Auckland: Waiatarua Reserve",
+    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
+    "link": "http://runauckland.co.nz/"
+  },
+  {
+    "timestamp": "2019-08-11T08:00:00",
+    "id": "xQDVhtqv"
+  },
+  {
+    "timestamp": "2019-08-18T08:00:00",
+    "id": "ZCgPwAZm"
+  },
+  {
+    "timestamp": "2019-08-25T07:15:00",
+    "title": "Run Auckland: Millwater",
+    "description": "No group Sunday run this week. Join the club pacing team at the Run Auckland series",
+    "link": "http://runauckland.co.nz/"
+  },
+  {
+    "timestamp": "2019-09-01T08:00:00",
+    "id": "BAYAzUnc"
+  },
+  {
+    "timestamp": "2019-09-08T07:15:00",
+    "title": "North Shore Half Marathon",
+    "description": "No group Sunday run this week. Join us at the North Shore Half Marathon",
+    "link": "http://northshoremarathon.co.nz"
+  },
+  {
+    "timestamp": "2019-09-15T08:00:00",
+    "id": "kwaBpRSC"
+  },
+  {
+    "timestamp": "2019-09-22T08:00:00",
+    "id": "ekBNMjnO"
+  },
+  {
+    "timestamp": "2019-09-29T08:00:00",
+    "title": "Devonport Half Marathon",
+    "description": "No group Sunday run this week. Join us at the Devonport Half Marathon",
+    "link": "https://devonporthalfmarathon.co.nz/"
+  },
+  {
+    "timestamp": "2019-10-06T08:00:00",
+    "id": "TcSVvBQT"
+  },
+  {
+    "timestamp": "2019-10-13T08:00:00",
+    "id": "LawAfAEu"
+  },
+  {
+    "timestamp": "2019-10-20T08:00:00",
+    "title": "No group run",
+    "description": "No group run this week - Auckland Marathon weekend, as this is a key event for our members, we don't have a long run this Sunday",
+    "link": "https://aucklandmarathon.co.nz/"
+  },
+  {
+    "timestamp": "2019-10-27T08:00:00",
+    "id": "kfESfWTm"
+  },
+  {
+    "timestamp": "2019-11-03T08:00:00",
+    "id": "TDVkcjQB"
+  },
+  {
+    "timestamp": "2019-11-10T08:00:00",
+    "id": "BbXfrhbt"
+  },
+  {
+    "timestamp": "2019-11-17T08:00:00",
+    "id": "kPCzjCbW"
+  },
+  {
+    "timestamp": "2019-11-24T08:00:00",
+    "id": "udgHkNjC"
+  },
+  {
+    "timestamp": "2019-12-01T08:00:00",
+    "title": "Omaha Half Marathon",
+    "description": "No group Sunday run this week. Join the club pacing team at the Omaha Half Marathon.",
+    "link": "http://omahahalfmarathon.co.nz"
+  },
+  {
+    "timestamp": "2019-12-08T07:00:00",
+    "id": "jDjWpnqp"
+  },
+  {
+    "timestamp": "2019-12-15T08:00:00",
+    "id": "bgTLnnvq",
+    "title": "Group trip: Rangitoto Island",
+    "description": "This Sunday, we're running on Rangitoto Island in the Hauraki Gulf. This run is weather dependant, if the weather is not great, we'll be doing the Hobson Bay/Orakei loop instead. We'll catch the ferry over in the morning. The specific route will be posted on facebook along with details of sailing times and other important information."
+  },
+  {
+    "timestamp": "2019-12-22T08:00:00",
+    "id": "viyVJdOl"
+  }
+]
