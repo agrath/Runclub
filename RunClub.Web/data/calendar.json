@@ -1,8 +1,12 @@
 {
   "covidAlert": {
     "enabled": true,
-    "level": 3,
-    "message": "Level RED.  We are running, with groups limited to 25pax, mandatory RSVP, mandatory COVID QR code scanning",
+    "alertLevelText": "Red light",
+    "leftBackgroundColour": "#c00",
+    "rightBackgroundColour": "#ccc",
+    "leftTextColour": "#fff",
+    "rightTextColour": "#000",
+    "message": "We are running, with groups limited to 25pax, mandatory RSVP, mandatory COVID QR code scanning",
     "showUpcomingEvents": true
   },
   "events": [
