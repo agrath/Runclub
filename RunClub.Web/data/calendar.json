@@ -1,129 +1,17 @@
 {
   "covidAlert": {
     "enabled": true,
-    "alertLevelText": "Red light",
-    "leftBackgroundColour": "#c00",
+    "alertLevelText": "Covid Stuff",
+
+    "leftBackgroundColour": "#FFC000",
     "rightBackgroundColour": "#ccc",
-    "leftTextColour": "#fff",
+    "leftTextColour": "#000",
     "rightTextColour": "#000",
-    "message": "We are running, with groups limited to 25pax, mandatory RSVP, mandatory COVID QR code scanning",
+    "message": "We are running at the moment. Please RSVP on facebook so we can keep a track of numbers and stay home if you are feeling sick.",
     "showUpcomingEvents": true
   },
   "events": [
-    {
-      "timestamp": "2020-11-08T08:00:00",
-      "id": "viyVJdOl"
-    },
-    {
-      "timestamp": "2020-11-15T08:00:00",
-      "id": "ZCgPwAZm"
-    },
-    {
-      "timestamp": "2020-11-22T08:00:00",
-      "id": "TcSVvBQT"
-    },
-    {
-      "timestamp": "2020-11-29T08:00:00",
-      "id": "kPCzjCbW"
-    },
-    {
-      "timestamp": "2021-01-17T07:00:00",
-      "id": "fSUqNwtc"
-    },
-    {
-      "timestamp": "2021-01-24T07:00:00",
-      "id": "TDVkcjQB"
-    }
-  ,
-    {
-      "timestamp": "2021-01-31T07:00:00",
-      "id": "BAYAzUnc"
-    }
-  ,
-    {
-      "timestamp": "2021-02-07T07:00:00",
-      "id": "BbXfrhbt"
-    }
-  ,
-    {
-      "timestamp": "2021-02-14T07:00:00",
-      "id": "udgHkNjC"
-    },
-    {
-      "timestamp": "2021-02-21T07:00:00",
-      "id": "ekBNMjnO"
-    }
-  ,
-    {
-      "timestamp": "2021-02-28T07:00:00",
-      "title": "Cornwell Park run cancelled",
-      "description": "Due to alert level 3 conditions, run has been cancelled.",
-        "link": "https://covid19.govt.nz/"
-    }
-  ,
-    {
-      "timestamp": "2021-03-07T07:00:00",
-      "id": "xQDVhtqv"
-    },
-    {
-      "timestamp": "2021-03-14T07:00:00",
-      "id": "LawAfAEu"
-    },
-    {
-      "timestamp": "2021-03-21T07:00:00",
-      "id": "coast2coast"
-    },
-    {
-      "timestamp": "2021-03-28T07:00:00",
-      "id": "kwaBpRSC"
-    },
-    {
-      "timestamp": "2021-04-04T08:00:00",
-      "id": "udgHkNjC"
-    },
-    {
-      "timestamp": "2021-04-11T08:00:00",
-      "id": "BAYAzUnc"
-    },
-    {
-      "timestamp": "2021-04-18T08:00:00",
-      "id": "BbXfrhbt"
-    },
-    {
-      "timestamp": "2021-04-25T08:00:00",
-      "id": "TcSVvBQT"
-    },
-    {
-      "timestamp": "2021-05-02T08:00:00",
-      "id": "jDjWpnqp"
-    },
-    {
-      "timestamp": "2021-05-09T08:15:00",
-      "title": "MODIFIED - READ THIS - St Heliers to Tahuna Torea",
-      "description": "Due to a mild clash with a Triathon in Mission bay, we will be starting this Run from St Heliers at 8:15.  Meet by the main toliet block in the middle of St Heliers, avoid Tamaki Drive, it will be shut.",
-      "link": "https://metrorun.nz/app/routes/ekBNMjnO"
-    },
-    {
-      "timestamp": "2021-05-16T08:00:00",
-      "id": "zwSaUUvs"
-    },
-    {
-      "timestamp": "2021-05-23T08:00:00",
-      "id": "viyVJdOl"
-    },
-    {
-      "timestamp": "2021-05-30T08:00:00",
-      "id": "fSUqNwtc"
-    },
-    {
-      "timestamp": "2021-06-06T08:00:00",
-      "id": "BbXfrhbt"
-    },
-    {
-      "timestamp": "2021-06-13T08:00:00",
-      "id": "xQDVhtqv"
-    },
-    {
+     {
       "timestamp": "2021-06-20T08:00:00",
       "id": "udgHkNjC"
     },
@@ -204,8 +92,120 @@
     {
       "timestamp": "2021-12-19T09:15:00",
       "id": "bgTLnnvq"
+    },
+    {
+      "timestamp": "2022-01-16T07:00:00",
+      "id": "ZCgPwAZm"
+    },
+    {
+      "timestamp": "2022-01-23T08:00:00",
+      "title": "No run this week",
+      "description": "There are lots of events on, Auckland Marathon and The Goat.  We will have something on next week"
+    },
+    {
+      "timestamp": "2022-01-30T07:00:00",
+      "id": "kwaBpRSC"
     }
-
+  ,{
+      "timestamp": "2022-02-06T07:00:00",
+      "id": "BbXfrhbt"
+    }
+  ,{
+      "timestamp": "2022-02-13T07:00:00",
+      "id": "zwSaUUvs"
+    }
+  ,{
+      "timestamp": "2022-02-20T07:00:00",
+      "id": "ekBNMjnO"
+    }
+  ,{
+      "timestamp": "2022-02-27T07:00:00",
+      "id": "kPCzjCbW"
+    }
+  ,{
+      "timestamp": "2022-03-06T07:00:00",
+      "id": "TcSVvBQT"
+    }
+  ,{
+      "timestamp": "2022-03-13T07:00:00",
+      "id": "jDjWpnqp"
+    }
+  ,{
+      "timestamp": "2022-03-20T08:00:00",
+      "id": "udgHkNjC"
+    }
+  ,{
+      "timestamp": "2022-03-27T08:00:00",
+      "id": "TDVkcjQB"
+    }
+  ,{
+      "timestamp": "2022-04-02T08:00:00",
+      "id": "LawAfAEu"
+    }
+  ,{
+      "timestamp": "2022-04-10T08:00:00",
+      "id": "BbXfrhbt"
+    }
+    ,{
+      "timestamp": "2022-04-17T08:00:00",
+      "id": "omaha"
+    } ,
+    {
+      "timestamp": "2022-04-24T08:00:00",
+      "id": "kwaBpRSC"
+    },
+    {
+      "timestamp": "2022-05-01T08:00:00",
+      "id": "fSUqNwtc"
+    },
+    {
+      "timestamp": "2022-05-08T08:00:00",
+      "id": "millennium"
+    },
+    {
+      "timestamp": "2022-05-15T08:00:00",
+      "id": "ZCgPwAZm"
+    },
+    {
+      "timestamp": "2022-05-22T08:00:00",
+      "id": "xQDVhtqv"
+    },
+    {
+      "timestamp": "2022-05-29T08:00:00",
+      "id": "TcSVvBQT"
+    },
+    {
+      "timestamp": "2022-06-05T08:00:00",
+      "id": "tuff2"
+    },
+    {
+      "timestamp": "2022-06-12T08:00:00",
+      "id": "ekBNMjnO"
+    },
+    {
+      "timestamp": "2022-06-19T08:00:00",
+      "id": "BbXfrhbt"
+    },
+    {
+      "timestamp": "2022-06-26T08:00:00",
+      "id": "udgHkNjC"
+    },
+    {
+      "timestamp": "2022-07-03T08:00:00",
+      "id": "TcSVvBQT"
+    },
+    {
+      "timestamp": "2022-07-10T08:00:00",
+      "id": "kwaBpRSC"
+    },
+    {
+      "timestamp": "2022-07-17T08:00:00",
+      "id": "ekBNMjnO"
+    },
+    {
+      "timestamp": "2022-07-24T08:00:00",
+      "id": "fSUqNwtc"
+    }
 
   ]
 }
