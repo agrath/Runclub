@@ -231,7 +231,7 @@
     ]
   },
   {
-    "id": "fSUqNwtc",
+    "id": "bucklandsbeach",
     "name": "Bucklands Beach to Panmure Basin",
     "enabled": true,
     "description": "Mostly flat and mostly coastal, this run is ideal for clocking up the miles ready for that upcoming marathon, half or ultra. The course is a simple lollipop that follows the Rotary Walkway south to the Panmure Basin where we complete an anti-clockwise loop, before heading home.\r\nTo shorten, turn back at any time. To lengthen, there are plenty of options around Musick Point and Bucklands Beach.",
@@ -383,7 +383,7 @@
     ]
   },
   {
-    "id": "kwaBpRSC",
+    "id": "watercare",
     "name": "Mangere Bridge Watercare Walkway",
     "enabled": true,
     "description": "Flat and mostly off road—this is the place to get in LOTS of miles to get you ready for that upcoming half or full marathon!\r\nMeeting at the Mangere Boating Club we’ll head south from there along the coast through Ambury Regional Park, around the lake in the south (turn back here for 13k) and then carry on south along the Watercare Pathway.\r\nOnce back to the boat club we’ll have options to carry on north to the Onehunga coastal path.So there is plenty of extra mileage to be done here on flat trails.",
@@ -757,7 +757,7 @@
     ]
   },
   {
-    "id": "ekBNMjnO",
+    "id": "missionbaytahuna",
     "name": "Mission Bay to Tahuna Torea",
     "enabled": true,
     "description": "This run takes you beyond the confines of Tamaki drive and into some of the hidden gems of Auckland's eastern bays.\r\nThe route heads east to Achilles Point, then to Glover Park, Churchill Park, Glendowie Park and eventually to the stunning Tahuna Torea Nature Reserve.\r\nIt's a 17k out-and-back.  There are options to make it shorter (including turning back at Achilles Point - 7k or Glover Park - 10k).  Longer options include an add-on afterwards along Tamaki Drive.",
@@ -915,9 +915,9 @@
     ]
   },
   {
-    "id": "zwSaUUvs",
+    "id": "maraetai",
     "name": "Maraetai Omana Regional Park",
-    "enabled": false,
+    "enabled": true,
     "description": "This is a stunning seaside run with a great cafe and beach to relax at once all the running has been done. Oh which there is plenty of running out here! We’ll head west first heading along the coast to the marina at Beachlands, before retracing our steps back to Maraetai (18k in total). For those going longer there is a great 14k out-and-back to Duder Regional Park heading east along the coast road.",
     "meetingPoint": {
       "label": "Maraetai Wharf Cafe",
@@ -1673,13 +1673,14 @@
     ]
   },
   {
-    "id": "xQDVhtqv",
+    "id": "titirangi",
     "name": "Titirangi - Waiatarua Circuit",
-    "enabled": false,
-    "description": "This is the legendary course that Arthur Lydiard trained all his world-beating runners on back in the 60s.\r\nWe'll be doing a 21.5k loop from Titirangi up West Coast Road and down Scenic Drive and Exhibition Drive. There are options to go shorter by cutting through Shaw Rd - 14.5k, or longer by adding on an out and back along Exhibition Drive - 28k.\r\nThis a classic Auckland run, that is known by runners all over the world. Don't miss it!\r\nMuch of this run is on winding, country roads.  Please wear something bright so cars can see you.\r\nNOTE: Traffic on this route is busy. All runners joining us run at their own risk and agree not to hold the club or any run leaders responsible for any injury or damages to person or belongings.",
-    "importantNotes": "Some of this run is on-road with no footpath. We strongly recommend bright or reflective clothing and request that you do not wear headphones for this run.",
+    "enabled": true,
+    "description": "Loosely based on the legendary course that Arthur Lydiard trained all his world-beating runners on back in the 60s.\r\nWe have modified the loop to avoid the traffic at the top of west coast road and scenic drive.  The base route is an 18k loop from Titirangi up West Coast Road then up Parker Road to the visitor centre, then down Exhibition Drive. There are options to round up to 21kms by adding on Kauri Cathedral and the Tony special.  There are also options to go shorter by cutting through Shaw Rd - 14.5km.  \r\nThis a classic Auckland run, that is known by runners all over the world. Don't miss it!",
+
+    "importantNotes": "Some of this run is on-road with no footpath. We strongly recommend bright or reflective clothing and request that you do not wear headphones for this run.  All runners joining us run at their own risk and agree not to hold the club or any run leaders responsible for any injury or damages to person or belongings.",
     "meetingPoint": {
-      "label": "Titirangi car park, cnr Titirangi Rd. & South Titirangi Rd.",
+      "label": "Cnr Titirangi Rd. & South Titirangi Rd.",
       "latitude": -36.93812296,
       "longitude": 174.65598285,
       "offset": {
@@ -1710,8 +1711,8 @@
     },
     "distanceOptions": [
       14.5,
-      21,
-      28
+      18,
+      21
     ],
     "distanceMarkerAlignments": [
       1,
@@ -2238,15 +2239,34 @@
     ],
     "annotations": [
       {
-        "title": "Longer run option",
+        "title": "Kauri Cathedral",
         "visible": true,
-        "description": "Turn around here, and do an out and back along Exhibition Drive. This adds 7k to the run.",
+        "description": "Option adds 1.5km",
         "anchor": {
-          "latitude": -36.93734689,
-          "longitude": 174.64395046
+          "latitude": -36.9442048,
+          "longitude": 174.6068055
         },
         "offset": {
           "left": "0px",
+          "top": "0px"
+        },
+        "placement": "left",
+        "backgroundColour": "#ffffff",
+        "border": true,
+        "fontColour": "#000000",
+        "fontSize": "13px",
+        "showCloseButton": true
+      },
+      {
+        "title": "Tony Special",
+        "visible": true,
+        "description": "Option adds 1km of gut busting hill work",
+        "anchor": {
+          "latitude": -36.9507195,
+          "longitude": 174.6212589
+        },
+        "offset": {
+          "left": "-10px",
           "top": "0px"
         },
         "placement": "bottom",
@@ -2258,8 +2278,9 @@
       }
     ]
   },
+  -36.95056978443494, 174.6211847853388,
   {
-    "id": "TcSVvBQT",
+    "id": "threepeaks",
     "name": "Auckland Domain Three or Four Peaks",
     "enabled": true,
     "description": "Conquer Auckland’s three central volcanic peaks of Mt Hobson, Mt St John and Mt Eden, before making your through the lush trails of Auckland Domain.\r\nPlenty of options to shorten the route or climb fewer Peaks. If three climbs aren't enough to earn your breakfast, then add-on drops down through Ayr Reserve for a stiff climb climb back up through Newmarket Park.",
@@ -4618,9 +4639,9 @@
     ]
   },
   {
-    "id": "kPCzjCbW",
+    "id": "totara",
     "name": "Totara Park",
-    "enabled": false,
+    "enabled": true,
     "description": "South Auckland’s premier destination for running, Totara Park includes beautiful bush, some meaty hills and meandering mountain bike paths that are soft under foot—ideal for a lap or two on this 10k course.\r\nWe’ll start by heading west to do a partial loop around the lower bush section before following the western border of the park up to the mountain bike paths of:\r\n\r\nHub Connector (Fat Man’s Revenge)\r\nPony Express\r\nAnaconda\r\n\r\nThen we do one small loop around the eastern portion of the lower bush to make a total of 10k. Add on by doing another lap... or two!",
     "meetingPoint": {
       "label": "",
@@ -4640,8 +4661,8 @@
       "zoom": 12
     },
     "distanceOptions": [
-      9,
-      10
+      10,
+      20
     ],
     "distanceMarkerAlignments": [
       1,
@@ -5351,7 +5372,7 @@
     ]
   },
   {
-    "id": "udgHkNjC",
+    "id": "takapunagreenway",
     "name": "Takapuna Greenway",
     "enabled": true,
     "description": "Starting at Takapuna Beach Cafe (22 The Promenade) we'll head down the coast first along the beach and then jump over to the Greenway and follow it south along the western side of the peninsula to reach Devonport. From here we'll follow the Auckland Marathon course back north to Takapuna.\r\nThis full run 15km but if you'd like to make it 11k, head left via Seabreeze Rd to Narrow Neck Beach (you'll still experience the main two hills of the Takapuna section of the Auckland Marathon course).\r\nTo make it 8k, head left along Bayswater Ave to Lake Road.",
@@ -5701,9 +5722,9 @@
     "annotations": []
   },
   {
-    "id": "ZCgPwAZm",
+    "id": "orakei",
     "name": "Hobson Bay, Orakei Basin loop",
-    "enabled": false,
+    "enabled": true,
     "description": "Probably the most run stretch of pavement in New Zealand, we'll start with a gentle jog along Tamaki Drive to Ngapipi Rd. (option to turn back here, for 6k total). Then sign a left to run around Hobson Bay, and Orakei Basin, up Brighton Road, down St Stephens (past what used to be John Key's place) and then back along Tamaki Drive.\r\nThe full loop is 16.5k, but can be shortened to 14.5k by skipping Orakei Basin. If you'd like to add on more, a 6k out-and-back to St Heliers is ideal.",
     "meetingPoint": {
       "label": "The car park opposite Mission Bay’s Berkeley Cinemas",
@@ -5723,10 +5744,7 @@
       "zoom": 12
     },
     "distanceOptions": [
-      6,
-      14.5,
-      16.5,
-      22.5
+      16.5
     ],
     "distanceMarkerAlignments": [
       1,
@@ -6360,7 +6378,7 @@
     ]
   },
   {
-    "id": "BbXfrhbt",
+    "id": "zooloop",
     "name": "Auckland Zoo - City Loop",
     "enabled": true,
     "description": "From Auckland Zoo (Western Springs) we’ll head north through Seddon Fields, east through Westmere and Herne Bay to reach the waterfront paths of Westhaven and the Viaduct.\r\nFrom here we’ll join the bike paths heading up Grafton Gully and alongside the motorway to find our way bike to Western Springs, finishing off with a gentle jog around the lake and a coffee or two at the zoo cafe.",
@@ -13818,6 +13836,101 @@
         "type": "urban",
         "label": "Urban",
         "percent": 50
+      }
+    ],
+    "placesOfInterest": [
+
+      {
+        "type": "public-bathroom",
+        "latitude": -36.80832,
+        "longitude": 174.7507
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.80836,
+        "longitude": 174.750671
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8148422,
+        "longitude": 174.741043
+      }
+    ],
+    "placesOfInterestOptions": [
+
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [],
+    "annotations": [
+    ]
+  },
+  {
+    "id": "westhaven",
+    "name": "Westhaven to St Heliers",
+    "enabled": true,
+    "description": "The second half of Auckland Marathon. An out and back run from Westhaven Marina to St Heliers.  This route is flat and takes in the most run pavement in Auckland.  This route is an easy to navigate out and back, so runners can turn around at any distance. ",
+
+
+
+
+
+    "meetingPoint": {
+      "label": "Near public toliet on Westhaven Drive",
+      "latitude": -36.83759624,
+      "longitude": 174.74245681,
+      "offset": {
+        "left": "20px",
+        "top": "0px"
+      },
+      "placement": "top"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.84131373,
+        "longitude": 174.78443200
+      },
+      "zoom": 9
+    },
+    "distanceOptions": [
+     24
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "terrain": [
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 100
       }
     ],
     "placesOfInterest": [

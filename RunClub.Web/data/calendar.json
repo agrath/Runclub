@@ -1,6 +1,6 @@
 {
   "covidAlert": {
-    "enabled": true,
+    "enabled": false,
     "alertLevelText": "Covid Stuff",
 
     "leftBackgroundColour": "#FFC000",
@@ -11,201 +11,135 @@
     "showUpcomingEvents": true
   },
   "events": [
-     {
-      "timestamp": "2021-06-20T08:00:00",
-      "id": "udgHkNjC"
-    },
-    {
-      "timestamp": "2021-06-27T08:00:00",
-      "id": "kwaBpRSC"
-    },
-    {
-      "timestamp": "2021-07-04T08:00:00",
-      "id": "ZCgPwAZm"
-    },
-    {
-      "timestamp": "2021-07-11T08:00:00",
-      "id": "kPCzjCbW"
-    },
-    {
-      "timestamp": "2021-07-18T08:00:00",
-      "id": "coast2coast"
-    },
-    {
-      "timestamp": "2021-07-25T08:00:00",
-      "id": "TcSVvBQT"
-    },
-    {
-      "timestamp": "2021-08-01T08:00:00",
-      "id": "ekBNMjnO"
-    },
-    {
-      "timestamp": "2021-08-08T08:00:00",
-      "id": "zwSaUUvs"
-    },
-    {
-      "timestamp": "2021-08-15T08:00:00",
-      "id": "BbXfrhbt"
-    },
-    {
-      "timestamp": "2021-08-22T08:00:00",
-      "title": "No run this week",
-      "description": "The covidians are on the loose again.  Keep up your regular running.  Don't let lockdown stop you running solo in your local area!"
-    },
-    {
-      "timestamp": "2021-08-29T08:00:00",
-      "id": "udgHkNjC"
-    },
-    {
-      "timestamp": "2021-09-05T08:00:00",
-      "id": "kwaBpRSC"
-    },
-    {
-      "timestamp": "2021-09-12T08:00:00",
-      "id": "ZCgPwAZm"
-    },
-    {
-      "timestamp": "2021-09-19T08:00:00",
-      "id": "TcSVvBQT"
-    },
-    {
-      "timestamp": "2021-09-26T08:00:00",
-      "id": "BAYAzUnc"
-    },
-    {
-      "timestamp": "2021-11-14T08:00:00",
-      "id": "udgHkNjC"
-    },
-    {
-      "timestamp": "2021-11-28T08:00:00",
-      "id": "LawAfAEu"
-    },
-    {
-      "timestamp": "2021-12-05T07:30:00",
-      "id": "ekBNMjnO"
-    }
-  ,
-    {
-      "timestamp": "2021-12-12T07:00:00",
-      "id": "xQDVhtqv"
-    },
-    {
-      "timestamp": "2021-12-19T09:15:00",
-      "id": "bgTLnnvq"
-    },
-    {
-      "timestamp": "2022-01-16T07:00:00",
-      "id": "ZCgPwAZm"
-    },
-    {
-      "timestamp": "2022-01-23T08:00:00",
-      "title": "No run this week",
-      "description": "There are lots of events on, Auckland Marathon and The Goat.  We will have something on next week"
-    },
-    {
-      "timestamp": "2022-01-30T07:00:00",
-      "id": "kwaBpRSC"
-    }
-  ,{
-      "timestamp": "2022-02-06T07:00:00",
-      "id": "BbXfrhbt"
-    }
-  ,{
-      "timestamp": "2022-02-13T07:00:00",
-      "id": "zwSaUUvs"
-    }
-  ,{
-      "timestamp": "2022-02-20T07:00:00",
-      "id": "ekBNMjnO"
-    }
-  ,{
-      "timestamp": "2022-02-27T07:00:00",
-      "id": "kPCzjCbW"
-    }
-  ,{
-      "timestamp": "2022-03-06T07:00:00",
-      "id": "TcSVvBQT"
-    }
-  ,{
-      "timestamp": "2022-03-13T07:00:00",
-      "id": "jDjWpnqp"
-    }
-  ,{
-      "timestamp": "2022-03-20T08:00:00",
-      "id": "udgHkNjC"
-    }
-  ,{
-      "timestamp": "2022-03-27T08:00:00",
-      "id": "TDVkcjQB"
-    }
-  ,{
-      "timestamp": "2022-04-02T08:00:00",
-      "id": "LawAfAEu"
-    }
-  ,{
-      "timestamp": "2022-04-10T08:00:00",
-      "id": "BbXfrhbt"
-    }
-    ,{
-      "timestamp": "2022-04-17T08:00:00",
-      "id": "omaha"
-    } ,
-    {
-      "timestamp": "2022-04-24T08:00:00",
-      "id": "kwaBpRSC"
-    },
-    {
-      "timestamp": "2022-05-01T08:00:00",
-      "id": "fSUqNwtc"
-    },
-    {
-      "timestamp": "2022-05-08T08:00:00",
-      "id": "millennium"
-    },
-    {
-      "timestamp": "2022-05-15T08:00:00",
-      "id": "ZCgPwAZm"
-    },
-    {
-      "timestamp": "2022-05-22T08:00:00",
-      "id": "xQDVhtqv"
-    },
-    {
-      "timestamp": "2022-05-29T08:00:00",
-      "id": "TcSVvBQT"
-    },
-    {
-      "timestamp": "2022-06-05T08:00:00",
-      "id": "tuff2"
-    },
-    {
-      "timestamp": "2022-06-12T08:00:00",
-      "id": "ekBNMjnO"
-    },
-    {
-      "timestamp": "2022-06-19T08:00:00",
-      "id": "BbXfrhbt"
-    },
-    {
-      "timestamp": "2022-06-26T08:00:00",
-      "id": "udgHkNjC"
-    },
-    {
-      "timestamp": "2022-07-03T08:00:00",
-      "id": "TcSVvBQT"
-    },
-    {
-      "timestamp": "2022-07-10T08:00:00",
-      "id": "kwaBpRSC"
-    },
-    {
-      "timestamp": "2022-07-17T08:00:00",
-      "id": "ekBNMjnO"
-    },
     {
       "timestamp": "2022-07-24T08:00:00",
-      "id": "fSUqNwtc"
-    }
+      "id": "bucklandsbeach"
+    },
+    {
+      "timestamp": "2022-07-31T08:00:00",
+      "id": "zooloop"
+    },
+    {
+      "timestamp": "2022-08-07T08:00:00",
+      "id": "watercare"
+    },
+    {
+      "timestamp": "2022-08-14T08:00:00",
+      "id": "threepeaks"
+    },
+    {
+      "timestamp": "2022-08-21T08:00:00",
+      "id": "bucklandsbeach"
+    },
+    {
+      "timestamp": "2022-08-28T08:00:00",
+      "id": "missionbaytahuna"
+    },
+    {
+      "timestamp": "2022-09-04T08:00:00",
+      "id": "titirangi"
+    },
+    {
+      "timestamp": "2022-09-11T08:00:00",
+      "id": "takapunagreenway"
+    },
+    {
+      "timestamp": "2022-09-18T08:00:00",
+      "id": "totara"
+    },
+    {
+      "timestamp": "2022-09-25T08:00:00",
+      "id": "orakei"
+    },
+    {
+      "timestamp": "2022-10-02T08:00:00",
+      "id": "watercare"
+    },
+    {
+      "timestamp": "2022-10-09T08:00:00",
+      "id": "titirangi"
+    },
+    {
+      "timestamp": "2022-10-16T08:00:00",
+      "id": "westhaven"
+    },
+    {
+      "timestamp": "2022-10-23T08:00:00",
+      "id": "takapunagreenway"
+    },
+    {
+      "timestamp": "2022-10-30T08:00:00",
+      "id": "bucklandsbeach"
+    },
+    {
+      "timestamp": "2022-11-06T08:00:00",
+      "id": "orakei"
+    },
+    {
+      "timestamp": "2022-11-13T08:00:00",
+      "id": "threepeaks"
+    },
+    {
+      "timestamp": "2022-11-20T08:00:00",
+      "id": "missionbaytahuna"
+    },
+    {
+      "timestamp": "2022-11-27T08:00:00",
+      "id": "takapunagreenway"
+    },
 
+    {
+      "timestamp": "2022-12-04T07:00:00",
+      "id": "zooloop"
+    },
+    {
+      "timestamp": "2022-12-11T07:00:00",
+      "id": "titirangi"
+    },
+    {
+      "timestamp": "2023-01-01T07:00:00",
+      "title": "1 lap of Orewa Estuary + Millwater Park run",
+      "description": "Need a great way to start the year and fix your NYE hangover?  Details on Facebook: https://fb.me/e/39LyAdc9x"
+    },
+    {
+      "timestamp": "2023-01-22T07:00:00",
+      "id": "bucklandsbeach"
+    },
+    {
+      "timestamp": "2023-01-29T07:00:00",
+      "id": "zooloop"
+    },
+    {
+      "timestamp": "2023-02-05T07:00:00",
+      "id": "watercare"
+    },
+    {
+      "timestamp": "2023-02-12T07:00:00",
+      "id": "missionbaytahuna"
+    },
+    {
+      "timestamp": "2023-02-19T07:00:00",
+      "id": "takapunagreenway"
+    },
+    {
+      "timestamp": "2023-02-26T07:00:00",
+      "id": "westhaven"
+    },
+    {
+      "timestamp": "2023-03-05T08:00:00",
+      "id": "titirangi"
+    },
+    {
+      "timestamp": "2023-03-12T08:00:00",
+      "id": "orakei"
+    },
+    {
+      "timestamp": "2023-03-19T08:00:00",
+      "id": "maraetai"
+    },
+    {
+      "timestamp": "2023-03-26T08:00:00",
+      "id": "threepeaks"
+    }
   ]
 }
