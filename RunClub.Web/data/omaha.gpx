@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gpx version="1.1" creator="Mapometer.com" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
-<metadata>
-<name><![CDATA[Auckland Running]]></name>
-<desc><![CDATA[]]></desc>
-<bounds minlat="-36.35522" minlon="174.75341" maxlat="-36.31918" maxlon="174.79294" />
-</metadata>
+
 <trk>
 <trkseg>
 <trkpt lon="174.78008" lat="-36.33953">

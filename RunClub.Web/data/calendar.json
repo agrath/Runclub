@@ -11,95 +11,19 @@
     "showUpcomingEvents": true
   },
   "events": [
-    {
-      "timestamp": "2022-07-24T08:00:00",
-      "id": "bucklandsbeach"
-    },
-    {
-      "timestamp": "2022-07-31T08:00:00",
-      "id": "zooloop"
-    },
-    {
-      "timestamp": "2022-08-07T08:00:00",
-      "id": "watercare"
-    },
-    {
-      "timestamp": "2022-08-14T08:00:00",
-      "id": "threepeaks"
-    },
-    {
-      "timestamp": "2022-08-21T08:00:00",
-      "id": "bucklandsbeach"
-    },
-    {
-      "timestamp": "2022-08-28T08:00:00",
-      "id": "missionbaytahuna"
-    },
-    {
-      "timestamp": "2022-09-04T08:00:00",
-      "id": "titirangi"
-    },
-    {
-      "timestamp": "2022-09-11T08:00:00",
-      "id": "takapunagreenway"
-    },
-    {
-      "timestamp": "2022-09-18T08:00:00",
-      "id": "totara"
-    },
-    {
-      "timestamp": "2022-09-25T08:00:00",
-      "id": "orakei"
-    },
-    {
-      "timestamp": "2022-10-02T08:00:00",
-      "id": "watercare"
-    },
-    {
-      "timestamp": "2022-10-09T08:00:00",
-      "id": "titirangi"
-    },
-    {
-      "timestamp": "2022-10-16T08:00:00",
-      "id": "westhaven"
-    },
-    {
-      "timestamp": "2022-10-23T08:00:00",
-      "id": "takapunagreenway"
-    },
-    {
-      "timestamp": "2022-10-30T08:00:00",
-      "id": "bucklandsbeach"
-    },
-    {
-      "timestamp": "2022-11-06T08:00:00",
-      "id": "orakei"
-    },
-    {
-      "timestamp": "2022-11-13T08:00:00",
-      "id": "threepeaks"
-    },
-    {
-      "timestamp": "2022-11-20T08:00:00",
-      "id": "missionbaytahuna"
-    },
-    {
-      "timestamp": "2022-11-27T08:00:00",
-      "id": "takapunagreenway"
-    },
 
-    {
-      "timestamp": "2022-12-04T07:00:00",
-      "id": "zooloop"
-    },
-    {
-      "timestamp": "2022-12-11T07:00:00",
-      "id": "titirangi"
-    },
     {
       "timestamp": "2023-01-01T07:00:00",
       "title": "1 lap of Orewa Estuary + Millwater Park run",
       "description": "Need a great way to start the year and fix your NYE hangover?  Details on Facebook: https://fb.me/e/39LyAdc9x"
+    },
+    {
+      "timestamp": "2023-01-08T07:00:00",
+      "id": "millennium"
+    },
+    {
+      "timestamp": "2023-01-15T07:00:00",
+      "id": "orewa"
     },
     {
       "timestamp": "2023-01-22T07:00:00",
@@ -126,8 +50,8 @@
       "id": "westhaven"
     },
     {
-      "timestamp": "2023-03-05T08:00:00",
-      "id": "titirangi"
+      "timestamp": "2023-03-05T07:30:00",
+      "id": "ponsonby"
     },
     {
       "timestamp": "2023-03-12T08:00:00",
@@ -135,11 +59,72 @@
     },
     {
       "timestamp": "2023-03-19T08:00:00",
-      "id": "maraetai"
+      "id": "threepeaks"
     },
     {
-      "timestamp": "2023-03-26T08:00:00",
+      "timestamp": "2023-03-26T07:45:00",
+      "id": "westhaven"
+    },
+    {
+      "timestamp": "2023-04-02T08:00:00",
+      "id": "takapunagreenway"
+    },
+    {
+      "timestamp": "2023-04-09T08:00:00",
+      "id": "zooloop"
+    },
+    {
+      "timestamp": "2023-04-16T08:00:00",
+      "id": "missionbaytahuna"
+    },
+    {
+      "timestamp": "2023-04-23T08:00:00",
+      "id": "watercare"
+    },
+    {
+      "timestamp": "2023-04-30T08:00:00",
+      "id": "ponsonby"
+    },
+    {
+      "timestamp": "2023-04-29T06:00:00",
+      "title": "Tongariro Northern Circuit",
+      "description": "2 nights away with a big run/walk in the middle"
+    },
+    {
+      "timestamp": "2023-05-07T08:00:00",
+      "id": "bucklandsbeach"
+    },
+    {
+      "timestamp": "2023-05-14T08:00:00",
       "id": "threepeaks"
+    },
+    {
+      "timestamp": "2023-05-21T07:45:00",
+      "id": "westhaven"
+    },
+    {
+      "timestamp": "2023-05-28T08:00:00",
+      "id": "orakei"
+    },
+    {
+      "timestamp": "2023-06-04T08:00:00",
+      "id": "omaha"
+    },
+    {
+      "timestamp": "2023-06-11T08:00:00",
+      "id": "albanyshoescience"
+    },
+    {
+      "timestamp": "2023-06-18T08:00:00",
+      "id": "titirangi"
+    },
+    {
+      "timestamp": "2023-06-25T08:00:00",
+      "id": "takapunagreenway"
+    },
+    {
+      "timestamp": "2023-07-02T08:00:00",
+      "id": "ponsonby"
     }
   ]
 }

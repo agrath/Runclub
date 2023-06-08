@@ -6228,9 +6228,9 @@
     ]
   },
   {
-    "id": "TDVkcjQB",
+    "id": "ponsonby",
     "name": "Ponsonby Parnell loop",
-    "enabled": false,
+    "enabled": true,
     "description": "This central loop is a classic Auckland run passing through Ponsonby, along the waterfront, up through Parnell, and across the Domain and Grafton Bridge ... all with a cafe waiting for us to invade on Ponsonby Road!",
     "meetingPoint": {
       "label": "Outside Shoe Clinic, 101 Ponsonby Rd.",
@@ -13577,7 +13577,7 @@
   {
     "id": "omaha",
     "name": "Omaha",
-    "enabled": false,
+    "enabled": true,
     "description": "Run the beach and estuary around beautiful Omaha.",
     "meetingPoint": {
       "label": "Omaha Surf Life Saving Club",
@@ -13686,8 +13686,8 @@
   {
     "id": "millennium",
     "name": "AUT Millennium",
-    "enabled": false,
-    "description": "A Magical Mystery tour of some of albany's less known parks and bush.  Starting at AUT Millennium we do a counter clockwise run around lake Taima, ducking in and out of various parks and reserves.  Coffee afterwards at the Millennium Cafe.",
+    "enabled": true,
+    "description": "A Magical Mystery tour of some of Albany's less known parks and bush.  Starting at AUT Millennium we do a counter clockwise run around lake Taima, through Kanuka Reserve, Fernhill Escarpment, Rosedale Park, Unsworth Reserve and Winsor Park.  Coffee afterwards at the AUT Millennium Cafe.",
 
     "meetingPoint": {
       "label": "AUT Millennium Cafe",
@@ -13704,10 +13704,10 @@
         "latitude": -36.747658,
         "longitude": 174.723614
       },
-      "zoom": 9
+      "zoom": 11
     },
     "distanceOptions": [
-      11,15
+      15
     ],
     "distanceMarkerAlignments": [
       0,
@@ -13973,6 +13973,284 @@
       }
     ],
     "diversions": [],
+    "annotations": [
+    ]
+  },
+  {
+    "id": "orewa",
+    "name": "Orewa Beach and Estuary",
+    "enabled": true,
+    "description": "A new route taking in Orewa beach and surroundings just north of Auckland.  Starting form Arundel Reserve, do a loop around Hatfields beach and Alice Eaves Scenic Reserve back to Arundel Reserve (about 4.5km).  Then follow the beach and boardwalks south, over the main road for 1 loop of the Orewa Estuary.  Back up the beach to Arundel reserve.  ",
+    "meetingPoint": {
+      "label": "Arundel Reserve",
+      "latitude": -36.57524608,
+      "longitude": 174.69195898,
+      "offset": {
+        "left": "0px",
+        "top": "0px"
+      },
+      "placement": "top"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.84131373,
+        "longitude": 174.78443200
+      },
+      "zoom": 9
+    },
+    "distanceOptions": [
+      18.5
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "terrain": [
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 30
+      },
+      {
+        "type": "trail",
+        "label": "Beach",
+        "percent": 30
+      },
+      {
+        "type": "trail",
+        "label": "Trails",
+        "percent": 40
+      }
+    ],
+    "placesOfInterest": [
+
+      {
+        "type": "public-bathroom",
+        "latitude": -36.59865,
+        "longitude": 174.69755
+      },
+
+      {
+        "type": "public-bathroom",
+        "latitude": -36.59868,
+        "longitude": 174.67943
+      }
+    ],
+    "placesOfInterestOptions": [
+
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [],
+    "annotations": [
+    ]
+  },
+  {
+    "id": "wharf2wharf",
+    "name": "Waiheke Wharf 2 Wharf",
+    "enabled": true,
+    "description": "A new route for us, this is 25km if steep hills and country roads.  Starting from the wharf at Orapiu, we run to the other end of Waiheke island. Please wear bright/reflective clothing and NO Headphones.  Each runner is responsible for their own safety, there is no traffic management in place.",
+    "meetingPoint": {
+      "label": "Downtown Ferry Terminal",
+      "latitude": -36.84225864,
+      "longitude": 174.76488662,
+      "offset": {
+        "left": "-10px",
+        "top": "0px"
+      },
+      "placement": "left"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.824237,
+        "longitude": 174.881306
+      },
+      "zoom": 5
+    },
+    "distanceOptions": [
+      25
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "terrain": [
+      {
+        "type": "urban",
+        "label": "Country Roads",
+        "percent": 100
+      }
+    ],
+    "placesOfInterest": [
+
+    ],
+    "placesOfInterestOptions": [
+
+    ],
+    "diversions": [
+    ],
+    "annotations": [
+    ]
+  },
+  {
+    "id": "albanyshoescience",
+    "name": "Albany Shoe Science",
+    "enabled": true,
+    "description": "Parks and Cycleways around Albany.  Starting from Albany Shoe Science, we run through a couple of parks, Albany lakes and along the cycleways.   ",
+    "meetingPoint": {
+      "label": "Albany Shoe Science, 7 Mercari Way, Albany",
+      "latitude": -36.731945,
+      "longitude": 174.709165,
+      "offset": {
+        "left": "0px",
+        "top": "0px"
+      },
+      "placement": "right"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.731945,
+        "longitude": 174.709165
+      },
+      "zoom":12
+    },
+    "distanceOptions": [
+      12,15,19
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "terrain": [
+      {
+        "type": "road",
+        "label": "Road",
+        "percent": 30
+      },
+      {
+        "type": "trail",
+        "label": "Trails",
+        "percent": 35
+      },
+
+      {
+        "type": "path",
+        "label": "Bike Paths",
+        "percent": 35
+      }
+
+    ],
+    "placesOfInterest": [
+      {
+        "type": "public-bathroom",
+        "latitude": -36.751910,
+        "longitude": 174.728121
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.7210341,
+        "longitude": 174.705813
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.7210341,
+        "longitude": 174.705813
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      }
+    ],
+    "diversions": [
+    ],
     "annotations": [
     ]
   }
