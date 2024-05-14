@@ -1,29 +1,32 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @{
-	var homepage = Umbraco.GetHomepageByDomain<Homepage>(Request.Url.Host);
+    var homepage = Umbraco.GetHomepageByDomain<Homepage>(Request.Url.Host);
 }
 
 <div class="container">
-	<div class="row">
-		<div class="col-md-12 text-center">
-			<h2 class="section-heading">Got a question?</h2>
-			<hr class="primary">
-			@Html.Raw(homepage.ContactContent)
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-3 text-center offset-3">
-			<i class="fa fa-phone fa-3x sr-contact"></i>
-			<p>@homepage.ContactPhone</p>
-		</div>
-		<div class="col-md-3 text-center">
-			<i class="fa fa-envelope-o fa-3x sr-contact"></i>
-			<p><a href="mailto:@homepage.ContactEmail">@homepage.ContactEmail</a></p>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h2 class="section-heading">Got a question?</h2>
+            <hr class="primary">
+            @Html.Raw(homepage.ContactContent)
+        </div>
+    </div>
+    <div class="row">
+        @if (!string.IsNullOrEmpty(homepage.ContactPhone))
+        {
+            <div class="col-md-3 text-center offset-3">
+                <i class="fa fa-phone fa-3x sr-contact"></i>
+                <p>@homepage.ContactPhone</p>
+            </div>
+        }
+        <div class="@(string.IsNullOrEmpty(homepage.ContactPhone) ? "col-md-6 offset-3":"col-md-3") text-center">
+            <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+            <p><a href="mailto:@homepage.ContactEmail">@homepage.ContactEmail</a></p>
+        </div>
+    </div>
 </div>
 <div class="container text-muted">
-	<p class="float-right">
-		<a href="#" class="backToTopButton">Back to top</a>
-	</p>
+    <p class="float-right">
+        <a href="#" class="backToTopButton">Back to top</a>
+    </p>
 </div>

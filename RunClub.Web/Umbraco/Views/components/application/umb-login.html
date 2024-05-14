@@ -5,7 +5,7 @@
         <div class="login-overlay__background-image" ng-style="{'background-image': 'url('+vm.backgroundImage+')'}"></div>
 
         <div class="login-overlay__logo">
-            <img src="assets/img/application/umbraco_logo_white.svg">
+            <img ng-src="{{vm.logoImage}}" alt=""/>
         </div>
 
         <div ng-if="!vm.denyLocalLogin" ng-show="vm.invitedUser != null" class="umb-login-container">
@@ -88,7 +88,7 @@
 
                 <h1 style="margin-bottom: 10px;">Upload a photo</h1>
                 <p style="text-align: center; margin-bottom: 25px; line-height: 1.6em;">
-                    <localize key="user_userinviteAvatarMessage"></localize>
+                    <localize key="user_userinviteAvatarMessage">Uploading a photo of yourself will make it easy for other users to recognize you. Click the circle above to upload your photo.</localize>
                 </p>
                 <div class="flex justify-center items-center">
                     <umb-button type="button"
@@ -129,7 +129,7 @@
                                             ng-class="login.properties.SocialStyle"
                                             id="{{login.authType}}" name="provider" value="{{login.authType}}"
                                             title="Log in using your {{login.caption}} account">
-                                        <i class="fa" ng-class="login.properties.SocialIcon"></i>
+                                        <umb-icon icon="fa {{login.properties.SocialIcon}}"></umb-icon>
                                         <localize key="login_signInWith">Sign in with</localize>&nbsp;{{login.caption}}
                                     </button>
                                 </form>
@@ -158,10 +158,10 @@
                             <label for="umb-passwordTwo"><localize key="general_password">Password</localize></label>
                             <input type="password" ng-model="vm.password" name="password" id="umb-passwordTwo" class="-full-width-input" localize="placeholder" placeholder="@placeholders_password" aria-required="true" />
                             <div class="password-toggle">
-                                <a href="#" prevent-default ng-click="vm.togglePassword()">
+                                <button type="button" class="btn-reset" ng-click="vm.togglePassword()">
                                     <span class="password-text show"><localize key="login_showPassword">Show password</localize></span>
                                     <span class="password-text hide"><localize key="login_hidePassword">Hide password</localize></span>
-                                </a>
+                                </button>
                             </div>
                         </div>
 
@@ -173,7 +173,10 @@
                                         type="submit">
                             </umb-button>
                             <div ng-show="vm.allowPasswordReset">
-                                <a class="muted" style="text-decoration: underline;" href="#" prevent-default ng-click="vm.showRequestPasswordReset()"><localize key="login_forgottenPassword">Forgotten password?</localize></a>
+                                <button type="button" class="btn-reset muted" style="text-decoration: underline;"
+                                    ng-click="vm.showRequestPasswordReset()">
+                                    <localize key="login_forgottenPassword">Forgotten password?</localize>
+                                </button>
                             </div>
                         </div>
 
@@ -205,7 +208,9 @@
 
                         <div class="flex justify-between items-center">
                             <button type="submit" class="btn btn-success" val-trigger-change="#login .form input"><localize key="general_submit">Submit</localize></button>
-                            <a class="muted" href="#" prevent-default ng-click="vm.showLogin()" style="text-decoration: underline;"><localize key="login_returnToLogin">Return to login form</localize></a>
+                            <button type="button" class="btn-reset muted" ng-click="vm.showLogin()" style="text-decoration: underline;">
+                                <localize key="login_returnToLogin">Return to login form</localize>
+                            </button>
                         </div>
 
                     </form>
@@ -221,7 +226,8 @@
 
                         <div ng-hide="vm.resetComplete" class="control-group" ng-class="{error: vm.setPasswordForm.password.$invalid}">
                             <label for="umb-passwordThree"><localize key="user_newPassword">New password</localize></label>
-                            <input type="password" ng-model="vm.password" name="password" id="umb-passwordThree" class="-full-width-input" localize="placeholder" placeholder="@placeholders_password" focus-when="{{vm.view === 'set-password'}}" />
+                            <input type="password" ng-model="vm.password" name="password" id="umb-passwordThree" class="-full-width-input" localize="placeholder" placeholder="@placeholders_password" focus-when="{{vm.view === 'set-password'}}" ng-keyup="vm.newPasswordKeyUp($event)" />
+                            <umb-password-tip password-val="vm.passwordVal"></umb-password-tip>
                         </div>
 
                         <div ng-hide="vm.resetComplete" class="control-group" ng-class="{error: vm.setPasswordForm.confirmPassword.$invalid}">
@@ -241,7 +247,9 @@
                         </div>
                         <div class="flex justify-between items-center">
                             <button ng-hide="vm.resetComplete" type="submit" class="btn btn-success" val-trigger-change="#login .form input"><localize key="general_submit">Submit</localize></button>
-                            <a class="muted" href="#" prevent-default ng-click="vm.showLogin()"><localize key="login_returnToLogin">Return to login form</localize></a>
+                            <button type="button" class="btn-reset muted" ng-click="vm.showLogin()">
+                                <localize key="login_returnToLogin">Return to login form</localize>
+                            </button>
                         </div>
 
                     </form>
@@ -253,7 +261,9 @@
                     </div>
 
                     <div class="switch-view">
-                        <a class="muted" href="#" prevent-default ng-click="vm.showLogin()"><localize key="login_returnToLogin">Return to login form</localize></a>
+                        <button type="button" class="btn-reset muted" ng-click="vm.showLogin()">
+                            <localize key="login_returnToLogin">Return to login form</localize>
+                        </button>
                     </div>
                 </div>
 
