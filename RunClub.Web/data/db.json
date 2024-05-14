@@ -231,7 +231,7 @@
     ]
   },
   {
-    "id": "fSUqNwtc",
+    "id": "bucklandsbeach",
     "name": "Bucklands Beach to Panmure Basin",
     "enabled": true,
     "description": "Mostly flat and mostly coastal, this run is ideal for clocking up the miles ready for that upcoming marathon, half or ultra. The course is a simple lollipop that follows the Rotary Walkway south to the Panmure Basin where we complete an anti-clockwise loop, before heading home.\r\nTo shorten, turn back at any time. To lengthen, there are plenty of options around Musick Point and Bucklands Beach.",
@@ -383,7 +383,7 @@
     ]
   },
   {
-    "id": "kwaBpRSC",
+    "id": "watercare",
     "name": "Mangere Bridge Watercare Walkway",
     "enabled": true,
     "description": "Flat and mostly off road—this is the place to get in LOTS of miles to get you ready for that upcoming half or full marathon!\r\nMeeting at the Mangere Boating Club we’ll head south from there along the coast through Ambury Regional Park, around the lake in the south (turn back here for 13k) and then carry on south along the Watercare Pathway.\r\nOnce back to the boat club we’ll have options to carry on north to the Onehunga coastal path.So there is plenty of extra mileage to be done here on flat trails.",
@@ -757,7 +757,7 @@
     ]
   },
   {
-    "id": "ekBNMjnO",
+    "id": "missionbaytahuna",
     "name": "Mission Bay to Tahuna Torea",
     "enabled": true,
     "description": "This run takes you beyond the confines of Tamaki drive and into some of the hidden gems of Auckland's eastern bays.\r\nThe route heads east to Achilles Point, then to Glover Park, Churchill Park, Glendowie Park and eventually to the stunning Tahuna Torea Nature Reserve.\r\nIt's a 17k out-and-back.  There are options to make it shorter (including turning back at Achilles Point - 7k or Glover Park - 10k).  Longer options include an add-on afterwards along Tamaki Drive.",
@@ -915,9 +915,9 @@
     ]
   },
   {
-    "id": "zwSaUUvs",
+    "id": "maraetai",
     "name": "Maraetai Omana Regional Park",
-    "enabled": false,
+    "enabled": true,
     "description": "This is a stunning seaside run with a great cafe and beach to relax at once all the running has been done. Oh which there is plenty of running out here! We’ll head west first heading along the coast to the marina at Beachlands, before retracing our steps back to Maraetai (18k in total). For those going longer there is a great 14k out-and-back to Duder Regional Park heading east along the coast road.",
     "meetingPoint": {
       "label": "Maraetai Wharf Cafe",
@@ -937,9 +937,7 @@
       "zoom": 12
     },
     "distanceOptions": [
-      10,
-      18,
-      32
+      18
     ],
     "distanceMarkerAlignments": [
       1,
@@ -1673,13 +1671,13 @@
     ]
   },
   {
-    "id": "xQDVhtqv",
+    "id": "titirangi",
     "name": "Titirangi - Waiatarua Circuit",
-    "enabled": false,
-    "description": "This is the legendary course that Arthur Lydiard trained all his world-beating runners on back in the 60s.\r\nWe'll be doing a 21.5k loop from Titirangi up West Coast Road and down Scenic Drive and Exhibition Drive. There are options to go shorter by cutting through Shaw Rd - 14.5k, or longer by adding on an out and back along Exhibition Drive - 28k.\r\nThis a classic Auckland run, that is known by runners all over the world. Don't miss it!\r\nMuch of this run is on winding, country roads.  Please wear something bright so cars can see you.\r\nNOTE: Traffic on this route is busy. All runners joining us run at their own risk and agree not to hold the club or any run leaders responsible for any injury or damages to person or belongings.",
-    "importantNotes": "Some of this run is on-road with no footpath. We strongly recommend bright or reflective clothing and request that you do not wear headphones for this run.",
+    "enabled": true,
+    "description": "Loosely based on the legendary course that Arthur Lydiard trained all his world-beating runners on back in the 60s.\r\nWe have modified the loop to avoid the traffic at the top of west coast road and scenic drive.  The base route is an 18k loop from Titirangi up West Coast Road then up Parker Road to the visitor centre, then down Exhibition Drive. There are options to round up to 21kms by adding on Kauri Cathedral and the Tony special.  There are also options to go shorter by cutting through Shaw Rd - 14.5km.  \r\nThis a classic Auckland run, that is known by runners all over the world. Don't miss it!",
+    "importantNotes": "Some of this run is on-road with no footpath. We strongly recommend bright or reflective clothing and request that you do not wear headphones for this run.  All runners joining us run at their own risk and agree not to hold the club or any run leaders responsible for any injury or damages to person or belongings.",
     "meetingPoint": {
-      "label": "Titirangi car park, cnr Titirangi Rd. & South Titirangi Rd.",
+      "label": "Cnr Titirangi Rd. & South Titirangi Rd.",
       "latitude": -36.93812296,
       "longitude": 174.65598285,
       "offset": {
@@ -1710,8 +1708,8 @@
     },
     "distanceOptions": [
       14.5,
-      21,
-      28
+      18,
+      21
     ],
     "distanceMarkerAlignments": [
       1,
@@ -2238,15 +2236,34 @@
     ],
     "annotations": [
       {
-        "title": "Longer run option",
+        "title": "Kauri Cathedral",
         "visible": true,
-        "description": "Turn around here, and do an out and back along Exhibition Drive. This adds 7k to the run.",
+        "description": "Option adds 1.5km",
         "anchor": {
-          "latitude": -36.93734689,
-          "longitude": 174.64395046
+          "latitude": -36.9442048,
+          "longitude": 174.6068055
         },
         "offset": {
           "left": "0px",
+          "top": "0px"
+        },
+        "placement": "left",
+        "backgroundColour": "#ffffff",
+        "border": true,
+        "fontColour": "#000000",
+        "fontSize": "13px",
+        "showCloseButton": true
+      },
+      {
+        "title": "Tony Special",
+        "visible": true,
+        "description": "Option adds 1km of gut busting hill work",
+        "anchor": {
+          "latitude": -36.9507195,
+          "longitude": 174.6212589
+        },
+        "offset": {
+          "left": "-10px",
           "top": "0px"
         },
         "placement": "bottom",
@@ -2258,8 +2275,10 @@
       }
     ]
   },
+  -36.95056978443494,
+  174.6211847853388,
   {
-    "id": "TcSVvBQT",
+    "id": "threepeaks",
     "name": "Auckland Domain Three or Four Peaks",
     "enabled": true,
     "description": "Conquer Auckland’s three central volcanic peaks of Mt Hobson, Mt St John and Mt Eden, before making your through the lush trails of Auckland Domain.\r\nPlenty of options to shorten the route or climb fewer Peaks. If three climbs aren't enough to earn your breakfast, then add-on drops down through Ayr Reserve for a stiff climb climb back up through Newmarket Park.",
@@ -3449,9 +3468,9 @@
     ]
   },
   {
-    "id": "BAYAzUnc",
+    "id": "tuff",
     "name": "Onepoto Tuff Crater",
-    "enabled": false,
+    "enabled": true,
     "description": "Very few Aucklanders know about the network of mind-bogglingly beautiful parks and bush reserves in Northcote and Birkenhead. This is your chance to discover them.\r\nWe're going to string these beautiful parks together beginning with an out-and-back from Onepoto Reserve to Smiths Bush (via Tuff Crater) - 12.5k. Then a loop connecting Kauri Glen Bush to Le Roys Bush and back to Onepoto (an additional hilly 7k). So 19k for both loops with options to run shorter (turning back after Tuff Crater - 8k) or longer completing another loop.",
     "meetingPoint": {
       "label": "Onepoto Domain, off Tarahanga St., via Sylvan Ave.",
@@ -4618,9 +4637,111 @@
     ]
   },
   {
-    "id": "kPCzjCbW",
+    "id": "tuff3",
+    "name": "Onepoto Kauri Glenn Tuff Crater",
+    "enabled": true,
+    "description": "Very few Aucklanders know about the network of mind-bogglingly beautiful parks and bush reserves in Northcote and Birkenhead. This is your chance to discover them.\r\nWe're going to string these beautiful parks together beginning with an out-and-back from Onepoto Reserve to Kauri Glenn treetop walk.  Then to Smiths Bush via Northcote shops an Tuff Crater. Then back to Onepoto via Tuff Crater and the Bridge to nowhere.",
+    "meetingPoint": {
+      "label": "Onepoto Domain, off Tarahanga St., via Sylvan Ave.",
+      "latitude": -36.80874998,
+      "longitude": 174.75092232,
+      "offset": {
+        "left": "-0px",
+        "top": "15px"
+      },
+      "placement": "bottom"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.80230941,
+        "longitude": 174.75102425
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      15
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "terrain": [
+      {
+        "type": "trail",
+        "label": "Packed trail",
+        "percent": 50
+      },
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 50
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "parking",
+        "latitude": -36.80874998,
+        "longitude": 174.75092232
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.80832,
+        "longitude": 174.7507
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.80836,
+        "longitude": 174.750671
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8148422,
+        "longitude": 174.741043
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "annotations": [
+    ]
+  },
+  {
+    "id": "totara",
     "name": "Totara Park",
-    "enabled": false,
+    "enabled": true,
     "description": "South Auckland’s premier destination for running, Totara Park includes beautiful bush, some meaty hills and meandering mountain bike paths that are soft under foot—ideal for a lap or two on this 10k course.\r\nWe’ll start by heading west to do a partial loop around the lower bush section before following the western border of the park up to the mountain bike paths of:\r\n\r\nHub Connector (Fat Man’s Revenge)\r\nPony Express\r\nAnaconda\r\n\r\nThen we do one small loop around the eastern portion of the lower bush to make a total of 10k. Add on by doing another lap... or two!",
     "meetingPoint": {
       "label": "",
@@ -4640,8 +4761,8 @@
       "zoom": 12
     },
     "distanceOptions": [
-      9,
-      10
+      10,
+      20
     ],
     "distanceMarkerAlignments": [
       1,
@@ -5229,9 +5350,9 @@
     ]
   },
   {
-    "id": "LawAfAEu",
+    "id": "cornwellpark",
     "name": "Cornwall Park",
-    "enabled": false,
+    "enabled": true,
     "description": "Auckland's answer to Central Park (just with more sheep poo and fences to jump!).\r\nThe loop follows the rolling perimeter trails of the park, with a full lap being 9k and an option to cut the lap short at 5k. Two laps equals 18k.",
     "meetingPoint": {
       "label": "Cornwall Park Cafe, near band rotunda, end of Twin Oaks drive.",
@@ -5351,7 +5472,7 @@
     ]
   },
   {
-    "id": "udgHkNjC",
+    "id": "takapunagreenway",
     "name": "Takapuna Greenway",
     "enabled": true,
     "description": "Starting at Takapuna Beach Cafe (22 The Promenade) we'll head down the coast first along the beach and then jump over to the Greenway and follow it south along the western side of the peninsula to reach Devonport. From here we'll follow the Auckland Marathon course back north to Takapuna.\r\nThis full run 15km but if you'd like to make it 11k, head left via Seabreeze Rd to Narrow Neck Beach (you'll still experience the main two hills of the Takapuna section of the Auckland Marathon course).\r\nTo make it 8k, head left along Bayswater Ave to Lake Road.",
@@ -5701,9 +5822,9 @@
     "annotations": []
   },
   {
-    "id": "ZCgPwAZm",
+    "id": "orakei",
     "name": "Hobson Bay, Orakei Basin loop",
-    "enabled": false,
+    "enabled": true,
     "description": "Probably the most run stretch of pavement in New Zealand, we'll start with a gentle jog along Tamaki Drive to Ngapipi Rd. (option to turn back here, for 6k total). Then sign a left to run around Hobson Bay, and Orakei Basin, up Brighton Road, down St Stephens (past what used to be John Key's place) and then back along Tamaki Drive.\r\nThe full loop is 16.5k, but can be shortened to 14.5k by skipping Orakei Basin. If you'd like to add on more, a 6k out-and-back to St Heliers is ideal.",
     "meetingPoint": {
       "label": "The car park opposite Mission Bay’s Berkeley Cinemas",
@@ -5723,10 +5844,7 @@
       "zoom": 12
     },
     "distanceOptions": [
-      6,
-      14.5,
-      16.5,
-      22.5
+      16.5
     ],
     "distanceMarkerAlignments": [
       1,
@@ -6210,9 +6328,9 @@
     ]
   },
   {
-    "id": "TDVkcjQB",
+    "id": "ponsonby",
     "name": "Ponsonby Parnell loop",
-    "enabled": false,
+    "enabled": true,
     "description": "This central loop is a classic Auckland run passing through Ponsonby, along the waterfront, up through Parnell, and across the Domain and Grafton Bridge ... all with a cafe waiting for us to invade on Ponsonby Road!",
     "meetingPoint": {
       "label": "Outside Shoe Clinic, 101 Ponsonby Rd.",
@@ -6360,7 +6478,7 @@
     ]
   },
   {
-    "id": "BbXfrhbt",
+    "id": "zooloop",
     "name": "Auckland Zoo - City Loop",
     "enabled": true,
     "description": "From Auckland Zoo (Western Springs) we’ll head north through Seddon Fields, east through Westmere and Herne Bay to reach the waterfront paths of Westhaven and the Viaduct.\r\nFrom here we’ll join the bike paths heading up Grafton Gully and alongside the motorway to find our way bike to Western Springs, finishing off with a gentle jog around the lake and a coffee or two at the zoo cafe.",
@@ -6480,9 +6598,129 @@
     ]
   },
   {
-    "id": "jDjWpnqp",
+    "id": "dailybread",
+    "name": "Daily Bread - City Loop",
+    "enabled": true,
+    "description": "From Daily bread we’ll head north through Seddon Fields, east through Westmere and Herne Bay to reach the waterfront paths of Westhaven and the Viaduct.\r\nFrom here we’ll join the bike paths heading up Grafton Gully and alongside the motorway to find our way on the bike track all the way past the golf course. Finishing off with a coffee or two at the Daily Bread cafe.",
+    "meetingPoint": {
+      "label": "Behind Daily Bread in Pt Chev in the car park, off Parr Rd North",
+      "latitude": -36.87082729,
+      "longitude": 174.71162023,
+      "offset": {
+        "left": "-20px",
+        "top": "0px"
+      },
+      "placement": "left"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.86307826,
+        "longitude": 174.72218513
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      18.6
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "terrain": [
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 75
+      },
+      {
+        "type": "path",
+        "label": "Bike Paths",
+        "percent": 25
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "parking",
+        "latitude": -36.87082729,
+        "longitude": 174.71162023
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8647005,
+        "longitude": 174.7209502
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8428181,
+        "longitude": 174.7495766
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.8431545,
+        "longitude": 174.7672585
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.8607091,
+        "longitude": 174.7598868
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+    ],
+    "annotations": [
+    ]
+  },
+  {
+    "id": "longbay",
     "name": "Long Bay Coastal Walkway",
-    "enabled": false,
+    "enabled": true,
     "description": "This is a stunning regional park on the North Shore and ideal for a summertime destination run.\r\nThe route follows the road to the Coastal Walkway of which we will complete an out-and-back (10k total).\r\nTo keep things interesting on the way back we’ll have the options of also including 1km or so diversions on the 100 Acre Track, and along the beach.\r\nTo add on, either complete another out-and-back or venture into the surrounding suburbs.",
     "meetingPoint": {
       "label": "2nd car park to the right after crossing bridge into the park. 2000 Beach Road, Long Bay.",
@@ -13429,14 +13667,14 @@
     ]
   },
   {
-    "id": "coast2coast",
+    "id": "coasttocoast",
     "name": "Coast To Coast",
-    "enabled": false,
+    "enabled": true,
     "description": "Based on the Auckland Coast to Coast walk, this run takes us from one side of Auckland to the other.  Meeting at Onehunga Train station, we catch the train to Britomart, then run back to Onehunga Via the Domain, Mt Eden and One Tree hill.",
     "meetingPoint": {
       "label": "Onehunga Train Station",
-      "latitude": -36.925685036979495,
-      "longitude": 174.78626711237163,
+      "latitude": -36.92568503,
+      "longitude": 174.7862671,
       "offset": {
         "left": "10px",
         "top": "0px"
@@ -13559,8 +13797,8 @@
   {
     "id": "omaha",
     "name": "Omaha",
-    "enabled": false,
-    "description": "Run the beach and estuary around beautiful Omaha.",
+    "enabled": true,
+    "description": "Run the beach and estuary around beautiful Omaha.  We kinda follow the AHMS 21km loop with a coule of diversions to make it a bit more hilly.  Coffee afterwards at the Cafe near the Omaha Surf Club.",
     "meetingPoint": {
       "label": "Omaha Surf Life Saving Club",
       "latitude": -36.339414,
@@ -13579,7 +13817,8 @@
       "zoom": 9
     },
     "distanceOptions": [
-      15,19.2
+      15,
+      19.2
     ],
     "distanceMarkerAlignments": [
       0,
@@ -13630,7 +13869,6 @@
         "label": "Bike Paths",
         "percent": 35
       }
-
     ],
     "placesOfInterest": [
       {
@@ -13663,14 +13901,12 @@
     ],
     "annotations": [
     ]
-  }
-,
+  },
   {
     "id": "millennium",
     "name": "AUT Millennium",
-    "enabled": false,
-    "description": "A Magical Mystery tour of some of albany's less known parks and bush.  Starting at AUT Millennium we do a counter clockwise run around lake Taima, ducking in and out of various parks and reserves.  Coffee afterwards at the Millennium Cafe.",
-
+    "enabled": true,
+    "description": "A Magical Mystery tour of some of Albany's less known parks and bush.  Starting at AUT Millennium we do a counter clockwise run around lake Taima, through Kanuka Reserve, Fernhill Escarpment, Rosedale Park, Unsworth Reserve and Winsor Park.  Coffee afterwards at the AUT Millennium Cafe.",
     "meetingPoint": {
       "label": "AUT Millennium Cafe",
       "latitude": -36.741675,
@@ -13686,10 +13922,10 @@
         "latitude": -36.747658,
         "longitude": 174.723614
       },
-      "zoom": 9
+      "zoom": 11
     },
     "distanceOptions": [
-      11,15
+      15
     ],
     "distanceMarkerAlignments": [
       0,
@@ -13735,10 +13971,8 @@
         "label": "Other",
         "percent": 10
       }
-
     ],
     "placesOfInterest": [
-
     ],
     "placesOfInterestOptions": [
       {
@@ -13770,8 +14004,6 @@
     "name": "NEW route - Onepoto Tuff Crater V2",
     "enabled": false,
     "description": "Very few Aucklanders know about the network of mind-bogglingly beautiful parks and bush reserves in Northcote and Birkenhead. This is your chance to discover them.\r\nWe're going to string these beautiful parks together.  Starting at the Lake House Arts Centre, we run though Smiths Bush, Tuff Crater, Onepoto Domain and Kauri Glenn.  Total Look is 17kms, there is an option to turn around at Tuff Crater for 8km total Loop",
-
-
     "meetingPoint": {
       "label": "Lake House Arts Centre, 37 Fred Thomas Drive, Takapuna.",
       "latitude": -36.79377240,
@@ -13821,7 +14053,6 @@
       }
     ],
     "placesOfInterest": [
-
       {
         "type": "public-bathroom",
         "latitude": -36.80832,
@@ -13839,7 +14070,6 @@
       }
     ],
     "placesOfInterestOptions": [
-
       {
         "type": "public-bathroom",
         "label": "Public bathroom",
@@ -13860,6 +14090,471 @@
       }
     ],
     "diversions": [],
+    "annotations": [
+    ]
+  },
+  {
+    "id": "westhaven",
+    "name": "Westhaven to St Heliers",
+    "enabled": true,
+    "description": "The second half of Auckland Marathon. An out and back run from Westhaven Marina to St Heliers.  This route is flat and takes in the most run pavement in Auckland.  This route is an easy to navigate out and back, so runners can turn around at any distance. ",
+    "meetingPoint": {
+      "label": "Near public toliet on Westhaven Drive",
+      "latitude": -36.83759624,
+      "longitude": 174.74245681,
+      "offset": {
+        "left": "20px",
+        "top": "0px"
+      },
+      "placement": "top"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.84131373,
+        "longitude": 174.78443200
+      },
+      "zoom": 9
+    },
+    "distanceOptions": [
+      24
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "terrain": [
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 100
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "public-bathroom",
+        "latitude": -36.80832,
+        "longitude": 174.7507
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.80836,
+        "longitude": 174.750671
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8148422,
+        "longitude": 174.741043
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [],
+    "annotations": [
+    ]
+  },
+  {
+    "id": "orewa",
+    "name": "Orewa Beach and Estuary",
+    "enabled": true,
+    "description": "A new route taking in Orewa beach and surroundings just north of Auckland.  Starting form Arundel Reserve, do a loop around Hatfields beach and Alice Eaves Scenic Reserve back to Arundel Reserve (about 4.5km).  Then follow the beach and boardwalks south, over the main road for 1 loop of the Orewa Estuary.  Back up the beach to Arundel reserve.  ",
+    "meetingPoint": {
+      "label": "Arundel Reserve",
+      "latitude": -36.57524608,
+      "longitude": 174.69195898,
+      "offset": {
+        "left": "0px",
+        "top": "0px"
+      },
+      "placement": "top"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.84131373,
+        "longitude": 174.78443200
+      },
+      "zoom": 9
+    },
+    "distanceOptions": [
+      18.5
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "terrain": [
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 30
+      },
+      {
+        "type": "trail",
+        "label": "Beach",
+        "percent": 30
+      },
+      {
+        "type": "trail",
+        "label": "Trails",
+        "percent": 40
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "public-bathroom",
+        "latitude": -36.59865,
+        "longitude": 174.69755
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.59868,
+        "longitude": 174.67943
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [],
+    "annotations": [
+    ]
+  },
+  {
+    "id": "wharf2wharf",
+    "name": "Waiheke Wharf 2 Wharf",
+    "enabled": true,
+    "description": "A new route for us, this is 25km if steep hills and country roads.  Starting from the wharf at Orapiu, we run to the other end of Waiheke island. Please wear bright/reflective clothing and NO Headphones.  Each runner is responsible for their own safety, there is no traffic management in place.",
+    "meetingPoint": {
+      "label": "Downtown Ferry Terminal",
+      "latitude": -36.84225864,
+      "longitude": 174.76488662,
+      "offset": {
+        "left": "-10px",
+        "top": "0px"
+      },
+      "placement": "left"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.824237,
+        "longitude": 174.881306
+      },
+      "zoom": 5
+    },
+    "distanceOptions": [
+      25
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "terrain": [
+      {
+        "type": "urban",
+        "label": "Country Roads",
+        "percent": 100
+      }
+    ],
+    "placesOfInterest": [
+    ],
+    "placesOfInterestOptions": [
+    ],
+    "diversions": [
+    ],
+    "annotations": [
+    ]
+  },
+  {
+    "id": "albanyshoescience2",
+    "name": "Albany Shoe Science",
+    "enabled": true,
+    "description": "Parks and cycleways around Albany.  Starting from Albany Shoe Science, we run through a couple of parks, Albany lakes and along the cycleways.   ",
+    "meetingPoint": {
+      "label": "Albany Shoe Science, 7 Mercari Way, Albany",
+      "latitude": -36.731945,
+      "longitude": 174.709165,
+      "offset": {
+        "left": "0px",
+        "top": "0px"
+      },
+      "placement": "right"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.731945,
+        "longitude": 174.709165
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      8,
+      17
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "terrain": [
+      {
+        "type": "road",
+        "label": "Road",
+        "percent": 30
+      },
+      {
+        "type": "trail",
+        "label": "Trails",
+        "percent": 35
+      },
+      {
+        "type": "path",
+        "label": "Bike Paths",
+        "percent": 35
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "public-bathroom",
+        "latitude": -36.751910,
+        "longitude": 174.728121
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.7210341,
+        "longitude": 174.705813
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.7210341,
+        "longitude": 174.706013
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.7437145,
+        "longitude": 174.7112736
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.7437145,
+        "longitude": 174.7112936
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.7530240,
+        "longitude": 174.7219451
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 35
+      }
+    ],
+    "diversions": [
+    ],
+    "annotations": [
+    ]
+  },
+  {
+    "id": "mightytotara",
+    "name": "Mighty Totara",
+    "enabled": true,
+    "description": "Practice Loops for the Mighty Totara, Auckland's backyard ultra and 24 hour event.  Meet in the carpark, then we walk to the start of the trail.  \n This run is suitable for all abilities, you can do 1, 2 or more loops of the 6.67km trail. \nThere is a lot more detail on the course here: \nhttps://totara.werun.nz/day/",
+    "meetingPoint": {
+      "label": "Carpark at the end of Wairere Road",
+      "latitude": -37.00367081,
+      "longitude": 174.91323352,
+      "offset": {
+        "left": "15px",
+        "top": "5px"
+      },
+      "placement": "bottom"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.99751444,
+        "longitude": 174.90993977
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      6.67,
+      13.34,
+      20.01,
+      26.68
+    ],
+    "distanceMarkerAlignments": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "terrain": [
+      {
+        "type": "trail",
+        "label": "Walking Track",
+        "percent": 60
+      },
+      {
+        "type": "urban",
+        "label": "Dirt Road",
+        "percent": 40
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "parking",
+        "latitude": -37.00366652,
+        "longitude": 174.91344273
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -37.0024567,
+        "longitude": 174.912918
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+    ],
     "annotations": [
     ]
   }
