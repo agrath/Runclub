@@ -1672,9 +1672,9 @@
   },
   {
     "id": "titirangi",
-    "name": "Titirangi - Waiatarua Circuit",
+    "name": "Titirangi - Waitakere Hills Classic",
     "enabled": true,
-    "description": "Loosely based on the legendary course that Arthur Lydiard trained all his world-beating runners on back in the 60s.\r\nWe have modified the loop to avoid the traffic at the top of west coast road and scenic drive.  The base route is an 18k loop from Titirangi up West Coast Road then up Parker Road to the visitor centre, then down Exhibition Drive. There are options to round up to 21kms by adding on Kauri Cathedral and the Tony special.  There are also options to go shorter by cutting through Shaw Rd - 14.5km.  \r\nThis a classic Auckland run, that is known by runners all over the world. Don't miss it!",
+    "description": "This is a classic run taking in the foothills of the Waitakere Ranges. From Titirangi we head down to Glen Eden then come back up Parker Rd to Arataki Visitor Centre. Then hit Beveridge track & Exhibition Drive for a beautiful run through the bush to the finish - 18km in total.  There are options to make it shorter (including turning back at Glen Eden - 14.5k) or longer (including adding on the Scenic Drive loop - 21k).",
     "importantNotes": "Some of this run is on-road with no footpath. We strongly recommend bright or reflective clothing and request that you do not wear headphones for this run.  All runners joining us run at their own risk and agree not to hold the club or any run leaders responsible for any injury or damages to person or belongings.",
     "meetingPoint": {
       "label": "Cnr Titirangi Rd. & South Titirangi Rd.",
@@ -5473,9 +5473,9 @@
   },
   {
     "id": "takapunagreenway",
-    "name": "Takapuna Greenway",
+    "name": "Takapuna Devonport - Greenway & Beaches",
     "enabled": true,
-    "description": "Starting at Takapuna Beach Cafe (22 The Promenade) we'll head down the coast first along the beach and then jump over to the Greenway and follow it south along the western side of the peninsula to reach Devonport. From here we'll follow the Auckland Marathon course back north to Takapuna.\r\nThis full run 15km but if you'd like to make it 11k, head left via Seabreeze Rd to Narrow Neck Beach (you'll still experience the main two hills of the Takapuna section of the Auckland Marathon course).\r\nTo make it 8k, head left along Bayswater Ave to Lake Road.",
+    "description": "Starting at Takapuna Beach Cafe (22 The Promenade) we'll head down the beach and then jump over to the Greenway and follow it south along the western side of the peninsula to reach Devonport. From here we'll zip along the waterfront to North Head and Cheltenham Beach, then follow the Auckland marathon course north back to Takapuna.\n\nThe full run is 17km but if you'd like to make it 11k, head left via Seabreeze Rd to Narrow Neck Beach (you'll still experience the main two hills of the Takapuna section of the Auckland Marathon course).  To make it 8k, head left along Bayswater Ave to Lake Road.",
     "meetingPoint": {
       "label": "Takapuna Beach Cafe, 22 The Promenade.",
       "latitude": -36.78416809,
@@ -5494,7 +5494,7 @@
       "zoom": 12
     },
     "distanceOptions": [
-      15
+      17
     ],
     "distanceMarkerAlignments": [
       0,

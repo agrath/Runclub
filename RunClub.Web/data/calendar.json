@@ -2,7 +2,6 @@
   "covidAlert": {
     "enabled": false,
     "alertLevelText": "Covid Stuff",
-
     "leftBackgroundColour": "#FFC000",
     "rightBackgroundColour": "#ccc",
     "leftTextColour": "#000",
@@ -11,319 +10,210 @@
     "showUpcomingEvents": true
   },
   "events": [
-
     {
-      "timestamp": "2023-01-01T07:00:00",
-      "title": "1 lap of Orewa Estuary + Millwater Park run",
-      "description": "Need a great way to start the year and fix your NYE hangover?  Details on Facebook: https://fb.me/e/39LyAdc9x"
+      "timestamp": "2024-06-09T08:00:00",
+      "id": "missionbaytahuna"
     },
     {
-      "timestamp": "2023-01-08T07:00:00",
-      "id": "millennium"
-    },
-    {
-      "timestamp": "2023-01-15T07:00:00",
+      "timestamp": "2024-06-16T08:00:00",
       "id": "orewa"
     },
     {
-      "timestamp": "2023-01-22T07:00:00",
-      "id": "bucklandsbeach"
-    },
-    {
-      "timestamp": "2023-01-29T07:00:00",
-      "id": "zooloop"
-    },
-    {
-      "timestamp": "2023-02-05T07:00:00",
-      "id": "watercare"
-    },
-    {
-      "timestamp": "2023-02-12T07:00:00",
-      "id": "missionbaytahuna"
-    },
-    {
-      "timestamp": "2023-02-19T07:00:00",
-      "id": "takapunagreenway"
-    },
-    {
-      "timestamp": "2023-02-26T07:00:00",
-      "id": "westhaven"
-    },
-    {
-      "timestamp": "2023-03-05T07:30:00",
-      "id": "ponsonby"
-    },
-    {
-      "timestamp": "2023-03-12T08:00:00",
-      "id": "orakei"
-    },
-    {
-      "timestamp": "2023-03-19T08:00:00",
-      "id": "threepeaks"
-    },
-    {
-      "timestamp": "2023-03-26T07:45:00",
-      "id": "westhaven"
-    },
-    {
-      "timestamp": "2023-04-02T08:00:00",
-      "id": "takapunagreenway"
-    },
-    {
-      "timestamp": "2023-04-09T08:00:00",
-      "id": "zooloop"
-    },
-    {
-      "timestamp": "2023-04-16T08:00:00",
-      "id": "missionbaytahuna"
-    },
-    {
-      "timestamp": "2023-04-23T08:00:00",
-      "id": "watercare"
-    },
-    {
-      "timestamp": "2023-04-30T08:00:00",
-      "id": "ponsonby"
-    },
-    {
-      "timestamp": "2023-04-29T06:00:00",
-      "title": "Tongariro Northern Circuit",
-      "description": "2 nights away with a big run/walk in the middle"
-    },
-    {
-      "timestamp": "2023-05-07T08:00:00",
-      "id": "bucklandsbeach"
-    },
-    {
-      "timestamp": "2023-05-14T08:00:00",
-      "id": "threepeaks"
-    },
-    {
-      "timestamp": "2023-05-21T07:45:00",
-      "id": "westhaven"
-    },
-    {
-      "timestamp": "2023-05-28T08:00:00",
-      "id": "orakei"
-    },
-    {
-      "timestamp": "2023-06-04T08:00:00",
-      "id": "omaha"
-    },
-    {
-      "timestamp": "2023-06-11T08:00:00",
-      "id": "albanyshoescience2"
-    },
-    {
-      "timestamp": "2023-06-18T08:00:00",
-      "id": "titirangi"
-    },
-    {
-      "timestamp": "2023-06-25T08:00:00",
-      "id": "takapunagreenway"
-    },
-    {
-      "timestamp": "2023-07-02T08:00:00",
-      "id": "ponsonby"
-    },
-    {
-      "timestamp": "2023-07-03T19:00:00",
-      "title": "Metrorun X Monday Underground",
-      "description": "Metrorun's first crossover event!!  Metrorun shirts are highly encouraged. Linking up with Monday Underground for their weekly 5km run around Northcote. Run starts at 7pm on the dot, so get there a little early to get a car park and say hello.  Afterwards, grab a drink at the tavern"
-    },
-    {
-      "timestamp": "2023-07-09T08:00:00",
-      "id": "watercare"
-    },
-    {
-      "timestamp": "2023-07-16T08:00:00",
-      "id": "orewa"
-    }
-  ,
-    {
-      "timestamp": "2023-07-23T08:00:00",
-      "id": "coasttocoast"
-    },
-    {
-      "timestamp": "2023-07-30T08:00:00",
-      "id": "orakei"
-    },
-
-    {
-      "timestamp": "2023-08-02T18:45:00",
-      "title": "Metrorun X The Pigeon Run",
-      "description": "Linking up with The Pigeon Run crew for their weekly 5km run/walk down the waterfront. Starting at eastern end of St Heliers Beach, with a nice, easy, flat out and back track.\nOrganised in collaboration with The Pigeon Run. Metrorun shirts are highly encouraged. "
-    },
-    {
-      "timestamp": "2023-08-06T08:00:00",
-      "id": "maraetai"
-    },
-    {
-      "timestamp": "2023-08-13T08:00:00",
-      "id": "missionbaytahuna"
-    },
-    {
-      "timestamp": "2023-08-20T08:00:00",
-      "id": "ponsonby"
-    },
-    {
-      "timestamp": "2023-08-27T08:00:00",
-      "id": "orakei"
-    },
-    {
-      "timestamp": "2023-09-03T08:00:00",
-      "id": "dailybread"
-    },
-    {
-      "timestamp": "2023-09-10T08:00:00",
-      "id": "coasttocoast"
-    },
-    {
-      "timestamp": "2023-09-17T08:00:00",
-      "id": "albanyshoescience2"
-    },
-    {
-      "timestamp": "2023-09-24T08:00:00",
-      "id": "missionbaytahuna"
-    },
-    {
-      "timestamp": "2023-10-01T08:00:00",
-      "id": "bucklandsbeach"
-    },
-    {
-      "timestamp": "2023-10-08T08:00:00",
-      "id": "watercare"
-    },
-    {
-      "timestamp": "2023-10-15T08:00:00",
-      "id": "takapunagreenway"
-    },
-    {
-      "timestamp": "2023-10-22T08:00:00",
-      "id": "westhaven"
-    },
-    {
-      "timestamp": "2023-10-29T06:30:00",
-      "title": "Goodhome - Rugby World Cup",
-        "description": "The Rugby world Cup final clashes with our normal run time.  So we are going to meet at the Goodhome in Mt Eden at 6:30am for a short version of the three peeks run, followed by a tasty beverage and the rugby. Route is here https://www.strava.com/routes/3151033537048936716"
-    },
-    {
-      "timestamp": "2023-11-05T08:00:00",
-      "id": "orewa"
-    },
-    {
-      "timestamp": "2023-11-12T08:00:00",
-      "title": "Totora Park - Back yard Ultra practice",
-      "description": "Join us for 1, 2 or 3 loops of the back yard Ultra course.  Meet in the carpark at the end of Wairere Road.  Course is here: https://totara.werun.nz/#course"
-    },
-    {
-      "timestamp": "2023-11-19T08:00:00",
-      "id": "titirangi"
-    },
-    {
-      "timestamp": "2023-11-26T08:00:00",
-      "id": "bucklandsbeach"
-    },
-    {
-      "timestamp": "2023-12-03T08:00:00",
-      "id": "orakei"
-    },
-    {
-      "timestamp": "2023-12-10T08:00:00",
-      "id": "westhaven"
-    },
-    {
-      "timestamp": "2023-12-17T08:00:00",
-      "title": "Rangitoto",
-      "description": "Private boat trip, to be confirmed"
-    },
-    {
-      "timestamp": "2023-12-24T08:00:00",
-      "id": "tuff"
-    },
-    {
-      "timestamp": "2024-01-07T07:00:00",
-      "id": "omaha"
-    },
-    {
-      "timestamp": "2024-01-14T07:00:00",
-      "id": "bucklandsbeach"
-    },
-    {
-      "timestamp": "2024-01-21T07:00:00",
-      "id": "cornwellpark"
-    },
-    {
-      "timestamp": "2024-01-28T07:00:00",
-      "id": "missionbaytahuna"
-    },
-    {
-      "timestamp": "2024-02-04T07:00:00",
-      "id": "mightytotara"
-    },
-    {
-      "timestamp": "2024-02-11T07:00:00",
-      "id": "orakei"
-    },
-    {
-      "timestamp": "2024-02-18T07:00:00",
-      "id": "threepeaks"
-    },
-    {
-      "timestamp": "2024-02-25T07:00:00",
-      "id": "tuff"
-    },
-
-    {
-      "timestamp": "2024-03-03T07:30:00",
-      "id": "ponsonby"
-    },
-    {
-      "timestamp": "2024-03-10T08:00:00",
-      "id": "missionbaytahuna"
-    },
-    {
-      "timestamp": "2024-03-17T08:00:00",
-      "title": "St Patricks Day Special",
-      "description": "We will be running takapuna greenway route, from Takapuna Beach Cafe, then off to Florrie's Irish Pub in Takapuna.  Wear something green: https://metrorun.nz/app/routes/takapunagreenway"
-    },
-    {
-      "timestamp": "2024-03-24T08:00:00",
-      "id": "albanyshoescience2"
-    },
-    {
-      "timestamp": "2024-03-31T08:00:00",
-      "id": "watercare"
-    },
-    {
-      "timestamp": "2024-04-07T08:00:00",
-      "id": "threepeaks"
-    },
-    {
-      "timestamp": "2024-04-14T08:00:00",
-      "id": "westhaven"
-    },
-    {
-      "timestamp": "2024-04-19T11:00:00",
-      "title": "Tongariro Northern Circuit",
-      "description": "2 nights away, 44kms of insane views and monster climbs.  Whats not to love?"
-    },
-    {
-      "timestamp": "2024-04-21T08:00:00",
-      "id": "orakei"
-    },
-
-    {
-      "timestamp": "2024-04-28T08:00:00",
+      "timestamp": "2024-06-23T08:00:00",
       "id": "tuff3"
     },
     {
-      "timestamp": "2024-05-05T08:00:00",
+      "timestamp": "2024-06-30T08:00:00",
+      "id": "ponsonby"
+    },
+    {
+      "timestamp": "2024-07-07T08:00:00",
+      "id": "westhaven"
+    },
+    {
+      "timestamp": "2024-07-14T08:00:00",
+      "id": "titirangi"
+    },
+    {
+      "timestamp": "2024-07-21T08:00:00",
+      "id": "takapunagreenway"
+    },
+    {
+      "timestamp": "2024-07-28T08:00:00",
+      "id": "threepeaks"
+    },
+    {
+      "timestamp": "2024-08-04T08:00:00",
+      "id": "orakei"
+    },
+    {
+      "timestamp": "2024-08-11T08:00:00",
+      "id": "watercare"
+    },
+    {
+      "timestamp": "2024-08-18T08:00:00",
+      "id": "tuff3"
+    },
+    {
+      "timestamp": "2024-08-25T08:00:00",
+      "id": "missionbaytahuna"
+    },
+    {
+      "timestamp": "2024-09-01T08:00:00",
+      "id": "takapunagreenway"
+    },
+    {
+      "timestamp": "2024-09-08T08:00:00",
+      "id": "ponsonby"
+    },
+    {
+      "timestamp": "2024-09-15T08:00:00",
+      "id": "orewa"
+    },
+    {
+      "timestamp": "2024-09-22T08:00:00",
+      "id": "albanyshoescience2"
+    },
+    {
+      "timestamp": "2024-09-25T05:45:00",
+      "title": "Big Morning Run for Mental Health Awareness Week",
+      "description": "Clubs all over NZ are running early on Wednesday 25th September for Mental Health Awareness Week.  We will meet at the Grandstand in the Domain at 5:45am to run up Mount Eden and back.  Sunrise is 6:05am, so should be a good view. https://www.bigmorningrun.com/.  No donations, just running"
+    },
+    {
+      "timestamp": "2024-09-29T08:00:00",
+      "id": "westhaven"
+    },
+    {
+      "timestamp": "2024-10-06T08:00:00",
+      "id": "titirangi"
+    },
+    {
+      "timestamp": "2024-10-13T08:00:00",
+      "id": "threepeaks"
+    },
+    {
+      "timestamp": "2024-10-20T08:00:00",
+      "id": "orakei"
+    },
+    {
+      "timestamp": "2024-10-27T08:00:00",
+      "id": "bucklandsbeach"
+    },
+    {
+      "timestamp": "2024-11-03T08:00:00",
+      "id": "watercare"
+    },
+    {
+      "timestamp": "2024-11-10T08:00:00",
+      "id": "dailybread"
+    },
+    {
+      "timestamp": "2024-11-17T08:00:00",
+      "id": "missionbaytahuna"
+    },
+    {
+      "timestamp": "2024-11-24T08:00:00",
+      "id": "ponsonby"
+    },
+    {
+      "timestamp": "2024-12-01T07:00:00",
+      "id": "titirangi"
+    },
+    {
+      "timestamp": "2024-12-08T07:00:00",
+      "id": "orewa"
+    },
+    {
+      "timestamp": "2024-12-15T07:00:00",
+      "id": "orakei"
+    },
+    {
+      "timestamp": "2024-12-22T07:00:00",
+      "id": "tuff3"
+    },
+    {
+      "timestamp": "2025-01-05T07:00:00",
+      "id": "omaha"
+    },
+    {
+      "timestamp": "2025-01-12T07:00:00",
+      "id": "takapunagreenway"
+    },
+    {
+      "timestamp": "2025-01-19T07:00:00",
+      "id": "titirangi"
+    },
+    {
+      "timestamp": "2025-01-26T07:00:00",
+      "id": "westhaven"
+    },
+    {
+      "timestamp": "2025-02-02T07:00:00",
+      "id": "threepeaks"
+    },
+    {
+      "timestamp": "2025-02-09T07:00:00",
+      "id": "orakei"
+    },
+    {
+      "timestamp": "2025-02-16T07:00:00",
+      "id": "watercare"
+    },
+    {
+      "timestamp": "2025-02-23T07:00:00",
+      "id": "missionbaytahuna"
+    },
+    {
+      "timestamp": "2025-03-02T07:30:00",
+      "id": "ponsonby"
+    },
+    {
+      "timestamp": "2025-03-09T08:00:00",
+      "id": "orewa"
+    },
+    {
+      "timestamp": "2025-03-16T08:00:00",
+      "id": "dailybread"
+    },
+    {
+      "timestamp": "2025-03-23T08:00:00",
+      "id": "albanyshoescience2"
+    },
+    {
+      "timestamp": "2025-03-30T08:00:00",
+      "id": "westhaven"
+    },
+    {
+      "timestamp": "2025-04-06T08:00:00",
+      "id": "titirangi"
+    },
+    {
+      "timestamp": "2025-04-13T08:00:00",
       "id": "maraetai"
     },
     {
-      "timestamp": "2024-05-12T08:00:00",
-      "id": "titirangi"
+      "timestamp": "2025-04-20T08:00:00",
+      "id": "orakei"
+    },
+    {
+      "timestamp": "2025-04-27T08:00:00",
+      "id": "bucklandsbeach"
+    },
+    {
+      "timestamp": "2025-05-04T08:00:00",
+      "id": "takapunagreenway"
+    },
+    {
+      "timestamp": "2025-05-11T08:00:00",
+      "id": "threepeaks"
+    },
+    {
+      "timestamp": "2025-05-18T08:00:00",
+      "id": "missionbaytahuna"
+    },
+    {
+      "timestamp": "2025-05-25T08:00:00",
+      "id": "coasttocoast"
     }
   ]
 }
