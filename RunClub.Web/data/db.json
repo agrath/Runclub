@@ -14557,5 +14557,112 @@
     ],
     "annotations": [
     ]
+  },
+  {
+    "id": "henderson",
+    "name": "Henderson Streams",
+    "enabled": true,
+    "description": "Minimal roads. Mostly following the Twin Streams (Oratia & Opanuku Streams) and Henderson Creek shared paths. Twin Streams section of route - We'd do Millbrook first, then Oratia, then road to Opanuku, then back to Henderson to then follow Henderson Creek path up to North Western Cycleway and Trusts Arena before returning.https://at.govt.nz/media/1981165/henderson-paths-ride.pdf",
+    "meetingPoint": {
+      "label": "Falls Park Rotunda",
+      "latitude": -36.87696812,
+      "longitude": 174.63514770,
+      "offset": {
+        "left": "15px",
+        "top": "5px"
+      },
+      "placement": "bottom"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.87696812,
+        "longitude": 174.63514770
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      17
+    ],
+    "distanceMarkerAlignments": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "terrain": [
+      {
+        "type": "urban",
+        "label": "Shared Pathway",
+        "percent": 90
+      },
+      {
+        "type": "urban",
+        "label": "Road",
+        "percent": 10
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "parking",
+        "latitude": -36.87752325,
+        "longitude": 174.63543519
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.87735142,
+        "longitude": 174.63310362
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.87846670,
+        "longitude": 174.62461177
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.87833077,
+        "longitude": 174.62426519
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.87425799,
+        "longitude": 174.63589925
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.87425795,
+        "longitude": 174.63589925
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+    ],
+    "annotations": [
+    ]
   }
 ]
