@@ -14562,7 +14562,7 @@
     "id": "henderson",
     "name": "Henderson Streams",
     "enabled": true,
-    "description": "Minimal roads. Mostly following the Twin Streams (Oratia & Opanuku Streams) and Henderson Creek shared paths. Twin Streams section of route - We'd do Millbrook first, then Oratia, then road to Opanuku, then back to Henderson to then follow Henderson Creek path up to North Western Cycleway and Trusts Arena before returning.https://at.govt.nz/media/1981165/henderson-paths-ride.pdf",
+    "description": "With minimal roads this is a peaceful meander along the tree lined pathways of the area. You'll pass by a number of parks as well as the Henderson Valley Pony Club and vineyards.\n\nMeeting at the Falls Park Rotunda we'll set off following the Twin Streams paths - Oratia and then Opanuku Streams. Once back to Henderson we'll head along the Henderson Creek pathway to the North Western Cycleway. Then loop back passing by the Trusts Arena and stadium.\n\nFinishing off with a coffee at The Alderman - the old 1870's Falls Hotel building. Option for a Swim or Sauna at West Wave next door if you're keen.",
     "meetingPoint": {
       "label": "Falls Park Rotunda",
       "latitude": -36.87696812,
@@ -14581,7 +14581,7 @@
       "zoom": 12
     },
     "distanceOptions": [
-      17
+      10,17
     ],
     "distanceMarkerAlignments": [
       1,
