@@ -762,9 +762,9 @@
     "enabled": true,
     "description": "This run takes you beyond the confines of Tamaki drive and into some of the hidden gems of Auckland's eastern bays.\r\nThe route heads east to Achilles Point, then to Glover Park, Churchill Park, Glendowie Park and eventually to the stunning Tahuna Torea Nature Reserve.\r\nIt's a 17k out-and-back.  There are options to make it shorter (including turning back at Achilles Point - 7k or Glover Park - 10k).  Longer options include an add-on afterwards along Tamaki Drive.",
     "meetingPoint": {
-      "label": "The car park opposite Mission Bay’s Berkeley Cinemas",
-      "latitude": -36.84793700,
-      "longitude": 174.83295300,
+      "label": "Mission Bay Fountain, cos the normal carpark is shut",
+      "latitude": -36.847452488,
+      "longitude": 174.83052324,
       "offset": {
         "left": "0px",
         "top": "20px"
@@ -13670,7 +13670,7 @@
     "id": "coasttocoast",
     "name": "Coast To Coast",
     "enabled": true,
-    "description": "Based on the Auckland Coast to Coast walk, this run takes us from one side of Auckland to the other.  Meeting at Onehunga Train station, we catch the train to Britomart, then run back to Onehunga Via the Domain, Mt Eden and One Tree hill.",
+    "description": "NOTE: EARLIER MEET TIME, 7:45 to catch the 7:53am Train.  Bring your AT Hop card. Based on the Auckland Coast to Coast walk, this run takes us from one side of Auckland to the other.  Meeting at Onehunga Train station, we catch the train to Britomart, then run back to Onehunga Via the Domain, Mt Eden and One Tree hill.",
     "meetingPoint": {
       "label": "Onehunga Train Station",
       "latitude": -36.92568503,
@@ -14600,6 +14600,113 @@
         "type": "urban",
         "label": "Road",
         "percent": 10
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "parking",
+        "latitude": -36.87752325,
+        "longitude": 174.63543519
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.87735142,
+        "longitude": 174.63310362
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.87846670,
+        "longitude": 174.62461177
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.87833077,
+        "longitude": 174.62426519
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.87425799,
+        "longitude": 174.63589925
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.87425795,
+        "longitude": 174.63589925
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+    ],
+    "annotations": [
+    ]
+  },
+  {
+    "id": "cityloop",
+    "name": "All Blacks City Loop Special",
+    "enabled": true,
+    "description": "NOTE: EARLIER STAR TIME: 7:30am. We will run our Ponsonby Parnell route from Corner of Symonds St & Mt Eden Rd so we finish up there at Schapiro's Sports Bar in time to watch the All Blacks v Argentina match.\n\nWe'll start off with a fun run along the Lightpath and an awakening climb up Western Park to Ponsonby Rd. From there we'll follow our normal Ponsonby Parnell route, a classic Auckland run passing through Ponsonby, along the waterfront, up through Parnell, and across the Domain and Grafton Bridge.\n\nTotal distance: 16km. Longer option: 19.5km, from Western Park run down Williamson Ave and the Grey Lynn Greenway Path to Cox's Bay.  Then Herne Bay streets to Curran St and harbour bridge. Short option: 10.5km, from the Lightpath go straight down Nelson St to the viaduct",
+    "meetingPoint": {
+      "label": "Corner of Symonds St & Mt Eden Rd",
+      "latitude": -36.86513899,
+      "longitude": 174.76075165,
+      "offset": {
+        "left": "0px",
+        "top": "5px"
+      },
+      "placement": "bottom"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.87696812,
+        "longitude": 174.63514770
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      16
+    ],
+    "distanceMarkerAlignments": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "terrain": [
+      {
+        "type": "urban",
+        "label": "Shared Pathway",
+        "percent": 50
+      },
+      {
+        "type": "urban",
+        "label": "Road",
+        "percent": 50
       }
     ],
     "placesOfInterest": [

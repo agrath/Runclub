@@ -11,70 +11,6 @@
   },
   "events": [
     {
-      "timestamp": "2024-06-09T08:00:00",
-      "id": "missionbaytahuna"
-    },
-    {
-      "timestamp": "2024-06-16T08:00:00",
-      "id": "orewa"
-    },
-    {
-      "timestamp": "2024-06-23T08:00:00",
-      "id": "tuff3"
-    },
-    {
-      "timestamp": "2024-06-30T08:00:00",
-      "id": "ponsonby"
-    },
-    {
-      "timestamp": "2024-07-07T08:00:00",
-      "id": "westhaven"
-    },
-    {
-      "timestamp": "2024-07-14T08:00:00",
-      "id": "titirangi"
-    },
-    {
-      "timestamp": "2024-07-21T08:00:00",
-      "id": "takapunagreenway"
-    },
-    {
-      "timestamp": "2024-07-28T08:00:00",
-      "id": "threepeaks"
-    },
-    {
-      "timestamp": "2024-08-04T08:00:00",
-      "id": "orakei"
-    },
-    {
-      "timestamp": "2024-08-11T08:00:00",
-      "id": "watercare"
-    },
-    {
-      "timestamp": "2024-08-18T08:00:00",
-      "id": "tuff3"
-    },
-    {
-      "timestamp": "2024-08-25T08:00:00",
-      "id": "missionbaytahuna"
-    },
-    {
-      "timestamp": "2024-09-01T08:00:00",
-      "id": "takapunagreenway"
-    },
-    {
-      "timestamp": "2024-09-08T08:00:00",
-      "id": "ponsonby"
-    },
-    {
-      "timestamp": "2024-09-15T08:00:00",
-      "id": "orewa"
-    },
-    {
-      "timestamp": "2024-09-22T08:00:00",
-      "id": "albanyshoescience2"
-    },
-    {
       "timestamp": "2024-09-25T05:45:00",
       "title": "Big Morning Run for Mental Health Awareness Week",
       "description": "Clubs all over NZ are running early on Wednesday 25th September for Mental Health Awareness Week.  We will meet at the Grandstand in the Domain at 5:45am to run up Mount Eden and back.  Sunrise is 6:05am, so should be a good view. https://www.bigmorningrun.com/.  No donations, just running"
@@ -212,7 +148,7 @@
       "id": "missionbaytahuna"
     },
     {
-      "timestamp": "2025-05-25T08:00:00",
+      "timestamp": "2025-05-25T07:45:00",
       "id": "coasttocoast"
     },
     {
@@ -222,6 +158,51 @@
     {
       "timestamp": "2025-06-08T08:00:00",
       "id": "henderson"
+    },
+    {
+      "timestamp": "2025-06-15T08:00:00",
+      "id": "westhaven"
+    },
+    {
+      "timestamp": "2025-06-22T08:00:00",
+      "id": "tuff3"
+    },
+    {
+      "timestamp": "2025-06-29T08:00:00",
+      "id": "dailybread"
+    },
+    {
+      "timestamp": "2025-07-06T08:00:00",
+      "id": "watercare"
+    },
+    {
+      "timestamp": "2025-07-13T08:00:00",
+      "id": "orakei"
+    },
+    {
+      "timestamp": "2025-07-20T08:00:00",
+      "id": "titirangi"
+    },
+    {
+      "timestamp": "2025-07-27T08:00:00",
+      "id": "bucklandsbeach"
+    },
+    {
+      "timestamp": "2025-08-03T08:00:00",
+      "id": "threepeaks"
+    },
+    {
+      "timestamp": "2025-08-10T08:00:00",
+      "id": "henderson"
+    },
+    {
+      "timestamp": "2025-08-17T08:00:00",
+      "id": "takapunagreenway"
+    },
+    {
+      "timestamp": "2025-08-24T07:30:00",
+      "id": "cityloop"
     }
+
   ]
 }
