@@ -762,12 +762,12 @@
     "enabled": true,
     "description": "This run takes you beyond the confines of Tamaki drive and into some of the hidden gems of Auckland's eastern bays.\r\nThe route heads east to Achilles Point, then to Glover Park, Churchill Park, Glendowie Park and eventually to the stunning Tahuna Torea Nature Reserve.\r\nIt's a 17k out-and-back.  There are options to make it shorter (including turning back at Achilles Point - 7k or Glover Park - 10k).  Longer options include an add-on afterwards along Tamaki Drive.",
     "meetingPoint": {
-      "label": "Mission Bay Fountain, cos the normal carpark is shut",
-      "latitude": -36.847452488,
-      "longitude": 174.83052324,
+      "label": "Carpark opposite Mission Bay's Berkeley Cinemas",
+      "latitude": -36.847908923,
+      "longitude": 174.83282622,
       "offset": {
         "left": "0px",
-        "top": "20px"
+        "top": "-20px"
       },
       "placement": "bottom"
     },
@@ -14770,6 +14770,135 @@
     "diversions": [
     ],
     "annotations": [
+    ]
+  },
+  {
+    "id": "mangerebridge",
+    "name": "Mangere Bridge Harbour Trails + Mountain",
+    "enabled": true,
+    "description": "An excellently runnable course along the flat coastal paths and trails. This is a great run to get in LOTS of miles to get you ready for that upcoming half or full marathon! Plus, there’s the option of returning over the mighty Mangere Mountain to make it an epic morning. \n\nMeeting at the Waterfront reserve at the end of Coronation Rd we'll head all the way along Kiwi Esplanade, through Ambury Regional Park and then head south onto the Watercare Coastal Walkway and around the lagoon – For a shorter distance, loop back here and return for 15km, or over the mountain for 12km.\n\nContinue south for a side trip to Puketutu Island. On the way back, either return the same way you ran – Or head up and over Mangere Mountain and then east to reach the inner harbour esplanade path, then follow that back to the finish. If you've still got energy to burn, you can dash over the bridge to Onehunga and back.",
+    "meetingPoint": {
+      "label": "Corner of Coronation Rd and Waterfront Rd",
+      "latitude": -36.9383828,
+      "longitude": 174.7862484,
+      "offset": {
+        "left": "25px",
+        "top": "0px"
+      },
+      "placement": "right"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.848448,
+        "longitude": 174.762191
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      22.5
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "terrain": [
+      {
+        "type": "trail",
+        "label": "Trail",
+        "percent": 90
+      },
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 10
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "parking",
+        "latitude": -36.93837354,
+        "longitude": 174.77830231
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9787941,
+        "longitude": 174.76265
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.94628,
+        "longitude": 174.757126
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.93976,
+        "longitude": 174.764557
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.94515,
+        "longitude": 174.7607
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9493523,
+        "longitude": 174.785553
+      },
+
+      {
+        "type": "water-fountain",
+        "latitude": -36.94748,
+        "longitude": 174.7863
+      }
+
     ]
   }
 ]

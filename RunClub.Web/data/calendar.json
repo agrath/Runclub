@@ -202,6 +202,58 @@
     {
       "timestamp": "2025-08-24T07:30:00",
       "id": "cityloop"
+    },
+    {
+      "timestamp": "2025-08-31T08:00:00",
+      "id": "missionbaytahuna"
+    },
+    {
+      "timestamp": "2025-09-07T08:00:00",
+      "id": "mangerebridge"
+    },
+    {
+      "timestamp": "2025-09-14T07:45:00",
+      "id": "coasttocoast"
+    },
+    {
+      "timestamp": "2025-09-21T08:00:00",
+      "id": "albanyshoescience2"
+    },
+    {
+      "timestamp": "2025-09-28T08:00:00",
+      "id": "dailybread"
+    },
+    {
+      "timestamp": "2025-10-05T08:00:00",
+      "id": "orakei"
+    },
+    {
+      "timestamp": "2025-10-12T08:00:00",
+      "id": "orewa"
+    },
+    {
+      "timestamp": "2025-10-19T08:00:00",
+      "id": "takapunagreenway"
+    },
+    {
+      "timestamp": "2025-10-26T08:00:00",
+      "id": "westhaven"
+    },
+    {
+      "timestamp": "2025-11-02T08:00:00",
+      "id": "titirangi"
+    },
+    {
+      "timestamp": "2025-11-09T08:00:00",
+      "id": "bucklandsbeach"
+    },
+    {
+      "timestamp": "2025-11-16T08:00:00",
+      "id": "threepeaks"
+    },
+    {
+      "timestamp": "2025-11-23T08:00:00",
+      "id": "maraetai"
     }
 
   ]
