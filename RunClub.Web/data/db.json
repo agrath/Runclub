@@ -6719,13 +6719,13 @@
   },
   {
     "id": "longbay",
-    "name": "Long Bay Coastal Walkway",
+    "name": "Waiake Beach-Long Bay Regional Park",
     "enabled": true,
-    "description": "This is a stunning regional park on the North Shore and ideal for a summertime destination run.\r\nThe route follows the road to the Coastal Walkway of which we will complete an out-and-back (10k total).\r\nTo keep things interesting on the way back we’ll have the options of also including 1km or so diversions on the 100 Acre Track, and along the beach.\r\nTo add on, either complete another out-and-back or venture into the surrounding suburbs.",
+    "description": "This takes us along a stunning stretch of North Shore coastline and is ideal for a summertime destination run.\n\nFollow the Te Araroa signs to Long Bay (or just follow Beach Rd). Run through the regional park and take the Coastal Track, making your way over the clifftops to the northern end (option of taking the inner 100 Acre Track along the way). Then turn around and return. On the way back you have the option of taking the Nature Trail down to the beach - To then run the length of Long Bay beach before you head up and over to finish back at Waiake for a well earned coffee.\n\nTo add on, continue along Te Araroa (turn up Sharon Rd) to Browns Bay for an out and back run along the beach.",
     "meetingPoint": {
-      "label": "2nd car park to the right after crossing bridge into the park. 2000 Beach Road, Long Bay.",
-      "latitude": -36.68765152,
-      "longitude": 174.75050926,
+      "label": "Waiake Beach Public toilets",
+      "latitude": -36.70301363,
+      "longitude": 174.75184347,
       "offset": {
         "left": "0px",
         "top": "18px"
@@ -6737,11 +6737,11 @@
         "latitude": -36.67944438,
         "longitude": 174.74656105
       },
-      "zoom": 12
+      "zoom": 10
     },
     "distanceOptions": [
-      5,
-      10
+      16,
+      19
     ],
     "distanceMarkerAlignments": [
       0,
@@ -6772,7 +6772,12 @@
       {
         "type": "trail",
         "label": "Trail",
-        "percent": 100
+        "percent": 70
+      },
+      {
+        "type": "road",
+        "label": "Road",
+        "percent": 30
       }
     ],
     "placesOfInterest": [

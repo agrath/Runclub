@@ -15,94 +15,6 @@
       "title": "Big Morning Run for Mental Health Awareness Week",
       "description": "Clubs all over NZ are running early on Wednesday 25th September for Mental Health Awareness Week.  We will meet at the Grandstand in the Domain at 5:45am to run up Mount Eden and back.  Sunrise is 6:05am, so should be a good view. https://www.bigmorningrun.com/.  No donations, just running"
     },
-       {
-      "timestamp": "2024-12-15T07:00:00",
-      "id": "orakei"
-    },
-    {
-      "timestamp": "2024-12-22T07:00:00",
-      "id": "tuff3"
-    },
-    {
-      "timestamp": "2025-01-05T07:00:00",
-      "id": "omaha"
-    },
-    {
-      "timestamp": "2025-01-12T07:00:00",
-      "id": "takapunagreenway"
-    },
-    {
-      "timestamp": "2025-01-19T07:00:00",
-      "id": "titirangi"
-    },
-    {
-      "timestamp": "2025-01-26T07:00:00",
-      "id": "westhaven"
-    },
-    {
-      "timestamp": "2025-02-02T07:00:00",
-      "id": "threepeaks"
-    },
-    {
-      "timestamp": "2025-02-09T07:00:00",
-      "id": "orakei"
-    },
-    {
-      "timestamp": "2025-02-16T07:00:00",
-      "id": "watercare"
-    },
-    {
-      "timestamp": "2025-02-23T07:00:00",
-      "id": "missionbaytahuna"
-    },
-    {
-      "timestamp": "2025-03-02T07:30:00",
-      "id": "ponsonby"
-    },
-    {
-      "timestamp": "2025-03-09T08:00:00",
-      "id": "orewa"
-    },
-    {
-      "timestamp": "2025-03-16T08:00:00",
-      "id": "dailybread"
-    },
-    {
-      "timestamp": "2025-03-23T08:00:00",
-      "id": "albanyshoescience2"
-    },
-    {
-      "timestamp": "2025-03-30T08:00:00",
-      "id": "westhaven"
-    },
-    {
-      "timestamp": "2025-04-06T08:00:00",
-      "id": "titirangi"
-    },
-    {
-      "timestamp": "2025-04-13T08:00:00",
-      "id": "maraetai"
-    },
-    {
-      "timestamp": "2025-04-20T08:00:00",
-      "id": "orakei"
-    },
-    {
-      "timestamp": "2025-04-27T08:00:00",
-      "id": "bucklandsbeach"
-    },
-    {
-      "timestamp": "2025-05-04T08:00:00",
-      "id": "takapunagreenway"
-    },
-    {
-      "timestamp": "2025-05-11T08:00:00",
-      "id": "threepeaks"
-    },
-    {
-      "timestamp": "2025-05-18T08:00:00",
-      "id": "missionbaytahuna"
-    },
     {
       "timestamp": "2025-05-25T07:45:00",
       "id": "coasttocoast"
@@ -220,11 +132,23 @@
       "title": "Rangitoto Run",
       "description": "There are a couple of slots left for the Rangitoto Run on Sunday 7th December.  Find us on facebook if you are interested in coming along! "
     },
+    { "timestamp": "2025-12-07T07:30:00",
+      "id": "orakei"
+    },
     { "timestamp": "2025-12-14T07:30:00",
       "id": "henderson"
     },
     { "timestamp": "2025-12-21T07:30:00",
       "id": "cornwellpark"
+    },
+    { "timestamp": "2026-01-11T07:30:00",
+      "id": "omaha"
+    },
+    { "timestamp": "2026-01-18T07:00:00",
+      "id": "missionbaytahuna"
+    },
+    { "timestamp": "2026-01-25T07:00:00",
+      "id": "longbay"
     }
   ]
 }
