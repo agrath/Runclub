@@ -149,6 +149,21 @@
     },
     { "timestamp": "2026-01-25T07:00:00",
       "id": "longbay"
+    },
+    { "timestamp": "2026-02-01T07:00:00",
+      "id": "ponsonby2"
+    },
+    { "timestamp": "2026-02-08T07:00:00",
+      "id": "westhaven"
+    },
+    { "timestamp": "2026-02-15T07:00:00",
+      "id": "mangerebridge"
+    },
+    { "timestamp": "2026-02-22T07:00:00",
+      "id": "millennium"
+    },
+    { "timestamp": "2026-03-01T07:00:00",
+      "id": "missionbaytahuna"
     }
   ]
 }

@@ -6478,6 +6478,157 @@
     ]
   },
   {
+    "id": "ponsonby2",
+    "name": "Ponsonby Parnell loop (New Starting Point)",
+    "enabled": true,
+    "description": "This central loop is a classic Auckland run. We'll set off down through the Grey Lynn Greenway to Cox's Bay before heading around the streets of Herne Bay to the Harbour Bridge. Then it's a dash along the waterfront to the Point Resolution Footbridge, up through Parnell, across the Domain, and then over Grafton Bridge and the Lightpath back to Ponsonby Road.\n\nThe full loop is 18.5km. To shorten the distance to 14.5km - from the start, set off straight down Ponsonby Road and Curran Street direct to the Harbour Bridge.",
+    "meetingPoint": {
+      "label": "Corner of Ponsonby Rd and Hepburn St",
+      "latitude": -36.857672756,
+      "longitude": 174.74951264,
+      "offset": {
+        "left": "0px",
+        "top": "5px"
+      },
+      "placement": "bottom"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.848448,
+        "longitude": 174.762191
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      14.5,
+      18.5
+    ],
+    "distanceMarkerAlignments": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "terrain": [
+      {
+        "type": "urban",
+        "label": "Urban",
+        "percent": 100
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "water-fountain",
+        "latitude": -36.86216622,
+        "longitude": 174.77030459
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.85906426,
+        "longitude": 174.77414955
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.86411928,
+        "longitude": 174.77141270
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8472036,
+        "longitude": 174.7443818
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8373652,
+        "longitude": 174.7426694
+      },
+      {
+        "type": "photo-camera",
+        "latitude": -36.8351222,
+        "longitude": 174.74308111000
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.84048,
+        "longitude": 174.7562063
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.841154,
+        "longitude": 174.7585431
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.8411747,
+        "longitude": 174.758685
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.84289,
+        "longitude": 174.7661859
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.8585039,
+        "longitude": 174.7749569
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.8582535,
+        "longitude": 174.7627263
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "diversions": [
+    ],
+    "annotations": [
+    ]
+  },
+  {
     "id": "zooloop",
     "name": "Auckland Zoo - City Loop",
     "enabled": true,
@@ -13909,11 +14060,11 @@
   },
   {
     "id": "millennium",
-    "name": "AUT Millennium",
+    "name": "AUT Millennium Albany Loop",
     "enabled": true,
-    "description": "A Magical Mystery tour of some of Albany's less known parks and bush.  Starting at AUT Millennium we do a counter clockwise run around lake Taima, through Kanuka Reserve, Fernhill Escarpment, Rosedale Park, Unsworth Reserve and Winsor Park.  Coffee afterwards at the AUT Millennium Cafe.",
+    "description": "Our Albany loop starting/finishing at the AUT Millennium athletics stadium. We'll set off on the Northern pathway, heading up to the Albany Lakes. Then zip along a myriad of Albany, Rosedale and Unsworth's very runnable bush trails, park and cycle paths. Coffee after at Pickles cafe.",
     "meetingPoint": {
-      "label": "AUT Millennium Cafe",
+      "label": "AUT Millennium front entrance",
       "latitude": -36.741675,
       "longitude": 174.732160,
       "offset": {
@@ -13964,17 +14115,17 @@
       {
         "type": "road",
         "label": "Road",
-        "percent": 45
+        "percent": 30
       },
       {
         "type": "trail",
         "label": "Bush / Reserve",
-        "percent": 45
+        "percent": 35
       },
       {
         "type": "xcountry",
-        "label": "Other",
-        "percent": 10
+        "label": "Bike Paths",
+        "percent": 35
       }
     ],
     "placesOfInterest": [
