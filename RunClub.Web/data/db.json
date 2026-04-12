@@ -2275,13 +2275,349 @@
       }
     ]
   },
-  -36.95056978443494,
-  174.6211847853388,
+  {
+    "id": "titirangi2",
+    "name": "Titirangi Proposed route - not yet run",
+    "enabled": true,
+    "description": "This is a classic run taking in the foothills of the Waitakere Ranges. From Titirangi we head along Kohu Rd to Mt Atkinson and then along the Exhibition Drive gravel road. Exiting at Shaw Rd, we'll take Carter Rd down the hill and then Parker Rd up the hill to Arataki Visitor Centre. From there we'll hit Beveridge track & Exhibition Drive for a beautiful run through the bush to the finish - 19km in total. There are options to make it shorter - go straight to Arataki Visitor Centre and return - 13.5km. Or longer - The 3 Ko's Loop: Near the end take Kohu + Kopiko + Konini Rd's for 4km extra (2km if you turn up at the Titirangi pump station). ",
+    "importantNotes": "Some of this run is on-road with no footpath. We strongly recommend bright or reflective clothing and request that you do not wear headphones for this run.  All runners joining us run at their own risk and agree not to hold the club or any run leaders responsible for any injury or damages to person or belongings.",
+    "meetingPoint": {
+      "label": "Cnr Titirangi Rd. & South Titirangi Rd.",
+      "latitude": -36.93812296,
+      "longitude": 174.65598285,
+      "offset": {
+        "left": "5px",
+        "top": "5px"
+      },
+      "placement": "bottom"
+    },
+    "afterRunInformation": {
+      "content": "After the run, we usually meet at Deco Eatery Cafe (about 100m from the start, we run past it near the end)",
+      "carrotCake": {
+        "ratings": {
+          "taste": 2,
+          "texture": 1,
+          "sweetness": 2,
+          "moisture": 2,
+          "value": 3
+        },
+        "review": "Deco Eatery Cafe: Carrot Cake at this cafe is not like your traditional cake. It is a very light sponge cake with subtle flavors, has a thin fruit base made from rasins and no cream cheese icing. If you have just run 21km you will be disappointed by this carrot cake!"
+      }
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.92848789,
+        "longitude": 174.62064743
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      14.5,
+      18,
+      21
+    ],
+    "distanceMarkerAlignments": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "terrain": [
+      {
+        "type": "road",
+        "label": "Urban",
+        "percent": 10
+      },
+      {
+        "type": "forest",
+        "label": "Rural Road",
+        "percent": 75
+      },
+      {
+        "type": "trail",
+        "label": "Gravel Road",
+        "percent": 15
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "water-fountain",
+        "latitude": -36.93387373,
+        "longitude": 174.57762480
+      },
+      {
+        "type": "parking",
+        "latitude": -36.93808437,
+        "longitude": 174.65610623
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9070625,
+        "longitude": 174.627914
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.93796,
+        "longitude": 174.6562
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9109955,
+        "longitude": 174.652054
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9464722,
+        "longitude": 174.6063
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.9465942,
+        "longitude": 174.606552
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.9067345,
+        "longitude": 174.628113
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.91089,
+        "longitude": 174.651688
+      },
+      {
+        "type": "photo-camera",
+        "latitude": -36.9471779,
+        "longitude": 174.606674
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "annotations": [
+      {
+        "title": "Nature trail loop/Kauri Cathedral",
+        "visible": true,
+        "description": "Option adds 600m or 1.5km",
+        "anchor": {
+          "latitude": -36.9442048,
+          "longitude": 174.6068055
+        },
+        "offset": {
+          "left": "0px",
+          "top": "0px"
+        },
+        "placement": "left",
+        "backgroundColour": "#ffffff",
+        "border": true,
+        "fontColour": "#000000",
+        "fontSize": "13px",
+        "showCloseButton": true
+      },
+      {
+        "title": "Tony Special",
+        "visible": true,
+        "description": "Option adds 1km of gut busting hill work",
+        "anchor": {
+          "latitude": -36.9507195,
+          "longitude": 174.6212589
+        },
+        "offset": {
+          "left": "-10px",
+          "top": "0px"
+        },
+        "placement": "bottom",
+        "backgroundColour": "#ffffff",
+        "border": true,
+        "fontColour": "#000000",
+        "fontSize": "13px",
+        "showCloseButton": true
+      }
+    ]
+  },
+
+  {
+    "id": "titirangialt",
+    "name": "Titirangi Arataki Special",
+    "enabled": true,
+    "description": "To keep things interesting for the 1st half we'll do the bush tracks below Titirangi and then hike up to Arataki. (No pace groups. We'll just run slow/wait at each intersection). Then standard route from Arataki back to Titirangi along Beveridge Track and Exhibition Drive. This involves a big hike up the Slip track to Arataki. So it's just for a special run. I like to think it helps keep a small group of whoever turns up on big event days to stick together better.",
+    "importantNotes": "Some of this run is on-road with no footpath. We strongly recommend bright or reflective clothing and request that you do not wear headphones for this run.  All runners joining us run at their own risk and agree not to hold the club or any run leaders responsible for any injury or damages to person or belongings.",
+    "meetingPoint": {
+      "label": "Cnr Titirangi Rd. & South Titirangi Rd.",
+      "latitude": -36.93812296,
+      "longitude": 174.65598285,
+      "offset": {
+        "left": "5px",
+        "top": "5px"
+      },
+      "placement": "bottom"
+    },
+    "afterRunInformation": {
+      "content": "After the run, we usually meet at Deco Eatery Cafe (about 100m from the start, we run past it near the end)",
+      "carrotCake": {
+        "ratings": {
+          "taste": 2,
+          "texture": 1,
+          "sweetness": 2,
+          "moisture": 2,
+          "value": 3
+        },
+        "review": "Deco Eatery Cafe: Carrot Cake at this cafe is not like your traditional cake. It is a very light sponge cake with subtle flavors, has a thin fruit base made from rasins and no cream cheese icing. If you have just run 21km you will be disappointed by this carrot cake!"
+      }
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.92848789,
+        "longitude": 174.62064743
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      17
+    ],
+    "distanceMarkerAlignments": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "terrain": [
+      {
+        "type": "road",
+        "label": "Urban",
+        "percent": 10
+      },
+      {
+        "type": "forest",
+        "label": "Rural Road",
+        "percent": 75
+      },
+      {
+        "type": "trail",
+        "label": "Gravel Road",
+        "percent": 15
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "parking",
+        "latitude": -36.93808437,
+        "longitude": 174.65610623
+      },
+
+      {
+        "type": "public-bathroom",
+        "latitude": -36.93796,
+        "longitude": 174.6562
+      },
+
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9464722,
+        "longitude": 174.6063
+      },
+      {
+        "type": "water-fountain",
+        "latitude": -36.9465942,
+        "longitude": 174.606552
+      },
+
+
+      {
+        "type": "photo-camera",
+        "latitude": -36.9471779,
+        "longitude": 174.606674
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ]
+  },
   {
     "id": "fourpeaks",
     "name": "Four Peaks",
     "enabled": true,
-    "description": "NEW STARTING POINT.  \n\nConquer Auckland’s four central volcanic peaks of Mt Hobson, Mt St John, One Tree Hill and Mt Eden, before making your through the lush trails of Auckland Domain.\n\nTo shorten to 3 Peaks, leave out One Tree Hill. Coffee after at Foundation on George.",
+    "description": "NEW STARTING POINT.  \n\nConquer Auckland’s four central volcanic peaks of Mt Hobson, Mt St John, One Tree Hill and Mt Eden, before making your way through the lush trails of Auckland Domain.\n\nTo shorten to 3 Peaks, leave out One Tree Hill. Coffee after at Foundation on George.",
     "meetingPoint": {
       "label": "Parnell Library (the brick building facing Parnell Rd)",
       "latitude": -36.86343542,

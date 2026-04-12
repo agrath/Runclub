@@ -16,50 +16,6 @@
       "description": "Clubs all over NZ are running early on Wednesday 25th September for Mental Health Awareness Week.  We will meet at the Grandstand in the Domain at 5:45am to run up Mount Eden and back.  Sunrise is 6:05am, so should be a good view. https://www.bigmorningrun.com/.  No donations, just running"
     },
     {
-      "timestamp": "2025-05-25T07:45:00",
-      "id": "coasttocoast"
-    },
-    {
-      "timestamp": "2025-06-01T08:00:00",
-      "id": "omaha"
-    },
-    {
-      "timestamp": "2025-06-08T08:00:00",
-      "id": "henderson"
-    },
-    {
-      "timestamp": "2025-06-15T08:00:00",
-      "id": "westhaven"
-    },
-    {
-      "timestamp": "2025-06-22T08:00:00",
-      "id": "tuff3"
-    },
-    {
-      "timestamp": "2025-06-29T08:00:00",
-      "id": "dailybread"
-    },
-    {
-      "timestamp": "2025-07-06T08:00:00",
-      "id": "watercare"
-    },
-    {
-      "timestamp": "2025-07-13T08:00:00",
-      "id": "orakei"
-    },
-    {
-      "timestamp": "2025-07-20T08:00:00",
-      "id": "titirangi"
-    },
-    {
-      "timestamp": "2025-07-27T08:00:00",
-      "id": "bucklandsbeach"
-    },
-    {
-      "timestamp": "2025-08-03T08:00:00",
-      "id": "threepeaks"
-    },
-    {
       "timestamp": "2025-08-10T08:00:00",
       "id": "henderson"
     },
@@ -132,43 +88,56 @@
       "title": "Rangitoto Run",
       "description": "There are a couple of slots left for the Rangitoto Run on Sunday 7th December.  Find us on facebook if you are interested in coming along! "
     },
-    { "timestamp": "2025-12-07T07:30:00",
+    {
+      "timestamp": "2025-12-07T07:30:00",
       "id": "orakei"
     },
-    { "timestamp": "2025-12-14T07:30:00",
+    {
+      "timestamp": "2025-12-14T07:30:00",
       "id": "henderson"
     },
-    { "timestamp": "2025-12-21T07:30:00",
+    {
+      "timestamp": "2025-12-21T07:30:00",
       "id": "cornwellpark"
     },
-    { "timestamp": "2026-01-11T07:30:00",
+    {
+      "timestamp": "2026-01-11T07:30:00",
       "id": "omaha"
     },
-    { "timestamp": "2026-01-18T07:00:00",
+    {
+      "timestamp": "2026-01-18T07:00:00",
       "id": "missionbaytahuna"
     },
-    { "timestamp": "2026-01-25T07:00:00",
+    {
+      "timestamp": "2026-01-25T07:00:00",
       "id": "longbay"
     },
-    { "timestamp": "2026-02-01T07:00:00",
+    {
+      "timestamp": "2026-02-01T07:00:00",
       "id": "ponsonby2"
     },
-    { "timestamp": "2026-02-08T07:00:00",
+    {
+      "timestamp": "2026-02-08T07:00:00",
       "id": "westhaven"
     },
-    { "timestamp": "2026-02-15T07:00:00",
+    {
+      "timestamp": "2026-02-15T07:00:00",
       "id": "mangerebridge"
     },
-    { "timestamp": "2026-02-22T07:00:00",
+    {
+      "timestamp": "2026-02-22T07:00:00",
       "id": "millennium"
     },
-    { "timestamp": "2026-03-01T07:15:00",
+    {
+      "timestamp": "2026-03-01T07:15:00",
       "id": "missionbaytahuna"
     },
-    { "timestamp": "2026-03-08T07:15:00",
+    {
+      "timestamp": "2026-03-08T07:15:00",
       "id": "ponsonby2"
     },
-    { "timestamp": "2026-03-15T08:00:00",
+    {
+      "timestamp": "2026-03-15T08:00:00",
       "id": "takapunagreenway"
     },
     {
@@ -182,6 +151,67 @@
     {
       "timestamp": "2026-04-05T08:00:00",
       "id": "bucklandsbeach"
+    },
+    {
+      "timestamp": "2026-04-06T08:30:00",
+      "title": "Casade Kauri MetroRun Easter Extra",
+      "description": "We are running an extra run on Easter Monday, 6th April out in the Kauri Cascades",
+      "link": "https://www.strava.com/clubs/204107/group_events/3474626291840287804",
+      "id": "kauricascades"
+    },
+    {
+      "timestamp": "2026-04-12T08:00:00",
+      "title": "Event Cancelled",
+      "description": "Due to a mild case of softness and a really nasty looking weather forecast, we have decided to cancel the run on Sunday 12th April. ",
+      "id": "canceled"
+    },
+    {
+      "timestamp": "2026-04-19T08:00:00",
+      "id": "titirangialt"
+    },
+    {
+      "timestamp": "2026-04-26T08:00:00",
+      "id": "orakei"
+    },
+    {
+      "timestamp": "2026-05-03T08:00:00",
+      "id": "henderson"
+    },
+    {
+      "timestamp": "2026-05-10T08:00:00",
+      "id": "albanyshoescience2"
+    },
+    {
+      "timestamp": "2026-05-17T08:00:00",
+      "id": "ponsonby2"
+    },
+    {
+      "timestamp": "2026-05-24T08:00:00",
+      "id": "coasttocoast"
+    },
+    {
+      "timestamp": "2026-05-31T08:00:00",
+      "id": "westhaven"
+    },
+    {
+      "timestamp": "2026-06-07T08:00:00",
+      "id": "titirangi"
+    },
+    {
+      "timestamp": "2026-06-14T08:00:00",
+      "id": "mangerebridge"
+    },
+    {
+      "timestamp": "2026-06-21T08:00:00",
+      "id": "takapunagreenway"
+    },
+    {
+      "timestamp": "2026-06-28T08:00:00",
+      "id": "missionbaytahuna"
+    },
+    {
+      "timestamp": "2026-07-05T08:00:00",
+      "id": "fourpeaks"
     }
   ]
 }

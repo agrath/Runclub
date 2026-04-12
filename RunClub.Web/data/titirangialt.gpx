@@ -1,0 +1,4108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="GPS Visualizer https://www.gpsvisualizer.com/" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v2 http://www.garmin.com/xmlschemas/TrackPointExtensionv2.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+<trk>
+  <name>Gmaps Pedometer Track</name>
+  <trkseg>
+    <trkpt lat="-36.93839" lon="174.65566">
+      <ele>147.139</ele>
+      <time>2026-04-10T22:10:47Z</time>
+      <name>Start</name>
+    </trkpt>
+    <trkpt lat="-36.93841" lon="174.65564">
+      <ele>147.06</ele>
+      <time>2026-04-10T22:10:48Z</time>
+      <name>Turn 1</name>
+    </trkpt>
+    <trkpt lat="-36.93845" lon="174.65561">
+      <ele>146.882</ele>
+      <time>2026-04-10T22:10:50Z</time>
+      <name>Turn 2</name>
+    </trkpt>
+    <trkpt lat="-36.93847" lon="174.65559">
+      <ele>146.831</ele>
+      <time>2026-04-10T22:10:51Z</time>
+      <name>Turn 3</name>
+    </trkpt>
+    <trkpt lat="-36.9386" lon="174.65549">
+      <ele>145.863</ele>
+      <time>2026-04-10T22:10:57Z</time>
+      <name>Turn 4</name>
+    </trkpt>
+    <trkpt lat="-36.93875" lon="174.65538">
+      <ele>143.368</ele>
+      <time>2026-04-10T22:11:03Z</time>
+      <name>Turn 5</name>
+    </trkpt>
+    <trkpt lat="-36.9388" lon="174.65562">
+      <ele>142.816</ele>
+      <time>2026-04-10T22:11:11Z</time>
+      <name>Turn 6</name>
+    </trkpt>
+    <trkpt lat="-36.93883" lon="174.65561">
+      <ele>142.456</ele>
+      <time>2026-04-10T22:11:12Z</time>
+      <name>Turn 7</name>
+    </trkpt>
+    <trkpt lat="-36.93887" lon="174.65576">
+      <ele>140.8</ele>
+      <time>2026-04-10T22:11:16Z</time>
+      <name>Turn 8</name>
+    </trkpt>
+    <trkpt lat="-36.939" lon="174.65607">
+      <ele>136.696</ele>
+      <time>2026-04-10T22:11:27Z</time>
+      <name>Turn 9</name>
+    </trkpt>
+    <trkpt lat="-36.93909" lon="174.65618">
+      <ele>135.036</ele>
+      <time>2026-04-10T22:11:31Z</time>
+      <name>Turn 10</name>
+    </trkpt>
+    <trkpt lat="-36.93897" lon="174.65636">
+      <ele>136.198</ele>
+      <time>2026-04-10T22:11:38Z</time>
+      <name>Turn 11</name>
+    </trkpt>
+    <trkpt lat="-36.93896" lon="174.65649">
+      <ele>136.418</ele>
+      <time>2026-04-10T22:11:42Z</time>
+      <name>Turn 12</name>
+    </trkpt>
+    <trkpt lat="-36.93908" lon="174.65661">
+      <ele>136.031</ele>
+      <time>2026-04-10T22:11:48Z</time>
+      <name>Turn 13</name>
+    </trkpt>
+    <trkpt lat="-36.93917" lon="174.65661">
+      <ele>135.549</ele>
+      <time>2026-04-10T22:11:51Z</time>
+      <name>Turn 14</name>
+    </trkpt>
+    <trkpt lat="-36.93927" lon="174.65673">
+      <ele>133.971</ele>
+      <time>2026-04-10T22:11:56Z</time>
+      <name>Turn 15</name>
+    </trkpt>
+    <trkpt lat="-36.93943" lon="174.65669">
+      <ele>131.96</ele>
+      <time>2026-04-10T22:12:02Z</time>
+      <name>Turn 16</name>
+    </trkpt>
+    <trkpt lat="-36.93951" lon="174.6572">
+      <ele>124.154</ele>
+      <time>2026-04-10T22:12:18Z</time>
+      <name>Turn 17</name>
+    </trkpt>
+    <trkpt lat="-36.93943" lon="174.65739">
+      <ele>124.375</ele>
+      <time>2026-04-10T22:12:24Z</time>
+      <name>Turn 18</name>
+    </trkpt>
+    <trkpt lat="-36.93961" lon="174.65754">
+      <ele>117.126</ele>
+      <time>2026-04-10T22:12:32Z</time>
+      <name>Turn 19</name>
+    </trkpt>
+    <trkpt lat="-36.93979" lon="174.65748">
+      <ele>111.598</ele>
+      <time>2026-04-10T22:12:39Z</time>
+      <name>Turn 20</name>
+    </trkpt>
+    <trkpt lat="-36.93994" lon="174.65768">
+      <ele>106.128</ele>
+      <time>2026-04-10T22:12:47Z</time>
+      <name>Turn 21</name>
+    </trkpt>
+    <trkpt lat="-36.93997" lon="174.65784">
+      <ele>104.436</ele>
+      <time>2026-04-10T22:12:52Z</time>
+      <name>Turn 22</name>
+    </trkpt>
+    <trkpt lat="-36.94009" lon="174.65792">
+      <ele>101.078</ele>
+      <time>2026-04-10T22:12:57Z</time>
+      <name>Turn 23</name>
+    </trkpt>
+    <trkpt lat="-36.94012" lon="174.65783">
+      <ele>100.083</ele>
+      <time>2026-04-10T22:13:00Z</time>
+      <name>Turn 24</name>
+    </trkpt>
+    <trkpt lat="-36.94023" lon="174.65779">
+      <ele>97.212</ele>
+      <time>2026-04-10T22:13:04Z</time>
+      <name>Turn 25</name>
+    </trkpt>
+    <trkpt lat="-36.94028" lon="174.65762">
+      <ele>99.359</ele>
+      <time>2026-04-10T22:13:10Z</time>
+      <name>Turn 26</name>
+    </trkpt>
+    <trkpt lat="-36.94046" lon="174.65759">
+      <ele>95.889</ele>
+      <time>2026-04-10T22:13:16Z</time>
+      <name>Turn 27</name>
+    </trkpt>
+    <trkpt lat="-36.94065" lon="174.65779">
+      <ele>88.576</ele>
+      <time>2026-04-10T22:13:26Z</time>
+      <name>Turn 28</name>
+    </trkpt>
+    <trkpt lat="-36.94076" lon="174.65782">
+      <ele>85.696</ele>
+      <time>2026-04-10T22:13:30Z</time>
+      <name>Turn 29</name>
+    </trkpt>
+    <trkpt lat="-36.94105" lon="174.65798">
+      <ele>77.812</ele>
+      <time>2026-04-10T22:13:42Z</time>
+      <name>Turn 30</name>
+    </trkpt>
+    <trkpt lat="-36.94114" lon="174.65793">
+      <ele>75.677</ele>
+      <time>2026-04-10T22:13:45Z</time>
+      <name>Turn 31</name>
+    </trkpt>
+    <trkpt lat="-36.94128" lon="174.65786">
+      <ele>72.02</ele>
+      <time>2026-04-10T22:13:51Z</time>
+      <name>Turn 32</name>
+    </trkpt>
+    <trkpt lat="-36.94123" lon="174.65797">
+      <ele>73.18</ele>
+      <time>2026-04-10T22:13:54Z</time>
+      <name>Turn 33</name>
+    </trkpt>
+    <trkpt lat="-36.94101" lon="174.65804">
+      <ele>78.604</ele>
+      <time>2026-04-10T22:14:03Z</time>
+      <name>Turn 34</name>
+    </trkpt>
+    <trkpt lat="-36.94119" lon="174.65819">
+      <ele>75.255</ele>
+      <time>2026-04-10T22:14:11Z</time>
+      <name>Turn 35</name>
+    </trkpt>
+    <trkpt lat="-36.94139" lon="174.65823">
+      <ele>71.488</ele>
+      <time>2026-04-10T22:14:18Z</time>
+      <name>Turn 36</name>
+    </trkpt>
+    <trkpt lat="-36.94199" lon="174.65827">
+      <ele>62.025</ele>
+      <time>2026-04-10T22:14:41Z</time>
+      <name>Turn 37</name>
+    </trkpt>
+    <trkpt lat="-36.94236" lon="174.65843">
+      <ele>62.123</ele>
+      <time>2026-04-10T22:14:55Z</time>
+      <name>Turn 38</name>
+    </trkpt>
+    <trkpt lat="-36.94256" lon="174.65839">
+      <ele>58.476</ele>
+      <time>2026-04-10T22:15:03Z</time>
+      <name>Turn 39</name>
+    </trkpt>
+    <trkpt lat="-36.94298" lon="174.65864">
+      <ele>54.708</ele>
+      <time>2026-04-10T22:15:20Z</time>
+      <name>Turn 40</name>
+    </trkpt>
+    <trkpt lat="-36.94312" lon="174.6587">
+      <ele>53.558</ele>
+      <time>2026-04-10T22:15:25Z</time>
+      <name>Turn 41</name>
+    </trkpt>
+    <trkpt lat="-36.94331" lon="174.65871">
+      <ele>50.858</ele>
+      <time>2026-04-10T22:15:32Z</time>
+      <name>Turn 42</name>
+    </trkpt>
+    <trkpt lat="-36.94346" lon="174.65873">
+      <ele>50.345</ele>
+      <time>2026-04-10T22:15:38Z</time>
+      <name>Turn 43</name>
+    </trkpt>
+    <trkpt lat="-36.94354" lon="174.65873">
+      <ele>49.934</ele>
+      <time>2026-04-10T22:15:41Z</time>
+      <name>Turn 44</name>
+    </trkpt>
+    <trkpt lat="-36.94378" lon="174.65877">
+      <ele>48.956</ele>
+      <time>2026-04-10T22:15:50Z</time>
+      <name>Turn 45</name>
+    </trkpt>
+    <trkpt lat="-36.94394" lon="174.65871">
+      <ele>46.807</ele>
+      <time>2026-04-10T22:15:56Z</time>
+      <name>Turn 46</name>
+    </trkpt>
+    <trkpt lat="-36.94423" lon="174.6587">
+      <ele>47.497</ele>
+      <time>2026-04-10T22:16:07Z</time>
+      <name>Turn 47</name>
+    </trkpt>
+    <trkpt lat="-36.94463" lon="174.65851">
+      <ele>40.147</ele>
+      <time>2026-04-10T22:16:23Z</time>
+      <name>Turn 48</name>
+    </trkpt>
+    <trkpt lat="-36.94514" lon="174.6584">
+      <ele>35.057</ele>
+      <time>2026-04-10T22:16:42Z</time>
+      <name>Turn 49</name>
+    </trkpt>
+    <trkpt lat="-36.94543" lon="174.65839">
+      <ele>35.412</ele>
+      <time>2026-04-10T22:16:52Z</time>
+      <name>Turn 50</name>
+    </trkpt>
+    <trkpt lat="-36.94561" lon="174.65838">
+      <ele>36.041</ele>
+      <time>2026-04-10T22:16:59Z</time>
+      <name>Turn 51</name>
+    </trkpt>
+    <trkpt lat="-36.94603" lon="174.65822">
+      <ele>33.357</ele>
+      <time>2026-04-10T22:17:15Z</time>
+      <name>Turn 52</name>
+    </trkpt>
+    <trkpt lat="-36.94672" lon="174.6583">
+      <ele>30.003</ele>
+      <time>2026-04-10T22:17:41Z</time>
+      <name>Turn 53</name>
+    </trkpt>
+    <trkpt lat="-36.94678" lon="174.65833">
+      <ele>30.381</ele>
+      <time>2026-04-10T22:17:43Z</time>
+      <name>Turn 54</name>
+    </trkpt>
+    <trkpt lat="-36.94693" lon="174.65837">
+      <ele>31.608</ele>
+      <time>2026-04-10T22:17:49Z</time>
+      <name>Turn 55</name>
+    </trkpt>
+    <trkpt lat="-36.94721" lon="174.65846">
+      <ele>34.672</ele>
+      <time>2026-04-10T22:18:00Z</time>
+      <name>Turn 56</name>
+    </trkpt>
+    <trkpt lat="-36.94766" lon="174.65829">
+      <ele>31.946</ele>
+      <time>2026-04-10T22:18:17Z</time>
+      <name>Turn 57</name>
+    </trkpt>
+    <trkpt lat="-36.94771" lon="174.65831">
+      <ele>32.817</ele>
+      <time>2026-04-10T22:18:19Z</time>
+      <name>Turn 58</name>
+    </trkpt>
+    <trkpt lat="-36.94772" lon="174.65829">
+      <ele>32.277</ele>
+      <time>2026-04-10T22:18:20Z</time>
+      <name>Turn 59</name>
+    </trkpt>
+    <trkpt lat="-36.9478" lon="174.65823">
+      <ele>30.682</ele>
+      <time>2026-04-10T22:18:23Z</time>
+      <name>Turn 60</name>
+    </trkpt>
+    <trkpt lat="-36.94795" lon="174.65818">
+      <ele>29.374</ele>
+      <time>2026-04-10T22:18:29Z</time>
+      <name>Turn 61</name>
+    </trkpt>
+    <trkpt lat="-36.94812" lon="174.65812">
+      <ele>28.229</ele>
+      <time>2026-04-10T22:18:36Z</time>
+      <name>Turn 62</name>
+    </trkpt>
+    <trkpt lat="-36.94826" lon="174.65814">
+      <ele>29.298</ele>
+      <time>2026-04-10T22:18:41Z</time>
+      <name>Turn 63</name>
+    </trkpt>
+    <trkpt lat="-36.94846" lon="174.65827">
+      <ele>29.384</ele>
+      <time>2026-04-10T22:18:49Z</time>
+      <name>Turn 64</name>
+    </trkpt>
+    <trkpt lat="-36.94868" lon="174.6584">
+      <ele>28.293</ele>
+      <time>2026-04-10T22:18:58Z</time>
+      <name>Turn 65</name>
+    </trkpt>
+    <trkpt lat="-36.94886" lon="174.65851">
+      <ele>27.302</ele>
+      <time>2026-04-10T22:19:06Z</time>
+      <name>Turn 66</name>
+    </trkpt>
+    <trkpt lat="-36.94913" lon="174.65854">
+      <ele>25.91</ele>
+      <time>2026-04-10T22:19:16Z</time>
+      <name>Turn 67</name>
+    </trkpt>
+    <trkpt lat="-36.94937" lon="174.65852">
+      <ele>25.432</ele>
+      <time>2026-04-10T22:19:24Z</time>
+      <name>Turn 68</name>
+    </trkpt>
+    <trkpt lat="-36.94967" lon="174.65844">
+      <ele>22.956</ele>
+      <time>2026-04-10T22:19:36Z</time>
+      <name>Turn 69</name>
+    </trkpt>
+    <trkpt lat="-36.94984" lon="174.65843">
+      <ele>21.673</ele>
+      <time>2026-04-10T22:19:42Z</time>
+      <name>Turn 70</name>
+    </trkpt>
+    <trkpt lat="-36.95009" lon="174.65849">
+      <ele>19.973</ele>
+      <time>2026-04-10T22:19:52Z</time>
+      <name>Turn 71</name>
+    </trkpt>
+    <trkpt lat="-36.95015" lon="174.65846">
+      <ele>19.046</ele>
+      <time>2026-04-10T22:19:54Z</time>
+      <name>Turn 72</name>
+    </trkpt>
+    <trkpt lat="-36.95032" lon="174.65868">
+      <ele>17.775</ele>
+      <time>2026-04-10T22:20:03Z</time>
+      <name>Turn 73</name>
+    </trkpt>
+    <trkpt lat="-36.95044" lon="174.65866">
+      <ele>15.708</ele>
+      <time>2026-04-10T22:20:07Z</time>
+      <name>Turn 74</name>
+    </trkpt>
+    <trkpt lat="-36.95053" lon="174.65865">
+      <ele>14.267</ele>
+      <time>2026-04-10T22:20:11Z</time>
+      <name>Turn 75</name>
+    </trkpt>
+    <trkpt lat="-36.95055" lon="174.65865">
+      <ele>13.948</ele>
+      <time>2026-04-10T22:20:12Z</time>
+      <name>Turn 76</name>
+    </trkpt>
+    <trkpt lat="-36.9506" lon="174.65865">
+      <ele>13.838</ele>
+      <time>2026-04-10T22:20:13Z</time>
+      <name>Turn 77</name>
+    </trkpt>
+    <trkpt lat="-36.95066" lon="174.65864">
+      <ele>13.857</ele>
+      <time>2026-04-10T22:20:16Z</time>
+      <name>Turn 78</name>
+    </trkpt>
+    <trkpt lat="-36.95073" lon="174.65864">
+      <ele>13.831</ele>
+      <time>2026-04-10T22:20:18Z</time>
+      <name>Turn 79</name>
+    </trkpt>
+    <trkpt lat="-36.95079" lon="174.65869">
+      <ele>13.476</ele>
+      <time>2026-04-10T22:20:21Z</time>
+      <name>Turn 80</name>
+    </trkpt>
+    <trkpt lat="-36.95092" lon="174.65883">
+      <ele>13.492</ele>
+      <time>2026-04-10T22:20:27Z</time>
+      <name>Turn 81</name>
+    </trkpt>
+    <trkpt lat="-36.95094" lon="174.65887">
+      <ele>13.34</ele>
+      <time>2026-04-10T22:20:29Z</time>
+      <name>Turn 82</name>
+    </trkpt>
+    <trkpt lat="-36.95106" lon="174.6589">
+      <ele>14.375</ele>
+      <time>2026-04-10T22:20:33Z</time>
+      <name>Turn 83</name>
+    </trkpt>
+    <trkpt lat="-36.95112" lon="174.65885">
+      <ele>15.692</ele>
+      <time>2026-04-10T22:20:36Z</time>
+      <name>Turn 84</name>
+    </trkpt>
+    <trkpt lat="-36.95116" lon="174.65882">
+      <ele>16.74</ele>
+      <time>2026-04-10T22:20:38Z</time>
+      <name>Turn 85</name>
+    </trkpt>
+    <trkpt lat="-36.95126" lon="174.65868">
+      <ele>20.555</ele>
+      <time>2026-04-10T22:20:43Z</time>
+      <name>Turn 86</name>
+    </trkpt>
+    <trkpt lat="-36.95131" lon="174.65859">
+      <ele>22.786</ele>
+      <time>2026-04-10T22:20:46Z</time>
+      <name>Turn 87</name>
+    </trkpt>
+    <trkpt lat="-36.95158" lon="174.65865">
+      <ele>24.58</ele>
+      <time>2026-04-10T22:20:57Z</time>
+      <name>Turn 88</name>
+    </trkpt>
+    <trkpt lat="-36.95171" lon="174.6587">
+      <ele>23.974</ele>
+      <time>2026-04-10T22:21:02Z</time>
+      <name>Turn 89</name>
+    </trkpt>
+    <trkpt lat="-36.95187" lon="174.65875">
+      <ele>22.634</ele>
+      <time>2026-04-10T22:21:08Z</time>
+      <name>Turn 90</name>
+    </trkpt>
+    <trkpt lat="-36.95198" lon="174.65882">
+      <ele>21.08</ele>
+      <time>2026-04-10T22:21:12Z</time>
+      <name>Turn 91</name>
+    </trkpt>
+    <trkpt lat="-36.95205" lon="174.65882">
+      <ele>20.766</ele>
+      <time>2026-04-10T22:21:15Z</time>
+      <name>Turn 92</name>
+    </trkpt>
+    <trkpt lat="-36.95211" lon="174.65875">
+      <ele>21.606</ele>
+      <time>2026-04-10T22:21:18Z</time>
+      <name>Turn 93</name>
+    </trkpt>
+    <trkpt lat="-36.95222" lon="174.65828">
+      <ele>25.614</ele>
+      <time>2026-04-10T22:21:32Z</time>
+      <name>Turn 94</name>
+    </trkpt>
+    <trkpt lat="-36.9522" lon="174.65809">
+      <ele>27.958</ele>
+      <time>2026-04-10T22:21:38Z</time>
+      <name>Turn 95</name>
+    </trkpt>
+    <trkpt lat="-36.95211" lon="174.65791">
+      <ele>30.876</ele>
+      <time>2026-04-10T22:21:44Z</time>
+      <name>Turn 96</name>
+    </trkpt>
+    <trkpt lat="-36.95199" lon="174.65753">
+      <ele>36.11</ele>
+      <time>2026-04-10T22:21:56Z</time>
+      <name>Turn 97</name>
+    </trkpt>
+    <trkpt lat="-36.95191" lon="174.65727">
+      <ele>41.056</ele>
+      <time>2026-04-10T22:22:05Z</time>
+      <name>Turn 98</name>
+    </trkpt>
+    <trkpt lat="-36.9519" lon="174.65718">
+      <ele>42.848</ele>
+      <time>2026-04-10T22:22:07Z</time>
+      <name>Turn 99</name>
+    </trkpt>
+    <trkpt lat="-36.9519" lon="174.65708">
+      <ele>44.95</ele>
+      <time>2026-04-10T22:22:10Z</time>
+      <name>Turn 100</name>
+    </trkpt>
+    <trkpt lat="-36.95198" lon="174.65697">
+      <ele>46.18</ele>
+      <time>2026-04-10T22:22:15Z</time>
+      <name>Turn 101</name>
+    </trkpt>
+    <trkpt lat="-36.95206" lon="174.65692">
+      <ele>46.696</ele>
+      <time>2026-04-10T22:22:18Z</time>
+      <name>Turn 102</name>
+    </trkpt>
+    <trkpt lat="-36.95221" lon="174.65685">
+      <ele>47.128</ele>
+      <time>2026-04-10T22:22:24Z</time>
+      <name>Turn 103</name>
+    </trkpt>
+    <trkpt lat="-36.95231" lon="174.65689">
+      <ele>46.492</ele>
+      <time>2026-04-10T22:22:28Z</time>
+      <name>Turn 104</name>
+    </trkpt>
+    <trkpt lat="-36.95244" lon="174.65697">
+      <ele>45.14</ele>
+      <time>2026-04-10T22:22:33Z</time>
+      <name>Turn 105</name>
+    </trkpt>
+    <trkpt lat="-36.95259" lon="174.65718">
+      <ele>41.36</ele>
+      <time>2026-04-10T22:22:42Z</time>
+      <name>Turn 106</name>
+    </trkpt>
+    <trkpt lat="-36.95264" lon="174.65723">
+      <ele>40.82</ele>
+      <time>2026-04-10T22:22:44Z</time>
+      <name>Turn 107</name>
+    </trkpt>
+    <trkpt lat="-36.95282" lon="174.65725">
+      <ele>43.121</ele>
+      <time>2026-04-10T22:22:51Z</time>
+      <name>Turn 108</name>
+    </trkpt>
+    <trkpt lat="-36.95306" lon="174.65725">
+      <ele>47.794</ele>
+      <time>2026-04-10T22:23:00Z</time>
+      <name>Turn 109</name>
+    </trkpt>
+    <trkpt lat="-36.95319" lon="174.65736">
+      <ele>49.176</ele>
+      <time>2026-04-10T22:23:05Z</time>
+      <name>Turn 110</name>
+    </trkpt>
+    <trkpt lat="-36.9533" lon="174.65761">
+      <ele>47.721</ele>
+      <time>2026-04-10T22:23:14Z</time>
+      <name>Turn 111</name>
+    </trkpt>
+    <trkpt lat="-36.95339" lon="174.65783">
+      <ele>44.627</ele>
+      <time>2026-04-10T22:23:21Z</time>
+      <name>Turn 112</name>
+    </trkpt>
+    <trkpt lat="-36.95348" lon="174.65797">
+      <ele>41.396</ele>
+      <time>2026-04-10T22:23:27Z</time>
+      <name>Turn 113</name>
+    </trkpt>
+    <trkpt lat="-36.95361" lon="174.65803">
+      <ele>41.537</ele>
+      <time>2026-04-10T22:23:32Z</time>
+      <name>Turn 114</name>
+    </trkpt>
+    <trkpt lat="-36.95369" lon="174.65798">
+      <ele>42.141</ele>
+      <time>2026-04-10T22:23:35Z</time>
+      <name>Turn 115</name>
+    </trkpt>
+    <trkpt lat="-36.95372" lon="174.65779">
+      <ele>46.327</ele>
+      <time>2026-04-10T22:23:41Z</time>
+      <name>Turn 116</name>
+    </trkpt>
+    <trkpt lat="-36.95371" lon="174.65754">
+      <ele>52.085</ele>
+      <time>2026-04-10T22:23:48Z</time>
+      <name>Turn 117</name>
+    </trkpt>
+    <trkpt lat="-36.95375" lon="174.6574">
+      <ele>54.98</ele>
+      <time>2026-04-10T22:23:53Z</time>
+      <name>Turn 118</name>
+    </trkpt>
+    <trkpt lat="-36.95382" lon="174.65733">
+      <ele>56.52</ele>
+      <time>2026-04-10T22:23:56Z</time>
+      <name>Turn 119</name>
+    </trkpt>
+    <trkpt lat="-36.95388" lon="174.65731">
+      <ele>57.082</ele>
+      <time>2026-04-10T22:23:58Z</time>
+      <name>Turn 120</name>
+    </trkpt>
+    <trkpt lat="-36.95392" lon="174.6573">
+      <ele>57.289</ele>
+      <time>2026-04-10T22:24:00Z</time>
+      <name>Turn 121</name>
+    </trkpt>
+    <trkpt lat="-36.95403" lon="174.65732">
+      <ele>56.709</ele>
+      <time>2026-04-10T22:24:04Z</time>
+      <name>Turn 122</name>
+    </trkpt>
+    <trkpt lat="-36.95416" lon="174.65736">
+      <ele>55.54</ele>
+      <time>2026-04-10T22:24:09Z</time>
+      <name>Turn 123</name>
+    </trkpt>
+    <trkpt lat="-36.95425" lon="174.65738">
+      <ele>54.424</ele>
+      <time>2026-04-10T22:24:12Z</time>
+      <name>Turn 124</name>
+    </trkpt>
+    <trkpt lat="-36.95436" lon="174.65735">
+      <ele>54.388</ele>
+      <time>2026-04-10T22:24:16Z</time>
+      <name>Turn 125</name>
+    </trkpt>
+    <trkpt lat="-36.95445" lon="174.65726">
+      <ele>55.953</ele>
+      <time>2026-04-10T22:24:21Z</time>
+      <name>Turn 126</name>
+    </trkpt>
+    <trkpt lat="-36.95448" lon="174.65711">
+      <ele>56.412</ele>
+      <time>2026-04-10T22:24:25Z</time>
+      <name>Turn 127</name>
+    </trkpt>
+    <trkpt lat="-36.95428" lon="174.65698">
+      <ele>59.216</ele>
+      <time>2026-04-10T22:24:34Z</time>
+      <name>Turn 128</name>
+    </trkpt>
+    <trkpt lat="-36.95408" lon="174.65687">
+      <ele>60.675</ele>
+      <time>2026-04-10T22:24:42Z</time>
+      <name>Turn 129</name>
+    </trkpt>
+    <trkpt lat="-36.95396" lon="174.65683">
+      <ele>61.121</ele>
+      <time>2026-04-10T22:24:46Z</time>
+      <name>Turn 130</name>
+    </trkpt>
+    <trkpt lat="-36.95384" lon="174.65675">
+      <ele>61.546</ele>
+      <time>2026-04-10T22:24:51Z</time>
+      <name>Turn 131</name>
+    </trkpt>
+    <trkpt lat="-36.95371" lon="174.6567">
+      <ele>62.253</ele>
+      <time>2026-04-10T22:24:56Z</time>
+      <name>Turn 132</name>
+    </trkpt>
+    <trkpt lat="-36.95359" lon="174.65664">
+      <ele>62.466</ele>
+      <time>2026-04-10T22:25:01Z</time>
+      <name>Turn 133</name>
+    </trkpt>
+    <trkpt lat="-36.95351" lon="174.65661">
+      <ele>61.839</ele>
+      <time>2026-04-10T22:25:04Z</time>
+      <name>Turn 134</name>
+    </trkpt>
+    <trkpt lat="-36.95339" lon="174.65655">
+      <ele>61.107</ele>
+      <time>2026-04-10T22:25:09Z</time>
+      <name>Turn 135</name>
+    </trkpt>
+    <trkpt lat="-36.95322" lon="174.65647">
+      <ele>61.212</ele>
+      <time>2026-04-10T22:25:16Z</time>
+      <name>Turn 136</name>
+    </trkpt>
+    <trkpt lat="-36.95315" lon="174.65643">
+      <ele>61.788</ele>
+      <time>2026-04-10T22:25:18Z</time>
+      <name>Turn 137</name>
+    </trkpt>
+    <trkpt lat="-36.953" lon="174.65634">
+      <ele>61.802</ele>
+      <time>2026-04-10T22:25:25Z</time>
+      <name>Turn 138</name>
+    </trkpt>
+    <trkpt lat="-36.95279" lon="174.65625">
+      <ele>59.566</ele>
+      <time>2026-04-10T22:25:33Z</time>
+      <name>Turn 139</name>
+    </trkpt>
+    <trkpt lat="-36.95265" lon="174.65618">
+      <ele>58.1</ele>
+      <time>2026-04-10T22:25:38Z</time>
+      <name>Turn 140</name>
+    </trkpt>
+    <trkpt lat="-36.95255" lon="174.65612">
+      <ele>57.34</ele>
+      <time>2026-04-10T22:25:43Z</time>
+      <name>Turn 141</name>
+    </trkpt>
+    <trkpt lat="-36.95232" lon="174.65604">
+      <ele>57.212</ele>
+      <time>2026-04-10T22:25:51Z</time>
+      <name>Turn 142</name>
+    </trkpt>
+    <trkpt lat="-36.95222" lon="174.656">
+      <ele>57.627</ele>
+      <time>2026-04-10T22:25:55Z</time>
+      <name>Turn 143</name>
+    </trkpt>
+    <trkpt lat="-36.95209" lon="174.65591">
+      <ele>59.049</ele>
+      <time>2026-04-10T22:26:01Z</time>
+      <name>Turn 144</name>
+    </trkpt>
+    <trkpt lat="-36.952" lon="174.65593">
+      <ele>60.27</ele>
+      <time>2026-04-10T22:26:04Z</time>
+      <name>Turn 145</name>
+    </trkpt>
+    <trkpt lat="-36.95191" lon="174.65606">
+      <ele>61.418</ele>
+      <time>2026-04-10T22:26:09Z</time>
+      <name>Turn 146</name>
+    </trkpt>
+    <trkpt lat="-36.95181" lon="174.65613">
+      <ele>62.283</ele>
+      <time>2026-04-10T22:26:13Z</time>
+      <name>Turn 147</name>
+    </trkpt>
+    <trkpt lat="-36.95162" lon="174.65611">
+      <ele>65.017</ele>
+      <time>2026-04-10T22:26:21Z</time>
+      <name>Turn 148</name>
+    </trkpt>
+    <trkpt lat="-36.95151" lon="174.65606">
+      <ele>67.856</ele>
+      <time>2026-04-10T22:26:25Z</time>
+      <name>Turn 149</name>
+    </trkpt>
+    <trkpt lat="-36.95141" lon="174.65615">
+      <ele>69.124</ele>
+      <time>2026-04-10T22:26:29Z</time>
+      <name>Turn 150</name>
+    </trkpt>
+    <trkpt lat="-36.9513" lon="174.65622">
+      <ele>70.562</ele>
+      <time>2026-04-10T22:26:34Z</time>
+      <name>Turn 151</name>
+    </trkpt>
+    <trkpt lat="-36.95128" lon="174.65623">
+      <ele>70.789</ele>
+      <time>2026-04-10T22:26:35Z</time>
+      <name>Turn 152</name>
+    </trkpt>
+    <trkpt lat="-36.95113" lon="174.65626">
+      <ele>72.918</ele>
+      <time>2026-04-10T22:26:40Z</time>
+      <name>Turn 153</name>
+    </trkpt>
+    <trkpt lat="-36.95111" lon="174.65624">
+      <ele>73.737</ele>
+      <time>2026-04-10T22:26:41Z</time>
+      <name>Turn 154</name>
+    </trkpt>
+    <trkpt lat="-36.95097" lon="174.65613">
+      <ele>75.37</ele>
+      <time>2026-04-10T22:26:47Z</time>
+      <name>Turn 155</name>
+    </trkpt>
+    <trkpt lat="-36.95073" lon="174.65587">
+      <ele>77.555</ele>
+      <time>2026-04-10T22:26:59Z</time>
+      <name>Turn 156</name>
+    </trkpt>
+    <trkpt lat="-36.95053" lon="174.65563">
+      <ele>77.243</ele>
+      <time>2026-04-10T22:27:10Z</time>
+      <name>Turn 157</name>
+    </trkpt>
+    <trkpt lat="-36.95037" lon="174.65552">
+      <ele>76.628</ele>
+      <time>2026-04-10T22:27:16Z</time>
+      <name>Turn 158</name>
+    </trkpt>
+    <trkpt lat="-36.95013" lon="174.65526">
+      <ele>77.566</ele>
+      <time>2026-04-10T22:27:28Z</time>
+      <name>Turn 159</name>
+    </trkpt>
+    <trkpt lat="-36.95" lon="174.65496">
+      <ele>79.432</ele>
+      <time>2026-04-10T22:27:38Z</time>
+      <name>Turn 160</name>
+    </trkpt>
+    <trkpt lat="-36.94994" lon="174.6547">
+      <ele>81.365</ele>
+      <time>2026-04-10T22:27:46Z</time>
+      <name>Turn 161</name>
+    </trkpt>
+    <trkpt lat="-36.94994" lon="174.65458">
+      <ele>82.602</ele>
+      <time>2026-04-10T22:27:50Z</time>
+      <name>Turn 162</name>
+    </trkpt>
+    <trkpt lat="-36.94991" lon="174.65437">
+      <ele>84.442</ele>
+      <time>2026-04-10T22:27:56Z</time>
+      <name>Turn 163</name>
+    </trkpt>
+    <trkpt lat="-36.94986" lon="174.6539">
+      <ele>87.928</ele>
+      <time>2026-04-10T22:28:10Z</time>
+      <name>Turn 164</name>
+    </trkpt>
+    <trkpt lat="-36.94985" lon="174.65352">
+      <ele>93.472</ele>
+      <time>2026-04-10T22:28:21Z</time>
+      <name>Turn 165</name>
+    </trkpt>
+    <trkpt lat="-36.94987" lon="174.65297">
+      <ele>98.484</ele>
+      <time>2026-04-10T22:28:38Z</time>
+      <name>Turn 166</name>
+    </trkpt>
+    <trkpt lat="-36.94987" lon="174.65249">
+      <ele>97.296</ele>
+      <time>2026-04-10T22:28:52Z</time>
+      <name>Turn 167</name>
+    </trkpt>
+    <trkpt lat="-36.94946" lon="174.65239">
+      <ele>101.214</ele>
+      <time>2026-04-10T22:29:08Z</time>
+      <name>Turn 168</name>
+    </trkpt>
+    <trkpt lat="-36.9495" lon="174.65216">
+      <ele>97.638</ele>
+      <time>2026-04-10T22:29:15Z</time>
+      <name>Turn 169</name>
+    </trkpt>
+    <trkpt lat="-36.94951" lon="174.65214">
+      <ele>97.318</ele>
+      <time>2026-04-10T22:29:15Z</time>
+      <name>Turn 170</name>
+    </trkpt>
+    <trkpt lat="-36.94961" lon="174.65165">
+      <ele>93.536</ele>
+      <time>2026-04-10T22:29:30Z</time>
+      <name>Turn 171</name>
+    </trkpt>
+    <trkpt lat="-36.94981" lon="174.65069">
+      <ele>83.642</ele>
+      <time>2026-04-10T22:30:00Z</time>
+      <name>Turn 172</name>
+    </trkpt>
+    <trkpt lat="-36.9496" lon="174.65048">
+      <ele>83.216</ele>
+      <time>2026-04-10T22:30:10Z</time>
+      <name>Turn 173</name>
+    </trkpt>
+    <trkpt lat="-36.94944" lon="174.65034">
+      <ele>82.688</ele>
+      <time>2026-04-10T22:30:17Z</time>
+      <name>Turn 174</name>
+    </trkpt>
+    <trkpt lat="-36.94923" lon="174.65018">
+      <ele>82.34</ele>
+      <time>2026-04-10T22:30:26Z</time>
+      <name>Turn 175</name>
+    </trkpt>
+    <trkpt lat="-36.94917" lon="174.64999">
+      <ele>81.833</ele>
+      <time>2026-04-10T22:30:32Z</time>
+      <name>Turn 176</name>
+    </trkpt>
+    <trkpt lat="-36.94911" lon="174.64981">
+      <ele>77.686</ele>
+      <time>2026-04-10T22:30:38Z</time>
+      <name>Turn 177</name>
+    </trkpt>
+    <trkpt lat="-36.94911" lon="174.64952">
+      <ele>68.453</ele>
+      <time>2026-04-10T22:30:46Z</time>
+      <name>Turn 178</name>
+    </trkpt>
+    <trkpt lat="-36.94913" lon="174.64947">
+      <ele>67.064</ele>
+      <time>2026-04-10T22:30:48Z</time>
+      <name>Turn 179</name>
+    </trkpt>
+    <trkpt lat="-36.94925" lon="174.64932">
+      <ele>63.258</ele>
+      <time>2026-04-10T22:30:54Z</time>
+      <name>Turn 180</name>
+    </trkpt>
+    <trkpt lat="-36.94929" lon="174.64917">
+      <ele>57.803</ele>
+      <time>2026-04-10T22:30:59Z</time>
+      <name>Turn 181</name>
+    </trkpt>
+    <trkpt lat="-36.94932" lon="174.64909">
+      <ele>55.771</ele>
+      <time>2026-04-10T22:31:02Z</time>
+      <name>Turn 182</name>
+    </trkpt>
+    <trkpt lat="-36.94937" lon="174.64903">
+      <ele>54.507</ele>
+      <time>2026-04-10T22:31:04Z</time>
+      <name>Turn 183</name>
+    </trkpt>
+    <trkpt lat="-36.94946" lon="174.64897">
+      <ele>53.179</ele>
+      <time>2026-04-10T22:31:08Z</time>
+      <name>Turn 184</name>
+    </trkpt>
+    <trkpt lat="-36.94951" lon="174.64894">
+      <ele>51.937</ele>
+      <time>2026-04-10T22:31:10Z</time>
+      <name>Turn 185</name>
+    </trkpt>
+    <trkpt lat="-36.94961" lon="174.64892">
+      <ele>51.098</ele>
+      <time>2026-04-10T22:31:14Z</time>
+      <name>Turn 186</name>
+    </trkpt>
+    <trkpt lat="-36.94971" lon="174.64893">
+      <ele>51.345</ele>
+      <time>2026-04-10T22:31:18Z</time>
+      <name>Turn 187</name>
+    </trkpt>
+    <trkpt lat="-36.94972" lon="174.64893">
+      <ele>51.334</ele>
+      <time>2026-04-10T22:31:18Z</time>
+      <name>Turn 188</name>
+    </trkpt>
+    <trkpt lat="-36.94975" lon="174.64891">
+      <ele>50.284</ele>
+      <time>2026-04-10T22:31:19Z</time>
+      <name>Turn 189</name>
+    </trkpt>
+    <trkpt lat="-36.94985" lon="174.64877">
+      <ele>44.043</ele>
+      <time>2026-04-10T22:31:25Z</time>
+      <name>Turn 190</name>
+    </trkpt>
+    <trkpt lat="-36.94987" lon="174.64868">
+      <ele>40.8</ele>
+      <time>2026-04-10T22:31:28Z</time>
+      <name>Turn 191</name>
+    </trkpt>
+    <trkpt lat="-36.94992" lon="174.64845">
+      <ele>33.648</ele>
+      <time>2026-04-10T22:31:35Z</time>
+      <name>Turn 192</name>
+    </trkpt>
+    <trkpt lat="-36.94996" lon="174.64837">
+      <ele>31.2</ele>
+      <time>2026-04-10T22:31:37Z</time>
+      <name>Turn 193</name>
+    </trkpt>
+    <trkpt lat="-36.95001" lon="174.6481">
+      <ele>25.152</ele>
+      <time>2026-04-10T22:31:46Z</time>
+      <name>Turn 194</name>
+    </trkpt>
+    <trkpt lat="-36.94985" lon="174.64802">
+      <ele>23.567</ele>
+      <time>2026-04-10T22:31:52Z</time>
+      <name>Turn 195</name>
+    </trkpt>
+    <trkpt lat="-36.94976" lon="174.64796">
+      <ele>23.172</ele>
+      <time>2026-04-10T22:31:56Z</time>
+      <name>Turn 196</name>
+    </trkpt>
+    <trkpt lat="-36.94971" lon="174.64793">
+      <ele>23.296</ele>
+      <time>2026-04-10T22:31:58Z</time>
+      <name>Turn 197</name>
+    </trkpt>
+    <trkpt lat="-36.94967" lon="174.6479">
+      <ele>23.715</ele>
+      <time>2026-04-10T22:32:00Z</time>
+      <name>Turn 198</name>
+    </trkpt>
+    <trkpt lat="-36.94955" lon="174.64778">
+      <ele>24.501</ele>
+      <time>2026-04-10T22:32:05Z</time>
+      <name>Turn 199</name>
+    </trkpt>
+    <trkpt lat="-36.94951" lon="174.64771">
+      <ele>24.382</ele>
+      <time>2026-04-10T22:32:08Z</time>
+      <name>Turn 200</name>
+    </trkpt>
+    <trkpt lat="-36.94948" lon="174.64768">
+      <ele>24.477</ele>
+      <time>2026-04-10T22:32:09Z</time>
+      <name>Turn 201</name>
+    </trkpt>
+    <trkpt lat="-36.94938" lon="174.64751">
+      <ele>23.125</ele>
+      <time>2026-04-10T22:32:15Z</time>
+      <name>Turn 202</name>
+    </trkpt>
+    <trkpt lat="-36.94955" lon="174.64718">
+      <ele>18.222</ele>
+      <time>2026-04-10T22:32:27Z</time>
+      <name>Turn 203</name>
+    </trkpt>
+    <trkpt lat="-36.94971" lon="174.64686">
+      <ele>15.115</ele>
+      <time>2026-04-10T22:32:38Z</time>
+      <name>Turn 204</name>
+    </trkpt>
+    <trkpt lat="-36.94984" lon="174.64647">
+      <ele>10.752</ele>
+      <time>2026-04-10T22:32:51Z</time>
+      <name>Turn 205</name>
+    </trkpt>
+    <trkpt lat="-36.94989" lon="174.64615">
+      <ele>9.659</ele>
+      <time>2026-04-10T22:33:01Z</time>
+      <name>Turn 206</name>
+    </trkpt>
+    <trkpt lat="-36.94985" lon="174.64575">
+      <ele>8.598</ele>
+      <time>2026-04-10T22:33:12Z</time>
+      <name>Turn 207</name>
+    </trkpt>
+    <trkpt lat="-36.94981" lon="174.64541">
+      <ele>9.156</ele>
+      <time>2026-04-10T22:33:23Z</time>
+      <name>Turn 208</name>
+    </trkpt>
+    <trkpt lat="-36.94979" lon="174.6452">
+      <ele>9.768</ele>
+      <time>2026-04-10T22:33:29Z</time>
+      <name>Turn 209</name>
+    </trkpt>
+    <trkpt lat="-36.94959" lon="174.64384">
+      <ele>15.096</ele>
+      <time>2026-04-10T22:34:10Z</time>
+      <name>Turn 210</name>
+    </trkpt>
+    <trkpt lat="-36.94953" lon="174.64348">
+      <ele>14.051</ele>
+      <time>2026-04-10T22:34:21Z</time>
+      <name>Turn 211</name>
+    </trkpt>
+    <trkpt lat="-36.94942" lon="174.64304">
+      <ele>11.978</ele>
+      <time>2026-04-10T22:34:35Z</time>
+      <name>Turn 212</name>
+    </trkpt>
+    <trkpt lat="-36.94922" lon="174.64292">
+      <ele>12.469</ele>
+      <time>2026-04-10T22:34:43Z</time>
+      <name>Turn 213</name>
+    </trkpt>
+    <trkpt lat="-36.94925" lon="174.64286">
+      <ele>12.99</ele>
+      <time>2026-04-10T22:34:45Z</time>
+      <name>Turn 214</name>
+    </trkpt>
+    <trkpt lat="-36.94927" lon="174.64262">
+      <ele>15.121</ele>
+      <time>2026-04-10T22:34:52Z</time>
+      <name>Turn 215</name>
+    </trkpt>
+    <trkpt lat="-36.94924" lon="174.64214">
+      <ele>19.364</ele>
+      <time>2026-04-10T22:35:06Z</time>
+      <name>Turn 216</name>
+    </trkpt>
+    <trkpt lat="-36.94918" lon="174.64156">
+      <ele>17.25</ele>
+      <time>2026-04-10T22:35:24Z</time>
+      <name>Turn 217</name>
+    </trkpt>
+    <trkpt lat="-36.94915" lon="174.6413">
+      <ele>15.62</ele>
+      <time>2026-04-10T22:35:32Z</time>
+      <name>Turn 218</name>
+    </trkpt>
+    <trkpt lat="-36.94911" lon="174.64105">
+      <ele>14.666</ele>
+      <time>2026-04-10T22:35:39Z</time>
+      <name>Turn 219</name>
+    </trkpt>
+    <trkpt lat="-36.94904" lon="174.64063">
+      <ele>14.854</ele>
+      <time>2026-04-10T22:35:52Z</time>
+      <name>Turn 220</name>
+    </trkpt>
+    <trkpt lat="-36.94899" lon="174.64029">
+      <ele>15.956</ele>
+      <time>2026-04-10T22:36:02Z</time>
+      <name>Turn 221</name>
+    </trkpt>
+    <trkpt lat="-36.94896" lon="174.64015">
+      <ele>16.118</ele>
+      <time>2026-04-10T22:36:06Z</time>
+      <name>Turn 222</name>
+    </trkpt>
+    <trkpt lat="-36.94894" lon="174.63997">
+      <ele>16.332</ele>
+      <time>2026-04-10T22:36:12Z</time>
+      <name>Turn 223</name>
+    </trkpt>
+    <trkpt lat="-36.94892" lon="174.63989">
+      <ele>16.597</ele>
+      <time>2026-04-10T22:36:14Z</time>
+      <name>Turn 224</name>
+    </trkpt>
+    <trkpt lat="-36.94892" lon="174.6398">
+      <ele>16.993</ele>
+      <time>2026-04-10T22:36:17Z</time>
+      <name>Turn 225</name>
+    </trkpt>
+    <trkpt lat="-36.94891" lon="174.63971">
+      <ele>17.238</ele>
+      <time>2026-04-10T22:36:20Z</time>
+      <name>Turn 226</name>
+    </trkpt>
+    <trkpt lat="-36.94891" lon="174.63959">
+      <ele>17.337</ele>
+      <time>2026-04-10T22:36:23Z</time>
+      <name>Turn 227</name>
+    </trkpt>
+    <trkpt lat="-36.94892" lon="174.63948">
+      <ele>17.629</ele>
+      <time>2026-04-10T22:36:27Z</time>
+      <name>Turn 228</name>
+    </trkpt>
+    <trkpt lat="-36.94892" lon="174.63942">
+      <ele>17.389</ele>
+      <time>2026-04-10T22:36:28Z</time>
+      <name>Turn 229</name>
+    </trkpt>
+    <trkpt lat="-36.94893" lon="174.63936">
+      <ele>16.987</ele>
+      <time>2026-04-10T22:36:30Z</time>
+      <name>Turn 230</name>
+    </trkpt>
+    <trkpt lat="-36.94895" lon="174.63929">
+      <ele>16.952</ele>
+      <time>2026-04-10T22:36:32Z</time>
+      <name>Turn 231</name>
+    </trkpt>
+    <trkpt lat="-36.94899" lon="174.63914">
+      <ele>17.688</ele>
+      <time>2026-04-10T22:36:37Z</time>
+      <name>Turn 232</name>
+    </trkpt>
+    <trkpt lat="-36.94904" lon="174.63899">
+      <ele>19.324</ele>
+      <time>2026-04-10T22:36:42Z</time>
+      <name>Turn 233</name>
+    </trkpt>
+    <trkpt lat="-36.9491" lon="174.63878">
+      <ele>21.232</ele>
+      <time>2026-04-10T22:36:48Z</time>
+      <name>Turn 234</name>
+    </trkpt>
+    <trkpt lat="-36.94918" lon="174.63841">
+      <ele>24.105</ele>
+      <time>2026-04-10T22:37:00Z</time>
+      <name>Turn 235</name>
+    </trkpt>
+    <trkpt lat="-36.94929" lon="174.63797">
+      <ele>24.823</ele>
+      <time>2026-04-10T22:37:14Z</time>
+      <name>Turn 236</name>
+    </trkpt>
+    <trkpt lat="-36.94935" lon="174.6377">
+      <ele>23.301</ele>
+      <time>2026-04-10T22:37:22Z</time>
+      <name>Turn 237</name>
+    </trkpt>
+    <trkpt lat="-36.9494" lon="174.6375">
+      <ele>21.04</ele>
+      <time>2026-04-10T22:37:28Z</time>
+      <name>Turn 238</name>
+    </trkpt>
+    <trkpt lat="-36.94942" lon="174.63738">
+      <ele>21.828</ele>
+      <time>2026-04-10T22:37:32Z</time>
+      <name>Turn 239</name>
+    </trkpt>
+    <trkpt lat="-36.94943" lon="174.63727">
+      <ele>22.43</ele>
+      <time>2026-04-10T22:37:35Z</time>
+      <name>Turn 240</name>
+    </trkpt>
+    <trkpt lat="-36.94944" lon="174.63721">
+      <ele>22.873</ele>
+      <time>2026-04-10T22:37:37Z</time>
+      <name>Turn 241</name>
+    </trkpt>
+    <trkpt lat="-36.94944" lon="174.63713">
+      <ele>22.877</ele>
+      <time>2026-04-10T22:37:39Z</time>
+      <name>Turn 242</name>
+    </trkpt>
+    <trkpt lat="-36.94943" lon="174.63703">
+      <ele>22.62</ele>
+      <time>2026-04-10T22:37:42Z</time>
+      <name>Turn 243</name>
+    </trkpt>
+    <trkpt lat="-36.94942" lon="174.63694">
+      <ele>22.415</ele>
+      <time>2026-04-10T22:37:45Z</time>
+      <name>Turn 244</name>
+    </trkpt>
+    <trkpt lat="-36.94941" lon="174.63687">
+      <ele>22.635</ele>
+      <time>2026-04-10T22:37:47Z</time>
+      <name>Turn 245</name>
+    </trkpt>
+    <trkpt lat="-36.94939" lon="174.63676">
+      <ele>22.826</ele>
+      <time>2026-04-10T22:37:50Z</time>
+      <name>Turn 246</name>
+    </trkpt>
+    <trkpt lat="-36.94937" lon="174.63669">
+      <ele>22.711</ele>
+      <time>2026-04-10T22:37:53Z</time>
+      <name>Turn 247</name>
+    </trkpt>
+    <trkpt lat="-36.94935" lon="174.63662">
+      <ele>22.838</ele>
+      <time>2026-04-10T22:37:55Z</time>
+      <name>Turn 248</name>
+    </trkpt>
+    <trkpt lat="-36.94932" lon="174.63649">
+      <ele>23.39</ele>
+      <time>2026-04-10T22:37:59Z</time>
+      <name>Turn 249</name>
+    </trkpt>
+    <trkpt lat="-36.94927" lon="174.63632">
+      <ele>23.308</ele>
+      <time>2026-04-10T22:38:04Z</time>
+      <name>Turn 250</name>
+    </trkpt>
+    <trkpt lat="-36.94926" lon="174.63623">
+      <ele>23.696</ele>
+      <time>2026-04-10T22:38:07Z</time>
+      <name>Turn 251</name>
+    </trkpt>
+    <trkpt lat="-36.94925" lon="174.63615">
+      <ele>23.978</ele>
+      <time>2026-04-10T22:38:09Z</time>
+      <name>Turn 252</name>
+    </trkpt>
+    <trkpt lat="-36.94925" lon="174.63608">
+      <ele>24.345</ele>
+      <time>2026-04-10T22:38:11Z</time>
+      <name>Turn 253</name>
+    </trkpt>
+    <trkpt lat="-36.94926" lon="174.63602">
+      <ele>24.804</ele>
+      <time>2026-04-10T22:38:13Z</time>
+      <name>Turn 254</name>
+    </trkpt>
+    <trkpt lat="-36.94927" lon="174.63593">
+      <ele>25.259</ele>
+      <time>2026-04-10T22:38:16Z</time>
+      <name>Turn 255</name>
+    </trkpt>
+    <trkpt lat="-36.94928" lon="174.63586">
+      <ele>25.654</ele>
+      <time>2026-04-10T22:38:18Z</time>
+      <name>Turn 256</name>
+    </trkpt>
+    <trkpt lat="-36.9493" lon="174.6358">
+      <ele>26.325</ele>
+      <time>2026-04-10T22:38:20Z</time>
+      <name>Turn 257</name>
+    </trkpt>
+    <trkpt lat="-36.94932" lon="174.63574">
+      <ele>26.933</ele>
+      <time>2026-04-10T22:38:22Z</time>
+      <name>Turn 258</name>
+    </trkpt>
+    <trkpt lat="-36.94934" lon="174.63567">
+      <ele>27.47</ele>
+      <time>2026-04-10T22:38:24Z</time>
+      <name>Turn 259</name>
+    </trkpt>
+    <trkpt lat="-36.94939" lon="174.63556">
+      <ele>28.638</ele>
+      <time>2026-04-10T22:38:28Z</time>
+      <name>Turn 260</name>
+    </trkpt>
+    <trkpt lat="-36.94943" lon="174.63549">
+      <ele>29.437</ele>
+      <time>2026-04-10T22:38:30Z</time>
+      <name>Turn 261</name>
+    </trkpt>
+    <trkpt lat="-36.94948" lon="174.63542">
+      <ele>30.221</ele>
+      <time>2026-04-10T22:38:33Z</time>
+      <name>Turn 262</name>
+    </trkpt>
+    <trkpt lat="-36.94959" lon="174.63527">
+      <ele>31.108</ele>
+      <time>2026-04-10T22:38:39Z</time>
+      <name>Turn 263</name>
+    </trkpt>
+    <trkpt lat="-36.94965" lon="174.63519">
+      <ele>31.89</ele>
+      <time>2026-04-10T22:38:42Z</time>
+      <name>Turn 264</name>
+    </trkpt>
+    <trkpt lat="-36.94974" lon="174.63508">
+      <ele>32.471</ele>
+      <time>2026-04-10T22:38:47Z</time>
+      <name>Turn 265</name>
+    </trkpt>
+    <trkpt lat="-36.94988" lon="174.63489">
+      <ele>32.686</ele>
+      <time>2026-04-10T22:38:55Z</time>
+      <name>Turn 266</name>
+    </trkpt>
+    <trkpt lat="-36.94999" lon="174.63473">
+      <ele>32.054</ele>
+      <time>2026-04-10T22:39:01Z</time>
+      <name>Turn 267</name>
+    </trkpt>
+    <trkpt lat="-36.95006" lon="174.63463">
+      <ele>32.46</ele>
+      <time>2026-04-10T22:39:05Z</time>
+      <name>Turn 268</name>
+    </trkpt>
+    <trkpt lat="-36.95011" lon="174.63453">
+      <ele>32.618</ele>
+      <time>2026-04-10T22:39:08Z</time>
+      <name>Turn 269</name>
+    </trkpt>
+    <trkpt lat="-36.95013" lon="174.63447">
+      <ele>32.539</ele>
+      <time>2026-04-10T22:39:10Z</time>
+      <name>Turn 270</name>
+    </trkpt>
+    <trkpt lat="-36.95015" lon="174.6344">
+      <ele>32.866</ele>
+      <time>2026-04-10T22:39:13Z</time>
+      <name>Turn 271</name>
+    </trkpt>
+    <trkpt lat="-36.95017" lon="174.63433">
+      <ele>33.5</ele>
+      <time>2026-04-10T22:39:15Z</time>
+      <name>Turn 272</name>
+    </trkpt>
+    <trkpt lat="-36.95018" lon="174.63427">
+      <ele>33.979</ele>
+      <time>2026-04-10T22:39:17Z</time>
+      <name>Turn 273</name>
+    </trkpt>
+    <trkpt lat="-36.95019" lon="174.63413">
+      <ele>34.819</ele>
+      <time>2026-04-10T22:39:21Z</time>
+      <name>Turn 274</name>
+    </trkpt>
+    <trkpt lat="-36.9502" lon="174.63405">
+      <ele>35.115</ele>
+      <time>2026-04-10T22:39:23Z</time>
+      <name>Turn 275</name>
+    </trkpt>
+    <trkpt lat="-36.95021" lon="174.63391">
+      <ele>35.475</ele>
+      <time>2026-04-10T22:39:27Z</time>
+      <name>Turn 276</name>
+    </trkpt>
+    <trkpt lat="-36.95022" lon="174.63385">
+      <ele>35.642</ele>
+      <time>2026-04-10T22:39:29Z</time>
+      <name>Turn 277</name>
+    </trkpt>
+    <trkpt lat="-36.95023" lon="174.6338">
+      <ele>35.766</ele>
+      <time>2026-04-10T22:39:31Z</time>
+      <name>Turn 278</name>
+    </trkpt>
+    <trkpt lat="-36.95024" lon="174.63375">
+      <ele>35.864</ele>
+      <time>2026-04-10T22:39:32Z</time>
+      <name>Turn 279</name>
+    </trkpt>
+    <trkpt lat="-36.95026" lon="174.6337">
+      <ele>35.959</ele>
+      <time>2026-04-10T22:39:34Z</time>
+      <name>Turn 280</name>
+    </trkpt>
+    <trkpt lat="-36.95029" lon="174.63365">
+      <ele>36.396</ele>
+      <time>2026-04-10T22:39:36Z</time>
+      <name>Turn 281</name>
+    </trkpt>
+    <trkpt lat="-36.95032" lon="174.63361">
+      <ele>37.365</ele>
+      <time>2026-04-10T22:39:37Z</time>
+      <name>Turn 282</name>
+    </trkpt>
+    <trkpt lat="-36.95036" lon="174.63357">
+      <ele>38.604</ele>
+      <time>2026-04-10T22:39:39Z</time>
+      <name>Turn 283</name>
+    </trkpt>
+    <trkpt lat="-36.95041" lon="174.63352">
+      <ele>40.268</ele>
+      <time>2026-04-10T22:39:42Z</time>
+      <name>Turn 284</name>
+    </trkpt>
+    <trkpt lat="-36.95047" lon="174.63345">
+      <ele>42.451</ele>
+      <time>2026-04-10T22:39:45Z</time>
+      <name>Turn 285</name>
+    </trkpt>
+    <trkpt lat="-36.95051" lon="174.63341">
+      <ele>44.011</ele>
+      <time>2026-04-10T22:39:47Z</time>
+      <name>Turn 286</name>
+    </trkpt>
+    <trkpt lat="-36.95055" lon="174.63336">
+      <ele>45.688</ele>
+      <time>2026-04-10T22:39:49Z</time>
+      <name>Turn 287</name>
+    </trkpt>
+    <trkpt lat="-36.95057" lon="174.63331">
+      <ele>46.368</ele>
+      <time>2026-04-10T22:39:50Z</time>
+      <name>Turn 288</name>
+    </trkpt>
+    <trkpt lat="-36.95059" lon="174.63327">
+      <ele>46.896</ele>
+      <time>2026-04-10T22:39:52Z</time>
+      <name>Turn 289</name>
+    </trkpt>
+    <trkpt lat="-36.95061" lon="174.63323">
+      <ele>47.445</ele>
+      <time>2026-04-10T22:39:53Z</time>
+      <name>Turn 290</name>
+    </trkpt>
+    <trkpt lat="-36.95062" lon="174.63315">
+      <ele>47.777</ele>
+      <time>2026-04-10T22:39:55Z</time>
+      <name>Turn 291</name>
+    </trkpt>
+    <trkpt lat="-36.95063" lon="174.63306">
+      <ele>48.14</ele>
+      <time>2026-04-10T22:39:58Z</time>
+      <name>Turn 292</name>
+    </trkpt>
+    <trkpt lat="-36.95063" lon="174.63295">
+      <ele>49.46</ele>
+      <time>2026-04-10T22:40:01Z</time>
+      <name>Turn 293</name>
+    </trkpt>
+    <trkpt lat="-36.95062" lon="174.63276">
+      <ele>51.584</ele>
+      <time>2026-04-10T22:40:07Z</time>
+      <name>Turn 294</name>
+    </trkpt>
+    <trkpt lat="-36.95062" lon="174.63256">
+      <ele>53.744</ele>
+      <time>2026-04-10T22:40:13Z</time>
+      <name>Turn 295</name>
+    </trkpt>
+    <trkpt lat="-36.95061" lon="174.63237">
+      <ele>55.112</ele>
+      <time>2026-04-10T22:40:19Z</time>
+      <name>Turn 296</name>
+    </trkpt>
+    <trkpt lat="-36.95059" lon="174.63194">
+      <ele>55.166</ele>
+      <time>2026-04-10T22:40:31Z</time>
+      <name>Turn 297</name>
+    </trkpt>
+    <trkpt lat="-36.95058" lon="174.63175">
+      <ele>56.954</ele>
+      <time>2026-04-10T22:40:37Z</time>
+      <name>Turn 298</name>
+    </trkpt>
+    <trkpt lat="-36.95057" lon="174.63158">
+      <ele>59.36</ele>
+      <time>2026-04-10T22:40:42Z</time>
+      <name>Turn 299</name>
+    </trkpt>
+    <trkpt lat="-36.95056" lon="174.63147">
+      <ele>61.385</ele>
+      <time>2026-04-10T22:40:45Z</time>
+      <name>Turn 300</name>
+    </trkpt>
+    <trkpt lat="-36.95054" lon="174.63137">
+      <ele>63.208</ele>
+      <time>2026-04-10T22:40:49Z</time>
+      <name>Turn 301</name>
+    </trkpt>
+    <trkpt lat="-36.95053" lon="174.63133">
+      <ele>64.144</ele>
+      <time>2026-04-10T22:40:50Z</time>
+      <name>Turn 302</name>
+    </trkpt>
+    <trkpt lat="-36.9505" lon="174.63127">
+      <ele>65.224</ele>
+      <time>2026-04-10T22:40:52Z</time>
+      <name>Turn 303</name>
+    </trkpt>
+    <trkpt lat="-36.95046" lon="174.63118">
+      <ele>66.952</ele>
+      <time>2026-04-10T22:40:55Z</time>
+      <name>Turn 304</name>
+    </trkpt>
+    <trkpt lat="-36.95037" lon="174.63101">
+      <ele>69.055</ele>
+      <time>2026-04-10T22:41:01Z</time>
+      <name>Turn 305</name>
+    </trkpt>
+    <trkpt lat="-36.95025" lon="174.6308">
+      <ele>71.092</ele>
+      <time>2026-04-10T22:41:09Z</time>
+      <name>Turn 306</name>
+    </trkpt>
+    <trkpt lat="-36.95012" lon="174.63069">
+      <ele>71.085</ele>
+      <time>2026-04-10T22:41:14Z</time>
+      <name>Turn 307</name>
+    </trkpt>
+    <trkpt lat="-36.95007" lon="174.63067">
+      <ele>70.8</ele>
+      <time>2026-04-10T22:41:16Z</time>
+      <name>Turn 308</name>
+    </trkpt>
+    <trkpt lat="-36.95003" lon="174.63066">
+      <ele>70.485</ele>
+      <time>2026-04-10T22:41:18Z</time>
+      <name>Turn 309</name>
+    </trkpt>
+    <trkpt lat="-36.94998" lon="174.63065">
+      <ele>70.324</ele>
+      <time>2026-04-10T22:41:20Z</time>
+      <name>Turn 310</name>
+    </trkpt>
+    <trkpt lat="-36.94992" lon="174.63065">
+      <ele>70.398</ele>
+      <time>2026-04-10T22:41:22Z</time>
+      <name>Turn 311</name>
+    </trkpt>
+    <trkpt lat="-36.94984" lon="174.63067">
+      <ele>70.177</ele>
+      <time>2026-04-10T22:41:25Z</time>
+      <name>Turn 312</name>
+    </trkpt>
+    <trkpt lat="-36.94978" lon="174.63069">
+      <ele>69.963</ele>
+      <time>2026-04-10T22:41:27Z</time>
+      <name>Turn 313</name>
+    </trkpt>
+    <trkpt lat="-36.94972" lon="174.63071">
+      <ele>69.796</ele>
+      <time>2026-04-10T22:41:30Z</time>
+      <name>Turn 314</name>
+    </trkpt>
+    <trkpt lat="-36.94965" lon="174.63076">
+      <ele>69.767</ele>
+      <time>2026-04-10T22:41:33Z</time>
+      <name>Turn 315</name>
+    </trkpt>
+    <trkpt lat="-36.94956" lon="174.63081">
+      <ele>70.039</ele>
+      <time>2026-04-10T22:41:36Z</time>
+      <name>Turn 316</name>
+    </trkpt>
+    <trkpt lat="-36.94941" lon="174.63086">
+      <ele>70.724</ele>
+      <time>2026-04-10T22:41:42Z</time>
+      <name>Turn 317</name>
+    </trkpt>
+    <trkpt lat="-36.94937" lon="174.63086">
+      <ele>70.738</ele>
+      <time>2026-04-10T22:41:43Z</time>
+      <name>Turn 318</name>
+    </trkpt>
+    <trkpt lat="-36.94932" lon="174.63084">
+      <ele>70.939</ele>
+      <time>2026-04-10T22:41:45Z</time>
+      <name>Turn 319</name>
+    </trkpt>
+    <trkpt lat="-36.94928" lon="174.63081">
+      <ele>71.202</ele>
+      <time>2026-04-10T22:41:47Z</time>
+      <name>Turn 320</name>
+    </trkpt>
+    <trkpt lat="-36.94922" lon="174.63074">
+      <ele>71.737</ele>
+      <time>2026-04-10T22:41:50Z</time>
+      <name>Turn 321</name>
+    </trkpt>
+    <trkpt lat="-36.94918" lon="174.63068">
+      <ele>72.13</ele>
+      <time>2026-04-10T22:41:52Z</time>
+      <name>Turn 322</name>
+    </trkpt>
+    <trkpt lat="-36.94912" lon="174.63052">
+      <ele>73.0</ele>
+      <time>2026-04-10T22:41:58Z</time>
+      <name>Turn 323</name>
+    </trkpt>
+    <trkpt lat="-36.94905" lon="174.63042">
+      <ele>73.0</ele>
+      <time>2026-04-10T22:42:02Z</time>
+      <name>Turn 324</name>
+    </trkpt>
+    <trkpt lat="-36.94902" lon="174.63034">
+      <ele>73.0</ele>
+      <time>2026-04-10T22:42:04Z</time>
+      <name>Turn 325</name>
+    </trkpt>
+    <trkpt lat="-36.94899" lon="174.63027">
+      <ele>73.0</ele>
+      <time>2026-04-10T22:42:07Z</time>
+      <name>Turn 326</name>
+    </trkpt>
+    <trkpt lat="-36.94897" lon="174.63023">
+      <ele>73.0</ele>
+      <time>2026-04-10T22:42:08Z</time>
+      <name>Turn 327</name>
+    </trkpt>
+    <trkpt lat="-36.94894" lon="174.63019">
+      <ele>73.0</ele>
+      <time>2026-04-10T22:42:10Z</time>
+      <name>Turn 328</name>
+    </trkpt>
+    <trkpt lat="-36.9489" lon="174.63014">
+      <ele>73.0</ele>
+      <time>2026-04-10T22:42:12Z</time>
+      <name>Turn 329</name>
+    </trkpt>
+    <trkpt lat="-36.94885" lon="174.63011">
+      <ele>73.14</ele>
+      <time>2026-04-10T22:42:14Z</time>
+      <name>Turn 330</name>
+    </trkpt>
+    <trkpt lat="-36.94881" lon="174.63008">
+      <ele>73.284</ele>
+      <time>2026-04-10T22:42:16Z</time>
+      <name>Turn 331</name>
+    </trkpt>
+    <trkpt lat="-36.9488" lon="174.63006">
+      <ele>73.32</ele>
+      <time>2026-04-10T22:42:16Z</time>
+      <name>Turn 332</name>
+    </trkpt>
+    <trkpt lat="-36.94879" lon="174.63004">
+      <ele>73.356</ele>
+      <time>2026-04-10T22:42:17Z</time>
+      <name>Turn 333</name>
+    </trkpt>
+    <trkpt lat="-36.94877" lon="174.63003">
+      <ele>73.428</ele>
+      <time>2026-04-10T22:42:18Z</time>
+      <name>Turn 334</name>
+    </trkpt>
+    <trkpt lat="-36.94877" lon="174.62996">
+      <ele>73.428</ele>
+      <time>2026-04-10T22:42:20Z</time>
+      <name>Turn 335</name>
+    </trkpt>
+    <trkpt lat="-36.94877" lon="174.62992">
+      <ele>73.428</ele>
+      <time>2026-04-10T22:42:21Z</time>
+      <name>Turn 336</name>
+    </trkpt>
+    <trkpt lat="-36.94877" lon="174.62985">
+      <ele>73.428</ele>
+      <time>2026-04-10T22:42:23Z</time>
+      <name>Turn 337</name>
+    </trkpt>
+    <trkpt lat="-36.94873" lon="174.62966">
+      <ele>73.124</ele>
+      <time>2026-04-10T22:42:29Z</time>
+      <name>Turn 338</name>
+    </trkpt>
+    <trkpt lat="-36.94868" lon="174.62941">
+      <ele>71.504</ele>
+      <time>2026-04-10T22:42:37Z</time>
+      <name>Turn 339</name>
+    </trkpt>
+    <trkpt lat="-36.94866" lon="174.62931">
+      <ele>70.856</ele>
+      <time>2026-04-10T22:42:40Z</time>
+      <name>Turn 340</name>
+    </trkpt>
+    <trkpt lat="-36.94863" lon="174.62925">
+      <ele>70.532</ele>
+      <time>2026-04-10T22:42:42Z</time>
+      <name>Turn 341</name>
+    </trkpt>
+    <trkpt lat="-36.9486" lon="174.62919">
+      <ele>70.208</ele>
+      <time>2026-04-10T22:42:44Z</time>
+      <name>Turn 342</name>
+    </trkpt>
+    <trkpt lat="-36.94854" lon="174.62913">
+      <ele>69.894</ele>
+      <time>2026-04-10T22:42:47Z</time>
+      <name>Turn 343</name>
+    </trkpt>
+    <trkpt lat="-36.94845" lon="174.62906">
+      <ele>69.651</ele>
+      <time>2026-04-10T22:42:51Z</time>
+      <name>Turn 344</name>
+    </trkpt>
+    <trkpt lat="-36.94822" lon="174.62891">
+      <ele>69.591</ele>
+      <time>2026-04-10T22:43:00Z</time>
+      <name>Turn 345</name>
+    </trkpt>
+    <trkpt lat="-36.94786" lon="174.62868">
+      <ele>71.535</ele>
+      <time>2026-04-10T22:43:15Z</time>
+      <name>Turn 346</name>
+    </trkpt>
+    <trkpt lat="-36.94773" lon="174.62857">
+      <ele>72.515</ele>
+      <time>2026-04-10T22:43:21Z</time>
+      <name>Turn 347</name>
+    </trkpt>
+    <trkpt lat="-36.94767" lon="174.62845">
+      <ele>72.747</ele>
+      <time>2026-04-10T22:43:25Z</time>
+      <name>Turn 348</name>
+    </trkpt>
+    <trkpt lat="-36.94764" lon="174.62825">
+      <ele>72.939</ele>
+      <time>2026-04-10T22:43:31Z</time>
+      <name>Turn 349</name>
+    </trkpt>
+    <trkpt lat="-36.94766" lon="174.62805">
+      <ele>73.92</ele>
+      <time>2026-04-10T22:43:37Z</time>
+      <name>Turn 350</name>
+    </trkpt>
+    <trkpt lat="-36.94775" lon="174.6279">
+      <ele>75.384</ele>
+      <time>2026-04-10T22:43:43Z</time>
+      <name>Turn 351</name>
+    </trkpt>
+    <trkpt lat="-36.94906" lon="174.62751">
+      <ele>81.914</ele>
+      <time>2026-04-10T22:44:33Z</time>
+      <name>Turn 352</name>
+    </trkpt>
+    <trkpt lat="-36.94922" lon="174.62744">
+      <ele>83.097</ele>
+      <time>2026-04-10T22:44:39Z</time>
+      <name>Turn 353</name>
+    </trkpt>
+    <trkpt lat="-36.94942" lon="174.62726">
+      <ele>87.156</ele>
+      <time>2026-04-10T22:44:48Z</time>
+      <name>Turn 354</name>
+    </trkpt>
+    <trkpt lat="-36.94981" lon="174.62687">
+      <ele>89.089</ele>
+      <time>2026-04-10T22:45:06Z</time>
+      <name>Turn 355</name>
+    </trkpt>
+    <trkpt lat="-36.94994" lon="174.62663">
+      <ele>88.648</ele>
+      <time>2026-04-10T22:45:15Z</time>
+      <name>Turn 356</name>
+    </trkpt>
+    <trkpt lat="-36.94998" lon="174.62644">
+      <ele>88.216</ele>
+      <time>2026-04-10T22:45:21Z</time>
+      <name>Turn 357</name>
+    </trkpt>
+    <trkpt lat="-36.94993" lon="174.62627">
+      <ele>88.436</ele>
+      <time>2026-04-10T22:45:26Z</time>
+      <name>Turn 358</name>
+    </trkpt>
+    <trkpt lat="-36.9493" lon="174.62458">
+      <ele>88.516</ele>
+      <time>2026-04-10T22:46:22Z</time>
+      <name>Turn 359</name>
+    </trkpt>
+    <trkpt lat="-36.94926" lon="174.62437">
+      <ele>88.02</ele>
+      <time>2026-04-10T22:46:28Z</time>
+      <name>Turn 360</name>
+    </trkpt>
+    <trkpt lat="-36.94929" lon="174.62426">
+      <ele>88.294</ele>
+      <time>2026-04-10T22:46:31Z</time>
+      <name>Turn 361</name>
+    </trkpt>
+    <trkpt lat="-36.94936" lon="174.62415">
+      <ele>88.176</ele>
+      <time>2026-04-10T22:46:36Z</time>
+      <name>Turn 362</name>
+    </trkpt>
+    <trkpt lat="-36.94945" lon="174.62406">
+      <ele>88.9</ele>
+      <time>2026-04-10T22:46:40Z</time>
+      <name>Turn 363</name>
+    </trkpt>
+    <trkpt lat="-36.94965" lon="174.62397">
+      <ele>89.8</ele>
+      <time>2026-04-10T22:46:48Z</time>
+      <name>Turn 364</name>
+    </trkpt>
+    <trkpt lat="-36.94995" lon="174.62388">
+      <ele>88.752</ele>
+      <time>2026-04-10T22:46:59Z</time>
+      <name>Turn 365</name>
+    </trkpt>
+    <trkpt lat="-36.95022" lon="174.62373">
+      <ele>91.551</ele>
+      <time>2026-04-10T22:47:10Z</time>
+      <name>Turn 366</name>
+    </trkpt>
+    <trkpt lat="-36.9504" lon="174.62357">
+      <ele>95.476</ele>
+      <time>2026-04-10T22:47:18Z</time>
+      <name>Turn 367</name>
+    </trkpt>
+    <trkpt lat="-36.95052" lon="174.62343">
+      <ele>99.436</ele>
+      <time>2026-04-10T22:47:24Z</time>
+      <name>Turn 368</name>
+    </trkpt>
+    <trkpt lat="-36.95068" lon="174.62335">
+      <ele>101.186</ele>
+      <time>2026-04-10T22:47:31Z</time>
+      <name>Turn 369</name>
+    </trkpt>
+    <trkpt lat="-36.95091" lon="174.62343">
+      <ele>100.82</ele>
+      <time>2026-04-10T22:47:40Z</time>
+      <name>Turn 370</name>
+    </trkpt>
+    <trkpt lat="-36.95106" lon="174.62352">
+      <ele>101.988</ele>
+      <time>2026-04-10T22:47:46Z</time>
+      <name>Turn 371</name>
+    </trkpt>
+    <trkpt lat="-36.95122" lon="174.62377">
+      <ele>105.199</ele>
+      <time>2026-04-10T22:47:55Z</time>
+      <name>Turn 372</name>
+    </trkpt>
+    <trkpt lat="-36.95132" lon="174.62405">
+      <ele>106.46</ele>
+      <time>2026-04-10T22:48:04Z</time>
+      <name>Turn 373</name>
+    </trkpt>
+    <trkpt lat="-36.95149" lon="174.62425">
+      <ele>107.338</ele>
+      <time>2026-04-10T22:48:13Z</time>
+      <name>Turn 374</name>
+    </trkpt>
+    <trkpt lat="-36.95165" lon="174.62438">
+      <ele>107.012</ele>
+      <time>2026-04-10T22:48:20Z</time>
+      <name>Turn 375</name>
+    </trkpt>
+    <trkpt lat="-36.95186" lon="174.62448">
+      <ele>108.478</ele>
+      <time>2026-04-10T22:48:28Z</time>
+      <name>Turn 376</name>
+    </trkpt>
+    <trkpt lat="-36.95195" lon="174.62449">
+      <ele>109.565</ele>
+      <time>2026-04-10T22:48:32Z</time>
+      <name>Turn 377</name>
+    </trkpt>
+    <trkpt lat="-36.95221" lon="174.62442">
+      <ele>113.224</ele>
+      <time>2026-04-10T22:48:42Z</time>
+      <name>Turn 378</name>
+    </trkpt>
+    <trkpt lat="-36.95244" lon="174.62436">
+      <ele>115.784</ele>
+      <time>2026-04-10T22:48:50Z</time>
+      <name>Turn 379</name>
+    </trkpt>
+    <trkpt lat="-36.9527" lon="174.62432">
+      <ele>118.555</ele>
+      <time>2026-04-10T22:49:00Z</time>
+      <name>Turn 380</name>
+    </trkpt>
+    <trkpt lat="-36.95283" lon="174.62433">
+      <ele>119.735</ele>
+      <time>2026-04-10T22:49:05Z</time>
+      <name>Turn 381</name>
+    </trkpt>
+    <trkpt lat="-36.95289" lon="174.62442">
+      <ele>119.02</ele>
+      <time>2026-04-10T22:49:08Z</time>
+      <name>Turn 382</name>
+    </trkpt>
+    <trkpt lat="-36.95297" lon="174.62444">
+      <ele>119.837</ele>
+      <time>2026-04-10T22:49:11Z</time>
+      <name>Turn 383</name>
+    </trkpt>
+    <trkpt lat="-36.95307" lon="174.62434">
+      <ele>122.809</ele>
+      <time>2026-04-10T22:49:16Z</time>
+      <name>Turn 384</name>
+    </trkpt>
+    <trkpt lat="-36.9531" lon="174.62429">
+      <ele>124.077</ele>
+      <time>2026-04-10T22:49:18Z</time>
+      <name>Turn 385</name>
+    </trkpt>
+    <trkpt lat="-36.95307" lon="174.62422">
+      <ele>124.47</ele>
+      <time>2026-04-10T22:49:20Z</time>
+      <name>Turn 386</name>
+    </trkpt>
+    <trkpt lat="-36.95305" lon="174.62416">
+      <ele>125.06</ele>
+      <time>2026-04-10T22:49:22Z</time>
+      <name>Turn 387</name>
+    </trkpt>
+    <trkpt lat="-36.95308" lon="174.62416">
+      <ele>125.464</ele>
+      <time>2026-04-10T22:49:23Z</time>
+      <name>Turn 388</name>
+    </trkpt>
+    <trkpt lat="-36.95318" lon="174.62415">
+      <ele>126.984</ele>
+      <time>2026-04-10T22:49:27Z</time>
+      <name>Turn 389</name>
+    </trkpt>
+    <trkpt lat="-36.95342" lon="174.62407">
+      <ele>129.646</ele>
+      <time>2026-04-10T22:49:36Z</time>
+      <name>Turn 390</name>
+    </trkpt>
+    <trkpt lat="-36.95354" lon="174.62393">
+      <ele>129.438</ele>
+      <time>2026-04-10T22:49:42Z</time>
+      <name>Turn 391</name>
+    </trkpt>
+    <trkpt lat="-36.95361" lon="174.62376">
+      <ele>128.551</ele>
+      <time>2026-04-10T22:49:48Z</time>
+      <name>Turn 392</name>
+    </trkpt>
+    <trkpt lat="-36.95364" lon="174.62368">
+      <ele>127.753</ele>
+      <time>2026-04-10T22:49:51Z</time>
+      <name>Turn 393</name>
+    </trkpt>
+    <trkpt lat="-36.95365" lon="174.6236">
+      <ele>127.103</ele>
+      <time>2026-04-10T22:49:53Z</time>
+      <name>Turn 394</name>
+    </trkpt>
+    <trkpt lat="-36.95366" lon="174.62354">
+      <ele>126.553</ele>
+      <time>2026-04-10T22:49:55Z</time>
+      <name>Turn 395</name>
+    </trkpt>
+    <trkpt lat="-36.95365" lon="174.62346">
+      <ele>126.388</ele>
+      <time>2026-04-10T22:49:57Z</time>
+      <name>Turn 396</name>
+    </trkpt>
+    <trkpt lat="-36.95356" lon="174.62309">
+      <ele>127.964</ele>
+      <time>2026-04-10T22:50:09Z</time>
+      <name>Turn 397</name>
+    </trkpt>
+    <trkpt lat="-36.95353" lon="174.62285">
+      <ele>128.18</ele>
+      <time>2026-04-10T22:50:16Z</time>
+      <name>Turn 398</name>
+    </trkpt>
+    <trkpt lat="-36.95347" lon="174.62246">
+      <ele>126.994</ele>
+      <time>2026-04-10T22:50:28Z</time>
+      <name>Turn 399</name>
+    </trkpt>
+    <trkpt lat="-36.95346" lon="174.62212">
+      <ele>122.103</ele>
+      <time>2026-04-10T22:50:38Z</time>
+      <name>Turn 400</name>
+    </trkpt>
+    <trkpt lat="-36.95347" lon="174.62184">
+      <ele>117.898</ele>
+      <time>2026-04-10T22:50:46Z</time>
+      <name>Turn 401</name>
+    </trkpt>
+    <trkpt lat="-36.95343" lon="174.62152">
+      <ele>115.96</ele>
+      <time>2026-04-10T22:50:56Z</time>
+      <name>Turn 402</name>
+    </trkpt>
+    <trkpt lat="-36.95342" lon="174.62147">
+      <ele>115.889</ele>
+      <time>2026-04-10T22:50:57Z</time>
+      <name>Turn 403</name>
+    </trkpt>
+    <trkpt lat="-36.95332" lon="174.62118">
+      <ele>114.52</ele>
+      <time>2026-04-10T22:51:07Z</time>
+      <name>Turn 404</name>
+    </trkpt>
+    <trkpt lat="-36.95277" lon="174.62057">
+      <ele>104.368</ele>
+      <time>2026-04-10T22:51:34Z</time>
+      <name>Turn 405</name>
+    </trkpt>
+    <trkpt lat="-36.95252" lon="174.62046">
+      <ele>104.455</ele>
+      <time>2026-04-10T22:51:44Z</time>
+      <name>Turn 406</name>
+    </trkpt>
+    <trkpt lat="-36.95225" lon="174.6204">
+      <ele>105.56</ele>
+      <time>2026-04-10T22:51:54Z</time>
+      <name>Turn 407</name>
+    </trkpt>
+    <trkpt lat="-36.95184" lon="174.62015">
+      <ele>103.757</ele>
+      <time>2026-04-10T22:52:11Z</time>
+      <name>Turn 408</name>
+    </trkpt>
+    <trkpt lat="-36.95174" lon="174.61997">
+      <ele>104.68</ele>
+      <time>2026-04-10T22:52:17Z</time>
+      <name>Turn 409</name>
+    </trkpt>
+    <trkpt lat="-36.95172" lon="174.61967">
+      <ele>105.076</ele>
+      <time>2026-04-10T22:52:26Z</time>
+      <name>Turn 410</name>
+    </trkpt>
+    <trkpt lat="-36.95171" lon="174.61951">
+      <ele>105.339</ele>
+      <time>2026-04-10T22:52:31Z</time>
+      <name>Turn 411</name>
+    </trkpt>
+    <trkpt lat="-36.95171" lon="174.61941">
+      <ele>105.395</ele>
+      <time>2026-04-10T22:52:34Z</time>
+      <name>Turn 412</name>
+    </trkpt>
+    <trkpt lat="-36.95157" lon="174.61899">
+      <ele>106.696</ele>
+      <time>2026-04-10T22:52:47Z</time>
+      <name>Turn 413</name>
+    </trkpt>
+    <trkpt lat="-36.95131" lon="174.61849">
+      <ele>106.672</ele>
+      <time>2026-04-10T22:53:05Z</time>
+      <name>Turn 414</name>
+    </trkpt>
+    <trkpt lat="-36.95119" lon="174.61808">
+      <ele>106.472</ele>
+      <time>2026-04-10T22:53:18Z</time>
+      <name>Turn 415</name>
+    </trkpt>
+    <trkpt lat="-36.95147" lon="174.61682">
+      <ele>90.087</ele>
+      <time>2026-04-10T22:53:57Z</time>
+      <name>Turn 416</name>
+    </trkpt>
+    <trkpt lat="-36.95184" lon="174.61589">
+      <ele>87.753</ele>
+      <time>2026-04-10T22:54:28Z</time>
+      <name>Turn 417</name>
+    </trkpt>
+    <trkpt lat="-36.95201" lon="174.61489">
+      <ele>83.623</ele>
+      <time>2026-04-10T22:54:58Z</time>
+      <name>Turn 418</name>
+    </trkpt>
+    <trkpt lat="-36.95211" lon="174.61379">
+      <ele>86.82</ele>
+      <time>2026-04-10T22:55:31Z</time>
+      <name>Turn 419</name>
+    </trkpt>
+    <trkpt lat="-36.95227" lon="174.61266">
+      <ele>86.247</ele>
+      <time>2026-04-10T22:56:05Z</time>
+      <name>Turn 420</name>
+    </trkpt>
+    <trkpt lat="-36.95226" lon="174.61247">
+      <ele>85.997</ele>
+      <time>2026-04-10T22:56:11Z</time>
+      <name>Turn 421</name>
+    </trkpt>
+    <trkpt lat="-36.95211" lon="174.61236">
+      <ele>88.613</ele>
+      <time>2026-04-10T22:56:17Z</time>
+      <name>Turn 422</name>
+    </trkpt>
+    <trkpt lat="-36.95175" lon="174.61216">
+      <ele>92.128</ele>
+      <time>2026-04-10T22:56:32Z</time>
+      <name>Turn 423</name>
+    </trkpt>
+    <trkpt lat="-36.95158" lon="174.61169">
+      <ele>88.278</ele>
+      <time>2026-04-10T22:56:47Z</time>
+      <name>Turn 424</name>
+    </trkpt>
+    <trkpt lat="-36.95161" lon="174.61147">
+      <ele>86.44</ele>
+      <time>2026-04-10T22:56:53Z</time>
+      <name>Turn 425</name>
+    </trkpt>
+    <trkpt lat="-36.95195" lon="174.61061">
+      <ele>80.016</ele>
+      <time>2026-04-10T22:57:22Z</time>
+      <name>Turn 426</name>
+    </trkpt>
+    <trkpt lat="-36.95226" lon="174.60901">
+      <ele>55.271</ele>
+      <time>2026-04-10T22:58:11Z</time>
+      <name>Turn 427</name>
+    </trkpt>
+    <trkpt lat="-36.95252" lon="174.60792">
+      <ele>56.224</ele>
+      <time>2026-04-10T22:58:45Z</time>
+      <name>Turn 428</name>
+    </trkpt>
+    <trkpt lat="-36.95249" lon="174.60719">
+      <ele>65.308</ele>
+      <time>2026-04-10T22:59:06Z</time>
+      <name>Turn 429</name>
+    </trkpt>
+    <trkpt lat="-36.95235" lon="174.60676">
+      <ele>68.62</ele>
+      <time>2026-04-10T22:59:20Z</time>
+      <name>Turn 430</name>
+    </trkpt>
+    <trkpt lat="-36.95241" lon="174.60598">
+      <ele>67.296</ele>
+      <time>2026-04-10T22:59:43Z</time>
+      <name>Turn 431</name>
+    </trkpt>
+    <trkpt lat="-36.95273" lon="174.60498">
+      <ele>63.628</ele>
+      <time>2026-04-10T23:00:15Z</time>
+      <name>Turn 432</name>
+    </trkpt>
+    <trkpt lat="-36.95319" lon="174.60445">
+      <ele>54.086</ele>
+      <time>2026-04-10T23:00:38Z</time>
+      <name>Turn 433</name>
+    </trkpt>
+    <trkpt lat="-36.95329" lon="174.604">
+      <ele>54.705</ele>
+      <time>2026-04-10T23:00:52Z</time>
+      <name>Turn 434</name>
+    </trkpt>
+    <trkpt lat="-36.95326" lon="174.60381">
+      <ele>56.679</ele>
+      <time>2026-04-10T23:00:58Z</time>
+      <name>Turn 435</name>
+    </trkpt>
+    <trkpt lat="-36.95326" lon="174.60359">
+      <ele>57.66</ele>
+      <time>2026-04-10T23:01:05Z</time>
+      <name>Turn 436</name>
+    </trkpt>
+    <trkpt lat="-36.95331" lon="174.60335">
+      <ele>57.444</ele>
+      <time>2026-04-10T23:01:12Z</time>
+      <name>Turn 437</name>
+    </trkpt>
+    <trkpt lat="-36.95336" lon="174.6031">
+      <ele>54.744</ele>
+      <time>2026-04-10T23:01:20Z</time>
+      <name>Turn 438</name>
+    </trkpt>
+    <trkpt lat="-36.95337" lon="174.60287">
+      <ele>54.12</ele>
+      <time>2026-04-10T23:01:26Z</time>
+      <name>Turn 439</name>
+    </trkpt>
+    <trkpt lat="-36.95337" lon="174.60287">
+      <ele>54.12</ele>
+      <time>2026-04-10T23:01:26Z</time>
+      <name>Turn 440</name>
+    </trkpt>
+    <trkpt lat="-36.95337" lon="174.60266">
+      <ele>54.076</ele>
+      <time>2026-04-10T23:01:33Z</time>
+      <name>Turn 441</name>
+    </trkpt>
+    <trkpt lat="-36.95337" lon="174.60244">
+      <ele>54.047</ele>
+      <time>2026-04-10T23:01:39Z</time>
+      <name>Turn 442</name>
+    </trkpt>
+    <trkpt lat="-36.95338" lon="174.60226">
+      <ele>53.679</ele>
+      <time>2026-04-10T23:01:45Z</time>
+      <name>Turn 443</name>
+    </trkpt>
+    <trkpt lat="-36.95338" lon="174.6021">
+      <ele>52.85</ele>
+      <time>2026-04-10T23:01:49Z</time>
+      <name>Turn 444</name>
+    </trkpt>
+    <trkpt lat="-36.95338" lon="174.60194">
+      <ele>51.797</ele>
+      <time>2026-04-10T23:01:54Z</time>
+      <name>Turn 445</name>
+    </trkpt>
+    <trkpt lat="-36.95339" lon="174.60187">
+      <ele>51.145</ele>
+      <time>2026-04-10T23:01:56Z</time>
+      <name>Turn 446</name>
+    </trkpt>
+    <trkpt lat="-36.95309" lon="174.60162">
+      <ele>57.734</ele>
+      <time>2026-04-10T23:02:10Z</time>
+      <name>Turn 447</name>
+    </trkpt>
+    <trkpt lat="-36.95288" lon="174.60162">
+      <ele>63.194</ele>
+      <time>2026-04-10T23:02:17Z</time>
+      <name>Turn 448</name>
+    </trkpt>
+    <trkpt lat="-36.95269" lon="174.6017">
+      <ele>68.054</ele>
+      <time>2026-04-10T23:02:25Z</time>
+      <name>Turn 449</name>
+    </trkpt>
+    <trkpt lat="-36.95215" lon="174.60165">
+      <ele>78.936</ele>
+      <time>2026-04-10T23:02:45Z</time>
+      <name>Turn 450</name>
+    </trkpt>
+    <trkpt lat="-36.95192" lon="174.60167">
+      <ele>82.453</ele>
+      <time>2026-04-10T23:02:53Z</time>
+      <name>Turn 451</name>
+    </trkpt>
+    <trkpt lat="-36.95174" lon="174.60221">
+      <ele>89.076</ele>
+      <time>2026-04-10T23:03:11Z</time>
+      <name>Turn 452</name>
+    </trkpt>
+    <trkpt lat="-36.95118" lon="174.60253">
+      <ele>104.003</ele>
+      <time>2026-04-10T23:03:33Z</time>
+      <name>Turn 453</name>
+    </trkpt>
+    <trkpt lat="-36.95039" lon="174.60285">
+      <ele>113.059</ele>
+      <time>2026-04-10T23:04:04Z</time>
+      <name>Turn 454</name>
+    </trkpt>
+    <trkpt lat="-36.94998" lon="174.60318">
+      <ele>120.104</ele>
+      <time>2026-04-10T23:04:22Z</time>
+      <name>Turn 455</name>
+    </trkpt>
+    <trkpt lat="-36.9494" lon="174.6031">
+      <ele>124.037</ele>
+      <time>2026-04-10T23:04:44Z</time>
+      <name>Turn 456</name>
+    </trkpt>
+    <trkpt lat="-36.94918" lon="174.60318">
+      <ele>128.983</ele>
+      <time>2026-04-10T23:04:52Z</time>
+      <name>Turn 457</name>
+    </trkpt>
+    <trkpt lat="-36.94895" lon="174.60346">
+      <ele>135.608</ele>
+      <time>2026-04-10T23:05:04Z</time>
+      <name>Turn 458</name>
+    </trkpt>
+    <trkpt lat="-36.94866" lon="174.60364">
+      <ele>138.91</ele>
+      <time>2026-04-10T23:05:16Z</time>
+      <name>Turn 459</name>
+    </trkpt>
+    <trkpt lat="-36.94798" lon="174.60359">
+      <ele>141.468</ele>
+      <time>2026-04-10T23:05:41Z</time>
+      <name>Turn 460</name>
+    </trkpt>
+    <trkpt lat="-36.94762" lon="174.6038">
+      <ele>146.906</ele>
+      <time>2026-04-10T23:05:56Z</time>
+      <name>Turn 461</name>
+    </trkpt>
+    <trkpt lat="-36.94746" lon="174.60366">
+      <ele>149.411</ele>
+      <time>2026-04-10T23:06:03Z</time>
+      <name>Turn 462</name>
+    </trkpt>
+    <trkpt lat="-36.94719" lon="174.60358">
+      <ele>155.695</ele>
+      <time>2026-04-10T23:06:14Z</time>
+      <name>Turn 463</name>
+    </trkpt>
+    <trkpt lat="-36.94692" lon="174.60375">
+      <ele>165.66</ele>
+      <time>2026-04-10T23:06:25Z</time>
+      <name>Turn 464</name>
+    </trkpt>
+    <trkpt lat="-36.94688" lon="174.60363">
+      <ele>165.976</ele>
+      <time>2026-04-10T23:06:29Z</time>
+      <name>Turn 465</name>
+    </trkpt>
+    <trkpt lat="-36.94675" lon="174.60347">
+      <ele>168.99</ele>
+      <time>2026-04-10T23:06:35Z</time>
+      <name>Turn 466</name>
+    </trkpt>
+    <trkpt lat="-36.9466" lon="174.60339">
+      <ele>174.782</ele>
+      <time>2026-04-10T23:06:41Z</time>
+      <name>Turn 467</name>
+    </trkpt>
+    <trkpt lat="-36.94647" lon="174.60374">
+      <ele>179.544</ele>
+      <time>2026-04-10T23:06:53Z</time>
+      <name>Turn 468</name>
+    </trkpt>
+    <trkpt lat="-36.94633" lon="174.60375">
+      <ele>184.302</ele>
+      <time>2026-04-10T23:06:58Z</time>
+      <name>Turn 469</name>
+    </trkpt>
+    <trkpt lat="-36.94624" lon="174.6038">
+      <ele>187.14</ele>
+      <time>2026-04-10T23:07:02Z</time>
+      <name>Turn 470</name>
+    </trkpt>
+    <trkpt lat="-36.94612" lon="174.60377">
+      <ele>190.73</ele>
+      <time>2026-04-10T23:07:06Z</time>
+      <name>Turn 471</name>
+    </trkpt>
+    <trkpt lat="-36.94609" lon="174.60385">
+      <ele>191.619</ele>
+      <time>2026-04-10T23:07:09Z</time>
+      <name>Turn 472</name>
+    </trkpt>
+    <trkpt lat="-36.94614" lon="174.60408">
+      <ele>192.232</ele>
+      <time>2026-04-10T23:07:16Z</time>
+      <name>Turn 473</name>
+    </trkpt>
+    <trkpt lat="-36.94616" lon="174.60439">
+      <ele>196.47</ele>
+      <time>2026-04-10T23:07:25Z</time>
+      <name>Turn 474</name>
+    </trkpt>
+    <trkpt lat="-36.94629" lon="174.60482">
+      <ele>202.413</ele>
+      <time>2026-04-10T23:07:39Z</time>
+      <name>Turn 475</name>
+    </trkpt>
+    <trkpt lat="-36.94643" lon="174.60503">
+      <ele>205.192</ele>
+      <time>2026-04-10T23:07:47Z</time>
+      <name>Turn 476</name>
+    </trkpt>
+    <trkpt lat="-36.94662" lon="174.60506">
+      <ele>202.168</ele>
+      <time>2026-04-10T23:07:54Z</time>
+      <name>Turn 477</name>
+    </trkpt>
+    <trkpt lat="-36.94665" lon="174.60508">
+      <ele>202.24</ele>
+      <time>2026-04-10T23:07:55Z</time>
+      <name>Turn 478</name>
+    </trkpt>
+    <trkpt lat="-36.94666" lon="174.60512">
+      <ele>203.464</ele>
+      <time>2026-04-10T23:07:56Z</time>
+      <name>Turn 479</name>
+    </trkpt>
+    <trkpt lat="-36.94665" lon="174.60527">
+      <ele>209.08</ele>
+      <time>2026-04-10T23:08:01Z</time>
+      <name>Turn 480</name>
+    </trkpt>
+    <trkpt lat="-36.9466" lon="174.60544">
+      <ele>216.14</ele>
+      <time>2026-04-10T23:08:06Z</time>
+      <name>Turn 481</name>
+    </trkpt>
+    <trkpt lat="-36.94655" lon="174.60549">
+      <ele>218.839</ele>
+      <time>2026-04-10T23:08:09Z</time>
+      <name>Turn 482</name>
+    </trkpt>
+    <trkpt lat="-36.94642" lon="174.60549">
+      <ele>221.29</ele>
+      <time>2026-04-10T23:08:13Z</time>
+      <name>Turn 483</name>
+    </trkpt>
+    <trkpt lat="-36.94628" lon="174.60535">
+      <ele>218.704</ele>
+      <time>2026-04-10T23:08:20Z</time>
+      <name>Turn 484</name>
+    </trkpt>
+    <trkpt lat="-36.94621" lon="174.60525">
+      <ele>216.705</ele>
+      <time>2026-04-10T23:08:24Z</time>
+      <name>Turn 485</name>
+    </trkpt>
+    <trkpt lat="-36.9461" lon="174.60518">
+      <ele>216.266</ele>
+      <time>2026-04-10T23:08:29Z</time>
+      <name>Turn 486</name>
+    </trkpt>
+    <trkpt lat="-36.94601" lon="174.60515">
+      <ele>216.186</ele>
+      <time>2026-04-10T23:08:32Z</time>
+      <name>Turn 487</name>
+    </trkpt>
+    <trkpt lat="-36.946" lon="174.60517">
+      <ele>216.762</ele>
+      <time>2026-04-10T23:08:33Z</time>
+      <name>Turn 488</name>
+    </trkpt>
+    <trkpt lat="-36.94605" lon="174.60527">
+      <ele>219.014</ele>
+      <time>2026-04-10T23:08:36Z</time>
+      <name>Turn 489</name>
+    </trkpt>
+    <trkpt lat="-36.94616" lon="174.60549">
+      <ele>223.913</ele>
+      <time>2026-04-10T23:08:44Z</time>
+      <name>Turn 490</name>
+    </trkpt>
+    <trkpt lat="-36.94616" lon="174.60563">
+      <ele>225.837</ele>
+      <time>2026-04-10T23:08:48Z</time>
+      <name>Turn 491</name>
+    </trkpt>
+    <trkpt lat="-36.94617" lon="174.60569">
+      <ele>225.986</ele>
+      <time>2026-04-10T23:08:50Z</time>
+      <name>Turn 492</name>
+    </trkpt>
+    <trkpt lat="-36.94625" lon="174.60578">
+      <ele>226.616</ele>
+      <time>2026-04-10T23:08:54Z</time>
+      <name>Turn 493</name>
+    </trkpt>
+    <trkpt lat="-36.9463" lon="174.60589">
+      <ele>226.887</ele>
+      <time>2026-04-10T23:08:58Z</time>
+      <name>Turn 494</name>
+    </trkpt>
+    <trkpt lat="-36.9463" lon="174.60605">
+      <ele>225.55</ele>
+      <time>2026-04-10T23:09:02Z</time>
+      <name>Turn 495</name>
+    </trkpt>
+    <trkpt lat="-36.94634" lon="174.60613">
+      <ele>225.212</ele>
+      <time>2026-04-10T23:09:05Z</time>
+      <name>Turn 496</name>
+    </trkpt>
+    <trkpt lat="-36.9464" lon="174.60616">
+      <ele>225.31</ele>
+      <time>2026-04-10T23:09:08Z</time>
+      <name>Turn 497</name>
+    </trkpt>
+    <trkpt lat="-36.94654" lon="174.60615">
+      <ele>225.592</ele>
+      <time>2026-04-10T23:09:13Z</time>
+      <name>Turn 498</name>
+    </trkpt>
+    <trkpt lat="-36.94661" lon="174.60615">
+      <ele>225.663</ele>
+      <time>2026-04-10T23:09:15Z</time>
+      <name>Turn 499</name>
+    </trkpt>
+    <trkpt lat="-36.94671" lon="174.60625">
+      <ele>224.688</ele>
+      <time>2026-04-10T23:09:20Z</time>
+      <name>Turn 500</name>
+    </trkpt>
+    <trkpt lat="-36.94676" lon="174.60645">
+      <ele>222.858</ele>
+      <time>2026-04-10T23:09:26Z</time>
+      <name>Turn 501</name>
+    </trkpt>
+    <trkpt lat="-36.94676" lon="174.60658">
+      <ele>221.143</ele>
+      <time>2026-04-10T23:09:30Z</time>
+      <name>Turn 502</name>
+    </trkpt>
+    <trkpt lat="-36.94696" lon="174.60671">
+      <ele>218.56</ele>
+      <time>2026-04-10T23:09:39Z</time>
+      <name>Turn 503</name>
+    </trkpt>
+    <trkpt lat="-36.94703" lon="174.6068">
+      <ele>214.348</ele>
+      <time>2026-04-10T23:09:42Z</time>
+      <name>Turn 504</name>
+    </trkpt>
+    <trkpt lat="-36.94708" lon="174.60684">
+      <ele>211.864</ele>
+      <time>2026-04-10T23:09:45Z</time>
+      <name>Turn 505</name>
+    </trkpt>
+    <trkpt lat="-36.94706" lon="174.60706">
+      <ele>208.419</ele>
+      <time>2026-04-10T23:09:51Z</time>
+      <name>Turn 506</name>
+    </trkpt>
+    <trkpt lat="-36.94698" lon="174.60738">
+      <ele>206.375</ele>
+      <time>2026-04-10T23:10:01Z</time>
+      <name>Turn 507</name>
+    </trkpt>
+    <trkpt lat="-36.94685" lon="174.60773">
+      <ele>205.158</ele>
+      <time>2026-04-10T23:10:12Z</time>
+      <name>Turn 508</name>
+    </trkpt>
+    <trkpt lat="-36.94661" lon="174.60827">
+      <ele>203.998</ele>
+      <time>2026-04-10T23:10:31Z</time>
+      <name>Turn 509</name>
+    </trkpt>
+    <trkpt lat="-36.94643" lon="174.60886">
+      <ele>203.083</ele>
+      <time>2026-04-10T23:10:50Z</time>
+      <name>Turn 510</name>
+    </trkpt>
+    <trkpt lat="-36.94655" lon="174.60915">
+      <ele>199.79</ele>
+      <time>2026-04-10T23:10:59Z</time>
+      <name>Turn 511</name>
+    </trkpt>
+    <trkpt lat="-36.94655" lon="174.60916">
+      <ele>199.784</ele>
+      <time>2026-04-10T23:11:00Z</time>
+      <name>Turn 512</name>
+    </trkpt>
+    <trkpt lat="-36.94655" lon="174.60928">
+      <ele>200.359</ele>
+      <time>2026-04-10T23:11:03Z</time>
+      <name>Turn 513</name>
+    </trkpt>
+    <trkpt lat="-36.94653" lon="174.60937">
+      <ele>201.52</ele>
+      <time>2026-04-10T23:11:06Z</time>
+      <name>Turn 514</name>
+    </trkpt>
+    <trkpt lat="-36.94648" lon="174.6095">
+      <ele>204.054</ele>
+      <time>2026-04-10T23:11:10Z</time>
+      <name>Turn 515</name>
+    </trkpt>
+    <trkpt lat="-36.94649" lon="174.6096">
+      <ele>204.276</ele>
+      <time>2026-04-10T23:11:13Z</time>
+      <name>Turn 516</name>
+    </trkpt>
+    <trkpt lat="-36.94654" lon="174.6097">
+      <ele>202.9</ele>
+      <time>2026-04-10T23:11:17Z</time>
+      <name>Turn 517</name>
+    </trkpt>
+    <trkpt lat="-36.9466" lon="174.60982">
+      <ele>201.964</ele>
+      <time>2026-04-10T23:11:21Z</time>
+      <name>Turn 518</name>
+    </trkpt>
+    <trkpt lat="-36.94662" lon="174.60995">
+      <ele>202.99</ele>
+      <time>2026-04-10T23:11:25Z</time>
+      <name>Turn 519</name>
+    </trkpt>
+    <trkpt lat="-36.94661" lon="174.61013">
+      <ele>204.785</ele>
+      <time>2026-04-10T23:11:30Z</time>
+      <name>Turn 520</name>
+    </trkpt>
+    <trkpt lat="-36.94659" lon="174.61032">
+      <ele>206.318</ele>
+      <time>2026-04-10T23:11:36Z</time>
+      <name>Turn 521</name>
+    </trkpt>
+    <trkpt lat="-36.94662" lon="174.61042">
+      <ele>205.77</ele>
+      <time>2026-04-10T23:11:39Z</time>
+      <name>Turn 522</name>
+    </trkpt>
+    <trkpt lat="-36.94665" lon="174.6106">
+      <ele>205.58</ele>
+      <time>2026-04-10T23:11:44Z</time>
+      <name>Turn 523</name>
+    </trkpt>
+    <trkpt lat="-36.94666" lon="174.61075">
+      <ele>205.868</ele>
+      <time>2026-04-10T23:11:49Z</time>
+      <name>Turn 524</name>
+    </trkpt>
+    <trkpt lat="-36.94668" lon="174.61093">
+      <ele>206.564</ele>
+      <time>2026-04-10T23:11:54Z</time>
+      <name>Turn 525</name>
+    </trkpt>
+    <trkpt lat="-36.94672" lon="174.61116">
+      <ele>207.324</ele>
+      <time>2026-04-10T23:12:01Z</time>
+      <name>Turn 526</name>
+    </trkpt>
+    <trkpt lat="-36.94672" lon="174.61128">
+      <ele>207.921</ele>
+      <time>2026-04-10T23:12:05Z</time>
+      <name>Turn 527</name>
+    </trkpt>
+    <trkpt lat="-36.94673" lon="174.61143">
+      <ele>208.405</ele>
+      <time>2026-04-10T23:12:09Z</time>
+      <name>Turn 528</name>
+    </trkpt>
+    <trkpt lat="-36.94672" lon="174.61155">
+      <ele>209.401</ele>
+      <time>2026-04-10T23:12:13Z</time>
+      <name>Turn 529</name>
+    </trkpt>
+    <trkpt lat="-36.94668" lon="174.61165">
+      <ele>211.406</ele>
+      <time>2026-04-10T23:12:16Z</time>
+      <name>Turn 530</name>
+    </trkpt>
+    <trkpt lat="-36.94666" lon="174.61178">
+      <ele>211.05</ele>
+      <time>2026-04-10T23:12:20Z</time>
+      <name>Turn 531</name>
+    </trkpt>
+    <trkpt lat="-36.94668" lon="174.61192">
+      <ele>209.871</ele>
+      <time>2026-04-10T23:12:24Z</time>
+      <name>Turn 532</name>
+    </trkpt>
+    <trkpt lat="-36.94671" lon="174.61206">
+      <ele>208.297</ele>
+      <time>2026-04-10T23:12:29Z</time>
+      <name>Turn 533</name>
+    </trkpt>
+    <trkpt lat="-36.94676" lon="174.61222">
+      <ele>206.333</ele>
+      <time>2026-04-10T23:12:34Z</time>
+      <name>Turn 534</name>
+    </trkpt>
+    <trkpt lat="-36.9468" lon="174.61233">
+      <ele>205.817</ele>
+      <time>2026-04-10T23:12:37Z</time>
+      <name>Turn 535</name>
+    </trkpt>
+    <trkpt lat="-36.9468" lon="174.61245">
+      <ele>206.059</ele>
+      <time>2026-04-10T23:12:41Z</time>
+      <name>Turn 536</name>
+    </trkpt>
+    <trkpt lat="-36.94682" lon="174.61256">
+      <ele>206.061</ele>
+      <time>2026-04-10T23:12:44Z</time>
+      <name>Turn 537</name>
+    </trkpt>
+    <trkpt lat="-36.94684" lon="174.61268">
+      <ele>206.625</ele>
+      <time>2026-04-10T23:12:48Z</time>
+      <name>Turn 538</name>
+    </trkpt>
+    <trkpt lat="-36.94686" lon="174.61278">
+      <ele>207.197</ele>
+      <time>2026-04-10T23:12:51Z</time>
+      <name>Turn 539</name>
+    </trkpt>
+    <trkpt lat="-36.94687" lon="174.61287">
+      <ele>206.254</ele>
+      <time>2026-04-10T23:12:54Z</time>
+      <name>Turn 540</name>
+    </trkpt>
+    <trkpt lat="-36.94687" lon="174.61292">
+      <ele>205.81</ele>
+      <time>2026-04-10T23:12:55Z</time>
+      <name>Turn 541</name>
+    </trkpt>
+    <trkpt lat="-36.94687" lon="174.61299">
+      <ele>205.19</ele>
+      <time>2026-04-10T23:12:57Z</time>
+      <name>Turn 542</name>
+    </trkpt>
+    <trkpt lat="-36.94688" lon="174.61311">
+      <ele>203.818</ele>
+      <time>2026-04-10T23:13:01Z</time>
+      <name>Turn 543</name>
+    </trkpt>
+    <trkpt lat="-36.94687" lon="174.61322">
+      <ele>202.789</ele>
+      <time>2026-04-10T23:13:04Z</time>
+      <name>Turn 544</name>
+    </trkpt>
+    <trkpt lat="-36.94692" lon="174.61331">
+      <ele>201.374</ele>
+      <time>2026-04-10T23:13:07Z</time>
+      <name>Turn 545</name>
+    </trkpt>
+    <trkpt lat="-36.94692" lon="174.61331">
+      <ele>201.374</ele>
+      <time>2026-04-10T23:13:07Z</time>
+      <name>Turn 546</name>
+    </trkpt>
+    <trkpt lat="-36.94694" lon="174.6134">
+      <ele>200.312</ele>
+      <time>2026-04-10T23:13:10Z</time>
+      <name>Turn 547</name>
+    </trkpt>
+    <trkpt lat="-36.94691" lon="174.61351">
+      <ele>199.34</ele>
+      <time>2026-04-10T23:13:14Z</time>
+      <name>Turn 548</name>
+    </trkpt>
+    <trkpt lat="-36.94687" lon="174.6136">
+      <ele>198.656</ele>
+      <time>2026-04-10T23:13:17Z</time>
+      <name>Turn 549</name>
+    </trkpt>
+    <trkpt lat="-36.94683" lon="174.61371">
+      <ele>197.044</ele>
+      <time>2026-04-10T23:13:20Z</time>
+      <name>Turn 550</name>
+    </trkpt>
+    <trkpt lat="-36.9468" lon="174.61376">
+      <ele>196.36</ele>
+      <time>2026-04-10T23:13:22Z</time>
+      <name>Turn 551</name>
+    </trkpt>
+    <trkpt lat="-36.94678" lon="174.61381">
+      <ele>195.604</ele>
+      <time>2026-04-10T23:13:24Z</time>
+      <name>Turn 552</name>
+    </trkpt>
+    <trkpt lat="-36.94685" lon="174.61376">
+      <ele>196.0</ele>
+      <time>2026-04-10T23:13:27Z</time>
+      <name>Turn 553</name>
+    </trkpt>
+    <trkpt lat="-36.94693" lon="174.61373">
+      <ele>195.964</ele>
+      <time>2026-04-10T23:13:30Z</time>
+      <name>Turn 554</name>
+    </trkpt>
+    <trkpt lat="-36.947" lon="174.61369">
+      <ele>195.037</ele>
+      <time>2026-04-10T23:13:33Z</time>
+      <name>Turn 555</name>
+    </trkpt>
+    <trkpt lat="-36.94706" lon="174.61369">
+      <ele>193.37</ele>
+      <time>2026-04-10T23:13:35Z</time>
+      <name>Turn 556</name>
+    </trkpt>
+    <trkpt lat="-36.947" lon="174.61376">
+      <ele>193.827</ele>
+      <time>2026-04-10T23:13:38Z</time>
+      <name>Turn 557</name>
+    </trkpt>
+    <trkpt lat="-36.94692" lon="174.61384">
+      <ele>194.056</ele>
+      <time>2026-04-10T23:13:42Z</time>
+      <name>Turn 558</name>
+    </trkpt>
+    <trkpt lat="-36.94688" lon="174.61392">
+      <ele>193.016</ele>
+      <time>2026-04-10T23:13:45Z</time>
+      <name>Turn 559</name>
+    </trkpt>
+    <trkpt lat="-36.94684" lon="174.61407">
+      <ele>191.144</ele>
+      <time>2026-04-10T23:13:49Z</time>
+      <name>Turn 560</name>
+    </trkpt>
+    <trkpt lat="-36.94679" lon="174.61422">
+      <ele>189.558</ele>
+      <time>2026-04-10T23:13:54Z</time>
+      <name>Turn 561</name>
+    </trkpt>
+    <trkpt lat="-36.94676" lon="174.61436">
+      <ele>188.468</ele>
+      <time>2026-04-10T23:13:58Z</time>
+      <name>Turn 562</name>
+    </trkpt>
+    <trkpt lat="-36.94676" lon="174.61452">
+      <ele>186.929</ele>
+      <time>2026-04-10T23:14:03Z</time>
+      <name>Turn 563</name>
+    </trkpt>
+    <trkpt lat="-36.9468" lon="174.61464">
+      <ele>184.996</ele>
+      <time>2026-04-10T23:14:07Z</time>
+      <name>Turn 564</name>
+    </trkpt>
+    <trkpt lat="-36.94686" lon="174.61474">
+      <ele>182.715</ele>
+      <time>2026-04-10T23:14:11Z</time>
+      <name>Turn 565</name>
+    </trkpt>
+    <trkpt lat="-36.94691" lon="174.61485">
+      <ele>180.881</ele>
+      <time>2026-04-10T23:14:14Z</time>
+      <name>Turn 566</name>
+    </trkpt>
+    <trkpt lat="-36.94692" lon="174.61497">
+      <ele>179.822</ele>
+      <time>2026-04-10T23:14:18Z</time>
+      <name>Turn 567</name>
+    </trkpt>
+    <trkpt lat="-36.94693" lon="174.61511">
+      <ele>178.572</ele>
+      <time>2026-04-10T23:14:22Z</time>
+      <name>Turn 568</name>
+    </trkpt>
+    <trkpt lat="-36.94691" lon="174.61523">
+      <ele>178.212</ele>
+      <time>2026-04-10T23:14:26Z</time>
+      <name>Turn 569</name>
+    </trkpt>
+    <trkpt lat="-36.94688" lon="174.61536">
+      <ele>178.624</ele>
+      <time>2026-04-10T23:14:30Z</time>
+      <name>Turn 570</name>
+    </trkpt>
+    <trkpt lat="-36.9469" lon="174.61547">
+      <ele>178.12</ele>
+      <time>2026-04-10T23:14:33Z</time>
+      <name>Turn 571</name>
+    </trkpt>
+    <trkpt lat="-36.9469" lon="174.61561">
+      <ele>178.481</ele>
+      <time>2026-04-10T23:14:37Z</time>
+      <name>Turn 572</name>
+    </trkpt>
+    <trkpt lat="-36.94691" lon="174.61574">
+      <ele>179.114</ele>
+      <time>2026-04-10T23:14:41Z</time>
+      <name>Turn 573</name>
+    </trkpt>
+    <trkpt lat="-36.94693" lon="174.61587">
+      <ele>179.583</ele>
+      <time>2026-04-10T23:14:45Z</time>
+      <name>Turn 574</name>
+    </trkpt>
+    <trkpt lat="-36.94697" lon="174.61603">
+      <ele>180.086</ele>
+      <time>2026-04-10T23:14:50Z</time>
+      <name>Turn 575</name>
+    </trkpt>
+    <trkpt lat="-36.94701" lon="174.61614">
+      <ele>180.763</ele>
+      <time>2026-04-10T23:14:54Z</time>
+      <name>Turn 576</name>
+    </trkpt>
+    <trkpt lat="-36.94704" lon="174.61627">
+      <ele>182.434</ele>
+      <time>2026-04-10T23:14:58Z</time>
+      <name>Turn 577</name>
+    </trkpt>
+    <trkpt lat="-36.94705" lon="174.61639">
+      <ele>184.116</ele>
+      <time>2026-04-10T23:15:01Z</time>
+      <name>Turn 578</name>
+    </trkpt>
+    <trkpt lat="-36.94707" lon="174.61646">
+      <ele>184.764</ele>
+      <time>2026-04-10T23:15:03Z</time>
+      <name>Turn 579</name>
+    </trkpt>
+    <trkpt lat="-36.94713" lon="174.61651">
+      <ele>184.404</ele>
+      <time>2026-04-10T23:15:06Z</time>
+      <name>Turn 580</name>
+    </trkpt>
+    <trkpt lat="-36.9473" lon="174.61654">
+      <ele>182.744</ele>
+      <time>2026-04-10T23:15:13Z</time>
+      <name>Turn 581</name>
+    </trkpt>
+    <trkpt lat="-36.94749" lon="174.61655">
+      <ele>181.797</ele>
+      <time>2026-04-10T23:15:20Z</time>
+      <name>Turn 582</name>
+    </trkpt>
+    <trkpt lat="-36.94774" lon="174.61654">
+      <ele>181.632</ele>
+      <time>2026-04-10T23:15:29Z</time>
+      <name>Turn 583</name>
+    </trkpt>
+    <trkpt lat="-36.94795" lon="174.61646">
+      <ele>179.528</ele>
+      <time>2026-04-10T23:15:37Z</time>
+      <name>Turn 584</name>
+    </trkpt>
+    <trkpt lat="-36.94815" lon="174.61624">
+      <ele>176.038</ele>
+      <time>2026-04-10T23:15:47Z</time>
+      <name>Turn 585</name>
+    </trkpt>
+    <trkpt lat="-36.94824" lon="174.61608">
+      <ele>174.328</ele>
+      <time>2026-04-10T23:15:53Z</time>
+      <name>Turn 586</name>
+    </trkpt>
+    <trkpt lat="-36.94828" lon="174.61592">
+      <ele>172.744</ele>
+      <time>2026-04-10T23:15:58Z</time>
+      <name>Turn 587</name>
+    </trkpt>
+    <trkpt lat="-36.94847" lon="174.61559">
+      <ele>169.925</ele>
+      <time>2026-04-10T23:16:10Z</time>
+      <name>Turn 588</name>
+    </trkpt>
+    <trkpt lat="-36.94858" lon="174.61553">
+      <ele>169.612</ele>
+      <time>2026-04-10T23:16:14Z</time>
+      <name>Turn 589</name>
+    </trkpt>
+    <trkpt lat="-36.94887" lon="174.61555">
+      <ele>169.884</ele>
+      <time>2026-04-10T23:16:25Z</time>
+      <name>Turn 590</name>
+    </trkpt>
+    <trkpt lat="-36.94897" lon="174.61561">
+      <ele>170.745</ele>
+      <time>2026-04-10T23:16:29Z</time>
+      <name>Turn 591</name>
+    </trkpt>
+    <trkpt lat="-36.94921" lon="174.6158">
+      <ele>173.831</ele>
+      <time>2026-04-10T23:16:39Z</time>
+      <name>Turn 592</name>
+    </trkpt>
+    <trkpt lat="-36.9493" lon="174.61586">
+      <ele>173.752</ele>
+      <time>2026-04-10T23:16:43Z</time>
+      <name>Turn 593</name>
+    </trkpt>
+    <trkpt lat="-36.94947" lon="174.61591">
+      <ele>172.041</ele>
+      <time>2026-04-10T23:16:50Z</time>
+      <name>Turn 594</name>
+    </trkpt>
+    <trkpt lat="-36.94966" lon="174.61587">
+      <ele>168.179</ele>
+      <time>2026-04-10T23:16:57Z</time>
+      <name>Turn 595</name>
+    </trkpt>
+    <trkpt lat="-36.94975" lon="174.61589">
+      <ele>165.859</ele>
+      <time>2026-04-10T23:17:00Z</time>
+      <name>Turn 596</name>
+    </trkpt>
+    <trkpt lat="-36.94991" lon="174.61604">
+      <ele>158.558</ele>
+      <time>2026-04-10T23:17:08Z</time>
+      <name>Turn 597</name>
+    </trkpt>
+    <trkpt lat="-36.94999" lon="174.61615">
+      <ele>154.323</ele>
+      <time>2026-04-10T23:17:12Z</time>
+      <name>Turn 598</name>
+    </trkpt>
+    <trkpt lat="-36.94998" lon="174.61631">
+      <ele>154.168</ele>
+      <time>2026-04-10T23:17:17Z</time>
+      <name>Turn 599</name>
+    </trkpt>
+    <trkpt lat="-36.94976" lon="174.61646">
+      <ele>162.379</ele>
+      <time>2026-04-10T23:17:26Z</time>
+      <name>Turn 600</name>
+    </trkpt>
+    <trkpt lat="-36.94946" lon="174.61681">
+      <ele>166.858</ele>
+      <time>2026-04-10T23:17:41Z</time>
+      <name>Turn 601</name>
+    </trkpt>
+    <trkpt lat="-36.94935" lon="174.61703">
+      <ele>167.993</ele>
+      <time>2026-04-10T23:17:49Z</time>
+      <name>Turn 602</name>
+    </trkpt>
+    <trkpt lat="-36.94931" lon="174.61736">
+      <ele>167.8</ele>
+      <time>2026-04-10T23:17:59Z</time>
+      <name>Turn 603</name>
+    </trkpt>
+    <trkpt lat="-36.94926" lon="174.61748">
+      <ele>169.416</ele>
+      <time>2026-04-10T23:18:03Z</time>
+      <name>Turn 604</name>
+    </trkpt>
+    <trkpt lat="-36.94909" lon="174.61771">
+      <ele>172.771</ele>
+      <time>2026-04-10T23:18:12Z</time>
+      <name>Turn 605</name>
+    </trkpt>
+    <trkpt lat="-36.94905" lon="174.61793">
+      <ele>170.5</ele>
+      <time>2026-04-10T23:18:19Z</time>
+      <name>Turn 606</name>
+    </trkpt>
+    <trkpt lat="-36.94893" lon="174.61832">
+      <ele>172.42</ele>
+      <time>2026-04-10T23:18:31Z</time>
+      <name>Turn 607</name>
+    </trkpt>
+    <trkpt lat="-36.94897" lon="174.61873">
+      <ele>171.58</ele>
+      <time>2026-04-10T23:18:44Z</time>
+      <name>Turn 608</name>
+    </trkpt>
+    <trkpt lat="-36.94902" lon="174.61884">
+      <ele>170.836</ele>
+      <time>2026-04-10T23:18:47Z</time>
+      <name>Turn 609</name>
+    </trkpt>
+    <trkpt lat="-36.94923" lon="174.61891">
+      <ele>167.672</ele>
+      <time>2026-04-10T23:18:55Z</time>
+      <name>Turn 610</name>
+    </trkpt>
+    <trkpt lat="-36.94953" lon="174.61881">
+      <ele>163.737</ele>
+      <time>2026-04-10T23:19:07Z</time>
+      <name>Turn 611</name>
+    </trkpt>
+    <trkpt lat="-36.9498" lon="174.61871">
+      <ele>160.348</ele>
+      <time>2026-04-10T23:19:17Z</time>
+      <name>Turn 612</name>
+    </trkpt>
+    <trkpt lat="-36.94993" lon="174.61868">
+      <ele>157.058</ele>
+      <time>2026-04-10T23:19:22Z</time>
+      <name>Turn 613</name>
+    </trkpt>
+    <trkpt lat="-36.94999" lon="174.61871">
+      <ele>156.685</ele>
+      <time>2026-04-10T23:19:24Z</time>
+      <name>Turn 614</name>
+    </trkpt>
+    <trkpt lat="-36.95009" lon="174.61899">
+      <ele>159.314</ele>
+      <time>2026-04-10T23:19:34Z</time>
+      <name>Turn 615</name>
+    </trkpt>
+    <trkpt lat="-36.9502" lon="174.61929">
+      <ele>157.057</ele>
+      <time>2026-04-10T23:19:43Z</time>
+      <name>Turn 616</name>
+    </trkpt>
+    <trkpt lat="-36.9503" lon="174.61961">
+      <ele>154.7</ele>
+      <time>2026-04-10T23:19:54Z</time>
+      <name>Turn 617</name>
+    </trkpt>
+    <trkpt lat="-36.9504" lon="174.62002">
+      <ele>153.935</ele>
+      <time>2026-04-10T23:20:06Z</time>
+      <name>Turn 618</name>
+    </trkpt>
+    <trkpt lat="-36.95041" lon="174.62007">
+      <ele>153.696</ele>
+      <time>2026-04-10T23:20:08Z</time>
+      <name>Turn 619</name>
+    </trkpt>
+    <trkpt lat="-36.95031" lon="174.62016">
+      <ele>158.576</ele>
+      <time>2026-04-10T23:20:12Z</time>
+      <name>Turn 620</name>
+    </trkpt>
+    <trkpt lat="-36.95009" lon="174.62027">
+      <ele>168.845</ele>
+      <time>2026-04-10T23:20:21Z</time>
+      <name>Turn 621</name>
+    </trkpt>
+    <trkpt lat="-36.9501" lon="174.62043">
+      <ele>168.364</ele>
+      <time>2026-04-10T23:20:26Z</time>
+      <name>Turn 622</name>
+    </trkpt>
+    <trkpt lat="-36.95052" lon="174.62114">
+      <ele>151.645</ele>
+      <time>2026-04-10T23:20:52Z</time>
+      <name>Turn 623</name>
+    </trkpt>
+    <trkpt lat="-36.95051" lon="174.62114">
+      <ele>151.915</ele>
+      <time>2026-04-10T23:20:52Z</time>
+      <name>Turn 624</name>
+    </trkpt>
+    <trkpt lat="-36.95035" lon="174.62124">
+      <ele>153.811</ele>
+      <time>2026-04-10T23:20:59Z</time>
+      <name>Turn 625</name>
+    </trkpt>
+    <trkpt lat="-36.95029" lon="174.62127">
+      <ele>154.198</ele>
+      <time>2026-04-10T23:21:01Z</time>
+      <name>Turn 626</name>
+    </trkpt>
+    <trkpt lat="-36.95012" lon="174.62129">
+      <ele>157.863</ele>
+      <time>2026-04-10T23:21:08Z</time>
+      <name>Turn 627</name>
+    </trkpt>
+    <trkpt lat="-36.94998" lon="174.62137">
+      <ele>157.969</ele>
+      <time>2026-04-10T23:21:14Z</time>
+      <name>Turn 628</name>
+    </trkpt>
+    <trkpt lat="-36.94988" lon="174.62138">
+      <ele>158.662</ele>
+      <time>2026-04-10T23:21:17Z</time>
+      <name>Turn 629</name>
+    </trkpt>
+    <trkpt lat="-36.94978" lon="174.62128">
+      <ele>163.998</ele>
+      <time>2026-04-10T23:21:22Z</time>
+      <name>Turn 630</name>
+    </trkpt>
+    <trkpt lat="-36.94966" lon="174.62118">
+      <ele>169.752</ele>
+      <time>2026-04-10T23:21:27Z</time>
+      <name>Turn 631</name>
+    </trkpt>
+    <trkpt lat="-36.94951" lon="174.62116">
+      <ele>172.314</ele>
+      <time>2026-04-10T23:21:33Z</time>
+      <name>Turn 632</name>
+    </trkpt>
+    <trkpt lat="-36.94932" lon="174.62117">
+      <ele>171.324</ele>
+      <time>2026-04-10T23:21:40Z</time>
+      <name>Turn 633</name>
+    </trkpt>
+    <trkpt lat="-36.94914" lon="174.62122">
+      <ele>167.729</ele>
+      <time>2026-04-10T23:21:47Z</time>
+      <name>Turn 634</name>
+    </trkpt>
+    <trkpt lat="-36.94893" lon="174.62115">
+      <ele>171.687</ele>
+      <time>2026-04-10T23:21:55Z</time>
+      <name>Turn 635</name>
+    </trkpt>
+    <trkpt lat="-36.9488" lon="174.62113">
+      <ele>173.664</ele>
+      <time>2026-04-10T23:22:00Z</time>
+      <name>Turn 636</name>
+    </trkpt>
+    <trkpt lat="-36.94856" lon="174.62123">
+      <ele>170.856</ele>
+      <time>2026-04-10T23:22:09Z</time>
+      <name>Turn 637</name>
+    </trkpt>
+    <trkpt lat="-36.94834" lon="174.62135">
+      <ele>168.314</ele>
+      <time>2026-04-10T23:22:18Z</time>
+      <name>Turn 638</name>
+    </trkpt>
+    <trkpt lat="-36.94811" lon="174.62135">
+      <ele>169.429</ele>
+      <time>2026-04-10T23:22:26Z</time>
+      <name>Turn 639</name>
+    </trkpt>
+    <trkpt lat="-36.94783" lon="174.62133">
+      <ele>168.92</ele>
+      <time>2026-04-10T23:22:37Z</time>
+      <name>Turn 640</name>
+    </trkpt>
+    <trkpt lat="-36.94762" lon="174.6213">
+      <ele>166.796</ele>
+      <time>2026-04-10T23:22:45Z</time>
+      <name>Turn 641</name>
+    </trkpt>
+    <trkpt lat="-36.94745" lon="174.6212">
+      <ele>169.578</ele>
+      <time>2026-04-10T23:22:52Z</time>
+      <name>Turn 642</name>
+    </trkpt>
+    <trkpt lat="-36.94728" lon="174.62127">
+      <ele>166.445</ele>
+      <time>2026-04-10T23:22:58Z</time>
+      <name>Turn 643</name>
+    </trkpt>
+    <trkpt lat="-36.94704" lon="174.62139">
+      <ele>164.24</ele>
+      <time>2026-04-10T23:23:08Z</time>
+      <name>Turn 644</name>
+    </trkpt>
+    <trkpt lat="-36.94679" lon="174.62146">
+      <ele>166.805</ele>
+      <time>2026-04-10T23:23:17Z</time>
+      <name>Turn 645</name>
+    </trkpt>
+    <trkpt lat="-36.94653" lon="174.62145">
+      <ele>173.464</ele>
+      <time>2026-04-10T23:23:27Z</time>
+      <name>Turn 646</name>
+    </trkpt>
+    <trkpt lat="-36.9464" lon="174.62155">
+      <ele>173.5</ele>
+      <time>2026-04-10T23:23:32Z</time>
+      <name>Turn 647</name>
+    </trkpt>
+    <trkpt lat="-36.94622" lon="174.62181">
+      <ele>169.743</ele>
+      <time>2026-04-10T23:23:43Z</time>
+      <name>Turn 648</name>
+    </trkpt>
+    <trkpt lat="-36.9461" lon="174.6221">
+      <ele>166.405</ele>
+      <time>2026-04-10T23:23:52Z</time>
+      <name>Turn 649</name>
+    </trkpt>
+    <trkpt lat="-36.94597" lon="174.62243">
+      <ele>164.212</ele>
+      <time>2026-04-10T23:24:03Z</time>
+      <name>Turn 650</name>
+    </trkpt>
+    <trkpt lat="-36.94585" lon="174.62263">
+      <ele>166.52</ele>
+      <time>2026-04-10T23:24:11Z</time>
+      <name>Turn 651</name>
+    </trkpt>
+    <trkpt lat="-36.94575" lon="174.62282">
+      <ele>168.346</ele>
+      <time>2026-04-10T23:24:17Z</time>
+      <name>Turn 652</name>
+    </trkpt>
+    <trkpt lat="-36.94567" lon="174.62309">
+      <ele>166.745</ele>
+      <time>2026-04-10T23:24:26Z</time>
+      <name>Turn 653</name>
+    </trkpt>
+    <trkpt lat="-36.94555" lon="174.62343">
+      <ele>165.387</ele>
+      <time>2026-04-10T23:24:37Z</time>
+      <name>Turn 654</name>
+    </trkpt>
+    <trkpt lat="-36.94546" lon="174.62368">
+      <ele>162.997</ele>
+      <time>2026-04-10T23:24:45Z</time>
+      <name>Turn 655</name>
+    </trkpt>
+    <trkpt lat="-36.9453" lon="174.62397">
+      <ele>160.409</ele>
+      <time>2026-04-10T23:24:56Z</time>
+      <name>Turn 656</name>
+    </trkpt>
+    <trkpt lat="-36.94527" lon="174.62419">
+      <ele>157.748</ele>
+      <time>2026-04-10T23:25:02Z</time>
+      <name>Turn 657</name>
+    </trkpt>
+    <trkpt lat="-36.9452" lon="174.62445">
+      <ele>154.549</ele>
+      <time>2026-04-10T23:25:10Z</time>
+      <name>Turn 658</name>
+    </trkpt>
+    <trkpt lat="-36.94518" lon="174.62447">
+      <ele>154.495</ele>
+      <time>2026-04-10T23:25:11Z</time>
+      <name>Turn 659</name>
+    </trkpt>
+    <trkpt lat="-36.94502" lon="174.6246">
+      <ele>154.169</ele>
+      <time>2026-04-10T23:25:18Z</time>
+      <name>Turn 660</name>
+    </trkpt>
+    <trkpt lat="-36.94477" lon="174.62465">
+      <ele>155.995</ele>
+      <time>2026-04-10T23:25:28Z</time>
+      <name>Turn 661</name>
+    </trkpt>
+    <trkpt lat="-36.94442" lon="174.6246">
+      <ele>159.076</ele>
+      <time>2026-04-10T23:25:41Z</time>
+      <name>Turn 662</name>
+    </trkpt>
+    <trkpt lat="-36.94441" lon="174.6246">
+      <ele>159.172</ele>
+      <time>2026-04-10T23:25:41Z</time>
+      <name>Turn 663</name>
+    </trkpt>
+    <trkpt lat="-36.94418" lon="174.62451">
+      <ele>164.03</ele>
+      <time>2026-04-10T23:25:50Z</time>
+      <name>Turn 664</name>
+    </trkpt>
+    <trkpt lat="-36.94386" lon="174.62451">
+      <ele>165.876</ele>
+      <time>2026-04-10T23:26:02Z</time>
+      <name>Turn 665</name>
+    </trkpt>
+    <trkpt lat="-36.94359" lon="174.62452">
+      <ele>165.593</ele>
+      <time>2026-04-10T23:26:12Z</time>
+      <name>Turn 666</name>
+    </trkpt>
+    <trkpt lat="-36.9433" lon="174.6245">
+      <ele>167.008</ele>
+      <time>2026-04-10T23:26:23Z</time>
+      <name>Turn 667</name>
+    </trkpt>
+    <trkpt lat="-36.9431" lon="174.62457">
+      <ele>167.057</ele>
+      <time>2026-04-10T23:26:30Z</time>
+      <name>Turn 668</name>
+    </trkpt>
+    <trkpt lat="-36.94293" lon="174.62462">
+      <ele>167.488</ele>
+      <time>2026-04-10T23:26:37Z</time>
+      <name>Turn 669</name>
+    </trkpt>
+    <trkpt lat="-36.94276" lon="174.62478">
+      <ele>164.992</ele>
+      <time>2026-04-10T23:26:45Z</time>
+      <name>Turn 670</name>
+    </trkpt>
+    <trkpt lat="-36.94261" lon="174.62501">
+      <ele>163.098</ele>
+      <time>2026-04-10T23:26:53Z</time>
+      <name>Turn 671</name>
+    </trkpt>
+    <trkpt lat="-36.94255" lon="174.62524">
+      <ele>161.44</ele>
+      <time>2026-04-10T23:27:01Z</time>
+      <name>Turn 672</name>
+    </trkpt>
+    <trkpt lat="-36.94251" lon="174.62549">
+      <ele>161.048</ele>
+      <time>2026-04-10T23:27:08Z</time>
+      <name>Turn 673</name>
+    </trkpt>
+    <trkpt lat="-36.9425" lon="174.62561">
+      <ele>161.0</ele>
+      <time>2026-04-10T23:27:12Z</time>
+      <name>Turn 674</name>
+    </trkpt>
+    <trkpt lat="-36.94249" lon="174.62571">
+      <ele>161.216</ele>
+      <time>2026-04-10T23:27:15Z</time>
+      <name>Turn 675</name>
+    </trkpt>
+    <trkpt lat="-36.94253" lon="174.62599">
+      <ele>160.521</ele>
+      <time>2026-04-10T23:27:23Z</time>
+      <name>Turn 676</name>
+    </trkpt>
+    <trkpt lat="-36.94259" lon="174.62622">
+      <ele>159.566</ele>
+      <time>2026-04-10T23:27:30Z</time>
+      <name>Turn 677</name>
+    </trkpt>
+    <trkpt lat="-36.94271" lon="174.62645">
+      <ele>158.708</ele>
+      <time>2026-04-10T23:27:39Z</time>
+      <name>Turn 678</name>
+    </trkpt>
+    <trkpt lat="-36.94275" lon="174.62658">
+      <ele>158.888</ele>
+      <time>2026-04-10T23:27:43Z</time>
+      <name>Turn 679</name>
+    </trkpt>
+    <trkpt lat="-36.94279" lon="174.62669">
+      <ele>159.036</ele>
+      <time>2026-04-10T23:27:46Z</time>
+      <name>Turn 680</name>
+    </trkpt>
+    <trkpt lat="-36.94285" lon="174.62685">
+      <ele>159.228</ele>
+      <time>2026-04-10T23:27:52Z</time>
+      <name>Turn 681</name>
+    </trkpt>
+    <trkpt lat="-36.94296" lon="174.62709">
+      <ele>158.001</ele>
+      <time>2026-04-10T23:28:00Z</time>
+      <name>Turn 682</name>
+    </trkpt>
+    <trkpt lat="-36.94297" lon="174.62711">
+      <ele>157.791</ele>
+      <time>2026-04-10T23:28:00Z</time>
+      <name>Turn 683</name>
+    </trkpt>
+    <trkpt lat="-36.94301" lon="174.62733">
+      <ele>155.04</ele>
+      <time>2026-04-10T23:28:07Z</time>
+      <name>Turn 684</name>
+    </trkpt>
+    <trkpt lat="-36.94299" lon="174.62753">
+      <ele>151.514</ele>
+      <time>2026-04-10T23:28:13Z</time>
+      <name>Turn 685</name>
+    </trkpt>
+    <trkpt lat="-36.94294" lon="174.62758">
+      <ele>150.271</ele>
+      <time>2026-04-10T23:28:15Z</time>
+      <name>Turn 686</name>
+    </trkpt>
+    <trkpt lat="-36.9428" lon="174.62763">
+      <ele>150.866</ele>
+      <time>2026-04-10T23:28:21Z</time>
+      <name>Turn 687</name>
+    </trkpt>
+    <trkpt lat="-36.9427" lon="174.62766">
+      <ele>152.191</ele>
+      <time>2026-04-10T23:28:25Z</time>
+      <name>Turn 688</name>
+    </trkpt>
+    <trkpt lat="-36.94254" lon="174.62769">
+      <ele>154.934</ele>
+      <time>2026-04-10T23:28:31Z</time>
+      <name>Turn 689</name>
+    </trkpt>
+    <trkpt lat="-36.94235" lon="174.62773">
+      <ele>156.075</ele>
+      <time>2026-04-10T23:28:38Z</time>
+      <name>Turn 690</name>
+    </trkpt>
+    <trkpt lat="-36.94216" lon="174.62775">
+      <ele>158.278</ele>
+      <time>2026-04-10T23:28:45Z</time>
+      <name>Turn 691</name>
+    </trkpt>
+    <trkpt lat="-36.94197" lon="174.62775">
+      <ele>162.793</ele>
+      <time>2026-04-10T23:28:52Z</time>
+      <name>Turn 692</name>
+    </trkpt>
+    <trkpt lat="-36.94187" lon="174.62776">
+      <ele>164.345</ele>
+      <time>2026-04-10T23:28:56Z</time>
+      <name>Turn 693</name>
+    </trkpt>
+    <trkpt lat="-36.94175" lon="174.62784">
+      <ele>164.165</ele>
+      <time>2026-04-10T23:29:01Z</time>
+      <name>Turn 694</name>
+    </trkpt>
+    <trkpt lat="-36.9416" lon="174.628">
+      <ele>162.552</ele>
+      <time>2026-04-10T23:29:08Z</time>
+      <name>Turn 695</name>
+    </trkpt>
+    <trkpt lat="-36.94147" lon="174.62814">
+      <ele>161.59</ele>
+      <time>2026-04-10T23:29:14Z</time>
+      <name>Turn 696</name>
+    </trkpt>
+    <trkpt lat="-36.94127" lon="174.62844">
+      <ele>158.132</ele>
+      <time>2026-04-10T23:29:26Z</time>
+      <name>Turn 697</name>
+    </trkpt>
+    <trkpt lat="-36.9411" lon="174.62868">
+      <ele>157.654</ele>
+      <time>2026-04-10T23:29:35Z</time>
+      <name>Turn 698</name>
+    </trkpt>
+    <trkpt lat="-36.94095" lon="174.62888">
+      <ele>157.823</ele>
+      <time>2026-04-10T23:29:43Z</time>
+      <name>Turn 699</name>
+    </trkpt>
+    <trkpt lat="-36.94078" lon="174.62917">
+      <ele>156.166</ele>
+      <time>2026-04-10T23:29:54Z</time>
+      <name>Turn 700</name>
+    </trkpt>
+    <trkpt lat="-36.94072" lon="174.62928">
+      <ele>155.426</ele>
+      <time>2026-04-10T23:29:58Z</time>
+      <name>Turn 701</name>
+    </trkpt>
+    <trkpt lat="-36.94064" lon="174.62946">
+      <ele>153.932</ele>
+      <time>2026-04-10T23:30:04Z</time>
+      <name>Turn 702</name>
+    </trkpt>
+    <trkpt lat="-36.94051" lon="174.62965">
+      <ele>154.82</ele>
+      <time>2026-04-10T23:30:12Z</time>
+      <name>Turn 703</name>
+    </trkpt>
+    <trkpt lat="-36.94043" lon="174.62978">
+      <ele>155.75</ele>
+      <time>2026-04-10T23:30:16Z</time>
+      <name>Turn 704</name>
+    </trkpt>
+    <trkpt lat="-36.94034" lon="174.63006">
+      <ele>154.024</ele>
+      <time>2026-04-10T23:30:25Z</time>
+      <name>Turn 705</name>
+    </trkpt>
+    <trkpt lat="-36.94025" lon="174.6302">
+      <ele>152.856</ele>
+      <time>2026-04-10T23:30:31Z</time>
+      <name>Turn 706</name>
+    </trkpt>
+    <trkpt lat="-36.94013" lon="174.6303">
+      <ele>152.323</ele>
+      <time>2026-04-10T23:30:36Z</time>
+      <name>Turn 707</name>
+    </trkpt>
+    <trkpt lat="-36.93989" lon="174.63039">
+      <ele>151.904</ele>
+      <time>2026-04-10T23:30:45Z</time>
+      <name>Turn 708</name>
+    </trkpt>
+    <trkpt lat="-36.93974" lon="174.63048">
+      <ele>150.481</ele>
+      <time>2026-04-10T23:30:52Z</time>
+      <name>Turn 709</name>
+    </trkpt>
+    <trkpt lat="-36.9396" lon="174.63054">
+      <ele>151.175</ele>
+      <time>2026-04-10T23:30:57Z</time>
+      <name>Turn 710</name>
+    </trkpt>
+    <trkpt lat="-36.9394" lon="174.63059">
+      <ele>154.004</ele>
+      <time>2026-04-10T23:31:05Z</time>
+      <name>Turn 711</name>
+    </trkpt>
+    <trkpt lat="-36.93923" lon="174.63067">
+      <ele>155.696</ele>
+      <time>2026-04-10T23:31:11Z</time>
+      <name>Turn 712</name>
+    </trkpt>
+    <trkpt lat="-36.93911" lon="174.63075">
+      <ele>155.883</ele>
+      <time>2026-04-10T23:31:16Z</time>
+      <name>Turn 713</name>
+    </trkpt>
+    <trkpt lat="-36.93902" lon="174.63084">
+      <ele>155.48</ele>
+      <time>2026-04-10T23:31:21Z</time>
+      <name>Turn 714</name>
+    </trkpt>
+    <trkpt lat="-36.93898" lon="174.63089">
+      <ele>154.868</ele>
+      <time>2026-04-10T23:31:23Z</time>
+      <name>Turn 715</name>
+    </trkpt>
+    <trkpt lat="-36.9388" lon="174.63103">
+      <ele>155.321</ele>
+      <time>2026-04-10T23:31:31Z</time>
+      <name>Turn 716</name>
+    </trkpt>
+    <trkpt lat="-36.93855" lon="174.6312">
+      <ele>156.322</ele>
+      <time>2026-04-10T23:31:41Z</time>
+      <name>Turn 717</name>
+    </trkpt>
+    <trkpt lat="-36.93835" lon="174.63135">
+      <ele>155.674</ele>
+      <time>2026-04-10T23:31:50Z</time>
+      <name>Turn 718</name>
+    </trkpt>
+    <trkpt lat="-36.93809" lon="174.63145">
+      <ele>155.841</ele>
+      <time>2026-04-10T23:32:00Z</time>
+      <name>Turn 719</name>
+    </trkpt>
+    <trkpt lat="-36.93785" lon="174.63151">
+      <ele>157.377</ele>
+      <time>2026-04-10T23:32:09Z</time>
+      <name>Turn 720</name>
+    </trkpt>
+    <trkpt lat="-36.9377" lon="174.63161">
+      <ele>157.624</ele>
+      <time>2026-04-10T23:32:15Z</time>
+      <name>Turn 721</name>
+    </trkpt>
+    <trkpt lat="-36.93756" lon="174.63175">
+      <ele>155.92</ele>
+      <time>2026-04-10T23:32:22Z</time>
+      <name>Turn 722</name>
+    </trkpt>
+    <trkpt lat="-36.93739" lon="174.63195">
+      <ele>154.24</ele>
+      <time>2026-04-10T23:32:30Z</time>
+      <name>Turn 723</name>
+    </trkpt>
+    <trkpt lat="-36.93719" lon="174.6322">
+      <ele>155.585</ele>
+      <time>2026-04-10T23:32:41Z</time>
+      <name>Turn 724</name>
+    </trkpt>
+    <trkpt lat="-36.93702" lon="174.63239">
+      <ele>158.411</ele>
+      <time>2026-04-10T23:32:49Z</time>
+      <name>Turn 725</name>
+    </trkpt>
+    <trkpt lat="-36.93683" lon="174.63263">
+      <ele>160.793</ele>
+      <time>2026-04-10T23:32:59Z</time>
+      <name>Turn 726</name>
+    </trkpt>
+    <trkpt lat="-36.93673" lon="174.63282">
+      <ele>160.913</ele>
+      <time>2026-04-10T23:33:06Z</time>
+      <name>Turn 727</name>
+    </trkpt>
+    <trkpt lat="-36.93665" lon="174.63304">
+      <ele>160.471</ele>
+      <time>2026-04-10T23:33:13Z</time>
+      <name>Turn 728</name>
+    </trkpt>
+    <trkpt lat="-36.93659" lon="174.63329">
+      <ele>158.237</ele>
+      <time>2026-04-10T23:33:21Z</time>
+      <name>Turn 729</name>
+    </trkpt>
+    <trkpt lat="-36.93655" lon="174.6335">
+      <ele>157.416</ele>
+      <time>2026-04-10T23:33:27Z</time>
+      <name>Turn 730</name>
+    </trkpt>
+    <trkpt lat="-36.93654" lon="174.63366">
+      <ele>156.985</ele>
+      <time>2026-04-10T23:33:32Z</time>
+      <name>Turn 731</name>
+    </trkpt>
+    <trkpt lat="-36.93656" lon="174.63388">
+      <ele>157.279</ele>
+      <time>2026-04-10T23:33:39Z</time>
+      <name>Turn 732</name>
+    </trkpt>
+    <trkpt lat="-36.93664" lon="174.63403">
+      <ele>156.182</ele>
+      <time>2026-04-10T23:33:44Z</time>
+      <name>Turn 733</name>
+    </trkpt>
+    <trkpt lat="-36.93668" lon="174.63411">
+      <ele>155.365</ele>
+      <time>2026-04-10T23:33:47Z</time>
+      <name>Turn 734</name>
+    </trkpt>
+    <trkpt lat="-36.93673" lon="174.6342">
+      <ele>153.693</ele>
+      <time>2026-04-10T23:33:50Z</time>
+      <name>Turn 735</name>
+    </trkpt>
+    <trkpt lat="-36.93681" lon="174.6344">
+      <ele>150.407</ele>
+      <time>2026-04-10T23:33:57Z</time>
+      <name>Turn 736</name>
+    </trkpt>
+    <trkpt lat="-36.93688" lon="174.6347">
+      <ele>149.392</ele>
+      <time>2026-04-10T23:34:06Z</time>
+      <name>Turn 737</name>
+    </trkpt>
+    <trkpt lat="-36.93692" lon="174.63492">
+      <ele>149.392</ele>
+      <time>2026-04-10T23:34:13Z</time>
+      <name>Turn 738</name>
+    </trkpt>
+    <trkpt lat="-36.93685" lon="174.63521">
+      <ele>151.984</ele>
+      <time>2026-04-10T23:34:22Z</time>
+      <name>Turn 739</name>
+    </trkpt>
+    <trkpt lat="-36.93679" lon="174.63546">
+      <ele>153.825</ele>
+      <time>2026-04-10T23:34:30Z</time>
+      <name>Turn 740</name>
+    </trkpt>
+    <trkpt lat="-36.93677" lon="174.63552">
+      <ele>154.584</ele>
+      <time>2026-04-10T23:34:31Z</time>
+      <name>Turn 741</name>
+    </trkpt>
+    <trkpt lat="-36.93671" lon="174.63572">
+      <ele>157.128</ele>
+      <time>2026-04-10T23:34:38Z</time>
+      <name>Turn 742</name>
+    </trkpt>
+    <trkpt lat="-36.93666" lon="174.63596">
+      <ele>158.363</ele>
+      <time>2026-04-10T23:34:45Z</time>
+      <name>Turn 743</name>
+    </trkpt>
+    <trkpt lat="-36.93661" lon="174.63629">
+      <ele>157.003</ele>
+      <time>2026-04-10T23:34:55Z</time>
+      <name>Turn 744</name>
+    </trkpt>
+    <trkpt lat="-36.93652" lon="174.63652">
+      <ele>158.697</ele>
+      <time>2026-04-10T23:35:03Z</time>
+      <name>Turn 745</name>
+    </trkpt>
+    <trkpt lat="-36.9364" lon="174.63671">
+      <ele>162.991</ele>
+      <time>2026-04-10T23:35:10Z</time>
+      <name>Turn 746</name>
+    </trkpt>
+    <trkpt lat="-36.9364" lon="174.63687">
+      <ele>161.332</ele>
+      <time>2026-04-10T23:35:15Z</time>
+      <name>Turn 747</name>
+    </trkpt>
+    <trkpt lat="-36.93645" lon="174.63697">
+      <ele>158.672</ele>
+      <time>2026-04-10T23:35:18Z</time>
+      <name>Turn 748</name>
+    </trkpt>
+    <trkpt lat="-36.9365" lon="174.63718">
+      <ele>157.448</ele>
+      <time>2026-04-10T23:35:25Z</time>
+      <name>Turn 749</name>
+    </trkpt>
+    <trkpt lat="-36.93651" lon="174.63738">
+      <ele>157.772</ele>
+      <time>2026-04-10T23:35:31Z</time>
+      <name>Turn 750</name>
+    </trkpt>
+    <trkpt lat="-36.9365" lon="174.63757">
+      <ele>158.953</ele>
+      <time>2026-04-10T23:35:36Z</time>
+      <name>Turn 751</name>
+    </trkpt>
+    <trkpt lat="-36.93645" lon="174.63772">
+      <ele>161.546</ele>
+      <time>2026-04-10T23:35:41Z</time>
+      <name>Turn 752</name>
+    </trkpt>
+    <trkpt lat="-36.93642" lon="174.63789">
+      <ele>162.97</ele>
+      <time>2026-04-10T23:35:46Z</time>
+      <name>Turn 753</name>
+    </trkpt>
+    <trkpt lat="-36.93643" lon="174.63809">
+      <ele>163.133</ele>
+      <time>2026-04-10T23:35:52Z</time>
+      <name>Turn 754</name>
+    </trkpt>
+    <trkpt lat="-36.93647" lon="174.63832">
+      <ele>163.686</ele>
+      <time>2026-04-10T23:35:59Z</time>
+      <name>Turn 755</name>
+    </trkpt>
+    <trkpt lat="-36.93652" lon="174.63859">
+      <ele>163.604</ele>
+      <time>2026-04-10T23:36:07Z</time>
+      <name>Turn 756</name>
+    </trkpt>
+    <trkpt lat="-36.93658" lon="174.63878">
+      <ele>162.226</ele>
+      <time>2026-04-10T23:36:13Z</time>
+      <name>Turn 757</name>
+    </trkpt>
+    <trkpt lat="-36.93665" lon="174.639">
+      <ele>160.528</ele>
+      <time>2026-04-10T23:36:21Z</time>
+      <name>Turn 758</name>
+    </trkpt>
+    <trkpt lat="-36.93671" lon="174.63921">
+      <ele>158.572</ele>
+      <time>2026-04-10T23:36:27Z</time>
+      <name>Turn 759</name>
+    </trkpt>
+    <trkpt lat="-36.93677" lon="174.63946">
+      <ele>158.311</ele>
+      <time>2026-04-10T23:36:35Z</time>
+      <name>Turn 760</name>
+    </trkpt>
+    <trkpt lat="-36.93682" lon="174.63968">
+      <ele>157.9</ele>
+      <time>2026-04-10T23:36:42Z</time>
+      <name>Turn 761</name>
+    </trkpt>
+    <trkpt lat="-36.93685" lon="174.63991">
+      <ele>158.788</ele>
+      <time>2026-04-10T23:36:49Z</time>
+      <name>Turn 762</name>
+    </trkpt>
+    <trkpt lat="-36.93683" lon="174.64026">
+      <ele>163.19</ele>
+      <time>2026-04-10T23:36:59Z</time>
+      <name>Turn 763</name>
+    </trkpt>
+    <trkpt lat="-36.93683" lon="174.64031">
+      <ele>163.704</ele>
+      <time>2026-04-10T23:37:00Z</time>
+      <name>Turn 764</name>
+    </trkpt>
+    <trkpt lat="-36.93685" lon="174.64079">
+      <ele>167.108</ele>
+      <time>2026-04-10T23:37:15Z</time>
+      <name>Turn 765</name>
+    </trkpt>
+    <trkpt lat="-36.93688" lon="174.64115">
+      <ele>165.612</ele>
+      <time>2026-04-10T23:37:26Z</time>
+      <name>Turn 766</name>
+    </trkpt>
+    <trkpt lat="-36.93684" lon="174.6414">
+      <ele>166.111</ele>
+      <time>2026-04-10T23:37:33Z</time>
+      <name>Turn 767</name>
+    </trkpt>
+    <trkpt lat="-36.93686" lon="174.64186">
+      <ele>163.468</ele>
+      <time>2026-04-10T23:37:47Z</time>
+      <name>Turn 768</name>
+    </trkpt>
+    <trkpt lat="-36.93684" lon="174.6424">
+      <ele>161.209</ele>
+      <time>2026-04-10T23:38:03Z</time>
+      <name>Turn 769</name>
+    </trkpt>
+    <trkpt lat="-36.93687" lon="174.64263">
+      <ele>158.067</ele>
+      <time>2026-04-10T23:38:10Z</time>
+      <name>Turn 770</name>
+    </trkpt>
+    <trkpt lat="-36.93691" lon="174.64284">
+      <ele>155.125</ele>
+      <time>2026-04-10T23:38:16Z</time>
+      <name>Turn 771</name>
+    </trkpt>
+    <trkpt lat="-36.93695" lon="174.64316">
+      <ele>153.835</ele>
+      <time>2026-04-10T23:38:26Z</time>
+      <name>Turn 772</name>
+    </trkpt>
+    <trkpt lat="-36.93696" lon="174.64337">
+      <ele>153.351</ele>
+      <time>2026-04-10T23:38:32Z</time>
+      <name>Turn 773</name>
+    </trkpt>
+    <trkpt lat="-36.93699" lon="174.64347">
+      <ele>151.949</ele>
+      <time>2026-04-10T23:38:35Z</time>
+      <name>Turn 774</name>
+    </trkpt>
+    <trkpt lat="-36.93715" lon="174.64404">
+      <ele>144.071</ele>
+      <time>2026-04-10T23:38:53Z</time>
+      <name>Turn 775</name>
+    </trkpt>
+    <trkpt lat="-36.93718" lon="174.64415">
+      <ele>142.737</ele>
+      <time>2026-04-10T23:38:57Z</time>
+      <name>Turn 776</name>
+    </trkpt>
+    <trkpt lat="-36.9373" lon="174.64419">
+      <ele>141.001</ele>
+      <time>2026-04-10T23:39:01Z</time>
+      <name>Turn 777</name>
+    </trkpt>
+    <trkpt lat="-36.93733" lon="174.64435">
+      <ele>141.256</ele>
+      <time>2026-04-10T23:39:06Z</time>
+      <name>Turn 778</name>
+    </trkpt>
+    <trkpt lat="-36.93739" lon="174.64463">
+      <ele>143.187</ele>
+      <time>2026-04-10T23:39:15Z</time>
+      <name>Turn 779</name>
+    </trkpt>
+    <trkpt lat="-36.93748" lon="174.64492">
+      <ele>146.848</ele>
+      <time>2026-04-10T23:39:24Z</time>
+      <name>Turn 780</name>
+    </trkpt>
+    <trkpt lat="-36.93771" lon="174.64527">
+      <ele>148.798</ele>
+      <time>2026-04-10T23:39:37Z</time>
+      <name>Turn 781</name>
+    </trkpt>
+    <trkpt lat="-36.93788" lon="174.64558">
+      <ele>149.984</ele>
+      <time>2026-04-10T23:39:48Z</time>
+      <name>Turn 782</name>
+    </trkpt>
+    <trkpt lat="-36.93799" lon="174.64594">
+      <ele>151.221</ele>
+      <time>2026-04-10T23:40:00Z</time>
+      <name>Turn 783</name>
+    </trkpt>
+    <trkpt lat="-36.93807" lon="174.6463">
+      <ele>153.096</ele>
+      <time>2026-04-10T23:40:11Z</time>
+      <name>Turn 784</name>
+    </trkpt>
+    <trkpt lat="-36.93816" lon="174.64673">
+      <ele>156.696</ele>
+      <time>2026-04-10T23:40:24Z</time>
+      <name>Turn 785</name>
+    </trkpt>
+    <trkpt lat="-36.93826" lon="174.64719">
+      <ele>156.825</ele>
+      <time>2026-04-10T23:40:38Z</time>
+      <name>Turn 786</name>
+    </trkpt>
+    <trkpt lat="-36.93839" lon="174.64758">
+      <ele>155.836</ele>
+      <time>2026-04-10T23:40:51Z</time>
+      <name>Turn 787</name>
+    </trkpt>
+    <trkpt lat="-36.93849" lon="174.64789">
+      <ele>156.52</ele>
+      <time>2026-04-10T23:41:01Z</time>
+      <name>Turn 788</name>
+    </trkpt>
+    <trkpt lat="-36.93869" lon="174.64826">
+      <ele>153.254</ele>
+      <time>2026-04-10T23:41:14Z</time>
+      <name>Turn 789</name>
+    </trkpt>
+    <trkpt lat="-36.93896" lon="174.64886">
+      <ele>155.792</ele>
+      <time>2026-04-10T23:41:34Z</time>
+      <name>Turn 790</name>
+    </trkpt>
+    <trkpt lat="-36.93916" lon="174.64914">
+      <ele>153.858</ele>
+      <time>2026-04-10T23:41:46Z</time>
+      <name>Turn 791</name>
+    </trkpt>
+    <trkpt lat="-36.93943" lon="174.64929">
+      <ele>153.27</ele>
+      <time>2026-04-10T23:41:57Z</time>
+      <name>Turn 792</name>
+    </trkpt>
+    <trkpt lat="-36.93984" lon="174.6495">
+      <ele>151.141</ele>
+      <time>2026-04-10T23:42:13Z</time>
+      <name>Turn 793</name>
+    </trkpt>
+    <trkpt lat="-36.94016" lon="174.64976">
+      <ele>147.57</ele>
+      <time>2026-04-10T23:42:27Z</time>
+      <name>Turn 794</name>
+    </trkpt>
+    <trkpt lat="-36.94031" lon="174.65007">
+      <ele>148.204</ele>
+      <time>2026-04-10T23:42:38Z</time>
+      <name>Turn 795</name>
+    </trkpt>
+    <trkpt lat="-36.94036" lon="174.65036">
+      <ele>148.753</ele>
+      <time>2026-04-10T23:42:47Z</time>
+      <name>Turn 796</name>
+    </trkpt>
+    <trkpt lat="-36.94029" lon="174.6506">
+      <ele>150.583</ele>
+      <time>2026-04-10T23:42:54Z</time>
+      <name>Turn 797</name>
+    </trkpt>
+    <trkpt lat="-36.94018" lon="174.65086">
+      <ele>155.77</ele>
+      <time>2026-04-10T23:43:03Z</time>
+      <name>Turn 798</name>
+    </trkpt>
+    <trkpt lat="-36.94004" lon="174.65128">
+      <ele>159.583</ele>
+      <time>2026-04-10T23:43:16Z</time>
+      <name>Turn 799</name>
+    </trkpt>
+    <trkpt lat="-36.94001" lon="174.65145">
+      <ele>158.456</ele>
+      <time>2026-04-10T23:43:22Z</time>
+      <name>Turn 800</name>
+    </trkpt>
+    <trkpt lat="-36.93994" lon="174.65184">
+      <ele>154.958</ele>
+      <time>2026-04-10T23:43:33Z</time>
+      <name>Turn 801</name>
+    </trkpt>
+    <trkpt lat="-36.93989" lon="174.65214">
+      <ele>153.549</ele>
+      <time>2026-04-10T23:43:43Z</time>
+      <name>Turn 802</name>
+    </trkpt>
+    <trkpt lat="-36.93989" lon="174.65259">
+      <ele>147.199</ele>
+      <time>2026-04-10T23:43:56Z</time>
+      <name>Turn 803</name>
+    </trkpt>
+    <trkpt lat="-36.93983" lon="174.6529">
+      <ele>143.821</ele>
+      <time>2026-04-10T23:44:05Z</time>
+      <name>Turn 804</name>
+    </trkpt>
+    <trkpt lat="-36.93969" lon="174.65319">
+      <ele>142.628</ele>
+      <time>2026-04-10T23:44:15Z</time>
+      <name>Turn 805</name>
+    </trkpt>
+    <trkpt lat="-36.93947" lon="174.65342">
+      <ele>144.79</ele>
+      <time>2026-04-10T23:44:26Z</time>
+      <name>Turn 806</name>
+    </trkpt>
+    <trkpt lat="-36.93926" lon="174.65356">
+      <ele>146.362</ele>
+      <time>2026-04-10T23:44:35Z</time>
+      <name>Turn 807</name>
+    </trkpt>
+    <trkpt lat="-36.93905" lon="174.65365">
+      <ele>149.181</ele>
+      <time>2026-04-10T23:44:43Z</time>
+      <name>Turn 808</name>
+    </trkpt>
+    <trkpt lat="-36.93879" lon="174.65375">
+      <ele>151.534</ele>
+      <time>2026-04-10T23:44:53Z</time>
+      <name>Turn 809</name>
+    </trkpt>
+    <trkpt lat="-36.93865" lon="174.6538">
+      <ele>151.365</ele>
+      <time>2026-04-10T23:44:59Z</time>
+      <name>Turn 810</name>
+    </trkpt>
+    <trkpt lat="-36.93853" lon="174.65389">
+      <ele>149.408</ele>
+      <time>2026-04-10T23:45:04Z</time>
+      <name>Turn 811</name>
+    </trkpt>
+    <trkpt lat="-36.93852" lon="174.6541">
+      <ele>147.812</ele>
+      <time>2026-04-10T23:45:10Z</time>
+      <name>Turn 812</name>
+    </trkpt>
+    <trkpt lat="-36.93839" lon="174.65428">
+      <ele>147.305</ele>
+      <time>2026-04-10T23:45:17Z</time>
+      <name>Turn 813</name>
+    </trkpt>
+    <trkpt lat="-36.93834" lon="174.65449">
+      <ele>146.948</ele>
+      <time>2026-04-10T23:45:24Z</time>
+      <name>Turn 814</name>
+    </trkpt>
+    <trkpt lat="-36.93829" lon="174.65485">
+      <ele>148.312</ele>
+      <time>2026-04-10T23:45:35Z</time>
+      <name>Turn 815</name>
+    </trkpt>
+    <trkpt lat="-36.93821" lon="174.65521">
+      <ele>151.084</ele>
+      <time>2026-04-10T23:45:46Z</time>
+      <name>Turn 816</name>
+    </trkpt>
+    <trkpt lat="-36.93819" lon="174.65532">
+      <ele>151.506</ele>
+      <time>2026-04-10T23:45:49Z</time>
+      <name>Turn 817</name>
+    </trkpt>
+    <trkpt lat="-36.93817" lon="174.65538">
+      <ele>151.788</ele>
+      <time>2026-04-10T23:45:51Z</time>
+      <name>Turn 818</name>
+    </trkpt>
+    <trkpt lat="-36.93814" lon="174.65546">
+      <ele>152.281</ele>
+      <time>2026-04-10T23:45:54Z</time>
+      <name>Turn 819</name>
+    </trkpt>
+  </trkseg>
+</trk>
+</gpx>
