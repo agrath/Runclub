@@ -2279,7 +2279,7 @@
     "id": "titirangi2",
     "name": "Titirangi Proposed route - not yet run",
     "enabled": true,
-    "description": "This is a classic run taking in the foothills of the Waitakere Ranges. From Titirangi we head along Kohu Rd to Mt Atkinson and then along the Exhibition Drive gravel road. Exiting at Shaw Rd, we'll take Carter Rd down the hill and then Parker Rd up the hill to Arataki Visitor Centre. From there we'll hit Beveridge track & Exhibition Drive for a beautiful run through the bush to the finish - 19km in total. There are options to make it shorter - go straight to Arataki Visitor Centre and return - 13.5km. Or longer - The 3 Ko's Loop: Near the end take Kohu + Kopiko + Konini Rd's for 4km extra (2km if you turn up at the Titirangi pump station). ",
+    "description": "This is a classic run taking in the foothills of the Waitakere Ranges. From Titirangi we head along Kohu Rd to Mt Atkinson and then along the Exhibition Drive gravel road. Exiting at Shaw Rd, we'll take Carter Rd down the hill and then Parker Rd up the hill to Arataki Visitor Centre.\n\n From there we'll hit Beveridge track & Exhibition Drive for a beautiful run through the bush to the finish - 19km in total.\n\n There are options to make it shorter - go straight to Arataki Visitor Centre and return - 13.5km. Or longer - The 3 Ko's Loop: Near the end take Kohu + Kopiko + Konini Rd's for 4km extra (2km if you turn up at the Titirangi pump station). ",
     "importantNotes": "Some of this run is on-road with no footpath. We strongly recommend bright or reflective clothing and request that you do not wear headphones for this run.  All runners joining us run at their own risk and agree not to hold the club or any run leaders responsible for any injury or damages to person or belongings.",
     "meetingPoint": {
       "label": "Cnr Titirangi Rd. & South Titirangi Rd.",
@@ -2292,7 +2292,7 @@
       "placement": "bottom"
     },
     "afterRunInformation": {
-      "content": "After the run, we usually meet at Deco Eatery Cafe (about 100m from the start, we run past it near the end)",
+      "content": "After the run stick around for a coffee",
       "carrotCake": {
         "ratings": {
           "taste": 2,
@@ -2301,7 +2301,7 @@
           "moisture": 2,
           "value": 3
         },
-        "review": "Deco Eatery Cafe: Carrot Cake at this cafe is not like your traditional cake. It is a very light sponge cake with subtle flavors, has a thin fruit base made from rasins and no cream cheese icing. If you have just run 21km you will be disappointed by this carrot cake!"
+        "review": "The review"
       }
     },
     "mapDefaults": {
@@ -2312,9 +2312,9 @@
       "zoom": 12
     },
     "distanceOptions": [
-      14.5,
-      18,
-      21
+      13.5,
+      19,
+      23
     ],
     "distanceMarkerAlignments": [
       1,
@@ -2467,6 +2467,25 @@
           "top": "0px"
         },
         "placement": "bottom",
+        "backgroundColour": "#ffffff",
+        "border": true,
+        "fontColour": "#000000",
+        "fontSize": "13px",
+        "showCloseButton": true
+      },
+      {
+        "title": "3 Ko's Loop",
+        "visible": true,
+        "description": "Kohu + Kopiko + Konini Rd's. Options for 2 or 4km extra",
+        "anchor": {
+          "latitude": -36.933431,
+          "longitude": 174.650654
+        },
+        "offset": {
+          "left": "-10px",
+          "top": "0px"
+        },
+        "placement": "top",
         "backgroundColour": "#ffffff",
         "border": true,
         "fontColour": "#000000",
