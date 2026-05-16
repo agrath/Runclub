@@ -179,14 +179,14 @@
     },
     {
       "timestamp": "2026-05-10T08:00:00",
-      "id": "albanyshoescience2"
+      "id": "missionbaytahuna"
     },
     {
       "timestamp": "2026-05-17T08:00:00",
-      "id": "ponsonby2"
+      "id": "albanyshoescience2"
     },
     {
-      "timestamp": "2026-05-24T08:00:00",
+      "timestamp": "2026-05-24T07:45:00",
       "id": "coasttocoast"
     },
     {
@@ -207,11 +207,18 @@
     },
     {
       "timestamp": "2026-06-28T08:00:00",
-      "id": "missionbaytahuna"
+      "id": "fourpeaks"
     },
     {
       "timestamp": "2026-07-05T08:00:00",
-      "id": "fourpeaks"
+      "id": "ponsonby2"
+    },
+    {
+      "timestamp": "2026-07-12T08:00:00",
+      "title": "Cockle Bay Beach to the Mangemangeroa Valley",
+      "description": "2kms on the road, then 4kms of trail running through the Mangemangeroa Valley.  Meet at Howick Beach 8am.",
+      "link": "https://www.gmap-pedometer.com/?r=7805718",
+      "id": "howick"
     }
   ]
 }
