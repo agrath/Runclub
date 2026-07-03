@@ -15,31 +15,7 @@
       "title": "Big Morning Run for Mental Health Awareness Week",
       "description": "Clubs all over NZ are running early on Wednesday 25th September for Mental Health Awareness Week.  We will meet at the Grandstand in the Domain at 5:45am to run up Mount Eden and back.  Sunrise is 6:05am, so should be a good view. https://www.bigmorningrun.com/.  No donations, just running"
     },
-    {
-      "timestamp": "2025-08-10T08:00:00",
-      "id": "henderson"
-    },
-    {
-      "timestamp": "2025-08-17T08:00:00",
-      "id": "takapunagreenway"
-    },
-    {
-      "timestamp": "2025-08-24T07:30:00",
-      "id": "cityloop"
-    },
-    {
-      "timestamp": "2025-08-31T08:00:00",
-      "id": "missionbaytahuna"
-    },
-    {
-      "timestamp": "2025-09-07T08:00:00",
-      "id": "mangerebridge"
-    },
-    {
-      "timestamp": "2025-09-14T07:45:00",
-      "id": "coasttocoast"
-    },
-    {
+       {
       "timestamp": "2025-09-21T08:00:00",
       "id": "albanyshoescience2"
     },
@@ -195,7 +171,7 @@
     },
     {
       "timestamp": "2026-06-07T08:00:00",
-      "id": "titirangi"
+      "id": "titirangi2"
     },
     {
       "timestamp": "2026-06-14T08:00:00",
@@ -215,10 +191,24 @@
     },
     {
       "timestamp": "2026-07-12T08:00:00",
-      "title": "Cockle Bay Beach to the Mangemangeroa Valley",
-      "description": "2kms on the road, then 4kms of trail running through the Mangemangeroa Valley.  Meet at Howick Beach 8am.",
-      "link": "https://www.gmap-pedometer.com/?r=7805718",
-      "id": "howick"
+      "id": "mangemangeroa"
+
+    },
+    {
+      "timestamp": "2026-07-19T08:00:00",
+      "id": "orakei"
+    },
+    {
+      "timestamp": "2026-07-26T08:00:00",
+      "id": "orewa"
+    },
+    {
+      "timestamp": "2026-08-02T08:00:00",
+      "id": "dailybread"
+    },
+    {
+      "timestamp": "2026-08-09T08:00:00",
+      "id": "henderson"
     }
   ]
 }

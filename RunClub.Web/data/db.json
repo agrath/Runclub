@@ -2277,7 +2277,7 @@
   },
   {
     "id": "titirangi2",
-    "name": "Titirangi Proposed route - not yet run",
+    "name": "Titirangi V2 - Waitakere Hills Classic with a twist",
     "enabled": true,
     "description": "This is a classic run taking in the foothills of the Waitakere Ranges. From Titirangi we head along Kohu Rd to Mt Atkinson and then along the Exhibition Drive gravel road. Exiting at Shaw Rd, we'll take Carter Rd down the hill and then Parker Rd up the hill to Arataki Visitor Centre.\n\n From there we'll hit Beveridge track & Exhibition Drive for a beautiful run through the bush to the finish - 19km in total.\n\n There are options to make it shorter - go straight to Arataki Visitor Centre and return - 13.5km. Or longer - The 3 Ko's Loop: Near the end take Kohu + Kopiko + Konini Rd's for 4km extra (2km if you turn up at the Titirangi pump station). ",
     "importantNotes": "Some of this run is on-road with no footpath. We strongly recommend bright or reflective clothing and request that you do not wear headphones for this run.  All runners joining us run at their own risk and agree not to hold the club or any run leaders responsible for any injury or damages to person or belongings.",
@@ -14326,6 +14326,140 @@
         "type": "urban",
         "label": "Urban",
         "percent": 10
+      }
+    ],
+    "placesOfInterestOptions": [
+      {
+        "type": "parking",
+        "label": "Parking",
+        "visible": true,
+        "zIndex": 40
+      },
+      {
+        "type": "public-bathroom",
+        "label": "Public bathroom",
+        "visible": true,
+        "zIndex": 30
+      },
+      {
+        "type": "water-fountain",
+        "label": "Water fountain",
+        "visible": true,
+        "zIndex": 20
+      },
+      {
+        "type": "photo-camera",
+        "label": "Photo opportunity",
+        "visible": true,
+        "zIndex": 10
+      }
+    ],
+    "placesOfInterest": [
+      {
+        "type": "parking",
+        "latitude": -36.93837354,
+        "longitude": 174.77830231
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9787941,
+        "longitude": 174.76265
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.94628,
+        "longitude": 174.757126
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.93976,
+        "longitude": 174.764557
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.94515,
+        "longitude": 174.7607
+      },
+      {
+        "type": "public-bathroom",
+        "latitude": -36.9493523,
+        "longitude": 174.785553
+      },
+
+      {
+        "type": "water-fountain",
+        "latitude": -36.94748,
+        "longitude": 174.7863
+      }
+
+    ]
+  },
+  {
+    "id": "mangemangeroa",
+    "name": "Mangemangeroa Valley from Howick Beach",
+    "enabled": true,
+    "description": "Join us for a beautiful trail run through the Mangemangeroa Valley walkway, one of Auckland's hidden gems.\n\nSetting off from Howick Beach, head up over the hill to Cockle Bay. Then we'll run along the foreshore to the Shelly Park Beach boat club and from there onto the magnificent Mangemangeroa Valley walkway.\n\nIt’s an awesome trail run to run. The track is undulating and is well maintained. It’ll be fine to wear regular running shoes if you don't have trail running shoes. Just be careful on the foreshore section (about 1km each way). Please note there are no water fountains along the way. Take your own water if you think you'll need it.\n\nThis is an out and back run. Once you reach the end of the track. Turn around and return. On the way back, take the Kowhai path up to the Barn and take in the views at the lookouts before dropping back down to the main track.\n\nBring your sweet tooth as we'll stop in at the Shamrock Cottage Tearooms afterwards.",
+    "meetingPoint": {
+      "label": "Howick Beach",
+      "latitude": -36.89315351,
+      "longitude": 174.9427406,
+      "offset": {
+        "left": "px",
+        "top": "-20px"
+      },
+      "placement": "top"
+    },
+    "mapDefaults": {
+      "center": {
+        "latitude": -36.89315351,
+        "longitude": 174.9427406
+      },
+      "zoom": 12
+    },
+    "distanceOptions": [
+      14
+    ],
+    "distanceMarkerAlignments": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "terrain": [
+      {
+        "type": "road",
+        "label": "Road",
+        "percent": 20
+      },
+      {
+        "type": "beach",
+        "label": "Beach",
+        "percent": 15
+      },
+      {
+        "type": "trail",
+        "label": "Trail",
+        "percent": 65
       }
     ],
     "placesOfInterestOptions": [
