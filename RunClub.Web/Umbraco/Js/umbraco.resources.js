@@ -8,7 +8,7 @@
  * @description
  * This Resource perfomrs actions to common authentication tasks for the Umbraco backoffice user
  *
- * @requires $q 
+ * @requires $q
  * @requires $http
  * @requires umbRequestHelper
  * @requires angularHelper
@@ -31,7 +31,7 @@
     *    });
     * </pre>
     * @returns {Promise} resourcePromise object
-    * 
+    *
     */
             get2FAProviders: function get2FAProviders() {
                 return umbRequestHelper.resourcePromise($http.get(umbRequestHelper.getApiUrl('authenticationApiBaseUrl', 'Get2FAProviders')), 'Could not retrieve two factor provider info');
@@ -98,7 +98,7 @@
      *    .then(function(data) {
      *        //Do stuff for login...
      *    });
-     * </pre> 
+     * </pre>
      * @param {string} login Username of backoffice user
      * @param {string} password Password of backoffice user
      * @returns {Promise} resourcePromise object
@@ -117,7 +117,7 @@
      * There are not parameters for this since when the user has clicked on their invite email they will be partially
      * logged in (but they will not be approved) so we need to use this method to verify the non approved logged in user's details.
      * Using the getCurrentUser will not work since that only works for approved users
-     * @returns {} 
+     * @returns {}
      */
             getCurrentInvitedUser: function getCurrentInvitedUser() {
                 return umbRequestHelper.resourcePromise($http.get(umbRequestHelper.getApiUrl('authenticationApiBaseUrl', 'GetCurrentInvitedUser')), 'Failed to verify invite');
@@ -137,7 +137,7 @@
      *    .then(function(data) {
      *        //Do stuff for password reset request...
      *    });
-     * </pre> 
+     * </pre>
      * @param {string} email Email address of backoffice user
      * @returns {Promise} resourcePromise object
      *
@@ -153,7 +153,7 @@
                 if (!emailRegex.test(email)) {
                     return $q.reject({ errorMsg: 'Email address is not valid' });
                 }
-                return umbRequestHelper.resourcePromise($http.post(umbRequestHelper.getApiUrl('authenticationApiBaseUrl', 'PostRequestPasswordReset'), { email: email }), 'Request password reset failed for email ' + email);
+                return umbRequestHelper.resourcePromise($http.post(umbRequestHelper.getApiUrl('authenticationApiBaseUrl', 'PostRequestPasswordReset'), { email: email }), 'An email with password reset instructions will be sent to the specified address if it matched our records');
             },
             /**
      * @ngdoc method
@@ -169,7 +169,7 @@
      *    .then(function(data) {
      *        //Allow reset of password
      *    });
-     * </pre> 
+     * </pre>
      * @param {integer} userId User Id
      * @param {string} resetCode Password reset code
      * @returns {Promise} resourcePromise object
@@ -193,7 +193,7 @@
      * @methodOf umbraco.resources.currentUserResource
      *
      * @description
-     * Gets the configuration of the user membership provider which is used to configure the change password form         
+     * Gets the configuration of the user membership provider which is used to configure the change password form
      */
             getMembershipProviderConfig: function getMembershipProviderConfig() {
                 return umbRequestHelper.resourcePromise($http.get(umbRequestHelper.getApiUrl('authenticationApiBaseUrl', 'GetMembershipProviderConfig')), 'Failed to retrieve membership provider config');
@@ -212,7 +212,7 @@
      *    .then(function(data) {
      *        //Password set
      *    });
-     * </pre> 
+     * </pre>
      * @param {integer} userId User Id
      * @param {string} password New password
      * @param {string} confirmPassword Confirmation of new password
