@@ -104,12 +104,11 @@ app.factory('RouteService', ['$q', '$http', '$interpolate', function ($q, $http,
                 route.displayAnnotations = true;
                 route.displayMeetingPoint = (typeof route.displayMeetingPoint !== 'undefined') ? route.displayMeetingPoint : true;
 
-                //when this site is hosted, change this to a local url
-                var markerImageUrl = 'http://metrorun.nz/images/static-meet-here.png';
-                //var markerImageUrl = 'https://i.imgur.com/8tChPdj.png';
-                var staticMapImageTemplate = 'https://maps.googleapis.com/maps/api/staticmap?size=356x280&zoom=14&key=AIzaSyDeWHf1yBGiJgWoaQH_PEN2bnwZ2aCFSbE&center={{latitude}},{{longitude}}&markers=anchor:bottom|icon:{{icon}}|{{latitude}},{{longitude}}';
+                //staticmap.axd caches the Google image on the server, which bills per request.
+                //the size, zoom, marker and api key live in Web.config under StaticMap.*
+                var staticMapImageTemplate = '/staticmap.axd?lat={{latitude}}&lng={{longitude}}';
                 if (route.meetingPoint) {
-                    route.staticMapImage = $interpolate(staticMapImageTemplate)({ latitude: route.meetingPoint.latitude, longitude: route.meetingPoint.longitude, icon: markerImageUrl });
+                    route.staticMapImage = $interpolate(staticMapImageTemplate)({ latitude: route.meetingPoint.latitude, longitude: route.meetingPoint.longitude });
                 }
 
                 route.gpxData = null;

@@ -7541,11 +7541,11 @@ When building a custom infinite editor view you can use the same components as a
     angular.module('umbraco.services').factory('macroService', macroService);
     'use strict';
     /**
-* @ngdoc service
-* @name umbraco.services.mediaHelper
-* @description A helper object used for dealing with media items
-**/
-    function mediaHelper(umbRequestHelper, $log) {
+ * @ngdoc service
+ * @name umbraco.services.mediaHelper
+ * @description A helper object used for dealing with media items
+ **/
+    function mediaHelper(umbRequestHelper, $http, $log) {
         //container of fileresolvers
         var _mediaFileResolvers = {};
         return {
@@ -7820,10 +7820,6 @@ When building a custom infinite editor view you can use the same components as a
                 if (this.getFileExtension(imagePath) === 'svg') {
                     return imagePath;
                 }
-                // Check if file is a svg
-                if (this.getFileExtension(imagePath) === 'svg') {
-                    return imagePath;
-                }
                 // If the path is not an image we cannot get a thumb
                 if (!this.detectIfImageByExtension(imagePath)) {
                     return null;
@@ -7895,6 +7891,52 @@ When building a custom infinite editor view you can use the same components as a
                 var lowered = filePath.toLowerCase();
                 var ext = lowered.substr(lowered.lastIndexOf('.') + 1);
                 return ext;
+            },
+            /**
+     * @ngdoc function
+     * @name umbraco.services.mediaHelper#getProcessedImageUrl
+     * @methodOf umbraco.services.mediaHelper
+     * @function
+     *
+     * @description
+     * Returns image URL with configured crop and other processing parameters.
+     *
+     * @param {string} imagePath Raw image path
+     * @param {object} options Object describing image generation parameters:
+     *  {
+     *      width: <int>
+     *      height: <int>
+     *      focalPoint: {
+     *          left: <int>
+     *          top: <int>
+     *      },
+     *      mode: <string>
+     *      cacheBusterValue: <string>
+     *      crop: {
+     *          x1: <int>
+     *          x2: <int>
+     *          y1: <int>
+     *          y2: <int>
+     *      },
+     *  }
+     */
+            getProcessedImageUrl: function getProcessedImageUrl(imagePath, options) {
+                if (!options) {
+                    return imagePath;
+                }
+                return umbRequestHelper.resourcePromise($http.get(umbRequestHelper.getApiUrl('imagesApiBaseUrl', 'GetProcessedImageUrl', {
+                    imagePath: imagePath,
+                    width: options.width,
+                    height: options.height,
+                    focalPointLeft: options.focalPoint ? options.focalPoint.left : null,
+                    focalPointTop: options.focalPoint ? options.focalPoint.top : null,
+                    mode: options.mode,
+                    cacheBusterValue: options.cacheBusterValue,
+                    cropX1: options.crop ? options.crop.x1 : null,
+                    cropX2: options.crop ? options.crop.x2 : null,
+                    cropY1: options.crop ? options.crop.y1 : null,
+                    cropY2: options.crop ? options.crop.y2 : null
+                })), 'Failed to retrieve processed image URL for image: ' + imagePath);
             }
         };
     }
@@ -10937,10 +10979,10 @@ When building a custom infinite editor view you can use the same components as a
  * @description
  * A service containing all logic for all of the Umbraco TinyMCE plugins
  */
-    function tinyMceService($rootScope, $q, imageHelper, $locale, $http, $timeout, stylesheetResource, macroResource, macroService, $routeParams, umbRequestHelper, angularHelper, userService, editorService, entityResource, eventsService, localStorageService) {
+    function tinyMceService($rootScope, $q, imageHelper, $locale, $http, $timeout, stylesheetResource, macroResource, macroService, $routeParams, umbRequestHelper, angularHelper, userService, editorService, entityResource, eventsService, localStorageService, mediaHelper) {
         //These are absolutely required in order for the macros to render inline
         //we put these as extended elements because they get merged on top of the normal allowed elements by tiny mce
-        var extendedValidElements = '@[id|class|style],-div[id|dir|class|align|style],ins[datetime|cite],-ul[class|style],-li[class|style],-h1[id|dir|class|align|style],-h2[id|dir|class|align|style],-h3[id|dir|class|align|style],-h4[id|dir|class|align|style],-h5[id|dir|class|align|style],-h6[id|style|dir|class|align],span[id|class|style|lang]';
+        var extendedValidElements = '@[id|class|style],-div[id|dir|class|align|style],ins[datetime|cite],-ul[class|style],-li[class|style],-h1[id|dir|class|align|style],-h2[id|dir|class|align|style],-h3[id|dir|class|align|style],-h4[id|dir|class|align|style],-h5[id|dir|class|align|style],-h6[id|style|dir|class|align],span[id|class|style|lang],figure,figcaption';
         var fallbackStyles = [
             {
                 title: 'Page header',
@@ -11158,8 +11200,7 @@ When building a custom infinite editor view you can use the same components as a
             };
         }
         function uploadImageHandler(blobInfo, success, failure, progress) {
-            var xhr, formData;
-            xhr = new XMLHttpRequest();
+            var xhr = new XMLHttpRequest();
             xhr.open('POST', Umbraco.Sys.ServerVariables.umbracoUrls.tinyMceApiBaseUrl + 'UploadImage');
             xhr.onloadstart = function (e) {
                 angularHelper.safeApply($rootScope, function () {
@@ -11178,14 +11219,24 @@ When building a custom infinite editor view you can use the same components as a
                 failure('Image upload failed due to a XHR Transport error. Code: ' + xhr.status);
             };
             xhr.onload = function () {
-                var json;
                 if (xhr.status < 200 || xhr.status >= 300) {
                     failure('HTTP Error: ' + xhr.status);
                     return;
                 }
-                json = JSON.parse(xhr.responseText);
+                var data = xhr.responseText;
+                if (!data.length > 1) {
+                    failure('Unrecognized text string: ' + data);
+                    return;
+                }
+                var json = {};
+                try {
+                    json = JSON.parse(data);
+                } catch (e) {
+                    failure('Invalid JSON: ' + data + ' - ' + e.message);
+                    return;
+                }
                 if (!json || typeof json.tmpLocation !== 'string') {
-                    failure('Invalid JSON: ' + xhr.responseText);
+                    failure('Invalid JSON: ' + data);
                     return;
                 }
                 // Put temp location into localstorage (used to update the img with data-tmpimg later on)
@@ -11195,7 +11246,7 @@ When building a custom infinite editor view you can use the same components as a
                 // so the img still shows in the editor
                 success(blobInfo.blobUri());
             };
-            formData = new FormData();
+            var formData = new FormData();
             formData.append('file', blobInfo.blob(), blobInfo.blob().name);
             xhr.send(formData);
         }
@@ -11216,8 +11267,12 @@ When building a custom infinite editor view you can use the same components as a
                 // Images inserted via Media Picker will have a URL we can use for ImageResizer QueryStrings
                 // Images pasted/dragged in are not persisted to media until saved & thus will need to be added
                 if (imgUrl) {
-                    var src = imgUrl + '?width=' + newSize.width + '&height=' + newSize.height;
-                    editor.dom.setAttrib(imageDomElement, 'data-mce-src', src);
+                    mediaHelper.getProcessedImageUrl(imgUrl, {
+                        width: newSize.width,
+                        height: newSize.height
+                    }).then(function (resizedImgUrl) {
+                        editor.dom.setAttrib(imageDomElement, 'data-mce-src', resizedImgUrl);
+                    });
                 }
                 editor.execCommand('mceAutoResize', false, null, null);
             }
@@ -11316,7 +11371,7 @@ When building a custom infinite editor view you can use the same components as a
                         config.paste_data_images = true;
                     }
                     if (args.htmlId) {
-                        config.selector = '#' + args.htmlId;
+                        config.selector = '[id="'.concat(args.htmlId, '"]');
                     } else if (args.target) {
                         config.target = args.target;
                     }
@@ -11513,15 +11568,15 @@ When building a custom infinite editor view you can use the same components as a
                     tooltip: 'Media Picker',
                     stateSelector: 'img[data-udi]',
                     onclick: function onclick() {
-                        var selectedElm = editor.selection.getNode(), currentTarget, imgDomElement;
+                        var selectedElm = editor.selection.getNode(), currentTarget;
                         if (selectedElm.nodeName === 'IMG') {
                             var img = $(selectedElm);
-                            imgDomElement = selectedElm;
                             var hasUdi = img.attr('data-udi') ? true : false;
                             var hasDataTmpImg = img.attr('data-tmpimg') ? true : false;
                             currentTarget = {
                                 altText: img.attr('alt'),
-                                url: img.attr('src')
+                                url: img.attr('src'),
+                                caption: img.attr('data-caption')
                             };
                             if (hasUdi) {
                                 currentTarget['udi'] = img.attr('data-udi');
@@ -11535,70 +11590,69 @@ When building a custom infinite editor view you can use the same components as a
                         userService.getCurrentUser().then(function (userData) {
                             if (callback) {
                                 angularHelper.safeApply($rootScope, function () {
-                                    callback(currentTarget, userData, imgDomElement);
+                                    callback(currentTarget, userData);
                                 });
                             }
                         });
                     }
                 });
             },
-            insertMediaInEditor: function insertMediaInEditor(editor, img, imgDomElement) {
+            /**
+     * @ngdoc method
+     * @name umbraco.services.tinyMceService#insetMediaInEditor
+     * @methodOf umbraco.services.tinyMceService
+     *
+     * @description
+     * Inserts the image element in tinymce plugin
+     *
+     * @param {Object} editor the TinyMCE editor instance
+     */
+            insertMediaInEditor: function insertMediaInEditor(editor, img) {
                 if (img) {
-                    // imgElement is only definied if updating an image
-                    // if null/undefinied then its a BRAND new image
-                    if (imgDomElement) {
-                        // Check if the img src has changed
-                        // If it has we will need to do some resizing/recalc again
-                        var hasImageSrcChanged = false;
-                        if (img.url !== editor.dom.getAttrib(imgDomElement, 'src')) {
-                            hasImageSrcChanged = true;
-                        }
-                        // If null/undefinied it will remove the attribute
-                        editor.dom.setAttrib(imgDomElement, 'alt', img.altText);
-                        // It's possible to pick a NEW image - so need to ensure this gets updated
-                        if (img.udi) {
-                            editor.dom.setAttrib(imgDomElement, 'data-udi', img.udi);
-                        }
-                        // It's possible to pick a NEW image - so need to ensure this gets updated
-                        if (img.url) {
-                            editor.dom.setAttrib(imgDomElement, 'src', img.url);
-                        }
-                        // Remove width & height attributes (ONLY if imgSrc changed)
-                        // So native image size is used as this needed to re-calc width & height
-                        // For the function sizeImageInEditor() & apply the image resizing querystrings etc..
-                        if (hasImageSrcChanged) {
-                            editor.dom.setAttrib(imgDomElement, 'width', null);
-                            editor.dom.setAttrib(imgDomElement, 'height', null);
-                            //Re-calc the image dimensions
-                            sizeImageInEditor(editor, imgDomElement, img.url);
+                    // We need to create a NEW DOM <img> element to insert
+                    // setting an attribute of ID to __mcenew, so we can gather a reference to the node, to be able to update its size accordingly to the size of the image.
+                    var data = {
+                        alt: img.altText || '',
+                        src: img.url ? img.url : 'nothing.jpg',
+                        id: '__mcenew',
+                        'data-udi': img.udi,
+                        'data-caption': img.caption
+                    };
+                    var newImage = editor.dom.createHTML('img', data);
+                    var parentElement = editor.selection.getNode().parentElement;
+                    if (img.caption) {
+                        var figCaption = editor.dom.createHTML('figcaption', {}, img.caption);
+                        var combined = newImage + figCaption;
+                        if (parentElement.nodeName !== 'FIGURE') {
+                            var fragment = editor.dom.createHTML('figure', {}, combined);
+                            editor.selection.setContent(fragment);
+                        } else {
+                            parentElement.innerHTML = combined;
                         }
                     } else {
-                        // We need to create a NEW DOM <img> element to insert
-                        // setting an attribute of ID to __mcenew, so we can gather a reference to the node, to be able to update its size accordingly to the size of the image.
-                        var data = {
-                            alt: img.altText || '',
-                            src: img.url ? img.url : 'nothing.jpg',
-                            id: '__mcenew',
-                            'data-udi': img.udi
-                        };
-                        editor.selection.setContent(editor.dom.createHTML('img', data));
-                        // Using settimeout to wait for a DoM-render, so we can find the new element by ID.
-                        $timeout(function () {
-                            var imgElm = editor.dom.get('__mcenew');
-                            editor.dom.setAttrib(imgElm, 'id', null);
-                            // When image is loaded we are ready to call sizeImageInEditor.
-                            var onImageLoaded = function onImageLoaded() {
-                                sizeImageInEditor(editor, imgElm, img.url);
-                                editor.fire('Change');
-                            };
-                            // Check if image already is loaded.
-                            if (imgElm.complete === true) {
-                                onImageLoaded();
-                            } else {
-                                imgElm.onload = onImageLoaded;
-                            }
-                        });
+                        //if caption is removed, remove the figure element
+                        if (parentElement.nodeName === 'FIGURE') {
+                            parentElement.parentElement.innerHTML = newImage;
+                        } else {
+                            editor.selection.setContent(newImage);
+                        }
                     }
+                    // Using settimeout to wait for a DoM-render, so we can find the new element by ID.
+                    $timeout(function () {
+                        var imgElm = editor.dom.get('__mcenew');
+                        editor.dom.setAttrib(imgElm, 'id', null);
+                        // When image is loaded we are ready to call sizeImageInEditor.
+                        var onImageLoaded = function onImageLoaded() {
+                            sizeImageInEditor(editor, imgElm, img.url);
+                            editor.fire('Change');
+                        };
+                        // Check if image already is loaded.
+                        if (imgElm.complete === true) {
+                            onImageLoaded();
+                        } else {
+                            imgElm.onload = onImageLoaded;
+                        }
+                    });
                 }
             },
             /**
@@ -11989,7 +12043,7 @@ When building a custom infinite editor view you can use the same components as a
                 }
                 // the href might be an external url, so check the value for an anchor/qs
                 // href has the anchor re-appended later, hence the reset here to avoid duplicating the anchor
-                if (!target.anchor) {
+                if (!target.anchor && href) {
                     var urlParts = href.split(/(#|\?)/);
                     if (urlParts.length === 3) {
                         href = urlParts[0];
@@ -12147,7 +12201,7 @@ When building a custom infinite editor view you can use the same components as a
                 // Then we need to add an event listener to the editor
                 // That will update native browser drag & drop events
                 // To update the icon to show you can NOT drop something into the editor
-                var toolbarItems = args.editor.settings.toolbar.split(' ');
+                var toolbarItems = args.editor.settings.toolbar === false ? [] : args.editor.settings.toolbar.split(' ');
                 if (isMediaPickerEnabled(toolbarItems) === false) {
                     // Wire up the event listener
                     args.editor.on('dragend dragover draggesture dragdrop drop drag', function (e) {
@@ -12289,11 +12343,22 @@ When building a custom infinite editor view you can use the same components as a
                 args.editor.on('blur', function (e) {
                     syncContent();
                 });
+                // When the element is removed from the DOM, we need to terminate
+                // any active watchers to ensure scopes are disposed and do not leak.
+                // No need to sync content as that has already happened.
+                args.editor.on('remove', function () {
+                    return stopWatch();
+                });
                 args.editor.on('ObjectResized', function (e) {
-                    var qs = '?width=' + e.width + '&height=' + e.height + '&mode=max';
                     var srcAttr = $(e.target).attr('src');
                     var path = srcAttr.split('?')[0];
-                    $(e.target).attr('data-mce-src', path + qs);
+                    mediaHelper.getProcessedImageUrl(path, {
+                        width: e.width,
+                        height: e.height,
+                        mode: 'max'
+                    }).then(function (resizedPath) {
+                        $(e.target).attr('data-mce-src', resizedPath);
+                    });
                     syncContent();
                 });
                 args.editor.on('Dirty', function (e) {
@@ -14488,6 +14553,7 @@ When building a custom infinite editor view you can use the same components as a
     angular.module('umbraco.services').factory('userService', function ($rootScope, eventsService, $q, $location, $window, requestRetryQueue, authResource, emailMarketingResource, $timeout, angularHelper) {
         var currentUser = null;
         var lastUserId = null;
+        var countdownCounter = null;
         //this tracks the last date/time that the user's remainingAuthSeconds was updated from the server
         // this is used so that we know when to go and get the user's remaining seconds directly.
         var lastServerTimeoutSet = null;
@@ -14515,6 +14581,10 @@ When building a custom infinite editor view you can use the same components as a
             }
             currentUser = usr;
             lastServerTimeoutSet = new Date();
+            //don't start the timer if it is already going
+            if (countdownCounter) {
+                return;
+            }
             //start the timer
             countdownUserTimeout();
         }
@@ -14524,19 +14594,19 @@ When building a custom infinite editor view you can use the same components as a
   there are no more seconds remaining.
   */
         function countdownUserTimeout() {
-            $timeout(function () {
+            countdownCounter = $timeout(function () {
                 if (currentUser) {
                     //countdown by 5 seconds since that is how long our timer is for.
                     currentUser.remainingAuthSeconds -= 5;
-                    //if there are more than 30 remaining seconds, recurse!
-                    if (currentUser.remainingAuthSeconds > 30) {
+                    //if there are more than 20 remaining seconds, recurse!
+                    if (currentUser.remainingAuthSeconds > 20) {
                         //we need to check when the last time the timeout was set from the server, if
-                        // it has been more than 30 seconds then we'll manually go and retrieve it from the
+                        // it has been more than 20 seconds then we'll manually go and retrieve it from the
                         // server - this helps to keep our local countdown in check with the true timeout.
                         if (lastServerTimeoutSet != null) {
                             var now = new Date();
                             var seconds = (now.getTime() - lastServerTimeoutSet.getTime()) / 1000;
-                            if (seconds > 30) {
+                            if (seconds > 20) {
                                 //first we'll set the lastServerTimeoutSet to null - this is so we don't get back in to this loop while we
                                 // wait for a response from the server otherwise we'll be making double/triple/etc... calls while we wait.
                                 lastServerTimeoutSet = null;
@@ -14556,16 +14626,20 @@ When building a custom infinite editor view you can use the same components as a
                         if (Umbraco.Sys.ServerVariables.umbracoSettings.keepUserLoggedIn !== true) {
                             //NOTE: the safeApply because our timeout is set to not run digests (performance reasons)
                             angularHelper.safeApply($rootScope, function () {
-                                try {
-                                    //NOTE: We are calling this again so that the server can create a log that the timeout has expired, we
-                                    // don't actually care about this result.
-                                    authResource.getRemainingTimeoutSeconds();
-                                } finally {
-                                    userAuthExpired();
-                                }
+                                //NOTE: We are calling this again so that the server can create a log that the timeout has expired
+                                //and we will show the login screen as close to the server's timout time as possible
+                                authResource.getRemainingTimeoutSeconds().then(function (result) {
+                                    setUserTimeoutInternal(result);
+                                    //the client auth can expire a second earlier as the client internal clock is behind
+                                    if (result < 1) {
+                                        userAuthExpired();
+                                    }
+                                });
                             });
+                            //recurse the countdown!
+                            countdownUserTimeout();
                         } else {
-                            //we've got less than 30 seconds remaining so let's check the server
+                            //we've got less than 20 seconds remaining so let's check the server
                             if (lastServerTimeoutSet != null) {
                                 //first we'll set the lastServerTimeoutSet to null - this is so we don't get back in to this loop while we
                                 // wait for a response from the server otherwise we'll be making double/triple/etc... calls while we wait.
@@ -14605,6 +14679,7 @@ When building a custom infinite editor view you can use the same components as a
             }
             lastServerTimeoutSet = null;
             currentUser = null;
+            countdownCounter = null;
             openLoginDialog(isLogout === undefined ? true : !isLogout);
         }
         // Register a handler for when an item is added to the retry queue
