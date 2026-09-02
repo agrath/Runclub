@@ -200,7 +200,7 @@
     },
     {
       "timestamp": "2026-07-26T08:00:00",
-      "id": "orewa"
+      "id": "mangerebridge"
     },
     {
       "timestamp": "2026-08-02T08:00:00",
@@ -209,7 +209,52 @@
     {
       "timestamp": "2026-08-09T08:00:00",
       "id": "henderson"
+    },
+    {
+      "timestamp": "2026-08-16T08:00:00",
+      "id": "albanyshoescience2"
+    },
+    {
+      "timestamp": "2026-08-23T08:00:00",
+      "id": "missionbaytahuna"
+    },
+    {
+      "timestamp": "2026-08-30T08:00:00",
+      "id": "bucklandsbeach"
+    },
+    {
+      "timestamp": "2026-09-06T08:00:00",
+      "id": "titirangi2"
+    },
+    {
+      "timestamp": "2026-09-13T07:30:00",
+      "id": "cityloop"
+    },
+    {
+      "timestamp": "2026-09-20T08:00:00",
+      "id": "fourpeaks"
+    },
+    {
+      "timestamp": "2026-09-27T08:00:00",
+      "id": "cornwallpark"
+    },
+    {
+      "timestamp": "2026-10-04T08:00:00",
+      "id": "coasttocoast"
+    },
+    {
+      "timestamp": "2026-10-11T08:00:00",
+      "id": "mangerebridge"
+    },
+    {
+      "timestamp": "2026-10-18T08:00:00",
+      "id": "takapunagreenway"
+    },
+    {
+      "timestamp": "2026-10-25T08:00:00",
+      "id": "westhaven"
     }
+
   ]
 }
 

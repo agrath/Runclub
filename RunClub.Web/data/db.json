@@ -4687,7 +4687,7 @@
     ]
   },
   {
-    "id": "cornwellpark",
+    "id": "cornwallpark",
     "name": "Cornwall Park",
     "enabled": true,
     "description": "Auckland's answer to Central Park (just with more sheep poo and fences to jump!).\r\nThe loop follows the rolling perimeter trails of the park, with a full lap being 9k and an option to cut the lap short at 5k. Two laps equals 18k.",
@@ -14162,7 +14162,7 @@
     "id": "cityloop",
     "name": "All Blacks City Loop Special",
     "enabled": true,
-    "description": "NOTE: EARLIER STAR TIME: 7:30am. We will run our Ponsonby Parnell route from Corner of Symonds St & Mt Eden Rd so we finish up there at Schapiro's Sports Bar in time to watch the All Blacks v Argentina match.\n\nWe'll start off with a fun run along the Lightpath and an awakening climb up Western Park to Ponsonby Rd. From there we'll follow our normal Ponsonby Parnell route, a classic Auckland run passing through Ponsonby, along the waterfront, up through Parnell, and across the Domain and Grafton Bridge.\n\nTotal distance: 16km. Longer option: 19.5km, from Western Park run down Williamson Ave and the Grey Lynn Greenway Path to Cox's Bay.  Then Herne Bay streets to Curran St and harbour bridge. Short option: 10.5km, from the Lightpath go straight down Nelson St to the viaduct",
+    "description": "NOTE: EARLIER STAR TIME: 7:30am. We will run our Ponsonby Parnell route from Corner of Symonds St & Mt Eden Rd so we finish up there at Schapiro's Sports Bar in time to watch the All Blacks match.\n\nWe'll start off with a fun run along the Lightpath and an awakening climb up Western Park to Ponsonby Rd. From there we'll follow our normal Ponsonby Parnell route, a classic Auckland run passing through Ponsonby, along the waterfront, up through Parnell, and across the Domain and Grafton Bridge.\n\nTotal distance: 16km. Longer option: 19.5km, from Western Park run down Williamson Ave and the Grey Lynn Greenway Path to Cox's Bay.  Then Herne Bay streets to Curran St and harbour bridge. Short option: 10.5km, from the Lightpath go straight down Nelson St to the viaduct",
     "meetingPoint": {
       "label": "Corner of Symonds St & Mt Eden Rd",
       "latitude": -36.86513899,
