@@ -247,14 +247,54 @@
       "id": "mangerebridge"
     },
     {
+      "timestamp": "2026-10-16T06:00:00",
+      "title": "Big Morning Run for Mental Health Awareness Week",
+      "description": "Clubs all over NZ are running early on Friday 16th October for Mental Health Awareness Week.  Meet at the Grandstand in the Domain at 6:00am to run up Mount Eden and back.  Sunrise is 6.36 , so should be a good view. https://www.bigmorningrun.com/.  No donations, just running",
+      "link": "https://www.strava.com/clubs/204107/group_events/3539843169363808416/occurrences/FQIWwMKu6PGmhqBiHBTUHxQUFCAUDBQAFAAAHBaAio2IqGgAAA=="
+
+
+    },
+
+    {
       "timestamp": "2026-10-18T08:00:00",
       "id": "takapunagreenway"
     },
     {
       "timestamp": "2026-10-25T08:00:00",
       "id": "westhaven"
+    },
+    {
+      "timestamp": "2026-11-01T08:00:00",
+      "id": "titirangi2"
+    },
+    {
+      "timestamp": "2026-11-08T08:00:00",
+      "id": "birkenhead"
+    },
+    {
+      "timestamp": "2026-11-15T08:00:00",
+      "id": "bucklandsbeach"
+    },
+    {
+      "timestamp": "2026-11-22T08:00:00",
+      "id": "henderson"
+    },
+    {
+      "timestamp": "2026-11-29T08:00:00",
+      "id": "dailybread"
+    },
+    {
+      "timestamp": "2026-12-06T08:00:00",
+      "title": "To be advised"
+    },
+    {
+      "timestamp": "2026-12-13T08:00:00",
+      "id": "orakei"
+    },
+    {
+      "timestamp": "2026-12-20T08:00:00",
+      "title": "Rangitoto Special"
     }
-
   ]
 }
 
